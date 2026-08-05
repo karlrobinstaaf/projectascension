@@ -61,9 +61,10 @@ Every topic moves through the following stages.
 
 # Design Decisions
 
-| ID | Title | Status |
-|----|-------|--------|
-| DD-001 | The Living Team System | DOCUMENTED |
+| ID     | Title                     | Status     |
+| ------ | ------------------------- | ---------- |
+| DD-001 | The Living Team System    | DOCUMENTED |
+| DD-002 | The Living History System | DOCUMENTED |
 
 ---
 

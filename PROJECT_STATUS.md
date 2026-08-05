@@ -22,3 +22,42 @@
 3. Build the collapse timeline.
 4. Define the opening campaign.
 5. Create first factions and locations.
+
+# Current Milestone
+
+## Foundation v1.0
+
+Status: COMPLETE
+
+Foundation establishes the identity, philosophy and design direction of Project Ascension.
+
+Completed documents:
+
+- README
+- Vision
+- Creative Pillars
+- Design Principles
+- Design Decisions
+- Project Knowledge Base
+- Project Structure
+- Academy Structure
+
+Foundation v1.0 should now be considered stable.
+
+Future improvements are expected, but changes should be made carefully and only when they strengthen the project.
+
+---
+
+# Next Milestone
+
+World Architecture
+
+The next phase focuses on transforming the design philosophy into a living world.
+
+Primary goals:
+
+- Canon
+- Aurora Bible
+- Character System
+- Living Campaign Engine
+- USA World Building

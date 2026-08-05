@@ -341,3 +341,163 @@ The goal is to create believable human beings.
 | Version | Date | Description |
 |---------|------|-------------|
 | 0.1 | 2026-08-03 | Initial Design Decision |
+
+---
+
+# Design Decision DD-002
+
+## Title
+
+The Living History System
+
+---
+
+## Status
+
+DESIGN
+
+---
+
+## Problem
+
+Traditional roleplaying games often treat history as static.
+
+The world has a fixed past, a fixed present and a fixed future.
+
+Player actions usually affect only their own campaign.
+
+Project Ascension aims to create a world where history itself feels alive.
+
+---
+
+## Decision
+
+Project Ascension distinguishes between different layers of history.
+
+Some historical events are universal and never change.
+
+Other events may differ between campaigns.
+
+Player actions should have the potential to become part of future history.
+
+History is therefore not only something players discover.
+
+It is something they help create.
+
+---
+
+## Historical Layers
+
+### Universal History
+
+Events that define the universe itself.
+
+Examples include:
+
+- The creation of Aurora.
+- The Collapse.
+- The end of the old global society.
+
+These events are immutable.
+
+---
+
+### Regional History
+
+History that may differ between locations.
+
+Examples include:
+
+- Which settlements survived.
+- Which factions gained influence.
+- Local conflicts.
+- Community traditions.
+
+Different campaigns may produce different regional histories.
+
+---
+
+### Campaign Legacy
+
+The actions of one group may become historical traces for future groups.
+
+Examples include:
+
+- Hidden journals.
+- Research notes.
+- Radio recordings.
+- Landmarks.
+- Graves.
+- Safe houses.
+- Symbols.
+- Scientific discoveries.
+
+Future campaigns may discover these remnants without necessarily knowing who created them.
+
+---
+
+## Why
+
+History becomes something players participate in rather than simply observe.
+
+The world feels older than the players.
+
+Every campaign has the possibility of leaving a meaningful legacy.
+
+---
+
+## Benefits
+
+- Stronger immersion.
+- Greater replayability.
+- Emotional attachment.
+- Living world continuity.
+- Community storytelling.
+
+---
+
+## Risks
+
+An unrestricted legacy system could eventually create contradictory world histories.
+
+To avoid this, Universal History always remains fixed while Campaign Legacy only affects appropriate historical layers.
+
+---
+
+## Future Questions
+
+Should campaigns be able to influence events decades into the future?
+
+How much historical information should later groups be able to discover?
+
+Should player-created history ever become official canon?
+
+---
+
+## Documents Affected
+
+- Canon
+- The Collapse
+- Living Campaign Engine
+- Story Framework
+- World Ledger
+
+---
+
+## Creative Director Notes
+
+Project Ascension should not merely tell stories.
+
+It should preserve them.
+
+Players should occasionally discover evidence that another group once stood exactly where they are now.
+
+History should feel personal.
+
+---
+
+## Revision History
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 0.1 | 2026-08-04 | Initial Design Decision created. |
