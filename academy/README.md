@@ -190,6 +190,8 @@ The documentation becomes the textbook.
 
 The development becomes the practical exercise.
 
+The conversations become the teachers.
+
 ---
 
 # Our Mission
@@ -214,6 +216,60 @@ We are learning exactly what is needed to build something extraordinary.
 
 ---
 
+# Motto
+
+> Build the world.
+>
+> Trust the story.
+>
+> Learn by creating.
+
+---
+
+# Beyond Knowledge
+
+The Academy documents more than technical skills.
+
+It captures the evolution of ideas.
+
+As Project Ascension grows, many of the most valuable lessons will not be about programming or game design.
+
+They will be about creative thinking.
+
+Why certain ideas survived.
+
+Why others were abandoned.
+
+How discussions shaped the world.
+
+How philosophy influenced design.
+
+The Academy is therefore not only a place to learn technology.
+
+It is a place to learn how believable worlds are created.
+
+---
+
+# Creative Journey
+
+Every major breakthrough in Project Ascension should eventually be reflected inside the Academy.
+
+Not as a celebration of the final result.
+
+But as a record of the thinking that made it possible.
+
+Future contributors should understand not only what decisions were made, but why they were made.
+
+Ideas evolve.
+
+The Academy preserves that evolution.
+
+---
+
+# Long-Term Vision
+
+...
+
 # Long-Term Vision
 
 When Project Ascension reaches completion, this Academy should contain the complete journey from the very first idea to a fully realized world.
@@ -232,8 +288,49 @@ It grows with it.
 
 ---
 
+---
+
+# Beyond Knowledge
+
+The Academy documents more than technical skills.
+
+It captures the evolution of ideas.
+
+As Project Ascension grows, many of the most valuable lessons will not be about programming or game design.
+
+They will be about creative thinking.
+
+Why certain ideas survived.
+
+Why others were abandoned.
+
+How discussions shaped the world.
+
+How philosophy influenced design.
+
+The Academy is therefore not only a place to learn technology.
+
+It is a place to learn how believable worlds are created.
+
+---
+
+# Creative Journey
+
+Every major breakthrough in Project Ascension should eventually be reflected inside the Academy.
+
+Not as a celebration of the final result.
+
+But as a record of the thinking that made it possible.
+
+Future contributors should understand not only what decisions were made, but why they were made.
+
+Ideas evolve.
+
+The Academy preserves that evolution.
+
 # Revision History
 
 | Version | Date | Description |
 |---------|------|-------------|
-| 0.1 | 2026-08-03 | Initial Academy README |
+| 0.1 | 2026-08-06 | Initial Academy README |
+

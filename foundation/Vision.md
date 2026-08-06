@@ -12,6 +12,19 @@
 
 > **"Build the world. Trust the story."**
 
+## Project Motto
+
+> **Project Ascension is not a prediction.**
+>
+> **It is a conversation about tomorrow.**
+
+This statement defines the purpose of Project Ascension.
+
+The project does not attempt to predict the future.
+
+Instead, it invites players to explore one believable future and reflect on the choices humanity makes today.
+
+Every campaign, every settlement and every character should contribute to that conversation.
 ---
 
 # Purpose
