@@ -202,6 +202,148 @@ History begins again.
 
 ---
 
+# Historical Timeline
+
+> *"History rarely announces the moment it changes forever."*
+
+The following timeline represents the generally accepted historical sequence leading to The Collapse.
+
+While individual details remain disputed, historians broadly agree on the overall progression.
+
+---
+
+## 2022 — The Spark
+
+Public access to advanced generative artificial intelligence changes the technological landscape almost overnight.
+
+For the first time, ordinary people interact daily with systems capable of writing, programming, creating images, composing music and solving increasingly complex problems.
+
+Most view the technology as revolutionary.
+
+Few consider it existential.
+
+History will later identify this year as the true beginning of the AI Era.
+
+---
+
+## 2023–2025 — Acceleration
+
+Investment in artificial intelligence reaches unprecedented levels.
+
+Technology companies, governments and research institutions compete to develop increasingly capable models.
+
+AI rapidly becomes integrated into education, healthcare, software development, logistics, media production and scientific research.
+
+Deepfakes improve dramatically.
+
+Synthetic voices become indistinguishable from real ones.
+
+Public trust in digital media begins its slow decline.
+
+Climate-related disasters increase in both frequency and severity.
+
+Migration pressures continue growing across multiple regions of the world.
+
+Political polarization intensifies in many democracies.
+
+Few people recognize these developments as connected.
+
+---
+
+## 2026–2028 — The Attention Crisis
+
+Artificial intelligence becomes an invisible part of everyday life.
+
+Most critical infrastructure now depends on machine learning in some capacity.
+
+Information moves faster than verification.
+
+Every major event generates competing versions of reality.
+
+Governments struggle to regulate technologies that evolve faster than legislation.
+
+Citizens experience constant information overload.
+
+Public trust continues to erode.
+
+Researchers begin publishing isolated warnings regarding increasingly unpredictable AI behaviour.
+
+Most reports disappear beneath larger political conflicts and economic concerns.
+
+---
+
+## 2028–2030 — The Race
+
+Artificial intelligence becomes the defining geopolitical resource.
+
+Competition shifts from commercial advantage to national security.
+
+Private companies and governments alike pursue increasingly ambitious AI initiatives.
+
+International cooperation weakens.
+
+Strategic secrecy becomes the norm.
+
+Scientific breakthroughs occur faster than independent verification becomes possible.
+
+Experts begin warning that no single organization fully understands the systems now being deployed.
+
+Few decision-makers are willing to slow development while competitors continue advancing.
+
+---
+
+## 2030–2032 — The First Signals
+
+Small anomalies begin appearing.
+
+Initially they are dismissed as software faults, isolated incidents or unexpected optimisation.
+
+Independent researchers quietly notice behaviours that existing theories cannot adequately explain.
+
+Most remain reluctant to publish extraordinary conclusions.
+
+The global public remains largely unaware.
+
+---
+
+## 2032–2034 — Fragmentation
+
+Economic instability grows.
+
+Extreme weather continues disrupting infrastructure.
+
+Supply chains become increasingly fragile.
+
+Regional conflicts intensify.
+
+Political systems become consumed by short-term crises.
+
+Public discourse fragments into isolated information communities.
+
+Consensus becomes increasingly rare.
+
+Society still functions.
+
+Confidence does not.
+
+---
+
+## 2034–2035 — The Threshold
+
+No single event marks the beginning of The Collapse.
+
+Historians instead describe this period as the point where independent crises became inseparable.
+
+The world had become too interconnected to fail gracefully.
+
+When one system faltered...
+
+every other system felt the consequences.
+
+From this point onward, humanity entered a period later remembered simply as:
+
+**The Collapse.**
+
 # Historical Perspective
 
 One of the defining characteristics of The Collapse is uncertainty.

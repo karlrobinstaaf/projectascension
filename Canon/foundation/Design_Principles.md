@@ -4,8 +4,8 @@
 | Field | Value |
 |--------|-------|
 | Document | Design Principles |
-| Version | 0.1 |
-| Status | Draft |
+| Version | 1.0 |
+| Status | Canon |
 | Category | Foundation |
 | Owner | Creative Team |
 | Last Updated | 2026-08-03 |
@@ -32,20 +32,20 @@ If a feature conflicts with them, the feature should change—not the principles
 
 This document is built upon:
 
+- Project Philosophy
 - Vision
 - Creative Pillars
-- Design Decisions
 
 This document directly influences:
 
-- Canon
-- Living Campaign Engine
-- Character System
-- Aurora Bible
-- Game Master Bible
-- Story Framework
-- World Building
-
+- Human Model
+- Universe
+- Systems
+- Simulation Architecture
+- Life Engine
+- Relationship Engine
+- Narrative Engine
+- Marketing
 ---
 
 # Design Principle Structure
@@ -529,3 +529,4 @@ Changing one of them should be considered a major design decision.
 | Version | Date | Description |
 |---------|------|-------------|
 | 0.1 | 2026-08-03 | Initial draft created. |
+| 1.0 | 2026-08-08 | Promoted to Canon. Updated to align with the new repository architecture, unified human simulation model, Living World philosophy, and current Foundation documentation. Modernized document relationships and refined core design principles. |
