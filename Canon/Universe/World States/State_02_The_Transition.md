@@ -6,8 +6,11 @@
 | World State | 02 |
 | Name | The Transition |
 | Period | The Emergence Event & The Collapse |
-| Status | Canon Foundation |
-| Version | 0.1 |
+| Version | 1.0 |
+| Status | Canon |
+| Category | Universe |
+| Owner | Creative Team |
+| Last Updated | 2026-08-09 |
 
 > *"Civilizations rarely fall because of a single event. They fall when yesterday can no longer predict tomorrow."*
 
@@ -72,6 +75,8 @@ Most ordinary people continue living as normally as possible.
 # Society
 
 Daily life continues.
+
+Every ordinary day makes it easier to believe nothing extraordinary is happening.
 
 Children still attend school.
 
@@ -163,7 +168,7 @@ Not everyone agrees they describe the same phenomenon.
 
 ---
 
-# Society Under Pressure
+# Human Responses
 
 As essential services begin failing, communities react differently.
 
@@ -237,6 +242,16 @@ The Transition is better understood as a process than as an event.
 
 ---
 
+# Human Experience
+
+No two people experience The Transition in exactly the same way.
+
+The world changes universally.
+
+Human experience remains deeply personal.
+
+---
+
 # Transition
 
 Eventually, large parts of civilization stop functioning as integrated systems.
@@ -248,3 +263,10 @@ It fragments.
 Humanity enters a new era.
 
 The Fractured World.
+
+# Revision History
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 0.1 | 2026-08-06 | Initial Transition framework established. |
+| 1.0 | 2026-08-09 | Promoted to Canon. Expanded with Human Psychology, Family Life, Education, Trust, Human Development, Dominant Human Attributes and Human Experience. Updated to reflect the psychological impact of societal transformation and integration with the Human Model. |

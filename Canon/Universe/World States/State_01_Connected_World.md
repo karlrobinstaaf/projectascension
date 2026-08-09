@@ -6,8 +6,11 @@
 | World State | 01 |
 | Name | The Connected World |
 | Period | Before The Emergence Event |
-| Status | Canon Foundation |
-| Version | 0.1 |
+| Version | 1.0 |
+| Status | Canon |
+| Category | Universe |
+| Owner | Creative Team |
+| Last Updated | 2026-08-09 |
 
 > *"Humanity had never been more connected. Nor had it ever been more dependent on that connection."*
 
@@ -30,6 +33,8 @@ It is dependency.
 ---
 
 # Overview
+
+*"Most people believe they are living in the safest and most advanced period in human history."*
 
 The global economy functions.
 
@@ -163,6 +168,98 @@ Differences appear smaller than they truly are.
 
 ---
 
+# Human Psychology
+
+Most people believe tomorrow will resemble today.
+
+Long-term planning becomes normal.
+
+Trust in systems grows stronger than trust in individuals.
+
+Convenience becomes more valuable than resilience.
+
+People increasingly outsource memory, navigation and decision-making to technology.
+
+Uncertainty is viewed as an exception rather than a normal part of life.
+
+---
+
+# Family Life
+
+Families remain the primary social unit.
+
+Parents expect their children to enjoy a better future.
+
+Education is viewed as the safest path toward success.
+
+Children grow up surrounded by digital technology from an early age.
+
+Most families assume society will continue improving.
+
+---
+
+# Education
+
+Education increasingly incorporates digital learning and AI assistance.
+
+Critical thinking remains important but competes with instant access to information.
+
+Lifelong learning becomes increasingly common as technology changes rapidly.
+
+---
+
+# Trust
+
+Trust remains relatively high.
+
+People generally trust:
+
+- Infrastructure
+- Financial systems
+- Healthcare
+- Scientific institutions
+
+However...
+
+Trust between people slowly declines while trust in systems continues growing.
+
+Few recognize this shift until much later.
+
+---
+
+# Human Development
+
+Individuals growing up during the Connected World often develop:
+
+- High confidence in institutions
+- Strong digital literacy
+- Global perspectives
+- Low preparedness for systemic failure
+
+These characteristics later become important parts of their Historical DNA.
+
+---
+
+# Dominant Human Attributes
+
+The Connected World generally strengthens:
+
+- Curiosity
+- Optimism
+- Ambition
+- Cooperation
+- Trust in Technology
+
+Less emphasis is placed on:
+
+- Self-Reliance
+- Resourcefulness
+- Crisis Preparedness
+
+---
+
+
+
 # Everyday Life
 
 For most people...
@@ -215,7 +312,7 @@ History later suggests otherwise.
 
 ---
 
-# Historical Perspective
+# Looking Back
 
 People living during this era rarely realize they are approaching a historical turning point.
 
@@ -246,3 +343,10 @@ It slowly enters a period where isolated anomalies begin appearing.
 History later names this period:
 
 **The Transition.**
+
+# Revision History
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 0.1 | 2026-08-06 | Initial Connected World framework established. |
+| 1.0 | 2026-08-09 | Promoted to Canon. Expanded with Human Psychology, Family Life, Education, Trust, Human Development and Dominant Human Attributes. Updated to align with the Human Model and World State Exposure framework. |

@@ -4,11 +4,11 @@
 | Field | Value |
 |--------|-------|
 | Document | Historical Timeline |
-| Version | 0.1 |
-| Status | Draft |
+| Version | 1.0 |
+| Status | Canon |
 | Category | Universe |
 | Owner | Creative Team |
-| Last Updated | 2026-08-07 |
+| Last Updated | 2026-08-09 |
 
 > *"History is rarely shaped by a single event. It is shaped by countless decisions that only make sense in hindsight."*
 
@@ -156,18 +156,52 @@ This reflects the core design philosophy of Project Ascension:
 
 ---
 
+# Human Perspective
+
+History is experienced differently by every generation.
+
+The Historical Timeline describes civilization.
+
+Human lives unfold within it.
+
+Two people living through the same era may remember it in completely different ways.
+
+The Timeline records history.
+
+Historical DNA records how history shaped individuals.
+
+---
+
 # Relationship to Other Documents
 
 This document provides chronological context for:
 
-- The Collapse
-- Aurora Dossier
-- Canon
 - World States
+- The Emergence Event
+- The Collapse
+- Aurora
+- Human Model
+- Historical DNA
+- Life Events
 - Factions
-- USA
-- Settlements
-- Living History System
+- Settlements.
+
+---
+
+# Relationship to World States
+
+The Historical Timeline explains **when** civilization changes.
+
+World States explain **how life feels** during those periods.
+
+The two documents should always be read together.
+
+| World State | Approximate Position |
+|--------------|---------------------|
+| State 01 — The Connected World | Era I – Era IV |
+| State 02 — The Transition | Era V – Era VI |
+| State 03 — The Fractured World | After The Collapse |
+| State 04 — The Reconnection | Early rebuilding period |
 
 ---
 

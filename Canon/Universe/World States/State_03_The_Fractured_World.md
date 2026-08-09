@@ -2,16 +2,16 @@
 
 # World State 03 — The Fractured World
 
-| Field        | Value               |
-| ------------ | ------------------- |
-| World State  | 03                  |
-| Name         | The Fractured World |
-| Period       | After the Collapse  |
-| Status       | Draft               |
-| Version      | 0.1                 |
-| Category     | World Architecture  |
-| Owner        | Creative Team       |
-| Last Updated | 2026-08-06          |
+| Field | Value |
+|--------|-------|
+| World State | 03 |
+| Name | The Fractured World |
+| Period | After the Collapse |
+| Version | 1.0 |
+| Status | Canon |
+| Category | Universe |
+| Owner | Creative Team |
+| Last Updated | 2026-08-09 |
 
 > *“The world did not end. It became smaller.”*
 
@@ -42,6 +42,8 @@ This is the primary World State for many Project Ascension campaigns.
 The Fractured World is not a wasteland.
 
 It is a world of disconnected realities.
+
+It is a civilization learning to live without certainty.
 
 A functioning town may exist less than fifty miles from a starving community.
 
@@ -440,6 +442,94 @@ Every society contains both strengths and costs.
 
 ---
 
+# Human Psychology
+
+The Fractured World changes how people perceive uncertainty.
+
+Uncertainty is no longer exceptional.
+
+It becomes normal.
+
+People rely less on distant institutions and increasingly trust personal experience, local knowledge and close relationships.
+
+Children growing up during this era often develop practical confidence rather than institutional confidence.
+
+The question is no longer:
+
+"Who is responsible?"
+
+Instead it becomes:
+
+"Who do I trust?"
+
+---
+
+# Trust
+
+Trust becomes highly local.
+
+Trust is earned through actions rather than titles.
+
+People often trust:
+
+- family
+- neighbours
+- local leaders
+- long-term trading partners
+
+Far less than they trust:
+
+- governments
+- distant authorities
+- unknown travellers
+- digital information
+
+Reputation becomes one of society's most valuable resources.
+
+---
+
+# Human Development
+
+Individuals shaped by the Fractured World often develop:
+
+- Self-Reliance
+- Practical Intelligence
+- Adaptability
+- Community Loyalty
+- Situational Awareness
+
+Many also develop:
+
+- Distrust
+- Trauma
+- Territorial Thinking
+
+Historical DNA formed during this era varies dramatically between communities.
+
+Growing up in two different settlements may produce entirely different worldviews despite living during the same World State.
+
+---
+
+# Dominant Human Attributes
+
+The Fractured World generally strengthens:
+
+- Resilience
+- Resourcefulness
+- Loyalty
+- Courage
+- Adaptability
+
+While reducing:
+
+- Institutional Trust
+- Predictability
+- Global Identity
+
+The exact balance depends heavily upon local culture and personal experience.
+
+---
+
 # Faith and Meaning
 
 The Collapse does not eliminate religion, philosophy or ideology.
@@ -815,6 +905,24 @@ Where survival has produced thousands of different answers.
 
 ---
 
+# Human Experience
+
+The Fractured World is experienced differently by every community.
+
+Some remember loss.
+
+Some discover freedom.
+
+Some build hope.
+
+Some inherit fear.
+
+For many people born during this era, the Fractured World is not a temporary crisis.
+
+It is simply home.
+
+---
+
 # Transition Toward Reconnection
 
 The Fractured World is not static.
@@ -867,6 +975,9 @@ That question marks the beginning of the next World State.
 
 # Revision History
 
-| Version | Date       | Description                                    |
-| ------- | ---------- | ---------------------------------------------- |
-| 0.1     | 2026-08-06 | Initial Fractured World framework established. |
+# Revision History
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 0.1 | 2026-08-06 | Initial Fractured World framework established. |
+| 1.0 | 2026-08-09 | Promoted to Canon. Expanded with Human Psychology, Trust, Human Development, Dominant Human Attributes and Human Experience. Refined to emphasize local societies, human adaptation and the relationship between World States and Historical DNA. |

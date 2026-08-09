@@ -1,8 +1,19 @@
 # The Living Campaign Engine
+# Legacy Overview
 
-The story does not control the simulation. The simulation produces the story.
+> Status: Deprecated / Reference Only
 
-## Engines
+This document reflects an earlier architectural concept for the Living Campaign Engine.
+
+The current canonical structure is defined in:
+
+`Canon/Systems/Living_Campaign_Engine/README.md`
+
+The engine names and update cycle below are retained temporarily as design reference until their remaining useful concepts have been migrated into the current system architecture.
+
+---
+
+## Legacy Engines
 
 - World Engine
 - Aurora Engine
@@ -13,7 +24,9 @@ The story does not control the simulation. The simulation produces the story.
 - Butterfly Engine
 - Storytelling Engine
 
-## Daily Update Cycle
+---
+
+## Legacy Daily Update Cycle
 
 1. Advance time
 2. Update weather and environment
@@ -25,3 +38,11 @@ The story does not control the simulation. The simulation produces the story.
 8. Trigger world events
 9. Update delayed consequences
 10. Write to the World Ledger
+
+---
+
+## Migration Note
+
+The concepts in this file should be reviewed against the current Living Campaign Engine architecture before this file is removed.
+
+Once all useful concepts have been migrated, this file may be deleted.
