@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aurora-validation-harness"
+version = "0.1.0"
+description = "Deterministic validation harness for Project Ascension's Aurora architecture"
+requires-python = ">=3.12"
+dependencies = []
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+
+[project.scripts]
+aurora-validation-harness = "aurora_validation_harness.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.2,<2",
+    "mypy>=1.13,<2",
+    "pytest>=8.3,<10",
+    "pytest-cov>=5,<8",
+    "ruff>=0.8,<1",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["aurora_validation_harness*"]
+
+[tool.pytest.ini_options]
+minversion = "8.3"
+addopts = [
+    "--strict-config",
+    "--strict-markers",
+    "-ra",
+]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "foundation: Aurora Foundation validation scenarios",
+    "isolation: epistemic and information-boundary tests",
+    "metamorphic: paired or grouped metamorphic comparisons",
+    "regression: permanent tests created from confirmed failures",
+    "slow: tests excluded from the default fast feedback loop",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["aurora_validation_harness"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+skip_covered = true
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+pretty = true
+show_error_codes = true
+warn_unreachable = true
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "B",
+    "E",
+    "F",
+    "I",
+    "RUF",
+    "SIM",
+    "UP",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
