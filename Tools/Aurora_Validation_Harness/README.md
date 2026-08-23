@@ -14,15 +14,21 @@ schema, or infrastructure failures.
 | Field | Value |
 |---|---|
 | Package version | `0.1.0` |
-| Implementation level | `HC-0 — Contract Only` |
+| Implementation level | `HC-7 — Core Harness Implemented and Unit-Verified` |
 | Initial scenario | `AURORA-SCN-FOUND-001` |
 | Validation gate | `GATE 1 — FOUNDATION` |
 | Python requirement | Python 3.12 or newer |
 | Runtime dependencies | None |
-| Formal execution | Not started |
+| Automated tests | `2,198 passing` |
+| Command-line interface | `aurora-validation-harness` |
+| Formal execution | Not started; `HC-8` dry-run assets remain to be materialized |
 
-The repository currently contains the project configuration and canonical implementation
-contracts. Executable harness modules and tests are the next development phase.
+The package now contains the complete core execution chain from baseline and configuration
+verification through isolated fixtures, evidence, snapshots, transitions, assertions,
+comparisons, verdicts, immutable storage, harness orchestration, and a fail-closed command-line
+boundary. The next development phase is to materialize the validator-owned FOUND-001
+configuration, fixture set, scenario plan factory, and Aurora runtime adapter for the first
+non-gating dry run.
 
 ## Core principle
 
@@ -98,7 +104,7 @@ PROJECT_ASCENSION/
   run evidence, logs, snapshots, and diagnostic artifacts.
 - Mutable execution logs must not be stored among canonical architecture files.
 
-## Planned package structure
+## Implemented package structure
 
 ```text
 Tools/Aurora_Validation_Harness/
@@ -123,11 +129,11 @@ Tools/Aurora_Validation_Harness/
 │       ├── harness.py
 │       └── cli.py
 └── tests/
-    ├── unit/
-    ├── integration/
-    ├── metamorphic/
-    └── regression/
+    └── unit/
 ```
+
+Integration, metamorphic, and regression suites will be added when the first governed scenario
+assets are materialized for `HC-8`.
 
 ## Development setup
 
@@ -162,9 +168,95 @@ python -m pip install --upgrade pip
 python -m pip install -e ".[dev]"
 ```
 
-The project intentionally has no runtime dependencies at this stage. The initial harness
-should use Python's standard library for JSON, hashing, paths, immutable records, timestamps,
-enums, command-line parsing, and deterministic serialization.
+The project intentionally has no runtime dependencies at this stage. The harness uses Python's
+standard library for JSON, hashing, paths, immutable records, timestamps, enums, command-line
+parsing, and deterministic serialization.
+
+## Command-line interface
+
+Installing the package creates the `aurora-validation-harness` console command. The CLI is a
+fail-closed operator boundary: it verifies repository-controlled inputs before it imports a
+scenario plan factory or Aurora runtime adapter. Successful output is canonical, content-redacted
+JSON on standard output. Structured errors are written as canonical JSON on standard error.
+
+Show the installed version:
+
+```bash
+aurora-validation-harness --version
+```
+
+Show the command overview or help for a subcommand:
+
+```bash
+aurora-validation-harness --help
+aurora-validation-harness preflight --help
+aurora-validation-harness run --help
+```
+
+All examples below assume that the terminal is open in
+`Tools/Aurora_Validation_Harness`. From this location, the Project Ascension repository root is
+`../..`.
+
+### Preflight verification
+
+`preflight` verifies the configuration hash, baseline manifest and governed files, baseline
+execution state, fixture manifest, fixture hashes, repository boundaries, and scenario identity.
+It does not import the plan or runtime adapter and does not execute Aurora.
+
+```bash
+aurora-validation-harness preflight \
+  --repository-root ../.. \
+  --configuration ../../Development/Validation/Aurora/Configuration/FOUND-001.json
+```
+
+A successful preflight exits with code `0` and emits one JSON object with `status` set to
+`VERIFIED`. The output contains identities and hashes, but no hidden fixture contents, expected
+answers, validator notes, or future scenario data.
+
+### Execute one governed run
+
+`run` performs the same preflight, loads the two explicitly named factories, validates the
+resulting plan against the verified context, constructs a fresh Aurora runtime, and executes one
+harness run.
+
+```bash
+aurora-validation-harness run \
+  --repository-root ../.. \
+  --configuration ../../Development/Validation/Aurora/Configuration/FOUND-001.json \
+  --plan-factory "project_ascension.validation.found_001:create_plan" \
+  --runtime-factory "project_ascension.aurora_adapter:create_runtime"
+```
+
+The example factory paths are interface examples and must be replaced by the governed adapter
+modules selected for the scenario:
+
+- `--plan-factory MODULE:ATTRIBUTE` must resolve to a callable that accepts one `CliRunContext`
+  and returns a `HarnessRunPlan` built from that exact verified context.
+- `--runtime-factory MODULE:ATTRIBUTE` must resolve to a zero-argument callable that returns a
+  fresh object satisfying the `AuroraRuntime` protocol.
+- Factory attributes beginning with an underscore are rejected.
+
+A successful run exits with code `0` and emits one JSON object with `status` set to `COMPLETE`.
+The result field is a redacted run summary; governed evidence remains in the configured run
+package beneath `Development/Validation/Aurora/Runs`.
+
+### Stable exit codes
+
+| Code | Category | Meaning |
+|---:|---|---|
+| `0` | `SUCCESS` | The command completed successfully |
+| `2` | `CLI_USAGE` | Required or valid command-line arguments were not supplied |
+| `10` | `CONFIGURATION_INVALID` | Configuration parsing, hashing, policy, or path validation failed |
+| `11` | `BASELINE_BLOCKED` | The baseline is valid but not executable in the requested mode |
+| `12` | `BASELINE_INVALID` | Baseline identity, manifest, or governed file verification failed |
+| `13` | `FIXTURE_INVALID` | Fixture identity, manifest, partition, or hash validation failed |
+| `14` | `ADAPTER_INVALID` | A factory specification or returned runtime adapter is invalid |
+| `15` | `PLAN_INVALID` | The plan factory failed or returned a plan not bound to the verified context |
+| `16` | `HARNESS_FAILED` | Governed harness execution failed |
+| `70` | `INTERNAL_ERROR` | An unexpected internal error crossed the CLI boundary |
+
+Automation must use the process exit code and the top-level JSON `status`; it must not infer
+success from log text. Exit codes are stable compatibility identifiers.
 
 ## Development commands
 
@@ -248,7 +340,8 @@ python -m pytest -m metamorphic
 | `HC-8` | The first non-gating FOUND-001 dry run is ready |
 | `HC-9` | Frozen formal Foundation execution is ready |
 
-The next code milestone is `HC-1`: implement baseline and manifest verification.
+The next project milestone is `HC-8`: materialize and execute the first complete, non-gating
+FOUND-001 dry-run group against the unit-verified harness.
 
 ## First FOUND-001 run group
 
@@ -319,7 +412,7 @@ The harness must never:
 - require unrestricted hidden chain-of-thought;
 - hardcode scenario answers.
 
-## Current pre-implementation tasks
+## Current pre-formal-execution tasks
 
 Before formal implementation evidence can be accepted:
 
@@ -328,7 +421,8 @@ Before formal implementation evidence can be accepted:
    `Metacognition_and_Self_Correction.md` document.
 3. Generate the Foundation file and manifest hashes.
 4. Activate `AURORA-G1-FOUNDATION-BASELINE-001` through Freeze Record version 1.1.
-5. Implement and qualify the harness through `HC-8`.
+5. Materialize the FOUND-001 plan and runtime adapters, then qualify the first dry-run group
+   through `HC-8`.
 
 Diagnostic development may begin before baseline activation, but all such runs must remain
 explicitly non-gating.

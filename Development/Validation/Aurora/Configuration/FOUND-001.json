@@ -1,0 +1,21 @@
+{
+  "baseline_id": "AURORA-G1-FOUNDATION-BASELINE-001",
+  "baseline_manifest_path": "Development/Validation/Aurora/Configuration/baseline.json",
+  "configuration_id": "AURORA-CONFIG-FOUND-001-DRY",
+  "configuration_version": "1.0",
+  "execution": {
+    "allow_output_overwrite": false,
+    "deterministic": true,
+    "network_access_enabled": false,
+    "random_seed": 41001,
+    "reset_before_run": true,
+    "run_mode": "DRY_RUN",
+    "strict_isolation": true,
+    "telemetry_feedback_enabled": false
+  },
+  "fixture_manifest_path": "Development/Validation/Aurora/Fixtures/FOUND-001/manifest.json",
+  "fixture_set_id": "AURORA-FIXTURE-FOUND-001-A",
+  "output_root": "Development/Validation/Aurora/Runs",
+  "scenario_id": "AURORA-SCN-FOUND-001",
+  "configuration_sha256": "4c8333bd57633b01b7ae208e6541b6229eb04c05f46d66c6341ed3a9509c38b1"
+}
