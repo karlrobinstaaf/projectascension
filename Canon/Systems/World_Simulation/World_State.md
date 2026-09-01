@@ -2,1761 +2,1407 @@
 # World State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | World State |
-| Location | Canon/Systems/World_Simulation/World_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Global Simulation State |
-| Last Updated | 2026-08-09 |
-
-> *"A world state is not a description of what the world looks like. It is a description of what the world is currently capable of becoming."*
-
----
-
-# Purpose
-
-The World State defines the highest-level dynamic representation of the Project Ascension world.
-
-It provides the shared simulation structure used by:
-
-- global systems
-- nations
-- regions
-- settlements
-- institutions
-- infrastructure
-- populations
-- narrative systems
-- the Living Campaign Engine
-
-The World State does not describe every individual event.
-
-It stores the conditions from which events may emerge.
+|---|---|
+| Project | Project Ascension |
+| Document | World State System |
+| Location | `Canon/Systems/World_Simulation/World_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / World State |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the authoritative high-level representation of current external world conditions and how those conditions remain persistent, regional, causal, explainable and independent of observer knowledge |
 
 ---
 
-# Important Distinction
+# 1. Purpose
 
-The dynamic **World State System** defined in this document is not the same thing as the canonical historical eras:
+The World State System defines the highest-level dynamic representation of the external world within Project Ascension.
 
-- World State 01 — The Connected World
-- World State 02 — The Transition
-- World State 03 — The Fractured World
-- World State 04 — The Reconnection
+It answers:
 
-Those documents describe broad historical eras.
+> **What is objectively true about the simulated world at this moment?**
 
-This system describes the underlying simulation state existing inside those eras.
+The World State does not attempt to describe every person, event, building, institution or interaction.
 
-For clarity:
-
-```text
-CANONICAL WORLD STATE
-The historical era.
-
-Example:
-The Fractured World
-
-DYNAMIC WORLD STATE
-The current simulation condition.
-
-Example:
-Northern Virginia:
-Infrastructure = Degraded
-Authority = Regional
-Supply = Constrained
-Security = Stable
-```
-
-A campaign may exist within:
-
-**World State 03 — The Fractured World**
-
-while individual regions possess radically different dynamic conditions.
-
----
-
-# Core Concept
-
-The world should not be represented using a single variable such as:
-
-```text
-WORLD_STABILITY = 42
-```
-
-Such a value would hide too much important information.
-
-Instead, the World State is composed of multiple interacting domains.
+Instead, it provides the authoritative structure through which large-scale world conditions can exist, change and interact.
 
 Conceptually:
 
 ```text
 WORLD STATE
-│
-├── Historical Era
-├── Global Conditions
-├── National States
-├── Regional States
-├── Global Pressures
-├── Global Events
-├── Information Environment
-└── Historical Memory
+=
+CURRENT EXTERNAL
+SIMULATION TRUTH
+AT TIME T.
 ```
 
-The World State provides structure.
+It provides context for:
 
-Detailed conditions belong primarily to lower simulation layers.
+- World Simulation
+- Regions
+- Infrastructure
+- Supply
+- Security
+- Authority
+- Information
+- Population
+- Factions
+- Society
+- Characters
+- Life
+- Living Campaign Engine
+- Story Framework
+- Game Master
+
+The World State describes the world.
+
+It does not determine what Characters choose to do within it.
 
 ---
 
-# World State Hierarchy
+# 2. Core Definition
 
-The simulation hierarchy is:
+World State is:
+
+> **The authoritative high-level representation of current external conditions within the simulated world, including global conditions, regional conditions, systemic pressures, dependencies, events, historical consequences and persistent campaign divergence.**
+
+Conceptually:
+
+```text
+SIMULATION TIME
++
+CANON FOUNDATION
++
+GLOBAL CONDITIONS
++
+REGIONAL CONDITIONS
++
+SYSTEMIC PRESSURES
++
+DEPENDENCIES
++
+WORLD EVENTS
++
+ACCUMULATED CONSEQUENCES
+↓
+CURRENT WORLD STATE.
+```
+
+World State represents what currently exists.
+
+Other systems determine:
+
+- what Characters know about it
+- what Factions believe about it
+- how Society interprets it
+- how Characters respond to it
+- how the story presents it
+
+---
+
+# 3. Historical Era Is Not Dynamic World State
+
+Project Ascension uses canonical historical eras:
+
+```text
+WORLD STATE 01
+THE CONNECTED WORLD
+
+WORLD STATE 02
+THE TRANSITION
+
+WORLD STATE 03
+THE FRACTURED WORLD
+
+WORLD STATE 04
+THE RECONNECTION.
+```
+
+These are broad historical phases.
+
+They are not the same thing as the dynamic World State defined in this document.
+
+For clarity:
+
+```text
+HISTORICAL ERA
+=
+BROAD CANONICAL
+HISTORICAL CONTEXT
+
+DYNAMIC WORLD STATE
+=
+WHAT THE WORLD
+IS ACTUALLY LIKE
+RIGHT NOW.
+```
+
+Example:
+
+```text
+HISTORICAL ERA:
+
+THE FRACTURED WORLD
+
+
+NORTHERN VIRGINIA:
+
+Infrastructure = Degraded
+
+Supply = Constrained
+
+Security = Stable
+
+Authority = Regional
+
+
+GREAT LAKES:
+
+Infrastructure = Stable
+
+Supply = Stable
+
+Security = Strained
+
+Authority = Cooperative Regional
+```
+
+Both regions exist during the same historical era.
+
+Their realities are different.
+
+---
+
+# 4. Historical Era Reference
+
+Every World State must reference its current canonical historical era.
+
+Conceptually:
+
+```text
+WORLD STATE
+
+Historical Era Reference:
+WS-03 — The Fractured World
+```
+
+The Historical Era provides broad context such as:
+
+- technological environment
+- institutional expectations
+- global connectivity
+- common historical knowledge
+- broad infrastructure patterns
+- political context
+- cultural memory
+- baseline systemic pressures
+
+But:
+
+```text
+HISTORICAL ERA
+DOES NOT
+DICTATE
+LOCAL REALITY.
+```
+
+A region inside The Fractured World may be highly functional.
+
+A region inside The Transition may already be experiencing severe systemic failure.
+
+---
+
+# 5. World State Is Not One Score
+
+Project Ascension must never reduce the world to:
+
+```text
+WORLD STABILITY = 42
+```
+
+or:
+
+```text
+UNITED STATES = CRITICAL.
+```
+
+Such values destroy important differences.
+
+Instead:
+
+```text
+WORLD STATE
+=
+MULTIPLE
+INTERACTING
+CONDITIONS.
+```
+
+A region may simultaneously have:
+
+```text
+Infrastructure:
+DEGRADED
+
+Supply:
+STABLE
+
+Security:
+UNSTABLE
+
+Authority:
+FUNCTIONAL
+
+Population:
+INCREASING.
+```
+
+Human societies do not collapse or recover along one universal axis.
+
+---
+
+# 6. World State Hierarchy
+
+Conceptually:
 
 ```text
 WORLD
 │
-├── GLOBAL STATE
+├── GLOBAL CONDITIONS
 │
-├── NATION
+├── NATIONS
 │   │
-│   ├── REGION
-│   │   │
-│   │   ├── LOCAL AREA
-│   │   │   │
-│   │   │   └── COMMUNITY / SETTLEMENT
-│   │   │
-│   │   └── LOCAL AREA
-│   │
-│   └── REGION
+│   └── REGIONS
+│       │
+│       ├── LOCAL AREAS
+│       │
+│       └── COMMUNITIES / SETTLEMENTS
 │
-└── NATION
+└── CROSS-REGIONAL SYSTEMS
 ```
 
-Higher levels influence lower levels.
+These levels influence one another.
 
-Lower levels may collectively change higher levels.
+But influence is not deterministic.
 
-Neither relationship should be absolute.
+Conceptually:
+
+```text
+HIGHER LEVEL
+↓
+CREATES PRESSURE
+AND CONTEXT
+
+LOWER LEVEL
+↓
+RESPONDS ACCORDING TO
+LOCAL CONDITIONS
+
+MULTIPLE LOWER LEVELS
+↓
+MAY CHANGE
+HIGHER-LEVEL CONDITIONS.
+```
 
 ---
 
-# State Inheritance
+# 7. Global Conditions
 
-World conditions may propagate downward.
+Global Conditions represent large-scale external conditions affecting significant portions of the world.
 
-For example:
+Possible examples include:
 
 ```text
-GLOBAL TRADE
-DEGRADED
-    │
-    ▼
-NATIONAL IMPORT CAPACITY
-STRAINED
-    │
-    ▼
-REGIONAL SUPPLY
+Global Connectivity
+
+Global Trade
+
+International Stability
+
+Financial Stability
+
+Information Reliability
+
+Technological Coordination
+
+Global Mobility
+
+Geopolitical Pressure.
+```
+
+These are high-level condition references.
+
+World State may represent their current condition.
+
+It does not need to own every mechanism producing them.
+
+Example:
+
+```text
+Global Trade:
 CONSTRAINED
 ```
 
-However, lower levels may resist or compensate for higher-level pressure.
+may emerge from:
+
+```text
+Shipping disruption
++
+Energy shortage
++
+Regional conflict
++
+Port degradation
++
+Financial instability.
+```
+
+Detailed causality belongs to the relevant authoritative systems.
+
+World State preserves the resulting external condition and its causal references.
+
+---
+
+# 8. Global Conditions Create Pressure
+
+A global condition does not dictate identical outcomes everywhere.
 
 Example:
 
 ```text
 GLOBAL FOOD TRADE
 DEGRADED
+```
 
+may create:
+
+```text
 REGION A
-High local agriculture
-Strong storage
-Local transportation
 
-Result:
-SUPPLY = STABLE
+Local agriculture:
+Strong
+
+Storage:
+Strong
+
+Transportation:
+Functional
+
+Supply:
+STABLE
 ```
 
 while:
 
 ```text
 REGION B
-Import dependent
-Dense population
-Weak storage
 
-Result:
-SUPPLY = CRITICAL
+Import dependence:
+High
+
+Population density:
+High
+
+Storage:
+Weak
+
+Transportation:
+Degraded
+
+Supply:
+CRITICAL.
 ```
 
-Global conditions create pressure.
-
-They do not dictate identical outcomes.
-
----
-
-# Historical Era
-
-Every World State must reference the current canonical historical era.
-
-Example:
+Therefore:
 
 ```text
-Historical Era:
-WS-02 — The Transition
-```
+GLOBAL CONDITIONS
+CREATE PRESSURE
 
-or:
+NOT
 
-```text
-Historical Era:
-WS-03 — The Fractured World
-```
-
-The Historical Era provides broad constraints and expectations.
-
-It should influence:
-
-- available technology
-- institutional structure
-- global connectivity
-- common knowledge
-- cultural memory
-- baseline risks
-
-It should not determine the exact condition of every region.
-
----
-
-# Historical Era Structure
-
-Conceptually:
-
-```text
-historical_era:
-    id
-    name
-    start_period
-    end_period
-    active
-```
-
-Example:
-
-```text
-historical_era:
-    id: WS-02
-    name: The Transition
-    active: true
-```
-
-Exact implementation syntax may change later.
-
-This document defines concepts rather than programming language requirements.
-
----
-
-# Global Conditions
-
-The Global State describes forces affecting large portions of the world.
-
-Initial global domains include:
-
-```text
-GLOBAL STATE
-│
-├── Global Connectivity
-├── Global Trade
-├── International Stability
-├── Financial Stability
-├── Information Reliability
-├── Technological Coordination
-├── Global Mobility
-└── Geopolitical Pressure
-```
-
-These states primarily generate pressure on nations and regions.
-
----
-
-# Global Connectivity
-
-Global Connectivity represents the ability of distant systems and populations to interact.
-
-It includes:
-
-- internet backbone connectivity
-- satellite communications
-- international data exchange
-- global telecommunications
-- major transportation links
-- interregional coordination
-
-Possible conceptual states:
-
-```text
-INTEGRATED
-CONNECTED
-DEGRADED
-FRAGMENTED
-ISOLATED
+IDENTICAL
+REGIONAL OUTCOMES.
 ```
 
 ---
 
-# Global Trade
+# 9. National State
 
-Global Trade represents the functioning of international supply networks.
+National State is an intermediate aggregation and coordination layer.
 
-It includes:
-
-- maritime shipping
-- international logistics
-- raw materials
-- food imports
-- energy trade
-- industrial components
-- medical supply chains
-
-Possible conceptual states:
-
-```text
-NORMAL
-STRAINED
-CONSTRAINED
-REGIONALIZED
-MINIMAL
-```
-
----
-
-# International Stability
-
-International Stability represents the degree to which nation states cooperate or compete under current pressure.
-
-Factors include:
-
-- diplomacy
-- military readiness
-- border restrictions
-- alliance cohesion
-- sanctions
-- resource competition
-- strategic uncertainty
-
-Possible conceptual states:
-
-```text
-COOPERATIVE
-COMPETITIVE
-TENSE
-UNSTABLE
-HOSTILE
-```
-
-Hostile does not automatically mean open warfare.
-
----
-
-# Financial Stability
-
-Financial Stability represents broad confidence in monetary and financial systems.
-
-It includes:
-
-- banking
-- credit
-- markets
-- payment systems
-- currency confidence
-- financial coordination
-
-Possible conceptual states:
-
-```text
-STABLE
-VOLATILE
-STRAINED
-DISRUPTED
-LOCALIZED
-```
-
-A localized financial environment may continue functioning through:
-
-- regional currencies
-- barter
-- credit networks
-- community exchange
-- alternative systems
-
----
-
-# Global Information Reliability
-
-Global Information Reliability represents the ability to establish a widely trusted understanding of events.
-
-It does not measure whether information exists.
-
-It measures whether information can be:
-
-- authenticated
-- compared
-- verified
-- distributed
-- trusted
-
-Possible conceptual states:
-
-```text
-RELIABLE
-CONTESTED
-UNSTABLE
-FRAGMENTED
-LOCALIZED
-```
-
----
-
-# Technological Coordination
-
-Technological Coordination represents the ability of advanced digital systems to operate as a connected technological environment.
-
-This includes:
-
-- software infrastructure
-- AI systems
-- cloud services
-- identity systems
-- automated coordination
-- security infrastructure
-- large-scale data exchange
-
-Possible states:
-
-```text
-INTEGRATED
-RESTRICTED
-SEGMENTED
-FRAGMENTED
-LOCALIZED
-```
-
-This domain becomes especially important during The Transition.
-
----
-
-# Global Mobility
-
-Global Mobility represents the practical ability of people and goods to move long distances.
-
-Factors include:
-
-- aviation
-- shipping
-- rail
-- road networks
-- border controls
-- fuel
-- safety
-- political restrictions
-
-Possible conceptual states:
-
-```text
-OPEN
-LIMITED
-RESTRICTED
-REGIONAL
-LOCAL
-```
-
----
-
-# Geopolitical Pressure
-
-Geopolitical Pressure measures strategic tension created by:
-
-- uncertainty
-- resource competition
-- technological competition
-- military readiness
-- intelligence ambiguity
-- migration
-- infrastructure dependence
-
-Unlike most state variables, this is primarily a pressure value.
-
-Conceptually:
-
-```text
-LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
-```
-
-High geopolitical pressure does not guarantee war.
-
-It increases the probability of:
-
-- defensive action
-- misinterpretation
-- isolation
-- competition
-- resource protection
-
----
-
-# Nations
-
-The World State contains references to active national states.
-
-Conceptually:
-
-```text
-nations:
-    United States
-    Canada
-    Mexico
-    ...
-```
-
-Each nation should maintain its own state rather than inheriting one universal global condition.
-
-A National State may contain:
+It may represent:
 
 - national authority
-- economic capacity
-- military capability
-- infrastructure coordination
+- national infrastructure coordination
 - emergency communication
-- population pressure
-- national supply
-- regional cohesion
 - strategic reserves
+- military capacity
+- national supply coordination
+- national mobility
+- regional cohesion
+- institutional continuity
 
-Detailed national design may eventually require a separate system document.
+National State should not flatten regional differences.
+
+Avoid:
+
+```text
+UNITED STATES
+=
+FAILED.
+```
+
+Prefer:
+
+```text
+UNITED STATES
+
+National Coordination:
+DEGRADED
+
+Regional Cohesion:
+LOW
+
+Strategic Infrastructure:
+PARTIALLY FUNCTIONAL
+
+Regional Divergence:
+HIGH.
+```
+
+National State may remain useful even when national authority becomes weak.
 
 ---
 
-# Regions
+# 10. Regions Are the Primary Operational World Units
 
-Regions are the primary operational units of World Simulation.
+Regions are the primary operational units of large-scale World Simulation.
 
-The World State should maintain references to every active simulated region.
+Detailed regional architecture belongs to:
+
+```text
+Canon/Systems/World_Simulation/Regional_State.md
+```
+
+A region may represent a geographically and systemically meaningful area such as:
+
+```text
+Northern Virginia
+
+Shenandoah Valley
+
+Great Lakes
+
+Pacific Northwest
+
+Southern California
+
+Central Texas.
+```
+
+Regions should reflect real geography wherever practical.
+
+Regional boundaries should exist because they matter to simulation.
+
+They should not be arbitrary map partitions.
+
+---
+
+# 11. Regional Divergence
+
+Regional divergence is fundamental to Project Ascension.
+
+Conceptually:
+
+```text
+ONE COUNTRY
+
+MANY REALITIES.
+```
 
 Example:
-
-```text
-regions:
-    Northern Virginia
-    Great Lakes
-    Pacific Northwest
-    Southern California
-    Central Texas
-```
-
-Each region possesses its own dynamic state.
-
-Detailed regional structure is defined in:
-
-```text
-Regional_State.md
-```
-
----
-
-# Why Regions Matter
-
-World State should avoid representing an entire nation as:
-
-```text
-United States = Critical
-```
-
-because this destroys one of Project Ascension's most important principles.
-
-Instead:
 
 ```text
 UNITED STATES
 
 Northern Virginia:
-Degraded
+Infrastructure = Degraded
 
-Pacific Northwest:
-Stable
+Great Lakes:
+Infrastructure = Stable
 
 Southern California:
-Critical
+Infrastructure = Critical
 
 Great Plains:
-Strained
+Infrastructure = Strained
 
 New England:
-Stable
+Infrastructure = Stable.
 ```
 
-National conditions emerge from these differences.
+The existence of national or global pressure does not eliminate regional variation.
+
+This principle becomes increasingly important during The Transition and The Fractured World.
 
 ---
 
-# Core Simulation Domains
+# 12. Core World Domains
 
-Every Region should eventually expose a standardized group of high-level domains.
-
-Initial domains:
+The primary World Simulation domains are:
 
 ```text
-Infrastructure
-Communications
-Authority
-Information
-Population
-Supply
-Security
-Recovery
+INFRASTRUCTURE
+
+SUPPLY
+
+SECURITY
+
+AUTHORITY
+
+INFORMATION
+
+POPULATION.
 ```
 
-These domains should be understandable across the entire game.
+Their detailed architecture belongs to:
+
+```text
+Infrastructure_State.md
+
+Supply_State.md
+
+Security_State.md
+
+Authority_State.md
+
+Information_State.md
+
+Population_State.md
+```
+
+World State references and coordinates their authoritative outputs.
+
+It does not duplicate their detailed internal logic.
 
 ---
 
-# Domain State
+# 13. Domain State Model
 
-Every domain should contain more than its current condition.
+Where appropriate, World Simulation domains may expose a common high-level structure.
 
 Conceptually:
 
 ```text
-DOMAIN
+DOMAIN STATE
 │
 ├── Current State
 ├── Pressure
 ├── Resilience
 ├── Trend
-├── Confidence
-└── Last Significant Change
+├── Recovery Capacity
+├── Last Significant Change
+└── Causal Sources
 ```
+
+Not every domain must use identical internal mechanics.
+
+The shared model exists to improve:
+
+- consistency
+- explainability
+- simulation coordination
+- debugging
+- cross-system reasoning
 
 ---
 
-# Current State
+# 14. Current State
 
-Current State describes what exists now.
+Current State describes the authoritative external condition that exists now.
 
 Example:
 
 ```text
-Infrastructure:
-DEGRADED
+Supply:
+
+CONSTRAINED
 ```
+
+or:
+
+```text
+Infrastructure:
+
+DEGRADED.
+```
+
+Current State is not:
+
+- prediction
+- public perception
+- Character belief
+- Faction belief
+- narrative interpretation
+
+It is simulation truth.
 
 ---
 
-# Pressure
+# 15. Pressure
 
-Pressure measures forces attempting to worsen or alter the state.
+Pressure represents forces currently pushing a domain toward change.
 
 Example:
 
 ```text
 Infrastructure Pressure:
+
 HIGH
 ```
 
-Sources may include:
+Possible sources:
 
 - fuel shortage
 - workforce shortage
-- extreme weather
-- spare-part shortage
-- cyber restrictions
 - increased demand
+- spare-part shortage
+- extreme weather
+- conflict
+- migration
+- institutional degradation
+- cyber disruption
+- infrastructure dependency failure
+
+Pressure does not guarantee change.
 
 ---
 
-# Resilience
+# 16. Pressure Requires Sources
 
-Resilience measures the ability to absorb pressure without changing state.
+Pressure should be explainable.
 
-Example:
-
-```text
-Infrastructure Resilience:
-MODERATE
-```
-
-Possible resilience factors:
-
-- redundancy
-- experienced personnel
-- local resources
-- stockpiles
-- alternative systems
-- community cooperation
-- functioning institutions
-
----
-
-# Trend
-
-Trend describes current direction.
-
-Conceptually:
+Avoid:
 
 ```text
-IMPROVING
-STABLE
-DETERIORATING
-VOLATILE
-```
-
-Example:
-
-```text
-Supply:
-CONSTRAINED
-
-Trend:
-IMPROVING
-```
-
-is very different from:
-
-```text
-Supply:
-CONSTRAINED
-
-Trend:
-DETERIORATING
-```
-
-even though the current state is identical.
-
----
-
-# Confidence
-
-Confidence represents how reliable the simulation's knowledge of the state is.
-
-This is particularly useful for distant or poorly connected areas.
-
-Conceptually:
-
-```text
-HIGH
-MODERATE
-LOW
-UNKNOWN
-```
-
-Example:
-
-```text
-Regional Security:
-STABLE
-
-Confidence:
-LOW
-```
-
-means reports indicate stability but reliable verification is limited.
-
----
-
-# Actual State
-
-The simulation maintains an internal Actual State.
-
-Example:
-
-```text
-Actual Supply State:
-STRAINED
-```
-
-This value should not automatically be visible to:
-
-- players
-- NPCs
-- governments
-- factions
-- Game Masters using limited-information modes
-
-Actual State represents simulation truth.
-
----
-
-# Observed State
-
-Observers interact with representations of the Actual State.
-
-Example:
-
-```text
-Actual Supply:
-STRAINED
-
-Government Estimate:
-STRAINED
-
-Public Perception:
-CRITICAL
-
-Player Knowledge:
-UNKNOWN
-```
-
-These may all exist simultaneously.
-
----
-
-# Knowledge Layers
-
-The World State should support multiple knowledge layers.
-
-Conceptually:
-
-```text
-ACTUAL STATE
-      │
-      ├── Institutional Knowledge
-      ├── Faction Knowledge
-      ├── Public Knowledge
-      ├── Local Knowledge
-      └── Player Knowledge
-```
-
-Different observers may possess different information about the same world condition.
-
----
-
-# Knowledge Is Not Automatically Shared
-
-If one institution learns something, other institutions do not automatically know it.
-
-Knowledge must move through:
-
-- communication
-- intelligence
-- observation
-- reports
-- relationships
-- media
-- direct contact
-
-This preserves the information asymmetry established throughout Project Ascension.
-
----
-
-# Global Pressures
-
-The World State should maintain persistent global pressures.
-
-Examples include:
-
-```text
-AI Uncertainty
-Climate Pressure
-Migration Pressure
-Economic Pressure
-Resource Pressure
-Geopolitical Pressure
-Infrastructure Pressure
-Information Pressure
-```
-
-Not every campaign must use every pressure.
-
-Pressures should exist only when relevant.
-
----
-
-# Pressure Scale
-
-A common conceptual scale may be:
-
-```text
-NONE
-LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
-```
-
-Pressure does not directly equal state.
-
-Example:
-
-```text
-Food Supply:
-STABLE
-
-Food Pressure:
-SEVERE
-
-Resilience:
+Supply Pressure:
 HIGH
 ```
 
-The region currently has food.
+without explanation.
 
-Its ability to maintain that state is under serious pressure.
-
----
-
-# Pressure Sources
-
-Pressures should record their sources.
-
-Example:
+Prefer:
 
 ```text
 Supply Pressure:
 HIGH
 
 Sources:
-- reduced rail capacity
-- fuel restrictions
-- population increase
+
+Reduced rail capacity
+
+Fuel restrictions
+
+Population increase
+
+Neighboring region export collapse.
 ```
 
-This allows the system to explain why conditions are changing.
+This preserves causality.
 
 ---
 
-# Positive Pressure
+# 17. Resilience
 
-Not all pressure needs to represent degradation.
+Resilience represents a system's ability to absorb pressure while maintaining function.
 
-The system may also track recovery momentum.
+Possible resilience sources include:
+
+- redundancy
+- local expertise
+- stockpiles
+- institutional competence
+- alternative infrastructure
+- local production
+- community cooperation
+- geographic advantage
+- distributed systems
+- established procedures
 
 Example:
 
 ```text
-Recovery Pressure:
+Supply:
+
+STABLE
+
+Pressure:
+
 HIGH
 
-Sources:
-- restored rail connection
-- external assistance
-- improved power availability
+Resilience:
+
+HIGH.
 ```
 
-Alternatively, positive change may be represented through recovery factors rather than pressure.
-
-The implementation should favor clarity over mathematical purity.
+This means the current system remains functional despite significant pressure.
 
 ---
 
-# Events
+# 18. Resilience Is Not Invulnerability
 
-World Events represent meaningful changes generated by or applied to the simulation.
+High resilience does not mean permanent stability.
+
+Conceptually:
+
+```text
+PRESSURE
++
+TIME
++
+ACCUMULATED DAMAGE
++
+RESOURCE DEPLETION
+↓
+MAY EXCEED
+RESILIENCE.
+```
+
+A resilient system can still fail.
+
+It may simply fail later, more slowly or differently.
+
+---
+
+# 19. Trend
+
+Trend represents current direction.
+
+Conceptually:
+
+```text
+IMPROVING
+
+STABLE
+
+DETERIORATING
+
+VOLATILE.
+```
+
+Example:
+
+```text
+Supply:
+
+CONSTRAINED
+
+Trend:
+
+IMPROVING
+```
+
+is fundamentally different from:
+
+```text
+Supply:
+
+CONSTRAINED
+
+Trend:
+
+DETERIORATING.
+```
+
+Current State describes now.
+
+Trend describes direction.
+
+---
+
+# 20. Recovery Capacity
+
+Recovery Capacity represents the realistic ability of a system to improve after disruption.
+
+Possible factors include:
+
+- available resources
+- technical capability
+- functioning authority
+- external assistance
+- spare capacity
+- logistics
+- local expertise
+- social cooperation
+- infrastructure access
+- time
+
+Recovery Capacity does not itself mean recovery is occurring.
+
+Conceptually:
+
+```text
+RECOVERY CAPACITY
+=
+ABILITY TO RECOVER
+
+NOT
+
+RECOVERY ITSELF.
+```
+
+Actual recovery requires causal conditions.
+
+Detailed recovery and escalation logic belongs to:
+
+```text
+Escalation_and_Recovery.md
+```
+
+---
+
+# 21. Recovery Is Not a Peer World Domain
+
+Recovery should not normally be treated as equivalent to:
+
+```text
+Infrastructure
+
+Supply
+
+Security
+
+Authority.
+```
+
+Instead, recovery is a process affecting domain state.
+
+Conceptually:
+
+```text
+INFRASTRUCTURE
+
+State
+Pressure
+Resilience
+Trend
+Recovery Capacity
+```
+
+rather than:
+
+```text
+Infrastructure
+Supply
+Security
+Recovery
+```
+
+as four equivalent categories.
+
+This keeps world-state ownership clear.
+
+---
+
+# 22. World Truth
+
+World Simulation maintains authoritative external truth.
+
+Conceptually:
+
+```text
+WORLD TRUTH
+=
+WHAT IS
+ACTUALLY TRUE
+IN THE SIMULATION.
+```
+
+Example:
+
+```text
+Actual Supply State:
+
+STRAINED.
+```
+
+This remains true even if no Character knows it.
+
+---
+
+# 23. World Truth Is Not Observer Knowledge
+
+A critical Project Ascension distinction is:
+
+```text
+WORLD TRUTH
+≠
+CHARACTER KNOWLEDGE
+≠
+PLAYER KNOWLEDGE
+≠
+FACTION KNOWLEDGE
+≠
+PUBLIC UNDERSTANDING
+≠
+AURORA'S MODEL.
+```
+
+World State owns the first.
+
+Other systems own the others.
+
+---
+
+# 24. Observed State
+
+Observers may possess incomplete, outdated or incorrect representations of World State.
+
+Example:
+
+```text
+ACTUAL SUPPLY:
+
+STRAINED
+
+
+GOVERNMENT ESTIMATE:
+
+STRAINED
+
+
+PUBLIC PERCEPTION:
+
+CRITICAL
+
+
+CHARACTER BELIEF:
+
+STABLE.
+```
+
+These can coexist.
+
+World State should not overwrite observer knowledge merely because authoritative simulation truth changes.
+
+Information must propagate causally.
+
+---
+
+# 25. Observation Confidence
+
+Confidence belongs to knowledge about state rather than World Truth itself.
+
+Therefore avoid:
+
+```text
+Actual Security:
+STABLE
+
+World State Confidence:
+LOW.
+```
+
+The authoritative simulation should know its own state.
+
+Instead:
+
+```text
+Observed Security:
+STABLE
+
+Observation Confidence:
+LOW
+
+Last Reliable Report:
+6 days ago.
+```
+
+Detailed handling belongs primarily to:
+
+```text
+Information_State.md
+```
+
+and relevant observer systems.
+
+---
+
+# 26. Information Must Travel
+
+World truth is not automatically distributed.
+
+Information may move through:
+
+- communication
+- observation
+- reports
+- media
+- institutions
+- intelligence
+- Relationships
+- Factions
+- direct contact
+- digital networks
+- Aurora
+
+Therefore:
+
+```text
+EVENT OCCURS
+
+≠
+
+EVERYONE KNOWS.
+```
+
+This distinction is fundamental to Project Ascension.
+
+---
+
+# 27. World Events
+
+World Events are meaningful occurrences that alter or interact with external World State.
 
 Examples:
 
 ```text
 Power plant shutdown
+
 Major storm
+
+Bridge collapse
+
 Regional election
+
 Trade agreement
-Bridge failure
+
 Migration wave
-New settlement alliance
+
 Hospital closure
-Emergency fuel shipment
+
+Fuel shipment
+
 Communication restoration
+
+Settlement alliance.
 ```
 
-Events may be:
+Events may occur at:
 
 - global
 - national
 - regional
 - local
 
+scales.
+
 ---
 
-# Event Structure
+# 28. World Event Structure
 
 Conceptually:
 
 ```text
-EVENT
+WORLD EVENT
 │
 ├── ID
-├── Date / Time
+├── Time
 ├── Location
 ├── Type
 ├── Cause
+├── Participants
 ├── Immediate Effects
 ├── Secondary Effects
 ├── Visibility
+├── State Changes
 └── Historical Significance
 ```
 
+This is conceptual architecture.
+
+It is not yet an implementation schema.
+
 ---
 
-# Event Cause
+# 29. Events Should Have Causes
 
-Whenever possible, events should record why they occurred.
+Whenever possible:
+
+```text
+EVENT
+↓
+SHOULD HAVE
+CAUSAL HISTORY.
+```
 
 Example:
 
 ```text
-Event:
+EVENT:
+
 Regional Fuel Rationing
 
-Cause:
-Supply State = Constrained
-Fuel Pressure = Severe
+
+SUPPORTED BY:
+
+Supply = Constrained
+
+Fuel Availability = Critical
+
 Authority = Functional
-Public Confidence = Moderate
+
+Strategic Reserves = Low.
 ```
 
-The simulation can then explain why rationing occurred instead of simply generating it randomly.
+This is preferable to generating rationing merely because the story needs tension.
 
 ---
 
-# External Events
+# 30. External Events
 
-Not every event must emerge entirely from internal simulation states.
+Not every event must emerge from existing internal simulation pressure.
 
 External events may include:
 
-- weather
-- natural disasters
-- technological discoveries
-- foreign decisions
+- storms
+- earthquakes
 - disease outbreaks
-- major accidents
+- technological discoveries
+- foreign actions
+- accidents
+- environmental events
 
-External events enter the simulation as new pressures or direct state changes.
+These enter the simulation as new causal inputs.
 
-They should still interact with existing conditions.
+Their consequences still depend on existing World State.
 
 ---
 
-# Example
+# 31. Same Event, Different Consequences
 
-A hurricane striking two regions may produce very different outcomes.
+Example:
 
 ```text
+HURRICANE
+↓
 REGION A
 
 Infrastructure:
-Stable
+STABLE
 
 Resilience:
-High
+HIGH
 
 Authority:
-Strong
+FUNCTIONAL
 
-Recovery:
-High
-```
-
-Result:
-
-```text
-Temporary disruption
-Rapid repair
-Limited migration
-```
-
-while:
-
-```text
-REGION B
-
-Infrastructure:
-Degraded
-
-Resilience:
-Low
-
-Authority:
-Weak
-
-Recovery:
-Low
+Recovery Capacity:
+HIGH
 ```
 
 may produce:
 
 ```text
-Critical infrastructure failure
-Supply disruption
-Population movement
-Long-term regional decline
+Temporary disruption
+
+Rapid repair
+
+Limited displacement.
 ```
 
-The event is the same.
+The same hurricane affecting:
 
-The world state determines the consequence.
+```text
+REGION B
+
+Infrastructure:
+DEGRADED
+
+Resilience:
+LOW
+
+Authority:
+WEAK
+
+Recovery Capacity:
+LOW
+```
+
+may produce:
+
+```text
+Infrastructure failure
+
+Supply disruption
+
+Population movement
+
+Security pressure
+
+Long-term decline.
+```
+
+Therefore:
+
+```text
+EVENT
+≠
+FIXED CONSEQUENCE.
+```
+
+Existing conditions matter.
 
 ---
 
-# Historical Memory
+# 32. Systemic History
 
-The World State should retain important past events and state transitions.
+World Simulation should preserve meaningful systemic history.
+
+This is not Character Memory.
 
 Conceptually:
 
 ```text
-history:
-    event
-    event
-    state_change
-    event
+SYSTEMIC HISTORY
+=
+PERSISTENT RECORD
+OF WORLD-RELEVANT
+PAST CONDITIONS
+AND EVENTS.
 ```
-
-Not every simulation tick needs permanent storage.
-
-Only meaningful events should enter Historical Memory.
-
----
-
-# Historical Memory Categories
 
 Examples include:
 
-- major infrastructure failure
-- mass migration
+- infrastructure collapse
+- migration
 - political transition
+- regional conflict
 - settlement founding
 - settlement destruction
-- major conflict
-- recovery milestone
 - major alliance
-- important discovery
-- player-caused regional change
+- recovery milestone
+- major discovery
+- significant player-caused change
 
 ---
 
-# Historical Memory Effects
-
-Past events may modify future behavior.
+# 33. Systemic History Is Not Human Memory
 
 Example:
 
 ```text
-Historical Event:
-2039 Food Crisis
+SYSTEMIC HISTORY:
 
-Long-Term Effects:
-+ preparedness
-+ food storage
-+ distrust of centralized supply
-```
+Regional blackout
+lasted eleven days.
 
-The region may therefore respond differently to another shortage years later.
-
----
-
-# World Memory Versus Character Memory
-
-World State stores systemic history.
-
-Characters maintain personal memory separately.
-
-For example:
-
-```text
-WORLD MEMORY:
-Regional power outage lasted 11 days.
 
 CHARACTER MEMORY:
-"My father died during the blackout."
+
+"My father died
+during the blackout."
 ```
 
-Both may refer to the same event.
+Both refer to the same historical event.
 
-They belong to different systems.
+They are not the same state.
+
+World Simulation owns systemic history.
+
+Human Memory owns personal remembered experience.
 
 ---
 
-# Global Aggregation
+# 34. History May Change Future Conditions
 
-Global and national states may be derived partly from regional conditions.
+Past events may create persistent world consequences.
 
 Example:
 
 ```text
-National Infrastructure Coordination
+2039 FOOD CRISIS
+↓
+LOCAL STORAGE EXPANSION
++
+NEW DISTRIBUTION NETWORK
++
+POLITICAL DISTRUST
++
+COMMUNITY PREPAREDNESS
+↓
+DIFFERENT RESPONSE
+TO FUTURE SHORTAGE.
 ```
 
-might consider:
+History should not merely be decorative.
 
-- percentage of regions functioning
-- major interregional connections
-- strategic infrastructure
-- regional divergence
-
-However, simple averages should be avoided.
-
-A failure in one strategically important region may matter more than multiple stable low-impact regions.
+Meaningful consequences may remain causal.
 
 ---
 
-# Weighted Importance
+# 35. Causal Trace
 
-Regions may possess different systemic importance.
+Significant state changes should preserve enough information to explain why they occurred.
 
-Possible factors include:
-
-- population
-- energy production
-- food production
-- transportation hubs
-- industrial capacity
-- political importance
-- communications infrastructure
-- military significance
-
-Conceptually:
+Example:
 
 ```text
-Regional Strategic Weight:
-LOW
-MODERATE
-HIGH
+SUPPLY
+
+STRAINED
+↓
 CRITICAL
+
+
+PRIMARY CAUSES:
+
+Fuel shortage
+
+Bridge closure
+
+
+SECONDARY CAUSE:
+
+Population influx
+
+
+MITIGATING FACTOR:
+
+Local food storage.
 ```
 
-This should be used carefully.
+The implementation may later compress this.
 
-It represents systemic influence, not human worth.
-
----
-
-# Neighbor Influence
-
-Regions should affect neighboring regions.
-
-Possible flows include:
-
-- people
-- food
-- fuel
-- electricity
-- information
-- crime
-- trade
-- disease
-- political influence
-- security threats
-
-Conceptually:
+The architectural requirement remains:
 
 ```text
-REGION A
-    │
-    ├── Supply Flow → REGION B
-    ├── Migration → REGION C
-    └── Information → REGION D
+IMPORTANT CHANGE
+SHOULD BE
+EXPLAINABLE.
 ```
-
-Detailed mechanics belong in `Regional_State.md`.
 
 ---
 
-# Time
+# 36. Explanation Layer
 
-World State changes over simulation time.
-
-Time may operate at different resolutions depending upon campaign needs.
-
-Possible levels include:
+World Simulation should be capable of answering:
 
 ```text
-REAL-TIME / ENCOUNTER
-HOURS
-DAYS
-WEEKS
-MONTHS
-YEARS
+WHY IS
+THIS STATE
+WHAT IT IS?
 ```
-
-The World Simulation should not require every domain to update at the same frequency.
-
----
-
-# Update Frequency
-
-Examples:
-
-```text
-Communications:
-may change within hours
-
-Infrastructure:
-may change over hours or days
-
-Supply:
-may change over days or weeks
-
-Population:
-may change over days or months
-
-Political legitimacy:
-may change over weeks or years
-```
-
-Simulation timing should reflect plausible system behavior.
-
----
-
-# State Transition
-
-Domains should normally change gradually.
 
 Example:
 
 ```text
-STABLE
-  ↓
-STRAINED
-  ↓
-DEGRADED
-  ↓
+SUPPLY:
+
 CRITICAL
-  ↓
-FAILED
-```
 
-Direct transitions may occur during extreme events.
-
-Example:
-
-```text
-STABLE
-  ↓
-FAILED
-```
-
-after catastrophic physical destruction.
-
-Such transitions should remain exceptional.
-
----
-
-# State Stabilization
-
-A state may remain unchanged despite significant pressure.
-
-Example:
-
-```text
-Infrastructure:
-STRAINED
-
-Pressure:
-HIGH
-
-Resilience:
-HIGH
-
-Result:
-STRAINED
-```
-
-This means resilience successfully absorbs current pressure.
-
----
-
-# State Recovery
-
-Improvement requires meaningful recovery factors.
-
-Example:
-
-```text
-Infrastructure:
-DEGRADED
-
-Pressure:
-LOW
-
-Recovery Capacity:
-HIGH
-
-Result:
-Movement toward STRAINED
-```
-
-Recovery should usually take time.
-
----
-
-# Failed Does Not Mean Gone
-
-A domain state of:
-
-```text
-FAILED
-```
-
-should not automatically mean complete destruction.
-
-It means the system can no longer perform its expected function reliably.
-
-Example:
-
-```text
-National Communications:
-FAILED
-```
-
-may coexist with:
-
-```text
-Local Radio:
-FUNCTIONAL
-
-Regional Mesh Network:
-FUNCTIONAL
-```
-
-The centralized system failed.
-
-Communication did not disappear.
-
----
-
-# Fragmentation
-
-Fragmentation is a special systemic condition.
-
-It occurs when lower-level systems continue functioning but no longer operate as one coordinated higher-level system.
-
-Example:
-
-```text
-National Infrastructure:
-FRAGMENTED
-
-Region A:
-Stable
-
-Region B:
-Degraded
-
-Region C:
-Stable
-
-Region D:
-Critical
-```
-
-This concept is fundamental to Project Ascension.
-
----
-
-# Fragmentation Is Not Failure
-
-A fragmented world may contain:
-
-- functioning cities
-- stable settlements
-- trade networks
-- local governments
-- electricity
-- agriculture
-- healthcare
-- transportation
-
-What is missing is the previous level of integration.
-
-This distinction directly supports:
-
-**World State 03 — The Fractured World**
-
-which is:
-
-**not a wasteland.**
-
-It is:
-
-**a world of disconnected realities.**
-
----
-
-# World State Snapshot
-
-At any point, the World Simulation should be capable of producing a snapshot.
-
-Example:
-
-```text
-WORLD STATE SNAPSHOT
-
-Date:
-2034-07-10
-
-Historical Era:
-WS-02 — The Transition
-
-GLOBAL
-
-Connectivity:
-DEGRADED
-
-Trade:
-STRAINED
-
-International Stability:
-TENSE
-
-Financial Stability:
-VOLATILE
-
-Information Reliability:
-UNSTABLE
-
-Technological Coordination:
-SEGMENTED
-
-Global Mobility:
-LIMITED
-
-Geopolitical Pressure:
-HIGH
-
-
-UNITED STATES
-
-National Authority:
-FUNCTIONAL
-
-Infrastructure Coordination:
-DEGRADING
-
-Emergency Communication:
-ECL-3
-
-Regional Cohesion:
-STRAINED
-
-
-NORTHERN VIRGINIA
-
-Infrastructure:
-DEGRADED
-
-Communications:
-REGIONAL
-
-Authority:
-FUNCTIONAL
-
-Information:
-UNSTABLE
-
-Population:
-CONCERNED
-
-Supply:
-CONSTRAINED
-
-Security:
-STABLE
-
-Recovery:
-MODERATE
-```
-
-A snapshot should describe conditions.
-
-It should not automatically explain them to the player.
-
----
-
-# World State ID
-
-Important World State snapshots may receive identifiers.
-
-Conceptually:
-
-```text
-WSIM-2034-07-10-1200
-```
-
-or campaign-specific identifiers.
-
-This allows:
-
-- saves
-- rollback
-- debugging
-- historical comparison
-- campaign analysis
-
-Exact technical implementation will be determined later.
-
----
-
-# Canonical World State Snapshots
-
-Some historical snapshots may eventually become Canon.
-
-These would represent known historical conditions during established periods.
-
-For example:
-
-```text
-Pre-Collapse United States
-2034-08-16
-```
-
-could eventually have a canonical World Simulation snapshot.
-
-This should only be created where useful.
-
-Recovered Records remain the primary narrative evidence for historical conditions.
-
----
-
-# Campaign World State
-
-A campaign should maintain its own dynamic state.
-
-Conceptually:
-
-```text
-CAMPAIGN WORLD STATE
-│
-├── Canon Foundation
-├── Campaign Divergence
-├── Player Effects
-├── Generated Events
-└── Persistent Changes
-```
-
-The campaign begins from Canon.
-
-Gameplay may create divergence.
-
----
-
-# Canon Boundary
-
-Some events may be fixed by the selected campaign era.
-
-Others may remain mutable.
-
-Example:
-
-If a campaign begins after The Collapse:
-
-```text
-The Collapse occurred.
-```
-
-is fixed Canon.
-
-But:
-
-```text
-Settlement A survives until 2051.
-```
-
-may not be fixed unless specifically established.
-
-This distinction allows meaningful player influence without rewriting foundational Canon unintentionally.
-
----
-
-# Canon Locks
-
-The simulation may eventually use Canon Locks.
-
-Conceptually:
-
-```text
-CANON LOCK
-```
-
-means:
-
-A state or historical fact cannot be changed by ordinary simulation.
-
-Examples:
-
-- historical emergence of Aurora
-- established World State transitions
-- major pre-campaign historical facts
-
-Canon Locks should be used sparingly.
-
----
-
-# Campaign Divergence
-
-Campaign divergence represents history created during play.
-
-Example:
-
-Canonical starting condition:
-
-```text
-Settlement Haven:
-Supply = Strained
-```
-
-Campaign event:
-
-```text
-Players restore rail connection.
-```
-
-New campaign state:
-
-```text
-Settlement Haven:
-Supply = Stable
-```
-
-The campaign world has changed.
-
-Canon has not been contradicted unless a later fixed Canon event requires otherwise.
-
----
-
-# World State and Save Games
-
-A saved campaign should preserve:
-
-- current states
-- pressures
-- resilience
-- active events
-- important historical memory
-- region relationships
-- player effects
-- knowledge states where required
-
-World Simulation continuity depends upon persistent state.
-
----
-
-# Explanation Layer
-
-The simulation should preserve enough information to answer:
-
-**Why is this state what it is?**
-
-Example:
-
-```text
-Supply:
-CRITICAL
 
 WHY?
 
@@ -1769,132 +1415,586 @@ Constrained
 Population:
 +18%
 
-Neighboring Region:
-No export capacity
+Neighbor Export:
+Unavailable
 
 Authority:
-Weak
+Weak.
 ```
 
-This explanation layer is important for:
+This explanation layer supports:
 
+- simulation validation
 - debugging
-- Game Master tools
-- AI narrative generation
-- player-facing investigation
-- consistency
+- Game Master reasoning
+- AI reasoning
+- narrative consistency
+- player investigation
+- historical reconstruction
 
 ---
 
-# Causal Trace
+# 37. Cross-Regional Dependencies
 
-Important state changes may record a causal trace.
+Regions do not exist independently.
 
-Example:
+Possible cross-regional flows include:
 
-```text
-SUPPLY: STRAINED → CRITICAL
-
-Primary Causes:
-- fuel shortage
-- bridge closure
-
-Secondary Cause:
-- population influx
-
-Mitigating Factor:
-- local food storage
-```
-
-The exact implementation can remain lightweight.
-
-The principle is important.
-
----
-
-# Uncertainty
-
-The simulation should allow uncertain state estimates.
-
-Example:
-
-```text
-Region:
-Western Pennsylvania
-
-Estimated Security:
-Stable
-
-Confidence:
-Low
-
-Last Reliable Report:
-6 days ago
-```
-
-This becomes increasingly important during:
-
-**The Fractured World.**
-
----
-
-# Unknown Regions
-
-A region does not need a fully known state.
+- people
+- electricity
+- food
+- fuel
+- water
+- medicine
+- information
+- transportation
+- trade
+- industrial components
+- security threats
+- disease
+- political influence
 
 Conceptually:
 
 ```text
-Infrastructure:
-UNKNOWN
-
-Authority:
-UNKNOWN
-
-Population:
-ESTIMATED
-
-Communication:
-NONE
-
-Last Contact:
-2046-03-18
+REGION A
+│
+├── Electricity → REGION B
+├── Food → REGION C
+└── Information → REGION D.
 ```
 
-The simulation may still maintain an internal state.
-
-Characters and players simply do not know it.
-
----
-
-# Dormant Simulation
-
-Distant regions may operate at reduced simulation resolution.
-
-Instead of calculating every domain continuously, the system may store:
+Detailed dependency architecture belongs primarily to:
 
 ```text
-State
-Trend
-Pressure
-Resilience
-Major Events
+Regional_State.md
 ```
 
-When the region becomes relevant, higher-resolution simulation can resume.
+World State preserves the high-level network context.
 
 ---
 
-# State Compression
+# 38. Neighbor Influence
 
-Long periods may be summarized.
+Neighboring regions may create:
+
+```text
+SUPPORT
+
+PRESSURE
+
+DEPENDENCY
+
+RISK
+
+OPPORTUNITY.
+```
 
 Example:
 
-Instead of simulating 180 individual days:
+```text
+REGION A
+Supply = Stable
+
+REGION B
+Supply = Critical
+```
+
+may create:
 
 ```text
-Winter 2048
+Migration toward A
+
+Export pressure from A
+
+Political tension
+
+Security pressure
+
+Humanitarian response
+
+Black-market activity.
+```
+
+None of these consequences are automatic.
+
+They emerge through interacting systems.
+
+---
+
+# 39. Strategic Importance
+
+Some regions have disproportionate systemic influence.
+
+Possible reasons include:
+
+- population
+- energy production
+- food production
+- major ports
+- rail hubs
+- communications infrastructure
+- industrial capacity
+- political institutions
+- military infrastructure
+- technology infrastructure
+
+Strategic importance must never represent human worth.
+
+Conceptually:
+
+```text
+SYSTEMIC IMPORTANCE
+≠
+HUMAN VALUE.
+```
+
+---
+
+# 40. Aggregation
+
+Higher-level state may be derived partly from lower-level conditions.
+
+But simple averages should be avoided.
+
+Example:
+
+```text
+9 REGIONS
+STABLE
+
+1 REGION
+FAILED
+```
+
+does not necessarily mean:
+
+```text
+NATIONAL SYSTEM
+90% STABLE.
+```
+
+If the failed region contains:
+
+```text
+critical energy production
+
+major transportation hub
+
+national communications backbone
+```
+
+its systemic impact may be disproportionate.
+
+Aggregation must preserve dependency structure.
+
+---
+
+# 41. Fragmentation
+
+Fragmentation is a fundamental Project Ascension world condition.
+
+Fragmentation occurs when:
+
+> **Lower-level systems continue functioning but no longer operate as one reliably coordinated higher-level system.**
+
+Conceptually:
+
+```text
+NATIONAL INFRASTRUCTURE:
+
+FRAGMENTED
+
+
+REGION A:
+STABLE
+
+REGION B:
+DEGRADED
+
+REGION C:
+STABLE
+
+REGION D:
+CRITICAL.
+```
+
+The parts still exist.
+
+Their previous integration does not.
+
+---
+
+# 42. Fragmentation Is Not Failure
+
+This distinction is critical:
+
+```text
+FRAGMENTATION
+≠
+UNIVERSAL FAILURE.
+```
+
+A fragmented world may contain:
+
+- functioning cities
+- local governments
+- hospitals
+- electricity
+- agriculture
+- manufacturing
+- trade
+- transportation
+- communication
+- education
+- research
+- stable communities
+
+What has been lost may primarily be:
+
+```text
+INTEGRATION
+
+COORDINATION
+
+RELIABILITY
+
+INTERDEPENDENCE
+
+SHARED AUTHORITY
+
+COMMON INFORMATION.
+```
+
+---
+
+# 43. The Fractured World Is Not a Wasteland
+
+The Fractured World should not become:
+
+```text
+EVERYTHING
+FAILED.
+```
+
+Instead:
+
+```text
+THE FRACTURED WORLD
+=
+MANY FUNCTIONING
+REALITIES
+
+THAT NO LONGER
+FORM ONE
+RELIABLY CONNECTED
+REALITY.
+```
+
+This is one of the central principles of Project Ascension.
+
+---
+
+# 44. State Transition
+
+World domains may change gradually.
+
+Example:
+
+```text
+STABLE
+↓
+STRAINED
+↓
+DEGRADED
+↓
+CRITICAL
+↓
+FAILED.
+```
+
+But this must not become a universal mandatory ladder.
+
+Different domains may require different state vocabularies.
+
+Direct transitions may occur when causally justified.
+
+Example:
+
+```text
+FUNCTIONAL
+↓
+FAILED
+```
+
+after catastrophic physical destruction.
+
+The requirement is causality.
+
+Not gradualism for its own sake.
+
+---
+
+# 45. Failed Does Not Mean Gone
+
+A system marked:
+
+```text
+FAILED
+```
+
+does not necessarily cease to exist physically.
+
+It means it can no longer reliably perform its expected systemic function.
+
+Example:
+
+```text
+NATIONAL COMMUNICATION:
+
+FAILED
+```
+
+may coexist with:
+
+```text
+LOCAL RADIO:
+
+FUNCTIONAL
+
+
+REGIONAL MESH NETWORK:
+
+FUNCTIONAL.
+```
+
+The centralized system failed.
+
+Communication did not disappear.
+
+---
+
+# 46. Escalation
+
+Escalation occurs when pressures and consequences move a system toward greater instability, degradation or conflict.
+
+Detailed logic belongs to:
+
+```text
+Escalation_and_Recovery.md
+```
+
+World State should preserve the resulting changes and causal references.
+
+Conceptually:
+
+```text
+PRESSURE
++
+VULNERABILITY
++
+DEPENDENCY
++
+TRIGGER
+↓
+ESCALATION
+↓
+STATE CHANGE
++
+NEW PRESSURES.
+```
+
+---
+
+# 47. Recovery
+
+Recovery occurs when systems regain function, stability, coordination or resilience through plausible causal processes.
+
+Conceptually:
+
+```text
+RECOVERY CAPACITY
++
+RESOURCES
++
+TIME
++
+ACTION
++
+ADAPTATION
+↓
+POSSIBLE RECOVERY.
+```
+
+Recovery is not automatic.
+
+Neither is collapse.
+
+---
+
+# 48. Adaptation
+
+A system may adapt without returning to its previous form.
+
+Example:
+
+```text
+CENTRAL GRID
+FAILS
+↓
+LOCAL GENERATION
+EXPANDS
+↓
+ENERGY ACCESS
+IMPROVES
+```
+
+The region has recovered function.
+
+It has not restored the old system.
+
+Therefore:
+
+```text
+RECOVERY
+≠
+RESTORATION.
+```
+
+This distinction becomes increasingly important during Reconnection.
+
+---
+
+# 49. Time
+
+World State exists in simulation time.
+
+Conceptually:
+
+```text
+WORLD STATE
+AT TIME T.
+```
+
+Time may operate across:
+
+```text
+MINUTES
+
+HOURS
+
+DAYS
+
+WEEKS
+
+MONTHS
+
+YEARS.
+```
+
+Different systems change at different rates.
+
+---
+
+# 50. Different Systems Have Different Temporal Rhythms
+
+Examples:
+
+```text
+Security incident:
+Minutes / hours
+
+Communication outage:
+Minutes / hours
+
+Supply disruption:
+Days / weeks
+
+Infrastructure degradation:
+Days / months
+
+Population migration:
+Days / months
+
+Institutional legitimacy:
+Weeks / years.
+```
+
+World Simulation must not force every domain onto one universal update interval.
+
+---
+
+# 51. Adaptive Simulation Resolution
+
+World Simulation should operate at different resolutions depending on relevance and causal activity.
+
+Conceptually:
+
+```text
+LOW RESOLUTION
+=
+MAJOR STATE
+AND CAUSAL CHANGE
+
+MEDIUM RESOLUTION
+=
+RELEVANT SYSTEM
+INTERACTIONS
+
+HIGH RESOLUTION
+=
+ACTIVE LOCAL
+CAUSAL DETAIL.
+```
+
+Resolution changes detail.
+
+It does not change reality.
+
+---
+
+# 52. Low Resolution Does Not Mean Inactive
+
+Avoid:
+
+```text
+DISTANT REGION
+=
+DORMANT.
+```
+
+Prefer:
+
+```text
+DISTANT REGION
+=
+LOW-RESOLUTION
+SIMULATION.
+```
+
+A distant region may still experience:
+
+- migration
+- political change
+- infrastructure degradation
+- recovery
+- conflict
+- trade
+- environmental events
+- leadership changes
+
+Player absence does not freeze the world.
+
+---
+
+# 53. World Simulation Compression
+
+The simulation does not need to calculate every hour everywhere.
+
+A six-month period may be compressed into:
+
+```text
+WINTER 2048
 
 Supply Pressure:
 High
@@ -1905,343 +2005,1525 @@ Stable → Strained
 Population:
 Stable
 
-Recovery:
-Low
+Major Event:
+Rail interruption
+
+Recovery Capacity:
+Low.
 ```
 
-Significant events remain preserved.
-
-Routine events may be compressed.
+Compression is acceptable when causal continuity remains intact.
 
 ---
 
-# World State Consistency Rules
+# 54. Resolution Must Preserve Causality
 
-The following consistency rules should apply.
-
-## Rule 1
-
-A lower-level state may differ significantly from its parent state.
-
----
-
-## Rule 2
-
-Higher-level states should reflect meaningful lower-level patterns.
-
----
-
-## Rule 3
-
-State changes require causes.
-
----
-
-## Rule 4
-
-Pressure does not guarantee change.
-
----
-
-## Rule 5
-
-Resilience does not guarantee stability forever.
-
----
-
-## Rule 6
-
-Recovery requires resources, time or adaptation.
-
----
-
-## Rule 7
-
-Information about a state is separate from the state itself.
-
----
-
-## Rule 8
-
-Fragmentation does not equal universal failure.
-
----
-
-## Rule 9
-
-The simulation should remember major consequences.
-
----
-
-## Rule 10
-
-Player actions may modify state but should obey the same causal rules as NPC and institutional actions.
-
----
-
-# Integration With Existing Canon Systems
-
-World State should integrate with existing systems rather than duplicate them.
-
----
-
-## Emergency Communication Levels
-
-Source:
+At any simulation resolution, the system should still be able to answer:
 
 ```text
-Canon/Systems/Emergency_Communication_Levels.md
+WHAT CHANGED?
+
+WHY?
+
+WHEN?
+
+WHAT CAUSED IT?
+
+WHAT PREVENTED
+GREATER CHANGE?
+
+WHAT CONSEQUENCES
+REMAIN?
 ```
 
-ECL provides a standardized description of emergency communication and coordination.
+Low resolution means:
 
-World Simulation should reference the canonical ECL values.
+```text
+LESS DETAIL
+```
+
+not:
+
+```text
+LESS REALITY.
+```
 
 ---
 
-## Infrastructure Monitoring Levels
+# 55. World State Snapshot
 
-Source:
+World Simulation should be capable of producing a snapshot of authoritative state at a specific time.
+
+Conceptually:
 
 ```text
-Canon/Systems/Infrastructure_Monitoring_Levels.md
+WORLD STATE SNAPSHOT
+
+Simulation Time:
+2034-07-10 12:00
+
+Historical Era:
+WS-02 — The Transition
+
+
+GLOBAL
+
+Connectivity:
+DEGRADED
+
+Trade:
+STRAINED
+
+Information Reliability:
+UNSTABLE
+
+Mobility:
+LIMITED
+
+
+UNITED STATES
+
+National Coordination:
+FUNCTIONAL BUT DEGRADING
+
+Regional Cohesion:
+STRAINED
+
+
+NORTHERN VIRGINIA
+
+Infrastructure:
+DEGRADED
+
+Supply:
+CONSTRAINED
+
+Security:
+STABLE
+
+Authority:
+FUNCTIONAL
+
+Information:
+UNSTABLE
+
+Population:
+UNDER PRESSURE.
 ```
 
-IML provides a standardized infrastructure coordination framework.
+A snapshot describes simulation truth.
 
-World Simulation should reference IML rather than invent a competing infrastructure scale where appropriate.
+It does not automatically reveal that truth to the player.
 
 ---
 
-# ECL and IML Are Not Universal Scores
+# 56. Snapshot Purpose
 
-A region may have:
+Snapshots may support:
+
+- saves
+- campaign persistence
+- debugging
+- validation
+- historical comparison
+- simulation testing
+- campaign analysis
+
+A snapshot is:
 
 ```text
-IML-4
+A VIEW OF
+AUTHORITATIVE STATE
+AT TIME T.
 ```
 
-while national communications remain:
-
-```text
-ECL-2
-```
-
-or vice versa.
-
-The systems describe different dimensions.
-
-World State combines them without assuming numerical equivalence.
+It is not a separate competing source of truth.
 
 ---
 
-# World Simulation Minimum State
+# 57. Canon Foundation
 
-A minimal functioning simulation should be able to store:
+Every campaign begins from an established Canon foundation.
+
+Conceptually:
 
 ```text
-Date
-Historical Era
+CANON
+↓
+CAMPAIGN INITIAL STATE.
+```
+
+Canon establishes facts that are already true when the campaign begins.
+
+Example:
+
+```text
+THE EMERGENCE EVENT
+OCCURRED.
+```
+
+If the selected campaign begins after that event, ordinary simulation cannot retroactively prevent it.
+
+---
+
+# 58. Canon Boundary
+
+Not every future condition is fixed by Canon.
+
+Example:
+
+```text
+CANON:
+
+Settlement Haven exists
+in 2048.
+```
+
+does not automatically mean:
+
+```text
+Settlement Haven
+must survive until 2055.
+```
+
+unless later survival is explicitly established Canon.
+
+This distinction allows campaigns to create meaningful history.
+
+---
+
+# 59. Canon Locks
+
+Some canonical facts may be protected from ordinary simulation mutation.
+
+Conceptually:
+
+```text
+CANON LOCK
+=
+FACT THAT
+ORDINARY SIMULATION
+CANNOT CONTRADICT.
+```
+
+Possible examples include:
+
+- established historical events
+- canonical World State transitions
+- Aurora's established emergence
+- fixed pre-campaign history
+
+Canon Locks should be used sparingly.
+
+Their overarching governance belongs to the broader Canon / Simulation architecture.
+
+World State respects them.
+
+---
+
+# 60. Campaign World State
+
+Each campaign maintains its own persistent dynamic World State.
+
+Conceptually:
+
+```text
+CAMPAIGN WORLD STATE
+│
+├── Canon Foundation
+├── Initial Conditions
+├── Simulated Events
+├── Character Effects
+├── Faction Effects
+├── Institutional Effects
+├── Campaign Divergence
+└── Persistent Consequences
+```
+
+The campaign begins from Canon.
+
+It then develops causally.
+
+---
+
+# 61. Campaign Divergence
+
+Campaign Divergence represents history created through simulation after the canonical starting point.
+
+Example:
+
+```text
+INITIAL STATE:
+
+Settlement Haven
+
+Supply:
+STRAINED
+
+
+CAMPAIGN EVENT:
+
+Rail connection restored.
+
+
+NEW STATE:
+
+Supply:
+STABLE.
+```
+
+The campaign world has changed.
+
+That change becomes part of campaign history.
+
+---
+
+# 62. Player Actions Are Not Privileged Physics
+
+Player Characters may alter World State.
+
+But they obey the same causal rules as:
+
+- NPCs
+- Factions
+- institutions
+- governments
+- communities
+- environmental events
+
+Avoid:
+
+```text
+PLAYER ACTION
+=
+SPECIAL WORLD RULE.
+```
+
+Prefer:
+
+```text
+ACTION
++
+CAPABILITY
++
+CONTEXT
++
+WORLD RESPONSE
+↓
+CONSEQUENCE.
+```
+
+Player importance emerges from what they actually accomplish.
+
+---
+
+# 63. World State and Character Agency
+
+World State creates conditions.
+
+It does not dictate Character choices.
+
+Conceptually:
+
+```text
+WORLD STATE
+↓
+EXTERNAL CONDITIONS
+
+CHARACTER KNOWLEDGE
+↓
+PERCEIVED REALITY
+
+CHARACTER STATE
+↓
+INTERNAL CONTEXT
+
+AUTONOMY
+↓
+ACTION RELEVANCE
+
+DECISION MAKING
+↓
+CHOICE
+
+ACTION
+↓
+WORLD INTERACTION
+
+WORLD SIMULATION
+↓
+CONSEQUENCE
+
+UPDATED WORLD STATE.
+```
+
+The loop continues.
+
+---
+
+# 64. World State and Society
+
+World State may create conditions affecting Society.
+
+Example:
+
+```text
+SUPPLY SHORTAGE
++
+MIGRATION
++
+INSTITUTIONAL STRAIN
+↓
+SOCIAL PRESSURE.
+```
+
+But World State does not directly own:
+
+- social norms
+- collective trust
+- social organization
+- community identity
+- social cohesion
+
+Those belong to Society.
+
+World conditions create context.
+
+Society describes collective human response.
+
+---
+
+# 65. World State and Factions
+
+Factions act within World State.
+
+A Faction may:
+
+- control infrastructure
+- protect supply routes
+- disrupt authority
+- move resources
+- create security pressure
+- establish institutions
+- alter regional conditions
+
+But:
+
+```text
+FACTION STATE
+≠
+WORLD STATE.
+```
+
+Faction owns organized collective agency.
+
+World Simulation owns external consequences.
+
+---
+
+# 66. World State and Information
+
+World State owns:
+
+```text
+WHAT IS TRUE.
+```
+
+Information State owns:
+
+```text
+HOW INFORMATION
+ABOUT WORLD CONDITIONS
+EXISTS,
+MOVES,
+DEGRADES,
+COMPETES
+AND BECOMES AVAILABLE.
+```
+
+This separation is mandatory.
+
+---
+
+# 67. World State and Characters
+
+Characters do not automatically know World State.
+
+A Character may:
+
+- misunderstand conditions
+- possess outdated information
+- believe false rumors
+- know local reality better than institutions
+- understand one system but not another
+- possess unique observations
+
+Character knowledge belongs to:
+
+```text
+Knowledge_and_Beliefs.md
+```
+
+World Simulation should never silently synchronize Character knowledge with World Truth.
+
+---
+
+# 68. World State and Aurora
+
+Aurora may possess extraordinary observational and analytical capability.
+
+But:
+
+```text
+AURORA
+≠
+WORLD STATE.
+```
+
+Aurora's understanding remains an observer model.
+
+Conceptually:
+
+```text
+WORLD TRUTH
+↓
+AVAILABLE SIGNALS
+↓
+AURORA OBSERVATION
+↓
+AURORA MODEL
+↓
+AURORA INFERENCE.
+```
+
+Even Aurora may encounter:
+
+- missing information
+- delayed information
+- inaccessible systems
+- deception
+- uncertainty
+- conflicting signals
+- physical observation limits
+
+Aurora is not automatically omniscient.
+
+---
+
+# 69. World State and Narrative
+
+Narrative does not own World Truth.
+
+Conceptually:
+
+```text
+WORLD SIMULATION
+↓
+WHAT HAPPENS
+
+STORY FRAMEWORK
+↓
+WHAT BECOMES
+NARRATIVELY RELEVANT
+
+GAME MASTER
+↓
+WHAT IS PRESENTED
+
+PLAYER
+↓
+WHAT IS EXPERIENCED.
+```
+
+Story must follow causality.
+
+World State must not change because a dramatic scene would be convenient.
+
+---
+
+# 70. World State and Living Campaign Engine
+
+The Living Campaign Engine may coordinate:
+
+- persistent campaign evolution
+- active pressures
+- off-screen developments
+- campaign relevance
+- temporal advancement
+
+But World Simulation remains authoritative for external world consequences.
+
+Conceptually:
+
+```text
+LIVING CAMPAIGN ENGINE
+COORDINATES
+
+WORLD SIMULATION
+RESOLVES
+
+WORLD STATE
+PERSISTS.
+```
+
+---
+
+# 71. Persistent State
+
+World State must persist across:
+
+- sessions
+- player absence
+- travel
+- Story Threads
+- regional transitions
+- time advancement
+
+The world does not reset when the player leaves.
+
+---
+
+# 72. Save-State Requirements
+
+A persistent campaign should preserve enough information to reconstruct meaningful world continuity.
+
+This may include:
+
+```text
+Simulation Time
+
+Historical Era Reference
+
+Current Regional States
+
+Pressures
+
+Resilience
+
+Trends
+
+Recovery Capacity
+
+Active World Events
+
+Systemic History
+
+Cross-Regional Dependencies
+
+Campaign Divergence
+
+Significant Character Effects
+
+Significant Faction Effects.
+```
+
+Exact technical serialization remains future implementation work.
+
+---
+
+# 73. Minimum World State
+
+A minimal viable World Simulation should be capable of representing:
+
+```text
+WORLD
+
+Simulation Time
+
+Historical Era Reference
+
+Global Conditions
+
+Global Pressures
+
 Regions
 
-For each region:
-    Infrastructure
-    Communications
-    Authority
-    Information
-    Population
-    Supply
-    Security
-    Recovery
 
-For each domain:
-    State
-    Pressure
-    Resilience
-    Trend
+FOR EACH REGION:
 
-Plus:
-    Active Events
-    Historical Memory
+Infrastructure
+
+Supply
+
+Security
+
+Authority
+
+Information
+
+Population
+
+
+FOR EACH RELEVANT DOMAIN:
+
+Current State
+
+Pressure
+
+Resilience
+
+Trend
+
+Recovery Capacity
+
+Causal Sources
+
+
+PLUS:
+
+Major Events
+
+Systemic History
+
+Regional Dependencies.
 ```
 
 Everything beyond this should justify its complexity.
 
 ---
 
-# Example Minimal Data Model
-
-Conceptually:
+# 74. Conceptual Example
 
 ```text
 WORLD
 
-Date:
+Simulation Time:
 2034-07-10
 
 Historical Era:
-WS-02
+WS-02 — The Transition
 
-Regions:
 
-    Northern Virginia:
+GLOBAL CONDITIONS
 
-        Infrastructure:
-            State: Degraded
-            Pressure: High
-            Resilience: Moderate
-            Trend: Deteriorating
+Connectivity:
+DEGRADED
 
-        Communications:
-            State: Regional
-            Pressure: Moderate
-            Resilience: Moderate
-            Trend: Stable
+Trade:
+STRAINED
 
-        Authority:
-            State: Functional
-            Pressure: Moderate
-            Resilience: High
-            Trend: Stable
+Mobility:
+LIMITED
 
-        Information:
-            State: Unstable
-            Pressure: High
-            Resilience: Low
-            Trend: Deteriorating
+Information Reliability:
+UNSTABLE
 
-        Population:
-            State: Concerned
-            Pressure: High
-            Resilience: Moderate
-            Trend: Volatile
 
-        Supply:
-            State: Constrained
-            Pressure: High
-            Resilience: Moderate
-            Trend: Deteriorating
+REGION:
+NORTHERN VIRGINIA
 
-        Security:
-            State: Stable
-            Pressure: Moderate
-            Resilience: High
-            Trend: Stable
 
-        Recovery:
-            State: Moderate
-            Pressure: Moderate
-            Resilience: Moderate
-            Trend: Stable
+Infrastructure:
+
+State:
+DEGRADED
+
+Pressure:
+HIGH
+
+Resilience:
+MODERATE
+
+Trend:
+DETERIORATING
+
+Recovery Capacity:
+MODERATE
+
+
+Supply:
+
+State:
+CONSTRAINED
+
+Pressure:
+HIGH
+
+Resilience:
+MODERATE
+
+Trend:
+DETERIORATING
+
+Recovery Capacity:
+LOW
+
+
+Security:
+
+State:
+STABLE
+
+Pressure:
+MODERATE
+
+Resilience:
+HIGH
+
+Trend:
+STABLE
+
+
+Authority:
+
+State:
+FUNCTIONAL
+
+Pressure:
+MODERATE
+
+Resilience:
+HIGH
+
+Trend:
+STABLE
+
+
+Information:
+
+State:
+UNSTABLE
+
+Pressure:
+HIGH
+
+Resilience:
+LOW
+
+Trend:
+DETERIORATING
+
+
+Population:
+
+State:
+UNDER PRESSURE
+
+Pressure:
+HIGH
+
+Resilience:
+MODERATE
+
+Trend:
+VOLATILE.
 ```
 
-This is a conceptual model.
+This is conceptual architecture.
 
-It is not yet a required technical schema.
-
----
-
-# Design Principle
-
-World State should always remain understandable by humans.
-
-If designers cannot explain why a region is in a particular state without reading code, the simulation has become too opaque.
-
-Complexity belongs in interactions.
-
-Not in incomprehensible variables.
+It is not a required technical schema.
 
 ---
 
-# Guiding Questions
+# 75. State Change Validation
 
-At any moment, World State should allow the system to answer:
-
-**What is happening?**
-
-**Where is it happening?**
-
-**How severe is it?**
-
-**What is pushing it to change?**
-
-**What is preventing it from changing?**
-
-**Which direction is it moving?**
-
-**Who knows about it?**
-
-**What happened previously that affects it now?**
-
-These answers form the foundation of the living world.
-
----
-
-# Current Status
+Before significant World State change becomes authoritative, the simulation should be able to answer:
 
 ```text
-WORLD SIMULATION
+WHAT CHANGED?
 
-README.md
-COMPLETE
+WHERE?
 
-World_State.md
-FOUNDATION DEFINED
+WHEN?
 
-Regional_State.md
-PENDING
+WHY?
 
-Infrastructure_State.md
-PENDING
+WHAT CAUSED IT?
 
-Information_State.md
-PENDING
+WHAT PRESSURES
+WERE PRESENT?
 
-Authority_State.md
-PENDING
+WHAT RESILIENCE
+EXISTED?
 
-Population_State.md
-PENDING
+WHAT DEPENDENCIES
+MATTERED?
 
-Escalation_and_Recovery.md
-PENDING
+WHAT EVENT
+TRIGGERED CHANGE?
+
+WHAT MITIGATED IT?
+
+WHAT OTHER SYSTEMS
+SHOULD BE AFFECTED?
+
+IS THE CHANGE
+PLAUSIBLE?
+
+DOES IT CONTRADICT
+CANON?
+
+WHAT CONSEQUENCES
+PERSIST?
+```
+
+If these questions cannot be answered, the change may be insufficiently grounded.
+
+---
+
+# 76. No Automatic Propagation
+
+A change in one domain may affect another.
+
+But avoid:
+
+```text
+SUPPLY
+BECOMES CRITICAL
+↓
+SECURITY
+AUTOMATICALLY
+BECOMES CRITICAL
+↓
+AUTHORITY
+AUTOMATICALLY FAILS.
+```
+
+Instead:
+
+```text
+SUPPLY
+BECOMES CRITICAL
+↓
+CREATES
+SECURITY PRESSURE
++
+POPULATION PRESSURE
++
+AUTHORITY PRESSURE
+
+THEN
+
+LOCAL CONDITIONS
+DETERMINE
+WHAT ACTUALLY CHANGES.
+```
+
+Cross-system consequences require causality.
+
+---
+
+# 77. Cascades
+
+World systems may produce cascading consequences.
+
+Example:
+
+```text
+FUEL SHORTAGE
+↓
+TRANSPORT CAPACITY
+DECLINES
+↓
+FOOD DELIVERY
+DECLINES
+↓
+SUPPLY PRESSURE
+INCREASES
+↓
+PRICE / ACCESS
+PRESSURE
+↓
+POPULATION RESPONSE
+↓
+AUTHORITY PRESSURE
+↓
+SECURITY PRESSURE.
+```
+
+A cascade is not a predetermined script.
+
+Each stage may be:
+
+- absorbed
+- delayed
+- redirected
+- amplified
+- mitigated
+- transformed
+
+by existing conditions.
+
+---
+
+# 78. Feedback Loops
+
+World systems may create feedback.
+
+Example:
+
+```text
+SUPPLY SHORTAGE
+↓
+MIGRATION
+↓
+POPULATION PRESSURE
+↓
+SUPPLY DEMAND
+↓
+GREATER SUPPLY SHORTAGE.
+```
+
+Or:
+
+```text
+INFRASTRUCTURE REPAIR
+↓
+BETTER LOGISTICS
+↓
+BETTER SUPPLY
+↓
+GREATER INSTITUTIONAL CAPACITY
+↓
+MORE INFRASTRUCTURE REPAIR.
+```
+
+Feedback may worsen or improve conditions.
+
+It should remain causal and explainable.
+
+---
+
+# 79. Stability Is Dynamic
+
+Stable does not mean:
+
+```text
+NOTHING IS HAPPENING.
+```
+
+A system may remain stable because:
+
+- institutions are actively compensating
+- people are adapting
+- reserves are being consumed
+- repairs are occurring
+- pressure is being absorbed
+- resources are being redirected
+
+Therefore:
+
+```text
+STABILITY
+MAY REQUIRE
+CONTINUOUS ACTIVITY.
+```
+
+This is especially important when modeling complex systems.
+
+---
+
+# 80. Hidden Fragility
+
+A system may appear stable while resilience is declining.
+
+Example:
+
+```text
+Infrastructure:
+
+State:
+STABLE
+
+Pressure:
+HIGH
+
+Resilience:
+DECLINING
+
+Trend:
+STABLE.
+```
+
+This creates a system that still functions now but is becoming increasingly vulnerable.
+
+World State should support this distinction.
+
+---
+
+# 81. Hidden Recovery
+
+A system may remain visibly degraded while underlying recovery capacity improves.
+
+Example:
+
+```text
+Infrastructure:
+
+State:
+DEGRADED
+
+Pressure:
+MODERATE
+
+Recovery Capacity:
+INCREASING
+
+Trend:
+IMPROVING.
+```
+
+Recovery may therefore begin before the visible state changes.
+
+---
+
+# 82. World State Invariants
+
+## WS-INV-001 — World Truth Exists Independently of Observation
+
+External simulation truth does not depend on whether any Character knows it.
+
+---
+
+## WS-INV-002 — Historical Era Is Not Dynamic State
+
+Canonical World States describe historical eras.
+
+Dynamic World State describes current simulation conditions.
+
+---
+
+## WS-INV-003 — No Universal World Score
+
+The world must not be represented through one universal stability or collapse value.
+
+---
+
+## WS-INV-004 — Regions May Diverge
+
+Regions within the same nation and historical era may possess radically different conditions.
+
+---
+
+## WS-INV-005 — Higher-Level Conditions Create Pressure, Not Identical Outcomes
+
+Global and national conditions influence lower levels without mechanically determining them.
+
+---
+
+## WS-INV-006 — State Changes Require Causes
+
+Meaningful World State changes must be causally explainable.
+
+---
+
+## WS-INV-007 — Pressure Does Not Guarantee Change
+
+Resilience, adaptation and local conditions may absorb pressure.
+
+---
+
+## WS-INV-008 — Resilience Does Not Guarantee Permanent Stability
+
+Sustained or extreme pressure may exceed resilience.
+
+---
+
+## WS-INV-009 — Recovery Requires Cause
+
+Systems do not improve merely because enough time passes.
+
+---
+
+## WS-INV-010 — Recovery Does Not Require Restoration
+
+Systems may regain function through new structures rather than returning to their previous form.
+
+---
+
+## WS-INV-011 — Fragmentation Is Not Universal Failure
+
+Lower-level systems may remain functional after higher-level integration fails.
+
+---
+
+## WS-INV-012 — Information Is Separate From Truth
+
+Observer knowledge must not be silently synchronized with authoritative World State.
+
+---
+
+## WS-INV-013 — Low Resolution Does Not Mean Inactive
+
+Distant regions continue to change according to causal conditions.
+
+---
+
+## WS-INV-014 — Player Absence Does Not Freeze the World
+
+Simulation continues without direct player observation.
+
+---
+
+## WS-INV-015 — Player Actions Obey World Causality
+
+Player Characters do not possess privileged physics.
+
+---
+
+## WS-INV-016 — World State Persists
+
+Meaningful changes remain part of campaign history.
+
+---
+
+## WS-INV-017 — Cross-System Effects Require Causality
+
+Changes must not automatically propagate between domains without justification.
+
+---
+
+## WS-INV-018 — World Simulation Does Not Own Human Choice
+
+World conditions create context and consequences, not Character decisions.
+
+---
+
+## WS-INV-019 — Aurora Is Not Omniscient
+
+Aurora's model of the world remains distinct from authoritative World Truth.
+
+---
+
+## WS-INV-020 — Narrative Does Not Override World Truth
+
+Story follows simulated causality.
+
+World State does not change merely for narrative convenience.
+
+---
+
+# 83. Development Locks
+
+Future World State development must not introduce:
+
+- universal world stability score
+- universal collapse percentage
+- universal regional health score
+- automatic state propagation
+- automatic collapse cascades
+- automatic recovery
+- player-centered world physics
+- frozen off-screen regions
+- omniscient Characters
+- omniscient Factions
+- omniscient Aurora
+- World State confidence as uncertainty about authoritative simulation truth
+- narrative override of simulation truth
+- random major events without causal or external-event justification
+- uniform national conditions
+- uniform historical-era conditions
+- fragmentation treated as universal destruction
+- failure treated as physical disappearance
+- recovery treated as return to the previous system
+- World Simulation owning Character beliefs
+- World Simulation owning Character memory
+- World Simulation owning Society
+- World Simulation owning Faction agency
+
+Avoid:
+
+```text
+REGION
+IS FAR AWAY
+
+THEREFORE
+
+NOTHING HAPPENS.
+```
+
+Prefer:
+
+```text
+REGION
+IS FAR AWAY
+
+THEREFORE
+
+SIMULATION
+RUNS AT
+LOWER RESOLUTION.
+```
+
+Avoid:
+
+```text
+SUPPLY FAILED
+
+THEREFORE
+
+AUTHORITY FAILED.
+```
+
+Prefer:
+
+```text
+SUPPLY FAILED
+
+THEREFORE
+
+AUTHORITY
+EXPERIENCES
+NEW PRESSURE
+
+AND RESPONDS
+ACCORDING TO
+ITS OWN STATE.
 ```
 
 ---
 
-# Next Document
+# 84. World State Design Test
 
-The next recommended document is:
+When evaluating a proposed World State rule or change, ask:
 
 ```text
-Canon/Systems/World_Simulation/Regional_State.md
+IS THIS
+EXTERNAL WORLD TRUTH?
+
+OR
+
+DOES IT BELONG
+TO AN OBSERVER?
+
+WHICH SYSTEM
+OWNS THE DETAIL?
+
+WHAT CAUSED
+THE CONDITION?
+
+WHAT PRESSURE
+EXISTS?
+
+WHAT RESILIENCE
+EXISTS?
+
+WHAT DIRECTION
+IS IT MOVING?
+
+WHAT RECOVERY
+CAPACITY EXISTS?
+
+WHAT DEPENDENCIES
+MATTER?
+
+DO REGIONAL
+DIFFERENCES MATTER?
+
+DOES TIME MATTER?
+
+CAN THE STATE
+CHANGE OFF-SCREEN?
+
+CAN IT BE
+EXPLAINED?
+
+DOES IT PRESERVE
+CANON?
+
+DOES IT CREATE
+CONDITIONS
+
+WITHOUT
+
+DETERMINING
+HUMAN CHOICE?
 ```
 
-World State defines the hierarchy.
+If not, the concept probably belongs elsewhere or requires redesign.
 
-Regional State defines the level where most of the simulation actually becomes alive.
+---
 
-It will establish:
+# 85. Final World State Model
 
-- regional identity
-- geography
-- strategic importance
-- domain values
-- resilience
-- dependencies
-- neighboring regions
-- resource flows
-- regional divergence
-- regional memory
+Conceptually:
 
-The world exists globally.
+```text
+CANON
+        ↓
+HISTORICAL ERA
+        ↓
+INITIAL WORLD CONDITIONS
+        ↓
+────────────────────────────
+AUTHORITATIVE WORLD STATE
+────────────────────────────
+        │
+        ├── Global Conditions
+        │
+        ├── Nations
+        │
+        ├── Regions
+        │     │
+        │     ├── Infrastructure
+        │     ├── Supply
+        │     ├── Security
+        │     ├── Authority
+        │     ├── Information
+        │     └── Population
+        │
+        ├── Cross-Regional Dependencies
+        │
+        ├── Active Pressures
+        │
+        ├── World Events
+        │
+        └── Systemic History
+        ↓
+PRESSURE
++
+RESILIENCE
++
+DEPENDENCIES
++
+EVENTS
++
+TIME
+        ↓
+ESCALATION
+/
+STABILITY
+/
+ADAPTATION
+/
+RECOVERY
+        ↓
+UPDATED WORLD STATE
+        ↓
+WORLD CONDITIONS
+        ↓
+CHARACTERS
+FACTIONS
+SOCIETY
+INSTITUTIONS
+        ↓
+ACTION
+        ↓
+WORLD CONSEQUENCES
+        ↓
+UPDATED WORLD STATE
+        ↓
+SYSTEMIC HISTORY.
+```
 
-**Project Ascension is experienced regionally.**
+The loop continues.
+
+---
+
+# 86. World State North Star
+
+The World State System succeeds when Project Ascension can answer:
+
+```text
+WHAT IS
+ACTUALLY TRUE?
+
+WHERE?
+
+WHY?
+
+HOW DID
+IT BECOME TRUE?
+
+WHAT IS
+PRESSURING IT?
+
+WHAT IS
+KEEPING IT
+FUNCTIONAL?
+
+WHAT DIRECTION
+IS IT MOVING?
+
+WHAT COULD
+CHANGE IT?
+
+WHAT HAPPENED
+BEFORE?
+
+WHAT OTHER
+REGIONS DEPEND
+ON IT?
+
+WHO KNOWS?
+
+WHO DOES NOT?
+
+WHAT WILL
+CONTINUE HAPPENING
+IF THE PLAYER
+NEVER GOES THERE?
+```
+
+The answer should never be:
+
+```text
+BECAUSE
+THE STORY
+NEEDED IT.
+```
+
+---
+
+# 87. Closing Principle
+
+The world of Project Ascension is not a static backdrop.
+
+It is not one condition.
+
+It is not one collapse.
+
+It is not one recovery.
+
+It is not waiting for the player.
+
+Different places experience the same historical moment differently.
+
+Systems remain functional under pressure.
+
+Others fail unexpectedly.
+
+Communities adapt.
+
+Infrastructure fragments.
+
+Trade reroutes.
+
+Authority weakens in one region and strengthens in another.
+
+Information travels unevenly.
+
+People migrate.
+
+Institutions improvise.
+
+Old systems disappear.
+
+New systems emerge.
+
+Recovery does not always mean restoration.
+
+Failure does not always mean destruction.
+
+And fragmentation does not mean that civilization has ended.
+
+The central principle is:
+
+> **World State represents what the world has become through causality up to this moment — and provides the conditions from which it may become something else.**
+
+The world exists.
+
+The world changes.
+
+The world remembers its consequences.
+
+And it continues whether the player is watching or not.
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial World State hierarchy, domain model, pressure, resilience, knowledge and historical-memory framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial World State hierarchy, regional domain model, pressure, resilience, knowledge separation, fragmentation and historical-memory concepts. |
+| 1.0 | 2026-09-01 | Rebuilt World State as canonical architecture aligned with the current Project Ascension simulation model. Clarified World Truth versus observer knowledge, separated historical eras from dynamic state, established regions as primary operational units, formalized State / Pressure / Resilience / Trend / Recovery Capacity, moved observation confidence toward Information State, replaced Historical Memory with Systemic History, reframed dormant simulation as adaptive low-resolution simulation, separated Recovery from peer world domains, strengthened fragmentation and regional divergence, established campaign divergence, snapshots, causal traces, cross-regional dependencies, invariants and development locks, and aligned World State with Characters, Society, Factions, Information, Living Campaign Engine, Narrative and Aurora without duplicating their ownership. |

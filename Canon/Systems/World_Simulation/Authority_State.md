@@ -2,285 +2,727 @@
 # Authority State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Authority State |
-| Location | Canon/Systems/World_Simulation/Authority_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Governance, Legitimacy, Control and Institutional Capacity |
-| Last Updated | 2026-08-09 |
-
-> *"Authority survives longer than control. Control survives longer than legitimacy. None of them are the same thing."*
-
----
-
-# Purpose
-
-The Authority State system defines how governing power is represented inside Project Ascension's World Simulation.
-
-Authority determines:
-
-- who may issue decisions
-- who can implement those decisions
-- who can enforce them
-- who provides essential services
-- who controls territory
-- who coordinates institutions
-- who populations recognize as legitimate
-- how authority shifts during crisis, fragmentation and recovery
-
-The system should avoid treating government as either:
-
-```text
-PRESENT
-```
-
-or:
-
-```text
-COLLAPSED
-```
-
-Authority may remain:
-
-- legally intact
-- operationally weak
-- regionally effective
-- locally contested
-- territorially fragmented
-- publicly mistrusted
-- administratively functional
-- unable to enforce decisions
-
-These conditions must remain distinguishable.
+|---|---|
+| Project | Project Ascension |
+| Document | Authority State System |
+| Location | `Canon/Systems/World_Simulation/Authority_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Governance |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Represent the external governance structures, jurisdictions, institutional capacities and practical reach through which collective decisions may be implemented in the simulated world |
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-Authority consists of several different dimensions.
+The Authority State System defines how governance exists as part of World State.
 
-Conceptually:
+It answers:
+
+> **Who possesses recognized or practical governing authority, over what, where, and with what real capacity to make collective decisions matter?**
+
+Authority State represents the external structures through which organized governance can:
 
 ```text
+CLAIM JURISDICTION
+
+ISSUE DIRECTIVES
+
+COORDINATE INSTITUTIONS
+
+ADMINISTER SYSTEMS
+
+PROVIDE SERVICES
+
+ENFORCE RULES
+
+CONTROL TERRITORY
+
+DELEGATE RESPONSIBILITY
+
+MAINTAIN CONTINUITY.
+```
+
+It does not determine what every governing Actor chooses.
+
+It determines the governance reality within which those choices may be attempted and implemented.
+
+---
+
+# 2. Core Principle
+
+Authority is not one thing.
+
+Canonical distinction:
+
+```text
+LEGAL AUTHORITY
+
+≠
+
+PRACTICAL AUTHORITY
+
+≠
+
+OPERATIONAL CAPACITY
+
+≠
+
+TERRITORIAL CONTROL
+
+≠
+
+ENFORCEMENT CAPACITY
+
+≠
+
+SERVICE CAPACITY
+
+≠
+
+SOCIAL LEGITIMACY.
+```
+
+These conditions may diverge significantly.
+
+A government may remain legally sovereign while losing practical control.
+
+A local council may possess little formal legal authority while providing effective governance.
+
+A military command may control territory without possessing broad civilian legitimacy.
+
+A national institution may retain symbolic importance after most daily governance has become regional.
+
+Project Ascension must preserve these distinctions.
+
+---
+
+# 3. Authority Is Not Government
+
+Government is one possible form of authority.
+
+Authority may also be exercised through:
+
+```text
+national governments
+
+state governments
+
+regional administrations
+
+municipal governments
+
+tribal governments
+
+emergency administrations
+
+military commands
+
+settlement councils
+
+community councils
+
+institutional coalitions
+
+corporate administrations
+
+religious institutions
+
+Factions
+
+temporary governing coalitions.
+```
+
+The simulation must distinguish:
+
+```text
+WHO CLAIMS
 AUTHORITY
-│
-├── Legal Authority
-├── Operational Capacity
-├── Territorial Control
-├── Enforcement Capacity
-├── Service Capacity
-├── Coordination Capacity
-├── Legitimacy
-├── Public Compliance
-├── Institutional Cohesion
-└── Continuity Capacity
+
+WHO POSSESSES
+FORMAL AUTHORITY
+
+WHO CAN
+ACTUALLY GOVERN
+
+WHO CONTROLS
+THE RELEVANT SYSTEM
+
+AND
+
+WHO IS
+SOCIALly ACCEPTED.
 ```
 
-A governing body may be strong in one dimension and weak in another.
+These may be different Actors.
 
 ---
 
-# Authority Is Not Government
+# 4. Ownership Boundary
 
-Government is one possible holder of authority.
-
-Authority may also be exercised by:
-
-- regional administrations
-- municipal governments
-- military commands
-- emergency authorities
-- settlement councils
-- tribal governments
-- corporate administrations
-- religious organizations
-- community coalitions
-- militias
-- factions
-- informal local leaders
-
-The simulation should distinguish:
+Authority State owns external governance state including:
 
 ```text
-WHO CLAIMS AUTHORITY
+formal authority
+
+legal authority
+
+jurisdiction
+
+delegated authority
+
+emergency authority
+
+governance structure
+
+operational governance capacity
+
+administrative capacity
+
+coordination capacity
+
+service-governance capacity
+
+enforcement capacity
+
+territorial governance reach
+
+institutional continuity capacity
+
+institutional cohesion
+
+authority fragmentation
+
+functional authority distribution
+
+governance dependencies
+
+authority structure transitions.
+```
+
+---
+
+# 5. What Authority State Does Not Own
+
+Authority State does not own:
+
+```text
+Actor Goals
+
+Actor Plans
+
+Actor Values
+
+Actor Beliefs
+
+Actor Knowledge
+
+Actor Decisions
+
+Character Psychology
+
+Character Relationships
+
+Faction Objectives
+
+Faction Internal Decision-Making
+
+Population Psychology
+
+Population Beliefs
+
+Population Trust
+
+Social Cohesion
+
+Culture
+
+Narrative Outcomes.
+```
+
+These belong to their respective authoritative systems.
+
+---
+
+# 6. Authority State vs Authority Actor
+
+This distinction is fundamental.
+
+```text
+AUTHORITY ACTOR
+=
+THE ORGANIZED ACTOR
+THAT MAY GOVERN
+
+
+AUTHORITY STATE
+=
+THE GOVERNANCE CONDITIONS
+THROUGH WHICH
+THAT ACTOR CAN GOVERN.
+```
+
+Examples of Authority Actors:
+
+```text
+Federal Government
+
+Virginia State Government
+
+County Administration
+
+Military Command
+
+Valley Council
+
+Utility Coalition
+
+Settlement Council.
+```
+
+The Actor owns:
+
+```text
+Goals
+
+Beliefs
+
+Knowledge
+
+Plans
+
+Decisions
+
+Internal priorities.
+```
+
+Authority State owns:
+
+```text
+Jurisdiction
+
+Formal powers
+
+Operational reach
+
+Administrative capability
+
+Territorial governance reach
+
+Enforcement capability
+
+Delegated authority
+
+Institutional continuity.
+```
+
+---
+
+# 7. Faction Boundary
+
+A Faction may:
+
+```text
+seek authority
+
+support authority
+
+oppose authority
+
+capture authority
+
+share authority
+
+exercise authority.
+```
+
+But:
+
+```text
+FACTION
+≠
+AUTHORITY.
+```
+
+Faction systems own the organized collective Actor.
+
+Authority State owns the governance position that Actor occupies.
+
+---
+
+# 8. Society Boundary
+
+Authority State must not own collective public psychology.
+
+Concepts such as:
+
+```text
+public trust
+
+social cohesion
+
+collective fear
+
+social legitimacy
+
+population willingness
+
+collective identity
+
+social norms
+```
+
+belong primarily to Society and related human systems.
+
+Authority State may consume their effects.
+
+Example:
+
+```text
+SOCIETY:
+
+Population acceptance
+of Regional Council:
+HIGH
+
+↓
+
+AUTHORITY STATE:
+
+Voluntary implementation
+conditions improve.
+```
+
+Authority State does not create the social acceptance.
+
+---
+
+# 9. Legitimacy Boundary
+
+Legitimacy requires special treatment.
+
+The older architecture treated legitimacy as a direct Authority State variable.
+
+The canonical architecture separates:
+
+```text
+FORMAL LEGITIMACY
 ```
 
 from:
 
 ```text
-WHO EXERCISES AUTHORITY
-```
-
-and:
-
-```text
-WHO IS ACCEPTED AS LEGITIMATE
+SOCIAL LEGITIMACY.
 ```
 
 ---
 
-# Authority Layers
+# 10. Formal Legitimacy
 
-Authority may exist across multiple levels simultaneously.
+Formal Legitimacy represents whether an Authority Actor's claim is recognized by the relevant legal or institutional framework.
 
-```text
-NATIONAL
-    │
-    ▼
-REGIONAL
-    │
-    ▼
-LOCAL
-    │
-    ▼
-COMMUNITY
-```
-
-A lower level may gain practical authority without formally replacing the higher level.
-
-Example:
+Examples:
 
 ```text
-National Government:
-Legally Sovereign
+constitutional succession
 
-Regional Government:
-Operationally Primary
+recognized election
 
-Local Government:
-Service Delivery Primary
+lawful appointment
+
+delegated emergency authority
+
+recognized municipal authority
+
+recognized military command.
 ```
 
-All three can coexist.
+Formal Legitimacy belongs to Authority State.
 
 ---
 
-# Legal Authority
+# 11. Social Legitimacy
 
-Legal Authority represents formal recognized power under existing law or institutional rules.
+Social Legitimacy represents whether relevant people or groups accept an Authority Actor's right to govern.
 
-Examples include:
+This is observer- and group-dependent.
 
-- constitutions
-- emergency legislation
-- executive authority
-- regional statutes
-- municipal charters
-- military command structures
-- settlement constitutions
+It belongs primarily to:
+
+```text
+Society
+
+Characters
+
+Relationships
+
+Factions
+```
+
+depending on the observer.
+
+Authority State may reference or aggregate externally owned legitimacy state when governance requires it.
+
+It must not become its authoritative owner.
+
+---
+
+# 12. Legal Authority
+
+Legal Authority represents formally recognized governing power under an applicable legal framework.
 
 Conceptual states:
 
 ```text
 CLEAR
+
 LIMITED
+
 CONTESTED
+
 AMBIGUOUS
-ABSENT
+
+ABSENT.
 ```
 
 ---
 
-# Clear Legal Authority
+# 13. Clear Legal Authority
 
 ```text
 CLEAR
 ```
 
-Institutional rules clearly identify who possesses formal authority.
+means the applicable legal framework clearly identifies the authority holder.
 
-This does not imply practical control.
+This does not imply practical capability.
 
 ---
 
-# Limited Legal Authority
+# 14. Limited Legal Authority
 
 ```text
 LIMITED
 ```
 
-An authority has recognized power over only part of the required action.
+means formal authority exists only over part of the relevant action or domain.
 
 Example:
 
-A regional government may legally manage emergency services but lack authority over military assets.
+```text
+Regional Government:
+
+Emergency Services:
+AUTHORIZED
+
+Military Assets:
+NOT AUTHORIZED.
+```
 
 ---
 
-# Contested Legal Authority
+# 15. Contested Legal Authority
 
 ```text
 CONTESTED
 ```
 
-Multiple actors claim legitimate legal authority.
+means multiple Actors possess competing formal claims.
 
-Examples:
+Possible causes include:
 
-- disputed succession
-- competing governments
-- conflicting emergency mandates
-- regional secession
-- contested elections
+```text
+disputed succession
+
+competing governments
+
+constitutional conflict
+
+secession
+
+conflicting emergency mandates
+
+disputed elections.
+```
 
 ---
 
-# Ambiguous Legal Authority
+# 16. Ambiguous Legal Authority
 
 ```text
 AMBIGUOUS
 ```
 
-Existing law does not clearly address current conditions.
+means existing rules do not clearly resolve the current governance situation.
 
-This may occur when institutions face situations never anticipated by their legal framework.
+Novel crises may create this condition.
 
 ---
 
-# Absent Legal Authority
+# 17. Absent Legal Authority
 
 ```text
 ABSENT
 ```
 
-No meaningful formal framework remains applicable or enforceable in the simulated area.
+means no meaningful applicable formal framework exists for the Authority Actor's claim.
 
-Local authority may still exist through other mechanisms.
+Practical governance may still exist.
 
 ---
 
-# Operational Capacity
+# 18. Jurisdiction
 
-Operational Capacity represents whether an authority can actually carry out decisions.
+Jurisdiction defines what an Authority Actor is formally or practically authorized to govern.
 
-It depends upon:
+Jurisdiction may apply to:
 
-- personnel
-- communications
-- transportation
-- information
-- funding
-- infrastructure
-- administrative systems
-- security
-- logistics
+```text
+territory
+
+population
+
+infrastructure
+
+security
+
+justice
+
+trade
+
+resources
+
+public services
+
+transportation
+
+emergency response
+
+administration.
+```
+
+Jurisdiction is multi-dimensional.
+
+---
+
+# 19. Overlapping Jurisdiction
+
+Multiple Authority Actors may possess jurisdiction over the same place while governing different functions.
+
+Example:
+
+```text
+COUNTY GOVERNMENT
+→ Civil Administration
+
+UTILITY AUTHORITY
+→ Power Infrastructure
+
+MILITARY COMMAND
+→ Strategic Security
+
+STATE GOVERNMENT
+→ Emergency Coordination.
+```
+
+This is not necessarily conflict.
+
+---
+
+# 20. Functional Authority
+
+Governance may become functionally distributed.
+
+Example:
+
+```text
+Political Administration:
+Regional Government
+
+Security Coordination:
+Military Command
+
+Electrical Infrastructure:
+Utility Coalition
+
+Food Distribution:
+Community Network
+
+Local Justice:
+Municipal Council.
+```
+
+No single Actor must control every function.
+
+---
+
+# 21. Claimed vs Effective Jurisdiction
+
+Canonical distinction:
+
+```text
+CLAIMED JURISDICTION
+
+≠
+
+EFFECTIVE JURISDICTION.
+```
+
+An institution may legally claim an entire region while effectively governing only selected areas.
+
+---
+
+# 22. Operational Capacity
+
+Operational Capacity represents whether an Authority Actor can practically carry out governance functions.
+
+It may depend on:
+
+```text
+personnel
+
+communication
+
+transportation
+
+information
+
+administrative systems
+
+infrastructure
+
+funding
+
+logistics
+
+security
+
+technical capability
+
+physical access.
+```
 
 Conceptual states:
 
 ```text
 HIGH
+
 FUNCTIONAL
+
 STRAINED
+
 LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
 ---
 
-# Legal Authority Versus Operational Capacity
+# 23. Legal Authority vs Operational Capacity
 
 These must remain separate.
 
@@ -294,7 +736,9 @@ Operational Capacity:
 LOW
 ```
 
-The government retains legal authority but cannot reliably implement decisions.
+The government remains formally authorized.
+
+It cannot reliably implement its decisions.
 
 Alternatively:
 
@@ -306,1447 +750,1669 @@ Operational Capacity:
 HIGH
 ```
 
-may describe an emergency coalition that functions effectively without a fully established legal framework.
+may describe an effective emergency coalition operating without a fully established legal framework.
 
 ---
 
-# Territorial Control
+# 24. Administrative Capacity
 
-Territorial Control measures the geographic area within which an authority can reliably exercise power.
-
-Conceptually:
-
-```text
-FULL
-BROAD
-PARTIAL
-LOCALIZED
-FRAGMENTED
-NONE
-```
-
----
-
-# Full Territorial Control
-
-```text
-FULL
-```
-
-The authority can consistently operate throughout its claimed territory.
-
----
-
-# Broad Territorial Control
-
-```text
-BROAD
-```
-
-Most territory remains accessible and governed, with limited exceptions.
-
----
-
-# Partial Territorial Control
-
-```text
-PARTIAL
-```
-
-Significant areas operate beyond regular authority.
-
----
-
-# Localized Territorial Control
-
-```text
-LOCALIZED
-```
-
-Authority functions primarily in selected population centers, corridors or settlements.
-
----
-
-# Fragmented Territorial Control
-
-```text
-FRAGMENTED
-```
-
-Multiple disconnected pockets remain under authority, but no unified territorial control exists.
-
----
-
-# None
-
-```text
-NONE
-```
-
-The actor may retain symbolic or legal claims but no meaningful territorial control.
-
----
-
-# Authority Coverage
-
-Regional State may summarize authority coverage independently of legal status.
-
-Example:
-
-```text
-Regional Authority:
-FUNCTIONAL
-
-Authority Coverage:
-PARTIAL
-```
-
-This means institutions remain capable where present, but their reach is geographically incomplete.
-
----
-
-# Enforcement Capacity
-
-Enforcement Capacity represents the ability to make rules meaningful.
-
-It may depend upon:
-
-- police
-- courts
-- regulatory agencies
-- military support
-- community compliance
-- detention systems
-- administrative penalties
-
-Conceptual states:
-
-```text
-HIGH
-FUNCTIONAL
-STRAINED
-LOW
-LOCALIZED
-NONE
-```
-
----
-
-# Enforcement Is Not Only Force
-
-Enforcement may occur through:
-
-- legal compliance
-- social expectations
-- economic rules
-- licensing
-- resource access
-- negotiated authority
-- institutional trust
-
-A society with strong legitimacy may require less coercive enforcement.
-
----
-
-# Coercive Capacity
-
-Where useful, coercive capacity may be tracked separately.
-
-Possible sources include:
-
-- police
-- military
-- armed factions
-- detention capacity
-- physical control of infrastructure
-
-High coercive capacity does not imply high legitimacy.
-
----
-
-# Service Capacity
-
-Service Capacity represents whether an authority can provide or coordinate essential public functions.
+Administrative Capacity represents the ability to perform routine governance functions.
 
 Examples:
 
-- emergency services
-- healthcare
-- food distribution
-- water
-- power coordination
-- shelter
-- transportation
-- welfare
-- education
-- public information
+```text
+records
+
+permits
+
+taxation
+
+personnel administration
+
+resource accounting
+
+legal administration
+
+logistics coordination
+
+public records
+
+service administration.
+```
 
 Conceptual states:
 
 ```text
 HIGH
+
 FUNCTIONAL
+
 STRAINED
-LIMITED
+
+LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
 ---
 
-# Governance Through Services
+# 25. Administrative Complexity
 
-Authority may gain legitimacy by providing services even when traditional institutional structures weaken.
+Advanced societies may require substantial administrative capacity to maintain complex systems.
 
-Example:
+When available capacity declines, governance may simplify.
+
+Examples:
 
 ```text
-Regional Emergency Council
+fewer reporting requirements
 
-Legal Authority:
-Ambiguous
+local delegation
 
-Service Capacity:
-High
+simplified rationing
 
-Public Legitimacy:
-High
+reduced regulatory complexity
+
+regional decision-making
+
+manual records
+
+simplified taxation.
 ```
 
-The population may accept the council because it keeps essential systems functioning.
+Canonical principle:
+
+```text
+LESS COMPLEX
+GOVERNANCE
+
+≠
+
+NO GOVERNANCE.
+```
 
 ---
 
-# Coordination Capacity
+# 26. Coordination Capacity
 
-Coordination Capacity represents the ability to align multiple institutions and actors.
+Coordination Capacity represents the ability of governance structures to align multiple independent Actors or institutions.
 
-It depends upon:
+Possible dependencies include:
 
-- communication
-- information quality
-- common procedures
-- trusted leadership
-- shared objectives
-- institutional compatibility
+```text
+communication
+
+information quality
+
+procedures
+
+institutional relationships
+
+leadership
+
+shared protocols
+
+transportation
+
+administrative capacity.
+```
 
 Conceptual states:
 
 ```text
 HIGH
+
 FUNCTIONAL
+
 STRAINED
+
 FRAGMENTED
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
 ---
 
-# Coordination Versus Control
+# 27. Coordination vs Control
 
-An authority may coordinate actors it does not directly control.
+An Authority Actor may coordinate systems it does not directly control.
 
 Example:
 
 ```text
-Regional Government
-      │
-      ├── Coordinates hospitals
-      ├── Coordinates private logistics
-      ├── Coordinates utilities
-      └── Coordinates military support
+REGIONAL GOVERNMENT
+        │
+        ├── Hospital Network
+        ├── Private Logistics
+        ├── Utilities
+        └── Military Support.
 ```
 
-This may be more important than direct command during emergency operations.
+Coordination may become more important than direct command during crisis.
 
 ---
 
-# Institutional Cohesion
+# 28. Territorial Governance Reach
 
-Institutional Cohesion measures whether organizations nominally under the same authority continue acting as part of one system.
+Territorial Governance Reach represents where an Authority Actor can practically maintain governance functions.
+
+Conceptual states:
+
+```text
+FULL
+
+BROAD
+
+PARTIAL
+
+LOCALIZED
+
+FRAGMENTED
+
+NONE.
+```
+
+---
+
+# 29. Full Reach
+
+```text
+FULL
+```
+
+means governance can operate consistently throughout the claimed territory.
+
+---
+
+# 30. Broad Reach
+
+```text
+BROAD
+```
+
+means most of the claimed territory remains governed with limited exceptions.
+
+---
+
+# 31. Partial Reach
+
+```text
+PARTIAL
+```
+
+means significant areas operate beyond regular governance reach.
+
+---
+
+# 32. Localized Reach
+
+```text
+LOCALIZED
+```
+
+means authority operates mainly through selected:
+
+```text
+cities
+
+corridors
+
+facilities
+
+settlements
+
+strategic areas.
+```
+
+---
+
+# 33. Fragmented Reach
+
+```text
+FRAGMENTED
+```
+
+means governance exists in disconnected pockets without continuous territorial reach.
+
+---
+
+# 34. No Effective Reach
+
+```text
+NONE
+```
+
+means the Actor may retain formal or symbolic claims but possesses no meaningful current territorial governance reach.
+
+---
+
+# 35. Territorial Reach vs Sovereignty
+
+Canonical distinction:
+
+```text
+SOVEREIGN CLAIM
+
+≠
+
+TERRITORIAL GOVERNANCE REACH.
+```
+
+A national government may remain sovereign while exercising little practical governance in some regions.
+
+---
+
+# 36. Enforcement Capacity
+
+Enforcement Capacity represents the practical ability to make institutional rules consequential.
+
+Possible mechanisms include:
+
+```text
+policing
+
+courts
+
+administrative penalties
+
+licensing
+
+resource restrictions
+
+physical enforcement
+
+regulatory systems
+
+detention
+
+negotiated compliance.
+```
+
+Conceptual states:
+
+```text
+HIGH
+
+FUNCTIONAL
+
+STRAINED
+
+LOW
+
+LOCALIZED
+
+NONE.
+```
+
+---
+
+# 37. Enforcement Is Not Only Force
+
+Governance may be implemented through:
+
+```text
+administration
+
+legal procedure
+
+resource access
+
+economic regulation
+
+negotiated agreements
+
+institutional routines
+
+voluntary compliance
+
+physical enforcement.
+```
+
+Authority State must not reduce enforcement to armed coercion.
+
+---
+
+# 38. Coercive Capacity
+
+Where relevant, Coercive Capacity may be represented separately.
+
+Possible sources include:
+
+```text
+police
+
+military
+
+armed security
+
+detention capability
+
+physical infrastructure control.
+```
+
+Canonical rule:
+
+```text
+COERCIVE CAPACITY
+
+≠
+
+SOCIAL LEGITIMACY.
+```
+
+---
+
+# 39. Service Governance Capacity
+
+Authority Actors may coordinate or administer essential services.
+
+Examples include:
+
+```text
+emergency response
+
+water distribution
+
+healthcare coordination
+
+food distribution
+
+shelter
+
+transportation
+
+public information
+
+energy allocation.
+```
+
+Service Governance Capacity represents the governance ability to organize these functions.
+
+It does not own the underlying physical service state.
+
+---
+
+# 40. Service Ownership Boundary
+
+Example:
+
+```text
+Authority State:
+Government can coordinate
+water distribution.
+
+Infrastructure State:
+Water network is degraded.
+
+Supply State:
+Treatment chemicals are scarce.
+```
+
+Authority does not create water.
+
+It governs access, coordination or allocation where it possesses the relevant authority and capability.
+
+---
+
+# 41. Institutional Cohesion
+
+Institutional Cohesion represents whether institutions nominally belonging to the same governance structure continue functioning as part of one coordinated system.
 
 Conceptual states:
 
 ```text
 STRONG
+
 FUNCTIONAL
+
 STRAINED
+
 FRAGMENTED
+
 DIVIDED
-COLLAPSED
+
+NONFUNCTIONAL.
 ```
 
 ---
 
-# Fragmented Institutions
+# 42. Institutional Fragmentation
 
-Institutional fragmentation may occur when:
-
-- agencies receive different information
-- communications fail
-- regional priorities diverge
-- legal authority becomes unclear
-- local commanders act independently
-- central direction arrives too slowly
-
-Fragmentation does not automatically mean rebellion.
-
-It may begin as practical decentralization.
-
----
-
-# Legitimacy
-
-Legitimacy represents the degree to which a population or institution accepts an authority's right to govern.
-
-Legitimacy may be derived from:
-
-- law
-- elections
-- tradition
-- performance
-- protection
-- service provision
-- consent
-- identity
-- shared values
-- historical continuity
-
-Conceptual states:
+Fragmentation may occur because:
 
 ```text
-HIGH
-FUNCTIONAL
-STRAINED
-LOW
-CONTESTED
-ABSENT
+communication fails
+
+information differs
+
+regional priorities diverge
+
+legal authority becomes unclear
+
+central direction arrives too slowly
+
+resources become locally controlled
+
+administrative systems disconnect.
 ```
 
----
-
-# Legitimacy Is Observer-Specific
-
-Legitimacy is not necessarily universal.
-
-Example:
+Canonical rule:
 
 ```text
-Regional Authority
+INSTITUTIONAL
+FRAGMENTATION
 
-Urban Population:
-HIGH LEGITIMACY
+≠
 
-Rural Communities:
-LOW LEGITIMACY
-
-Military:
-FUNCTIONAL LEGITIMACY
-
-Neighboring Region:
-CONTESTED
+REBELLION.
 ```
 
-Different groups may recognize different authorities.
+Fragmentation may begin as practical decentralization.
 
 ---
 
-# Legal Authority Versus Legitimacy
+# 43. Delegated Authority
 
-An institution may be legal but unpopular.
-
-Example:
-
-```text
-Legal Authority:
-CLEAR
-
-Legitimacy:
-LOW
-```
-
-Another may be technically illegal but widely accepted.
-
-Example:
-
-```text
-Legal Authority:
-ABSENT
-
-Legitimacy:
-HIGH
-```
-
-The simulation must allow both.
-
----
-
-# Performance Legitimacy
-
-During prolonged crisis, legitimacy may increasingly depend upon performance.
-
-Conceptually:
-
-```text
-AUTHORITY PROVIDES
-Food
-Water
-Security
-Information
-
-        ↓
-
-PUBLIC ACCEPTANCE
-INCREASES
-```
-
-Failure may produce the opposite effect.
-
----
-
-# Symbolic Legitimacy
-
-Some institutions may retain symbolic legitimacy even after losing operational capacity.
-
-Example:
-
-```text
-National Government
-
-Operational Capacity:
-LOW
-
-Territorial Control:
-FRAGMENTED
-
-Legitimacy:
-MODERATE
-```
-
-Citizens may still identify with the national government even if most daily governance occurs locally.
-
-This becomes important during The Fractured World.
-
----
-
-# Public Compliance
-
-Public Compliance represents how consistently populations follow authority decisions.
-
-Possible states:
-
-```text
-HIGH
-FUNCTIONAL
-SELECTIVE
-LOW
-RESISTANT
-```
-
-Compliance depends upon more than legitimacy.
-
-Factors include:
-
-- enforcement
-- necessity
-- trust
-- perceived fairness
-- fear
-- social norms
-- practical feasibility
-
----
-
-# Selective Compliance
-
-A population may comply with some decisions and reject others.
-
-Example:
-
-```text
-Emergency evacuation:
-Accepted
-
-Fuel rationing:
-Accepted
-
-Movement restrictions:
-Resisted
-```
-
-Public Compliance should not be treated as one-dimensional obedience.
-
----
-
-# Authority Trust
-
-Trust belongs partly to Information and Society systems.
-
-Authority State should track institutional trust where necessary for governance outcomes.
-
-Example:
-
-```text
-Public Trust in Regional Authority:
-MODERATE
-```
-
-Low trust may reduce compliance even when legitimacy remains technically intact.
-
----
-
-# Emergency Authority
-
-Crisis may create temporary expansions of authority.
-
-Examples:
-
-- emergency declarations
-- rationing powers
-- evacuation orders
-- requisition
-- curfews
-- infrastructure control
-- emergency communication rules
-
-Emergency Authority should be explicitly tracked.
-
----
-
-# Emergency Authority State
-
-Conceptually:
-
-```text
-INACTIVE
-LIMITED
-ACTIVE
-EXPANDED
-EXTREME
-```
-
----
-
-# Emergency Power Tradeoff
-
-Emergency authority may increase short-term coordination.
-
-It may also create:
-
-- legitimacy pressure
-- legal conflict
-- public resistance
-- institutional tension
-
-Example:
-
-```text
-Emergency Authority:
-EXPANDED
-
-Operational Capacity:
-HIGH
-
-Legitimacy Trend:
-DETERIORATING
-```
-
-The action may work while damaging future governance.
-
----
-
-# Continuity Capacity
-
-Continuity Capacity represents the ability of authority structures to survive loss of normal institutions.
-
-Factors include:
-
-- succession plans
-- backup locations
-- distributed leadership
-- redundant communications
-- emergency procedures
-- preserved records
-- delegated authority
-
-Conceptual states:
-
-```text
-HIGH
-MODERATE
-LOW
-MINIMAL
-NONE
-```
-
----
-
-# Continuity Government
-
-Continuity arrangements may allow institutions to remain legally and symbolically intact while operating differently.
-
-Examples:
-
-```text
-Primary capital unavailable
-        ↓
-Continuity site activated
-        ↓
-Regional authority expanded
-        ↓
-National government continues
-```
-
-Continuity should not automatically imply authoritarian government.
-
-It is a structural response to institutional disruption.
-
----
-
-# Delegated Authority
-
-Higher-level institutions may delegate power downward.
-
-Example:
-
-```text
-National Government
-        ↓
-Regional Emergency Authority
-        ↓
-Municipal Coordination
-```
-
-Delegation can preserve governance when centralized action becomes too slow.
-
----
-
-# Delegation State
-
-Conceptually:
-
-```text
-CENTRALIZED
-LIMITED DELEGATION
-REGIONALIZED
-DECENTRALIZED
-LOCALIZED
-```
-
-This describes where practical decision-making occurs.
-
----
-
-# Decentralization
-
-Decentralization does not automatically mean loss of government.
-
-It may be an intentional strategy.
-
-Example:
-
-```text
-National Authority:
-FUNCTIONAL
-
-National Coordination:
-STRAINED
-
-Regional Authority:
-EXPANDED
-
-Result:
-DECENTRALIZED GOVERNANCE
-```
-
-This mirrors the progression established in Emergency Communications.
-
----
-
-# Authority Fragmentation
-
-Authority Fragmentation occurs when different actors exercise governance without reliable common coordination.
-
-Example:
-
-```text
-REGION
-
-State Government:
-Controls major cities
-
-Military Command:
-Controls transport corridors
-
-Local Councils:
-Control rural communities
-
-Corporate Authority:
-Controls industrial zone
-```
-
-Fragmentation may be cooperative or competitive.
-
----
-
-# Cooperative Fragmentation
-
-Authorities may recognize one another and coordinate.
-
-Example:
-
-```text
-Regional Government
-     ↕
-Settlement Councils
-     ↕
-Military Support
-```
-
-No unified administrative structure exists.
-
-Governance still functions.
-
----
-
-# Competitive Fragmentation
-
-Authorities may compete for:
-
-- territory
-- resources
-- legitimacy
-- population support
-- infrastructure
-
-Competition may remain political.
-
-It does not automatically require violence.
-
----
-
-# Contested Authority
-
-Contested Authority occurs when multiple actors claim the right to govern the same population or territory.
-
-Conceptually:
-
-```text
-Authority A:
-Legal claim
-
-Authority B:
-Territorial control
-
-Authority C:
-Public legitimacy
-```
-
-No actor possesses all three.
-
-This creates unstable governance.
-
----
-
-# Authority Vacuum
-
-An Authority Vacuum exists when no institution can reliably:
-
-- coordinate
-- provide services
-- enforce rules
-- resolve disputes
-
-Possible results include:
-
-- local self-organization
-- informal leadership
-- community councils
-- criminal governance
-- faction expansion
-
-Authority vacuums should generate new authority structures rather than remain permanently empty.
-
----
-
-# Authority Emergence
-
-New authorities may emerge through:
-
-- elections
-- emergency councils
-- military command
-- community organization
-- control of resources
-- protection
-- trade
-- religious leadership
-- charismatic leadership
-
-Emergence should require both capability and social context.
-
----
-
-# Authority Transition
-
-Authority may change gradually.
+Higher-level Authority Actors may delegate governance powers downward.
 
 Example:
 
 ```text
 NATIONAL GOVERNMENT
-Primary operational authority
         ↓
-National coordination weakens
+REGIONAL EMERGENCY AUTHORITY
         ↓
-REGIONAL GOVERNMENT
-Primary operational authority
-        ↓
-Regional fragmentation
-        ↓
-LOCAL COALITIONS
-Primary operational authority
+MUNICIPAL COORDINATION.
 ```
 
-Legal sovereignty may remain national throughout much of this process.
+Delegation may preserve governance when centralized administration becomes too slow or distant.
 
 ---
 
-# Authority State Profile
+# 44. Delegation State
 
-A regional Authority State may contain:
+Conceptually:
 
 ```text
-AUTHORITY STATE
+CENTRALIZED
 
-Primary Authority:
-Virginia Regional Emergency Administration
+LIMITED DELEGATION
 
-Legal Authority:
+REGIONALIZED
+
+DECENTRALIZED
+
+LOCALIZED.
+```
+
+This describes where practical decision authority resides.
+
+---
+
+# 45. Decentralization
+
+Decentralization is not automatically institutional failure.
+
+It may be:
+
+```text
+planned
+
+temporary
+
+adaptive
+
+negotiated
+
+emergent.
+```
+
+Example:
+
+```text
+National Legal Authority:
 CLEAR
 
-Operational Capacity:
-FUNCTIONAL
-
-Territorial Control:
-BROAD
-
-Enforcement Capacity:
-FUNCTIONAL
-
-Service Capacity:
+National Coordination:
 STRAINED
 
-Coordination Capacity:
-FUNCTIONAL
+Regional Delegation:
+EXPANDED
 
-Institutional Cohesion:
-STRAINED
-
-Legitimacy:
-FUNCTIONAL
-
-Public Compliance:
-SELECTIVE
-
-Emergency Authority:
-ACTIVE
-
-Continuity Capacity:
-HIGH
-
-Delegation:
-REGIONALIZED
+Result:
+DECENTRALIZED GOVERNANCE.
 ```
 
 ---
 
-# Competing Authorities
+# 46. Emergency Authority
 
-Regions may maintain multiple Authority Actors.
-
-Conceptually:
-
-```text
-AUTHORITY ACTORS
-
-Actor A:
-Regional Government
-
-Actor B:
-Military Command
-
-Actor C:
-Settlement Coalition
-```
-
-Each actor may possess its own profile.
-
----
-
-# Authority Actor
-
-Conceptually:
-
-```text
-AUTHORITY ACTOR
-│
-├── ID
-├── Name
-├── Type
-├── Legal Claim
-├── Operational Capacity
-├── Territorial Control
-├── Enforcement Capacity
-├── Service Capacity
-├── Legitimacy
-├── Resources
-├── Relationships
-└── Objectives
-```
-
----
-
-# Authority Types
-
-Possible types include:
-
-```text
-National Government
-Regional Government
-Municipal Government
-Emergency Authority
-Military Command
-Settlement Council
-Faction Government
-Corporate Administration
-Religious Authority
-Community Coalition
-Informal Authority
-```
-
----
-
-# Authority Resources
-
-Authorities require resources.
+Crisis may temporarily expand formal governance powers.
 
 Examples include:
 
-- personnel
-- money
-- food
-- fuel
-- communications
-- vehicles
-- infrastructure access
-- weapons
-- technical expertise
-- information
-
-Authority without resources may become primarily symbolic.
-
----
-
-# Authority Dependencies
-
-Authority depends upon other systems.
-
-Example:
-
 ```text
-AUTHORITY
-│
-├── Communications
-├── Information
-├── Infrastructure
-├── Security
-├── Supply
-└── Population Compliance
+emergency declarations
+
+evacuation authority
+
+rationing powers
+
+requisition authority
+
+curfews
+
+temporary infrastructure control
+
+movement restrictions.
 ```
 
-Authority is therefore deeply interconnected with World Simulation.
+Emergency Authority should be explicitly represented where relevant.
 
 ---
 
-# Authority and Information
+# 47. Emergency Authority State
 
-Authority requires information to make decisions.
-
-Example:
+Conceptually:
 
 ```text
-Actual Infrastructure:
-CRITICAL
+INACTIVE
 
-Authority Knowledge:
-DEGRADED
+LIMITED
 
-Decision:
-No emergency action
+ACTIVE
+
+EXPANDED
+
+EXTREME.
 ```
 
-This is not necessarily incompetence.
+This represents the formal governance condition.
 
-The authority may not know the true condition.
+Whether an Authority Actor chooses to use those powers remains an Actor decision.
 
 ---
 
-# Authority and Communications
+# 48. Emergency Power Tradeoff
 
-Authority also requires communication.
+Expanded authority may improve practical coordination.
 
-Example:
+It may also create consequences in:
 
 ```text
-Decision:
-Evacuate Area A.
+Society
 
-Communication:
-FAILED.
+Relationships
 
-Result:
-Decision exists.
-Implementation does not.
+Factions
+
+legal structures
+
+future governance.
 ```
 
-Legal authority and practical authority diverge.
+Authority State does not predetermine whether those consequences are positive or negative.
 
 ---
 
-# Authority and Infrastructure
+# 49. Continuity Capacity
 
-Government capacity may depend upon:
+Continuity Capacity represents whether a governance structure can survive disruption to its normal institutional configuration.
 
-- power
-- telecommunications
-- transport
-- data systems
-- fuel
-
-Infrastructure degradation may reduce administrative capability.
-
----
-
-# Authority and Supply
-
-Authorities may gain or lose legitimacy through resource distribution.
-
-Examples:
+Possible contributors include:
 
 ```text
-Fair rationing
-    ↓
-Legitimacy increases
+succession procedures
+
+backup facilities
+
+distributed leadership
+
+redundant communication
+
+preserved records
+
+delegated authority
+
+emergency procedures
+
+institutional redundancy.
 ```
-
-or:
-
-```text
-Unequal distribution
-    ↓
-Legitimacy decreases
-```
-
----
-
-# Authority and Security
-
-Security actors may support or undermine authority.
-
-Example:
-
-```text
-Police:
-Recognize Regional Government
-
-Military:
-Recognizes National Government
-
-Local Militia:
-Recognizes Settlement Council
-```
-
-Conflicting loyalties may complicate governance without immediately producing conflict.
-
----
-
-# Authority and Population
-
-Authority depends partly upon population cooperation.
-
-Example:
-
-```text
-Emergency Order:
-Reduce electricity consumption.
-
-Compliance:
-High
-
-Result:
-Infrastructure pressure decreases.
-```
-
-Without compliance:
-
-```text
-Infrastructure pressure remains high.
-```
-
-Authority therefore changes World State partly through social response.
-
----
-
-# Authority and Legitimacy Feedback
-
-A core loop:
-
-```text
-AUTHORITY DECISION
-        ↓
-OUTCOME
-        ↓
-PUBLIC PERCEPTION
-        ↓
-LEGITIMACY
-        ↓
-COMPLIANCE
-        ↓
-AUTHORITY CAPACITY
-```
-
-Successful authority may become stronger.
-
-Failed authority may weaken.
-
-But outcomes are not always under the authority's control.
-
----
-
-# Legitimacy Shock
-
-Major events may rapidly alter legitimacy.
-
-Examples:
-
-- successful disaster response
-- failed evacuation
-- corruption exposure
-- unnecessary violence
-- restoration of infrastructure
-- abandonment of a region
-- credible public communication
-
-A Legitimacy Shock should require significant narrative or systemic cause.
-
----
-
-# Legitimacy Memory
-
-Past authority behavior should persist in regional memory.
-
-Example:
-
-```text
-2034:
-Federal aid arrived late.
-
-2040:
-Regional distrust of national institutions remains elevated.
-```
-
-Historical experience shapes later governance.
-
----
-
-# Institutional Memory
-
-Authorities should preserve institutional knowledge where possible.
-
-Examples:
-
-- laws
-- maps
-- technical manuals
-- census records
-- infrastructure plans
-- legal precedents
-- emergency procedures
-
-Loss of institutional memory may reduce future governing capacity.
-
----
-
-# Bureaucratic Capacity
-
-Bureaucratic Capacity represents the ability to perform routine administrative functions.
-
-Examples:
-
-- records
-- permits
-- logistics
-- taxation
-- personnel management
-- public administration
 
 Conceptual states:
 
 ```text
 HIGH
-FUNCTIONAL
-STRAINED
+
+MODERATE
+
 LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
-A government may retain military power while losing bureaucratic capability.
-
 ---
 
-# Administrative Complexity
+# 50. Continuity of Government
 
-Highly complex societies require substantial administrative capacity.
-
-As automation and communication decline:
-
-```text
-AVAILABLE GOVERNANCE CAPACITY
-        ↓
-```
-
-Authorities may simplify systems.
-
-Examples:
-
-- fewer regulations
-- local decision-making
-- standardized rationing
-- reduced reporting
-- simplified taxation
-
-Governance may become less sophisticated without disappearing.
-
----
-
-# Authority Adaptation
-
-Authorities may adapt by:
-
-- delegating power
-- simplifying administration
-- creating emergency councils
-- partnering with private organizations
-- integrating local leadership
-- adopting new communication systems
-- reducing geographic scope
-
-Adaptation may preserve legitimacy and function.
-
----
-
-# Authority Recovery
-
-Authority may recover through:
-
-- restored communications
-- restored transportation
-- improved information
-- reestablished services
-- successful elections
-- institutional reform
-- negotiated legitimacy
-- regional agreements
-
-Recovery should not necessarily recreate the old political structure.
-
----
-
-# Authority Transformation
-
-Long-term crisis may permanently alter governance.
+Continuity arrangements may preserve governance after major disruption.
 
 Example:
 
 ```text
-PRE-COLLAPSE
-
-Centralized national administration
+PRIMARY CAPITAL
+UNAVAILABLE
         ↓
-
-THE FRACTURED WORLD
-
-Regional governments
-Settlement councils
-Local alliances
+CONTINUITY SITE
+ACTIVATED
         ↓
-
-THE RECONNECTION
-
-Federated regional systems
-New national institutions
-Networked governance
+REGIONAL POWERS
+EXPANDED
+        ↓
+NATIONAL GOVERNMENT
+CONTINUES.
 ```
 
-Political development should emerge from history.
+Continuity is a structural capability.
+
+It does not imply a particular ideology.
 
 ---
 
-# Symbolic Authority
+# 51. Institutional Records
 
-Authority may persist through symbols.
+Governance depends partly on institutional records such as:
+
+```text
+laws
+
+maps
+
+property records
+
+technical plans
+
+census records
+
+procedures
+
+legal precedents
+
+administrative records.
+```
+
+The information objects themselves belong to Information State.
+
+Their availability may influence Administrative and Continuity Capacity.
+
+---
+
+# 52. Authority Resources
+
+Authority Actors require access to resources.
 
 Examples:
 
-- flags
-- constitutions
-- national identity
-- titles
-- uniforms
-- official seals
-- historical offices
+```text
+personnel
 
-These may retain meaning after operational systems fragment.
+facilities
 
-This creates opportunities for continuity and future reconnection.
+transportation
+
+fuel
+
+communication
+
+information
+
+technical expertise
+
+funding
+
+equipment
+
+food
+
+security capability.
+```
+
+Authority State should normally reference access or control.
+
+It should not duplicate the authoritative state of those resources.
 
 ---
 
-# Identity and Authority
+# 53. Resource Boundary
 
-Populations may distinguish between:
-
-```text
-WHO GOVERNS US
-```
-
-and:
+Canonical principle:
 
 ```text
-WHO WE BELONG TO
+SUPPLY / INFRASTRUCTURE /
+OTHER RESOURCE SYSTEM
+
+OWNS
+THE RESOURCE.
+
+
+AUTHORITY STATE
+
+OWNS
+THE GOVERNANCE RIGHT,
+ACCESS OR CONTROL
+RELEVANT TO IT.
 ```
-
-Example:
-
-A community may be governed by a local council while still identifying itself as part of the United States.
-
-This distinction is important during The Fractured World.
 
 ---
 
-# Authority Relationships
+# 54. Authority Dependencies
 
-Authority Actors should maintain relationships.
+Governance is deeply dependent on other systems.
 
 Conceptually:
 
 ```text
-ALLIED
-COOPERATIVE
-NEUTRAL
-COMPETITIVE
-HOSTILE
-SUBORDINATE
-DISPUTED
+AUTHORITY CAPACITY
+        │
+        ├── Infrastructure
+        ├── Information
+        ├── Supply
+        ├── Security
+        ├── Transportation
+        ├── Communication
+        ├── Population Cooperation
+        └── Institutional Actors.
 ```
 
-Relationships may differ by issue.
+Authority cannot operate independently of world conditions.
 
 ---
 
-# Shared Authority
+# 55. Authority and Information
 
-Two authorities may share governance responsibilities.
+Authority Actors make decisions using information available to them.
+
+Not hidden simulation truth.
 
 Example:
 
 ```text
-Regional Government:
-Civil administration
+WORLD TRUTH:
 
-Military:
-Security and logistics
+Fuel Supply:
+CRITICAL
 
-Local Councils:
-Resource distribution
+
+AVAILABLE AUTHORITY INFORMATION:
+
+Fuel Supply:
+Reported STRAINED
+
+
+ACTOR DECISION:
+
+No rationing.
 ```
 
-Shared authority may be stable or fragile.
+The decision may later appear incorrect.
+
+It was still made from the Actor's available information.
 
 ---
 
-# Jurisdiction
+# 56. Information Ownership Boundary
 
-Jurisdiction defines what an authority claims control over.
-
-Possible dimensions:
+Information State owns:
 
 ```text
-Territory
-Population
-Infrastructure
-Security
-Trade
-Information
-Justice
-Resources
+what information
+reached the Authority Actor.
 ```
 
-Two authorities may overlap geographically while controlling different functions.
-
----
-
-# Functional Authority
-
-This allows a region to contain:
+The Authority Actor's cognition owns:
 
 ```text
-Political Authority:
-Regional Government
-
-Infrastructure Authority:
-Utility Coalition
-
-Security Authority:
-Military Command
-
-Food Distribution:
-Community Network
+what the Actor
+understands or believes.
 ```
 
-Governance can therefore become functionally distributed.
+Authority State owns neither.
 
 ---
 
-# Authority Map
+# 57. Authority and Communication
 
-Regions may eventually maintain an Authority Map.
+A decision may exist without successful implementation.
+
+Example:
+
+```text
+AUTHORITY ACTOR DECISION:
+
+Evacuate Area A.
+
+
+COMMUNICATION NETWORK:
+
+FAILED.
+
+
+RESULT:
+
+Directive exists.
+
+Recipients do not receive it.
+```
+
+Authority State must preserve this distinction.
+
+---
+
+# 58. Decision vs Implementation
+
+Canonical principle:
+
+```text
+DECISION
+
+≠
+
+IMPLEMENTATION.
+```
+
+An Authority Actor may decide something that cannot be implemented.
+
+Implementation may require:
+
+```text
+communication
+
+personnel
+
+transportation
+
+jurisdiction
+
+resources
+
+enforcement
+
+cooperation
+
+time.
+```
+
+---
+
+# 59. Authority and Action Resolution
+
+Authority Actors follow the same simulation principles as other Actors.
+
+Conceptually:
+
+```text
+ACTOR DECISION
+↓
+GOVERNANCE ACTION ATTEMPT
+↓
+AUTHORITY STATE
++
+ACTUAL CAPABILITY
++
+WORLD CONDITIONS
+↓
+ACTION RESOLUTION
+↓
+WORLD CONSEQUENCE.
+```
+
+Authority State provides governance-related capability inputs.
+
+It does not decide the outcome.
+
+---
+
+# 60. Governance Action Attempt
+
+Examples include:
+
+```text
+issue evacuation order
+
+impose rationing
+
+deploy emergency personnel
+
+close transportation corridor
+
+requisition facility
+
+coordinate hospitals
+
+delegate authority
+
+establish emergency council
+
+negotiate jurisdiction
+
+restore administrative service.
+```
+
+The Authority Actor chooses the attempt.
+
+World Simulation resolves what actually happens.
+
+---
+
+# 61. Authority and Infrastructure
+
+Governance capacity may depend upon:
+
+```text
+power
+
+telecommunications
+
+transportation
+
+data systems
+
+facilities
+
+fuel.
+```
+
+Infrastructure degradation may therefore reduce Authority capacity.
+
+This must occur causally.
+
+---
+
+# 62. Authority and Supply
+
+Authority Actors may:
+
+```text
+allocate
+
+ration
+
+prioritize
+
+requisition
+
+coordinate distribution
+
+restrict access
+```
+
+where they possess relevant authority and capability.
+
+Supply State still owns:
+
+```text
+what physically exists
+
+where it exists
+
+and how supply systems function.
+```
+
+---
+
+# 63. Authority and Security
+
+Security Actors may:
+
+```text
+support authority
+
+ignore authority
+
+recognize another authority
+
+possess delegated authority
+
+exercise independent authority.
+```
+
+The relevant Actor or Faction systems own their decisions and loyalties.
+
+Authority State owns the governance relationship and jurisdictional consequences.
+
+---
+
+# 64. Authority and Population
+
+Authority may depend on population cooperation.
+
+Example:
+
+```text
+AUTHORITY DIRECTIVE:
+
+Reduce electricity use.
+
+
+SOCIETY / CHARACTER RESPONSE:
+
+High voluntary cooperation.
+
+
+INFRASTRUCTURE CONSEQUENCE:
+
+Demand pressure decreases.
+```
+
+Authority State does not directly create compliance.
+
+---
+
+# 65. Compliance Boundary
+
+The older architecture represented Public Compliance as a direct Authority State variable.
+
+The canonical architecture instead treats compliance as an emergent result of:
+
+```text
+individual decisions
+
+social conditions
+
+legal structures
+
+practical feasibility
+
+enforcement
+
+relationships
+
+information
+
+Trust
+
+necessity.
+```
+
+Authority State may maintain a derived operational diagnostic such as:
+
+```text
+IMPLEMENTATION COOPERATION:
+HIGH / MIXED / LOW
+```
+
+where useful.
+
+It must not replace the underlying human and social systems.
+
+---
+
+# 66. Authority Relationships
+
+Authority Actors may maintain formal governance relationships such as:
+
+```text
+SUBORDINATE
+
+DELEGATED
+
+COORDINATED
+
+SHARED JURISDICTION
+
+MUTUALLY RECOGNIZED
+
+DISPUTED JURISDICTION
+
+COMPETING CLAIM.
+```
+
+Interpersonal or political relationship state remains externally owned.
+
+---
+
+# 67. Shared Authority
+
+Multiple Actors may share governance responsibilities.
+
+Example:
+
+```text
+REGIONAL GOVERNMENT
+→ Civil Administration
+
+MILITARY
+→ Security and Logistics
+
+LOCAL COUNCILS
+→ Local Services
+
+UTILITY COALITION
+→ Infrastructure Operations.
+```
+
+Shared authority may remain stable for long periods.
+
+---
+
+# 68. Authority Fragmentation
+
+Authority Fragmentation occurs when governance becomes distributed across multiple Actors without one consistently integrated authority structure.
+
+Example:
+
+```text
+STATE GOVERNMENT
+→ Major Cities
+
+MILITARY COMMAND
+→ Transport Corridors
+
+LOCAL COUNCILS
+→ Rural Communities
+
+CORPORATE ADMINISTRATION
+→ Industrial Zone.
+```
+
+Fragmentation may be:
+
+```text
+cooperative
+
+neutral
+
+competitive
+
+contested.
+```
+
+---
+
+# 69. Cooperative Fragmentation
+
+Multiple Authority Actors may coordinate without merging.
+
+Example:
+
+```text
+REGIONAL GOVERNMENT
+        ↕
+SETTLEMENT COUNCILS
+        ↕
+MILITARY SUPPORT.
+```
+
+Canonical principle:
+
+```text
+NO UNIFIED
+ADMINISTRATION
+
+DOES NOT MEAN
+
+NO FUNCTIONAL
+GOVERNANCE.
+```
+
+---
+
+# 70. Competitive Fragmentation
+
+Authority Actors may compete over:
+
+```text
+jurisdiction
+
+territory
+
+resources
+
+institutional recognition
+
+infrastructure control
+
+political influence.
+```
+
+Competition does not automatically produce violence.
+
+---
+
+# 71. Contested Authority
+
+Contested Authority occurs when multiple Actors claim governance over the same function, territory or population.
+
+Example:
+
+```text
+AUTHORITY A:
+Strong legal claim
+
+AUTHORITY B:
+Strong territorial reach
+
+AUTHORITY C:
+Strong social acceptance.
+```
+
+No Actor possesses the complete governance position.
+
+---
+
+# 72. Authority Vacuum
+
+An Authority Vacuum exists when no existing Authority Actor can reliably perform the relevant governance function.
+
+Examples may include absence of effective:
+
+```text
+coordination
+
+administration
+
+service governance
+
+rule enforcement
+
+dispute resolution.
+```
+
+Authority Vacuum is domain- and location-specific.
+
+---
+
+# 73. Authority Vacuum Is Not Social Vacuum
+
+Canonical principle:
+
+```text
+AUTHORITY VACUUM
+
+≠
+
+NO HUMAN
+ORGANIZATION.
+```
+
+People may respond through:
+
+```text
+existing local institutions
+
+community organization
+
+temporary councils
+
+Factions
+
+military structures
+
+informal leadership
+
+cooperative agreements.
+```
+
+These responses arise through Actor and Society systems.
+
+Authority State records resulting governance structures when they become real.
+
+---
+
+# 74. Authority Emergence
+
+New governance structures may emerge through causal history.
+
+Possible paths include:
+
+```text
+election
+
+delegation
+
+community organization
+
+emergency administration
+
+institutional coalition
+
+military governance
+
+resource coordination
+
+settlement governance
+
+Faction control
+
+negotiated authority.
+```
+
+Authority State must not randomly generate new governments.
+
+An Authority Actor and causal process must exist.
+
+---
+
+# 75. Authority Transition
+
+Authority may shift gradually.
+
+Example:
+
+```text
+NATIONAL GOVERNMENT
+
+Primary operational authority
+
+↓
+
+National coordination weakens
+
+↓
+
+REGIONAL GOVERNMENT
+
+Primary operational authority
+
+↓
+
+Regional systems fragment
+
+↓
+
+LOCAL COALITIONS
+
+Primary practical authority.
+```
+
+Formal sovereignty may persist throughout much of this transition.
+
+---
+
+# 76. Government Collapse vs State Collapse
+
+These remain separate concepts.
+
+```text
+GOVERNMENT COLLAPSE
+
+=
+A particular governing
+administration ceases
+functioning.
+
+
+STATE COLLAPSE
+
+=
+The broader political
+institutional system can
+no longer maintain
+meaningful governance
+or sovereignty.
+```
+
+One may occur without the other.
+
+---
+
+# 77. Authority Collapse
+
+Authority Collapse should be used carefully.
+
+It occurs when a particular governance structure loses enough of its necessary capabilities that it can no longer function meaningfully.
+
+Possible contributing failures include:
+
+```text
+Operational Capacity
+
+Administrative Capacity
+
+Territorial Reach
+
+Institutional Cohesion
+
+Enforcement Capacity
+
+Coordination Capacity
+
+Continuity Capacity.
+```
+
+Social legitimacy may contribute but remains externally owned.
+
+---
+
+# 78. Authority Collapse Does Not Mean Society Disappears
+
+Canonical principle:
+
+```text
+AUTHORITY COLLAPSE
+
+≠
+
+SOCIETAL COLLAPSE.
+```
+
+Other structures may continue or emerge.
+
+---
+
+# 79. Authority Adaptation
+
+Authority structures may adapt by:
+
+```text
+delegating power
+
+simplifying administration
+
+reducing territorial scope
+
+creating emergency councils
+
+partnering with private institutions
+
+integrating local governance
+
+changing communication methods
+
+redistributing responsibilities.
+```
+
+Adaptation may preserve governance without restoring the old structure.
+
+---
+
+# 80. Authority Recovery
+
+Authority capacity may recover through:
+
+```text
+restored communication
+
+restored transportation
+
+better information
+
+reestablished administration
+
+improved resource access
+
+institutional reform
+
+new agreements
+
+restored services
+
+successful succession
+
+new governance arrangements.
+```
+
+Recovery does not require returning to the previous political configuration.
+
+---
+
+# 81. Authority Transformation
+
+Long-term crisis may create permanently different governance structures.
+
+Example:
+
+```text
+CONNECTED WORLD
+
+Centralized national
+administration
+
+↓
+
+TRANSITION
+
+Expanded regional
+governance
+
+↓
+
+FRACTURED WORLD
+
+Regional governments
+Local councils
+Institutional coalitions
+
+↓
+
+RECONNECTION
+
+Federations
+Negotiated sovereignty
+Networked governance
+Restored institutions
+New institutions.
+```
+
+Political development should emerge from accumulated history.
+
+---
+
+# 82. Symbolic Authority
+
+Authority may retain symbolic significance after practical capacity declines.
+
+Examples include:
+
+```text
+constitutional offices
+
+national symbols
+
+official seals
+
+historic institutions
+
+titles
+
+uniforms
+
+national identity.
+```
+
+Symbolic meaning belongs partly to Culture and Society.
+
+Authority State may preserve the continued institutional claim.
+
+---
+
+# 83. Political Identity Boundary
+
+A community may be governed locally while still identifying with a larger nation.
+
+Example:
+
+```text
+PRACTICAL GOVERNANCE:
+Valley Council
+
+POLITICAL IDENTITY:
+United States.
+```
+
+Political identity belongs primarily to Society / Culture / Actor identity.
+
+Authority State preserves the governance structure.
+
+---
+
+# 84. Institutional Continuity Without Operational Primacy
+
+Example:
+
+```text
+NATIONAL GOVERNMENT:
+
+Legal Authority:
+CLEAR
+
+Continuity:
+FUNCTIONAL
+
+Regional Operational Primacy:
+HIGH
+
+National Territorial Reach:
+PARTIAL.
+```
+
+The national government still exists.
+
+It is no longer the primary source of everyday governance everywhere.
+
+---
+
+# 85. Authority Map
+
+Regions may maintain an Authority Map representing functional governance.
 
 Example:
 
 ```text
 NORTHERN VIRGINIA
 
-Regional Administration:
-Broad civil authority
-
 Federal Government:
-Legal sovereignty / strategic functions
+Sovereignty
+Strategic functions
 
-Military:
-Strategic infrastructure protection
+Virginia Government:
+Regional emergency coordination
 
 Counties:
-Local services
+Local administration
+
+Military:
+Strategic infrastructure security
 
 Private Utilities:
-Infrastructure operations
+Infrastructure operation.
 ```
 
-Later:
+The map describes governance relationships.
+
+It does not imply unified command.
+
+---
+
+# 86. Fractured World Authority Map
+
+Example:
 
 ```text
 SHENANDOAH VALLEY — 2043
@@ -1757,251 +2423,970 @@ Regional coordination
 Town Councils:
 Local governance
 
-Trade Guild:
+Trade Network:
 Supply coordination
 
 Militia Compact:
 Regional defense
+
+Historic United States:
+Continuing political identity
+and partial legal claim.
+```
+
+The region may possess less centralized authority but effective governance.
+
+---
+
+# 87. Authority State Profile
+
+A regional Authority State may contain:
+
+```text
+AUTHORITY STATE
+
+Primary Authority Reference
+
+Legal Authority
+
+Formal Legitimacy
+
+Jurisdiction
+
+Effective Jurisdiction
+
+Operational Capacity
+
+Administrative Capacity
+
+Coordination Capacity
+
+Territorial Governance Reach
+
+Enforcement Capacity
+
+Service Governance Capacity
+
+Institutional Cohesion
+
+Emergency Authority
+
+Continuity Capacity
+
+Delegation State
+
+Authority Fragmentation
+
+Major Competing Authorities
+
+Major Governance Dependencies
+
+Trend
+
+Causal Sources.
 ```
 
 ---
 
-# Authority State Versus Faction State
+# 88. Authority Actor Reference
 
-Authority and factions should remain separate concepts.
+Authority State may reference Authority Actors.
 
-A faction may:
-
-- seek authority
-- support authority
-- oppose authority
-- exercise authority
-
-But not every faction governs.
-
-Authority State tracks governing capability.
-
-Faction systems track organized interests and identities.
-
----
-
-# Authority State and Player Interaction
-
-Players may influence authority through:
-
-- diplomacy
-- service
-- reputation
-- infrastructure restoration
-- information
-- conflict
-- political support
-- exposing corruption
-- negotiating agreements
-- establishing settlements
-
-Player influence should remain proportional.
-
----
-
-# Player Authority
-
-Players themselves may acquire authority.
-
-Possible forms include:
-
-- settlement leadership
-- faction command
-- elected office
-- emergency authority
-- military command
-- informal local influence
-
-Player Authority should use the same system rules as NPC authorities.
-
----
-
-# Authority Decisions
-
-Authority State should generate decisions based upon:
+Conceptually:
 
 ```text
-Knowledge
-Resources
+AUTHORITY ACTOR REFERENCE
+
+ID
+
+Name
+
+Type
+
+Claimed Jurisdiction
+
+Effective Jurisdiction
+
+Formal Authority
+
+Governance Capacity
+
+Territorial Reach
+
+Institutional Dependencies.
+```
+
+Do not duplicate:
+
+```text
+Goals
+
 Objectives
-Legitimacy
-Capacity
-Pressure
+
+Beliefs
+
+Relationships
+
+Resources
+
+Decision logic
 ```
 
-Not hidden global truth.
+inside the Authority State profile.
 
-This prevents authorities from behaving omnisciently.
+Those belong to their authoritative systems.
 
 ---
 
-# Authority Decision Example
+# 89. Multiple Authority Actors
+
+A region may contain several Authority Actors simultaneously.
+
+Example:
 
 ```text
-Actual Fuel Supply:
-CRITICAL
+AUTHORITY ACTORS
 
-Authority Estimate:
-STRAINED
+A:
+Virginia Regional Administration
 
-Public Concern:
-LOW
+B:
+Federal Continuity Authority
 
-Decision:
-No rationing.
+C:
+Military Command
+
+D:
+County Coalition.
 ```
 
-Two days later:
-
-```text
-Fuel Supply:
-CRITICAL
-
-Public Concern:
-HIGH
-
-Authority Knowledge:
-CONFIRMED
-
-Decision:
-Emergency rationing.
-```
-
-The later decision may appear delayed.
-
-The simulation can explain why.
+Each may possess different jurisdiction and capacity.
 
 ---
 
-# Authority Conflict
+# 90. Authority Types
 
-Conflicts may emerge from:
+Possible Authority Actor types include:
 
-- competing jurisdiction
-- resource allocation
-- legitimacy
-- strategic priorities
-- incomplete information
-- historical grievance
+```text
+National Government
 
-Conflict need not immediately become violent.
+State Government
+
+Regional Government
+
+Municipal Government
+
+Tribal Government
+
+Emergency Authority
+
+Military Command
+
+Settlement Council
+
+Faction Government
+
+Corporate Administration
+
+Religious Authority
+
+Community Coalition
+
+Institutional Coalition
+
+Informal Governance Structure.
+```
+
+Type does not determine legitimacy or effectiveness.
+
+---
+
+# 91. Authority and Time
+
+Governance actions require time.
+
+Examples:
+
+```text
+decision formation
+
+communication
+
+mobilization
+
+deployment
+
+administrative processing
+
+negotiation
+
+service organization
+
+legal process.
+```
+
+Canonical principle:
+
+```text
+AUTHORITY
+DOES NOT
+ACT INSTANTLY.
+```
+
+---
+
+# 92. Authority Latency
+
+A decision may be valid but arrive too late.
+
+Example:
+
+```text
+Evacuation Decision:
+08:00
+
+Regional Transmission:
+09:20
+
+Local Receipt:
+12:40
+
+Flood Arrival:
+11:50.
+```
+
+The authority acted.
+
+The implementation failed in time.
+
+---
+
+# 93. Authority and Geography
+
+Governance reach must respect geography.
+
+Factors include:
+
+```text
+distance
+
+transportation
+
+terrain
+
+communication
+
+population distribution
+
+infrastructure
+
+security
+
+administrative presence.
+```
+
+A legal claim does not remove physical distance.
+
+---
+
+# 94. Authority and Information Fragmentation
+
+Different Authority Actors may possess different information.
+
+Example:
+
+```text
+STATE GOVERNMENT:
+Knows A + B
+
+MILITARY:
+Knows A + C
+
+LOCAL COUNCIL:
+Knows D.
+```
+
+Different decisions may therefore emerge without any Actor behaving irrationally.
+
+---
+
+# 95. Authority and Institutional Knowledge
+
+Institutions may possess:
+
+```text
+procedures
+
+technical knowledge
+
+records
+
+historical precedent
+
+organizational knowledge.
+```
+
+These belong to the relevant information and Actor systems.
+
+Their availability may affect Authority capacity.
+
+---
+
+# 96. No Authority Omniscience
+
+Authority Actors must not automatically know:
+
+```text
+World Truth
+
+all regional conditions
+
+all Faction activity
+
+all infrastructure failures
+
+all public attitudes
+
+all Aurora activity.
+```
+
+They act from available information.
+
+---
+
+# 97. No Authority Mind
+
+Authority State itself does not think.
+
+Canonical rule:
+
+```text
+AUTHORITY STATE
+
+HAS NO
+
+GOALS
+
+BELIEFS
+
+MOTIVES
+
+PLANS
+
+DECISIONS.
+```
+
+Those require Actors.
+
+---
+
+# 98. Authority Decisions
+
+The old architecture allowed Authority State to generate decisions.
+
+This is retired.
+
+Canonical architecture:
+
+```text
+AUTHORITY ACTOR
++
+AVAILABLE INFORMATION
++
+GOALS
++
+BELIEFS
++
+INSTITUTIONAL CONTEXT
++
+AUTHORITY CAPABILITY
+↓
+ACTOR DECISION
+↓
+GOVERNANCE ACTION ATTEMPT
+↓
+WORLD SIMULATION.
+```
+
+Authority State provides context and capability.
+
+It does not choose.
+
+---
+
+# 99. Governance Outcome
+
+Authority decisions do not guarantee results.
+
+Example:
+
+```text
+DECISION:
+Ration fuel.
+
+AUTHORITY:
+Legally authorized.
+
+ADMINISTRATION:
+Strained.
+
+COMMUNICATION:
+Functional.
+
+POPULATION RESPONSE:
+Mixed.
+
+SUPPLY CONDITIONS:
+Critical.
+
+RESULT:
+Partial rationing.
+```
+
+The outcome emerges through cross-system resolution.
+
+---
+
+# 100. Authority Conflict
+
+Authority conflict may arise from:
+
+```text
+overlapping jurisdiction
+
+competing claims
+
+resource control
+
+institutional disagreement
+
+legal conflict
+
+different information
+
+strategic priorities
+
+historical grievances.
+```
+
+The relevant Actors create the conflict.
+
+Authority State records the resulting governance condition.
+
+---
+
+# 101. Authority Conflict Is Not Automatically Violence
 
 Possible forms include:
 
 ```text
-Legal dispute
-Administrative noncompliance
-Resource withholding
-Political competition
-Territorial dispute
-Armed confrontation
+legal dispute
+
+administrative noncompliance
+
+competing directives
+
+resource withholding
+
+political negotiation
+
+jurisdictional dispute
+
+territorial confrontation
+
+armed conflict.
 ```
+
+Escalation requires cause.
 
 ---
 
-# Authority Escalation
+# 102. Authority Escalation
 
-A conceptual authority conflict progression:
+A possible causal progression may be:
 
 ```text
 DISAGREEMENT
-    ↓
+
+↓
+
 NONCOMPLIANCE
-    ↓
+
+↓
+
 COMPETING DIRECTIVES
-    ↓
+
+↓
+
 JURISDICTIONAL CONFLICT
-    ↓
+
+↓
+
 AUTHORITY CONTEST
-    ↓
-OPEN CONFLICT
+
+↓
+
+OPEN CONFLICT.
 ```
 
-Each step should require conditions supporting escalation.
+This is not a mandatory ladder.
+
+Each transition requires supporting conditions and Actor actions.
 
 ---
 
-# Authority De-escalation
+# 103. Authority De-escalation
 
-Authority conflict may also resolve through:
-
-- negotiation
-- shared jurisdiction
-- elections
-- external mediation
-- common threats
-- resource agreements
-- institutional reform
-
-The simulation should not assume political conflict always intensifies.
-
----
-
-# Authority Collapse
-
-Authority Collapse should be used carefully.
-
-It occurs when an authority loses enough of the following that it can no longer function meaningfully:
+Conflict may also resolve through:
 
 ```text
-Operational Capacity
-Territorial Control
-Institutional Cohesion
-Enforcement
-Service Capacity
-Legitimacy
+negotiation
+
+delegation
+
+shared jurisdiction
+
+elections
+
+mediation
+
+resource agreements
+
+institutional reform
+
+common threats
+
+mutual recognition.
 ```
 
-Authority Collapse does not mean society disappears.
-
-Other authority structures may emerge immediately.
+Political conflict does not automatically intensify.
 
 ---
 
-# Government Collapse Versus State Collapse
+# 104. Authority History
 
-These terms should remain separate.
+Past governance changes become part of objective systemic history.
+
+Examples:
 
 ```text
-GOVERNMENT COLLAPSE
-A governing administration ceases functioning.
+authority transfers
 
-STATE COLLAPSE
-The broader political and institutional system can no longer maintain meaningful sovereignty or governance.
+emergency declarations
+
+institutional failures
+
+successful continuity
+
+territorial loss
+
+jurisdiction agreements
+
+government collapse
+
+new governance structures.
 ```
 
-One may occur without the other.
+This history belongs to World/Systemic History.
+
+Human memory and interpretation remain separate.
 
 ---
 
-# Authority Vacuum Response
+# 105. Historical Legitimacy Effects
 
-When authority collapses:
-
-```text
-AUTHORITY VACUUM
-      │
-      ├── Existing local institutions expand
-      ├── Communities self-organize
-      ├── Military units assume emergency roles
-      ├── Factions compete
-      └── New governance emerges
-```
-
-The vacuum should generate dynamics.
-
-It should not simply create permanent chaos.
-
----
-
-# Regional Authority Snapshot
+Past governance behavior may affect future social legitimacy.
 
 Example:
+
+```text
+WORLD HISTORY:
+
+Federal aid arrived
+three weeks late.
+
+
+SOCIETY:
+
+Long-term distrust
+of federal institutions
+develops.
+```
+
+Authority State records the historical event.
+
+Society owns the resulting collective social state.
+
+---
+
+# 106. Simulation Resolution
+
+Authority State supports adaptive resolution.
+
+Conceptually:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH.
+```
+
+Resolution changes represented detail.
+
+Not whether governance exists.
+
+---
+
+# 107. Low Resolution
+
+Low-resolution Authority State may preserve:
+
+```text
+Primary Authority
+
+Overall Governance Capacity
+
+Legal Continuity
+
+Territorial Reach
+
+Delegation
+
+Fragmentation
+
+Trend
+
+Major Political Events.
+```
+
+---
+
+# 108. Medium Resolution
+
+Medium resolution may additionally preserve:
+
+```text
+Major Authority Actors
+
+Jurisdiction
+
+Administrative Capacity
+
+Coordination Capacity
+
+Enforcement Capacity
+
+Institutional Cohesion
+
+Emergency Authority
+
+Major Governance Conflicts.
+```
+
+---
+
+# 109. High Resolution
+
+High resolution may track:
+
+```text
+specific Authority Actors
+
+functional jurisdiction
+
+delegated powers
+
+institutional dependencies
+
+governance action attempts
+
+implementation pathways
+
+territorial differences
+
+competing directives
+
+specific continuity structures.
+```
+
+Actor cognition remains externally owned at every resolution.
+
+---
+
+# 110. Resolution Follows Causal Relevance
+
+High resolution may be required for:
+
+```text
+governance transitions
+
+major political conflict
+
+emergency response
+
+authority collapse
+
+jurisdiction disputes
+
+reconnection negotiations
+
+player involvement in governance.
+```
+
+Player proximity alone does not determine world importance.
+
+---
+
+# 111. Player Authority
+
+Player Characters may acquire authority through the same world mechanisms as other Actors.
+
+Examples:
+
+```text
+elected office
+
+military command
+
+settlement leadership
+
+Faction governance
+
+emergency appointment
+
+institutional delegation.
+```
+
+Canonical rule:
+
+```text
+PLAYER AUTHORITY
+
+USES
+
+THE SAME
+AUTHORITY RULES
+
+AS
+
+EVERY OTHER ACTOR.
+```
+
+---
+
+# 112. No Player Political Privilege
+
+Player Characters do not automatically receive:
+
+```text
+leadership
+
+legitimacy
+
+obedience
+
+jurisdiction
+
+institutional access
+
+political importance.
+```
+
+These must arise causally.
+
+---
+
+# 113. Connected World
+
+The Connected World may commonly feature:
+
+```text
+strong formal legal structures
+
+high administrative complexity
+
+broad territorial governance reach
+
+centralized coordination
+
+strong institutional continuity
+
+high dependence on technical systems.
+```
+
+These are conditions.
+
+Not guarantees.
+
+---
+
+# 114. Transition
+
+The Transition may produce:
+
+```text
+emergency authority
+
+delegation
+
+administrative strain
+
+jurisdictional ambiguity
+
+regional operational primacy
+
+institutional fragmentation
+
+continuity activation.
+```
+
+These emerge from events and pressures.
+
+They are not scripted phase requirements.
+
+---
+
+# 115. Fractured World
+
+The Fractured World is not defined by absence of authority.
+
+It is characterized by the possibility that:
+
+```text
+AUTHORITY BECOMES
+
+GEOGRAPHICALLY
+
+FUNCTIONALLY
+
+LEGALLY
+
+AND
+
+INSTITUTIONALLY
+
+DIVERSE.
+```
+
+Different regions may develop:
+
+```text
+democratic governance
+
+military governance
+
+regional councils
+
+local coalitions
+
+corporate administration
+
+tribal governance
+
+weak governance
+
+highly effective governance.
+```
+
+There is no single post-collapse political model.
+
+---
+
+# 116. Reconnection
+
+Reconnection creates a governance problem as much as an infrastructure problem.
+
+Regions that governed themselves for years or decades may not automatically return authority to reconstructed national institutions.
+
+Possible issues include:
+
+```text
+constitutional negotiation
+
+regional autonomy
+
+jurisdiction
+
+resource control
+
+legal continuity
+
+institutional recognition
+
+new federations
+
+restored historical institutions
+
+new national institutions.
+```
+
+The question may become:
+
+```text
+HOW SHOULD
+AUTHORITY BE SHARED?
+
+```
+
+rather than merely:
+
+```text
+CAN CENTRAL
+GOVERNMENT RETURN?
+```
+
+---
+
+# 117. Minimum Authority State
+
+A minimum viable Authority State should contain:
+
+```text
+Primary Authority Reference
+
+Legal Authority
+
+Formal Legitimacy
+
+Jurisdiction
+
+Effective Jurisdiction
+
+Operational Capacity
+
+Administrative Capacity
+
+Coordination Capacity
+
+Territorial Governance Reach
+
+Enforcement Capacity
+
+Service Governance Capacity
+
+Institutional Cohesion
+
+Emergency Authority
+
+Continuity Capacity
+
+Delegation State
+
+Fragmentation State
+
+Trend
+
+Causal Sources.
+```
+
+Complex regions may additionally reference multiple Authority Actors.
+
+---
+
+# 118. Northern Virginia Example
 
 ```text
 AUTHORITY STATE
@@ -2012,35 +3397,38 @@ Northern Virginia
 Historical Era:
 WS-02 — The Transition
 
+
 Primary Authority:
-Federal / State / County Cooperative Structure
+Federal / State / County
+Cooperative Structure
+
 
 Legal Authority:
+CLEAR
+
+Formal Legitimacy:
 CLEAR
 
 Operational Capacity:
 STRAINED
 
-Territorial Control:
+Administrative Capacity:
+FUNCTIONAL
+
+Coordination Capacity:
+STRAINED
+
+Territorial Governance Reach:
 FULL
 
 Enforcement Capacity:
 FUNCTIONAL
 
-Service Capacity:
-STRAINED
-
-Coordination Capacity:
+Service Governance Capacity:
 STRAINED
 
 Institutional Cohesion:
 FUNCTIONAL
-
-Legitimacy:
-FUNCTIONAL
-
-Public Compliance:
-SELECTIVE
 
 Emergency Authority:
 ACTIVE
@@ -2051,16 +3439,33 @@ HIGH
 Delegation:
 LIMITED DELEGATION
 
+Fragmentation:
+LOW
+
 Trend:
 DETERIORATING
 
-Confidence:
-HIGH
+
+MAJOR DEPENDENCIES:
+
+Communications
+
+Transportation
+
+Fuel
+
+Information
+
+Power.
 ```
+
+No universal Public Compliance or Trust variable is stored here.
+
+Those are obtained from their authoritative systems when relevant.
 
 ---
 
-# Fractured World Example
+# 119. Shenandoah Valley Example
 
 ```text
 AUTHORITY STATE
@@ -2071,35 +3476,40 @@ Shenandoah Valley
 Historical Era:
 WS-03 — The Fractured World
 
+
 Primary Authority:
 Valley Coordination Council
+
+Historical Sovereignty:
+United States
+
 
 Legal Authority:
 AMBIGUOUS
 
+Formal Legitimacy:
+LOCALLY ESTABLISHED
+
 Operational Capacity:
 FUNCTIONAL
 
-Territorial Control:
-BROAD
-
-Enforcement Capacity:
-LOCALIZED
-
-Service Capacity:
+Administrative Capacity:
 FUNCTIONAL
 
 Coordination Capacity:
 FUNCTIONAL
 
+Territorial Governance Reach:
+BROAD
+
+Enforcement Capacity:
+LOCALIZED
+
+Service Governance Capacity:
+FUNCTIONAL
+
 Institutional Cohesion:
 STRONG
-
-Legitimacy:
-HIGH
-
-Public Compliance:
-HIGH
 
 Emergency Authority:
 INACTIVE
@@ -2110,18 +3520,18 @@ MODERATE
 Delegation:
 DECENTRALIZED
 
-Historical Parent Nation:
-United States
+Fragmentation:
+COOPERATIVE
 
-Political Identity:
-United States / Regional
+Trend:
+STABLE.
 ```
 
-This region may possess less formal legal continuity but stronger practical governance.
+Social acceptance of the Valley Council belongs to Society and relevant Actor states.
 
 ---
 
-# Reconnection Example
+# 120. Reconnection Example
 
 ```text
 AUTHORITY STATE
@@ -2129,312 +3539,649 @@ AUTHORITY STATE
 Historical Era:
 WS-04 — The Reconnection
 
+
 Regional Authority:
-HIGH LEGITIMACY
+OPERATIONALLY STRONG
 
 Reconnecting National Authority:
-MODERATE LEGITIMACY
+FORMALLY RECOGNIZED
 
 Jurisdiction:
 NEGOTIATED
 
-Coordination:
+Regional Delegation:
+HIGH
+
+National Coordination:
 INCREASING
+
+Institutional Integration:
+PARTIAL
+
+Territorial Governance:
+SHARED.
 ```
 
-The central political question may become:
+This creates political conditions.
+
+It does not predetermine the political outcome.
+
+---
+
+# 121. Cross-System Example — Fuel Rationing
+
+World Truth:
 
 ```text
-How much authority should regions return?
+SUPPLY:
+
+Fuel Availability:
+CRITICAL.
 ```
 
-not simply:
+Information State:
 
 ```text
-Can national government return?
+Authority receives
+verified shortage report.
+```
+
+Authority Actor:
+
+```text
+Goal:
+Preserve emergency mobility.
+
+Decision:
+Attempt rationing.
+```
+
+Authority State:
+
+```text
+Legal Authority:
+CLEAR
+
+Administrative Capacity:
+FUNCTIONAL
+
+Jurisdiction:
+REGIONAL
+
+Enforcement Capacity:
+STRAINED.
+```
+
+Action Resolution:
+
+```text
+Rationing:
+PARTIALLY IMPLEMENTED.
+```
+
+Society / Characters:
+
+```text
+Different populations
+respond differently.
+```
+
+Supply consequence:
+
+```text
+Emergency Fuel Reserve:
+Extended.
+```
+
+No single system owns the entire chain.
+
+---
+
+# 122. Cross-System Example — Failed Evacuation
+
+Security State:
+
+```text
+Flood Risk:
+CRITICAL.
+```
+
+Information State:
+
+```text
+Warning reaches
+regional government.
+```
+
+Authority Actor:
+
+```text
+Decision:
+Evacuate Area A.
+```
+
+Authority State:
+
+```text
+Legal Authority:
+CLEAR
+
+Coordination Capacity:
+FUNCTIONAL.
+```
+
+Infrastructure State:
+
+```text
+Cellular Network:
+FAILED
+
+Road Capacity:
+DEGRADED.
+```
+
+Action Resolution:
+
+```text
+Evacuation Directive:
+Only partially distributed.
+```
+
+Characters / Society:
+
+```text
+Some residents leave.
+
+Others never receive
+the warning.
+```
+
+World consequence:
+
+```text
+Evacuation:
+PARTIAL.
+```
+
+The failure is causally explainable.
+
+---
+
+# 123. Authority State Invariants
+
+## AUTH-INV-001 — Authority Is Multi-Dimensional
+
+No universal Authority score may replace jurisdiction, capacity, reach and institutional condition.
+
+---
+
+## AUTH-INV-002 — Legal Authority and Practical Authority Are Separate
+
+Formal right does not guarantee implementation.
+
+---
+
+## AUTH-INV-003 — Authority State Does Not Think
+
+Goals, beliefs and decisions require Actors.
+
+---
+
+## AUTH-INV-004 — Authority State Does Not Own Social Legitimacy
+
+Social acceptance belongs to human and social systems.
+
+---
+
+## AUTH-INV-005 — Formal Legitimacy and Social Legitimacy Are Separate
+
+Legal recognition and social acceptance may diverge.
+
+---
+
+## AUTH-INV-006 — Authority Decisions Use Available Information
+
+Authority Actors may not access hidden World Truth.
+
+---
+
+## AUTH-INV-007 — Decision and Implementation Are Separate
+
+A valid decision may fail to produce the intended outcome.
+
+---
+
+## AUTH-INV-008 — Jurisdiction Is Multi-Dimensional
+
+Different Actors may govern different functions in the same territory.
+
+---
+
+## AUTH-INV-009 — Claimed Jurisdiction and Effective Jurisdiction Are Separate
+
+Legal claims do not guarantee practical reach.
+
+---
+
+## AUTH-INV-010 — Territorial Reach and Sovereignty Are Separate
+
+A state may retain sovereignty while losing local governance reach.
+
+---
+
+## AUTH-INV-011 — Coercive Capacity and Legitimacy Are Separate
+
+Force does not create social acceptance automatically.
+
+---
+
+## AUTH-INV-012 — Decentralization Is Not Collapse
+
+Governance may adapt downward.
+
+---
+
+## AUTH-INV-013 — Fragmentation Is Not Absence
+
+Multiple governance structures may function simultaneously.
+
+---
+
+## AUTH-INV-014 — Authority Vacuums Are Domain-Specific
+
+Governance may be absent in one function while remaining strong in another.
+
+---
+
+## AUTH-INV-015 — Authority Emergence Requires Actors and Causes
+
+Governance structures may not appear from narrative convenience.
+
+---
+
+## AUTH-INV-016 — Authority Requires Real Capability
+
+Formal authority without resources, infrastructure or personnel may become symbolic.
+
+---
+
+## AUTH-INV-017 — Resource State Remains Externally Owned
+
+Authority may control access without owning physical resource truth.
+
+---
+
+## AUTH-INV-018 — Communication Failure May Prevent Implementation
+
+Issuing a directive does not guarantee receipt.
+
+---
+
+## AUTH-INV-019 — Population Compliance Is Not an Authority-Owned Mind State
+
+Human response emerges from Characters and Society.
+
+---
+
+## AUTH-INV-020 — Authority Collapse Does Not Equal Societal Collapse
+
+Other governance structures may persist or emerge.
+
+---
+
+## AUTH-INV-021 — Government Collapse and State Collapse Are Separate
+
+One does not automatically imply the other.
+
+---
+
+## AUTH-INV-022 — Recovery May Transform Governance
+
+Recovered governance need not recreate the old system.
+
+---
+
+## AUTH-INV-023 — Authority Must Respect Geography and Time
+
+Governance does not act instantly or without physical reach.
+
+---
+
+## AUTH-INV-024 — Player Authority Uses the Same Rules
+
+Players receive no special governance mechanics.
+
+---
+
+## AUTH-INV-025 — Major Governance Change Must Be Explainable
+
+Authority changes require causal history.
+
+---
+
+# 124. Development Locks
+
+Future Authority State development must not introduce:
+
+```text
+universal Authority score
+
+government present / collapsed binary
+
+Authority State goals
+
+Authority State beliefs
+
+Authority State decisions
+
+Authority-owned Faction objectives
+
+Authority-owned Character behavior
+
+Authority-owned population psychology
+
+Authority-owned Trust
+
+Authority-owned social cohesion
+
+Authority-owned social legitimacy
+
+automatic public compliance
+
+automatic obedience
+
+automatic rebellion
+
+automatic panic
+
+legal authority equals control
+
+territorial control equals sovereignty
+
+coercion equals legitimacy
+
+decentralization equals collapse
+
+fragmentation equals chaos
+
+authority vacuum equals anarchy
+
+central government weakness equals no government
+
+government collapse equals state collapse
+
+service provision automatically creates legitimacy
+
+failed service automatically destroys legitimacy
+
+emergency powers automatically create authoritarianism
+
+political conflict automatically escalates to violence
+
+narrative-generated governments
+
+random authority collapse
+
+random authority emergence
+
+player-specific political privilege
+
+instant institutional action
+
+omniscient government
+
+omniscient military
+
+omniscient Authority Actors.
 ```
 
 ---
 
-# Authority Update Cycle
+# 125. Authority Architecture Test
 
-A conceptual Authority State update may follow:
-
-```text
-1. Read current Authority State.
-2. Read available information.
-3. Read infrastructure capability.
-4. Read supply conditions.
-5. Read security conditions.
-6. Read population perception.
-7. Apply institutional pressures.
-8. Generate authority decisions.
-9. Apply communication capacity.
-10. Determine implementation success.
-11. Process enforcement.
-12. Process service outcomes.
-13. Update public perception.
-14. Update legitimacy.
-15. Update compliance.
-16. Update territorial control.
-17. Process authority relationships.
-18. Check delegation or fragmentation.
-19. Generate political events.
-20. Update authority memory.
-```
-
-The exact implementation may change.
-
-The causal structure should remain clear.
-
----
-
-# Authority Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active political conflict
-- authority transitions
-- campaign-critical governance
-
-May track:
+Before adding a new Authority mechanic, ask:
 
 ```text
-Individual Authority Actors
-Jurisdiction
-Legitimacy by group
-Decisions
-Resources
-Relationships
-```
+WHO IS
+THE ACTOR?
 
----
+WHAT AUTHORITY
+DO THEY CLAIM?
 
-## Medium Resolution
+WHAT AUTHORITY
+DO THEY FORMALLY
+POSSESS?
 
-Used for nearby regions.
+OVER WHAT
+FUNCTION?
 
-Tracks:
+OVER WHAT
+TERRITORY?
 
-```text
-Primary Authority
-Capacity
-Territorial Control
-Legitimacy
-Institutional Cohesion
-Major Conflicts
+WHO DELEGATED IT?
+
+WHAT JURISDICTION
+EXISTS?
+
+WHAT CAN
+THEY ACTUALLY
+IMPLEMENT?
+
+WHAT ADMINISTRATIVE
+CAPACITY EXISTS?
+
+WHAT RESOURCES
+AND INFRASTRUCTURE
+DO THEY DEPEND ON?
+
+WHAT INFORMATION
+DO THEY HAVE?
+
+WHAT DID
+THE ACTOR CHOOSE?
+
+HOW WAS
+THE DECISION
+COMMUNICATED?
+
+WHO HAD TO
+IMPLEMENT IT?
+
+WHAT WORLD
+CONDITIONS
+RESISTED IT?
+
+WHAT HUMAN
+COOPERATION
+WAS REQUIRED?
+
+WHAT ACTUALLY
+HAPPENED?
+
+WHICH SYSTEM
+OWNS EACH
+RESULTING CHANGE?
 ```
 
 ---
 
-## Low Resolution
+# 126. Final Authority Model
 
-Used for distant regions.
-
-Tracks:
+Conceptually:
 
 ```text
-Authority Structure
-Overall Capacity
-Legitimacy
-Trend
-Major Political Events
-```
-
----
-
-# Minimum Authority State
-
-A minimum viable Authority State should contain:
-
-```text
-Primary Authority
+WORLD CONDITIONS
+        ↓
+INFORMATION
+        ↓
+AUTHORITY ACTOR
+        │
+        ├── Knowledge
+        ├── Beliefs
+        ├── Goals
+        ├── Plans
+        └── Decision
+                ↓
+GOVERNANCE
+ACTION ATTEMPT
+                ↓
+────────────────────────────
+AUTHORITY STATE
+────────────────────────────
 
 Legal Authority
+
+Formal Legitimacy
+
+Jurisdiction
+
+Effective Jurisdiction
+
 Operational Capacity
-Territorial Control
-Enforcement Capacity
-Service Capacity
+
+Administrative Capacity
+
 Coordination Capacity
-Institutional Cohesion
-Legitimacy
-Public Compliance
+
+Territorial Reach
+
+Enforcement Capacity
+
+Service Governance Capacity
+
 Emergency Authority
+
 Continuity Capacity
+
 Delegation
-Trend
-Confidence
+
+Institutional Cohesion
+────────────────────────────
+                ↓
+WORLD CONDITIONS
++
+INFRASTRUCTURE
++
+SUPPLY
++
+SECURITY
++
+INFORMATION
++
+ACTUAL CAPABILITY
++
+HUMAN RESPONSE
+                ↓
+ACTION RESOLUTION
+                ↓
+WORLD CONSEQUENCE
+                ↓
+UPDATED AUTHORITY
+AND WORLD STATE.
 ```
 
-Complex regions may additionally contain multiple Authority Actors.
+Authority State is therefore:
+
+```text
+THE STRUCTURAL
+GOVERNANCE REALITY
+
+THROUGH WHICH
+
+COLLECTIVE ACTOR
+DECISIONS
+
+MAY OR MAY NOT
+
+BECOME REAL.
+```
 
 ---
 
-# Authority Consistency Rules
+# 127. Authority North Star
 
-## Rule 1
+The system succeeds when Project Ascension can answer:
 
-Legal authority and practical authority are separate.
+```text
+WHO CLAIMS
+THE RIGHT
+TO GOVERN?
 
----
+WHO FORMALLY
+HAS THAT RIGHT?
 
-## Rule 2
+OVER WHAT?
 
-Legitimacy and coercive capacity are separate.
+WHERE?
 
----
+WHO CAN
+ACTUALLY GOVERN?
 
-## Rule 3
+WHAT SYSTEMS
+CAN THEY CONTROL?
 
-Territorial control and sovereignty are separate.
+WHAT SYSTEMS
+CAN THEY ONLY
+COORDINATE?
 
----
+WHAT RESOURCES
+DO THEY DEPEND ON?
 
-## Rule 4
+WHAT INFORMATION
+DO THEY POSSESS?
 
-Government may remain legally intact while practical governance decentralizes.
+WHAT DID
+THE ACTOR DECIDE?
 
----
+COULD THE DECISION
+BE COMMUNICATED?
 
-## Rule 5
+COULD IT
+BE IMPLEMENTED?
 
-Decentralization does not automatically equal collapse.
+WHO ELSE
+CLAIMS AUTHORITY?
 
----
+WHERE DO
+JURISDICTIONS
+OVERLAP?
 
-## Rule 6
+WHERE HAS
+AUTHORITY
+DECENTRALIZED?
 
-Authority requires resources.
+WHERE HAS
+IT FRAGMENTED?
 
----
+WHERE HAS
+IT DISAPPEARED?
 
-## Rule 7
+WHAT NEW
+GOVERNANCE
+HAS EMERGED?
 
-Authority decisions must use available knowledge rather than hidden simulation truth.
+AND
 
----
-
-## Rule 8
-
-Service provision can increase legitimacy.
-
----
-
-## Rule 9
-
-Successful coercion does not automatically increase legitimacy.
-
----
-
-## Rule 10
-
-Population compliance may be selective.
-
----
-
-## Rule 11
-
-Emergency powers should create both capability and potential legitimacy pressure.
-
----
-
-## Rule 12
-
-Authority vacuums should encourage new governance structures.
-
----
-
-## Rule 13
-
-Multiple authorities may cooperate without merging.
+WHY DOES
+THE CURRENT
+POLITICAL REALITY
+LOOK THE WAY
+IT DOES?
+```
 
 ---
 
-## Rule 14
-
-Multiple authorities may compete without immediate violence.
-
----
-
-## Rule 15
-
-Symbolic national authority may survive practical fragmentation.
-
----
-
-## Rule 16
-
-Regional governance may become stronger as national operational capacity weakens.
-
----
-
-## Rule 17
-
-Authority collapse does not equal societal collapse.
-
----
-
-## Rule 18
-
-Governance may adapt rather than simply recover.
-
----
-
-## Rule 19
-
-Historical authority behavior should affect future legitimacy.
-
----
-
-## Rule 20
-
-Authority must remain explainable through simulation conditions.
-
----
-
-# Guiding Questions
-
-For every governing actor, the simulation should be able to answer:
-
-**What authority do they legally possess?**
-
-**What can they actually do?**
-
-**Where can they do it?**
-
-**Who follows their decisions?**
-
-**Who believes they have the right to govern?**
-
-**What services do they provide?**
-
-**What resources support their authority?**
-
-**What information do they possess?**
-
-**What other authorities exist?**
-
-**Where do jurisdictions overlap?**
-
-**What happens if their capacity declines?**
-
-**What would allow their authority to recover?**
-
-These questions define political reality more accurately than a simple government-present/government-absent flag.
-
----
-
-# Core Design Principle
+# 128. Closing Principle
 
 Project Ascension should never assume:
 
 ```text
-CENTRAL GOVERNMENT WEAKENS
+CENTRAL GOVERNMENT
+WEAKENS
+
 =
-NO GOVERNMENT
+
+NO GOVERNMENT.
 ```
 
 Instead:
@@ -2442,169 +4189,78 @@ Instead:
 ```text
 CENTRAL CAPACITY
 DECREASES
-        │
-        ▼
+        ↓
 REGIONAL AUTHORITY
-EXPANDS
-        │
-        ▼
+MAY EXPAND
+        ↓
 LOCAL GOVERNANCE
-ADAPTS
-        │
-        ▼
-NEW POLITICAL STRUCTURES
-EMERGE
+MAY ADAPT
+        ↓
+FUNCTIONS MAY
+DECENTRALIZE
+        ↓
+JURISDICTIONS MAY
+OVERLAP
+        ↓
+NEW GOVERNANCE
+STRUCTURES MAY EMERGE.
 ```
 
-Sometimes this transition fails.
+Sometimes this succeeds.
 
-Sometimes it succeeds.
+Sometimes it fails.
 
-Often it does both in different places.
+Sometimes formal institutions survive while practical governance moves elsewhere.
 
----
+Sometimes new institutions become more capable than the ones they replaced.
 
-# Relationship to The Fractured World
+Sometimes a government retains legal sovereignty but little practical reach.
 
-The Fractured World should therefore not be defined by the absence of authority.
+Sometimes a local council has no historic constitutional basis but becomes the institution keeping thousands of people alive.
 
-It is defined by:
+Sometimes military, civilian, private and community institutions govern different parts of the same region at the same time.
+
+And decades later, when reconnection becomes possible, those arrangements have become history.
+
+The question is no longer simply:
 
 ```text
-AUTHORITY BECOMING GEOGRAPHICALLY,
-FUNCTIONALLY AND POLITICALLY DIVERSE.
+WHO IS
+THE GOVERNMENT?
 ```
 
-Some regions may become authoritarian.
-
-Some democratic.
-
-Some cooperative.
-
-Some militarized.
-
-Some weak.
-
-Some exceptionally well governed.
-
-The Collapse does not create one political future.
-
-It creates many.
-
----
-
-# Relationship to The Reconnection
-
-The Reconnection creates a new authority problem.
-
-Regions that have governed themselves for decades may not automatically surrender power to recreated national institutions.
-
-Reconnection therefore includes:
-
-- constitutional negotiation
-- jurisdiction disputes
-- regional autonomy
-- legitimacy conflicts
-- new federations
-- restored historical institutions
-- entirely new political systems
-
-Political reconnection may be much harder than physical reconnection.
-
----
-
-# Current Status
+It becomes:
 
 ```text
-WORLD SIMULATION
+WHO HAS
+THE RIGHT
+TO DO WHAT?
 
-README.md
-COMPLETE
+WHO CAN
+ACTUALLY DO IT?
 
-World_State.md
-FOUNDATION DEFINED
+WHERE?
 
-Regional_State.md
-FOUNDATION DEFINED
+THROUGH
+WHICH INSTITUTIONS?
 
-Infrastructure_State.md
-FOUNDATION DEFINED
+WITH WHAT
+CAPACITY?
 
-Information_State.md
-FOUNDATION DEFINED
+AND
 
-Authority_State.md
-FOUNDATION DEFINED
-
-Population_State.md
-PENDING
-
-Escalation_and_Recovery.md
-PENDING
+HOW DID
+THE WORLD
+GET HERE?
 ```
 
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/World_Simulation/Population_State.md
-```
-
-Authority State defines:
-
-```text
-WHO CAN ACT
-```
-
-Population State will define:
-
-```text
-HOW PEOPLE RESPOND
-```
-
-It should establish:
-
-- public confidence
-- fear
-- normalcy bias
-- cooperation
-- social cohesion
-- workforce participation
-- preparedness
-- stockpiling
-- migration
-- unrest
-- community formation
-- adaptation
-- demographic pressure
-
-This will complete the major actor loop:
-
-```text
-WORLD CONDITIONS
-      ↓
-INFORMATION
-      ↓
-AUTHORITY
-      ↓
-POPULATION
-      ↓
-BEHAVIOR
-      ↓
-WORLD CONDITIONS
-```
-
-The population should never function as a single panic meter.
-
-**People respond differently because they know different things, trust different institutions, possess different resources and have different responsibilities.**
+That is Authority State.
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial legal authority, operational capacity, legitimacy, territorial control, decentralization, continuity, competing authority and governance-transformation framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial legal authority, operational capacity, legitimacy, territorial control, decentralization, continuity, competing authority and governance-transformation framework. |
+| 1.0 | 2026-09-01 | Rebuilt Authority State as canonical external governance architecture aligned with Simulation Architecture, World State, Infrastructure, Supply, Information, Characters, Society and Factions. Preserved legal authority, jurisdiction, operational capacity, territorial reach, enforcement, service governance, coordination, institutional cohesion, emergency authority, continuity, delegation, decentralization, fragmentation, authority emergence, collapse, recovery and transformation. Removed ownership of Actor goals, beliefs, objectives and decisions; redirected social legitimacy, Trust and population compliance to their authoritative human and social systems; separated Authority Actor from Authority State; integrated governance actions with Action Resolution; and established formal legitimacy, effective jurisdiction, adaptive resolution and cross-system governance boundaries. |

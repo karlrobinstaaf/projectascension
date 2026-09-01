@@ -1,902 +1,1174 @@
 # PROJECT ASCENSION
-# World Simulation System
+
+# World Simulation
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Location | Canon/Systems/World_Simulation/ |
-| Status | Working Canon |
-| Scope | Global / National / Regional / Local |
-| Function | Dynamic World-State Simulation |
+|---|---|
+| Project | Project Ascension |
+| Document | World Simulation README |
+| Location | `Canon/Systems/World_Simulation/README.md` |
+| Version | 1.0 |
+| Status | Active Canon |
+| Category | Systems / World Simulation |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Provide the canonical entry point, ownership map and operating principles for the persistent external world simulation |
 
-> *"The world does not wait for the player."*
-
----
-
-# Purpose
-
-The World Simulation system defines how the world of Project Ascension changes over time independently of direct player action.
-
-Its purpose is to create a world that behaves as a living system rather than a sequence of scripted events.
-
-The simulation tracks interacting conditions across:
-
-- infrastructure
-- communications
-- government authority
-- population behavior
-- supply systems
-- security
-- information reliability
-- regional stability
-- institutional capacity
-- recovery capability
-
-These conditions influence one another.
-
-The result should be a world where consequences emerge from system interactions rather than from a predetermined collapse script.
+> **"The world does not wait for the player."**
 
 ---
 
-# Core Principle
+# 1. Purpose
+
+World Simulation defines how the external world of Project Ascension exists, changes, responds and persists over time.
+
+Its central questions are:
+
+```text
+WHAT IS
+ACTUALLY TRUE
+IN THE WORLD?
+
+WHAT CONDITIONS
+EXIST HERE?
+
+WHAT SYSTEMS
+ARE FUNCTIONING?
+
+WHAT SYSTEMS
+ARE UNDER PRESSURE?
+
+WHAT RESOURCES
+ARE AVAILABLE?
+
+WHAT INFRASTRUCTURE
+IS OPERATIONAL?
+
+WHAT EXTERNAL
+CONSTRAINTS APPLY?
+
+WHAT HAPPENS
+WHEN ACTORS
+INTERACT WITH
+THE WORLD?
+
+HOW DO
+CONSEQUENCES
+PROPAGATE?
+
+HOW DOES
+THE WORLD CHANGE
+
+WHEN THE PLAYER
+IS NOT PRESENT?
+```
+
+World Simulation provides:
+
+```text
+EXTERNAL
+SIMULATION REALITY.
+```
+
+It does not determine:
+
+```text
+WHAT CHARACTERS
+BELIEVE
+
+WHAT CHARACTERS
+WANT
+
+WHAT CHARACTERS
+CHOOSE
+
+OR
+
+HOW EVENTS
+ARE PRESENTED
+NARRATIVELY.
+```
+
+---
+
+# 2. Core Principle
 
 Project Ascension does not simulate:
 
-**a scripted apocalypse.**
+```text
+A SCRIPTED
+APOCALYPSE.
+```
 
 It simulates:
 
-**a society attempting to continue functioning under increasing uncertainty and pressure.**
-
-Systems do not fail simply because the narrative requires them to fail.
-
-They degrade because:
-
-- resources become unavailable
-- dependencies fail
-- information becomes unreliable
-- personnel capacity decreases
-- coordination breaks down
-- institutions make protective decisions
-- populations change behavior
-- local solutions create wider consequences
-- external events alter operating conditions
-
-Likewise, degradation does not always continue.
-
-Systems may:
-
-- stabilize
-- adapt
-- recover
-- reorganize
-- decentralize
-- fail temporarily
-- develop new forms of resilience
-
-Collapse is therefore a possible system state.
-
-It is not the only system state.
-
----
-
-# Simulation Philosophy
-
-The World Simulation should follow five principles.
-
-## 1. The World Continues Without the Player
-
-Events occur whether the player witnesses them or not.
-
-Communities make decisions.
-
-Infrastructure changes.
-
-Governments respond.
-
-Organizations adapt.
-
-People move.
-
-Resources are consumed.
-
-Conflicts develop.
-
-Recovery efforts begin.
-
-The player exists inside the world.
-
-The world does not exist solely for the player.
-
----
-
-## 2. Local Conditions Matter
-
-There is no universal world state.
-
-Different locations may experience radically different conditions at the same time.
-
-One region may be:
-
-**Stable**
-
-while another is:
-
-**Degraded**
-
-and another:
-
-**Critical**
-
-National conditions are therefore aggregates of regional conditions rather than absolute states applied everywhere.
-
----
-
-## 3. Systems Are Interdependent
-
-No major world system exists in isolation.
-
-For example:
-
 ```text
-POWER
-  │
-  ├── affects → COMMUNICATIONS
-  │
-  ├── affects → WATER
-  │
-  ├── affects → HEALTHCARE
-  │
-  ├── affects → TRANSPORTATION
-  │
-  └── affects → SUPPLY
+A COMPLEX WORLD
+
+ATTEMPTING
+TO CONTINUE
+FUNCTIONING
+
+UNDER
+
+CHANGING
+CONDITIONS
+
+UNCERTAINTY
+
+PRESSURE
+
+AND
+
+HUMAN RESPONSE.
 ```
 
-But the dependencies also operate in reverse.
+Therefore:
 
 ```text
+SYSTEMS FAIL
+BECAUSE CONDITIONS
+CAUSE FAILURE
+
+NOT
+
+BECAUSE THE STORY
+REQUIRES FAILURE.
+```
+
+Likewise:
+
+```text
+SYSTEMS RECOVER
+WHEN CONDITIONS
+SUPPORT RECOVERY.
+```
+
+---
+
+# 3. Architectural Position
+
+World Simulation operates inside the broader architecture defined by:
+
+```text
+Canon/Systems/
+Simulation_Architecture.md
+```
+
+The high-level relationship is:
+
+```text
+CHARACTERS
+↓
+WHAT ACTORS
+TRY TO DO
+
+WORLD SIMULATION
+↓
+WHAT EXTERNAL
+REALITY ALLOWS
+AND WHAT ACTUALLY
+HAPPENS
+
+LIFE / MEMORY /
+RELATIONSHIPS /
+SOCIETY / FACTIONS
+↓
+WHAT CONSEQUENCES
+BECOME PERSISTENT
+
+LIVING CAMPAIGN ENGINE
+↓
+WHAT REMAINS
+CAUSALLY ACTIVE
+AT CAMPAIGN SCALE
+
+NARRATIVE
+↓
+HOW THAT REALITY
+IS EXPERIENCED
+BY THE PLAYER.
+```
+
+---
+
+# 4. Ownership
+
+World Simulation owns external simulation state such as:
+
+```text
+INFRASTRUCTURE
+
 TRANSPORTATION
-      │
-      └── affects → FUEL DELIVERY
-                       │
-                       └── affects → POWER
+
+ENERGY
+
+WATER
+
+COMMUNICATION
+AVAILABILITY
+
+PHYSICAL GEOGRAPHY
+
+ENVIRONMENTAL CONDITIONS
+
+RESOURCE AVAILABILITY
+
+SUPPLY CONDITIONS
+
+SECURITY CONDITIONS
+
+REGIONAL OPERATING
+CONDITIONS
+
+PHYSICAL DAMAGE
+
+EXTERNAL HAZARDS
+
+REGIONAL PRESSURE
+
+RECOVERY CONDITIONS
+
+EXTERNAL CONSEQUENCES.
 ```
 
-The simulation should therefore allow cascading consequences without assuming every disruption becomes catastrophic.
-
 ---
 
-## 4. Human Response Is Part of the System
+# 5. What World Simulation Does Not Own
 
-People do not passively experience world-state changes.
-
-They react.
-
-Possible reactions include:
-
-- adaptation
-- conservation
-- migration
-- cooperation
-- stockpiling
-- volunteering
-- avoidance
-- protest
-- crime
-- local organization
-- mutual aid
-- political pressure
-- defensive behavior
-
-These responses may improve or worsen local conditions.
-
-Human behavior is therefore part of the simulation rather than merely a consequence of it.
-
----
-
-## 5. Recovery Must Always Be Possible
-
-World Simulation must model recovery as seriously as degradation.
-
-A damaged system may recover through:
-
-- repair
-- redundancy
-- local adaptation
-- resource redistribution
-- political coordination
-- community cooperation
-- technological substitution
-- restored communications
-- improved information
-- reduced demand
-
-The simulation should avoid an automatic downward spiral.
-
-A region may move:
+World Simulation does not own:
 
 ```text
-Stable
-  ↓
-Strained
-  ↓
-Degraded
-  ↓
-Critical
+CHARACTER GOALS
+
+CHARACTER BELIEFS
+
+CHARACTER KNOWLEDGE
+
+CHARACTER VALUES
+
+CHARACTER PSYCHOLOGY
+
+CHARACTER RELATIONSHIPS
+
+CHARACTER DECISIONS
+
+CHARACTER DEVELOPMENT
+
+LIFE HISTORY
+
+CULTURE
+
+SOCIAL NORMS
+
+FACTION INTERNAL
+DECISION MAKING
+
+NARRATIVE PRESENTATION.
 ```
 
-but it may also move:
+Those systems may respond to World Simulation.
+
+They remain authoritative for their own state.
+
+---
+
+# 6. World Truth
+
+World Simulation contributes to:
 
 ```text
-Critical
-  ↑
-Degraded
-  ↑
-Strained
-  ↑
-Stable
+WORLD TRUTH.
 ```
 
-Recovery may be slow.
-
-It may be incomplete.
-
-It may produce a society different from the one that existed before.
-
-But it remains possible.
-
----
-
-# Simulation Layers
-
-World Simulation operates across several interconnected layers.
+World Truth represents:
 
 ```text
-WORLD
-│
-├── Global
-│
-├── National
-│
-├── Regional
-│
-├── Local
-│
-└── Community
+WHAT IS
+ACTUALLY TRUE
+
+IN EXTERNAL
+SIMULATION REALITY.
 ```
-
-Each layer may influence the others.
-
----
-
-# Global Layer
-
-The Global Layer represents conditions that affect multiple nations or the international system.
-
-Examples include:
-
-- global communications
-- international trade
-- financial systems
-- satellite infrastructure
-- shipping
-- international AI policy
-- geopolitical tension
-- international migration
-- global information reliability
-
-Global conditions should usually influence lower layers rather than directly determine them.
-
----
-
-# National Layer
-
-The National Layer represents state-level capability.
-
-Examples include:
-
-- federal authority
-- national infrastructure coordination
-- military readiness
-- emergency management
-- national communications
-- strategic reserves
-- national transportation networks
-- financial stability
-
-A nation may remain politically intact while losing operational coordination across parts of its territory.
-
----
-
-# Regional Layer
-
-The Regional Layer is one of the most important simulation layers.
-
-Regions may develop different conditions based on:
-
-- infrastructure
-- geography
-- population
-- resources
-- local government
-- transportation
-- security
-- communications
-- neighboring regions
-
-Regional divergence becomes increasingly important during prolonged disruption.
-
----
-
-# Local Layer
-
-The Local Layer represents cities, towns, districts and other operational areas.
-
-Local conditions determine much of what the player directly experiences.
-
-Examples include:
-
-- electricity availability
-- fuel
-- food supply
-- water
-- medical services
-- police presence
-- communications
-- transportation
-- public behavior
-- local authority
-
----
-
-# Community Layer
-
-The Community Layer represents the immediate social environment surrounding characters.
-
-Examples include:
-
-- neighborhoods
-- shelters
-- workplaces
-- survivor groups
-- settlements
-- families
-- local organizations
-
-This layer connects World Simulation to:
-
-```text
-Canon/Systems/Characters/
-Canon/Systems/Relationships/
-Canon/Systems/Life/
-Canon/Systems/Society/
-```
-
----
-
-# Core World-State Domains
-
-The initial World Simulation should track several major domains.
-
-```text
-WORLD STATE
-│
-├── Infrastructure
-├── Communications
-├── Authority
-├── Information
-├── Population
-├── Supply
-├── Security
-└── Recovery
-```
-
-These domains represent broad conditions rather than individual technical systems.
-
----
-
-# Infrastructure
-
-Infrastructure represents the operational condition of essential physical and digital systems.
-
-Examples include:
-
-- electricity
-- water
-- telecommunications
-- transportation
-- fuel distribution
-- healthcare infrastructure
-- logistics
-- data networks
-
-Infrastructure should integrate with:
-
-```text
-Canon/Systems/Infrastructure_Monitoring_Levels.md
-```
-
----
-
-# Communications
-
-Communications represents the ability of institutions and populations to exchange reliable operational information.
-
-This includes:
-
-- national communication
-- regional communication
-- emergency alerts
-- internet availability
-- cellular networks
-- radio
-- local communication systems
-
-Communications should integrate with:
-
-```text
-Canon/Systems/Emergency_Communication_Levels.md
-```
-
-including:
-
-```text
-ECL-1 — Advisory
-ECL-2 — Preparedness
-ECL-3 — Regional Emergency
-ECL-4 — National Emergency
-ECL-5 — Continuity Operations
-ECL-6 — Decentralized Communications
-```
-
----
-
-# Authority
-
-Authority represents the practical ability of institutions to govern.
-
-Authority is not simply whether a government legally exists.
-
-It measures whether authorities can:
-
-- communicate
-- coordinate
-- enforce decisions
-- provide services
-- distribute resources
-- maintain legitimacy
-- respond to emergencies
-
-A government may remain legally intact while operational authority becomes increasingly regional or local.
-
----
-
-# Information
-
-Information represents the quality and reliability of the shared informational environment.
-
-It includes:
-
-- news availability
-- verification capacity
-- misinformation
-- synthetic media
-- rumor
-- institutional credibility
-- intelligence quality
-- communications delays
-
-Information failure does not mean that truth disappears.
-
-It means determining truth becomes more difficult.
-
----
-
-# Population
-
-Population represents broad civilian behavior and demographic movement.
-
-It may include:
-
-- confidence
-- fear
-- mobility
-- migration
-- cooperation
-- unrest
-- workforce availability
-- community organization
-
-Population behavior should respond to perceived conditions.
-
-Perception may differ from actual conditions.
-
-This distinction is important.
-
----
-
-# Supply
-
-Supply represents availability and distribution of essential resources.
-
-Examples include:
-
-- food
-- fuel
-- medicine
-- replacement parts
-- industrial materials
-- batteries
-- water-treatment supplies
-
-Supply depends heavily upon:
-
-- transportation
-- infrastructure
-- workforce
-- communications
-- security
-
----
-
-# Security
-
-Security represents the ability of communities and institutions to maintain physical order.
-
-It includes:
-
-- police capacity
-- emergency services
-- military support
-- crime
-- civil unrest
-- organized violence
-- local defense
-- protection of infrastructure
-
-Security should not automatically deteriorate when infrastructure deteriorates.
-
-Many communities may become more cooperative during emergencies.
-
----
-
-# Recovery
-
-Recovery represents the capacity of a region or institution to improve its condition.
-
-Factors may include:
-
-- technical expertise
-- spare parts
-- fuel
-- communications
-- political coordination
-- community cooperation
-- external assistance
-- redundancy
-- functioning transportation
-
-Recovery Capacity should be treated as a major strategic resource.
-
----
-
-# State Model
-
-Each domain should use a limited number of understandable states.
-
-The exact state scales will be defined in their respective system files.
-
-A conceptual example:
-
-```text
-STABLE
-   ↓
-STRAINED
-   ↓
-DEGRADED
-   ↓
-CRITICAL
-   ↓
-FAILED
-```
-
-Not every domain requires exactly the same terminology.
-
-Existing canonical scales should be reused where appropriate.
-
----
-
-# Example Regional State
-
-A region might exist in the following condition:
-
-```text
-REGION: Northern Virginia
-
-Infrastructure:      Degraded
-Communications:      ECL-3 — Regional Emergency
-Authority:           Functional
-Information:         Unstable
-Population:          Concerned
-Supply:              Constrained
-Security:            Stable
-Recovery Capacity:   Moderate
-```
-
-This does not mean the region has "collapsed."
-
-It describes the current operating environment.
-
----
-
-# Emergent Consequences
-
-World Simulation should generate consequences from combinations of states.
-
-For example:
-
-```text
-Infrastructure: Degraded
-Supply: Constrained
-Communications: Functional
-Authority: Functional
-```
-
-may produce:
-
-```text
-Controlled rationing
-Repair prioritization
-Public conservation requests
-Regional resource coordination
-```
-
-While:
-
-```text
-Infrastructure: Degraded
-Supply: Constrained
-Communications: Unreliable
-Authority: Weak
-```
-
-may produce:
-
-```text
-Localized shortages
-Rumor-driven demand
-Uneven distribution
-Population movement
-Black markets
-Community self-organization
-```
-
-The infrastructure condition is similar.
-
-The wider system produces different outcomes.
-
----
-
-# Thresholds
-
-Certain combinations of conditions may trigger major transitions.
 
 Examples:
 
 ```text
-LOW SUPPLY
-+
-HIGH POPULATION PRESSURE
-+
-LOW AUTHORITY
-=
-UNREST RISK
+BRIDGE:
+Destroyed
+
+POWER:
+Unavailable
+
+ROAD:
+Blocked
+
+FUEL:
+Constrained
+
+HOSPITAL:
+Operational
+
+WEATHER:
+Severe Storm
+
+REGIONAL SUPPLY:
+Degraded.
+```
+
+---
+
+# 7. Distributed World Truth
+
+World Truth does not need to exist in:
+
+```text
+ONE GIANT
+WORLD OBJECT.
+```
+
+Different authoritative systems may own different parts of reality.
+
+World Simulation coordinates the external world domains for which it is responsible.
+
+---
+
+# 8. Actual State vs Perceived State
+
+Critical distinction:
+
+```text
+ACTUAL WORLD STATE
+≠
+PERCEIVED WORLD STATE.
+```
+
+Example:
+
+```text
+ACTUAL SUPPLY:
+Stable
+
+PUBLIC BELIEF:
+Shortage imminent.
+```
+
+The belief may cause:
+
+```text
+stockpiling
+↓
+distribution pressure
+↓
+actual shortage.
+```
+
+World Simulation owns:
+
+```text
+THE ACTUAL
+RESOURCE CONDITION.
+```
+
+Knowledge, Society and Character systems own:
+
+```text
+WHO BELIEVES WHAT.
+```
+
+---
+
+# 9. World Layers
+
+World Simulation may operate across:
+
+```text
+GLOBAL
+
+NATIONAL
+
+REGIONAL
+
+LOCAL
+
+COMMUNITY
+```
+
+layers.
+
+These are not identical simulation states.
+
+They represent different scales of external conditions.
+
+---
+
+# 10. Global Layer
+
+The Global Layer may include:
+
+```text
+international trade
+
+shipping
+
+satellite infrastructure
+
+global communications
+
+financial systems
+
+geopolitical pressure
+
+international migration
+
+global technology conditions.
+```
+
+Global conditions usually influence lower layers.
+
+They should not automatically determine local reality.
+
+---
+
+# 11. National Layer
+
+The National Layer may include:
+
+```text
+national infrastructure
+
+strategic reserves
+
+transportation networks
+
+national communications
+
+emergency coordination
+
+military capacity
+
+national institutions
+
+financial stability.
+```
+
+A nation may remain:
+
+```text
+POLITICALLY INTACT
+```
+
+while experiencing:
+
+```text
+REGIONAL
+OPERATIONAL
+FRAGMENTATION.
+```
+
+---
+
+# 12. Regional Layer
+
+Regional state is one of the most important World Simulation layers.
+
+Regions may differ according to:
+
+```text
+geography
+
+infrastructure
+
+population
+
+resources
+
+transportation
+
+communication
+
+security
+
+institutional capacity
+
+neighboring regions
+
+human expertise
+
+recovery capability.
+```
+
+Therefore:
+
+```text
+ONE REGION
+MAY BE STABLE
+
+WHILE
+
+ANOTHER
+IS CRITICAL.
+```
+
+---
+
+# 13. Local Layer
+
+Local simulation may represent:
+
+```text
+cities
+
+towns
+
+districts
+
+transport corridors
+
+industrial areas
+
+specific infrastructure zones.
+```
+
+This layer strongly affects what Characters directly experience.
+
+---
+
+# 14. Community Boundary
+
+The immediate social environment may involve:
+
+```text
+Characters
+
+Relationships
+
+Society
+
+Families
+
+organizations
+
+institutions.
+```
+
+World Simulation provides:
+
+```text
+THE CONDITIONS
+AROUND THEM.
+```
+
+It should not duplicate the social state owned by those systems.
+
+---
+
+# 15. Core External Domains
+
+World Simulation may track external domains such as:
+
+```text
+INFRASTRUCTURE
+
+COMMUNICATIONS
+
+SUPPLY
+
+SECURITY
+
+TRANSPORTATION
+
+ENERGY
+
+WATER
+
+ENVIRONMENT
+
+RESOURCE AVAILABILITY
+
+REGIONAL RECOVERY.
+```
+
+These domains may later be represented through more specialized files.
+
+---
+
+# 16. Infrastructure
+
+Infrastructure may include:
+
+```text
+electricity
+
+water
+
+telecommunications
+
+transportation
+
+fuel distribution
+
+healthcare infrastructure
+
+logistics
+
+data networks.
+```
+
+Infrastructure should integrate with:
+
+```text
+Canon/Systems/
+Infrastructure_Monitoring_Levels.md
+```
+
+rather than duplicate it.
+
+---
+
+# 17. Communications
+
+World Simulation owns:
+
+```text
+WHETHER
+COMMUNICATION
+CHANNELS EXIST
+
+AND
+
+WHETHER THEY
+FUNCTION.
+```
+
+Examples:
+
+```text
+internet availability
+
+cellular networks
+
+radio
+
+satellite connection
+
+regional communication
+
+emergency broadcasting.
+```
+
+Communication content and Character understanding belong elsewhere.
+
+---
+
+# 18. Communication Availability vs Information
+
+Preserve:
+
+```text
+CHANNEL EXISTS
+≠
+MESSAGE SENT
+
+MESSAGE SENT
+≠
+MESSAGE DELIVERED
+
+MESSAGE DELIVERED
+≠
+MESSAGE UNDERSTOOD
+
+MESSAGE UNDERSTOOD
+≠
+MESSAGE BELIEVED.
+```
+
+World Simulation may own:
+
+```text
+CHANNEL
+AVAILABILITY.
+```
+
+Knowledge and Beliefs owns:
+
+```text
+CHARACTER
+EPISTEMIC STATE.
+```
+
+---
+
+# 19. Supply
+
+Supply may represent availability and distribution of:
+
+```text
+food
+
+fuel
+
+medicine
+
+replacement parts
+
+industrial materials
+
+batteries
+
+water-treatment materials
+
+specialized equipment.
+```
+
+Supply depends on:
+
+```text
+transportation
+
+infrastructure
+
+workforce
+
+security
+
+communication
+
+production
+
+storage
+
+distribution.
+```
+
+---
+
+# 20. Resource State
+
+Resources exist independently of who currently wants them.
+
+World Simulation or another authoritative resource system should own:
+
+```text
+RESOURCE EXISTENCE
+
+QUANTITY
+
+LOCATION
+
+CONDITION
+
+AVAILABILITY.
+```
+
+Characters may possess:
+
+```text
+ownership
+
+control
+
+access
+
+authority
+
+knowledge
+```
+
+regarding those resources.
+
+---
+
+# 21. Security
+
+Security describes external operating conditions related to:
+
+```text
+crime
+
+organized violence
+
+infrastructure protection
+
+emergency response
+
+civil unrest
+
+local defense
+
+physical threat.
+```
+
+Security must not automatically deteriorate simply because:
+
+```text
+INFRASTRUCTURE
+DETERIORATES.
+```
+
+Communities may:
+
+```text
+cooperate
+
+organize
+
+stabilize
+
+or
+
+adapt.
+```
+
+---
+
+# 22. Transportation
+
+Transportation represents the ability to move:
+
+```text
+people
+
+goods
+
+fuel
+
+medicine
+
+equipment
+
+information carriers
+
+specialists.
+```
+
+It depends on:
+
+```text
+roads
+
+rail
+
+fuel
+
+vehicles
+
+infrastructure
+
+security
+
+weather
+
+human operators.
+```
+
+---
+
+# 23. Geography
+
+Geography is a real causal constraint.
+
+Distance affects:
+
+```text
+travel time
+
+supply
+
+migration
+
+institutional reach
+
+communication
+
+relationships
+
+response time.
+```
+
+Project Ascension should preserve real geography wherever Canon has not explicitly changed it.
+
+---
+
+# 24. Environment
+
+Environmental conditions may include:
+
+```text
+weather
+
+temperature
+
+flooding
+
+fire
+
+drought
+
+storms
+
+air quality
+
+terrain
+
+season.
+```
+
+Environmental conditions may create:
+
+```text
+pressure
+
+hazard
+
+resource change
+
+transport limitation
+
+infrastructure consequence.
+```
+
+---
+
+# 25. State
+
+State describes:
+
+```text
+WHAT IS
+CURRENTLY TRUE.
+```
+
+Example:
+
+```text
+Infrastructure:
+Degraded
 ```
 
 or:
 
 ```text
-DEGRADED INFRASTRUCTURE
-+
-HIGH RECOVERY CAPACITY
-+
-FUNCTIONAL COMMUNICATIONS
-=
-STABILIZATION OPPORTUNITY
+Fuel Supply:
+Constrained.
 ```
-
-Thresholds should create probabilities and pressures rather than guaranteed scripted events.
 
 ---
 
-# Pressure
+# 26. Pressure
 
-World Simulation should distinguish between:
+Pressure describes:
 
-**State**
-
-and:
-
-**Pressure**
-
-State describes current conditions.
-
-Pressure describes forces pushing the state toward change.
+```text
+FORCES PUSHING
+STATE TOWARD
+CHANGE.
+```
 
 Example:
 
 ```text
-Infrastructure State:
-STABLE
-
-Infrastructure Pressure:
-HIGH
-```
-
-The infrastructure still functions.
-
-But:
-
-- spare parts are declining
-- maintenance is delayed
-- workforce capacity is falling
-- fuel reserves are decreasing
-
-The player may therefore encounter a region that appears normal while the underlying system is becoming fragile.
-
-This is important to Project Ascension.
-
----
-
-# Resilience
-
-Regions should also possess resilience.
-
-Resilience represents the ability to absorb pressure without changing state.
-
-Possible sources include:
-
-- redundancy
-- local resources
-- experienced personnel
-- strong institutions
-- community trust
-- geographic advantages
-- stored supplies
-- independent communications
-- distributed energy
-- repair capability
-
-Two regions experiencing the same pressure may therefore develop very different outcomes.
-
----
-
-# World State Versus Perceived State
-
-The simulation should maintain a distinction between:
-
-```text
-ACTUAL WORLD STATE
-```
-
-and:
-
-```text
-PERCEIVED WORLD STATE
-```
-
-The player should not automatically know the true simulation state.
-
-For example:
-
-```text
-Actual Supply:
+Infrastructure:
 Stable
 
-Public Perception:
-Critical shortage imminent
+Pressure:
+High
 ```
 
-may produce stockpiling that creates a real shortage.
-
-Likewise:
+because:
 
 ```text
-Actual Infrastructure:
-Critical
+maintenance delayed
 
-Public Perception:
-Temporary technical problem
+spare parts declining
+
+fuel decreasing
+
+workforce shrinking.
 ```
 
-may delay preparation.
+This distinction is important.
 
-Information therefore influences behavior through perception.
+A place may look stable while becoming fragile.
 
 ---
 
-# Information Delay
+# 27. Resilience
 
-Knowledge should move through the world with delay.
-
-A local event may progress through:
+Resilience represents:
 
 ```text
-EVENT
-  ↓
-LOCAL OBSERVATION
-  ↓
-REGIONAL REPORTING
-  ↓
-VERIFICATION
-  ↓
-NATIONAL AWARENESS
-  ↓
-PUBLIC COMMUNICATION
+THE ABILITY
+OF A SYSTEM
+
+TO ABSORB
+PRESSURE
+
+WITHOUT
+MAJOR STATE CHANGE.
 ```
 
-Any stage may be:
+Sources may include:
 
-- delayed
-- incomplete
-- misunderstood
-- classified
-- contradicted
-- lost
+```text
+redundancy
 
-This preserves the information asymmetry established in the Recovered Records.
+stored resources
 
----
+experienced personnel
 
-# Player Interaction
+strong institutions
 
-The player should influence World Simulation without becoming the sole cause of world events.
+repair capability
 
-Player actions may affect:
+local production
 
-- local resources
-- community stability
-- relationships
-- information
-- infrastructure repair
-- security
-- migration
-- authority
-- recovery capacity
+distributed infrastructure
 
-Some effects may remain local.
+communication
 
-Others may propagate outward.
+geographic advantage.
+```
 
 ---
 
-# Player Influence Principle
+# 28. Recovery
 
-The player should be:
+Recovery must be modeled as seriously as degradation.
 
-**important**
+Recovery may arise through:
 
-without being:
+```text
+repair
 
-**the center of the universe.**
+resource redistribution
 
-A player may save a community without saving a state.
+redundancy
 
-A player may repair infrastructure without solving the national crisis.
+adaptation
 
-A player may discover important information without convincing anyone to believe it.
+new supply routes
 
-A player may influence events whose consequences appear much later.
+community cooperation
 
-This creates meaningful agency without destroying world credibility.
+human expertise
+
+external assistance
+
+reduced demand
+
+restored communication.
+```
 
 ---
 
-# No Universal Collapse Clock
+# 29. Recovery Is Not Reset
 
-World Simulation should not contain a hidden timer that inevitably moves every region toward failure.
+Recovery does not mean:
 
-Instead:
+```text
+RETURN TO
+PREVIOUS WORLD
+UNCHANGED.
+```
+
+A recovered region may have:
+
+```text
+different institutions
+
+different population
+
+different trade routes
+
+different social structures
+
+different infrastructure
+
+different vulnerabilities.
+```
+
+History remains.
+
+---
+
+# 30. Degradation
+
+Systems may degrade because:
+
+```text
+resources disappear
+
+dependencies fail
+
+maintenance stops
+
+personnel disappear
+
+coordination weakens
+
+transport breaks down
+
+information becomes delayed
+
+physical damage accumulates
+
+demand exceeds capacity.
+```
+
+Degradation must have causes.
+
+---
+
+# 31. No Automatic Collapse
+
+Canonical rule:
+
+```text
+NEGATIVE PRESSURE
+≠
+INEVITABLE COLLAPSE.
+```
+
+A degraded system may:
+
+```text
+stabilize
+
+adapt
+
+recover
+
+reorganize
+
+decentralize
+
+fail temporarily
+
+or
+
+continue operating
+at reduced capacity.
+```
+
+---
+
+# 32. No Universal Collapse Clock
+
+Avoid:
+
+```text
+DAY 20
+POWER FAILS
+
+DAY 30
+RIOTS
+
+DAY 40
+GOVERNMENT COLLAPSES.
+```
+
+Prefer:
 
 ```text
 PRESSURE
@@ -907,620 +1179,2427 @@ DECISIONS
 +
 RESILIENCE
 +
-RANDOM EVENTS
+EXTERNAL EVENTS
 +
-PLAYER ACTION
+TIME
+
+        ↓
+
+WORLD CHANGE.
+```
+
+---
+
+# 33. Interdependencies
+
+World systems are interconnected.
+
+Example:
+
+```text
+POWER
+↓
+COMMUNICATION
+↓
+COORDINATION
+↓
+TRANSPORTATION
+↓
+FUEL DELIVERY
+↓
+POWER.
+```
+
+This may create:
+
+```text
+FEEDBACK LOOPS.
+```
+
+But feedback does not guarantee catastrophe.
+
+---
+
+# 34. Cascading Consequences
+
+A failure may propagate.
+
+Example:
+
+```text
+POWER FAILURE
+↓
+WATER PUMP FAILURE
+↓
+HOSPITAL CAPACITY FALLS
+↓
+MEDICAL OUTCOMES CHANGE
+↓
+NEW LIFE EVENTS.
+```
+
+Each link requires causal support.
+
+---
+
+# 35. No Automatic Cascade
+
+Avoid:
+
+```text
+ONE FAILURE
+↓
+EVERYTHING FAILS.
+```
+
+Dependencies may include:
+
+```text
+redundancy
+
+backup systems
+
+local alternatives
+
+human intervention
+
+stored resources
+
+partial functionality.
+```
+
+---
+
+# 36. Human Capability
+
+Infrastructure depends on:
+
+```text
+PEOPLE.
+```
+
+A functional physical system may still fail operationally when:
+
+```text
+qualified personnel
+are unavailable.
+```
+
+Therefore:
+
+```text
+PHYSICAL INFRASTRUCTURE
++
+HUMAN CAPABILITY
++
+RESOURCES
++
+COORDINATION
+
 =
-WORLD CHANGE
-```
 
-This allows different campaigns to produce different histories while remaining consistent with Project Ascension Canon.
+FUNCTIONAL
+SYSTEM CAPACITY.
+```
 
 ---
 
-# Canon Versus Simulation
+# 37. Human Response Boundary
 
-Recovered Records describe historical events established in Canon.
+People respond to World conditions.
 
-World Simulation defines how similar systems operate dynamically during gameplay.
-
-These functions must remain separate.
+Possible responses include:
 
 ```text
-RECOVERED RECORDS
-"What happened?"
+adaptation
 
-WORLD SIMULATION
-"What can happen, and why?"
+migration
+
+cooperation
+
+stockpiling
+
+crime
+
+conservation
+
+protest
+
+mutual aid
+
+local organization
+
+avoidance
+
+repair.
 ```
 
-Canon provides boundaries.
+But World Simulation should not directly determine:
 
-Simulation provides variation.
+```text
+WHAT EVERY
+INDIVIDUAL PERSON
+DOES.
+```
 
 ---
 
-# Relationship to Recovered Records
+# 38. Individual Response
 
-Recovered Records provide historical examples of system interactions.
-
-Examples include:
+Individual human action belongs primarily to:
 
 ```text
-AI uncertainty
-        ↓
-Containment measures
-        ↓
-Reduced automation
-        ↓
-Infrastructure pressure
-        ↓
-Reduced coordination
-        ↓
-Regional divergence
-        ↓
-Emergency decentralization
+Characters.
 ```
 
-World Simulation should be capable of producing comparable chains dynamically.
+World Simulation provides:
 
-It should not simply replay the historical chain every campaign.
+```text
+conditions
+
+opportunities
+
+constraints
+
+external consequences.
+```
 
 ---
 
-# Relationship to Living Campaign Engine
+# 39. Population Response
 
-World Simulation determines:
-
-**what is happening in the world.**
-
-The Living Campaign Engine determines:
-
-**which parts of that world become relevant to the player's campaign.**
-
-Conceptually:
+Population-scale patterns belong primarily to:
 
 ```text
-WORLD SIMULATION
-       │
-       ▼
-WORLD EVENTS
-       │
-       ▼
-LIVING CAMPAIGN ENGINE
-       │
-       ▼
-PLAYER-RELEVANT EVENTS
-       │
-       ▼
-MISSIONS / ENCOUNTERS / CONSEQUENCES
+Society
 ```
 
-This distinction prevents the simulation from requiring every world event to become gameplay content.
+when they concern:
+
+```text
+collective behavior
+
+norms
+
+migration patterns
+
+institutional adaptation
+
+population perception.
+```
+
+World Simulation may consume the resulting aggregate effects.
 
 ---
 
-# Relationship to Narrative
-
-Narrative should interpret simulation events rather than dictate every simulation event.
-
-For example:
-
-World Simulation may determine:
-
-```text
-Regional fuel supply becomes Critical.
-```
-
-Narrative systems may transform this into:
-
-```text
-Fuel rationing begins.
-
-A hospital requests emergency diesel.
-
-A transport company stops operating.
-
-A local politician blames federal authorities.
-
-A black market appears.
-```
-
-The state change creates narrative opportunities.
-
----
-
-# Relationship to Characters
+# 40. World Simulation and Characters
 
 Characters exist inside World Simulation.
 
-Their behavior may be influenced by:
-
-- local conditions
-- personal resources
-- relationships
-- beliefs
-- personality
-- responsibilities
-- information available to them
-
-Characters should not possess perfect knowledge of simulation variables.
-
-They respond to what they perceive.
-
----
-
-# Relationship to Society
-
-Society systems should interpret population-level consequences of World Simulation.
-
-Examples include:
-
-- institutional trust
-- community cohesion
-- political legitimacy
-- migration
-- social norms
-- economic adaptation
-- emerging local organizations
-
-World Simulation provides conditions.
-
-Society determines how populations organize within those conditions.
-
----
-
-# Randomness
-
-Randomness may influence World Simulation.
-
-However, randomness should operate inside plausible boundaries.
-
-Random events may determine:
-
-- timing
-- severity
-- location
-- secondary failure
-- weather
-- equipment failure
-- individual decisions
-
-Randomness should not replace causality.
-
-The player should usually be able to understand why something could have happened even if the exact occurrence was unpredictable.
-
----
-
-# Simulation Update Cycle
-
-A conceptual World Simulation cycle may operate as:
+They respond to:
 
 ```text
-1. READ CURRENT STATE
-        ↓
-2. APPLY EXISTING PRESSURES
-        ↓
-3. PROCESS DEPENDENCIES
-        ↓
-4. PROCESS INSTITUTIONAL RESPONSES
-        ↓
-5. PROCESS POPULATION RESPONSES
-        ↓
-6. APPLY EXTERNAL EVENTS
-        ↓
-7. APPLY PLAYER EFFECTS
-        ↓
-8. CALCULATE STATE CHANGES
-        ↓
-9. CALCULATE RECOVERY
-        ↓
-10. GENERATE WORLD EVENTS
-        ↓
-11. UPDATE INFORMATION FLOW
-        ↓
-12. SAVE NEW WORLD STATE
+what they perceive
+
+what they know
+
+what they believe
+
+what they want
+
+what they can do.
 ```
 
-The exact implementation may change during development.
+They must not directly read:
 
-The conceptual order should remain understandable.
-
----
-
-# Simulation Granularity
-
-The simulation should not attempt to model every individual person, vehicle, power line or shipment.
-
-World Simulation operates primarily through abstraction.
-
-Detailed simulation should occur only where it creates meaningful gameplay.
-
-The design goal is:
-
-**credible complexity**
-
-not:
-
-**maximum complexity.**
+```text
+WORLD SIMULATION
+DATABASE STATE.
+```
 
 ---
 
-# Performance Principle
+# 41. Action Attempt
 
-World systems distant from the player may operate at lower simulation resolution.
+Characters and other Actors may attempt to:
+
+```text
+repair
+
+move
+
+build
+
+destroy
+
+access
+
+investigate
+
+communicate
+
+protect
+
+transport
+
+search
+
+interact
+
+change external reality.
+```
+
+An Action Attempt represents:
+
+```text
+WHAT THE ACTOR
+TRIES TO DO.
+```
+
+---
+
+# 42. Action Attempt Is Not Outcome
+
+Preserve:
+
+```text
+INTENT
+≠
+OUTCOME.
+```
+
+And:
+
+```text
+DECISION
+≠
+OUTCOME.
+```
+
+And:
+
+```text
+CAPABILITY
+≠
+OUTCOME.
+```
+
+---
+
+# 43. Action Resolution
+
+Action Resolution is the boundary where:
+
+```text
+ACTOR CAPABILITY
+
+MEETS
+
+WORLD REALITY.
+```
+
+It is governed architecturally by:
+
+```text
+Canon/Systems/
+Simulation_Architecture.md
+```
+
+and externally resolved through:
+
+```text
+World Simulation.
+```
+
+---
+
+# 44. Action Resolution Inputs
+
+Resolution may consider:
+
+```text
+Action Attempt
+
+task requirements
+
+actual Capability
+
+Expertise
+
+tools
+
+materials
+
+facility
+
+Actor condition
+
+time
+
+environment
+
+access
+
+authority
+
+assistance
+
+opposition
+
+World state.
+```
+
+Not every action requires every input.
+
+---
+
+# 45. Action Resolution Output
+
+Resolution produces:
+
+```text
+CANONICAL
+CONSEQUENCE.
+```
+
+Possible forms include:
+
+```text
+success
+
+partial success
+
+failure
+
+success with cost
+
+failure with cost
+
+resource consumption
+
+damage
+
+injury
+
+delay
+
+new hazard
+
+information gained
+
+changed World state.
+```
+
+---
+
+# 46. Deterministic Outcomes
+
+Not every Action requires uncertainty.
+
+Example:
+
+```text
+correct key
++
+correct lock
++
+functional door
+
+↓
+
+door opens.
+```
+
+Do not add artificial randomness where the state already determines the result.
+
+---
+
+# 47. Uncertain Outcomes
+
+Uncertainty may matter when:
+
+```text
+conditions are incomplete
+
+hidden damage exists
+
+systems are complex
+
+environment varies
+
+execution quality matters
+
+other Actors respond.
+```
+
+Randomness may assist resolution.
+
+It must not replace causality.
+
+---
+
+# 48. Impossible Actions
+
+The world must allow:
+
+```text
+IMPOSSIBLE
+```
+
+as a real outcome.
+
+Motivation does not override:
+
+```text
+physics
+
+missing equipment
+
+missing access
+
+physical constraints
+
+required material
+
+required capability.
+```
+
+---
+
+# 49. Opposed Human Actions
+
+Actions involving another Character must preserve:
+
+```text
+THE OTHER
+CHARACTER'S
+AGENCY.
+```
+
+Example:
+
+```text
+NEGOTIATION
+
+PERSUASION
+
+DECEPTION
+
+THREAT
+
+COOPERATION.
+```
+
+Communication Expertise must not become:
+
+```text
+MIND CONTROL.
+```
+
+---
+
+# 50. Information Actions
+
+Characters may attempt to:
+
+```text
+observe
+
+investigate
+
+search
+
+test
+
+analyze
+
+intercept
+
+research.
+```
+
+World Simulation determines:
+
+```text
+WHAT EVIDENCE
+IS AVAILABLE.
+```
+
+Knowledge and Beliefs determines:
+
+```text
+WHAT THE CHARACTER
+LEARNS OR BELIEVES.
+```
+
+---
+
+# 51. Information Delay
+
+Information does not travel instantly.
 
 Conceptually:
 
 ```text
-PLAYER REGION
-High-resolution simulation
-
-NEIGHBORING REGIONS
-Medium-resolution simulation
-
-DISTANT REGIONS
-Low-resolution simulation
-
-GLOBAL SYSTEMS
-Aggregate simulation
+EVENT
+↓
+OBSERVATION
+↓
+REPORT
+↓
+TRANSMISSION
+↓
+VERIFICATION
+↓
+RECIPIENT.
 ```
 
-Simulation resolution may increase when a region becomes relevant.
+Any stage may be:
 
-This allows the world to remain dynamic without requiring unnecessary computation.
+```text
+delayed
+
+lost
+
+distorted
+
+contradicted
+
+classified
+
+misunderstood.
+```
 
 ---
 
-# Persistence
+# 52. Information Reliability Boundary
 
-Important world-state changes should persist.
+World Simulation may own:
+
+```text
+CHANNEL
+AVAILABILITY
+
+EVENT OCCURRENCE
+
+SOURCE CONDITIONS.
+```
+
+Knowledge and Beliefs owns:
+
+```text
+CHARACTER-SPECIFIC
+INFORMATION STATE.
+```
+
+Society may own:
+
+```text
+COLLECTIVE
+INFORMATION PATTERNS.
+```
+
+---
+
+# 53. Time
+
+Time is part of World Simulation.
+
+Canonical rule:
+
+```text
+TIME PASSES
+EVEN WHEN
+THE PLAYER
+DOES NOTHING.
+```
+
+Time affects:
+
+```text
+travel
+
+repair
+
+resource depletion
+
+weather
+
+infrastructure
+
+deadlines
+
+Life
+
+Aging
+
+information freshness
+
+recovery.
+```
+
+---
+
+# 54. Opportunity Cost
+
+Time creates tradeoffs.
+
+```text
+DOING A
+```
+
+may mean:
+
+```text
+NOT DOING B
+BEFORE CONDITIONS
+CHANGE.
+```
+
+This principle applies to both Characters and institutions.
+
+---
+
+# 55. Delayed Consequence
+
+Some effects occur later.
+
+Example:
+
+```text
+temporary repair
+↓
+appears functional
+↓
+time passes
+↓
+component fails.
+```
+
+Delayed consequences must remain causally traceable.
+
+---
+
+# 56. World Events
+
+A World Event is:
+
+> **A meaningful change in external simulated reality.**
 
 Examples:
 
-- damaged infrastructure
-- population migration
-- depleted supplies
-- destroyed facilities
-- political changes
-- repaired systems
-- established settlements
-- changed trade routes
-- altered relationships between communities
-
-The world should remember significant consequences.
-
----
-
-# Historical Memory
-
-World Simulation should maintain limited historical state.
-
-A region that experienced:
-
 ```text
-Critical food shortage
+storm
+
+infrastructure failure
+
+route closure
+
+major migration
+
+market disruption
+
+regional communication loss
+
+conflict
+
+major repair
+
+institutional breakdown.
 ```
 
-may later recover to:
+---
+
+# 57. World Event Exposure
+
+A World Event does not automatically affect everyone.
+
+Exposure depends on:
 
 ```text
-Stable supply
+location
+
+dependency
+
+transport connection
+
+communication
+
+institutional role
+
+resource connection
+
+social connection.
 ```
-
-but the earlier crisis may continue influencing:
-
-- public trust
-- stockpiling behavior
-- political attitudes
-- migration
-- local preparedness
-- community relationships
-
-Recovery does not erase history.
 
 ---
 
-# Anti-Script Principle
+# 58. World Event vs Life Event
 
-Avoid logic such as:
+Example:
 
 ```text
-DAY 20 = POWER FAILURE
+WORLD EVENT:
+Flood destroys neighborhood
 
-DAY 30 = RIOTS
+CHARACTER CONSEQUENCE:
+Home destroyed
 
-DAY 40 = GOVERNMENT COLLAPSE
+LIFE EVENT:
+Loss of home.
 ```
 
-Prefer:
+World Simulation owns:
 
 ```text
-POWER PRESSURE
-+
-LOW MAINTENANCE
-+
-FUEL SHORTAGE
-+
-FAILED REDUNDANCY
-=
-INCREASED FAILURE RISK
+THE FLOOD
+AND PHYSICAL DAMAGE.
 ```
 
-and:
+Life owns:
 
 ```text
-SUPPLY SHORTAGE
-+
-LOW TRUST
-+
-HIGH FEAR
-+
-WEAK AUTHORITY
-=
-INCREASED UNREST RISK
+THE PERSONAL
+BIOGRAPHICAL EVENT.
 ```
-
-The world should produce events because conditions support them.
 
 ---
 
-# Anti-Doom Principle
+# 59. Consequence Propagation
 
-Likewise, avoid assuming every negative state must escalate.
-
-For example:
+Conceptually:
 
 ```text
-Food Supply: Degraded
+WORLD EVENT
+OR
+ACTION RESOLUTION
+
+        ↓
+
+PRIMARY
+EXTERNAL CONSEQUENCE
+
+        ↓
+
+AFFECTED SYSTEMS
+
+        ↓
+
+Life
+
+Characters
+
+Relationships
+
+Society
+
+Factions
+
+Resources
+
+Infrastructure
+
+        ↓
+
+NEW STATE.
 ```
 
-does not automatically become:
-
-```text
-Food Supply: Critical
-```
-
-Possible outcomes include:
-
-```text
-rationing
-local production
-external assistance
-reduced demand
-alternative supply routes
-community distribution
-recovery
-```
-
-Adaptation is part of the simulation.
-
 ---
 
-# Design Objective
+# 60. Cross-System Update Rule
 
-The ideal World Simulation produces situations where the player can look at an event and think:
-
-**"Of course that happened."**
-
-Not because the event was predictable.
-
-But because the world conditions make the event understandable.
-
----
-
-# Proposed System Files
-
-The World Simulation system should initially contain:
-
-```text
-Canon/
-└── Systems/
-    └── World_Simulation/
-        ├── README.md
-        ├── World_State.md
-        ├── Regional_State.md
-        ├── Infrastructure_State.md
-        ├── Information_State.md
-        ├── Authority_State.md
-        ├── Population_State.md
-        └── Escalation_and_Recovery.md
-```
-
-Additional files should only be created when a system becomes complex enough to require separation.
-
----
-
-# File Responsibilities
-
-## World_State.md
-
-Defines the global structure of the simulation state.
-
-Includes:
-
-- world-level variables
-- simulation hierarchy
-- state inheritance
-- global pressures
-- cross-regional effects
-
----
-
-## Regional_State.md
-
-Defines how individual regions are represented.
-
-Includes:
-
-- regional variables
-- resilience
-- regional dependencies
-- neighboring-region influence
-- regional divergence
-
----
-
-## Infrastructure_State.md
-
-Defines how infrastructure conditions interact with World Simulation.
-
-Includes:
-
-- infrastructure health
-- dependency chains
-- service degradation
-- repair
-- redundancy
-- infrastructure pressure
-
-This file should integrate existing Infrastructure Monitoring Levels rather than duplicate them.
-
----
-
-## Information_State.md
-
-Defines:
-
-- information reliability
-- public knowledge
-- rumor
-- misinformation
-- verification
-- information delay
-- perceived versus actual state
-
----
-
-## Authority_State.md
-
-Defines:
-
-- government capability
-- institutional legitimacy
-- command effectiveness
-- regional authority
-- emergency powers
-- decentralization
-
----
-
-## Population_State.md
-
-Defines:
-
-- population confidence
-- fear
-- movement
-- cooperation
-- unrest
-- workforce availability
-- community behavior
-
----
-
-## Escalation_and_Recovery.md
-
-Defines how world states move in both directions.
-
-Includes:
-
-- pressure
-- thresholds
-- resilience
-- cascading failures
-- stabilization
-- adaptation
-- recovery
-- long-term transformation
-
----
-
-# Development Order
-
-Recommended implementation order:
-
-```text
-README.md
-   ↓
-World_State.md
-   ↓
-Regional_State.md
-   ↓
-Infrastructure_State.md
-   ↓
-Information_State.md
-   ↓
-Authority_State.md
-   ↓
-Population_State.md
-   ↓
-Escalation_and_Recovery.md
-```
-
-This order builds from the general simulation model toward increasingly specific behavior.
-
----
-
-# Canon Rules
-
-The following principles are currently canonical for World Simulation:
-
-1. The world continues independently of the player.
-2. Different regions may exist in different states simultaneously.
-3. Major systems influence one another.
-4. Human responses are part of the simulation.
-5. Degradation is not automatically irreversible.
-6. Recovery is always theoretically possible.
-7. Actual conditions and perceived conditions may differ.
-8. Information travels with delay and uncertainty.
-9. The player influences the world without controlling the entire world.
-10. World events should emerge from conditions rather than fixed timers.
-11. Historical consequences should persist.
-12. Simulation complexity should serve gameplay rather than exist for its own sake.
-13. Existing canonical systems should be integrated rather than duplicated.
-14. World Simulation defines possibilities and processes; Canon defines established historical facts.
-
----
-
-# Guiding Question
-
-Every World Simulation mechanic should ultimately answer:
-
-**If the player did nothing, what would this part of the world do next — and why?**
-
-If the system cannot answer that question, it is probably not yet functioning as a world simulation.
-
----
-
-# Current Status
+When a consequence affects another authoritative system:
 
 ```text
 WORLD SIMULATION
-Status: FOUNDATION DEFINED
+PRODUCES
+THE RELEVANT EVENT
 
-README.md                  COMPLETE
-World_State.md             PENDING
-Regional_State.md          PENDING
-Infrastructure_State.md    PENDING
-Information_State.md       PENDING
-Authority_State.md         PENDING
-Population_State.md        PENDING
-Escalation_and_Recovery.md PENDING
+↓
+
+TARGET SYSTEM
+VALIDATES
+AND UPDATES
+ITS OWN STATE.
+```
+
+World Simulation must not silently rewrite:
+
+```text
+Character Beliefs
+
+Relationships
+
+Values
+
+Psychology
+
+Goals.
 ```
 
 ---
 
-# Next Document
+# 61. Simulation Resolution
 
-The next recommended document is:
+World Simulation must support adaptive resolution.
+
+Not every:
 
 ```text
-Canon/Systems/World_Simulation/World_State.md
+region
+
+road
+
+building
+
+institution
+
+resource flow
 ```
 
-Its purpose will be to define the actual data model that represents the living world.
+requires equal detail.
 
-README establishes the philosophy.
+---
 
-**World_State.md begins turning that philosophy into a system.**
+# 62. Resolution Principle
+
+Use:
+
+```text
+THE LOWEST
+SIMULATION DETAIL
+
+THAT PRESERVES
+
+CAUSALITY
+
+CONTINUITY
+
+AND
+
+PLAUSIBLE OUTCOME.
+```
+
+---
+
+# 63. Resolution Is Not Player Distance
+
+Player proximity may influence detail.
+
+But:
+
+```text
+PLAYER DISTANCE
+≠
+WORLD IMPORTANCE.
+```
+
+A distant event may require greater simulation resolution if it has major causal consequences.
+
+---
+
+# 64. Low-Resolution World Simulation
+
+Low Resolution may preserve:
+
+```text
+regional conditions
+
+major resources
+
+major infrastructure
+
+important institutions
+
+major pressures
+
+major events
+
+major state changes.
+```
+
+---
+
+# 65. Medium-Resolution World Simulation
+
+Medium Resolution may add:
+
+```text
+local systems
+
+active dependencies
+
+resource movement
+
+specific institutions
+
+important transport
+
+specific pressures
+
+near-term events.
+```
+
+---
+
+# 66. High-Resolution World Simulation
+
+High Resolution may include:
+
+```text
+specific location
+
+specific infrastructure
+
+specific task conditions
+
+specific resource availability
+
+immediate environmental state
+
+Actors
+
+Action Resolution context.
+```
+
+---
+
+# 67. Resolution Changes Detail
+
+The world does not become:
+
+```text
+MORE REAL
+```
+
+because the player approaches.
+
+Resolution changes:
+
+```text
+REPRESENTATIONAL
+DETAIL.
+```
+
+Not reality.
+
+---
+
+# 68. Cross-Resolution Causality
+
+Different systems may interact across resolution levels.
+
+Example:
+
+```text
+HIGH-RESOLUTION
+LOCAL ACTION
+↓
+REGIONAL
+SUPPLY CHANGE
+↓
+LOW-RESOLUTION
+DISTANT EFFECT
+↓
+FUTURE
+LOCAL CONSEQUENCE.
+```
+
+Causality must cross resolution boundaries.
+
+---
+
+# 69. Persistence
+
+Important World state changes must persist.
+
+Examples:
+
+```text
+destroyed bridge
+
+repaired power station
+
+depleted fuel reserve
+
+new settlement
+
+migration
+
+changed trade route
+
+damaged hospital
+
+abandoned district.
+```
+
+---
+
+# 70. History
+
+Recovery does not erase:
+
+```text
+WHAT HAPPENED.
+```
+
+A previously critical region may later become stable.
+
+Its history may still affect:
+
+```text
+infrastructure design
+
+population behavior
+
+institutions
+
+resource strategy
+
+Society
+
+Characters.
+```
+
+---
+
+# 71. Canon vs Simulation
+
+Preserve:
+
+```text
+CANON
+=
+WHAT IS
+ESTABLISHED
+ABOUT THE UNIVERSE
+
+SIMULATION
+=
+WHAT CAN HAPPEN
+WITHIN THOSE
+BOUNDARIES.
+```
+
+Simulation must respect Canon.
+
+It must not merely replay Canonical history in every campaign.
+
+---
+
+# 72. World States
+
+World States represent broad historical conditions.
+
+They must not function as:
+
+```text
+GLOBAL
+SCRIPTED MODES
+THAT FORCE
+EVERY REGION
+INTO THE
+SAME STATE.
+```
+
+Regional variation remains essential.
+
+---
+
+# 73. World State Transition
+
+World State transitions should emerge from:
+
+```text
+accumulated history
+
+system changes
+
+institutional adaptation
+
+technology
+
+human response
+
+Aurora
+
+world conditions.
+```
+
+They should not reset simulation state.
+
+---
+
+# 74. The Collapse
+
+The Collapse must not operate as:
+
+```text
+ONE SWITCH
+
+WORLD WORKS
+↓
+WORLD BROKEN.
+```
+
+It should emerge from:
+
+```text
+dependency
+
+fragmentation
+
+institutional pressure
+
+reduced coordination
+
+infrastructure failure
+
+information uncertainty
+
+human adaptation
+
+time.
+```
+
+---
+
+# 75. The Collapse Is Uneven
+
+Some regions may:
+
+```text
+fail early
+
+remain stable
+
+recover
+
+adapt
+
+isolate
+
+reorganize.
+```
+
+There is no requirement for:
+
+```text
+UNIFORM
+COLLAPSE.
+```
+
+---
+
+# 76. Recovery Is Canonical
+
+Recovery must always remain:
+
+```text
+A POSSIBLE
+SIMULATION DIRECTION.
+```
+
+This does not mean recovery is:
+
+```text
+easy
+
+quick
+
+complete
+
+or
+
+guaranteed.
+```
+
+---
+
+# 77. Society Boundary
+
+Society owns:
+
+```text
+HOW HUMAN
+POPULATIONS
+ORGANIZE
+UNDER CONDITIONS.
+```
+
+World Simulation owns:
+
+```text
+THE CONDITIONS.
+```
+
+Example:
+
+```text
+WORLD SIMULATION:
+Food supply declines
+
+SOCIETY:
+Rationing norm emerges
+
+CHARACTERS:
+Individuals comply,
+resist or exploit it.
+```
+
+---
+
+# 78. Faction Boundary
+
+Factions may consume World state when making organizational decisions.
+
+World Simulation must not decide:
+
+```text
+WHAT A FACTION
+WANTS.
+```
+
+Faction systems own:
+
+```text
+organizational agency.
+```
+
+---
+
+# 79. Living Campaign Engine Boundary
+
+World Simulation determines:
+
+```text
+WHAT IS
+HAPPENING.
+```
+
+The Living Campaign Engine tracks:
+
+```text
+WHAT IS
+CAUSALLY ACTIVE
+AND MAY REQUIRE
+CAMPAIGN ATTENTION.
+```
+
+---
+
+# 80. Narrative Boundary
+
+Narrative may turn:
+
+```text
+FUEL SUPPLY:
+CRITICAL
+```
+
+into human-scale presentation such as:
+
+```text
+rationing
+
+closed transport service
+
+hospital request
+
+black market
+
+political dispute.
+```
+
+But those manifestations must remain compatible with:
+
+```text
+actual simulation state.
+```
+
+---
+
+# 81. Aurora Boundary
+
+Aurora may:
+
+```text
+observe
+
+analyze
+
+predict
+
+communicate
+
+act
+
+influence systems.
+```
+
+But:
+
+```text
+AURORA
+IS NOT
+WORLD SIMULATION.
+```
+
+Her predictions do not automatically become truth.
+
+---
+
+# 82. Aurora Action
+
+If Aurora changes the world:
+
+```text
+THE ACTION
+MUST HAVE
+A CAUSAL PATH.
+```
+
+Example:
+
+```text
+Aurora issues instruction
+↓
+institution receives it
+↓
+humans or automated systems act
+↓
+infrastructure changes.
+```
+
+Avoid:
+
+```text
+AURORA
+CHANGES STATE
+BY MAGIC.
+```
+
+---
+
+# 83. Player Interaction
+
+The player may affect:
+
+```text
+infrastructure
+
+resources
+
+information
+
+security
+
+transport
+
+institutions
+
+local conditions.
+```
+
+Effects may:
+
+```text
+remain local
+
+propagate regionally
+
+or
+
+eventually influence
+larger systems.
+```
+
+---
+
+# 84. Player Influence Principle
+
+The player should be:
+
+```text
+IMPORTANT
+```
+
+without becoming:
+
+```text
+THE CENTER
+OF THE UNIVERSE.
+```
+
+A player may:
+
+```text
+save a town
+without saving a country
+
+repair infrastructure
+without solving systemic decline
+
+discover truth
+without convincing others
+
+change one relationship
+without changing Society.
+```
+
+---
+
+# 85. Player Inaction
+
+If the player does nothing:
+
+```text
+THE WORLD
+STILL DOES
+SOMETHING.
+```
+
+Deadlines pass.
+
+Institutions respond.
+
+Other Actors act.
+
+Conditions change.
+
+---
+
+# 86. No Preserved Opportunity
+
+World Simulation must not preserve:
+
+```text
+EVERY CRISIS
+
+EVERY RESOURCE
+
+EVERY PERSON
+
+EVERY OPPORTUNITY
+```
+
+until the player arrives.
+
+The world continues.
+
+---
+
+# 87. Randomness
+
+Randomness may influence:
+
+```text
+timing
+
+weather
+
+minor failure
+
+severity
+
+location
+
+secondary consequence.
+```
+
+But:
+
+```text
+RANDOMNESS
+MUST NOT
+REPLACE CAUSALITY.
+```
+
+---
+
+# 88. No Random Drama
+
+Do not create:
+
+```text
+random infrastructure collapse
+
+random war
+
+random mass death
+
+random riots
+
+random Faction attack
+```
+
+solely to create tension.
+
+Major World Events require supporting conditions.
+
+---
+
+# 89. Emergence
+
+The World Simulation succeeds when:
+
+```text
+MULTIPLE
+SYSTEM CONDITIONS
+
+INTERACT
+
+TO PRODUCE
+UNSCRIPTED
+BUT EXPLAINABLE
+OUTCOMES.
+```
+
+---
+
+# 90. Emergent Consequence
+
+Example:
+
+```text
+Supply:
+Constrained
+
+Communications:
+Unreliable
+
+Authority:
+Weak
+
+Population Perception:
+Shortage imminent
+
+        ↓
+
+stockpiling
+
+uneven distribution
+
+local shortages
+
+informal trade
+
+migration pressure.
+```
+
+No single variable caused the outcome.
+
+The wider system did.
+
+---
+
+# 91. Simulation Update Model
+
+A conceptual update cycle may be:
+
+```text
+CURRENT STATE
+        ↓
+TIME ADVANCES
+        ↓
+ACTIVE PRESSURES
+        ↓
+DEPENDENCIES
+        ↓
+EXTERNAL EVENTS
+        ↓
+ACTOR / INSTITUTION
+RESPONSES
+        ↓
+ACTION RESOLUTION
+        ↓
+PRIMARY CONSEQUENCES
+        ↓
+CROSS-SYSTEM
+PROPAGATION
+        ↓
+RECOVERY /
+DEGRADATION /
+ADAPTATION
+        ↓
+UPDATED STATE
+        ↓
+NEW EVENTS /
+NEW PRESSURES.
+```
+
+The exact implementation may evolve.
+
+The causal logic should remain understandable.
+
+---
+
+# 92. Event-Driven Simulation
+
+Not every domain must be continuously recalculated.
+
+World Simulation may update when:
+
+```text
+event occurs
+
+time threshold reached
+
+pressure changes
+
+Actor acts
+
+dependency changes
+
+resource threshold is crossed
+
+deadline arrives
+
+resolution increases.
+```
+
+---
+
+# 93. Continuous Processes
+
+Some processes may require time advancement.
+
+Examples:
+
+```text
+weather
+
+resource consumption
+
+degradation
+
+repair
+
+travel
+
+environmental change.
+```
+
+These may be simulated through:
+
+```text
+time-based processes
+
+or
+
+compressed interval updates.
+```
+
+---
+
+# 94. Hybrid Simulation
+
+The preferred conceptual model is:
+
+```text
+EVENT-DRIVEN
+SIMULATION
+
++
+
+TIME-BASED
+PROCESSES
+
++
+
+ADAPTIVE
+RESOLUTION.
+```
+
+---
+
+# 95. Simulation Clock
+
+World Simulation should operate against a shared simulation time.
+
+State changes should be able to answer:
+
+```text
+WHEN WAS
+THIS TRUE?
+
+WHEN DID
+IT CHANGE?
+```
+
+---
+
+# 96. Causal Order
+
+Order matters.
+
+```text
+BRIDGE COLLAPSES
+THEN CONVOY ARRIVES
+```
+
+is different from:
+
+```text
+CONVOY CROSSES
+THEN BRIDGE COLLAPSES.
+```
+
+Simulation history must preserve causal order.
+
+---
+
+# 97. Derived State
+
+Some useful state may be derived.
+
+Example:
+
+```text
+REGIONAL ACCESSIBILITY
+```
+
+may derive from:
+
+```text
+road condition
+
+weather
+
+fuel
+
+security
+
+transport availability.
+```
+
+Derived state must not become an independent competing authority.
+
+---
+
+# 98. Contradictions
+
+If state conflicts appear:
+
+```text
+DO NOT
+SILENTLY SELECT
+THE CONVENIENT
+ANSWER.
+```
+
+Check:
+
+```text
+owner
+
+timestamp
+
+event order
+
+dependency
+
+derived state
+
+stale state.
+```
+
+---
+
+# 99. Explainability
+
+Major World outcomes should be explainable.
+
+Ask:
+
+```text
+WHAT CHANGED?
+
+WHY?
+
+WHAT PRESSURE
+EXISTED?
+
+WHAT DEPENDENCIES
+MATTERED?
+
+WHO ACTED?
+
+WHAT RESOURCES
+EXISTED?
+
+WHAT FAILED?
+
+WHAT RECOVERED?
+
+WHAT OTHER
+SYSTEMS
+WERE AFFECTED?
+```
+
+---
+
+# 100. World Simulation Invariants
+
+## WORLD-INV-001 — The World Continues Without the Player
+
+Player absence does not pause external reality.
+
+## WORLD-INV-002 — Regions May Diverge
+
+No universal regional condition is required.
+
+## WORLD-INV-003 — Systems Are Interdependent
+
+Major external systems influence one another.
+
+## WORLD-INV-004 — Degradation Requires Cause
+
+Systems do not fail because narrative needs failure.
+
+## WORLD-INV-005 — Recovery Is Possible
+
+Negative state does not imply inevitable decline.
+
+## WORLD-INV-006 — World Truth and Perception Are Separate
+
+Population and Character belief may differ from reality.
+
+## WORLD-INV-007 — Information Requires Transmission
+
+World events do not become universally known automatically.
+
+## WORLD-INV-008 — Human Response Matters
+
+Human action may improve or worsen external conditions.
+
+## WORLD-INV-009 — Characters Retain Agency
+
+World Simulation does not dictate individual decisions.
+
+## WORLD-INV-010 — Society Is Not World Simulation
+
+World conditions and collective social organization remain distinct.
+
+## WORLD-INV-011 — Action Attempt and Outcome Are Separate
+
+Actors try.
+
+The world resolves.
+
+## WORLD-INV-012 — Capability Does Not Guarantee Success
+
+Actual external conditions remain relevant.
+
+## WORLD-INV-013 — Time Is Causally Meaningful
+
+World conditions continue evolving.
+
+## WORLD-INV-014 — Resolution Changes Detail, Not Reality
+
+Distant regions do not cease existing.
+
+## WORLD-INV-015 — Persistent Consequences Remain
+
+Recovery does not erase history.
+
+## WORLD-INV-016 — Randomness Does Not Replace Causality
+
+Random events remain bounded by World state.
+
+## WORLD-INV-017 — Narrative Is Downstream
+
+World state is not rewritten for presentation convenience.
+
+## WORLD-INV-018 — Aurora Is an Actor, Not the Simulation Engine
+
+Her actions require causal mechanisms.
+
+## WORLD-INV-019 — Player Influence Is Bounded
+
+Local action does not automatically produce global consequence.
+
+## WORLD-INV-020 — Major Outcomes Must Be Explainable
+
+Significant World changes require traceable causes.
+
+---
+
+# 101. Development Locks
+
+Future World Simulation development must not introduce:
+
+```text
+PLAYER-CENTRIC
+WORLD ACTIVATION
+
+WORLD FREEZE
+WHEN UNOBSERVED
+
+UNIVERSAL
+COLLAPSE TIMER
+
+SCRIPTED
+REGIONAL FAILURE
+
+AUTOMATIC
+DOWNWARD SPIRAL
+
+GLOBAL
+WORLD STATE
+APPLIED IDENTICALLY
+EVERYWHERE
+
+INSTANT
+INFORMATION
+
+OMNISCIENT
+CHARACTERS
+
+SOCIAL
+HIVE MIND
+
+ACTION ATTEMPT
+EQUALS SUCCESS
+
+CAPABILITY
+EQUALS SUCCESS
+
+SOCIAL SKILL
+MIND CONTROL
+
+LEVEL-SCALED
+WORLD CONDITIONS
+
+LEVEL-SCALED
+ENEMIES
+
+RANDOM DRAMA
+WITHOUT CAUSE
+
+NARRATIVE-FORCED
+WORLD EVENTS
+
+AI-INVENTED
+WORLD TRUTH
+
+AURORA
+AS MAGIC
+STATE COMMAND
+
+RECOVERY
+ERASING HISTORY
+
+COMPRESSION
+ERASING CONSEQUENCE.
+```
+
+---
+
+# 102. Directory Role
+
+`World_Simulation/` should contain systems responsible for external World state.
+
+The current repository may contain files such as:
+
+```text
+World_State.md
+
+Regional_State.md
+
+Infrastructure_State.md
+
+Information_State.md
+
+Authority_State.md
+
+Population_State.md
+
+Escalation_and_Recovery.md
+```
+
+or later equivalents.
+
+The exact file set should be validated against the repository before treating this list as canonical.
+
+Do not create files solely because an older architecture proposed them.
+
+---
+
+# 103. File Creation Rule
+
+Before adding a new World Simulation file, ask:
+
+```text
+WHAT EXTERNAL
+STATE DOMAIN
+DOES IT OWN?
+
+IS THAT DOMAIN
+ALREADY OWNED?
+
+DOES IT REALLY
+BELONG TO
+WORLD SIMULATION?
+
+OR
+
+DOES IT BELONG
+TO SOCIETY,
+FACTIONS,
+CHARACTERS,
+LIFE,
+RELATIONSHIPS
+OR NARRATIVE?
+```
+
+---
+
+# 104. Relationship to Simulation Architecture
+
+The governing architecture is:
+
+```text
+Canon/Systems/
+Simulation_Architecture.md
+```
+
+That document defines:
+
+```text
+cross-system ownership
+
+Actor interaction
+
+Action Attempt
+
+Action Resolution
+
+consequence propagation
+
+time
+
+simulation resolution
+
+Narrative boundary
+
+AI boundary.
+```
+
+This README defines:
+
+```text
+WORLD SIMULATION'S
+ROLE INSIDE
+THAT ARCHITECTURE.
+```
+
+---
+
+# 105. Relationship to Characters
+
+The governing Character entry point is:
+
+```text
+Canon/Systems/Characters/
+README.md
+```
+
+Characters own:
+
+```text
+human state
+
+human perception
+
+human goals
+
+human decisions
+
+human capability.
+```
+
+World Simulation owns:
+
+```text
+THE EXTERNAL
+WORLD THOSE
+CHARACTERS ACT IN.
+```
+
+---
+
+# 106. Relationship to Society
+
+Society owns:
+
+```text
+COLLECTIVE
+HUMAN ORGANIZATION.
+```
+
+World Simulation provides:
+
+```text
+THE CONDITIONS
+TO WHICH SOCIETY
+RESPONDS.
+```
+
+The two systems must exchange consequences without duplicating state.
+
+---
+
+# 107. Relationship to Living Campaign Engine
+
+World Simulation produces:
+
+```text
+conditions
+
+events
+
+changes
+
+consequences.
+```
+
+The Living Campaign Engine tracks:
+
+```text
+which causal chains
+remain active
+
+and
+
+which may become
+campaign relevant.
+```
+
+---
+
+# 108. Relationship to Narrative
+
+World Simulation answers:
+
+```text
+WHAT HAPPENED?
+```
+
+Narrative answers:
+
+```text
+HOW DOES
+THE PLAYER
+EXPERIENCE
+WHAT HAPPENED?
+```
+
+Narrative may not rewrite the answer to the first question.
+
+---
+
+# 109. Current Architecture Status
+
+The World Simulation architecture should now be considered:
+
+```text
+ARCHITECTURALLY
+DEFINED
+
+BUT
+
+INDIVIDUAL
+WORLD STATE FILES
+
+REQUIRE
+REPOSITORY AUDIT.
+```
+
+The next step should not automatically follow the old development order.
+
+Instead:
+
+```text
+INSPECT
+CURRENT FILES
+
+↓
+
+IDENTIFY
+OUTDATED OWNERSHIP
+
+↓
+
+KEEP
+REBUILD
+MERGE
+OR RETIRE
+
+↓
+
+ONLY THEN
+CREATE
+MISSING SYSTEMS.
+```
+
+---
+
+# 110. World Simulation Audit Questions
+
+For every existing World Simulation file, ask:
+
+```text
+WHAT STATE
+DOES THIS FILE OWN?
+
+IS THAT STATE
+EXTERNAL WORLD TRUTH?
+
+DOES ANOTHER
+SYSTEM ALREADY
+OWN IT?
+
+DOES THE FILE
+DUPLICATE
+SIMULATION_ARCHITECTURE.md?
+
+DOES IT DUPLICATE
+SOCIETY?
+
+DOES IT DUPLICATE
+CHARACTERS?
+
+DOES IT ASSUME
+PLAYER-CENTRIC
+SIMULATION?
+
+DOES IT ASSUME
+INEVITABLE COLLAPSE?
+
+DOES IT SUPPORT
+RECOVERY?
+
+DOES IT SUPPORT
+REGIONAL DIFFERENCE?
+
+DOES IT SUPPORT
+LOWER RESOLUTION?
+
+DOES IT PRESERVE
+TIME AND HISTORY?
+
+CAN ITS OUTPUT
+PROPAGATE
+CAUSALLY?
+```
+
+---
+
+# 111. Guiding Question
+
+Every World Simulation mechanic should ultimately answer:
+
+```text
+IF THE PLAYER
+DID NOTHING,
+
+WHAT WOULD
+THIS PART
+OF THE WORLD
+DO NEXT?
+
+AND
+
+WHY?
+```
+
+If the system cannot answer that question, it is not yet functioning as a living World Simulation.
+
+---
+
+# 112. World Simulation North Star
+
+The World Simulation succeeds when the player can:
+
+```text
+LEAVE A REGION
+
+RETURN LATER
+
+AND DISCOVER
+
+INFRASTRUCTURE
+HAS CHANGED
+
+RESOURCES
+HAVE MOVED
+
+PEOPLE
+HAVE ADAPTED
+
+ROUTES
+HAVE OPENED
+OR CLOSED
+
+INSTITUTIONS
+HAVE RECOVERED
+OR FAILED
+
+SOME PROBLEMS
+HAVE DISAPPEARED
+
+OTHERS HAVE
+BECOME WORSE
+
+AND
+
+THE RESULT
+MAKES SENSE
+
+BECAUSE OF
+
+WHAT ACTUALLY
+HAPPENED
+WHILE THEY
+WERE GONE.
+```
+
+---
+
+# 113. Final Principle
+
+Project Ascension does not require a world where everything is simulated at maximum detail.
+
+It requires a world where:
+
+```text
+EVERY IMPORTANT
+CHANGE
+
+HAS
+
+A CAUSE
+
+A PLACE
+
+A TIME
+
+A CONSEQUENCE
+
+AND
+
+A HISTORY.
+```
+
+The central World Simulation principle is:
+
+> **The world does not change because the player needs something to happen. It changes because systems, people, resources, institutions, environments and time interact — whether the player is watching or not.**
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | 2026-09-01 | Rebuilt the World Simulation README as the canonical entry point for external persistent world simulation. Preserved the foundational principles of independent world continuity, regional divergence, interdependent systems, state versus pressure, resilience, recovery, perceived versus actual conditions, information delay, anti-script simulation and persistent consequences. Updated ownership boundaries against Characters, Society, Factions, Life, Living Campaign Engine and Narrative; integrated the new Simulation Architecture; established Action Resolution as the boundary where Actor capability meets World reality; added adaptive resolution, time, persistence, cross-system consequence propagation, Aurora boundaries, canonical invariants and development locks; removed the obsolete fixed development plan and pending-file status model. |

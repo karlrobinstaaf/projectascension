@@ -1,89 +1,105 @@
 # PROJECT ASCENSION
-# Goals and Plans System
+
+# Goals and Plans
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Goals and Plans |
-| Location | Canon/Systems/Characters/Goals_and_Plans.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Character Goal Formation, Planning and Autonomous Pursuit |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Goals_and_Plans.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Intentional State |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define what future states a Character intends to create, preserve, avoid, or reach, and the current approaches they intend to use |
 
-> *"A person does not wait for the player to solve their life. They decide what they want, consider what they can do, and try."*
+> **"People do not merely react to the world. They imagine futures that do not yet exist and try to make some of them real."**
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Goals and Plans system defines how persistent characters in Project Ascension convert:
+The Goals and Plans system defines intentional direction for Characters in Project Ascension.
 
-```text
-NEEDS
-
-MOTIVATIONS
-
-OPPORTUNITIES
-
-RESPONSIBILITIES
-
-BELIEFS
-
-RELATIONSHIPS
-```
-
-into:
+Its two central questions are:
 
 ```text
-GOALS
-```
-
-and then convert those goals into:
-
-```text
-PLANS
-
-DECISIONS
-
-ACTIONS.
-```
-
-Its purpose is to allow characters to pursue change independently of the player.
-
-The foundational behavioral chain is:
-
-```text
-NEED / OPPORTUNITY
-      ↓
-MOTIVATION
-      ↓
 GOAL
-      ↓
-OPTIONS
-      ↓
+
+WHAT FUTURE STATE
+DOES THIS CHARACTER
+WANT TO CREATE,
+PRESERVE,
+AVOID,
+OR REACH?
+```
+
+and:
+
+```text
 PLAN
-      ↓
-ACTION
-      ↓
-RESULT
-      ↓
-PLAN UPDATE
-      ↓
-GOAL UPDATE
+
+HOW DOES THIS CHARACTER
+CURRENTLY INTEND
+TO PURSUE THAT STATE?
 ```
+
+Goals create direction.
+
+Plans create intended approaches.
+
+Neither guarantees action.
+
+Neither guarantees success.
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
-The central rule is:
+The central distinction is:
 
 ```text
+MOTIVATION
+=
+WHY DO I CARE?
+
 GOAL
-≠
-MISSION.
+=
+WHAT DO I WANT
+TO BE DIFFERENT?
+
+PLAN
+=
+HOW DO I CURRENTLY
+INTEND TO TRY?
+
+DECISION
+=
+WHAT DO I CHOOSE
+IN THIS SITUATION?
+
+AUTONOMY
+=
+WHEN DOES THIS
+BECOME ACTION-RELEVANT?
+
+ACTION
+=
+WHAT DO I ACTUALLY DO?
+
+WORLD CONSEQUENCE
+=
+WHAT HAPPENS?
 ```
+
+These concepts interact.
+
+They must not collapse into one system.
+
+---
+
+# 3. Goal Is Not Mission
 
 A Character Goal belongs to:
 
@@ -91,554 +107,550 @@ A Character Goal belongs to:
 THE CHARACTER.
 ```
 
-A Mission belongs to:
+A Mission, Story Hook, or player-facing opportunity belongs to:
 
 ```text
 THE PLAYER EXPERIENCE.
 ```
 
-These may intersect.
-
-They are not the same thing.
-
----
-
-# Critical Boundary
-
-A character may possess:
+Therefore:
 
 ```text
-Goal:
-Repair the community water system.
-```
-
-without:
-
-```text
-Mission:
-Repair the community water system.
-```
-
-The character may instead:
-
-```text
-repair it themselves
-
-hire someone
-
-ask another character
-
-request institutional support
-
-purchase equipment
-
-create a temporary workaround
-
-fail
-
-abandon the attempt
-
-change the goal.
-```
-
-Only the Living Campaign Engine may determine whether the situation becomes:
-
-```text
-PLAYER-RELEVANT.
-```
-
----
-
-# Goal Definition
-
-A Goal represents:
-
-```text
-A FUTURE STATE
-THE CHARACTER
-INTENDS TO CREATE,
-PRESERVE,
-AVOID,
-OR REACH.
-```
-
-Goals provide direction to motivation.
-
----
-
-# Motivation Versus Goal
-
-Motivation answers:
-
-```text
-WHY DO I CARE?
-```
-
-Goal answers:
-
-```text
-WHAT DO I WANT
-TO BE DIFFERENT?
-```
-
-Plan answers:
-
-```text
-HOW WILL I TRY
-TO MAKE IT HAPPEN?
-```
-
----
-
-# Example
-
-Motivation:
-
-```text
-Protect family stability.
-```
-
-Goal:
-
-```text
-Secure reliable employment.
-```
-
-Plan:
-
-```text
-Apply for transport authority position.
-```
-
-Action:
-
-```text
-Travel to interview.
-```
-
----
-
-# Goal Formation
-
-Goals may emerge from:
-
-```text
-needs
-
-motivations
-
-opportunities
-
-relationships
-
-responsibilities
-
-professional roles
-
-values
-
-beliefs
-
-world events
-
-life events
-
-previous goals
-
-failed plans.
-```
-
----
-
-# Goal Formation Principle
-
-Not every motivation must produce an explicit Goal.
-
-Conceptually:
-
-```text
-MOTIVATION
-      ↓
-SIGNIFICANCE?
-      ↓
-FEASIBILITY?
-      ↓
-RELEVANT OPPORTUNITY?
-      ↓
-COMMITMENT?
-      ↓
 GOAL
+≠
+MISSION.
 ```
 
-Weak or distant motivations may remain:
+A Character may pursue and resolve an important Goal without the player ever knowing it existed.
+
+---
+
+# 4. Characters Already Want Things
+
+Characters should not acquire Goals merely because:
 
 ```text
-LATENT.
+THE PLAYER
+ARRIVED.
+```
+
+They should already possess:
+
+```text
+CONCERNS
+
+RESPONSIBILITIES
+
+ASPIRATIONS
+
+PROBLEMS
+
+COMMITMENTS
+
+DESIRED FUTURES.
+```
+
+The player enters lives already in motion.
+
+---
+
+# 5. Goal Definition
+
+A Goal is:
+
+> **A future state that a Character intends to create, preserve, avoid, prevent, reach, or meaningfully move toward.**
+
+Examples:
+
+```text
+Secure stable employment
+
+Keep family together
+
+Restore reliable water supply
+
+Avoid eviction
+
+Repair relationship with brother
+
+Learn medicine
+
+Open workshop
+
+Reach daughter safely
+
+Prevent crop failure
+
+Preserve community autonomy.
 ```
 
 ---
 
-# Goal State
-
-A conceptual Goal State may contain:
-
-```text
-Goal ID
-
-Character ID
-
-Description
-
-Goal Type
-
-Origin
-
-Motivation References
-
-Desired State
-
-Priority
-
-Urgency
-
-Importance
-
-Time Horizon
-
-Status
-
-Progress
-
-Commitment
-
-Expected Benefit
-
-Expected Cost
-
-Dependencies
-
-Constraints
-
-Related Characters
-
-Related Organizations
-
-Related Locations
-
-Related Resources
-
-Active Plan References
-
-Fallback Plan References
-
-Created Date
-
-Last Evaluated
-
-Completion Conditions
-
-Failure Conditions
-```
-
----
-
-# Goal ID
-
-Every persistent Goal should have a stable identifier.
-
-Example:
-
-```text
-GOAL-CHAR184-004
-```
-
-This allows:
-
-```text
-plans
-
-memories
-
-relationships
-
-world events
-
-campaign events
-```
-
-to reference the same continuing Goal.
-
----
-
-# Goal Types
-
-Goals may be classified conceptually as:
-
-```text
-SURVIVAL
-
-SECURITY
-
-ECONOMIC
-
-RELATIONSHIP
-
-FAMILY
-
-PROFESSIONAL
-
-SOCIAL
-
-STATUS
-
-IDENTITY
-
-PURPOSE
-
-INFORMATION
-
-RESOURCE
-
-POLITICAL
-
-ORGANIZATIONAL
-
-DEVELOPMENT
-
-EXPLORATION
-
-CREATIVE
-
-PREVENTATIVE
-
-MAINTENANCE
-
-RECOVERY
-```
-
-The categories are descriptive rather than restrictive.
-
----
-
-# Desired State
-
-Every Goal should ideally describe:
-
-```text
-WHAT SUCCESS LOOKS LIKE.
-```
-
-Weak Goal:
-
-```text
-Get fuel.
-```
-
-Better Goal:
-
-```text
-Maintain enough fuel
-to complete harvest operations.
-```
-
-This distinction matters because:
-
-```text
-FUEL
-```
-
-is only one possible solution.
-
----
-
-# Outcome-Oriented Goals
+# 6. Outcome-Oriented Goals
 
 Goals should normally describe:
 
 ```text
-DESIRED OUTCOMES
+DESIRED STATES
 ```
 
-rather than prematurely encoding:
+rather than:
 
 ```text
-ONE SPECIFIC SOLUTION.
+ONE SPECIFIC METHOD.
 ```
+
+Weak formulation:
+
+```text
+BUY GENERATOR.
+```
+
+Stronger Goal:
+
+```text
+MAINTAIN
+RELIABLE WORKSHOP POWER.
+```
+
+Possible Plans may then include:
+
+```text
+BUY GENERATOR
+
+REPAIR GRID CONNECTION
+
+INSTALL LOCAL BACKUP
+
+SHARE POWER
+
+RELOCATE WORKSHOP.
+```
+
+---
+
+# 7. Goal vs Task
+
+A task is not always a Goal.
 
 Example:
 
-Instead of:
-
 ```text
-Buy generator.
+CALL MARA.
 ```
 
-the deeper Goal may be:
+may be:
 
 ```text
-Maintain reliable workshop power.
+PLAN STEP
+
+FOLLOW-UP
+
+ROUTINE ACTION
+
+OPEN LOOP
 ```
 
-Possible plans then include:
+rather than a persistent Goal.
+
+The system should avoid turning every action into:
 
 ```text
-buy generator
-
-repair grid connection
-
-install solar backup
-
-share neighboring generator
-
-relocate workshop.
-```
-
----
-
-# Goal Origin
-
-A Goal should be causally traceable.
-
-Possible origins:
-
-```text
-Need
-
-Motivation
-
-Opportunity
-
-Relationship
-
-Responsibility
-
-Role
-
-World Event
-
-Life Event
-
-Previous Goal
-
-Plan Failure
-
-New Information
-
-Changed Belief
+A GOAL OBJECT.
 ```
 
 ---
 
-# Example
+# 8. Goal Ownership
+
+Goals and Plans owns:
 
 ```text
-Goal:
-Establish alternative medical supplier.
+GOAL FORMATION
 
-Origin:
-Supply instability
+GOAL IDENTITY
 
-Motivation:
-Protect medical service continuity
+GOAL DESIRED STATE
 
-Related Need:
-Professional / Role
+GOAL ORIGIN
 
-Created:
-2055-09-03
+GOAL IMPORTANCE
+
+GOAL URGENCY
+
+GOAL COMMITMENT
+
+GOAL STATUS
+
+GOAL PERSISTENCE
+
+GOAL CONFLICT
+
+GOAL DEPENDENCIES
+
+GOAL TRANSFORMATION
+
+GOAL COMPLETION
+
+GOAL ABANDONMENT
+
+GOAL HIERARCHY
+
+SUB-GOALS
+
+PLAN FORMATION
+
+PLAN STRUCTURE
+
+PLAN STEPS
+
+PLAN DEPENDENCIES
+
+PLAN STATUS
+
+PLAN ADAPTATION
+
+PLAN FAILURE
+
+PLAN REPLACEMENT
+
+PLAN COMPLETION
+
+FALLBACK PLANS
+
+CONDITIONAL PLANS
+
+GOAL / PLAN EXPLAINABILITY.
 ```
 
 ---
 
-# Goal Hierarchy
+# 9. What Goals and Plans Does Not Own
 
-Goals may exist at different scales.
+Goals and Plans does not own:
+
+```text
+NEEDS
+
+MOTIVATION
+
+BELIEFS
+
+KNOWLEDGE
+
+MEMORY
+
+HUMAN ATTRIBUTES
+
+PSYCHOLOGY
+
+RELATIONSHIP STATE
+
+EXPERTISE
+
+ACTUAL CAPABILITY
+
+DECISION SELECTION
+
+AUTONOMY
+
+ACTION EXECUTION
+
+WORLD CONSEQUENCES
+
+LIFE HISTORY
+
+PROGRESSION
+
+SOCIETY STATE
+
+FACTION STATE
+
+NARRATIVE RELEVANCE.
+```
+
+It consumes state from those systems.
+
+It does not replace them.
+
+---
+
+# 10. Goal Formation
+
+Goals may emerge from:
+
+```text
+NEEDS
+
+MOTIVATIONS
+
+RESPONSIBILITIES
+
+RELATIONSHIPS
+
+BELIEFS
+
+OPPORTUNITIES
+
+THREATS
+
+PROFESSIONAL ROLES
+
+LIFE EVENTS
+
+WORLD EVENTS
+
+PREVIOUS GOALS
+
+PLAN FAILURE
+
+NEW INFORMATION
+
+CHANGED CONDITIONS.
+```
+
+These are sources of Goal pressure.
+
+Not every source becomes a formal Goal.
+
+---
+
+# 11. Not Every Desire Becomes a Goal
+
+A Character may:
+
+```text
+WISH
+
+PREFER
+
+IMAGINE
+
+REGRET
+
+WONDER
+```
+
+without forming a committed Goal.
 
 Conceptually:
 
 ```text
-LIFE GOAL
-      ↓
-LONG-TERM GOAL
-      ↓
-MEDIUM-TERM GOAL
-      ↓
-SHORT-TERM GOAL
-      ↓
-IMMEDIATE OBJECTIVE
+POSSIBLE DESIRED STATE
+↓
+DOES IT MATTER?
+↓
+IS IT RELEVANT?
+↓
+IS COMMITMENT FORMING?
+↓
+GOAL MAY EMERGE.
 ```
 
 ---
 
-# Example Goal Hierarchy
+# 12. Goal Origin
 
-```text
-LIFE GOAL:
-Protect family stability
-
-      ↓
-
-LONG-TERM:
-Build financial security
-
-      ↓
-
-MEDIUM-TERM:
-Maintain stable employment
-
-      ↓
-
-SHORT-TERM:
-Secure transport authority position
-
-      ↓
-
-IMMEDIATE:
-Attend interview tomorrow
-```
-
----
-
-# Goal Hierarchy Principle
-
-Lower-level goals should ideally remain explainable through:
-
-```text
-HIGHER-LEVEL MOTIVATION.
-```
-
-This allows the simulation to understand:
-
-```text
-WHY THE CHARACTER
-IS DOING THIS.
-```
-
----
-
-# Independent Goals
-
-Not every Goal requires a hierarchy.
+Every significant Goal should be causally explainable.
 
 Example:
 
 ```text
-Return borrowed tool.
+GOAL:
+Secure alternative
+medical supplier
+
+ORIGIN:
+Repeated supply disruption
+
+MOTIVATION:
+Protect continuity
+of medical service
+
+ROLE:
+Regional physician.
 ```
 
-This may arise from:
+The Goal must not exist because:
 
 ```text
-simple commitment.
+THE CAMPAIGN
+NEEDS CONTENT.
 ```
-
-Small goals may exist temporarily without deeper simulation.
 
 ---
 
-# Goal Time Horizon
+# 13. False Beliefs Can Create Real Goals
 
-Recommended conceptual horizons:
+A Goal may be objectively unnecessary while remaining behaviorally real.
+
+Example:
+
+```text
+CHARACTER BELIEVES:
+Water is contaminated
+
+WORLD TRUTH:
+Water is safe
+
+GOAL:
+Secure alternative
+drinking water.
+```
+
+The Goal exists because:
+
+```text
+BELIEF
+IS REAL TO
+THE CHARACTER.
+```
+
+---
+
+# 14. Positive Goals
+
+Character simulation must include:
+
+```text
+ASPIRATION
+
+CREATION
+
+LEARNING
+
+LOVE
+
+CURIOSITY
+
+BUILDING
+
+EXPLORATION
+
+MASTERY
+
+COMMUNITY
+
+FAMILY
+
+PURPOSE.
+```
+
+Not only:
+
+```text
+CRISIS RESPONSE.
+```
+
+Examples:
+
+```text
+Study history
+
+Start family
+
+Build workshop
+
+Learn violin
+
+Improve neighborhood
+
+Become physician
+
+Travel west
+
+Write book
+
+Teach apprentice.
+```
+
+---
+
+# 15. Preventative Goals
+
+Some Goals seek to prevent a future state.
+
+Examples:
+
+```text
+Prevent crop loss
+
+Avoid eviction
+
+Reduce winter vulnerability
+
+Prevent relationship breakdown
+
+Avoid arrest
+
+Prevent supply failure.
+```
+
+Preventative Goals still require:
+
+```text
+PLAUSIBLE ANTICIPATION.
+```
+
+---
+
+# 16. Maintenance Goals
+
+Not every Goal seeks change.
+
+Some seek:
+
+```text
+CONTINUITY.
+```
+
+Examples:
+
+```text
+Keep family safe
+
+Maintain business viability
+
+Preserve health
+
+Keep water system operational
+
+Maintain friendship
+
+Protect institutional legitimacy.
+```
+
+---
+
+# 17. Avoidance Goals
+
+Some Goals explicitly seek:
+
+```text
+NON-OCCURRENCE.
+```
+
+Examples:
+
+```text
+Avoid confrontation
+
+Avoid debt
+
+Avoid relocation
+
+Avoid detection
+
+Avoid political involvement.
+```
+
+Avoidance may itself create consequence.
+
+---
+
+# 18. Goal Scale
+
+Goals may exist at different scales:
 
 ```text
 IMMEDIATE
@@ -649,262 +661,457 @@ MEDIUM-TERM
 
 LONG-TERM
 
-LIFE
+LIFE-DIRECTION.
 ```
+
+These are conceptual horizons.
+
+They are not rigid durations.
 
 ---
 
-# Immediate Goals
+# 19. Immediate Goals
 
 Examples:
 
 ```text
-Reach shelter before storm.
+Stop bleeding
 
-Stop bleeding.
+Reach shelter
 
-Find missing child.
+Find missing child
 
-Complete current repair.
+Finish urgent repair.
 ```
 
 ---
 
-# Short-Term Goals
+# 20. Short-Term Goals
 
 Examples:
 
 ```text
-Find temporary employment.
+Repair vehicle
 
-Repair vehicle.
+Find temporary work
 
-Secure medical supplies.
+Secure medicine
 
-Resolve argument.
+Resolve immediate conflict.
 ```
 
 ---
 
-# Medium-Term Goals
+# 21. Medium-Term Goals
 
 Examples:
 
 ```text
-Open workshop.
+Open workshop
 
-Complete training.
+Complete training
 
-Move family.
+Move household
 
 Establish trade route.
 ```
 
 ---
 
-# Long-Term Goals
+# 22. Long-Term Goals
 
 Examples:
 
 ```text
-Build successful business.
+Build successful business
 
-Become regional physician.
+Restore family property
 
-Restore family farm.
+Become regional physician
 
-Improve community resilience.
+Strengthen community resilience.
 ```
 
 ---
 
-# Life Goals
+# 23. Life-Direction Goals
+
+Some Goals may remain:
+
+```text
+BROAD
+
+LONG-LIVED
+
+PARTIALLY UNRESOLVED.
+```
 
 Examples:
 
 ```text
-Provide stable future for family.
+Provide stable future for family
 
-Become respected leader.
+Build something lasting
 
-Preserve family legacy.
+Understand Aurora
 
-Understand the old world.
+Preserve family legacy
 
-Build something lasting.
+Become someone others can rely on.
 ```
 
-Life Goals may:
-
-```text
-change
-
-fade
-
-transform
-
-remain unresolved.
-```
+These may evolve throughout Life.
 
 ---
 
-# Goal Priority
+# 24. Goal Hierarchy
 
-Goal Priority represents:
-
-```text
-HOW MUCH ATTENTION
-THE CHARACTER CURRENTLY
-GIVES THE GOAL.
-```
-
-Recommended levels:
-
-```text
-MINIMAL
-
-LOW
-
-MODERATE
-
-HIGH
-
-CRITICAL
-
-DOMINANT
-```
-
----
-
-# Goal Importance
-
-Importance represents:
-
-```text
-HOW MUCH THE OUTCOME
-MATTERS TO THE CHARACTER.
-```
-
-Priority and importance are separate.
+Goals may form causal hierarchies.
 
 Example:
 
 ```text
-Goal:
-Repair relationship with brother
-
-Importance:
-HIGH
-
-Current Priority:
-LOW
-```
-
-because:
-
-```text
-regional evacuation
-requires immediate attention.
+DEEP MOTIVATION:
+Protect family stability
+↓
+LONG-TERM GOAL:
+Build financial security
+↓
+MEDIUM GOAL:
+Maintain stable employment
+↓
+SHORT-TERM GOAL:
+Secure transport position
+↓
+PLAN:
+Attend interview.
 ```
 
 ---
 
-# Goal Urgency
+# 25. Goal Hierarchy Is Not Mandatory
 
-Urgency represents:
+Not every Goal requires:
 
 ```text
-HOW SOON ACTION
-IS REQUIRED.
+FIVE LEVELS
+OF ABSTRACT STRUCTURE.
 ```
 
 Example:
 
 ```text
-Goal:
-Build retirement savings
-
-Importance:
-HIGH
-
-Urgency:
-LOW
+Return borrowed tool.
 ```
 
-versus:
+may simply arise from:
 
 ```text
-Goal:
-Reach shelter before storm
+COMMITMENT.
+```
 
-Importance:
-HIGH
+Use the minimum depth required for causal understanding.
 
-Urgency:
-CRITICAL
+---
+
+# 26. Goal State
+
+A conceptual Goal state may include:
+
+```text
+GOAL ID
+
+CHARACTER
+
+DESCRIPTION
+
+ORIGIN
+
+DESIRED STATE
+
+IMPORTANCE
+
+URGENCY
+
+COMMITMENT
+
+TIME HORIZON
+
+STATUS
+
+DEPENDENCIES
+
+CONSTRAINTS
+
+RELATED ACTORS
+
+RELATED LOCATIONS
+
+RELATED RESOURCES
+
+RELATED PLAN
+
+COMPLETION CONDITIONS
+
+ABANDONMENT CONDITIONS
+
+TRANSFORMATION HISTORY.
+```
+
+This is architectural guidance.
+
+Not yet a mandatory implementation schema.
+
+---
+
+# 27. Stable Identity
+
+Persistent Goals should be traceable across time.
+
+Conceptually:
+
+```text
+GOAL-CHAR184-004
+```
+
+may remain the same Goal while:
+
+```text
+PLAN A FAILS
+
+PLAN B EMERGES
+
+PRIORITY CHANGES
+
+GOAL PAUSES
+
+GOAL RESUMES.
 ```
 
 ---
 
-# Goal Commitment
+# 28. Importance
 
-Commitment represents:
+Goal Importance answers:
 
 ```text
-HOW STRONGLY THE CHARACTER
-HAS DECIDED TO PURSUE
-THE GOAL.
+HOW MUCH DOES
+THIS OUTCOME
+MATTER TO
+THE CHARACTER?
 ```
 
-Possible states:
+Importance may remain high even when current attention is elsewhere.
+
+---
+
+# 29. Urgency
+
+Urgency answers:
 
 ```text
-TENTATIVE
+HOW SOON
+DO CONDITIONS REQUIRE
+MEANINGFUL PROGRESS
+OR DECISION?
+```
 
+Example:
+
+```text
+RETIREMENT SECURITY
+
+IMPORTANCE:
+HIGH
+
+URGENCY:
+LOW.
+```
+
+Versus:
+
+```text
+REACH SHELTER
+BEFORE STORM
+
+IMPORTANCE:
+HIGH
+
+URGENCY:
+CRITICAL.
+```
+
+---
+
+# 30. Commitment
+
+Commitment answers:
+
+```text
+HOW STRONGLY
+HAS THE CHARACTER
+DECIDED TO
+PURSUE THIS GOAL?
+```
+
+Conceptual levels may include:
+
+```text
 CONSIDERING
+
+TENTATIVE
 
 COMMITTED
 
 STRONGLY COMMITTED
 
-NON-NEGOTIABLE
+DEEPLY HELD.
 ```
+
+Avoid treating these as fixed game numbers.
 
 ---
 
-# Commitment Principle
+# 31. Motivation Is Not Commitment
 
-High motivation does not always mean high commitment.
+A Character may strongly want change while remaining unable to commit.
 
 Example:
 
 ```text
-Motivation:
+MOTIVATION:
 Leave dangerous employer
 
-Strength:
+STRENGTH:
 HIGH
 
-Goal:
-Find new employment
+GOAL:
+Find new work
 
-Commitment:
-TENTATIVE
+COMMITMENT:
+TENTATIVE.
 ```
 
-because:
+Because:
 
 ```text
-alternative jobs are scarce
+FAMILY DEPENDS
+ON CURRENT INCOME.
+```
 
-family depends on income.
+This distinction creates realistic hesitation.
+
+---
+
+# 32. Goal Priority
+
+Priority is not identical to:
+
+```text
+IMPORTANCE
+
+URGENCY
+
+MOTIVATION
+
+COMMITMENT.
+```
+
+Priority represents:
+
+> **How much current attention and practical pursuit the Goal is receiving relative to other demands.**
+
+Priority is dynamic.
+
+---
+
+# 33. Dynamic Priority
+
+Example:
+
+```text
+GOAL:
+Expand workshop
+
+IMPORTANCE:
+HIGH
+
+CURRENT PRIORITY:
+HIGH.
+```
+
+Then:
+
+```text
+CHILD BECOMES
+SERIOUSLY ILL.
+```
+
+New Goal:
+
+```text
+SECURE TREATMENT.
+```
+
+Workshop expansion may become:
+
+```text
+PAUSED
+```
+
+without becoming:
+
+```text
+UNIMPORTANT.
 ```
 
 ---
 
-# Goal Status
+# 34. Priority Rebound
 
-Recommended states:
+When temporary pressure ends:
+
+```text
+PAUSED GOALS
+MAY RETURN.
+```
+
+They should not need to be recreated if their underlying reason still exists.
+
+---
+
+# 35. Goal Focus
+
+Characters should not actively pursue:
+
+```text
+DOZENS
+OF EQUALLY ACTIVE
+MAJOR GOALS.
+```
+
+Human attention is limited.
+
+At a given time, a Character may plausibly have:
+
+```text
+ONE OR FEW
+DOMINANT GOALS
+
+SEVERAL ACTIVE
+SECONDARY GOALS
+
+MULTIPLE LATENT
+OR PAUSED GOALS.
+```
+
+No universal numeric capacity is currently Canon.
+
+---
+
+# 36. Goal Status
+
+Useful conceptual Goal states include:
 
 ```text
 LATENT
@@ -919,8 +1126,6 @@ BLOCKED
 
 AT RISK
 
-SUCCEEDING
-
 ACHIEVED
 
 FAILED
@@ -931,326 +1136,157 @@ IMPOSSIBLE
 
 TRANSFORMED
 
-SUPERSEDED
+SUPERSEDED.
 ```
 
----
-
-# Latent Goal
-
-The Goal exists conceptually but is not being actively pursued.
+Not every implementation must use every state.
 
 ---
 
-# Considering Goal
+# 37. Latent Goal
 
-The character is evaluating whether to commit.
-
----
-
-# Active Goal
-
-The character is currently pursuing the Goal.
+A Goal direction exists but is not actively pursued.
 
 ---
 
-# Paused Goal
+# 38. Considering Goal
 
-The Goal remains valid but is temporarily deprioritized.
+The Character is evaluating whether to commit.
 
 ---
 
-# Blocked Goal
+# 39. Active Goal
 
-The character wants to proceed but lacks:
+The Character currently intends to pursue the Goal.
+
+---
+
+# 40. Paused Goal
+
+The Goal remains valid but current pursuit has stopped temporarily.
+
+---
+
+# 41. Blocked Goal
+
+The Goal remains desired but progress currently lacks something necessary.
+
+Possible blockers:
 
 ```text
-resource
+RESOURCE
 
-information
+ACCESS
 
-capability
+INFORMATION
 
-access
+CAPABILITY
 
-permission
+AUTHORITY
 
-opportunity
+TIME
 
-time.
+OPPORTUNITY
+
+COOPERATION.
 ```
 
 ---
 
-# At Risk Goal
+# 42. At-Risk Goal
 
-The Goal remains active but circumstances threaten success.
-
----
-
-# Succeeding Goal
-
-Progress is currently favorable.
-
-This state may be useful for longer-running Goals.
+The Goal remains active but changing conditions threaten success.
 
 ---
 
-# Achieved Goal
+# 43. Achieved Goal
 
-The desired state has been reached.
+The desired state has been sufficiently reached.
 
 ---
 
-# Failed Goal
+# 44. Failed Goal
 
-The character attempted to reach the desired state but failed.
+The Goal's desired state was not reached under the current pursuit context.
 
 Failure does not automatically mean:
 
 ```text
-GOAL DISAPPEARS.
+FORGOTTEN.
 ```
 
 ---
 
-# Abandoned Goal
+# 45. Abandoned Goal
 
-The character consciously stops pursuing it.
+The Character consciously stops pursuing the Goal.
 
----
-
-# Impossible Goal
-
-World conditions make the current formulation impossible.
+This is a valid human outcome.
 
 ---
 
-# Transformed Goal
+# 46. Impossible Goal
 
-The original motivation remains but the desired state changes.
+Current World Truth makes the Goal's present formulation impossible.
 
----
-
-# Superseded Goal
-
-Another Goal replaces the previous one.
+The Character may or may not know this immediately.
 
 ---
 
-# Goal Progress
+# 47. Transformed Goal
 
-Goal progress should not always be represented as:
-
-```text
-0–100%.
-```
-
-Many human goals are not meaningfully linear.
-
-Instead progress may be represented as:
-
-```text
-NO PROGRESS
-
-EARLY
-
-PARTIAL
-
-SUBSTANTIAL
-
-NEAR COMPLETION
-
-COMPLETE
-```
-
-or through actual state milestones.
-
----
-
-# Goal Milestones
+The underlying reason remains, but the desired future state changes.
 
 Example:
 
 ```text
-Goal:
-Open independent workshop
+ORIGINAL:
+Rebuild family farm
 
-Milestones:
+WORLD CHANGE:
+Land permanently unusable
 
-1. Secure financing
-2. Find location
-3. Acquire equipment
-4. Obtain permits
-5. Hire staff
-6. Open business
-```
+UNDERLYING MOTIVATION:
+Preserve family legacy
 
-Progress can then remain causally understandable.
-
----
-
-# Goal Dependencies
-
-Goals may depend on:
-
-```text
-other Goals
-
-resources
-
-characters
-
-institutions
-
-world conditions
-
-information
-
-time
-
-location
-
-authority.
+TRANSFORMED:
+Establish new farm
+under family name elsewhere.
 ```
 
 ---
 
-# Example
+# 48. Superseded Goal
 
-```text
-Goal:
-Move family to Winchester
-
-Dependencies:
-
-- Find housing
-- Secure employment
-- Obtain transport
-- Partner agreement
-```
-
-Failure of one dependency may:
-
-```text
-delay
-
-block
-
-transform
-```
-
-the Goal.
+A newer Goal replaces the functional role of an older Goal.
 
 ---
 
-# Goal Constraints
+# 49. Goal Conflict
 
-Constraints limit available approaches.
-
-Examples:
-
-```text
-money
-
-time
-
-law
-
-distance
-
-health
-
-relationships
-
-authority
-
-skills
-
-weather
-
-security
-
-transport
-
-values.
-```
-
----
-
-# Values as Constraints
-
-A character may refuse otherwise effective solutions.
-
-Example:
-
-```text
-Goal:
-Save business
-
-Option:
-Fraud
-
-Capability:
-Possible
-
-Character Value:
-Integrity HIGH
-```
-
-Result:
-
-```text
-OPTION REJECTED.
-```
-
----
-
-# Relationship Constraints
-
-A character may avoid an option because it would harm:
-
-```text
-family
-
-friend
-
-partner
-
-colleague
-
-community.
-```
-
----
-
-# Goal Conflict
-
-Characters may hold Goals that conflict.
+Characters may hold Goals that cannot all currently be satisfied.
 
 Example:
 
 ```text
 GOAL A:
-Accept promotion.
+Accept promotion
 
 GOAL B:
 Remain near family.
 ```
 
-Promotion requires:
+If promotion requires relocation:
 
 ```text
-relocation.
+CONFLICT EXISTS.
 ```
-
-Both cannot currently be achieved.
 
 ---
 
-# Goal Conflict Types
+# 50. Goal Conflict Sources
 
-Goals may conflict through:
+Goal conflict may arise through:
 
 ```text
 TIME
@@ -1259,855 +1295,650 @@ RESOURCES
 
 LOCATION
 
-VALUES
-
 RELATIONSHIPS
+
+RESPONSIBILITIES
+
+BELIEFS
 
 RISK
 
-ROLE
-
-DIRECT OUTCOME
+DIRECTLY INCOMPATIBLE
+OUTCOMES.
 ```
 
 ---
 
-# Resource Conflict
+# 51. Conflict Is Valuable
 
-Example:
-
-```text
-Goal A:
-Repair home.
-
-Goal B:
-Pay daughter's tuition.
-
-Available Money:
-Enough for one.
-```
-
----
-
-# Time Conflict
-
-Example:
-
-```text
-Goal A:
-Attend professional meeting.
-
-Goal B:
-Care for sick parent.
-
-Same Time:
-YES.
-```
-
----
-
-# Direct Outcome Conflict
-
-Example:
-
-```text
-Goal A:
-Preserve marriage.
-
-Goal B:
-Relocate permanently
-against partner's wishes.
-```
-
----
-
-# Goal Conflict Principle
-
-The system should not automatically optimize away conflict.
+Do not optimize Goal conflict away.
 
 Conflict may produce:
 
 ```text
-delay
+DELAY
 
-compromise
+COMPROMISE
 
-sacrifice
+SACRIFICE
 
-stress
+STRESS
 
-relationship consequences
+ABANDONMENT
 
-goal abandonment
+TRANSFORMATION
 
-new goals.
+NEW PRIORITIES
+
+NEW RELATIONSHIP CONSEQUENCES.
 ```
+
+Decision Making determines current choice.
+
+Goals and Plans preserves the competing intentional states.
 
 ---
 
-# Goal Prioritization
+# 52. Goal Dependencies
 
-Goal prioritization may consider:
+A Goal may depend on:
 
 ```text
-motivation strength
+OTHER GOALS
 
-need pressure
+RESOURCES
 
-urgency
+INFORMATION
 
-importance
+PEOPLE
 
-commitment
+INSTITUTIONS
 
-values
+LOCATION
 
-relationships
+TIME
 
-role obligations
+AUTHORITY
 
-expected consequences
-
-feasibility
-
-opportunity
-
-resource availability
-
-risk.
+WORLD CONDITIONS.
 ```
-
----
-
-# Conceptual Priority Model
-
-```text
-GOAL PRIORITY
-=
-MOTIVATION
-+
-URGENCY
-+
-IMPORTANCE
-+
-COMMITMENT
-+
-ROLE PRESSURE
-+
-RELATIONSHIP PRESSURE
-+
-OPPORTUNITY
-
-MODIFIED BY
-
-COST
-+
-RISK
-+
-CONFLICT
-+
-FEASIBILITY.
-```
-
-This does not require a literal numeric formula.
-
----
-
-# Dynamic Priority
-
-Goal priority should change.
 
 Example:
 
 ```text
-Goal:
-Expand workshop
+GOAL:
+Move family
 
-Priority:
-HIGH
-```
-
-Then:
-
-```text
-Child becomes seriously ill.
-```
-
-New Goal:
-
-```text
-Secure treatment
-
-Priority:
-CRITICAL.
-```
-
-Workshop expansion becomes:
-
-```text
-PAUSED.
+DEPENDENCIES:
+Housing
+Employment
+Transport
+Partner agreement.
 ```
 
 ---
 
-# Priority Rebound
+# 53. Goal Progress
 
-After the crisis resolves:
+Goal progress should not default to:
 
 ```text
-previous Goals
+0–100%.
 ```
 
-may return.
-
-They should not need to be recreated from scratch if they remain relevant.
-
----
-
-# Goal Capacity
-
-Characters should not actively pursue unlimited Goals simultaneously.
-
-Each character should possess a practical:
+Many human Goals are:
 
 ```text
-ACTIVE GOAL CAPACITY.
+NONLINEAR
+
+AMBIGUOUS
+
+REVERSIBLE
+
+DEPENDENCY-BASED.
 ```
 
-This may depend on:
+Prefer:
 
 ```text
-simulation resolution
+ACTUAL MILESTONES
 
-personality
+STATE CHANGES
 
-role complexity
-
-current strain
-
-capability.
+QUALITATIVE PROGRESS.
 ```
 
 ---
 
-# Goal Capacity Principle
-
-The purpose is not to impose an artificial universal number.
-
-It is to prevent:
-
-```text
-CHARACTER HAS
-37 EQUALLY ACTIVE GOALS.
-```
-
-Human attention is limited.
-
----
-
-# Goal Focus
-
-At any moment, characters may have:
-
-```text
-one dominant Goal
-
-several active Goals
-
-multiple latent Goals.
-```
-
-This creates behavioral coherence.
-
----
-
-# Goal Formation From Opportunity
-
-Goals do not need to originate from problems.
+# 54. Milestones
 
 Example:
 
 ```text
-Opportunity:
-New regional university opens.
+GOAL:
+Open workshop
+
+MILESTONES:
+
+Secure financing
+
+Find location
+
+Acquire equipment
+
+Obtain permits
+
+Open business.
 ```
 
-Character:
+Milestones make progress causally legible.
+
+---
+
+# 55. Goal Review
+
+Goals should be reevaluated when meaningful conditions change.
+
+Possible questions:
 
 ```text
-Curiosity:
-HIGH
+DOES THIS STILL MATTER?
 
-Career Motivation:
-MODERATE
-```
+IS IT STILL POSSIBLE?
 
-New Goal:
+HAS THE MOTIVATION CHANGED?
 
-```text
-Study engineering.
+HAS NEW INFORMATION ARRIVED?
+
+HAS THE WORLD CHANGED?
+
+IS THE CURRENT PLAN WORKING?
+
+HAS ANOTHER GOAL
+BECOME MORE IMPORTANT?
 ```
 
 ---
 
-# Positive Goals
+# 56. Goal Persistence
 
-Examples:
-
-```text
-learn
-
-build
-
-travel
-
-create
-
-explore
-
-teach
-
-start family
-
-grow business
-
-form friendship
-
-improve community
-
-research
-
-invent.
-```
-
-Character simulation should not become:
-
-```text
-CRISIS MANAGEMENT ONLY.
-```
-
----
-
-# Goal Formation From Relationships
-
-Relationships may generate Goals.
-
-Examples:
-
-```text
-help friend
-
-reconcile with sibling
-
-protect child
-
-impress mentor
-
-support partner
-
-repay favor
-
-avoid rival.
-```
-
----
-
-# Goal Formation From Responsibility
-
-Responsibilities may generate Goals even without personal desire.
+One failed attempt should not automatically destroy a Goal.
 
 Example:
 
 ```text
-Role:
-Regional Medical Director
+GOAL:
+Open workshop
 
-Responsibility:
-Maintain emergency coverage
+PLAN:
+Obtain bank loan
 
-Personal Desire:
-Go home
+RESULT:
+Rejected
 
-Goal:
-Restore staffing coverage.
+GOAL:
+STILL ACTIVE
+
+PLAN:
+MUST CHANGE.
 ```
 
 ---
 
-# Goal Formation From Belief
+# 57. Persistence Is Not Stubbornness
 
-False beliefs may create real Goals.
-
-Example:
-
-Character believes:
+A Character may continue because:
 
 ```text
-water supply contaminated.
+THE GOAL
+STILL MATTERS.
 ```
 
-Goal:
-
-```text
-secure alternative drinking water.
-```
-
-World Truth:
-
-```text
-water is safe.
-```
-
-The Goal remains behaviorally real.
+But indefinite pursuit despite changing reality is not mandatory.
 
 ---
 
-# Goal Formation From Memory
+# 58. Goal Abandonment
 
-Past experience may create preventative Goals.
-
-Example:
+A Character may abandon a Goal because:
 
 ```text
-Previous winter:
-Heating system failed.
-```
+MOTIVATION CHANGED
 
-Current autumn:
+COST BECAME UNACCEPTABLE
 
-```text
-Goal:
-Secure backup heating
-before winter.
+GOAL BECAME IMPOSSIBLE
+
+ANOTHER GOAL DOMINATES
+
+RELATIONSHIP CHANGED
+
+NEW INFORMATION
+CHANGED DESIRABILITY
+
+REPEATED FAILURE
+REDUCED COMMITMENT
+
+LIFE CHANGED.
 ```
 
 ---
 
-# Preventative Goals
-
-Characters should be capable of:
-
-```text
-PREPARATION.
-```
-
-Examples:
-
-```text
-build reserves
-
-repair equipment before failure
-
-save money
-
-evacuate early
-
-train staff
-
-diversify suppliers
-
-strengthen relationships.
-```
-
----
-
-# Maintenance Goals
-
-Not all Goals create a new state.
-
-Some preserve an existing state.
-
-Examples:
-
-```text
-keep family safe
-
-maintain business profitability
-
-preserve health
-
-maintain friendship
-
-keep infrastructure operational.
-```
-
----
-
-# Avoidance Goals
-
-Some Goals aim to prevent outcomes.
-
-Examples:
-
-```text
-avoid eviction
-
-avoid conflict
-
-avoid arrest
-
-prevent supply failure
-
-prevent relationship breakdown.
-```
-
----
-
-# Goal Review
-
-Characters should periodically reevaluate active Goals.
-
-Questions include:
-
-```text
-Does this still matter?
-
-Is it still possible?
-
-Has the underlying need changed?
-
-Has the motivation changed?
-
-Has new information arrived?
-
-Has the world changed?
-
-Is another Goal now more important?
-
-Is the current Plan working?
-```
-
----
-
-# Goal Persistence
-
-Characters should not abandon Goals merely because:
-
-```text
-one attempt failed.
-```
-
-Persistence may depend on:
-
-```text
-importance
-
-motivation
-
-personality
-
-values
-
-cost
-
-previous failures
-
-available alternatives.
-```
-
----
-
-# Persistent Goal Example
-
-```text
-Goal:
-Open own workshop.
-```
-
-Attempt 1:
-
-```text
-Loan rejected.
-```
-
-Possible response:
-
-```text
-Goal remains ACTIVE.
-
-Plan changes.
-```
-
----
-
-# Goal Abandonment
-
-Characters may abandon Goals when:
-
-```text
-motivation disappears
-
-cost becomes unacceptable
-
-Goal becomes impossible
-
-higher priorities dominate
-
-values change
-
-relationship changes
-
-new information changes desirability
-
-repeated failure reduces commitment.
-```
-
----
-
-# Abandonment Principle
-
-Goal abandonment is:
-
-```text
-A VALID OUTCOME.
-```
-
-The simulation should not force every Goal toward completion.
-
----
-
-# Goal Transformation
-
-Example:
-
-Original Goal:
-
-```text
-Rebuild family farm.
-```
-
-World change:
-
-```text
-Land permanently unusable.
-```
-
-Underlying motivation:
-
-```text
-Preserve family legacy.
-```
-
-Transformed Goal:
-
-```text
-Establish new farm
-under family name elsewhere.
-```
-
-This preserves causal continuity.
-
----
-
-# Goal Completion
+# 59. Goal Completion
 
 A Goal is achieved when:
 
 ```text
-COMPLETION CONDITIONS
+ITS DESIRED STATE
+IS SUFFICIENTLY TRUE.
 ```
 
-are satisfied.
+Completion conditions should reflect the Goal itself.
 
 Example:
 
 ```text
-Goal:
-Secure stable employment.
+GOAL:
+Secure stable employment
 
-Completion Conditions:
+COMPLETION MAY REQUIRE:
 
-- employment obtained
-- expected duration acceptable
-- income meets minimum need
+Employment obtained
+
+Income sufficient
+
+Expected continuity acceptable.
 ```
 
 ---
 
-# False Completion
+# 60. Apparent Completion
 
-A Goal may appear achieved but later fail.
+A Goal may appear achieved and later become relevant again.
 
 Example:
 
 ```text
-Character gets job.
+GET JOB
+↓
+GOAL APPEARS ACHIEVED
+↓
+EMPLOYER COLLAPSES
+↓
+UNDERLYING NEED RETURNS.
 ```
 
-Goal:
+This does not necessarily mean the old Goal was never achieved.
+
+It means:
 
 ```text
-Secure stable employment.
-```
-
-Two weeks later:
-
-```text
-Employer collapses.
-```
-
-The underlying need returns.
-
----
-
-# Goal Consequences
-
-Goal achievement may create:
-
-```text
-new needs
-
-new responsibilities
-
-new relationships
-
-new resources
-
-new risks
-
-new Goals.
+WORLD STATE
+CHANGED AGAIN.
 ```
 
 ---
 
-# Example
+# 61. Success Creates New Conditions
+
+Achieving:
 
 ```text
-Goal:
-Become workshop owner
-
-ACHIEVED
+BECOME WORKSHOP OWNER
 ```
 
-New consequences:
+may create:
 
 ```text
-employees
+DEBT
 
-debt
+EMPLOYEES
 
-maintenance
+RESPONSIBILITY
 
-leadership responsibility
+MAINTENANCE
 
-business reputation.
+REPUTATION
+
+NEW RISKS
+
+NEW GOALS.
 ```
 
-Success creates new life complexity.
+Goal completion does not stop causality.
 
 ---
 
-# Plan Definition
+# 62. Plan Definition
 
-A Plan represents:
+A Plan is:
+
+> **The Character's current intended approach for pursuing a Goal.**
+
+Example:
+
+```text
+GOAL:
+Maintain reliable power
+
+PLAN:
+Purchase backup generator.
+```
+
+---
+
+# 63. Goal vs Plan
+
+The Goal may remain stable while Plans change.
+
+```text
+GOAL:
+Maintain reliable power
+```
+
+Possible:
+
+```text
+PLAN A:
+Buy generator
+
+PLAN B:
+Repair grid
+
+PLAN C:
+Share nearby generator
+
+PLAN D:
+Relocate.
+```
+
+Therefore:
+
+```text
+PLAN FAILURE
+≠
+GOAL FAILURE.
+```
+
+---
+
+# 64. Plan Formation
+
+Plans are formed from:
+
+```text
+GOAL
+
+CHARACTER KNOWLEDGE
+
+BELIEFS
+
+PERCEIVED CAPABILITY
+
+KNOWN RESOURCES
+
+RELATIONSHIPS
+
+LOCATION
+
+TIME
+
+KNOWN INSTITUTIONS
+
+WORLD CONDITIONS
+
+KNOWN OPPORTUNITIES.
+```
+
+Plans must be based on:
 
 ```text
 THE CHARACTER'S
-CURRENT INTENDED METHOD
-FOR PURSUING A GOAL.
+PERCEIVED WORLD.
 ```
 
 ---
 
-# Goal Versus Plan
+# 65. Knowledge-Limited Planning
 
-Goal:
-
-```text
-Maintain reliable workshop power.
-```
-
-Plan A:
+Correct:
 
 ```text
-Purchase generator.
+WORLD TRUTH:
+Bridge destroyed
+
+CHARACTER:
+Does not know
+
+PLAN:
+Travel across bridge.
 ```
 
-Plan B:
+The Plan is valid relative to Character knowledge.
 
-```text
-Repair local grid connection.
-```
-
-Plan C:
-
-```text
-Share power with neighboring workshop.
-```
-
-The Goal may remain stable while:
-
-```text
-PLANS CHANGE.
-```
+It may fail when confronted with reality.
 
 ---
 
-# Plan State
+# 66. Belief-Limited Planning
 
-A conceptual Plan State may contain:
-
-```text
-Plan ID
-
-Character ID
-
-Related Goal ID
-
-Description
-
-Plan Status
-
-Created Date
-
-Current Step
-
-Steps
-
-Dependencies
-
-Required Resources
-
-Required Capabilities
-
-Required Information
-
-Required Actors
-
-Expected Cost
-
-Expected Benefit
-
-Known Risks
-
-Estimated Feasibility
-
-Expected Duration
-
-Fallback Plans
-
-Failure Conditions
-
-Success Conditions
-
-Last Evaluated
-```
-
----
-
-# Plan ID
+Characters may create Plans based on false beliefs.
 
 Example:
 
 ```text
-PLAN-CHAR184-007
+BELIEF:
+Supplier still operating
+
+PLAN:
+Travel to supplier
+
+WORLD TRUTH:
+Supplier closed.
+```
+
+This creates:
+
+```text
+PLAUSIBLE
+PLAN FAILURE.
 ```
 
 ---
 
-# Plan Status
+# 67. Perceived Capability
 
-Recommended states:
+Planning should generally use:
+
+```text
+WHAT THE CHARACTER
+BELIEVES THEY CAN DO.
+```
+
+Actual capability belongs to Expertise / resolution.
+
+Therefore:
+
+```text
+PERCEIVED CAPABILITY
+≠
+ACTUAL CAPABILITY.
+```
+
+---
+
+# 68. Capability Gap
+
+Example:
+
+```text
+GOAL:
+Repair generator
+
+SELF-ASSESSMENT:
+Low mechanical ability.
+```
+
+Possible Plans:
+
+```text
+FIND MECHANIC
+
+ASK TECHNICIAN
+
+REPLACE UNIT
+
+ASK EXPERIENCED FRIEND.
+```
+
+Not necessarily:
+
+```text
+PERSONALLY REBUILD ENGINE.
+```
+
+---
+
+# 69. Resources
+
+Plans must respect known resources.
+
+Examples:
+
+```text
+MONEY
+
+TIME
+
+FUEL
+
+TOOLS
+
+TRANSPORT
+
+LABOR
+
+ACCESS
+
+MATERIALS.
+```
+
+If a Plan requires a missing resource, it may become:
+
+```text
+BLOCKED
+
+ADAPTED
+
+REPLACED.
+```
+
+---
+
+# 70. Institutions as Plan Resources
+
+Characters may use institutions they plausibly know.
+
+Examples:
+
+```text
+HOSPITAL
+
+BUSINESS
+
+SCHOOL
+
+GOVERNMENT
+
+COOPERATIVE
+
+TRADE NETWORK
+
+COMMUNITY ORGANIZATION.
+```
+
+Humans often solve problems through:
+
+```text
+SOCIAL STRUCTURES.
+```
+
+Not through isolated individual action.
+
+---
+
+# 71. Relationships as Plan Context
+
+Relationships may make some options possible.
+
+Example:
+
+```text
+GOAL:
+Find employment
+
+KNOWN RELATIONSHIP:
+Friend works at transport authority
+
+POSSIBLE PLAN:
+Ask friend about openings.
+```
+
+Relationships owns the relationship itself.
+
+Goals and Plans may use it as context.
+
+---
+
+# 72. Plan State
+
+A conceptual Plan may contain:
+
+```text
+PLAN ID
+
+RELATED GOAL
+
+DESCRIPTION
+
+STATUS
+
+CURRENT STEP
+
+KNOWN STEPS
+
+DEPENDENCIES
+
+REQUIRED RESOURCES
+
+REQUIRED INFORMATION
+
+REQUIRED ACTORS
+
+EXPECTED DURATION
+
+KNOWN RISKS
+
+FALLBACKS
+
+SUCCESS CONDITIONS
+
+FAILURE CONDITIONS.
+```
+
+Again:
+
+```text
+CONCEPTUAL MODEL
+
+NOT IMPLEMENTATION LOCK.
+```
+
+---
+
+# 73. Plan Status
+
+Useful conceptual states include:
 
 ```text
 FORMING
@@ -2122,22 +1953,20 @@ BLOCKED
 
 ADAPTING
 
-SUCCEEDING
-
 FAILED
 
 ABANDONED
 
 COMPLETED
 
-SUPERSEDED
+SUPERSEDED.
 ```
 
 ---
 
-# Forming Plan
+# 74. Forming
 
-Character is considering:
+The Character is still determining:
 
 ```text
 HOW TO PURSUE
@@ -2146,384 +1975,111 @@ THE GOAL.
 
 ---
 
-# Ready Plan
+# 75. Ready
 
-Plan is formed but has not yet begun.
-
----
-
-# Active Plan
-
-Character is currently executing it.
+The Plan exists but execution has not begun.
 
 ---
 
-# Waiting Plan
+# 76. Active
 
-Plan depends on:
+The Plan is currently being pursued.
+
+---
+
+# 77. Waiting
+
+The Plan depends on:
 
 ```text
-time
+TIME
 
-response
+RESPONSE
 
-delivery
+DELIVERY
 
-another actor
+ANOTHER ACTOR
 
-scheduled event.
+SCHEDULED EVENT.
 ```
 
----
-
-# Blocked Plan
-
-Execution cannot continue.
+Waiting does not mean the Character's whole life stops.
 
 ---
 
-# Adapting Plan
+# 78. Blocked
 
-Character is modifying the approach because conditions changed.
-
----
-
-# Succeeding Plan
-
-Execution is progressing as expected.
+Execution cannot currently continue.
 
 ---
 
-# Failed Plan
+# 79. Adapting
 
-The current method did not succeed.
-
-The Goal may remain active.
+The Character is revising the approach because relevant conditions changed.
 
 ---
 
-# Abandoned Plan
+# 80. Failed
 
-Character intentionally stops using the Plan.
+The current method did not produce its intended result.
 
 ---
 
-# Completed Plan
+# 81. Abandoned
+
+The Character consciously stops using the Plan.
+
+---
+
+# 82. Completed
 
 The Plan reached its intended endpoint.
 
 This may or may not mean:
 
 ```text
-THE GOAL WAS ACHIEVED.
+THE GOAL
+WAS ACHIEVED.
 ```
 
 ---
 
-# Superseded Plan
+# 83. Superseded
 
-A better or necessary alternative replaces it.
-
----
-
-# Planning Inputs
-
-Characters form Plans using:
-
-```text
-Goal
-
-Knowledge
-
-Beliefs
-
-Skills
-
-Capabilities
-
-Resources
-
-Relationships
-
-Location
-
-Time
-
-Values
-
-Risk Tolerance
-
-Available Opportunities
-
-World Conditions.
-```
+A new Plan replaces the old method.
 
 ---
 
-# Knowledge-Limited Planning
+# 84. Plan Steps
 
-Plans must use:
-
-```text
-WHAT THE CHARACTER KNOWS.
-```
-
-Not:
-
-```text
-WHAT THE SIMULATION KNOWS.
-```
-
----
-
-# Example
-
-World Truth:
-
-```text
-Bridge destroyed.
-```
-
-Character:
-
-```text
-Does not know.
-```
-
-Plan:
-
-```text
-Travel across bridge.
-```
-
-The Plan is valid relative to:
-
-```text
-CHARACTER KNOWLEDGE.
-```
-
-It may fail when reality is encountered.
-
----
-
-# Belief-Limited Planning
-
-Characters may choose Plans based on incorrect beliefs.
+Complex Plans may contain steps.
 
 Example:
 
 ```text
-Belief:
-Supplier still operating.
+GOAL:
+Open workshop
 
-Plan:
-Travel to supplier.
-```
+PLAN:
 
-Reality:
+Estimate startup cost
 
-```text
-Supplier closed three weeks ago.
-```
+Secure financing
 
-This creates:
+Find property
 
-```text
-PLAN FAILURE
-FROM INFORMATION FOG.
-```
+Acquire equipment
 
----
+Obtain approvals
 
-# Capability-Limited Planning
-
-Characters should generally consider what they believe they can do.
-
-Example:
-
-```text
-Goal:
-Repair generator.
-```
-
-Character:
-
-```text
-Mechanical Skill:
-LOW.
-```
-
-Likely Plans:
-
-```text
-find mechanic
-
-contact technician
-
-replace generator
-
-ask experienced friend.
-```
-
-Not necessarily:
-
-```text
-repair it personally.
+Open.
 ```
 
 ---
 
-# Misjudged Capability
+# 85. Step State
 
-Characters may:
-
-```text
-overestimate
-
-underestimate
-```
-
-their capability.
-
-Therefore:
-
-```text
-PERCEIVED CAPABILITY
-```
-
-may differ from:
-
-```text
-ACTUAL CAPABILITY.
-```
-
-This can create failure or missed opportunity.
-
----
-
-# Resource-Limited Planning
-
-Plans must respect resources.
-
-Example:
-
-```text
-Goal:
-Move family.
-
-Plan:
-Purchase truck.
-```
-
-If:
-
-```text
-Money:
-INSUFFICIENT
-```
-
-the character may:
-
-```text
-save money
-
-borrow truck
-
-hire transport
-
-ask family
-
-change destination
-
-delay Goal.
-```
-
----
-
-# Relationship-Based Planning
-
-Relationships may become resources.
-
-Example:
-
-```text
-Goal:
-Find employment.
-
-Relationship:
-Friend works at transport authority.
-```
-
-Plan:
-
-```text
-Ask friend about openings.
-```
-
-This is normal social behavior.
-
----
-
-# Institutional Planning
-
-Characters should recognize institutions they plausibly know.
-
-Examples:
-
-```text
-hospital
-
-government
-
-business
-
-school
-
-guild
-
-cooperative
-
-security organization
-
-community group.
-```
-
-Characters should often solve problems through:
-
-```text
-SOCIAL STRUCTURES
-```
-
-rather than individual action.
-
----
-
-# Plan Steps
-
-Plans may contain multiple steps.
-
-Example:
-
-```text
-Goal:
-Open workshop.
-
-Plan:
-
-1. Estimate startup cost
-2. Secure financing
-3. Find property
-4. Purchase equipment
-5. Obtain approvals
-6. Hire assistant
-7. Open
-```
-
----
-
-# Step State
-
-Plan steps may be:
+Conceptually:
 
 ```text
 PENDING
@@ -2542,168 +2098,87 @@ FAILED
 
 SKIPPED
 
-REPLACED
+REPLACED.
 ```
+
+Do not track unnecessary detail for trivial Plans.
 
 ---
 
-# Sequential Plans
+# 86. Sequential Plans
 
 Some steps require:
 
 ```text
-PREVIOUS STEP COMPLETION.
+PREVIOUS
+STEP COMPLETION.
 ```
 
 ---
 
-# Parallel Plans
+# 87. Parallel Plans
 
-Other steps may occur simultaneously.
+Some steps may occur simultaneously.
 
 Example:
 
 ```text
-Find property
+FIND PROPERTY
 
 AND
 
-seek financing.
+SEEK FINANCING.
 ```
 
 ---
 
-# Conditional Plans
+# 88. Conditional Plans
 
-Characters may use conditional planning.
+Characters may form:
+
+```text
+IF / THEN
+```
+
+structures.
 
 Example:
 
 ```text
-IF loan approved:
-Purchase workshop.
+IF LOAN APPROVED
+→ BUY WORKSHOP
 
-IF loan denied:
-Seek partner.
+IF LOAN DENIED
+→ SEEK PARTNER
 
-IF no partner:
-Delay expansion.
+IF PARTNER FAILS
+→ DELAY EXPANSION.
 ```
 
 ---
 
-# Fallback Plans
+# 89. Fallback Plans
 
-Characters should frequently possess fallback options when:
+Fallbacks are especially plausible when:
 
 ```text
-stakes are high
+STAKES ARE HIGH
 
-character is experienced
+FAILURE IS PLAUSIBLE
 
-failure is plausible
+TIME EXISTS
 
-time allows preparation.
+CHARACTER HAS
+RELEVANT EXPERIENCE.
 ```
+
+Not every small Plan needs fallback branches.
 
 ---
 
-# Example
+# 90. Sub-Goals
 
-Primary Plan:
-
-```text
-Obtain fuel from regional supplier.
-```
-
-Fallback A:
-
-```text
-Trade with neighboring farm.
-```
-
-Fallback B:
-
-```text
-Rent lower-fuel equipment.
-```
-
-Fallback C:
-
-```text
-Harvest only highest-value crop.
-```
-
----
-
-# Planning Depth
-
-Not every action needs:
-
-```text
-A TEN-STEP PLAN.
-```
-
-Planning depth depends on:
-
-```text
-goal complexity
-
-stakes
-
-character capability
-
-time horizon
-
-simulation resolution.
-```
-
----
-
-# Simple Plan
-
-```text
-Goal:
-Buy bread.
-
-Plan:
-Walk to market.
-```
-
-Enough.
-
----
-
-# Complex Plan
-
-```text
-Goal:
-Establish regional medical network.
-```
-
-May require:
-
-```text
-months
-
-multiple actors
-
-resources
-
-negotiation
-
-institutions
-
-sub-goals
-
-fallback plans.
-```
-
----
-
-# Sub-Goals
-
-Complex Plans may generate subordinate Goals.
+Complex Plans may create subordinate Goals.
 
 Example:
 
@@ -2715,3447 +2190,433 @@ SUB-GOAL:
 Secure financing
 
 SUB-GOAL:
-Acquire property
-
-SUB-GOAL:
-Purchase equipment.
+Acquire property.
 ```
+
+Sub-Goals should remain connected to the reason they exist.
 
 ---
 
-# Sub-Goal Principle
-
-Sub-Goals should remain linked to:
-
-```text
-PARENT GOAL.
-```
+# 91. Parent Goal Removal
 
 If the parent Goal disappears:
 
 ```text
-dependent Sub-Goals
-```
-
-should be reevaluated.
-
----
-
-# Plan Dependencies
-
-Plans may depend on:
-
-```text
-resources
-
-information
-
-people
-
-institutions
-
-weather
-
-transport
-
-security
-
-infrastructure
-
-authority
-
-scheduled events.
-```
-
----
-
-# Dependency Failure
-
-Example:
-
-```text
-Plan:
-Travel to Richmond.
-
-Dependency:
-Bridge operational.
-
-World Event:
-Bridge collapse.
-```
-
-Result:
-
-```text
-PLAN:
-BLOCKED / ADAPTING.
-```
-
----
-
-# Plan Adaptation
-
-Characters should revise Plans when:
-
-```text
-new information arrives
-
-world conditions change
-
-resources disappear
-
-relationships change
-
-another actor refuses
-
-time runs out
-
-risk increases
-
-better opportunity appears.
-```
-
----
-
-# Adaptation Principle
-
-Characters should not blindly continue:
-
-```text
-A PLAN THAT
-NO LONGER MAKES SENSE
-```
-
-unless their:
-
-```text
-personality
-
-beliefs
-
-limited knowledge
-
-commitment
-```
-
-plausibly explains it.
-
----
-
-# Plan Failure
-
-Plan failure may result from:
-
-```text
-incorrect information
-
-insufficient skill
-
-bad timing
-
-resource shortage
-
-external event
-
-other characters
-
-institutional refusal
-
-unexpected cost
-
-risk
-
-chance
-
-player intervention.
-```
-
----
-
-# Failure Principle
-
-```text
-PLAN FAILURE
-≠
-GOAL FAILURE.
-```
-
----
-
-# Example
-
-Goal:
-
-```text
-Secure medicine.
-```
-
-Plan A:
-
-```text
-Purchase from local pharmacy.
-```
-
-Result:
-
-```text
-FAILED:
-Out of stock.
-```
-
-Goal remains:
-
-```text
-ACTIVE.
-```
-
-Plan B:
-
-```text
-Contact regional clinic.
-```
-
----
-
-# Repeated Failure
-
-Repeated failure may cause:
-
-```text
-frustration
-
-higher risk tolerance
-
-lower confidence
-
-new alliances
-
-help seeking
-
-goal transformation
-
-goal abandonment.
-```
-
----
-
-# Escalation of Plans
-
-A character may escalate methods.
-
-Example:
-
-```text
-Goal:
-Recover unpaid wages.
-```
-
-Plan progression:
-
-```text
-Ask employer
-
-      ↓
-
-Formal complaint
-
-      ↓
-
-Legal action
-
-      ↓
-
-Public protest.
-```
-
-Escalation should arise from:
-
-```text
-previous failure
-+
-character state
-+
-available options.
-```
-
----
-
-# De-Escalation
-
-Characters may also choose less aggressive Plans.
-
-Example:
-
-```text
-Conflict becomes dangerous.
-```
-
-Character may:
-
-```text
-negotiate
-
-withdraw
-
-accept compromise
-
-delay Goal.
-```
-
----
-
-# Plan Risk
-
-Characters should evaluate perceived risk.
-
-Risk may include:
-
-```text
-physical
-
-economic
-
-relationship
-
-legal
-
-professional
-
-reputational
-
-political
-
-resource
-
-time.
-```
-
----
-
-# Risk Tolerance
-
-The same Plan may be acceptable to one character and unacceptable to another.
-
-Example:
-
-```text
-Plan:
-Cross unstable region.
-```
-
-Character A:
-
-```text
-Risk Tolerance:
-HIGH
-```
-
-Character B:
-
-```text
-Risk Tolerance:
-LOW
-```
-
----
-
-# Expected Outcome
-
-Characters may form expectations.
-
-Example:
-
-```text
-Plan:
-Ask brother for loan.
-
-Expected Success:
-MODERATE
-
-Expected Relationship Cost:
-LOW
-```
-
-These expectations may be wrong.
-
----
-
-# Imperfect Planning
-
-Characters should not possess:
-
-```text
-PERFECT FORECASTING.
+DEPENDENT SUB-GOALS
+MUST BE REEVALUATED.
 ```
 
 They may:
 
 ```text
-miss options
+DISAPPEAR
 
-underestimate risk
+TRANSFORM
 
-overestimate others
-
-misread situations
-
-forget information
-
-follow habit
-
-act emotionally.
+BECOME INDEPENDENT.
 ```
 
 ---
 
-# Habitual Plans
+# 92. Plan Dependencies
 
-Characters may reuse familiar solutions.
+Plans may depend on:
+
+```text
+RESOURCES
+
+INFORMATION
+
+PEOPLE
+
+INSTITUTIONS
+
+WEATHER
+
+TRANSPORT
+
+SECURITY
+
+INFRASTRUCTURE
+
+AUTHORITY
+
+SCHEDULED EVENTS.
+```
+
+---
+
+# 93. Dependency Failure
 
 Example:
 
 ```text
-Economic problem
-      ↓
-Character always asks sibling.
+PLAN:
+Travel to Richmond
+
+DEPENDENCY:
+Bridge operational
+
+WORLD EVENT:
+Bridge collapse.
 ```
 
-This may continue even if:
+The Plan may become:
 
 ```text
-better options exist.
+BLOCKED
 ```
 
-Habit contributes to individuality.
-
----
-
-# Personality and Planning
-
-Personality may influence:
+or:
 
 ```text
-planning depth
-
-risk tolerance
-
-fallback preparation
-
-speed of commitment
-
-willingness to ask others
-
-response to failure.
+ADAPTING.
 ```
 
 ---
 
-# Example
+# 94. Plan Adaptation
 
-Cautious character:
-
-```text
-multiple fallback plans
-
-high information requirement
-
-slow commitment.
-```
-
-Impulsive character:
+Plans should be reconsidered when:
 
 ```text
-rapid plan formation
+NEW INFORMATION ARRIVES
 
-limited preparation
+WORLD CONDITIONS CHANGE
 
-higher adaptation after action begins.
-```
+RESOURCE DISAPPEARS
 
-Neither is automatically:
+OTHER ACTOR REFUSES
 
-```text
-BETTER.
+TIME CHANGES
+
+KNOWN RISK CHANGES
+
+NEW OPPORTUNITY APPEARS.
 ```
 
 ---
 
-# Values and Planning
+# 95. Adaptation Is Not Automatic Optimality
 
-Values may remove options.
+A Character may continue a poor Plan because of:
+
+```text
+LIMITED KNOWLEDGE
+
+HABIT
+
+COMMITMENT
+
+BELIEF
+
+PSYCHOLOGY
+
+SUNK COST
+
+MISJUDGMENT.
+```
+
+Planning must remain human.
+
+---
+
+# 96. Plan Failure
+
+Possible causes include:
+
+```text
+FALSE INFORMATION
+
+INSUFFICIENT CAPABILITY
+
+BAD TIMING
+
+RESOURCE LOSS
+
+WORLD EVENT
+
+OTHER ACTOR
+
+INSTITUTIONAL REFUSAL
+
+UNEXPECTED COST
+
+RISK
+
+CHANCE.
+```
+
+The World resolves the outcome.
+
+Goals and Plans updates the intentional state afterward.
+
+---
+
+# 97. Repeated Failure
+
+Repeated failure may create conditions for:
+
+```text
+NEW PLAN
+
+HELP SEEKING
+
+LOWER COMMITMENT
+
+GOAL TRANSFORMATION
+
+GOAL ABANDONMENT.
+```
+
+Psychological responses belong to Human Psychology.
+
+Development belongs to Progression.
+
+---
+
+# 98. Escalation
+
+A Character may escalate methods.
 
 Example:
 
 ```text
-Goal:
-Obtain medicine.
+GOAL:
+Recover unpaid wages
 
-Option:
-Steal medicine.
+PLAN 1:
+Ask employer
 
-Character Value:
-Law / Integrity HIGH.
+PLAN 2:
+Formal complaint
+
+PLAN 3:
+Legal action
+
+PLAN 4:
+Public protest.
 ```
 
-The option may be rejected.
-
-Another character may consider it acceptable because:
-
-```text
-family survival
-```
-
-is valued more strongly.
+Escalation requires causal justification.
 
 ---
 
-# Role and Planning
+# 99. De-Escalation
 
-Professional experience may shape preferred Plans.
-
-Example:
-
-Engineer:
+A Character may also move toward:
 
 ```text
-repair system.
+NEGOTIATION
+
+WITHDRAWAL
+
+COMPROMISE
+
+DELAY
+
+REDUCED AMBITION.
 ```
 
-Administrator:
-
-```text
-coordinate resources.
-```
-
-Trader:
-
-```text
-find alternate supplier.
-```
-
-Community leader:
-
-```text
-organize collective response.
-```
-
-Same Goal.
-
-Different Plans.
+Escalation is not inherently more interesting or more correct.
 
 ---
 
-# Multi-Character Goals
+# 100. Planning Depth
 
-Multiple characters may share a Goal.
-
-Example:
+Not every Goal requires:
 
 ```text
-Goal:
-Repair community bridge.
+A TEN-STEP PLAN.
 ```
 
-Participants:
+Planning depth depends on:
 
 ```text
-Engineer
+COMPLEXITY
 
-Mayor
+STAKES
 
-Trader
+TIME HORIZON
 
-Residents.
-```
+EXPERTISE
 
-Each may have different:
+AVAILABLE TIME
 
-```text
-motivations
-
-roles
-
-plans
-
-stakes.
+SIMULATION RESOLUTION.
 ```
 
 ---
 
-# Shared Goal Principle
-
-Shared desired outcome does not mean:
+# 101. Simple Plan
 
 ```text
-SHARED MOTIVATION.
+GOAL:
+Buy bread
+
+PLAN:
+Walk to market.
 ```
 
-Example:
+Enough.
 
-Mayor:
+---
+
+# 102. Complex Plan
 
 ```text
-restore public confidence.
+GOAL:
+Establish regional
+medical network.
 ```
 
-Trader:
+May involve:
 
 ```text
-restore commerce.
-```
+MONTHS
 
-Resident:
+INSTITUTIONS
 
-```text
-reach family.
-```
+MULTIPLE ACTORS
 
-Engineer:
+RESOURCES
 
-```text
-fulfill professional duty.
-```
+NEGOTIATION
 
-All support:
+SUB-GOALS
 
-```text
-REPAIR BRIDGE.
+FALLBACKS.
 ```
 
 ---
 
-# Cooperative Plans
+# 103. Plan Scheduling Boundary
 
-Characters may coordinate.
-
-Conceptually:
+Plans may contain:
 
 ```text
-CHARACTER A PLAN
-        ↘
-       SHARED ACTION
-        ↗
-CHARACTER B PLAN
+DEADLINES
+
+APPOINTMENTS
+
+EXPECTED DATES
+
+DEPENDENCY WINDOWS.
 ```
 
-Coordination may require:
+But detailed execution scheduling and whether action happens now interacts with:
 
 ```text
-communication
-
-trust
-
-shared timing
-
-resource allocation
-
-role assignment.
+AUTONOMY
++
+DECISION MAKING.
 ```
 
 ---
 
-# Conflicting Plans
+# 104. Scheduling Conflict
 
-Characters may pursue incompatible Plans.
-
-Example:
-
-Character A:
+When two commitments collide:
 
 ```text
-Goal:
-Preserve forest.
-
-Plan:
-Block logging.
+GOALS AND PLANS
+PRESERVES
+BOTH COMMITMENTS.
 ```
 
-Character B:
+Decision Making determines:
 
 ```text
-Goal:
-Maintain employment.
+WHICH WINS
 
-Plan:
-Expand logging.
-```
+WHETHER TO RESCHEDULE
 
-This creates:
+WHETHER TO DELEGATE
 
-```text
-EMERGENT CONFLICT.
+WHETHER TO ABANDON.
 ```
 
 ---
 
-# Goal Competition
+# 105. Delegation Boundary
 
-Characters may compete for:
-
-```text
-same resource
-
-same position
-
-same property
-
-same contract
-
-same relationship
-
-same political outcome.
-```
-
-Conflict need not be authored as:
+A Plan may include:
 
 ```text
-A STORYLINE.
-```
-
-It can emerge from Goals.
-
----
-
-# Character Opposition
-
-An antagonist does not need:
-
-```text
-EVIL FLAG.
-```
-
-They may simply possess:
-
-```text
-A GOAL
-INCOMPATIBLE WITH
-ANOTHER CHARACTER'S GOAL.
-```
-
----
-
-# Goal Alignment
-
-Characters may discover compatible Goals.
-
-Example:
-
-```text
-Farmer:
-Needs reliable transport.
-
-Trader:
-Needs agricultural supply.
-
-Mechanic:
-Needs business.
-```
-
-Possible emergent cooperation:
-
-```text
-regional transport cooperative.
-```
-
----
-
-# Opportunity Formation
-
-Goal alignment may create:
-
-```text
-businesses
-
-organizations
-
-alliances
-
-friendships
-
-political coalitions
-
-community projects.
-```
-
-This connects Character simulation directly to:
-
-```text
-Society.
-```
-
----
-
-# Plans and World State
-
-Plans interact with:
-
-```text
-Infrastructure State
-
-Supply State
-
-Security State
-
-Authority State
-
-Information State
-
-Population State
-
-Regional State.
-```
-
----
-
-# Example
-
-Plan:
-
-```text
-Transport grain by highway.
-```
-
-World State:
-
-```text
-Bridge:
-DAMAGED
-
-Security:
-UNSTABLE
-
-Fuel:
-LOW
-```
-
-Plan feasibility changes.
-
----
-
-# Plans Change World State
-
-Character Plans can also modify World State.
-
-Example:
-
-```text
-Engineer Goal:
-Restore water supply
-
-Plan:
-Repair pumping station
-
-Action:
-Repair completed
-
-      ↓
-
-Infrastructure State:
-IMPROVES
-
-      ↓
-
-Population Pressure:
-DECREASES.
-```
-
----
-
-# Goal and World Feedback
-
-Conceptually:
-
-```text
-WORLD STATE
-      ↓
-CHARACTER GOAL
-      ↓
-PLAN
-      ↓
-ACTION
-      ↓
-WORLD CHANGE
-      ↓
-NEW CHARACTER OPTIONS
-      ↓
-GOAL UPDATE.
-```
-
----
-
-# Autonomous Goal Pursuit
-
-Characters must pursue Goals without:
-
-```text
-PLAYER PRESENCE.
-```
-
----
-
-# Autonomous Action Principle
-
-If:
-
-```text
-Goal:
-Repair tractor
-
-Capability:
-HIGH
-
-Parts:
-AVAILABLE
-
-Time:
-AVAILABLE
-```
-
-the character should likely:
-
-```text
-REPAIR THE TRACTOR.
-```
-
-They should not wait because:
-
-```text
-THE PLAYER MIGHT
-WANT A MISSION.
-```
-
----
-
-# Autonomous Problem Solving
-
-Characters should first consider plausible resources:
-
-```text
-self
-
-family
-
-friends
-
-colleagues
-
-businesses
-
-institutions
-
-organizations
-
-community
-
-trade networks.
-```
-
-The player is:
-
-```text
-ONE POSSIBLE ACTOR.
-```
-
----
-
-# Help Seeking
-
-A character may seek help when:
-
-```text
-Goal importance is sufficient
-
-current Plan is blocked
-
-self-capability is insufficient
-
-another actor has useful capability
-
-relationship allows request
-
-communication is possible.
-```
-
----
-
-# Help-Seeking Target
-
-The character should ask:
-
-```text
-WHO CAN PLAUSIBLY HELP?
-```
-
-not:
-
-```text
-HOW DO I INVOLVE
-THE PLAYER?
-```
-
----
-
-# Example
-
-Goal:
-
-```text
-Repair generator.
-```
-
-Character knows:
-
-```text
-Local Mechanic:
-HIGH skill
-Nearby
-
-Player:
-HIGH skill
-Far away
-
-Regional Technician:
-HIGH skill
-Expensive
-```
-
-Likely first choice:
-
-```text
-LOCAL MECHANIC.
-```
-
----
-
-# Player Involvement
-
-The player may become relevant because:
-
-```text
-they possess rare capability
-
-relationship is strong
-
-they are nearby
-
-other Plans failed
-
-the character trusts them
-
-the player has relevant resources
-
-the player previously offered help.
-```
-
----
-
-# Player Dependency
-
-Plan State may record:
-
-```text
-NONE
-
-OPTIONAL
-
-USEFUL
-
-IMPORTANT
-
-REQUIRED
-```
-
-Most Plans should initially be:
-
-```text
-NONE
-```
-
-unless there is a specific reason otherwise.
-
----
-
-# Mission Boundary
-
-Character System may produce:
-
-```text
-Character Goal
-
-Character Plan
-
-Character Problem
-
-Character Request
-
-Character Opportunity.
-```
-
-Living Campaign Engine determines:
-
-```text
-Relevance
-
-Proximity
-
-Priority
-
-Pacing
-
-Story Hook eligibility.
-```
-
-Mission Generation determines whether this becomes:
-
-```text
-A PLAYER-FACING MISSION.
-```
-
----
-
-# Character Request Is Not Mission
-
-Example:
-
-Character says:
-
-```text
-"If you're heading north,
-could you deliver this?"
-```
-
-This may be:
-
-```text
-a request
-
-an opportunity
-
-a favor
-```
-
-without becoming:
-
-```text
-formal Mission.
-```
-
-Narrative presentation should preserve this flexibility.
-
----
-
-# Goal Persistence During Player Absence
-
-Player absence does not freeze Goals.
-
-During absence, characters may:
-
-```text
-make progress
-
-change Plans
-
-achieve Goals
-
-fail Goals
-
-abandon Goals
-
-form new Goals.
-```
-
----
-
-# Long Absence Example
-
-Player leaves in:
-
-```text
-2045.
-```
-
-Character Goal:
-
-```text
-Open repair workshop.
-```
-
-Simulation:
-
-```text
-2046:
-Loan denied.
-
-2047:
-Forms partnership.
-
-2048:
-Workshop opens.
-
-2050:
-Partner leaves.
-
-2051:
-Character buys remaining share.
-
-2054:
-Workshop expands.
-```
-
-Player returns:
-
-```text
-2055.
-```
-
-The character is now:
-
-```text
-ESTABLISHED BUSINESS OWNER.
-```
-
-The Goal was resolved without player involvement.
-
----
-
-# Critical Absence Principle
-
-```text
-PLAYER ABSENCE
-DOES NOT CREATE
-GOAL SUSPENSION.
-```
-
----
-
-# Goal Memory
-
-Characters should remember significant:
-
-```text
-Goals
-
-Failures
-
-Achievements
-
-Sacrifices
-
-Promises
-
-Major Plan changes.
-```
-
-This may influence future behavior.
-
----
-
-# Failure Memory
-
-Example:
-
-```text
-Previous Goal:
-Expand business.
-
-Previous Plan:
-Take large loan.
-
-Result:
-Nearly lost home.
-```
-
-Future:
-
-```text
-Character becomes reluctant
-to use debt-heavy Plans.
-```
-
----
-
-# Success Memory
-
-Example:
-
-```text
-Previous crisis:
-Community cooperation succeeded.
-```
-
-Future crisis:
-
-```text
-Character more likely
-to seek collective solution.
-```
-
----
-
-# Goal History
-
-Meaningful Goal transitions should be preserved.
-
-Example:
-
-```text
-2050:
-Goal created:
-Open clinic.
-
-2051:
-Financing obtained.
-
-2052:
-Construction delayed.
-
-2053:
-Clinic opened.
-
-Goal:
-ACHIEVED.
-```
-
----
-
-# Plan History
-
-Not every Plan step needs permanent history.
-
-Preserve when:
-
-```text
-failure changed character
-
-success changed world
-
-relationship changed
-
-major resource was gained or lost
-
-significant commitment occurred
-
-campaign relevance exists.
-```
-
----
-
-# Goal and Character Development
-
-Goals contribute to development.
-
-Repeated pursuit may produce:
-
-```text
-skills
-
-confidence
-
-relationships
-
-status
-
-resources
-
-belief change
-
-identity change.
-```
-
----
-
-# Example
-
-Character repeatedly pursues:
-
-```text
-community organization Goals.
-```
-
-Over years:
-
-```text
-Leadership Skill:
-INCREASES
-
-Reputation:
-INCREASES
-
-Social Role:
-Community Leader
-
-Future Goals:
-Become regional representative.
-```
-
----
-
-# Goals and Aging
-
-Goal patterns may change with:
-
-```text
-age
-
-life stage
-
-health
-
-family
-
-career
-
-resources
-
-past achievement.
-```
-
-But the system should avoid rigid age templates.
-
----
-
-# Goals and Life Events
-
-Life Events may:
-
-```text
-create Goals
-
-destroy Goals
-
-change Goals
-
-pause Goals
-
-complete Goals.
+ANOTHER ACTOR
+PERFORMING A STEP.
 ```
 
 Example:
 
 ```text
-New child
-```
+DIRECTOR:
+Coordinate staffing
 
-may create:
-
-```text
-housing
-
-income
-
-safety
-
-family
-```
-
-Goals.
-
----
-
-# Goals and Relationships
-
-Relationships may create:
-
-```text
-shared Goals
-
-conflicting Goals
-
-obligations
-
-support
-
-constraints
-
-new opportunities.
-```
-
----
-
-# Goals and Society
-
-Character Goals may create larger social structures.
-
-Example:
-
-```text
-Character A wants safer trade.
-
-Character B wants stable prices.
-
-Character C wants reliable transport.
-```
-
-Over time:
-
-```text
-shared planning
-      ↓
-trade association
-      ↓
-institution.
-```
-
-Society may therefore emerge from:
-
-```text
-COORDINATED HUMAN GOALS.
-```
-
----
-
-# Goals and Information
-
-New information may:
-
-```text
-create Goal
-
-change Goal
-
-change priority
-
-invalidate Plan
-
-reveal opportunity
-
-remove motivation.
-```
-
----
-
-# Example
-
-Character Goal:
-
-```text
-Evacuate family east.
-```
-
-New trusted information:
-
-```text
-Eastern route unsafe.
-```
-
-Goal remains:
-
-```text
-Protect family.
-```
-
-Plan changes:
-
-```text
-Shelter locally.
-```
-
----
-
-# Goals and False Information
-
-False information may produce:
-
-```text
-plausible but unnecessary Goals.
-```
-
-Example:
-
-```text
-Rumor:
-Bank collapse imminent.
-```
-
-Character Goal:
-
-```text
-Withdraw savings.
-```
-
-Collective behavior may then:
-
-```text
-create actual financial instability.
-```
-
----
-
-# Goals and Living Campaign Engine
-
-The Living Campaign Engine observes Character activity.
-
-It may identify:
-
-```text
-Goal conflict
-
-blocked Plan
-
-shared opportunity
-
-failed Plan
-
-urgent request
-
-unexpected success
-
-multi-character collision
-```
-
-as potential:
-
-```text
-Story Hooks.
-```
-
----
-
-# Critical Architecture
-
-```text
-CHARACTER SYSTEM:
-What people want
-and what they are doing.
-
-WORLD SIMULATION:
-What conditions allow.
-
-RELATIONSHIPS:
-Who matters to whom.
-
-LIVING CAMPAIGN ENGINE:
-What becomes relevant
-to the player.
-
-MISSION GENERATION:
-Whether player-relevant
-circumstances become Missions.
-
-NARRATIVE:
-How the player experiences them.
-```
-
----
-
-# Plan Scheduling
-
-Plans may include time.
-
-Example:
-
-```text
-Plan:
-Meet supplier
-
-Scheduled:
-2055-09-04 09:00
-```
-
-Characters should respect:
-
-```text
-appointments
-
-travel time
-
-work schedules
-
-deadlines
-
-other commitments.
-```
-
----
-
-# Scheduling Conflict
-
-Characters may discover:
-
-```text
-two Plans require
-the same time.
-```
-
-Decision Making must determine:
-
-```text
-which commitment wins
-
-whether one is rescheduled
-
-whether help is delegated.
-```
-
----
-
-# Delegation
-
-Characters may delegate Plan steps.
-
-Example:
-
-```text
-Goal:
-Prepare clinic for storm.
-```
-
-Character:
-
-```text
-Medical Director.
-```
-
-Plan:
-
-```text
-Nurse:
-Inventory medicine
-
-Technician:
+TECHNICIAN:
 Check generator
 
-Driver:
-Refuel ambulance
-
-Director:
-Coordinate staffing.
+DRIVER:
+Refuel ambulance.
 ```
 
-This prevents leaders from personally performing:
+But:
 
 ```text
-EVERY TASK.
+OTHER ACTOR
+RETAINS AGENCY.
 ```
+
+Delegation is not guaranteed execution.
 
 ---
 
-# Delegation Principle
+# 106. Other Actors May Refuse
 
-Capability includes:
+Another Character may:
 
 ```text
-ABILITY TO ORGANIZE
-OTHER PEOPLE.
+REFUSE
+
+DELAY
+
+NEGOTIATE
+
+MISUNDERSTAND
+
+FAIL
+
+PRIORITIZE SOMETHING ELSE.
 ```
 
-Authority and relationships matter.
+The Plan must adapt to their autonomy.
 
 ---
 
-# Other Characters May Refuse
+# 107. Cooperative Plans
 
-Delegation is not guaranteed.
+Characters may coordinate toward compatible Goals.
 
-Another character may:
+They do not need:
 
 ```text
-refuse
-
-delay
-
-negotiate
-
-misunderstand
-
-fail
-
-prioritize another Goal.
+IDENTICAL MOTIVATION.
 ```
-
-Other characters remain autonomous actors.
-
----
-
-# Plan Collision
-
-Two unrelated Plans may collide.
 
 Example:
 
 ```text
-Character A:
-Plans to use truck Monday.
-
-Character B:
-Plans to use same truck Monday.
-```
-
-This may create:
-
-```text
-negotiation
-
-conflict
-
-delay
-
-new Plan.
-```
-
----
-
-# Emergent Events
-
-Plan collisions are an important source of:
-
-```text
-EMERGENT WORLD EVENTS.
-```
-
-They may occur without:
-
-```text
-player involvement
-
-author scripting.
-```
-
----
-
-# Plan Opportunity
-
-One character's Plan may create opportunity for another.
-
-Example:
-
-```text
-Character A:
-Opens workshop.
-
-Character B:
-Needs employment.
-```
-
-Result:
-
-```text
-Character B Goal:
-Apply for workshop job.
-```
-
-This creates:
-
-```text
-SOCIAL CASCADE.
-```
-
----
-
-# Plan Consequence Propagation
-
-Character action may affect:
-
-```text
-other characters
-
-relationships
-
-resources
-
-institutions
-
-infrastructure
-
-markets
-
-population
-
-security
-
-information.
-```
-
-These consequences should propagate through:
-
-```text
-Consequence_Propagation
-```
-
-where appropriate.
-
----
-
-# Plan Success Does Not Guarantee Positive Outcome
-
-Example:
-
-Goal:
-
-```text
-Increase household income.
-```
-
-Plan:
-
-```text
-Take distant mining job.
-```
-
-Plan succeeds:
-
-```text
-Income increases.
-```
-
-Consequences:
-
-```text
-family separation
-
-relationship strain
-
-health risk.
-```
-
-Therefore:
-
-```text
-PLAN SUCCESS
-≠
-PERFECT OUTCOME.
-```
-
----
-
-# Goal Success Does Not End Causality
-
-Achieving a Goal changes state.
-
-New state produces:
-
-```text
-new needs
-
-new opportunities
-
-new risks
-
-new responsibilities.
-```
-
-Simulation continues.
-
----
-
-# Decision Boundary
-
-Goals and Plans define:
-
-```text
-WHAT THE CHARACTER
-WANTS
-
-AND
-
-HOW THEY CURRENTLY
-INTEND TO PURSUE IT.
-```
-
-The actual selection between competing actions belongs primarily to:
-
-```text
-Decision_Making.md
-```
-
----
-
-# Plan Execution Boundary
-
-This document defines Plan structure and adaptation.
-
-Detailed moment-to-moment action selection may depend on:
-
-```text
-Decision_Making
-
-Autonomy_and_Initiative
-
-Profession_and_Capability
-
-World Simulation.
-```
-
----
-
-# Goal Update Cycle
-
-Conceptually:
-
-```text
-1. Read active Motivations.
-
-2. Read existing Goals.
-
-3. Detect new opportunities.
-
-4. Detect new responsibilities.
-
-5. Detect changed World State.
-
-6. Detect changed Relationship State.
-
-7. Evaluate Goal relevance.
-
-8. Evaluate Goal feasibility.
-
-9. Evaluate Goal priority.
-
-10. Detect Goal conflicts.
-
-11. Create new Goals where justified.
-
-12. Pause or resume Goals.
-
-13. Transform Goals where required.
-
-14. Mark completed Goals.
-
-15. Mark failed or abandoned Goals.
-
-16. Pass active Goals to Planning.
-```
-
----
-
-# Plan Update Cycle
-
-Conceptually:
-
-```text
-1. Read active Goal.
-
-2. Read Character Knowledge.
-
-3. Read Character Beliefs.
-
-4. Read Character Capability.
-
-5. Read available Resources.
-
-6. Read relevant Relationships.
-
-7. Read relevant Institutions.
-
-8. Read World Conditions.
-
-9. Generate plausible options.
-
-10. Evaluate constraints.
-
-11. Select or maintain Plan.
-
-12. Determine next step.
-
-13. Execute when appropriate.
-
-14. Observe result.
-
-15. Update Plan.
-
-16. Update Goal.
-
-17. Record meaningful consequence.
-```
-
----
-
-# Update Frequency
-
-Goal and Plan updates should respect simulation resolution.
-
-Conceptually:
-
-```text
-HIGH RESOLUTION
-
-Frequent
-Event-sensitive
-Fine-grained Plans
-
-
-MEDIUM RESOLUTION
-
-Periodic
-Major decision updates
-Moderate Plan detail
-
-
-LOW RESOLUTION
-
-Compressed
-Milestone-based
-Major Goal transitions
-
-
-BACKGROUND
-
-Aggregate behavioral tendencies
-rather than individual Plans.
-```
-
----
-
-# High-Resolution Planning
-
-May include:
-
-```text
-current Plan step
-
-schedule
-
-immediate alternatives
-
-active dependencies
-
-current communication
-
-resource use
-
-short-term risk.
-```
-
----
-
-# Medium-Resolution Planning
-
-May include:
-
-```text
-major Goal
-
-broad Plan
-
-important dependencies
-
-major progress
-
-important setbacks.
-```
-
----
-
-# Low-Resolution Planning
-
-May use:
-
-```text
-trajectory
-
-milestones
-
-probabilistic resolution
-
-major world constraints
-
-major relationship constraints.
-```
-
----
-
-# Compression Example
-
-Instead of simulating:
-
-```text
-every application
-
-every conversation
-
-every commute
-```
-
-for a distant character pursuing employment:
-
-```text
-Month 1:
-Search begins.
-
-Month 2:
-Several unsuccessful applications.
-
-Month 3:
-Professional contact creates opportunity.
-
-Month 4:
-Employment obtained.
-```
-
-The causal chain remains.
-
-Routine detail is compressed.
-
----
-
-# Reconstruction
-
-When character resolution increases, current Goal and Plan State should be reconstructable from:
-
-```text
-previous state
-
-elapsed time
-
-major events
-
-Goal history
-
-Plan history
-
-world changes
-
-relationship changes
-
-life events.
-```
-
----
-
-# Reconstruction Principle
-
-Do not generate:
-
-```text
-RANDOM CURRENT GOAL
-```
-
-because the player returned.
-
-Derive:
-
-```text
-WHAT THIS PERSON
-WOULD PLAUSIBLY
-BE PURSUING NOW.
-```
-
----
-
-# AI Integration
-
-AI may assist with:
-
-```text
-generating plausible Plan options
-
-interpreting Goal conflicts
-
-natural-language expression
-
-dialogue about Plans
-
-summarizing complex Goal state.
-```
-
-AI must operate within:
-
-```text
-canonical Character State
-
-Knowledge
-
-Beliefs
-
-Capability
-
-Resources
-
-Relationships
-
-World State.
-```
-
----
-
-# AI Planning Boundary
-
-AI must not invent:
-
-```text
-resources
-
-skills
-
-relationships
-
-world facts
-
-authority
-
-knowledge
-```
-
-merely to make a Plan work.
-
----
-
-# AI Proposal Versus Canon
-
-AI may propose:
-
-```text
-Possible Plan:
-Contact regional engineer.
-```
-
-But canonical state must validate:
-
-```text
-Does character know engineer?
-
-Can they communicate?
-
-Would engineer plausibly help?
-
-Is engineer available?
-```
-
-before Plan becomes authoritative.
-
----
-
-# Narrative Integration
-
-Narrative should reveal Goals naturally.
-
-Not every character should say:
-
-```text
-"My current Goal is
-to secure stable employment."
-```
-
-Instead:
-
-```text
-"I've got an interview
-with the transport authority
-on Thursday."
-```
-
-The simulation knows the deeper Goal.
-
-The player experiences:
-
-```text
-human behavior.
-```
-
----
-
-# Hidden Goals
-
-Characters may possess Goals unknown to:
-
-```text
-player
-
-other characters
-
-public.
-```
-
-Examples:
-
-```text
-secret relocation
-
-political ambition
-
-private relationship
-
-hidden investigation
-
-planned resignation.
-```
-
----
-
-# Hidden Goal Principle
-
-A hidden Goal must not become player knowledge merely because:
-
-```text
-THE SIMULATION KNOWS IT.
-```
-
-A plausible information path remains required.
-
----
-
-# Deception
-
-Characters may intentionally misrepresent Goals.
-
-Actual Goal:
-
-```text
-Acquire company control.
-```
-
-Stated Goal:
-
-```text
-Help stabilize company.
-```
-
-Other characters respond based on:
-
-```text
-what they know
-and what they believe.
-```
-
----
-
-# Goal Visibility
-
-Conceptually:
-
-```text
-PRIVATE
-
-SHARED WITH SPECIFIC PEOPLE
-
-ORGANIZATIONAL
-
-PUBLIC
-
-SECRET
-
-UNKNOWN
-```
-
----
-
-# Plan Visibility
-
-Plans may have separate visibility.
-
-Example:
-
-```text
-Goal:
-Win election
-
-PUBLIC.
-```
-
-Plan:
-
-```text
-Secret coalition negotiation
-
-PRIVATE.
-```
-
----
-
-# Goal Explainability
-
-For every major Goal, the system should ideally answer:
-
-```text
-WHY DOES THIS GOAL EXIST?
-
-WHICH MOTIVATION CREATED IT?
-
-WHAT DOES SUCCESS LOOK LIKE?
-
-HOW IMPORTANT IS IT?
-
-HOW URGENT IS IT?
-
-HOW COMMITTED IS THE CHARACTER?
-
-WHAT CONFLICTS WITH IT?
-
-WHAT DEPENDS ON IT?
-
-WHAT WOULD CAUSE ABANDONMENT?
-
-WHAT WOULD CAUSE TRANSFORMATION?
-```
-
----
-
-# Plan Explainability
-
-For every major Plan:
-
-```text
-WHY THIS PLAN?
-
-WHAT DOES THE CHARACTER KNOW?
-
-WHAT DO THEY BELIEVE?
-
-WHAT RESOURCES DO THEY HAVE?
-
-WHAT CAPABILITY DO THEY HAVE?
-
-WHO CAN HELP?
-
-WHAT ARE THE RISKS?
-
-WHAT IS THE NEXT STEP?
-
-WHAT COULD BLOCK IT?
-
-WHAT HAPPENS IF IT FAILS?
-```
-
----
-
-# Goal Consistency Rules
-
-## Rule 1
-
-Every major Goal should have a causal origin.
-
----
-
-## Rule 2
-
-Goals belong to characters, not to the player.
-
----
-
-## Rule 3
-
-Goal does not equal Mission.
-
----
-
-## Rule 4
-
-Goals should generally describe desired states rather than arbitrary task lists.
-
----
-
-## Rule 5
-
-Characters may have multiple Goals.
-
----
-
-## Rule 6
-
-Goals may conflict.
-
----
-
-## Rule 7
-
-Goal priority is dynamic.
-
----
-
-## Rule 8
-
-Goal importance and urgency are separate.
-
----
-
-## Rule 9
-
-Goal commitment may vary.
-
----
-
-## Rule 10
-
-Not every motivation becomes an explicit Goal.
-
----
-
-## Rule 11
-
-Goals may be preventative.
-
----
-
-## Rule 12
-
-Goals may preserve existing conditions.
-
----
-
-## Rule 13
-
-Goals may arise from positive opportunity.
-
----
-
-## Rule 14
-
-Goals may be based on false beliefs.
-
----
-
-## Rule 15
-
-Goals may persist after Plan failure.
-
----
-
-## Rule 16
-
-Goals may be abandoned.
-
----
-
-## Rule 17
-
-Goals may transform.
-
----
-
-## Rule 18
-
-Goals may be achieved without player involvement.
-
----
-
-## Rule 19
-
-Player absence does not pause Goals.
-
----
-
-## Rule 20
-
-Goal completion may create new Goals.
-
----
-
-# Plan Consistency Rules
-
-## Rule 21
-
-Plans belong to Goals.
-
----
-
-## Rule 22
-
-Plan does not equal Goal.
-
----
-
-## Rule 23
-
-Plan failure does not automatically mean Goal failure.
-
----
-
-## Rule 24
-
-Plans must use Character Knowledge rather than omniscient World Truth.
-
----
-
-## Rule 25
-
-Plans may be based on incorrect beliefs.
-
----
-
-## Rule 26
-
-Plans should respect perceived capability.
-
----
-
-## Rule 27
-
-Plans should respect resources.
-
----
-
-## Rule 28
-
-Plans should respect location and travel.
-
----
-
-## Rule 29
-
-Plans should respect time.
-
----
-
-## Rule 30
-
-Plans should respect relationships.
-
----
-
-## Rule 31
-
-Plans should respect values.
-
----
-
-## Rule 32
-
-Plans should respect institutional constraints.
-
----
-
-## Rule 33
-
-Plans may contain fallback options.
-
----
-
-## Rule 34
-
-Plans may adapt.
-
----
-
-## Rule 35
-
-Plans may be abandoned.
-
----
-
-## Rule 36
-
-Plans may collide with other Plans.
-
----
-
-## Rule 37
-
-Other characters remain autonomous participants.
-
----
-
-## Rule 38
-
-Other characters may refuse cooperation.
-
----
-
-## Rule 39
-
-Characters may delegate.
-
----
-
-## Rule 40
-
-Characters should solve routine problems without the player.
-
----
-
-## Rule 41
-
-Player should not be the default helper.
-
----
-
-## Rule 42
-
-A character request does not automatically become a Mission.
-
----
-
-## Rule 43
-
-Plan success may create negative consequences.
-
----
-
-## Rule 44
-
-Plan failure may create useful adaptation.
-
----
-
-## Rule 45
-
-Meaningful Plan history should remain traceable.
-
----
-
-## Rule 46
-
-Simulation resolution determines planning detail.
-
----
-
-## Rule 47
-
-Compressed planning must preserve causal continuity.
-
----
-
-## Rule 48
-
-AI-generated Plans must be validated against Canon state.
-
----
-
-## Rule 49
-
-Hidden Plans remain hidden without information paths.
-
----
-
-## Rule 50
-
-Characters should already have Goals and Plans before the player arrives.
-
----
-
-# Anti-Quest-Giver Principle
-
-Never model:
-
-```text
-CHARACTER HAS PROBLEM
-      ↓
-CHARACTER WAITS
-      ↓
-PLAYER ARRIVES
-      ↓
-QUEST CREATED.
-```
-
-Instead:
-
-```text
-CHARACTER HAS PROBLEM
-      ↓
-MOTIVATION
-      ↓
-GOAL
-      ↓
-PLAN
-      ↓
-CHARACTER ACTS
-      ↓
-WORLD RESPONDS
-      ↓
-PLAN CHANGES
-```
-
-The player may intersect this chain at any point.
-
----
-
-# Anti-Waiting Principle
-
-Characters should not remain:
-
-```text
-standing beside broken tractor
-for six months
-waiting for player.
-```
-
-They should:
-
-```text
-attempt repair
-
-seek parts
-
-ask mechanic
-
-borrow equipment
-
-sell tractor
-
-replace tractor
-
-change work method
-
-fail and suffer consequences.
-```
-
----
-
-# Anti-Perfect-Planning Principle
-
-Characters must not behave like:
-
-```text
-OMNISCIENT OPTIMIZATION AGENTS.
-```
-
-Their Plans are shaped by:
-
-```text
-limited knowledge
-
-beliefs
-
-personality
-
-habit
-
-emotion
-
-relationships
-
-experience.
-```
-
----
-
-# Anti-Infinite-Goal Principle
-
-Characters should not accumulate endless active Goals.
-
-Goals must:
-
-```text
-complete
-
-pause
-
-fail
-
-transform
-
-be abandoned
-
-lose priority.
-```
-
----
-
-# Anti-Player-Centric Goal Principle
-
-Do not create Goals such as:
-
-```text
-Find Player
-
-Ask Player
-
-Wait for Player
-```
-
-unless character state provides a specific causal reason.
-
----
-
-# Anti-Drama Principle
-
-Do not force Plan failure because:
-
-```text
-THE PLAYER NEEDS CONTENT.
-```
-
-If a character can plausibly solve the problem:
-
-```text
-LET THEM SOLVE IT.
-```
-
----
-
-# Anti-Success Principle
-
-Likewise, do not guarantee success because:
-
-```text
-THE CHARACTER IS IMPORTANT.
-```
-
-Important characters may:
-
-```text
-fail
-
-lose
-
-misjudge
-
-change direction.
-```
-
----
-
-# Validation Questions
-
-For any major Goal, ask:
-
-```text
-What created this Goal?
-
-What motivation supports it?
-
-What does success look like?
-
-Does the character actually care enough?
-
-Is the Goal active or merely desired?
-
-How urgent is it?
-
-How important is it?
-
-What conflicts with it?
-
-Is it feasible?
-
-What would make it impossible?
-
-Could it transform?
-
-Could it be abandoned?
-
-Could it succeed without the player?
-```
-
----
-
-# Plan Validation Questions
-
-For any major Plan, ask:
-
-```text
-Why did the character choose this approach?
-
-Do they know enough to consider it?
-
-Do they believe it can work?
-
-Do they have the required capability?
-
-Do they have the resources?
-
-Who else is involved?
-
-Can those people refuse?
-
-What World State affects it?
-
-What risks exist?
-
-What is the next step?
-
-What blocks the Plan?
-
-What fallback exists?
-
-What happens if it fails?
-
-Would the character adapt?
-```
-
----
-
-# Example: Fuel Crisis
-
-Character:
-
-```text
-Profession:
-Farmer
-
-Motivation:
-Protect harvest and family income.
-```
-
-Goal:
-
-```text
-Complete harvest before crop loss.
-```
-
-Possible Plans:
-
-```text
-PLAN A:
-Acquire additional fuel.
-
-PLAN B:
-Share equipment with neighboring farm.
-
-PLAN C:
-Hire harvesting contractor.
-
-PLAN D:
-Harvest only highest-value fields.
-```
-
-Initial Plan:
-
-```text
-Acquire fuel.
-```
-
-Result:
-
-```text
-Supplier unavailable.
-```
-
-Plan status:
-
-```text
-FAILED.
-```
-
-Goal status:
-
-```text
-ACTIVE.
-```
-
-Character reevaluates:
-
-```text
-PLAN B:
-Share equipment.
-```
-
-Player involvement:
-
-```text
-NONE.
-```
-
----
-
-# Example: Information Fog
-
-Character:
-
-```text
-Goal:
-Reach daughter in neighboring settlement.
-```
-
-Belief:
-
-```text
-Northern bridge operational.
-```
-
-Plan:
-
-```text
-Travel north.
-```
-
-World Truth:
-
-```text
-Bridge destroyed.
-```
-
-Character reaches bridge.
-
-Result:
-
-```text
-Plan blocked.
-```
-
-New knowledge:
-
-```text
-Bridge unusable.
-```
-
-Goal remains:
-
-```text
-ACTIVE.
-```
-
-New Plan:
-
-```text
-Seek western crossing.
-```
-
----
-
-# Example: Conflicting Relationships
-
-Character:
-
-```text
-Goal A:
-Protect friend.
-
-Goal B:
-Protect hospital resources.
-
-Goal C:
-Preserve professional integrity.
-```
-
-Friend is suspected of:
-
-```text
-stealing medicine.
-```
-
-Possible Plans:
-
-```text
-confront friend privately
-
-report immediately
-
-investigate first
-
-hide evidence
-
-ask trusted colleague.
-```
-
-The Goals conflict.
-
-Decision Making must resolve:
-
-```text
-WHICH ACTION
-THE CHARACTER CHOOSES.
-```
-
----
-
-# Example: Long Absence
-
-Character in 2045:
-
-```text
-Motivation:
-Become professionally independent.
-
-Goal:
-Open workshop.
-
-Plan:
-Save startup money.
-```
-
-Player leaves.
-
-Simulation continues:
-
-```text
-2046:
-Savings insufficient.
-
-2047:
-Character finds partner.
-
-2048:
-Workshop opens.
-
-2050:
-Business struggles.
-
-2051:
-New transport route increases demand.
-
-2053:
-Workshop expands.
-
-2055:
-Character employs six people.
-```
-
-Player returns.
-
-Current Goal:
-
-```text
-Establish second workshop.
-```
-
-The original Goal is:
-
-```text
-HISTORY.
-```
-
-The character lived.
-
----
-
-# Example: Multi-Character Cascade
-
-Character A:
-
-```text
-Goal:
-Expand grain production.
-```
-
-Plan:
-
-```text
-Purchase irrigation equipment.
-```
-
-Character B:
-
-```text
-Goal:
-Grow mechanical business.
-```
-
-Plan:
-
-```text
-Begin agricultural equipment repair.
-```
-
-Character C:
-
-```text
-Goal:
-Increase regional trade.
-```
-
-Plan:
-
-```text
-Improve transport contracts.
-```
-
-Combined result:
-
-```text
-higher agricultural output
-
-new employment
-
-higher transport demand
-
-regional economic growth.
-```
-
-No authored Mission was required.
-
----
-
-# Example: Opportunity Without Crisis
-
-Character:
-
-```text
-Profession:
-Teacher
-
-Life:
-Stable
-
-Needs:
-Mostly satisfied.
-```
-
-Opportunity:
-
-```text
-New university program opens.
-```
-
-Motivation:
-
-```text
-Curiosity
-+
-professional development.
-```
-
-Goal:
-
-```text
-Study regional history.
-```
-
-Plan:
-
-```text
-Apply for part-time program.
-```
-
-This may eventually produce:
-
-```text
-new knowledge
-
-new relationships
-
-career change
-
-research
-
-world discovery.
-```
-
-Living simulation must include:
-
-```text
-ASPIRATION
-```
-
-as well as:
-
-```text
-SURVIVAL.
-```
-
----
-
-# Example: Shared Goal, Different Motives
-
-Regional bridge damaged.
-
-Engineer:
-
-```text
-Goal:
-Restore bridge.
-
-Motivation:
-Professional duty.
-```
-
-Trader:
-
-```text
-Goal:
-Restore bridge.
-
-Motivation:
-Restore commerce.
-```
-
-Mayor:
-
-```text
-Goal:
-Restore bridge.
-
-Motivation:
-Maintain public confidence.
-```
-
-Resident:
-
-```text
-Goal:
-Restore bridge.
-
-Motivation:
-Reach family.
+ENGINEER:
+Restore bridge
+because of duty
+
+TRADER:
+Restore bridge
+because of commerce
+
+RESIDENT:
+Restore bridge
+to reach family.
 ```
 
 Shared Goal:
@@ -6170,187 +2631,1743 @@ Shared Motivation:
 NO.
 ```
 
-This distinction is essential for believable cooperation.
+---
+
+# 108. Conflicting Plans
+
+Characters may pursue incompatible Plans.
+
+Example:
+
+```text
+CHARACTER A
+
+GOAL:
+Preserve forest
+
+PLAN:
+Block logging
+```
+
+and:
+
+```text
+CHARACTER B
+
+GOAL:
+Maintain employment
+
+PLAN:
+Expand logging.
+```
+
+Conflict emerges naturally.
+
+No:
+
+```text
+EVIL FLAG
+```
+
+is required.
 
 ---
 
-# Example: Successful Plan, Negative Consequence
+# 109. Goal Alignment
 
-Character:
-
-```text
-Goal:
-Increase family income.
-
-Plan:
-Take distant high-paying job.
-```
-
-Plan:
+Compatible Goals may create:
 
 ```text
-SUCCESS.
+COOPERATION
+
+BUSINESS
+
+ALLIANCES
+
+PROJECTS
+
+ORGANIZATIONS.
 ```
 
-Goal:
+The resulting collective structures belong to:
 
 ```text
-ACHIEVED.
+SOCIETY
+OR
+FACTIONS
 ```
 
-Consequences:
-
-```text
-Income:
-IMPROVED
-
-Family Contact:
-REDUCED
-
-Partner Relationship:
-STRAINED
-
-Health:
-WORSENING
-```
-
-New Goals may emerge.
-
-Success did not:
-
-```text
-END THE STORY.
-```
+when they become persistent at that level.
 
 ---
 
-# Foundational Formula
+# 110. Individual Goals Do Not Own Society
+
+Goals may contribute to:
+
+```text
+TRADE
+
+MIGRATION
+
+INSTITUTIONS
+
+ORGANIZATIONS
+
+POLITICS.
+```
+
+But Goals and Plans does not own:
+
+```text
+AGGREGATED
+SOCIAL STATE.
+```
+
+That belongs to Society and World Simulation.
+
+---
+
+# 111. Plans Affect the World
 
 Conceptually:
 
 ```text
-NEED
-+
-MOTIVATION
-+
-OPPORTUNITY
-+
-RESPONSIBILITY
-      ↓
 GOAL
-      ↓
-KNOWLEDGE
-+
-BELIEFS
-+
-CAPABILITY
-+
-RESOURCES
-+
-RELATIONSHIPS
-+
-WORLD STATE
-      ↓
-POSSIBLE PLANS
-      ↓
-DECISION
-      ↓
+↓
 PLAN
-      ↓
+↓
+DECISION
+↓
 ACTION
-      ↓
-CONSEQUENCE
-      ↓
-GOAL / PLAN UPDATE
+↓
+WORLD CONSEQUENCE.
+```
+
+Plans themselves do not alter World Truth.
+
+Actions do.
+
+---
+
+# 112. Goal and World Feedback
+
+```text
+WORLD CONDITION
+↓
+GOAL
+↓
+PLAN
+↓
+ACTION
+↓
+WORLD CHANGE
+↓
+NEW INFORMATION
+AND CONDITIONS
+↓
+GOAL / PLAN
+REEVALUATION.
+```
+
+This loop is central to living simulation.
+
+---
+
+# 113. Plan Success Is Not Perfect Outcome
+
+Example:
+
+```text
+GOAL:
+Increase household income
+
+PLAN:
+Take distant mining job
+
+PLAN RESULT:
+Success
+
+INCOME:
+Improved
+
+RELATIONSHIP:
+Strained
+
+HEALTH:
+Worsened.
+```
+
+Therefore:
+
+```text
+PLAN SUCCESS
+≠
+PERFECT RESULT.
 ```
 
 ---
 
-# Character Agency Principle
+# 114. Goal Success Is Not Perfect Life
 
-The purpose of Goals and Plans is to ensure that characters are not:
+Achieving one desired state may worsen another.
+
+This is normal.
+
+Goals are not:
+
+```text
+GLOBAL HAPPINESS
+FUNCTIONS.
+```
+
+---
+
+# 115. Decision Boundary
+
+Goals and Plans defines:
+
+```text
+WHAT IS WANTED
+
+AND
+
+WHAT APPROACH
+IS CURRENTLY INTENDED.
+```
+
+Decision Making owns:
+
+```text
+WHICH OPTION
+IS CHOSEN
+IN A CURRENT
+DECISION CONTEXT.
+```
+
+---
+
+# 116. Autonomy Boundary
+
+Goals and Plans does not decide:
+
+```text
+WHEN ACTION
+SHOULD BEGIN.
+```
+
+Autonomy / Initiative owns:
+
+```text
+WHEN CURRENT STATE
+BECOMES
+BEHAVIORALLY RELEVANT.
+```
+
+---
+
+# 117. Action Boundary
+
+A Plan may specify:
+
+```text
+WHAT IS INTENDED.
+```
+
+Actual Action represents:
+
+```text
+WHAT THE CHARACTER
+ATTEMPTS.
+```
+
+The two may differ because of:
+
+```text
+INTERRUPTION
+
+LAST-MOMENT DECISION
+
+FAILED ACCESS
+
+NEW INFORMATION
+
+WORLD EVENT.
+```
+
+---
+
+# 118. Memory Boundary
+
+Goals and Plans may preserve:
+
+```text
+GOAL HISTORY
+
+PLAN HISTORY
+```
+
+as structural continuity.
+
+But experiential Memory belongs to:
+
+```text
+MEMORY.
+```
+
+Do not duplicate:
+
+```text
+HOW THE CHARACTER
+REMEMBERS
+THE EXPERIENCE.
+```
+
+---
+
+# 119. Life Boundary
+
+Life Events may:
+
+```text
+CREATE
+
+DESTROY
+
+TRANSFORM
+
+PAUSE
+
+COMPLETE
+```
+
+Goals.
+
+But Life owns:
+
+```text
+BIOGRAPHICAL HISTORY.
+```
+
+Goals and Plans owns the Character's intentional future direction.
+
+---
+
+# 120. Progression Boundary
+
+Pursuing Goals may create:
+
+```text
+PRACTICE
+
+EXPERIENCE
+
+RESPONSIBILITY
+
+FAILURE
+
+SUCCESS.
+```
+
+Progression determines:
+
+```text
+WHAT LONG-TERM
+DEVELOPMENT OCCURS.
+```
+
+Goals and Plans does not award:
+
+```text
+SKILL INCREASE
+
+ATTRIBUTE INCREASE
+
+LEVELS.
+```
+
+---
+
+# 121. Relationship Boundary
+
+Relationships may:
+
+```text
+CREATE GOALS
+
+CONSTRAIN PLANS
+
+ENABLE PLANS
+
+CREATE OBLIGATION
+
+CREATE CONFLICT.
+```
+
+But Goals and Plans does not own:
+
+```text
+RELATIONSHIP STATE.
+```
+
+---
+
+# 122. Hidden Goals
+
+Characters may possess Goals unknown to:
+
+```text
+PLAYER
+
+OTHER CHARACTERS
+
+PUBLIC
+
+FACTIONS.
+```
+
+Examples:
+
+```text
+SECRET RESIGNATION
+
+PRIVATE INVESTIGATION
+
+POLITICAL AMBITION
+
+SECRET RELOCATION.
+```
+
+---
+
+# 123. Hidden Plan
+
+Goal visibility and Plan visibility may differ.
+
+Example:
+
+```text
+GOAL:
+Win election
+
+VISIBILITY:
+Public
+
+PLAN:
+Secret coalition negotiation
+
+VISIBILITY:
+Private.
+```
+
+---
+
+# 124. Information Boundary
+
+A hidden Goal does not become known because:
+
+```text
+THE SIMULATION
+KNOWS IT.
+```
+
+Knowledge requires:
+
+```text
+INFORMATION PATH.
+```
+
+---
+
+# 125. Misrepresented Goals
+
+A Character may intentionally state one Goal while pursuing another.
+
+Example:
+
+```text
+ACTUAL GOAL:
+Gain company control
+
+STATED GOAL:
+Stabilize company.
+```
+
+Other Characters respond based on:
+
+```text
+WHAT THEY
+KNOW OR BELIEVE.
+```
+
+---
+
+# 126. Player Independence
+
+Goals do not pause when:
+
+```text
+THE PLAYER LEAVES.
+```
+
+During player absence, Goals may:
+
+```text
+PROGRESS
+
+PAUSE
+
+FAIL
+
+TRANSFORM
+
+SUCCEED
+
+BE ABANDONED
+
+BE REPLACED.
+```
+
+The mechanisms for autonomous continuation belong across:
+
+```text
+AUTONOMY
+
+DECISION MAKING
+
+WORLD SIMULATION
+
+LIFE.
+```
+
+---
+
+# 127. Goal Persistence Off-Screen
+
+The core rule remains:
+
+```text
+PLAYER ABSENCE
+DOES NOT CREATE
+GOAL SUSPENSION.
+```
+
+---
+
+# 128. Simulation Resolution
+
+Goals and Plans may be represented at different detail levels.
+
+```text
+HIGH RESOLUTION
+=
+DETAILED GOAL,
+PLAN,
+STEP,
+DEPENDENCY STATE
+
+MEDIUM RESOLUTION
+=
+MAJOR GOAL
+AND BROAD PLAN
+
+LOW RESOLUTION
+=
+GOAL TRAJECTORY
+AND MAJOR MILESTONES.
+```
+
+---
+
+# 129. Low Resolution Does Not Remove Goals
+
+Low resolution means:
+
+```text
+LESS DETAIL.
+```
+
+Not:
+
+```text
+NO INTENTION
+
+NO AGENCY
+
+NO LIFE.
+```
+
+---
+
+# 130. Background Compression
+
+Instead of simulating:
+
+```text
+EVERY APPLICATION
+
+EVERY CALL
+
+EVERY COMMUTE
+```
+
+a distant employment Goal may resolve as:
+
+```text
+MONTH 1:
+Search begins
+
+MONTH 2:
+Several failures
+
+MONTH 3:
+Professional contact
+creates opportunity
+
+MONTH 4:
+Employment obtained.
+```
+
+Causal continuity remains.
+
+---
+
+# 131. Reconstruction
+
+When simulation resolution increases, current Goal and Plan state should derive from:
+
+```text
+PRIOR GOALS
+
+PRIOR PLANS
+
+ELAPSED TIME
+
+LIFE EVENTS
+
+WORLD CHANGES
+
+RELATIONSHIP CHANGES
+
+KNOWN INFORMATION
+
+MAJOR OUTCOMES.
+```
+
+Never create:
+
+```text
+RANDOM CURRENT GOAL
+BECAUSE PLAYER RETURNED.
+```
+
+---
+
+# 132. AI Integration
+
+AI may assist with:
+
+```text
+PROPOSING PLAUSIBLE GOALS
+
+PROPOSING PLAN OPTIONS
+
+IDENTIFYING GOAL CONFLICT
+
+SUMMARIZING GOAL STATE
+
+EXPRESSING INTENT
+IN NATURAL LANGUAGE.
+```
+
+But AI must operate within:
+
+```text
+AUTHORITATIVE STATE.
+```
+
+---
+
+# 133. AI Goal Boundary
+
+AI must not invent:
+
+```text
+MOTIVATION
+
+RELATIONSHIP
+
+MEMORY
+
+RESOURCE
+
+EXPERTISE
+
+BELIEF
+
+WORLD FACT
+```
+
+solely to justify an interesting Goal.
+
+---
+
+# 134. AI Plan Boundary
+
+AI may propose:
+
+```text
+CONTACT REGIONAL ENGINEER.
+```
+
+But Canon must support questions such as:
+
+```text
+DOES THE CHARACTER
+KNOW ONE?
+
+CAN THEY
+CONTACT THEM?
+
+WOULD CONTACT
+BE PLAUSIBLE?
+
+IS THE ENGINEER
+AVAILABLE?
+```
+
+before the Plan becomes authoritative.
+
+---
+
+# 135. AI Is Not Story Director
+
+AI should not ask:
+
+```text
+WHAT GOAL
+WOULD CREATE
+THE BEST MISSION?
+```
+
+It should ask:
+
+```text
+WHAT FUTURE STATE
+WOULD THIS PERSON
+PLAUSIBLY CARE ABOUT?
+```
+
+---
+
+# 136. Narrative Boundary
+
+Narrative may reveal Goals naturally.
+
+The simulation may know:
+
+```text
+GOAL:
+Secure stable employment.
+```
+
+The player may simply hear:
+
+```text
+"I've got an interview
+with the transport authority
+on Thursday."
+```
+
+The player experiences:
+
+```text
+HUMAN BEHAVIOR.
+```
+
+Not system labels.
+
+---
+
+# 137. Living Campaign Boundary
+
+Goals and Plans may produce:
+
+```text
+CONFLICTS
+
+BLOCKED PLANS
+
+OPPORTUNITIES
+
+REQUESTS
+
+SURPRISING SUCCESSES
+
+FAILURES.
+```
+
+Living Campaign may determine:
+
+```text
+CAMPAIGN RELEVANCE.
+```
+
+Goals and Plans does not.
+
+---
+
+# 138. Goal Explainability
+
+For a significant Goal, the system should be able to answer:
+
+```text
+WHY DOES
+THIS GOAL EXIST?
+
+WHAT FUTURE STATE
+IS DESIRED?
+
+WHAT CREATED IT?
+
+HOW IMPORTANT IS IT?
+
+HOW URGENT IS IT?
+
+HOW COMMITTED
+IS THE CHARACTER?
+
+WHAT CONFLICTS
+WITH IT?
+
+WHAT WOULD
+COMPLETE IT?
+
+WHAT WOULD
+TRANSFORM IT?
+
+WHAT WOULD
+CAUSE ABANDONMENT?
+```
+
+---
+
+# 139. Plan Explainability
+
+For a significant Plan:
+
+```text
+WHY THIS APPROACH?
+
+WHAT DOES
+THE CHARACTER KNOW?
+
+WHAT DO THEY BELIEVE?
+
+WHAT RESOURCES
+DO THEY THINK
+ARE AVAILABLE?
+
+WHAT CAPABILITY
+DO THEY THINK
+EXISTS?
+
+WHO IS INVOLVED?
+
+WHAT DEPENDENCIES
+EXIST?
+
+WHAT COULD BLOCK IT?
+
+WHAT HAPPENS
+IF IT FAILS?
+```
+
+---
+
+# 140. Goal Invariants
+
+## GOAL-INV-001 — Goals Belong to Characters
+
+Goals are not player tasks.
+
+## GOAL-INV-002 — Goal Does Not Equal Mission
+
+Player relevance is external.
+
+## GOAL-INV-003 — Significant Goals Require Causal Origin
+
+Goals must emerge from plausible Character context.
+
+## GOAL-INV-004 — Goals Describe Desired States
+
+They should not default to task lists.
+
+## GOAL-INV-005 — Not Every Motivation Creates a Goal
+
+Latent concern is valid.
+
+## GOAL-INV-006 — Characters May Hold Multiple Goals
+
+Human lives contain competing intentions.
+
+## GOAL-INV-007 — Goals May Conflict
+
+Conflict should not be optimized away automatically.
+
+## GOAL-INV-008 — Importance, Urgency, Priority and Commitment Are Distinct
+
+Do not collapse them into one score.
+
+## GOAL-INV-009 — Goals May Persist After Plan Failure
+
+Method failure does not automatically destroy intent.
+
+## GOAL-INV-010 — Goals May Be Abandoned
+
+Not every Goal should complete.
+
+## GOAL-INV-011 — Goals May Transform
+
+Causal continuity should survive changing formulation.
+
+## GOAL-INV-012 — Goals May Be Based on False Beliefs
+
+Behavior follows perceived reality.
+
+## GOAL-INV-013 — Goals May Be Positive
+
+Character simulation is not crisis management only.
+
+## GOAL-INV-014 — Goals May Be Preventative or Maintenance-Oriented
+
+Not all Goals seek novelty.
+
+## GOAL-INV-015 — Player Absence Does Not Pause Goals
+
+Characters continue living.
+
+## GOAL-INV-016 — Goal Success Does Not End Causality
+
+Success creates new state.
+
+---
+
+# 141. Plan Invariants
+
+## PLAN-INV-001 — Plans Serve Goals
+
+Plans describe current intended methods.
+
+## PLAN-INV-002 — Plan Does Not Equal Goal
+
+The method may change while the desired state remains.
+
+## PLAN-INV-003 — Plan Failure Does Not Equal Goal Failure
+
+Alternative Plans may emerge.
+
+## PLAN-INV-004 — Plans Use Character Knowledge
+
+Not omniscient World Truth.
+
+## PLAN-INV-005 — Plans May Be Based on False Beliefs
+
+Information fog is canonical.
+
+## PLAN-INV-006 — Plans Respect Perceived Capability
+
+Actual capability is resolved elsewhere.
+
+## PLAN-INV-007 — Plans Respect Known Resources and Constraints
+
+They cannot rely on invented assets.
+
+## PLAN-INV-008 — Other Actors Remain Autonomous
+
+Cooperation cannot be assumed.
+
+## PLAN-INV-009 — Plans May Adapt
+
+Changed conditions may create changed methods.
+
+## PLAN-INV-010 — Plans May Be Abandoned
+
+Persistence is not mandatory.
+
+## PLAN-INV-011 — Plans May Be Conditional
+
+Characters can anticipate alternatives.
+
+## PLAN-INV-012 — Planning Depth Is Contextual
+
+Not every Goal requires detailed planning.
+
+## PLAN-INV-013 — Plan Success Does Not Guarantee Good Consequences
+
+World outcomes may create tradeoffs.
+
+## PLAN-INV-014 — Low Resolution Preserves Causality
+
+Compression must not erase intentional continuity.
+
+## PLAN-INV-015 — AI Plans Require State Validation
+
+AI suggestion does not equal Canon.
+
+---
+
+# 142. Development Locks
+
+Future Goals and Plans development must not introduce:
+
+```text
+QUEST-GIVER GOALS
+
+PLAYER-CENTRIC GOAL CREATION
+
+PLAYER-ABSENCE GOAL FREEZE
+
+UNLIMITED ACTIVE GOALS
+
+UNIVERSAL GOAL SCORE
+
+UNIVERSAL PROGRESS PERCENTAGE
+
+PERFECT PLANNING
+
+OMNISCIENT PLANS
+
+GUARANTEED COOPERATION
+
+AUTOMATIC DELEGATION SUCCESS
+
+AUTOMATIC GOAL COMPLETION
+
+AUTOMATIC PLAN SUCCESS
+
+PLAN FAILURE
+EQUALS GOAL FAILURE
+
+GOAL FAILURE
+EQUALS CHARACTER FAILURE
+
+STORY-FIRST GOAL CREATION
+
+AI-INVENTED RESOURCES
+
+AI-INVENTED RELATIONSHIPS
+
+AI-INVENTED KNOWLEDGE
+
+HIGH RESOLUTION
+EQUALS MORE AGENCY
+
+LOW RESOLUTION
+EQUALS LESS REALITY.
+```
+
+---
+
+# 143. Anti-Quest-Giver Principle
+
+Never default to:
+
+```text
+CHARACTER HAS PROBLEM
+↓
+CHARACTER WAITS
+↓
+PLAYER ARRIVES
+↓
+QUEST CREATED.
+```
+
+Instead:
+
+```text
+CHARACTER HAS
+A LIFE
+↓
+MOTIVATION EXISTS
+↓
+GOAL EXISTS
+↓
+PLAN EXISTS
+↓
+CHARACTER PURSUES IT
+↓
+WORLD RESPONDS.
+```
+
+The player may intersect at any point.
+
+---
+
+# 144. Anti-Waiting Principle
+
+A Character with:
+
+```text
+BROKEN TRACTOR
+```
+
+should not remain beside it for six months waiting for the player.
+
+They may:
+
+```text
+REPAIR IT
+
+SEEK PARTS
+
+ASK MECHANIC
+
+BORROW EQUIPMENT
+
+REPLACE IT
+
+CHANGE WORK METHOD
+
+FAIL
+
+ACCEPT CONSEQUENCE.
+```
+
+Exact action selection belongs to Decision Making and Autonomy.
+
+---
+
+# 145. Anti-Perfect-Planning Principle
+
+Characters must not behave like:
+
+```text
+OMNISCIENT
+OPTIMIZATION AGENTS.
+```
+
+Their Plans are limited by:
+
+```text
+KNOWLEDGE
+
+BELIEF
+
+EXPERIENCE
+
+EXPERTISE
+
+RELATIONSHIPS
+
+PSYCHOLOGY
+
+TIME
+
+RESOURCES.
+```
+
+---
+
+# 146. Anti-Infinite-Goal Principle
+
+Goals must be capable of:
+
+```text
+PAUSING
+
+COMPLETING
+
+FAILING
+
+TRANSFORMING
+
+BEING ABANDONED
+
+LOSING PRIORITY.
+```
+
+The Character should not accumulate:
+
+```text
+ENDLESS ACTIVE
+INTENTIONAL STATE.
+```
+
+---
+
+# 147. Anti-Drama Principle
+
+Do not force:
+
+```text
+PLAN FAILURE
+```
+
+because:
+
+```text
+PLAYER NEEDS CONTENT.
+```
+
+If the Character can plausibly succeed:
+
+```text
+LET SUCCESS
+BE POSSIBLE.
+```
+
+Likewise, do not guarantee success because the Character is narratively important.
+
+---
+
+# 148. Validation — Goal
+
+For a major Goal, ask:
+
+```text
+WHAT CREATED IT?
+
+WHAT DOES
+THE CHARACTER WANT?
+
+WHY DO THEY CARE?
+
+WHAT DOES SUCCESS
+LOOK LIKE?
+
+IS IT ACTIVE,
+LATENT,
+OR PAUSED?
+
+HOW IMPORTANT IS IT?
+
+HOW URGENT IS IT?
+
+HOW COMMITTED
+ARE THEY?
+
+WHAT CONFLICTS
+WITH IT?
+
+WHAT DEPENDS
+ON IT?
+
+WHAT WOULD
+MAKE IT IMPOSSIBLE?
+
+WHAT WOULD
+TRANSFORM IT?
+
+WHAT WOULD
+CAUSE ABANDONMENT?
+
+COULD IT SUCCEED
+WITHOUT THE PLAYER?
+```
+
+---
+
+# 149. Validation — Plan
+
+For a major Plan, ask:
+
+```text
+WHY THIS METHOD?
+
+WHAT DOES
+THE CHARACTER KNOW?
+
+WHAT DO THEY BELIEVE?
+
+WHAT DO THEY
+THINK THEY CAN DO?
+
+WHAT RESOURCES
+ARE KNOWN?
+
+WHO ELSE
+IS REQUIRED?
+
+CAN THOSE ACTORS
+REFUSE?
+
+WHAT DEPENDENCIES
+EXIST?
+
+WHAT WORLD CONDITIONS
+MATTER?
+
+WHAT COULD BLOCK IT?
+
+WHAT FALLBACK EXISTS?
+
+WHAT HAPPENS
+IF IT FAILS?
+
+WOULD THE CHARACTER
+PLAUSIBLY ADAPT?
+```
+
+---
+
+# 150. Example — Fuel Crisis
+
+Character:
+
+```text
+PROFESSION:
+Farmer
+
+MOTIVATION:
+Protect harvest
+and household income.
+```
+
+Goal:
+
+```text
+Complete harvest
+before crop loss.
+```
+
+Potential Plans:
+
+```text
+Acquire fuel
+
+Share equipment
+
+Hire contractor
+
+Harvest only
+highest-value fields.
+```
+
+Initial Plan:
+
+```text
+Acquire fuel.
+```
+
+World outcome:
+
+```text
+Supplier unavailable.
+```
+
+Plan:
+
+```text
+FAILED.
+```
+
+Goal:
+
+```text
+ACTIVE.
+```
+
+New Plan may emerge.
+
+Player involvement:
+
+```text
+NONE REQUIRED.
+```
+
+---
+
+# 151. Example — Information Fog
+
+Goal:
+
+```text
+Reach daughter
+in neighboring settlement.
+```
+
+Belief:
+
+```text
+Northern bridge
+is operational.
+```
+
+Plan:
+
+```text
+Travel north.
+```
+
+World Truth:
+
+```text
+Bridge destroyed.
+```
+
+When Character discovers this:
+
+```text
+PLAN:
+BLOCKED
+
+GOAL:
+ACTIVE.
+```
+
+Possible new Plan:
+
+```text
+Seek western crossing.
+```
+
+---
+
+# 152. Example — Shared Goal
+
+Damaged regional bridge.
+
+Engineer:
+
+```text
+GOAL:
+Restore bridge
+
+MOTIVATION:
+Professional duty.
+```
+
+Trader:
+
+```text
+GOAL:
+Restore bridge
+
+MOTIVATION:
+Restore commerce.
+```
+
+Resident:
+
+```text
+GOAL:
+Restore bridge
+
+MOTIVATION:
+Reach family.
+```
+
+Shared Goal:
+
+```text
+YES.
+```
+
+Shared motivation:
+
+```text
+NO.
+```
+
+---
+
+# 153. Example — Long Absence
+
+Character:
+
+```text
+GOAL:
+Open workshop.
+```
+
+During years of player absence:
+
+```text
+LOAN FAILS
+
+PARTNERSHIP FORMS
+
+WORKSHOP OPENS
+
+PARTNER LEAVES
+
+CHARACTER BUYS SHARE
+
+BUSINESS EXPANDS.
+```
+
+When player returns:
+
+```text
+ORIGINAL GOAL:
+HISTORY
+
+CURRENT GOAL:
+Open second workshop.
+```
+
+The Character lived.
+
+---
+
+# 154. Example — Success With Cost
+
+Goal:
+
+```text
+Increase household income.
+```
+
+Plan:
+
+```text
+Take distant
+high-paying job.
+```
+
+Result:
+
+```text
+INCOME:
+Improved
+
+FAMILY CONTACT:
+Reduced
+
+RELATIONSHIP:
+Strained
+
+HEALTH:
+Worsened.
+```
+
+Goal success changed the world.
+
+It did not solve life.
+
+---
+
+# 155. Runtime Relationship
+
+The intended Character runtime is:
+
+```text
+NEEDS / MOTIVATION
+↓
+WHY DO I CARE?
+
+GOALS
+↓
+WHAT FUTURE STATE
+DO I WANT?
+
+PLANS
+↓
+HOW DO I
+CURRENTLY INTEND
+TO PURSUE IT?
+
+KNOWLEDGE / BELIEFS
+↓
+WHAT DO I
+THINK IS TRUE?
+
+EXPERTISE
+↓
+WHAT CAN I
+ACTUALLY DO?
+
+ATTRIBUTES
++
+PSYCHOLOGY
++
+RELATIONSHIPS
++
+WORLD CONDITIONS
+↓
+WHAT HUMAN CONTEXT
+AM I IN?
+
+AUTONOMY / INITIATIVE
+↓
+WHY IS ACTION
+RELEVANT NOW?
+
+DECISION MAKING
+↓
+WHAT DO I CHOOSE?
+
+ACTION
+↓
+WHAT DO I TRY?
+
+WORLD SIMULATION
+↓
+WHAT HAPPENS?
+
+LIFE
++
+MEMORY
++
+RELATIONSHIPS
++
+PROGRESSION
+↓
+WHAT CHANGES?
+```
+
+---
+
+# 156. Goal / Plan Causal Model
+
+```text
+CURRENT HUMAN STATE
++
+MOTIVATION
++
+BELIEF
++
+RESPONSIBILITY
++
+OPPORTUNITY
++
+RELATIONSHIP CONTEXT
+        ↓
+POSSIBLE DESIRED FUTURE
+        ↓
+GOAL FORMATION
+        ↓
+GOAL STATE
+        ↓
+KNOWN WORLD
++
+PERCEIVED CAPABILITY
++
+RESOURCES
++
+TIME
++
+RELATIONSHIPS
+        ↓
+POSSIBLE APPROACHES
+        ↓
+PLAN
+        ↓
+AUTONOMY
++
+DECISION MAKING
+        ↓
+ACTION
+        ↓
+WORLD CONSEQUENCE
+        ↓
+NEW INFORMATION
++
+NEW CONDITIONS
+        ↓
+GOAL / PLAN
+PERSIST
+
+CHANGE
+
+PAUSE
+
+FAIL
+
+TRANSFORM
+
+COMPLETE
+
+OR
+
+END.
+```
+
+---
+
+# 157. Goals and Plans North Star
+
+The system succeeds when Characters feel like people who are:
+
+```text
+TRYING
+TO MAKE
+SOMETHING HAPPEN.
+```
+
+They may:
+
+```text
+WANT SOMETHING
+
+CHANGE THEIR MIND
+
+TRY ONE METHOD
+
+FAIL
+
+TRY ANOTHER
+
+DELAY
+
+COMPROMISE
+
+PERSIST
+
+GIVE UP
+
+SUCCEED
+
+DISCOVER THAT
+SUCCESS COST THEM
+SOMETHING ELSE.
+```
+
+---
+
+# 158. Character Agency Principle
+
+Characters are not:
 
 ```text
 WAITING FOR EVENTS.
 ```
 
-They are:
+They are also:
 
 ```text
 TRYING TO CREATE
 FUTURE STATES.
 ```
 
----
-
-# Emergent World Principle
-
-When thousands of characters possess:
-
-```text
-needs
-
-motivations
-
-Goals
-
-Plans
-```
-
-their actions create:
-
-```text
-trade
-
-migration
-
-businesses
-
-relationships
-
-organizations
-
-conflict
-
-cooperation
-
-politics
-
-innovation
-
-recovery
-
-failure.
-```
-
-Therefore:
-
-```text
-CHARACTER GOALS
-ARE ONE OF THE ENGINES
-OF WORLD CHANGE.
-```
+This makes them sources of world change rather than passive recipients of it.
 
 ---
 
-# Critical Design Principle
+# 159. Critical Design Principle
 
 Project Ascension should not ask:
 
 ```text
-WHAT QUEST SHOULD
-THIS NPC GIVE?
+WHAT QUEST
+SHOULD THIS NPC GIVE?
 ```
 
 It should ask:
 
 ```text
-WHAT DOES THIS PERSON WANT?
+WHAT DOES
+THIS PERSON WANT?
 
 WHY?
 
-WHAT ARE THEY
-TRYING TO DO ABOUT IT?
+WHAT FUTURE
+ARE THEY TRYING
+TO CREATE?
+
+HOW ARE THEY
+CURRENTLY TRYING?
 
 WHAT HAPPENS
 IF THEY SUCCEED?
@@ -6358,193 +4375,68 @@ IF THEY SUCCEED?
 WHAT HAPPENS
 IF THEY FAIL?
 
-AND DOES THE PLAYER
-HAPPEN TO CROSS THEIR PATH?
+AND
+
+DOES THE PLAYER
+EVER CROSS
+THAT PATH?
 ```
 
 ---
 
-# Architectural Result
+# 160. Closing Principle
 
-With this document established:
+A Goal is not a quest.
 
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
+A Plan is not a script.
 
-Needs_and_Motivation.md
-      ↓
-WHY CHANGE MATTERS
+A Goal represents a future a Character cares enough about to pursue.
 
-Goals_and_Plans.md
-      ↓
-WHAT THEY TRY TO ACHIEVE
-AND HOW THEY TRY
+A Plan represents the current method they believe may take them there.
 
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-BETWEEN POSSIBILITIES
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-AND HOW THEY INITIATE CHANGE
-```
-
----
-
-# Current Status
+Both exist inside:
 
 ```text
-CHARACTER SYSTEM
+LIMITED KNOWLEDGE
 
-README.md
-FOUNDATION DEFINED
+LIMITED TIME
 
-Character_State.md
-FOUNDATION DEFINED
+LIMITED RESOURCES
 
-Needs_and_Motivation.md
-FOUNDATION DEFINED
+IMPERFECT BELIEFS
 
-Goals_and_Plans.md
-FOUNDATION DEFINED
+REAL RELATIONSHIPS
 
-Knowledge_and_Beliefs.md
-PENDING
+REAL RESPONSIBILITIES
 
-Decision_Making.md
-PENDING
-
-Autonomy_and_Initiative.md
-PENDING
-
-Profession_and_Capability.md
-PENDING
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
+REAL CONSEQUENCES.
 ```
 
----
+Characters may pursue Goals without the player.
 
-# Next Document
+They may fail without the player.
 
-The next recommended document is:
+They may succeed without the player.
+
+They may change their Goals while the player is gone.
+
+And when the player returns, the world should contain evidence that:
 
 ```text
-Canon/Systems/Characters/Knowledge_and_Beliefs.md
+OTHER PEOPLE
+WERE TRYING
+TO BUILD FUTURES TOO.
 ```
 
-Its central problem will be:
+The central principle is:
 
-```text
-A CHARACTER HAS
-NEEDS, MOTIVATIONS,
-GOALS AND PLANS.
-
-BUT WHAT DO THEY
-ACTUALLY KNOW?
-```
-
-It should establish:
-
-```text
-World Truth
-
-Character Knowledge
-
-Observation
-
-Information Acquisition
-
-Information Sources
-
-Source Trust
-
-Knowledge Confidence
-
-Knowledge Freshness
-
-Uncertainty
-
-Rumors
-
-Misinformation
-
-Contradictory Information
-
-Belief Formation
-
-Belief Persistence
-
-Belief Revision
-
-Secrets
-
-Private Knowledge
-
-Information Sharing
-
-Information Withholding
-
-Deception
-
-Knowledge Propagation
-
-Information Boundaries.
-```
-
-Most importantly:
-
-```text
-CHARACTERS MUST MAKE
-DECISIONS FROM THEIR
-PERCEIVED WORLD.
-
-NOT FROM
-SIMULATION TRUTH.
-```
-
-This is what allows:
-
-```text
-mistakes
-
-rumors
-
-misunderstandings
-
-surprises
-
-deception
-
-investigation
-
-information asymmetry
-```
-
-to emerge naturally.
+> **A living Character is not merely responding to the present. They are continually carrying some idea of what they want the future to become, and their Plans are the imperfect bridges they build between those two states.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
+|---|---|---|
 | 0.1 | 2026-08-09 | Initial Goals and Plans foundation defining Goal formation, hierarchy, priority, urgency, commitment, conflict, persistence, transformation and completion; Plan formation, steps, dependencies, adaptation, failure, delegation, cooperation, autonomous pursuit, player independence, world interaction and simulation-resolution behavior. |
+| 1.0 | 2026-08-30 | Rebuilt Goals and Plans around explicit ownership of Character intentional state. Preserved Goal formation, desired states, hierarchy, importance, urgency, commitment, conflict, persistence, transformation, completion, Plan structure, dependencies, steps, adaptation, failure, fallback planning, hidden intent and explainability. Removed duplicated ownership of Decision Making, Autonomy, Memory, Progression, Relationships, Life, Society and Narrative; aligned Goals and Plans with the current Character runtime architecture and player-independent living-world model. |

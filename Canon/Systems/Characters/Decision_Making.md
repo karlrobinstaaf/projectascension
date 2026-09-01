@@ -1,872 +1,857 @@
 # PROJECT ASCENSION
-# Decision Making System
+
+# Decision Making
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Decision Making |
-| Location | Canon/Systems/Characters/Decision_Making.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Character Decisions, Choice, Risk, Tradeoffs and Bounded Rationality |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Decision_Making.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Agency |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define how a Character selects among perceived and plausibly available actions |
 
-> *"A believable character does not always make the best decision. They make the decision that makes sense to them at that moment."*
+> **"A believable person does not always make the best decision. They make the decision that makes sense to them from where they stand."**
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Decision Making system defines how characters in Project Ascension choose whether to act, what to do, when to do it, and what they are willing to sacrifice.
+The Decision Making system defines how a Character chooses between plausible actions.
 
-It connects:
+Its central question is:
+
+> **Given what this Character currently perceives, believes, wants, fears, values, can access, and has time to consider — what do they choose?**
+
+Decision Making converts:
 
 ```text
-Needs
+PERCEIVED SITUATION
 
-Motivations
++
 
-Goals
+CHARACTER CONTEXT
 
-Plans
++
 
-Knowledge
+AVAILABLE OPTIONS
 
-Beliefs
++
 
-Relationships
+EXPECTED CONSEQUENCES
 
-Values
++
 
-Capabilities
-
-Resources
-
-Risk
-
-Time
-
-Emotion
-
-World Conditions
+TRADEOFFS
 ```
 
 into:
 
 ```text
-DECISIONS.
+CHOICE.
 ```
 
-The purpose is not to create:
+It does not exist to produce:
 
 ```text
-PERFECT OPTIMIZERS.
+THE OBJECTIVELY
+BEST ACTION.
 ```
 
-The purpose is to create:
+It exists to produce:
 
 ```text
-BELIEVABLE PEOPLE
-MAKING PLAUSIBLE CHOICES
-FROM LIMITED INFORMATION.
+A PLAUSIBLE
+HUMAN DECISION.
 ```
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
-Characters do not ask:
-
-```text
-WHAT IS OBJECTIVELY
-THE BEST ACTION?
-```
-
-They effectively ask:
-
-```text
-GIVEN WHAT I KNOW,
-WHAT I BELIEVE,
-WHAT I WANT,
-WHAT I FEAR,
-WHO I CARE ABOUT,
-WHAT I CAN DO,
-AND HOW MUCH TIME I HAVE—
-
-WHAT SHOULD I DO?
-```
-
----
-
-# Decision Foundation
-
-Every meaningful decision emerges from:
-
-```text
-CHARACTER STATE
-+
-NEEDS
-+
-MOTIVATIONS
-+
-GOALS
-+
-PLANS
-+
-KNOWLEDGE
-+
-BELIEFS
-+
-VALUES
-+
-RELATIONSHIPS
-+
-CAPABILITIES
-+
-RESOURCES
-+
-WORLD CONDITIONS
-+
-TIME PRESSURE.
-```
-
-Conceptually:
-
-```text
-CURRENT STATE
-      ↓
-DECISION TRIGGER
-      ↓
-PERCEIVED SITUATION
-      ↓
-RELEVANT GOALS
-      ↓
-POSSIBLE ACTIONS
-      ↓
-EXPECTED OUTCOMES
-      ↓
-RISK / COST / VALUE
-      ↓
-CHOICE
-      ↓
-ACTION
-      ↓
-CONSEQUENCE
-      ↓
-MEMORY / LEARNING.
-```
-
----
-
-# Perceived Reality
-
-Decision Making operates upon:
-
-```text
-CHARACTER PERCEIVED REALITY.
-```
-
-Not:
+Characters do not decide from:
 
 ```text
 WORLD TRUTH.
 ```
 
+They decide from:
+
+```text
+WHAT THEY
+PERCEIVE
+
+WHAT THEY
+KNOW
+
+WHAT THEY
+BELIEVE
+
+WHAT THEY
+EXPECT
+
+WHAT THEY
+FEAR
+
+WHAT THEY
+VALUE
+
+WHAT THEY
+THINK THEY
+CAN DO.
+```
+
 Therefore:
 
 ```text
-World Truth:
-Road is safe.
+OBJECTIVELY WRONG
+DECISION
 
-Character Belief:
-Road is dangerous.
+MAY STILL BE
 
-Decision:
-Take longer route.
-```
-
-This is:
-
-```text
-VALID.
-```
-
-The decision may be objectively unnecessary while remaining completely rational from the character's perspective.
-
----
-
-# Decision Trigger
-
-Characters should not continuously reconsider every possible action.
-
-Decisions occur when something creates:
-
-```text
-A REASON TO CHOOSE.
-```
-
-Recommended trigger categories:
-
-```text
-NEED CHANGE
-
-GOAL CHANGE
-
-PLAN FAILURE
-
-NEW INFORMATION
-
-WORLD EVENT
-
-RELATIONSHIP EVENT
-
-OPPORTUNITY
-
-THREAT
-
-RESOURCE CHANGE
-
-TIME THRESHOLD
-
-ROLE OBLIGATION
-
-DIRECT REQUEST
-
-CONFLICT
-
-INTERRUPTION
-
-FAILURE
-
-SUCCESS
-
-EMOTIONAL EVENT.
+SUBJECTIVELY
+RATIONAL.
 ```
 
 ---
 
-# Need Trigger
+# 3. Core Definition
 
-Example:
+Decision Making is:
+
+> **The Character-owned process that selects among currently perceived and plausibly available actions under limited information, limited time, conflicting pressures, uncertainty and human imperfection.**
+
+Conceptually:
 
 ```text
-Food Need:
-LOW
+DECISION CONTEXT
 ↓
-No Action
-```
-
-Later:
-
-```text
-Food Need:
-CRITICAL
+PERCEIVED SITUATION
 ↓
-Decision Required
-```
-
-Possible choices:
-
-```text
-buy food
-
-request help
-
-hunt
-
-trade
-
-steal
-
-travel
-
-wait.
+RELEVANT CHARACTER STATE
+↓
+AVAILABLE OPTIONS
+↓
+EXPECTED CONSEQUENCES
+↓
+TRADEOFFS
+↓
+CHOICE
+↓
+COMMITMENT
+↓
+ACTION.
 ```
 
 ---
 
-# Goal Trigger
+# 4. Ownership
 
-A newly created Goal may require:
+Decision Making owns:
 
 ```text
-planning
+DECISION CONTEXT
 
-resource allocation
+OPTION GENERATION
 
-information seeking
+OPTION FILTERING
 
-travel
+PERCEIVED CONSEQUENCES
 
-communication
+TRADEOFF EVALUATION
 
-commitment.
+RISK EVALUATION
+
+UNCERTAINTY HANDLING
+
+COST EVALUATION
+
+OPPORTUNITY COST
+
+SATISFICING
+
+HEURISTIC USE
+
+DECISION CONFIDENCE
+
+CHOICE
+
+COMMITMENT
+
+RECONSIDERATION
+
+DELAY
+
+INACTION AS CHOICE
+
+DELEGATION AS CHOICE
+
+DECISION EXPLAINABILITY.
+```
+
+---
+
+# 5. What Decision Making Does Not Own
+
+Decision Making does not own:
+
+```text
+GOALS
+
+MOTIVATION
+
+NEEDS
+
+BELIEFS
+
+KNOWLEDGE
+
+MEMORY
+
+HUMAN ATTRIBUTES
+
+PSYCHOLOGY
+
+RELATIONSHIP STATE
+
+EXPERTISE
+
+RESOURCES
+
+LIFE EVENTS
+
+PROGRESSION
+
+WORLD TRUTH
+
+WORLD CONSEQUENCES
+
+SOCIETY
+
+FACTION DECISIONS
+
+NARRATIVE RELEVANCE.
+```
+
+It consumes authoritative state from those systems.
+
+It does not redefine it.
+
+---
+
+# 6. Decision Making and Autonomy
+
+The distinction is:
+
+```text
+AUTONOMY / INITIATIVE
+=
+WHY ACTION
+NEEDS TO BE
+CONSIDERED NOW
+
+DECISION MAKING
+=
+WHICH PLAUSIBLE
+OPTION IS CHOSEN.
+```
+
+Conceptually:
+
+```text
+BEHAVIORAL RELEVANCE
+↓
+AUTONOMY / INITIATIVE
+↓
+DECISION CONTEXT
+↓
+DECISION MAKING
+↓
+CHOICE.
+```
+
+Decision Making should not continuously evaluate every possible decision in existence.
+
+---
+
+# 7. Decision Making and Goals
+
+Goals answer:
+
+```text
+WHAT DOES
+THE CHARACTER
+WANT TO ACHIEVE?
+```
+
+Decision Making answers:
+
+```text
+GIVEN THAT,
+WHAT DO THEY
+CHOOSE NOW?
+```
+
+Goals may influence decision weight.
+
+Decision Making does not create Goal state merely because a decision requires direction.
+
+---
+
+# 8. Decision Making and Beliefs
+
+Beliefs answer:
+
+```text
+WHAT DOES
+THE CHARACTER
+HOLD TO BE TRUE?
+```
+
+Decision Making uses those beliefs to estimate:
+
+```text
+OPTIONS
+
+RISK
+
+CONSEQUENCES
+
+OTHER PEOPLE
+
+FUTURE CONDITIONS.
+```
+
+A false belief may therefore produce a coherent but objectively poor decision.
+
+---
+
+# 9. Decision Making and Psychology
+
+Psychology changes the conditions under which decisions occur.
+
+Examples:
+
+```text
+FEAR
+
+ANGER
+
+GRIEF
+
+STRESS
+
+EXHAUSTION
+
+HOPE
+
+ANXIETY.
+```
+
+Decision Making consumes psychological state.
+
+It does not generate that state.
+
+And:
+
+```text
+EMOTION
+≠
+DECISION.
+```
+
+---
+
+# 10. Decision Making and Human Attributes
+
+Human Attributes may influence recurring tendencies such as:
+
+```text
+CAUTION
+
+PERSISTENCE
+
+OPENNESS
+
+SOCIAL CONFIDENCE
+
+IMPULSIVITY
+
+SELF-CONTROL.
+```
+
+But:
+
+```text
+ATTRIBUTE
+≠
+CHOICE.
+```
+
+Attributes influence pressure.
+
+Decision Making resolves the current choice.
+
+---
+
+# 11. Decision Making and Relationships
+
+Relationships may alter:
+
+```text
+WHO MATTERS
+
+WHO IS TRUSTED
+
+WHO IS OWED
+
+WHO IS FEARED
+
+WHO MAY BE HELPED
+
+WHO MAY BE AVOIDED.
+```
+
+Decision Making consumes Relationship state.
+
+It does not own Relationship change.
+
+---
+
+# 12. Decision Making and Expertise
+
+Expertise influences:
+
+```text
+WHAT OPTIONS
+THE CHARACTER
+RECOGNIZES
+
+HOW THEY
+ASSESS RISK
+
+WHAT CONSEQUENCES
+THEY ANTICIPATE
+
+WHAT THEY BELIEVE
+THEY CAN DO.
+```
+
+Actual capability remains authoritative in Expertise and action resolution.
+
+---
+
+# 13. Perceived Reality
+
+Decision Making operates on:
+
+```text
+CHARACTER
+PERCEIVED REALITY.
+```
+
+Never directly on:
+
+```text
+COMPLETE
+WORLD TRUTH.
 ```
 
 Example:
 
 ```text
-Goal:
-Repair generator.
+WORLD TRUTH:
+ROAD IS SAFE
+
+CHARACTER BELIEF:
+ROAD IS DANGEROUS
+
+DECISION:
+TAKE LONGER ROUTE.
 ```
 
-Decision:
+The choice is objectively inefficient.
+
+It may still be completely rational from the Character's perspective.
+
+---
+
+# 14. Epistemic Boundary
+
+The decision system must preserve:
 
 ```text
-Repair personally?
+WORLD TRUTH
 
-Ask mechanic?
+≠
 
-Buy replacement?
+PERCEPTION
 
-Delay repair?
+≠
 
-Abandon generator?
+KNOWLEDGE
+
+≠
+
+BELIEF
+
+≠
+
+EXPECTATION.
+```
+
+A Character may:
+
+```text
+KNOW SOMETHING
+
+MISUNDERSTAND SOMETHING
+
+BELIEVE SOMETHING FALSE
+
+DOUBT SOMETHING TRUE
+
+LACK INFORMATION ENTIRELY.
+```
+
+Decision Making operates only on what reaches the Character's decision context.
+
+---
+
+# 15. Decision Context
+
+A meaningful decision may reference:
+
+```text
+CURRENT GOALS
+
+CURRENT PLAN
+
+CURRENT LOCATION
+
+AVAILABLE TIME
+
+AVAILABLE RESOURCES
+
+KNOWN INFORMATION
+
+BELIEFS
+
+RELATIONSHIPS
+
+EXPERTISE
+
+PSYCHOLOGY
+
+ATTRIBUTES
+
+RESPONSIBILITIES
+
+CURRENT WORLD CONDITIONS
+
+PERCEIVED RISKS
+
+PERCEIVED OPPORTUNITIES.
+```
+
+The exact combination varies by decision.
+
+---
+
+# 16. Decision Trigger Boundary
+
+Decision Making does not need to own all triggers.
+
+Autonomy / Initiative may determine:
+
+```text
+A DECISION
+IS NOW RELEVANT.
+```
+
+Decision Making receives that context and evaluates:
+
+```text
+WHAT SHOULD
+BE DONE?
 ```
 
 ---
 
-# Plan Failure Trigger
+# 17. Candidate Actions
 
-Example:
+A Character does not evaluate:
 
 ```text
-Goal:
-Reach Millhaven.
-
-Plan:
-Use eastern bridge.
-
-New Knowledge:
-Bridge destroyed.
+EVERY ACTION
+THEORETICALLY POSSIBLE
+IN THE UNIVERSE.
 ```
 
-This produces:
+They evaluate a limited:
 
 ```text
-PLAN FAILURE
-      ↓
-REASSESSMENT
-      ↓
-NEW DECISION.
-```
-
----
-
-# Information Trigger
-
-New information may cause:
-
-```text
-no change
-
-minor adjustment
-
-plan change
-
-goal change
-
-urgent action.
-```
-
-The importance depends on:
-
-```text
-relevance
-
-confidence
-
-risk
-
-time
-
-goal impact.
-```
-
----
-
-# Opportunity Trigger
-
-Example:
-
-```text
-Character learns
-an unused workshop
-is available cheaply.
-```
-
-Possible result:
-
-```text
-NEW OPPORTUNITY
-      ↓
-COMPARE WITH CURRENT GOALS
-      ↓
-PURSUE / IGNORE / DELAY.
-```
-
----
-
-# Threat Trigger
-
-Example:
-
-```text
-Wildfire approaching settlement.
-```
-
-Possible choices:
-
-```text
-evacuate
-
-protect property
-
-help others
-
-wait for confirmation
-
-seek family
-
-assist authorities.
-```
-
-Different characters may choose differently.
-
----
-
-# Decision Scope
-
-Decisions exist at multiple scales.
-
-Recommended conceptual levels:
-
-```text
-REFLEXIVE
-
-ROUTINE
-
-TACTICAL
-
-STRATEGIC
-
-LIFE-CHANGING.
-```
-
----
-
-# Reflexive Decisions
-
-Examples:
-
-```text
-take cover
-
-grab falling object
-
-run from immediate danger
-
-help nearby injured person.
-```
-
-These require:
-
-```text
-minimal deliberation.
-```
-
----
-
-# Routine Decisions
-
-Examples:
-
-```text
-go to work
-
-buy groceries
-
-take usual route
-
-call friend
-
-perform maintenance.
-```
-
-These may often use:
-
-```text
-HABIT.
-```
-
----
-
-# Tactical Decisions
-
-Examples:
-
-```text
-which route to take
-
-whether to spend limited fuel
-
-whether to trust a report
-
-whether to help someone
-
-whether to repair or replace equipment.
-```
-
----
-
-# Strategic Decisions
-
-Examples:
-
-```text
-expand business
-
-join faction
-
-relocate
-
-change profession
-
-support political proposal
-
-prepare for winter.
-```
-
----
-
-# Life-Changing Decisions
-
-Examples:
-
-```text
-marriage
-
-divorce
-
-migration
-
-career change
-
-betrayal
-
-major sacrifice
-
-leadership commitment
-
-having children
-
-permanent alliance.
-```
-
-These decisions should usually require:
-
-```text
-HIGH MOTIVATIONAL WEIGHT
-
-and/or
-
-SIGNIFICANT CIRCUMSTANCES.
-```
-
----
-
-# Decision Resolution
-
-Decision complexity should determine:
-
-```text
-SIMULATION COST.
-```
-
-Routine decisions may use:
-
-```text
-simple heuristics.
-```
-
-Major decisions may require:
-
-```text
-full evaluation.
-```
-
----
-
-# Candidate Actions
-
-A decision requires:
-
-```text
-POSSIBLE ACTIONS.
-```
-
-But characters do not consider:
-
-```text
-EVERY THEORETICALLY POSSIBLE ACTION.
-```
-
-They generate a limited:
-
-```text
+PERCEIVED
 ACTION SET.
 ```
 
 ---
 
-# Action Generation
+# 18. Action Set
 
-Possible actions may derive from:
+Candidate actions may emerge from:
 
 ```text
-current Plans
+CURRENT PLAN
 
-past experience
+PAST EXPERIENCE
 
-profession
+KNOWN METHODS
 
-skills
+EXPERTISE
 
-resources
+HABIT
 
-relationships
+AVAILABLE PEOPLE
 
-known opportunities
+AVAILABLE RESOURCES
 
-social norms
+KNOWN LOCATIONS
 
-habits
+KNOWN OPPORTUNITIES
 
-environment.
+SOCIAL NORMS
+
+CREATIVE REASONING.
 ```
 
 ---
 
-# Knowledge Limits Options
+# 19. Unknown Options
 
-A character cannot choose an option they:
+A Character cannot normally select:
 
 ```text
-DO NOT KNOW EXISTS.
+AN OPTION
+THEY DO NOT
+KNOW EXISTS.
 ```
 
 Example:
 
 ```text
-Hidden mountain road exists.
-```
+HIDDEN ROAD EXISTS
 
-Character does not know about it.
+BUT
 
-Therefore:
+CHARACTER
+DOES NOT KNOW IT
 
-```text
-Hidden road
-NOT IN ACTION SET.
+↓
+
+NOT IN
+ACTION SET.
 ```
 
 ---
 
-# Capability Limits Options
+# 20. Incorrectly Perceived Options
 
-A character may know an option exists but believe:
-
-```text
-I CANNOT DO THAT.
-```
+A Character may believe an option exists when it does not.
 
 Example:
 
 ```text
-Repair generator personally.
+CHARACTER BELIEVES
+BRIDGE IS OPEN
+
+↓
+
+CHOOSES BRIDGE
+
+↓
+
+WORLD RESOLUTION:
+BRIDGE DESTROYED.
 ```
 
-If perceived capability is low:
-
-```text
-option may be rejected.
-```
+This is valid.
 
 ---
 
-# Perceived Capability
+# 21. Perceived Capability
 
-Decision Making should use:
+Decision Making primarily uses:
 
 ```text
-PERCEIVED CAPABILITY
+PERCEIVED
+CAPABILITY.
 ```
 
-during choice evaluation.
-
-Actual capability matters during:
+Action Resolution later uses:
 
 ```text
-ACTION RESOLUTION.
+ACTUAL
+CAPABILITY.
 ```
 
 Therefore:
 
 ```text
-Actual Skill:
+ACTUAL EXPERTISE:
 HIGH
 
-Self-Belief:
+SELF-ASSESSMENT:
 LOW
 
-Decision:
-Hire someone else.
+DECISION:
+ASK SOMEONE ELSE
 ```
 
 is valid.
 
 ---
 
-# Impossible Actions
+# 22. Overconfidence
 
-Actions that are genuinely impossible should normally be excluded.
-
-Examples:
+The inverse is also possible:
 
 ```text
-travel without route
+ACTUAL CAPABILITY:
+LOW
 
-purchase unavailable item
+PERCEIVED CAPABILITY:
+HIGH
 
-call someone without communication
+↓
 
-use equipment not possessed.
+CHARACTER ATTEMPTS
+DIFFICULT ACTION.
 ```
 
-But characters may sometimes:
-
-```text
-ATTEMPT THE IMPOSSIBLE
-```
-
-if they incorrectly believe it is possible.
+Decision Making may be coherent even when the Character is wrong about themselves.
 
 ---
 
-# Option Filtering
+# 23. Impossible Actions
 
-Candidate actions may be filtered by:
+An option that is objectively impossible should normally be excluded only if:
 
 ```text
-knowledge
-
-perceived capability
-
-resources
-
-time
-
-location
-
-social constraints
-
-values
-
-risk tolerance
-
-legal constraints
-
-relationship obligations.
+THE CHARACTER
+KNOWS OR BELIEVES
+IT IS IMPOSSIBLE.
 ```
+
+A Character may attempt something impossible if they believe it can work.
 
 ---
 
-# Action Evaluation
+# 24. Option Filtering
 
-For each plausible option, characters may evaluate:
+Candidate actions may be filtered through:
 
 ```text
-Goal Progress
+INFORMATION
 
-Need Satisfaction
+PERCEIVED CAPABILITY
 
-Expected Benefit
+TIME
 
-Expected Cost
+LOCATION
 
-Risk
+RESOURCES
 
-Time
+RELATIONSHIPS
 
-Resource Cost
+RESPONSIBILITIES
 
-Relationship Impact
+LEGAL CONTEXT
 
-Value Alignment
+SOCIAL NORMS
 
-Role Alignment
+RISK
 
-Future Opportunity
+PSYCHOLOGICAL STATE
 
-Reversibility
-
-Confidence.
+GOAL RELEVANCE.
 ```
+
+Filtering must not become deterministic moral prohibition.
 
 ---
 
-# Conceptual Utility
+# 25. Option Evaluation
 
-Decision Making may conceptually estimate:
+For each plausible option, a Character may consider some combination of:
 
 ```text
-PERCEIVED VALUE
-=
 EXPECTED BENEFIT
--
+
 EXPECTED COST
--
+
+GOAL PROGRESS
+
+TIME COST
+
+RESOURCE COST
+
 PERCEIVED RISK
-+
-GOAL ALIGNMENT
-+
-VALUE ALIGNMENT
-+
-RELATIONSHIP IMPACT
-+
-ROLE ALIGNMENT
-+
-EMOTIONAL WEIGHT.
+
+RELATIONSHIP CONSEQUENCE
+
+SOCIAL CONSEQUENCE
+
+RESPONSIBILITY
+
+REVERSIBILITY
+
+FUTURE FLEXIBILITY
+
+CONFIDENCE
+
+UNCERTAINTY.
 ```
 
-This is:
-
-```text
-A CONCEPTUAL MODEL.
-```
-
-It should not require every decision to use:
-
-```text
-one universal numerical formula.
-```
+Not every Character consciously evaluates every category.
 
 ---
 
-# Bounded Rationality
+# 26. No Universal Utility Function
 
-Characters have:
+Decision Making must not require:
+
+```text
+ONE UNIVERSAL
+MATHEMATICAL FORMULA
+FOR ALL HUMAN CHOICE.
+```
+
+Conceptual evaluation is useful.
+
+A universal utility score is not currently Canon.
+
+---
+
+# 27. Bounded Rationality
+
+Humans possess:
 
 ```text
 LIMITED INFORMATION
 
-LIMITED TIME
-
 LIMITED ATTENTION
 
-LIMITED COMPUTATION
+LIMITED TIME
 
-LIMITED EXPERIENCE.
+LIMITED EXPERIENCE
+
+LIMITED COGNITIVE CAPACITY
+
+IMPERFECT MEMORY.
 ```
 
 Therefore:
@@ -878,339 +863,280 @@ IS NOT EXPECTED.
 
 ---
 
-# Satisficing
+# 28. Satisficing
 
 Characters may choose:
 
 ```text
-THE FIRST OPTION
-THAT IS GOOD ENOUGH.
+AN OPTION
+THAT IS
+GOOD ENOUGH
 ```
 
-rather than:
+rather than searching indefinitely for:
 
 ```text
-THE BEST POSSIBLE OPTION.
+THE BEST
+POSSIBLE OPTION.
 ```
 
-This is especially likely when:
+This is especially plausible when:
 
 ```text
-decision is routine
+STAKES ARE LOW
 
-stakes are low
+TIME IS LIMITED
 
-time is limited
+CHARACTER IS TIRED
 
-character is tired
+OPTIONS ARE MANY
 
-many choices exist.
+DECISION IS ROUTINE.
 ```
 
 ---
 
-# Good Enough Threshold
+# 29. Good Enough
 
 Conceptually:
 
 ```text
-OPTION VALUE
-≥
-ACCEPTABLE THRESHOLD
-      ↓
-CHOOSE.
+OPTION
+MEETS
+ACCEPTABLE STANDARD
+
+↓
+
+CHOOSE
+
+WITHOUT
+
+SEARCHING FOREVER.
 ```
 
-The threshold may vary by:
-
-```text
-personality
-
-stakes
-
-urgency
-
-experience
-
-risk.
-```
+The acceptable standard may differ by Character and context.
 
 ---
 
-# Decision Heuristics
+# 30. Heuristics
 
-Characters may use simple rules.
+Characters may use learned shortcuts.
 
 Examples:
 
 ```text
-"Use the route I know."
+USE THE ROUTE
+I KNOW
 
-"Ask Mara about medical issues."
+ASK MARA
+ABOUT MEDICAL ISSUES
 
-"Never borrow money."
+CALL FAMILY FIRST
 
-"Call family first."
+TRUST OFFICIAL
+WEATHER WARNING
 
-"Trust official weather alerts."
-
-"Buy when prices fall below X."
+NEVER BORROW
+FROM THAT PERSON.
 ```
 
-Heuristics reduce:
+Heuristics reduce decision effort.
 
-```text
-DECISION COST.
-```
+They may also be wrong.
 
 ---
 
-# Habit
+# 31. Habit
 
-Repeated decisions may become:
-
-```text
-HABITUAL.
-```
+Repeated actions may require less deliberation.
 
 Conceptually:
 
 ```text
-REPEATED SUCCESSFUL ACTION
-      ↓
+REPEATED ACTION
++
+REPEATED ACCEPTABLE RESULT
+↓
 REDUCED DELIBERATION
-      ↓
+↓
 HABIT.
 ```
 
----
-
-# Habit Advantage
-
-Habits allow characters to:
-
-```text
-act quickly
-
-reduce cognitive load
-
-maintain routines.
-```
+Habit ownership may intersect with other systems, but Decision Making may use it as a shortcut.
 
 ---
 
-# Habit Risk
+# 32. Outdated Habit
 
-Habits may become inappropriate when:
-
-```text
-WORLD CONDITIONS CHANGE.
-```
+Habits may persist after conditions change.
 
 Example:
 
 ```text
-Character always uses eastern road.
+ALWAYS USE
+EASTERN ROAD
 
-Bridge destroyed.
+↓
 
-Character has not heard.
+BRIDGE DESTROYED
+
+BUT CHARACTER
+DOES NOT KNOW
+
+↓
+
+TRIES EASTERN ROAD.
 ```
 
-Habit may produce:
-
-```text
-failed travel attempt.
-```
+Human consistency does not require current optimality.
 
 ---
 
-# Risk
+# 33. Risk
 
 Risk represents:
 
-```text
-UNCERTAIN NEGATIVE OUTCOME.
-```
+> **A perceived possibility of an undesirable consequence.**
 
-Characters evaluate risk based on:
+Decision Making evaluates:
 
 ```text
-perceived probability
-
-perceived severity.
+PERCEIVED RISK.
 ```
+
+Not perfect objective probability.
+
+---
+
+# 34. Risk Perception
 
 Conceptually:
 
 ```text
-PERCEIVED RISK
-=
-PERCEIVED PROBABILITY
+PERCEIVED
+LIKELIHOOD
+
 ×
-PERCEIVED CONSEQUENCE.
+
+PERCEIVED
+SEVERITY
+
+→
+
+PERCEIVED RISK.
 ```
+
+This remains conceptual.
+
+No universal numeric implementation is required.
 
 ---
 
-# Risk Is Subjective
+# 35. Subjective Risk
 
-Two characters may assess:
-
-```text
-THE SAME SITUATION
-```
-
-differently.
+Two Characters may evaluate the same situation differently.
 
 Example:
 
 ```text
-Mountain road during storm.
+STORM ROAD
 ```
 
 Experienced driver:
 
 ```text
-Risk:
-MODERATE.
+DIFFICULT
+BUT MANAGEABLE.
 ```
 
 Inexperienced driver:
 
 ```text
-Risk:
-HIGH.
+EXTREMELY DANGEROUS.
 ```
+
+Both may be internally coherent.
 
 ---
 
-# Risk Tolerance
+# 36. Risk Is Contextual
 
-Characters differ in willingness to accept risk.
-
-Possible tendencies:
+A Character need not have one global:
 
 ```text
-RISK AVERSE
-
-CAUTIOUS
-
-BALANCED
-
-RISK TOLERANT
-
-RECKLESS.
+RISK TOLERANCE.
 ```
 
-These should be tendencies rather than absolute behavior rules.
+They may be:
+
+```text
+FINANCIALLY CAUTIOUS
+
+PHYSICALLY BRAVE
+
+SOCIALLY ANXIOUS
+
+POLITICALLY BOLD.
+```
+
+Avoid reducing this to a single slider unless future implementation specifically justifies it.
 
 ---
 
-# Domain-Specific Risk
+# 37. Expertise and Risk
 
-A character may be:
-
-```text
-financially cautious
-```
-
-but:
+Relevant Expertise may improve:
 
 ```text
-physically brave.
+HAZARD RECOGNITION
+
+PROBABILITY ESTIMATION
+
+CONSEQUENCE RECOGNITION
+
+MITIGATION OPTIONS.
 ```
 
-Risk tolerance should therefore support:
-
-```text
-DOMAIN DEPENDENCE.
-```
+But Experts may still make poor decisions.
 
 ---
 
-# High Consequence Risk
+# 38. Uncertainty
 
-Even low probability may matter when consequences are severe.
+Sometimes the Character cannot meaningfully estimate risk.
 
-Example:
-
-```text
-Bridge Collapse Probability:
-LOW
-
-Consequence:
-DEATH.
-```
-
-A cautious character may choose:
+Possible responses include:
 
 ```text
-DO NOT CROSS.
+PROCEED
+
+WAIT
+
+SEEK INFORMATION
+
+CHOOSE SAFER OPTION
+
+ASK EXPERT
+
+ASSUME SAFETY
+
+ASSUME DANGER.
 ```
+
+No response is universal.
 
 ---
 
-# Risk Under Uncertainty
+# 39. Cost
 
-Characters may not know:
-
-```text
-probability.
-```
-
-They may reason from:
-
-```text
-experience
-
-warnings
-
-intuition
-
-trust
-
-fear
-
-professional expertise.
-```
-
----
-
-# Unknown Risk
-
-Some characters respond to uncertainty with:
-
-```text
-CAUTION.
-```
-
-Others respond with:
-
-```text
-ASSUMPTION OF SAFETY.
-```
-
-Others:
-
-```text
-SEEK INFORMATION.
-```
-
----
-
-# Cost
-
-Actions may have multiple costs.
-
-Recommended categories:
+Actions may create costs in many forms:
 
 ```text
 TIME
 
 MONEY
 
-RESOURCE
+MATERIAL
 
 PHYSICAL
 
@@ -1220,1382 +1146,1599 @@ SOCIAL
 
 RELATIONSHIP
 
-REPUTATION
+REPUTATIONAL
 
 POLITICAL
 
 OPPORTUNITY.
 ```
 
+Decision Making evaluates only costs the Character can plausibly anticipate.
+
 ---
 
-# Opportunity Cost
+# 40. Opportunity Cost
 
-Choosing one action may prevent another.
+Choosing one option may eliminate or delay another.
 
 Example:
 
 ```text
-Character has six hours.
-```
+SIX HOURS AVAILABLE
 
-Options:
+OPTION A:
+REPAIR GENERATOR
 
-```text
-repair generator
-
-visit injured friend.
+OPTION B:
+VISIT INJURED FRIEND.
 ```
 
 Choosing one may mean:
 
 ```text
-NOT DOING THE OTHER.
+NOT DOING
+THE OTHER
+NOW.
 ```
+
+Time therefore creates real tradeoffs.
 
 ---
 
-# Scarcity Forces Choice
+# 41. Scarcity
 
-Decision importance increases when:
+Scarcity increases the importance of prioritization.
 
-```text
-resources are insufficient
-for all Goals.
-```
-
-Examples:
+Possible scarce resources include:
 
 ```text
-time
+TIME
 
-money
+FUEL
 
-fuel
+FOOD
 
-food
+MONEY
 
-attention
+LABOR
 
-labor.
+ATTENTION
+
+TRANSPORT
+
+MEDICINE.
 ```
+
+Scarcity should create decisions.
+
+Not automatically create drama.
 
 ---
 
-# Goal Competition
+# 42. Competing Goals
 
-Characters may have:
-
-```text
-MULTIPLE ACTIVE GOALS.
-```
+A Character may have several active Goals.
 
 Example:
 
 ```text
-Goal A:
-Protect family.
+PROTECT FAMILY
 
-Goal B:
-Keep business operating.
+KEEP BUSINESS OPEN
 
-Goal C:
-Help community.
+HELP COMMUNITY
 
-Goal D:
-Rest.
+REST.
 ```
 
-A crisis may force:
-
-```text
-PRIORITIZATION.
-```
+Current conditions may make all of them impossible to satisfy simultaneously.
 
 ---
 
-# Goal Priority
-
-Goal priority may derive from:
-
-```text
-need urgency
-
-personal importance
-
-relationship importance
-
-value alignment
-
-deadline
-
-risk
-
-commitment
-
-role obligation.
-```
-
----
-
-# Dynamic Priority
-
-Goal priority may change rapidly.
-
-Example:
-
-Before fire:
-
-```text
-Business:
-HIGH
-
-Family Dinner:
-MODERATE
-
-Safety:
-LOW.
-```
-
-During fire:
-
-```text
-Safety:
-CRITICAL
-
-Family:
-CRITICAL
-
-Business:
-LOW.
-```
-
----
-
-# Goal Conflict
-
-Two Goals may directly conflict.
-
-Example:
-
-```text
-Goal:
-Protect friend.
-
-Goal:
-Tell truth to authorities.
-```
-
-No option may fully satisfy both.
-
-This creates:
-
-```text
-MORAL / RELATIONSHIP CONFLICT.
-```
-
----
-
-# Tradeoffs
+# 43. Tradeoffs
 
 Meaningful decisions often involve:
 
 ```text
 GAIN SOMETHING
 
+AND
+
 LOSE SOMETHING.
 ```
 
-The engine should support choices where:
+A strong Decision system must allow:
 
 ```text
-NO OPTION IS PERFECT.
+NO PERFECT OPTION.
 ```
 
 ---
 
-# Value Conflict
+# 44. Conflicting Human Pressures
 
-Character Values may create:
-
-```text
-internal conflict.
-```
-
-Example:
+Decision Making may encounter conflict between:
 
 ```text
-Value:
-Honesty
+GOALS
 
-Value:
-Loyalty.
-```
+RELATIONSHIPS
 
-Friend asks character to:
+RESPONSIBILITIES
 
-```text
-lie.
-```
+ATTRIBUTES
 
-Decision requires:
+PSYCHOLOGY
 
-```text
-VALUE PRIORITIZATION.
-```
-
----
-
-# Value Alignment
-
-Actions consistent with strong Values receive:
-
-```text
-positive decision weight.
-```
-
-Actions violating strong Values receive:
-
-```text
-negative decision weight.
-```
-
-But:
-
-```text
-VALUES ARE NOT HARD LOCKS.
-```
-
----
-
-# Value Violation
-
-Characters may violate Values under:
-
-```text
-fear
-
-desperation
-
-love
-
-pressure
-
-survival
-
-conflicting values.
-```
-
-Such decisions may produce:
-
-```text
-guilt
-
-regret
-
-self-belief change
-
-relationship consequences.
-```
-
----
-
-# Relationship Influence
-
-Relationships affect decisions through:
-
-```text
-care
-
-trust
-
-loyalty
-
-fear
-
-obligation
-
-resentment
-
-love
-
-dependency
-
-history.
-```
-
----
-
-# Relationship Priority
-
-A character may sacrifice:
-
-```text
-money
-
-time
-
-safety
-
-career
-
-reputation
-```
-
-for someone important.
-
-This should emerge from:
-
-```text
-RELATIONSHIP STATE
-+
-VALUES
-+
-CURRENT CONTEXT.
-```
-
----
-
-# Relationship Requests
-
-When another character asks for help, decision evaluation may include:
-
-```text
-relationship strength
-
-trust
-
-request cost
-
-request urgency
-
-past reciprocity
-
-role obligations
-
-current Goals.
-```
-
----
-
-# Reciprocity
-
-Characters may remember:
-
-```text
-past help
-
-past refusal
-
-past sacrifice.
-```
-
-Example:
-
-```text
-"You helped me when I needed it."
-```
-
-This may increase willingness to:
-
-```text
-accept cost now.
-```
-
----
-
-# Resentment
-
-Past relationship damage may reduce willingness to:
-
-```text
-help
-
-trust
-
-cooperate.
-```
-
-Even when cooperation would be objectively useful.
-
----
-
-# Role Obligation
-
-Characters occupy roles such as:
-
-```text
-parent
-
-doctor
-
-leader
-
-employee
-
-partner
-
-officer
-
-friend
-
-community member.
-```
-
-Roles create:
-
-```text
-EXPECTED BEHAVIOR.
-```
-
----
-
-# Role Conflict
-
-Example:
-
-Character is:
-
-```text
-Doctor
-
-Parent.
-```
-
-Crisis:
-
-```text
-hospital needs staff
-
-child needs evacuation.
-```
-
-No solution may satisfy both roles.
-
-This creates:
-
-```text
-HIGH-WEIGHT DECISION.
-```
-
----
-
-# Duty
-
-Some characters may strongly prioritize:
-
-```text
-DUTY.
-```
-
-Others may prioritize:
-
-```text
-PERSONAL RELATIONSHIPS
+BELIEFS
 
 SELF-PRESERVATION
 
-FREEDOM.
-```
-
-This belongs partly to:
-
-```text
-Personality_and_Values.md.
-```
-
----
-
-# Emotion
-
-Emotion may influence:
-
-```text
-attention
-
-risk perception
-
-time horizon
-
-confidence
-
-option generation
-
-goal priority.
-```
-
-Emotion should modify decisions without becoming:
-
-```text
-RANDOMNESS.
-```
-
----
-
-# Fear
-
-Fear may:
-
-```text
-increase perceived risk
-
-increase safety priority
-
-reduce exploration
-
-encourage avoidance
-
-increase urgency.
-```
-
----
-
-# Anger
-
-Anger may:
-
-```text
-increase confrontation
-
-reduce patience
-
-increase short-term weighting
-
-increase retaliation tendency.
-```
-
----
-
-# Grief
-
-Grief may:
-
-```text
-reduce motivation
-
-reduce attention
-
-increase withdrawal
-
-change priorities
-
-increase attachment to memory.
-```
-
----
-
-# Hope
-
-Hope may:
-
-```text
-increase persistence
-
-increase willingness to invest
-
-support long-term planning.
-```
-
----
-
-# Love
-
-Love may cause:
-
-```text
-large sacrifices
-
-risk acceptance
-
-goal reprioritization.
-```
-
----
-
-# Emotional Intensity
-
-High emotional intensity may reduce:
-
-```text
-deliberation quality.
-```
-
-Conceptually:
-
-```text
-HIGH EMOTION
-      ↓
-NARROWER ATTENTION
-      ↓
-FEWER CONSIDERED OPTIONS.
-```
-
----
-
-# Emotion Does Not Remove Agency
-
-Even under strong emotion:
-
-```text
-characters remain characters.
-```
-
-Emotion influences decisions.
-
-It does not automatically dictate them.
-
----
-
-# Time Pressure
-
-Decision quality may depend on:
-
-```text
-AVAILABLE TIME.
-```
-
----
-
-# Low Time Pressure
-
-Character may:
-
-```text
-gather information
-
-consult others
-
-compare options
-
-delay commitment.
-```
-
----
-
-# High Time Pressure
-
-Character may rely more on:
-
-```text
-habit
-
-experience
-
-intuition
-
-simple heuristics
-
-dominant Goal.
-```
-
----
-
-# Extreme Time Pressure
-
-Example:
-
-```text
-Building burning.
-```
-
-Decision may reduce to:
-
-```text
-RUN
-
-HELP
-
-FREEZE.
-```
-
----
-
-# Decision Deadline
-
-Some decisions possess:
-
-```text
-EXPLICIT DEADLINES.
-```
-
-Example:
-
-```text
-Last evacuation convoy:
-18:00.
-```
-
-As deadline approaches:
-
-```text
-inaction becomes a decision.
-```
-
----
-
-# Inaction
-
-Characters may choose:
-
-```text
-DO NOTHING.
-```
-
-Inaction is a valid action.
-
----
-
-# Reasons for Inaction
-
-Possible causes:
-
-```text
-insufficient information
-
-low motivation
-
-high risk
-
-conflicting Goals
-
-fear
-
-fatigue
-
-lack of capability
-
-waiting
-
-hope situation resolves
-
-avoidance.
-```
-
----
-
-# Inaction Has Consequences
-
-```text
-NO ACTION
-```
-
-does not mean:
-
-```text
-NO CONSEQUENCE.
-```
-
-World processes continue.
-
----
-
-# Delay
-
-Characters may choose:
-
-```text
-DECIDE LATER.
-```
-
-This is valid when:
-
-```text
-more information expected
-
-deadline distant
-
-cost of waiting low
-
-uncertainty high.
-```
-
----
-
-# Delay Risk
-
-Waiting may cause:
-
-```text
-opportunity loss
-
-worsening conditions
-
-deadline failure
-
-relationship frustration.
-```
-
----
-
-# Information Seeking
-
-When uncertainty blocks choice, characters may decide:
-
-```text
-GET MORE INFORMATION.
-```
-
-Examples:
-
-```text
-ask expert
-
-inspect location
-
-call contact
-
-wait for report
-
-compare sources.
-```
-
----
-
-# Value of Information
-
-Information seeking is more attractive when:
-
-```text
-decision stakes high
-
-uncertainty high
-
-information obtainable
-
-time available.
-```
-
----
-
-# Consultation
-
-Characters may ask:
-
-```text
-friends
-
-family
-
-experts
-
-leaders
-
-colleagues
-
-trusted contacts
-```
-
-for advice.
-
----
-
-# Advice Is Information
-
-Advice does not automatically become:
-
-```text
-DECISION.
-```
-
-Character evaluates:
-
-```text
-source trust
-
-expertise
-
-values
-
-relationship
-
-own judgment.
-```
-
----
-
-# Delegation
-
-A character may decide:
-
-```text
-SOMEONE ELSE
-SHOULD HANDLE THIS.
-```
-
-Delegation may depend on:
-
-```text
-authority
-
-trust
-
-expertise
-
-availability
-
-relationship
-
-role.
-```
-
----
-
-# Delegation Example
-
-Character Goal:
-
-```text
-Repair water pump.
-```
-
-Character knows:
-
-```text
-Engineer nearby.
-
-Engineer Skill:
-HIGH.
-```
-
-Decision:
-
-```text
-Ask engineer.
-```
-
-The character remains:
-
-```text
-AGENTIC
-```
-
-even though another person performs the action.
-
----
-
-# Authority
-
-Characters may defer decisions to:
-
-```text
-recognized authority.
-```
-
-Examples:
-
-```text
-doctor
-
-commander
-
-manager
-
-parent
-
-council
-
-expert.
-```
-
----
-
-# Authority Trust
-
-Deference depends on:
-
-```text
-role legitimacy
-
-trust
-
-expertise
-
-past performance
-
-current stakes.
-```
-
----
-
-# Defiance
-
-Characters may reject authority when:
-
-```text
-trust low
-
-values conflict
-
-relationship conflict
-
-authority perceived incompetent
-
-personal stakes high.
-```
-
----
-
-# Social Norms
-
-Characters operate within:
-
-```text
 SOCIAL EXPECTATIONS.
 ```
 
-Norms may influence:
+The Decision system does not redefine those states.
+
+It resolves the choice context they create.
+
+---
+
+# 45. Values Boundary
+
+Older Character architecture used explicit `Values` heavily.
+
+Until the Character audit determines final Values ownership:
 
 ```text
-what options feel acceptable.
+DECISION MAKING
+MAY CONSUME
+ESTABLISHED VALUE-LIKE
+HUMAN PRIORITIES
+
+BUT MUST NOT
+CREATE A PARALLEL
+VALUE SYSTEM.
+```
+
+Final ownership must align with:
+
+```text
+HUMAN ATTRIBUTES
+
+BELIEFS
+
+IDENTITY
+
+CULTURE
+
+CHARACTER STATE.
 ```
 
 ---
 
-# Norm Violation
+# 46. No Moral Alignment
 
-Characters may violate norms if:
+Decision Making must not evaluate actions through:
 
 ```text
-motivation strong enough.
+GOOD
+
+EVIL
+
+LAWFUL
+
+CHAOTIC
 ```
 
-Potential costs:
+as universal Character mechanics.
+
+It evaluates:
 
 ```text
-reputation
+CHARACTER PERSPECTIVE
 
-relationship damage
+MOTIVE
 
-sanctions
+COST
 
-self-conflict.
+BELIEF
+
+CONTEXT
+
+CONSEQUENCE.
 ```
 
 ---
 
-# Law
+# 47. Social Norms
 
-Legal constraints may influence decisions through:
+Culture and Society may create expectations about:
 
 ```text
-morality
-
-fear of punishment
-
-social legitimacy
-
-habit
-
-role duty.
+WHAT PEOPLE
+SHOULD DO.
 ```
 
-Law should not operate as:
+A Character may:
 
 ```text
-MAGICAL ACTION BLOCK.
+FOLLOW
+
+QUESTION
+
+IGNORE
+
+BREAK
+
+SECRETLY VIOLATE
+```
+
+those expectations.
+
+Norms influence options.
+
+They do not remove agency.
+
+---
+
+# 48. Law
+
+Law may alter:
+
+```text
+RISK
+
+EXPECTED CONSEQUENCE
+
+RESPONSIBILITY
+
+LEGITIMACY
+
+SOCIAL COST.
+```
+
+Law is not:
+
+```text
+A MAGICAL
+ACTION BLOCK.
 ```
 
 Characters can break laws.
 
 ---
 
-# Desperation
+# 49. Role and Responsibility
 
-As Needs become critical:
+Characters may occupy roles such as:
 
 ```text
-previously unacceptable options
-may enter consideration.
+PARENT
+
+DOCTOR
+
+ENGINEER
+
+LEADER
+
+EMPLOYEE
+
+CAREGIVER
+
+OFFICIAL
+
+PARTNER
+
+FRIEND.
 ```
+
+Roles may create expectations and responsibilities.
+
+These become decision inputs.
+
+---
+
+# 50. Role Conflict
 
 Example:
 
 ```text
-Normal:
-Stealing food
-UNACCEPTABLE.
+CHARACTER IS
+
+DOCTOR
+
+AND
+
+PARENT.
 ```
 
-Later:
+Crisis:
 
 ```text
-Child starving.
+HOSPITAL
+NEEDS STAFF
+
+CHILD
+NEEDS EVACUATION.
 ```
 
-Option may become:
+There may be:
 
 ```text
-CONSIDERED.
+NO OPTION
+THAT FULLY
+SATISFIES BOTH.
+```
+
+That is valid human conflict.
+
+---
+
+# 51. Relationships and Sacrifice
+
+A Character may accept:
+
+```text
+TIME LOSS
+
+RESOURCE LOSS
+
+RISK
+
+CAREER DAMAGE
+
+REPUTATION DAMAGE
+```
+
+for someone important.
+
+The Relationship system provides context.
+
+Decision Making resolves the current tradeoff.
+
+---
+
+# 52. Sacrifice
+
+A sacrifice requires:
+
+```text
+MEANINGFUL
+ACCEPTED COST.
+```
+
+If nothing meaningful is lost or risked:
+
+```text
+IT IS NOT
+A SACRIFICE.
 ```
 
 ---
 
-# Decision Threshold Shift
+# 53. Self-Preservation
+
+Humans normally possess strong self-preservation pressure.
+
+But:
+
+```text
+SELF-PRESERVATION
+IS NOT ABSOLUTE.
+```
+
+It may conflict with:
+
+```text
+CHILDREN
+
+LOVED ONES
+
+DUTY
+
+BELIEF
+
+DESPERATION
+
+RESPONSIBILITY.
+```
+
+Extreme sacrifice requires strong causal support.
+
+---
+
+# 54. Psychology and Decision Depth
+
+Psychological state may alter:
+
+```text
+ATTENTION
+
+PATIENCE
+
+PERCEIVED RISK
+
+OPTION GENERATION
+
+TIME HORIZON
+
+CONFIDENCE
+
+ABILITY TO DELIBERATE.
+```
+
+But Psychology never directly dictates a specific choice.
+
+---
+
+# 55. Fear
+
+Fear may plausibly:
+
+```text
+HEIGHTEN THREAT ATTENTION
+
+NARROW OPTIONS
+
+INCREASE SAFETY WEIGHT
+
+PROMOTE AVOIDANCE
+
+INCREASE URGENCY.
+```
+
+Different people may still respond differently.
+
+---
+
+# 56. Stress
+
+Stress may increase reliance on:
+
+```text
+FAMILIAR STRATEGIES
+
+HEURISTICS
+
+IMMEDIATE SOLUTIONS
+
+DOMINANT PRIORITIES.
+```
+
+---
+
+# 57. Fatigue
+
+Fatigue may reduce:
+
+```text
+DELIBERATION DEPTH
+
+PATIENCE
+
+ATTENTION
+
+INFORMATION SEEKING.
+```
+
+A tired Character may choose the easier acceptable option.
+
+---
+
+# 58. Panic
+
+Extreme overload may produce:
+
+```text
+FLIGHT
+
+FREEZE
+
+IMPULSIVE ACTION
+
+NARROWED ATTENTION.
+```
+
+Panic must remain contextual.
+
+Not random.
+
+---
+
+# 59. Freeze
+
+Freeze is not necessarily a deliberate:
+
+```text
+I CHOOSE
+TO DO NOTHING.
+```
+
+It may emerge from:
+
+```text
+OVERLOAD
+
+FEAR
+
+ACTION INHIBITION.
+```
+
+Decision architecture must allow this distinction.
+
+---
+
+# 60. Time Pressure
+
+Available time affects how deeply a Character can evaluate options.
+
+Low pressure may allow:
+
+```text
+RESEARCH
+
+CONSULTATION
+
+COMPARISON
+
+EXPERIMENTATION
+
+DELAY.
+```
+
+High pressure may favor:
+
+```text
+HABIT
+
+EXPERIENCE
+
+HEURISTIC
+
+INTUITION
+
+SIMPLE ACTION SET.
+```
+
+---
+
+# 61. Deadlines
+
+Some decisions contain explicit deadlines.
+
+Example:
+
+```text
+LAST CONVOY:
+
+18:00.
+```
+
+As the deadline approaches:
+
+```text
+WAITING
+ITSELF
+HAS CONSEQUENCES.
+```
+
+---
+
+# 62. Inaction
+
+`DO NOTHING` may be a valid choice.
+
+Reasons may include:
+
+```text
+INSUFFICIENT INFORMATION
+
+HIGH RISK
+
+LOW MOTIVATION
+
+FEAR
+
+FATIGUE
+
+WAITING
+
+CONFLICTING GOALS
+
+HOPE THAT
+SITUATION RESOLVES
+
+AVOIDANCE.
+```
+
+---
+
+# 63. Inaction Has Consequences
+
+```text
+NO ACTION
+≠
+NO CONSEQUENCE.
+```
+
+The world continues.
+
+An opportunity may disappear.
+
+A relationship may change.
+
+A threat may worsen.
+
+Someone else may act.
+
+---
+
+# 64. Delay
+
+A Character may choose:
+
+```text
+DECIDE LATER.
+```
+
+Delay may be sensible when:
+
+```text
+MORE INFORMATION
+IS EXPECTED
+
+DEADLINE IS DISTANT
+
+WAITING COST IS LOW
+
+UNCERTAINTY IS HIGH.
+```
+
+---
+
+# 65. Delay Risk
+
+Delay may cause:
+
+```text
+OPPORTUNITY LOSS
+
+WORSENING CONDITIONS
+
+DEADLINE FAILURE
+
+OTHER ACTORS
+MOVING FIRST
+
+RELATIONSHIP FRUSTRATION.
+```
+
+---
+
+# 66. Information Seeking
+
+A Character may decide:
+
+```text
+I NEED
+MORE INFORMATION
+BEFORE CHOOSING.
+```
+
+Possible actions include:
+
+```text
+ASK EXPERT
+
+CALL CONTACT
+
+INSPECT LOCATION
+
+CHECK RECORDS
+
+COMPARE SOURCES
+
+WAIT FOR REPORT.
+```
+
+This decision may feed back into Autonomy and Knowledge systems.
+
+---
+
+# 67. Value of Information
+
+Information seeking becomes especially plausible when:
+
+```text
+STAKES ARE HIGH
+
+UNCERTAINTY IS HIGH
+
+INFORMATION IS ACCESSIBLE
+
+TIME EXISTS.
+```
+
+Seeking information also has cost.
+
+---
+
+# 68. Advice
+
+Advice is:
+
+```text
+INFORMATION.
+```
+
+Not:
+
+```text
+COMMAND.
+```
+
+A Character may consider:
+
+```text
+SOURCE TRUST
+
+SOURCE EXPERTISE
+
+RELATIONSHIP
+
+MOTIVE
+
+OWN BELIEFS.
+```
+
+---
+
+# 69. Delegation
+
+Delegation is a valid agentic choice.
+
+A Character may decide:
+
+```text
+SOMEONE ELSE
+SHOULD DO THIS.
+```
+
+This may depend on:
+
+```text
+EXPERTISE
+
+TRUST
+
+AUTHORITY
+
+AVAILABILITY
+
+RELATIONSHIP
+
+LOCATION.
+```
+
+Delegation does not reduce Character agency.
+
+---
+
+# 70. Authority
+
+A Character may defer to recognized authority.
+
+Examples:
+
+```text
+DOCTOR
+
+COMMANDER
+
+MANAGER
+
+PARENT
+
+COUNCIL
+
+EXPERT.
+```
+
+Deference depends on perceived:
+
+```text
+LEGITIMACY
+
+TRUST
+
+EXPERTISE
+
+PAST PERFORMANCE
+
+CURRENT STAKES.
+```
+
+---
+
+# 71. Defiance
+
+Characters may reject authority because of:
+
+```text
+LOW TRUST
+
+BELIEF CONFLICT
+
+PERSONAL STAKES
+
+RELATIONSHIP CONFLICT
+
+PERCEIVED INCOMPETENCE
+
+IDENTITY
+
+HISTORICAL EXPERIENCE.
+```
+
+Authority does not remove agency.
+
+---
+
+# 72. Persuasion
+
+Persuasion should change:
+
+```text
+DECISION CONDITIONS.
+```
+
+It may alter:
+
+```text
+BELIEF
+
+EXPECTED BENEFIT
+
+EXPECTED COST
+
+PERCEIVED RISK
+
+CONFIDENCE
+
+TRUST
+
+UNDERSTANDING.
+```
+
+Persuasion must not operate as:
+
+```text
+MIND CONTROL.
+```
+
+---
+
+# 73. Player Requests
+
+A player request enters Decision Making as:
+
+```text
+INPUT.
+```
+
+Not:
+
+```text
+COMMAND.
+```
+
+Unless legitimate authority or other binding context applies, Characters retain agency.
+
+---
+
+# 74. Refusal
+
+Characters may refuse because of:
+
+```text
+RISK
+
+OTHER COMMITMENTS
+
+LACK OF TRUST
+
+RELATIONSHIP
+
+RESPONSIBILITY
+
+PSYCHOLOGY
+
+LACK OF CAPABILITY
+
+BELIEF
+
+GOAL CONFLICT.
+```
+
+Refusal must emerge from Character state.
+
+Not arbitrary NPC blocking.
+
+---
+
+# 75. Conditional Acceptance
+
+A Character may decide:
+
+```text
+YES,
+IF...
+```
+
+Possible conditions include:
+
+```text
+PAYMENT
+
+PROTECTION
+
+MORE INFORMATION
+
+RESOURCE SUPPORT
+
+HELP IN RETURN
+
+DEADLINE CHANGE.
+```
+
+Negotiation therefore changes decision context.
+
+---
+
+# 76. Threat and Coercion
+
+Threat changes:
+
+```text
+EXPECTED COST
+OF REFUSAL.
+```
+
+It may also create:
+
+```text
+FEAR
+
+RESENTMENT
+
+FUTURE RESISTANCE
+
+RELATIONSHIP DAMAGE.
+```
+
+A coerced Character still chooses within constrained options.
+
+Possible responses:
+
+```text
+COMPLY
+
+RESIST
+
+ESCAPE
+
+DECEIVE
+
+DELAY.
+```
+
+---
+
+# 77. Deception
+
+A Character may choose to:
+
+```text
+LIE
+
+OMIT
+
+MISDIRECT
+
+CONCEAL.
+```
+
+Possible evaluation includes:
+
+```text
+EXPECTED BENEFIT
+
+DISCOVERY RISK
+
+RELATIONSHIP COST
+
+SOCIAL COST
+
+BELIEF
+
+RESPONSIBILITY.
+```
+
+---
+
+# 78. Truth Telling
+
+Truth may itself carry cost.
+
+Examples:
+
+```text
+ADMITTING ERROR
+
+EXPOSING FRIEND
+
+REPORTING FAILURE
+
+REVEALING SECRET
+
+ACKNOWLEDGING BETRAYAL.
+```
+
+Honesty is not always the low-cost option.
+
+---
+
+# 79. Hidden Actions
+
+A Character may choose differently when:
+
+```text
+OBSERVED
+```
+
+than when:
+
+```text
+PRIVATE.
+```
+
+Decision Making may consider:
+
+```text
+WHO WILL KNOW?
+
+WHO MAY FIND OUT?
+
+WHAT HAPPENS
+IF DISCOVERED?
+```
+
+---
+
+# 80. Audience Effect
+
+Public context may change:
+
+```text
+REPUTATIONAL COST
+
+SOCIAL PRESSURE
+
+IDENTITY PRESSURE
+
+FACTION PRESSURE
+
+FEAR OF SANCTION.
+```
+
+This does not require a universal Reputation score.
+
+---
+
+# 81. Social Prediction
+
+Characters may predict how others will respond.
+
+This prediction may use:
+
+```text
+PAST BEHAVIOR
+
+RELATIONSHIP KNOWLEDGE
+
+REPUTATION
+
+BELIEFS
+
+CULTURE.
+```
+
+The prediction may be wrong.
+
+---
+
+# 82. Missed Social Opportunity
+
+Example:
+
+```text
+CHARACTER EXPECTS
+FRIEND TO REFUSE
+
+↓
+
+DOES NOT ASK
+
+↓
+
+FRIEND WOULD
+HAVE AGREED.
+```
+
+This is valid emergent human consequence.
+
+---
+
+# 83. Decision Confidence
+
+A Character may possess confidence in their current choice.
 
 Conceptually:
 
 ```text
-MOTIVATIONAL PRESSURE ↑
-      ↓
-ACCEPTABLE COST ↑
-      ↓
-ACCEPTABLE RISK ↑
-      ↓
-OPTION SET EXPANDS.
+VERY LOW
+
+LOW
+
+MODERATE
+
+HIGH
+
+VERY HIGH.
+```
+
+These are conceptual descriptors, not mandatory numerical states.
+
+---
+
+# 84. Low Confidence
+
+Low confidence may increase:
+
+```text
+INFORMATION SEEKING
+
+CONSULTATION
+
+DELAY
+
+RECONSIDERATION
+
+REGRET.
 ```
 
 ---
 
-# Moral Boundaries
+# 85. High Confidence
 
-Some actions may remain:
-
-```text
-EXTREMELY UNLIKELY
-```
-
-even under pressure.
-
-Boundaries depend on:
+High confidence may increase:
 
 ```text
-values
+COMMITMENT
 
-personality
+SPEED
 
-relationships
-
-identity
-
-history.
+RESISTANCE
+TO CONTRADICTORY
+INFORMATION.
 ```
 
 ---
 
-# Identity
+# 86. Overconfidence
 
-Characters may ask implicitly:
+A Character may be:
 
 ```text
-WHAT WOULD SOMEONE
-LIKE ME DO?
+MORE CONFIDENT
+THAN THEIR EVIDENCE
+JUSTIFIES.
 ```
 
-Self-concept can influence decisions.
+This may produce realistic mistakes.
+
+---
+
+# 87. Underconfidence
+
+A Character may possess:
+
+```text
+GOOD INFORMATION
+
+GOOD EXPERTISE
+```
+
+yet still hesitate.
+
+Capability and confidence remain distinct.
+
+---
+
+# 88. Intuition
+
+Experienced Characters may recognize patterns rapidly.
+
+What feels like:
+
+```text
+INTUITION
+```
+
+may sometimes represent:
+
+```text
+COMPRESSED
+EXPERIENCE-BASED
+REASONING.
+```
+
+---
+
+# 89. Intuition Limits
+
+Intuition is more reliable when:
+
+```text
+EXPERIENCE IS RELEVANT
+
+ENVIRONMENT IS FAMILIAR
+
+PATTERNS REPEAT.
+```
+
+It may fail when:
+
+```text
+CONDITIONS CHANGED
+
+SITUATION IS NOVEL
+
+BIAS IS STRONG.
+```
+
+---
+
+# 90. Creativity
+
+Characters may generate options not directly retrieved from prior Plans.
+
+Novel option generation may depend on:
+
+```text
+EXPERTISE
+
+EXPERIENCE
+
+INFORMATION
+
+TIME
+
+AVAILABLE MATERIALS
+
+SOCIAL CONNECTIONS
+
+HUMAN ATTRIBUTES.
+```
+
+Avoid creating a separate universal Creativity score unless required later.
+
+---
+
+# 91. Improvisation
+
+When a Plan fails, a Character may improvise using:
+
+```text
+AVAILABLE OBJECTS
+
+PARTIAL EXPERTISE
+
+NEARBY PEOPLE
+
+NEW INFORMATION
+
+UNEXPECTED OPPORTUNITIES.
+```
+
+Improvisation must still respect capability and information.
+
+---
+
+# 92. Reversibility
+
+Under uncertainty, Characters may prefer options that preserve flexibility.
 
 Example:
 
 ```text
-"I am a doctor.
-I don't leave patients behind."
+RENT WORKSHOP
+
+INSTEAD OF
+
+BUY WORKSHOP.
+```
+
+Reversibility may itself be valuable.
+
+---
+
+# 93. Experimentation
+
+A Character may take a small test action before full commitment.
+
+Example:
+
+```text
+SELL GOODS
+ONE DAY PER WEEK
+
+BEFORE
+
+QUITTING JOB.
+```
+
+This allows learning while limiting risk.
+
+---
+
+# 94. Time Horizon
+
+Characters differ in how far ahead they meaningfully consider consequences.
+
+Context may shorten or lengthen this horizon.
+
+Severe scarcity may shift attention toward:
+
+```text
+IMMEDIATE SURVIVAL.
+```
+
+Stable conditions may permit:
+
+```text
+LONG-TERM INVESTMENT.
 ```
 
 ---
 
-# Self-Consistency
+# 95. Future Discounting
 
-Characters often prefer actions consistent with:
+Future outcomes may receive less current weight because they are:
 
 ```text
-their existing self-image.
+DISTANT
+
+UNCERTAIN
+
+ABSTRACT.
 ```
 
-But crises may challenge this.
+The degree should emerge from Character context, not one global mechanic.
 
 ---
 
-# Identity Crisis
+# 96. Unseen Consequences
 
-A major decision may reveal:
+Characters cannot evaluate:
 
 ```text
-CHARACTER IS NOT
-WHO THEY THOUGHT THEY WERE.
+CONSEQUENCES
+THEY CANNOT
+PLAUSIBLY ANTICIPATE.
+```
+
+World Simulation may still produce them.
+
+This is essential.
+
+---
+
+# 97. Butterfly Effects
+
+Small decisions may produce large later consequences.
+
+Decision Making must not grant Characters:
+
+```text
+OMNISCIENT
+BUTTERFLY-EFFECT
+PREDICTION.
+```
+
+---
+
+# 98. Commitment
+
+Once a meaningful choice is made:
+
+```text
+THE CHARACTER
+SHOULD NOT
+RECONSIDER IT
+EVERY SIMULATION TICK.
+```
+
+Commitment creates behavioral stability.
+
+---
+
+# 99. Commitment Is Not Permanent
+
+A Character may reconsider when meaningful conditions change.
+
+Possible triggers include:
+
+```text
+NEW IMPORTANT INFORMATION
+
+PLAN FAILURE
+
+MAJOR COST CHANGE
+
+DEADLINE CHANGE
+
+GOAL CHANGE
+
+RELATIONSHIP EVENT
+
+WORLD EVENT
+
+UNEXPECTED OPPORTUNITY
+
+CAPABILITY CHANGE.
+```
+
+---
+
+# 100. Decision Stability
+
+Small irrelevant state changes should not constantly flip decisions.
+
+Avoid:
+
+```text
+A
+↓
+B
+↓
+A
+↓
+B
+```
+
+without meaningful new cause.
+
+---
+
+# 101. Hysteresis
+
+A committed Character may require:
+
+```text
+MORE EVIDENCE
+TO REVERSE
+A DECISION
+```
+
+than they originally needed to choose it.
+
+This models persistence and prevents mechanical oscillation.
+
+---
+
+# 102. Sunk Cost
+
+Humans may continue poor Plans because they already invested:
+
+```text
+TIME
+
+MONEY
+
+REPUTATION
+
+EMOTION
+
+IDENTITY.
 ```
 
 This may produce:
 
 ```text
-Character Development.
+PERSISTENCE
+BEYOND
+OBJECTIVE VALUE.
 ```
 
 ---
 
-# Experience
+# 103. Escalation of Commitment
 
-Past outcomes influence future decisions.
-
-Example:
+After failure, a Character may sometimes respond by:
 
 ```text
-Character trusted trader.
-
-Trader betrayed them.
-
-Future Trust:
-LOWER.
+INVESTING MORE.
 ```
+
+This must emerge from context.
+
+Not from a universal bias rule.
 
 ---
 
-# Learning
+# 104. Abandonment
+
+Characters may abandon a Goal or Plan when:
+
+```text
+COST IS TOO HIGH
+
+SUCCESS APPEARS TOO UNLIKELY
+
+GOAL LOST IMPORTANCE
+
+CONDITIONS CHANGED
+
+BETTER ALTERNATIVE EMERGED
+
+CHARACTER CHANGED.
+```
+
+Decision Making selects abandonment.
+
+Goals / Plans owns the resulting state transition.
+
+---
+
+# 105. Accumulated Pressure
+
+Major decisions need not arise from one major event.
 
 Conceptually:
 
 ```text
-DECISION
-      ↓
-OUTCOME
-      ↓
-MEMORY
-      ↓
-BELIEF UPDATE
-      ↓
-FUTURE DECISION CHANGE.
+SMALL PRESSURE
++
+SMALL PRESSURE
++
+SMALL PRESSURE
++
+NEW EVENT
+↓
+TIPPING POINT
+↓
+MAJOR DECISION.
 ```
 
 ---
 
-# Success Reinforcement
+# 106. Last Straw
 
-Repeated success may strengthen:
+A seemingly minor event may trigger a major decision because:
 
 ```text
-habit
+THE IMPORTANT CAUSE
+IS THE ACCUMULATED
+HISTORY
 
-confidence
-
-heuristic
-
-source trust
-
-strategy.
+NOT ONLY
+THE FINAL EVENT.
 ```
 
 ---
 
-# Failure Learning
-
-Failure may cause:
-
-```text
-plan revision
-
-risk reassessment
-
-confidence loss
-
-information seeking
-
-strategy change.
-```
-
----
-
-# Mislearning
-
-Characters may learn:
-
-```text
-THE WRONG LESSON.
-```
-
-Example:
-
-```text
-Character crosses unsafe bridge.
-
-Bridge does not collapse.
-
-Conclusion:
-Warnings were exaggerated.
-```
-
-Actual World Truth:
-
-```text
-Character was lucky.
-```
-
----
-
-# Attribution
-
-Characters interpret:
-
-```text
-WHY AN OUTCOME OCCURRED.
-```
-
-This affects learning.
-
----
-
-# Correct Attribution
-
-```text
-Plan failed
-because fuel ran out.
-```
-
-Character learns:
-
-```text
-carry reserve fuel.
-```
-
----
-
-# Incorrect Attribution
-
-```text
-Plan failed
-because fuel ran out.
-```
-
-Character believes:
-
-```text
-Mara gave bad directions.
-```
-
-Future relationship:
-
-```text
-trust decreases.
-```
-
----
-
-# Success Bias
-
-A risky decision that succeeds may:
-
-```text
-increase future risk tolerance.
-```
-
-Even when:
-
-```text
-decision was objectively poor.
-```
-
----
-
-# Failure Bias
-
-A good decision that fails due to bad luck may:
-
-```text
-reduce confidence.
-```
-
----
-
-# Luck
-
-Decision quality and outcome quality must remain separate.
+# 107. Decision and Outcome Are Separate
 
 Critical distinction:
 
@@ -2619,1392 +2762,399 @@ is possible.
 
 ---
 
-# Decision Quality
+# 108. Decision Quality
 
-The simulation should evaluate:
-
-```text
-decision process
-```
-
-separately from:
+Decision quality should be evaluated relative to:
 
 ```text
-result.
+WHAT THE CHARACTER
+KNEW
+
+WHAT THEY
+COULD REASONABLY
+HAVE EXPECTED
+
+WHAT OPTIONS
+THEY PERCEIVED
+
+WHAT TIME
+THEY HAD.
 ```
+
+Never evaluate the decision as if the Character knew the future.
 
 ---
 
-# Commitment
+# 109. Outcome Quality
 
-Once a character chooses a Plan, they should not reconsider:
-
-```text
-EVERY SIMULATION TICK.
-```
-
-Plans possess:
+Outcome belongs to:
 
 ```text
-COMMITMENT.
+WORLD RESOLUTION.
 ```
+
+The Decision system chooses.
+
+The World determines what follows.
 
 ---
 
-# Commitment Benefits
+# 110. Luck
 
-Commitment prevents:
-
-```text
-oscillation
-
-indecision loops
-
-constant plan switching.
-```
-
----
-
-# Reconsideration Trigger
-
-Characters should reconsider when:
-
-```text
-new important information
-
-major cost change
-
-plan failure
-
-deadline change
-
-Goal priority change
-
-relationship event
-
-world event
-
-unexpected opportunity.
-```
-
----
-
-# Sunk Cost
-
-Characters may continue poor Plans because:
-
-```text
-they already invested heavily.
-```
-
-Examples:
-
-```text
-money
-
-time
-
-reputation
-
-emotion.
-```
-
----
-
-# Sunk Cost Bias
-
-Conceptually:
-
-```text
-"I've come this far.
-I can't stop now."
-```
-
-This may produce:
-
-```text
-PERSISTENCE
-BEYOND RATIONAL VALUE.
-```
-
----
-
-# Escalation of Commitment
-
-A character may respond to failure by:
-
-```text
-investing more.
-```
-
-This should depend on:
-
-```text
-personality
-
-identity
-
-stakes
-
-public commitment.
-```
-
----
-
-# Abandonment
-
-Characters may abandon Goals or Plans when:
-
-```text
-cost too high
-
-success too unlikely
-
-Goal no longer important
-
-conditions changed
-
-better opportunity emerged.
-```
-
----
-
-# Giving Up
-
-Abandonment may be:
-
-```text
-RATIONAL
-
-EMOTIONAL
-
-TEMPORARY
-
-PERMANENT.
-```
-
----
-
-# Persistence
-
-Characters differ in:
-
-```text
-how long they continue
-despite difficulty.
-```
-
-Persistence may derive from:
-
-```text
-motivation
-
-personality
-
-values
-
-commitment
-
-relationship importance.
-```
-
----
-
-# Regret
-
-After a decision, characters may evaluate:
-
-```text
-WHAT IF I HAD
-CHOSEN DIFFERENTLY?
-```
-
-Regret may influence:
-
-```text
-future decisions
-
-relationships
-
-self-belief
-
-mood
-
-character development.
-```
-
----
-
-# Counterfactual Thinking
-
-Character may compare:
-
-```text
-ACTUAL OUTCOME
-```
-
-with:
-
-```text
-IMAGINED ALTERNATIVE.
-```
-
-The imagined alternative may itself be:
-
-```text
-incorrect.
-```
-
----
-
-# Responsibility
-
-Characters may assign responsibility to:
-
-```text
-self
-
-other character
-
-authority
-
-faction
-
-chance
-
-world conditions.
-```
-
-This influences:
-
-```text
-belief
-
-relationship
-
-future decisions.
-```
-
----
-
-# Decision Memory
-
-Important decisions should be remembered when they affect:
-
-```text
-identity
-
-relationships
-
-long-term Goals
-
-reputation
-
-future behavior.
-```
-
----
-
-# Routine Decision Compression
-
-Routine choices should normally:
-
-```text
-NOT
-```
-
-generate persistent memory.
-
----
-
-# Major Decision Memory
-
-Examples:
-
-```text
-left family during crisis
-
-saved rival
-
-betrayed faction
-
-abandoned career
-
-refused evacuation
-
-accepted leadership.
-```
-
-These may become:
-
-```text
-CHARACTER-DEFINING EVENTS.
-```
-
----
-
-# Social Decisions
-
-Many decisions involve:
-
-```text
-OTHER PEOPLE.
-```
-
-Examples:
-
-```text
-help
-
-refuse
-
-trust
-
-confide
-
-cooperate
-
-compete
-
-forgive
-
-confront
-
-avoid
-
-betray.
-```
-
----
-
-# Social Prediction
-
-Characters may estimate:
-
-```text
-HOW OTHERS
-WILL RESPOND.
-```
-
-This prediction depends on:
-
-```text
-relationship knowledge
-
-past behavior
-
-reputation
-
-belief.
-```
-
----
-
-# Social Prediction Can Be Wrong
-
-Example:
-
-```text
-Character expects
-friend to refuse help.
-```
+Chance may influence outcome independently of decision quality.
 
 Therefore:
 
 ```text
-does not ask.
+SUCCESS
+DOES NOT PROVE
+THE DECISION WAS GOOD.
 ```
 
-Friend would actually have:
+And:
 
 ```text
-said yes.
-```
-
-This creates believable missed opportunities.
-
----
-
-# Coordination
-
-Characters may choose actions requiring:
-
-```text
-multiple people.
-```
-
-Coordination depends on:
-
-```text
-communication
-
-trust
-
-timing
-
-shared Goals
-
-authority.
+FAILURE
+DOES NOT PROVE
+THE DECISION WAS BAD.
 ```
 
 ---
 
-# Collective Decision
+# 111. Learning Boundary
 
-Groups may make decisions through:
+The old architecture included large Learning ownership inside Decision Making.
 
-```text
-leader authority
+This is no longer appropriate.
 
-vote
-
-negotiation
-
-consensus
-
-informal influence
-
-institutional procedure.
-```
-
-Group decisions belong partly to:
+Instead:
 
 ```text
-Society
+DECISION
+↓
+ACTION
+↓
+OUTCOME
+↓
+EXPERIENCE
+↓
+MEMORY / BELIEF /
+PROGRESSION SYSTEMS
+MAY UPDATE
+↓
+FUTURE DECISION
+USES NEW STATE.
 ```
 
-and:
-
-```text
-Faction systems.
-```
-
-But individual characters remain decision actors.
+Decision Making consumes the updated state later.
 
 ---
 
-# Conflict
+# 112. Mislearning Still Matters
 
-When characters choose incompatible actions:
-
-```text
-CONFLICT EMERGES.
-```
-
-Conflict may concern:
-
-```text
-resources
-
-Goals
-
-Values
-
-relationships
-
-beliefs
-
-territory
-
-authority
-
-timing.
-```
-
----
-
-# Conflict Does Not Require Hostility
+The Character may update their beliefs incorrectly after an outcome.
 
 Example:
 
 ```text
-Doctor:
-Evacuate immediately.
+DANGEROUS BRIDGE
 
-Engineer:
-Stay 30 minutes
-to stabilize water system.
+↓
+
+CHARACTER CROSSES
+
+↓
+
+NOTHING HAPPENS
+
+↓
+
+CHARACTER CONCLUDES:
+
+"THE WARNINGS
+WERE EXAGGERATED."
+```
+
+World Truth:
+
+```text
+THEY WERE LUCKY.
+```
+
+Belief update belongs to the relevant Knowledge / Belief architecture.
+
+Decision Making later uses the resulting belief.
+
+---
+
+# 113. Attribution
+
+Characters may misunderstand why something happened.
+
+Example:
+
+```text
+VEHICLE FAILED
+BECAUSE FUEL
+RAN OUT
+
+BUT CHARACTER
+BLAMES MARA'S
+DIRECTIONS.
+```
+
+The incorrect attribution may later influence decisions.
+
+Decision Making does not own attribution memory.
+
+---
+
+# 114. Regret Boundary
+
+Regret belongs primarily to:
+
+```text
+HUMAN PSYCHOLOGY
++
+MEMORY
++
+BELIEF / IDENTITY.
+```
+
+Decision Making may later consume regret as context.
+
+It does not need its own separate Regret system.
+
+---
+
+# 115. Counterfactual Thinking
+
+Characters may imagine:
+
+```text
+WHAT IF
+I HAD CHOSEN
+DIFFERENTLY?
+```
+
+But imagined alternatives are not World Truth.
+
+They may be wrong.
+
+---
+
+# 116. Coordination
+
+A Character may choose actions requiring others.
+
+Decision context may therefore include:
+
+```text
+WHO IS AVAILABLE
+
+WHO CAN HELP
+
+WHO CAN BE TRUSTED
+
+WHO HAS AUTHORITY
+
+WHO HAS EXPERTISE
+
+WHO CAN BE REACHED.
+```
+
+---
+
+# 117. Collective Decision Boundary
+
+Group decisions may involve:
+
+```text
+VOTE
+
+CONSENSUS
+
+NEGOTIATION
+
+LEADERSHIP
+
+INSTITUTIONAL PROCEDURE.
+```
+
+But those collective mechanisms belong primarily to:
+
+```text
+FACTIONS
+
+SOCIETY
+
+INSTITUTIONS.
+```
+
+Decision Making owns the individual Character's participation in them.
+
+---
+
+# 118. Conflict
+
+Conflict may emerge when Actors choose incompatible actions.
+
+Conflict may concern:
+
+```text
+RESOURCES
+
+GOALS
+
+BELIEFS
+
+RELATIONSHIPS
+
+TERRITORY
+
+AUTHORITY
+
+TIMING.
+```
+
+Conflict does not require hostility.
+
+---
+
+# 119. Reasonable Disagreement
+
+Example:
+
+```text
+DOCTOR:
+EVACUATE NOW
+
+ENGINEER:
+STAY 20 MINUTES
+TO STABILIZE
+WATER SYSTEM.
 ```
 
 Both may be:
 
 ```text
-reasonable.
+REASONABLE.
 ```
+
+Project Ascension must allow disagreement without requiring one side to be foolish or evil.
 
 ---
 
-# Negotiation
+# 120. Negotiation
 
-Characters may resolve conflicting Goals through:
+Negotiation may change:
 
 ```text
-communication
+OPTIONS
 
-compromise
+COSTS
 
-trade
+BENEFITS
 
-promise
+TIMING
 
-threat
+INFORMATION
 
-persuasion
+COMMITMENTS
 
-delegation.
+RELATIONSHIP EXPECTATIONS.
 ```
+
+The resulting new option may be:
+
+```text
+ACCEPTABLE
+TO MULTIPLE ACTORS
+```
+
+without being ideal for anyone.
 
 ---
 
-# Compromise
+# 121. Compromise
 
-A character may accept:
-
-```text
-LESS THAN IDEAL
-```
-
-to achieve:
-
-```text
-ENOUGH.
-```
-
-This is another form of:
+Compromise is often another form of:
 
 ```text
 SATISFICING.
 ```
 
----
-
-# Promise
-
-Promises create:
+A Character may accept:
 
 ```text
-FUTURE DECISION PRESSURE.
+LESS THAN IDEAL
 ```
 
-Breaking a promise may produce:
+to obtain:
 
 ```text
-relationship damage
-
-self-conflict
-
-reputation damage.
+ENOUGH.
 ```
 
 ---
 
-# Obligation
+# 122. Decision Diversity
 
-Past commitments may constrain future choice.
+Two Characters with:
 
-Examples:
-
-```text
-contract
-
-promise
-
-debt
-
-family responsibility
-
-professional oath.
-```
-
----
-
-# Sacrifice
-
-A sacrifice occurs when a character intentionally accepts:
-
-```text
-SIGNIFICANT COST
-```
-
-to protect:
-
-```text
-higher-priority Goal
-
-relationship
-
-value
-
-community.
-```
-
----
-
-# Sacrifice Must Have Cost
-
-If the action costs nothing meaningful:
-
-```text
-IT IS NOT A SACRIFICE.
-```
-
----
-
-# Sacrifice Example
-
-Character has:
-
-```text
-Fuel:
-Enough to evacuate personally.
-```
-
-Neighbor needs fuel.
-
-Character chooses:
-
-```text
-give fuel away.
-```
-
-Result:
-
-```text
-own evacuation becomes difficult.
-```
-
-This may express:
-
-```text
-relationship
-
-value
-
-identity.
-```
-
----
-
-# Self-Preservation
-
-Characters normally possess:
-
-```text
-SELF-PRESERVATION PRESSURE.
-```
-
-But it is not absolute.
-
-It may be overridden by:
-
-```text
-children
-
-loved ones
-
-duty
-
-belief
-
-desperation
-
-sacrifice.
-```
-
----
-
-# Survival Decisions
-
-Under severe threat, decision priorities may collapse toward:
-
-```text
-SURVIVAL
-
-SAFETY
-
-DEPENDENTS.
-```
-
-Long-term Goals may temporarily lose weight.
-
----
-
-# Panic
-
-Extreme fear may cause:
-
-```text
-reduced option generation
-
-poor information processing
-
-flight
-
-freezing
-
-impulsive action.
-```
-
-Panic should be:
-
-```text
-CONTEXTUAL
-```
-
-rather than random.
-
----
-
-# Freeze Response
-
-Inaction under extreme threat may result from:
-
-```text
-OVERLOAD
-```
-
-rather than deliberate choice.
-
-This can still be modeled as:
-
-```text
-DECISION FAILURE / ACTION INHIBITION.
-```
-
----
-
-# Fatigue
-
-Fatigue may reduce:
-
-```text
-attention
-
-patience
-
-planning depth
-
-risk evaluation.
-```
-
-Characters may increasingly use:
-
-```text
-habits
-
-simple options
-
-short-term solutions.
-```
-
----
-
-# Stress
-
-Stress may:
-
-```text
-increase urgency
-
-narrow attention
-
-increase error
-
-increase reliance on familiar strategies.
-```
-
----
-
-# Resource Pressure
-
-Scarcity may change decisions.
-
-Example:
-
-```text
-Fuel:
-Abundant
-```
-
-Character chooses:
-
-```text
-drive.
-```
-
-Later:
-
-```text
-Fuel:
-Scarce
-```
-
-Character chooses:
-
-```text
-walk
-
-combine trips
-
-delay travel.
-```
-
----
-
-# Economic Decisions
-
-Characters may evaluate:
-
-```text
-price
-
-income
-
-savings
-
-expected future scarcity
-
-opportunity cost
-
-risk.
-```
-
-But economic behavior should remain:
-
-```text
-HUMAN
-```
-
-rather than perfectly rational.
-
----
-
-# Hoarding
-
-Characters may stockpile because of:
-
-```text
-fear
-
-scarcity expectation
-
-past trauma
-
-family responsibility
-
-market prediction.
-```
-
-Collective hoarding may create:
-
-```text
-REAL SCARCITY.
-```
-
----
-
-# Trust Decision
-
-Trust is often:
-
-```text
-ACTION-SPECIFIC.
-```
-
-Character may trust someone to:
-
-```text
-repair vehicle
-```
-
-but not:
-
-```text
-keep secret.
-```
-
----
-
-# Forgiveness Decision
-
-Forgiveness may depend on:
-
-```text
-harm
-
-intent
-
-relationship history
-
-apology
-
-restitution
-
-values
-
-time.
-```
-
-Forgiveness does not necessarily mean:
-
-```text
-TRUST RESTORED.
-```
-
----
-
-# Betrayal Decision
-
-Betrayal should normally require:
-
-```text
-strong motivation
-
-conflicting loyalty
-
-fear
-
-coercion
-
-desperation
-
-ideological shift
-
-major opportunity.
-```
-
-Avoid:
-
-```text
-RANDOM BETRAYAL
-FOR DRAMA.
-```
-
----
-
-# Loyalty
-
-Loyalty may cause characters to:
-
-```text
-accept personal cost
-
-withhold information
-
-defend others
-
-reject opportunities
-
-remain committed.
-```
-
----
-
-# Decision and Reputation
-
-Characters may consider:
-
-```text
-HOW OTHERS
-WILL VIEW THE ACTION.
-```
-
-This matters especially for:
-
-```text
-leaders
-
-politicians
-
-business owners
-
-public figures
-
-community members.
-```
-
----
-
-# Private Versus Public Choice
-
-Character may choose differently when:
-
-```text
-observed.
-```
-
-Example:
-
-```text
-Privately:
-Would leave.
-
-Publicly:
-Stays because reputation matters.
-```
-
----
-
-# Audience Effect
-
-Decision evaluation may include:
-
-```text
-WHO WILL KNOW?
-```
-
-This connects directly with:
-
-```text
-Knowledge_and_Beliefs.md.
-```
-
----
-
-# Hidden Actions
-
-Characters may choose:
-
-```text
-secret action
-```
-
-when:
-
-```text
-Goal conflicts with social expectations.
-```
-
-Example:
-
-```text
-secretly helping rival
-
-hiding supplies
-
-private relationship
-
-covert political support.
-```
-
----
-
-# Deception as Decision
-
-A character may decide to:
-
-```text
-lie
-
-omit
-
-misdirect
-
-conceal.
-```
-
-This requires evaluation of:
-
-```text
-benefit
-
-relationship cost
-
-risk of discovery
-
-values
-
-future consequences.
-```
-
----
-
-# Truth Telling
-
-Truth telling may itself have:
-
-```text
-COST.
-```
-
-Example:
-
-```text
-revealing mistake
-
-exposing friend
-
-admitting betrayal
-
-reporting failure.
-```
-
-Honesty therefore becomes:
-
-```text
-A DECISION.
-```
-
----
-
-# Decision Under Conflicting Information
-
-Character may have:
-
-```text
-Report A
-
-Report B
-
-Report C.
-```
-
-Possible actions:
-
-```text
-trust A
-
-trust B
-
-wait
-
-investigate
-
-choose safest option
-
-ask expert.
-```
-
----
-
-# Decision Confidence
-
-Characters may possess:
-
-```text
-CONFIDENCE IN CHOICE.
-```
-
-Recommended conceptual levels:
-
-```text
-VERY LOW
-
-LOW
-
-MODERATE
-
-HIGH
-
-VERY HIGH.
-```
-
----
-
-# Low Decision Confidence
-
-May increase:
-
-```text
-consultation
-
-reconsideration
-
-information seeking
-
-regret.
-```
-
----
-
-# High Decision Confidence
-
-May increase:
-
-```text
-commitment
-
-speed
-
-resistance to contradictory advice.
-```
-
----
-
-# Overconfidence
-
-Characters may be:
-
-```text
-MORE CONFIDENT
-THAN THEIR INFORMATION JUSTIFIES.
-```
-
----
-
-# Underconfidence
-
-Characters may possess:
-
-```text
-good information
-
-good capability
-```
-
-but still:
-
-```text
-hesitate.
-```
-
----
-
-# Intuition
-
-Experienced characters may make rapid decisions from:
-
-```text
-PATTERN RECOGNITION.
-```
-
-This may feel like:
-
-```text
-intuition.
-```
-
----
-
-# Intuition Quality
-
-Intuition works best when:
-
-```text
-experience relevant
-
-environment familiar
-
-patterns repeated.
-```
-
-It becomes less reliable when:
-
-```text
-situation novel
-
-conditions changed
-
-bias strong.
-```
-
----
-
-# Creativity
-
-Characters may sometimes generate:
-
-```text
-NOVEL OPTIONS.
-```
-
-This may depend on:
-
-```text
-experience
-
-intelligence
-
-curiosity
-
-resources
-
-time
-
-pressure.
-```
-
----
-
-# Improvisation
-
-When Plans fail:
-
-```text
-characters may improvise.
-```
-
-Improvisation may use:
-
-```text
-available objects
-
-nearby people
-
-partial skills
-
-unexpected opportunities.
-```
-
----
-
-# Decision Diversity
-
-Two characters with:
-
 ```text
-same information
+SAME INFORMATION
 
-same resources
+SAME RESOURCES
 
-same Goal
+SAME EXTERNAL GOAL
 ```
 
 may still choose differently because of:
 
 ```text
-values
+BELIEFS
 
-personality
+ATTRIBUTES
 
-relationships
+PSYCHOLOGY
 
-risk tolerance
+RELATIONSHIPS
 
-experience
+EXPERTISE
 
-beliefs
+HISTORY
 
-identity.
+IDENTITY
+
+RISK PERCEPTION.
 ```
 
-This is:
-
-```text
-DESIRED.
-```
+This is desirable.
 
 ---
 
-# Determinism
+# 123. Consistency Without Determinism
 
-Characters should not behave as:
-
-```text
-RANDOM NUMBER GENERATORS.
-```
-
-Variation should arise primarily from:
+The target is:
 
 ```text
-STATE DIFFERENCES.
+CONSISTENT
+
+NOT
+
+PREDICTABLE.
 ```
+
+Similar context should constrain plausible action ranges.
+
+It should not force identical behavior.
 
 ---
 
-# Controlled Uncertainty
+# 124. Controlled Uncertainty
 
-When two options are nearly equal, limited stochastic variation may be acceptable.
+When several options are similarly plausible, limited stochastic variation may eventually be useful.
 
 But randomness should:
 
@@ -4015,1316 +3165,700 @@ BREAK TIES
 rather than:
 
 ```text
-DEFINE PERSONALITY.
+CREATE CHARACTER.
+```
+
+No major Character decision should exist only because:
+
+```text
+RANDOM NUMBER
+SAID SO.
 ```
 
 ---
 
-# Decision Stability
+# 125. Decision Resolution
 
-Small irrelevant state changes should not constantly:
+Decision complexity should determine required simulation detail.
+
+Routine decision:
 
 ```text
-flip decisions.
+LOWER RESOLUTION
+MAY BE ENOUGH.
 ```
 
-Decision systems should have:
+Major irreversible decision:
 
 ```text
-STABILITY.
-```
-
----
-
-# Hysteresis
-
-A character may require:
-
-```text
-meaningful new evidence
-```
-
-before reversing a committed decision.
-
-This prevents:
-
-```text
-A → B → A → B
-```
-
-oscillation.
-
----
-
-# Threshold Decisions
-
-Some choices may activate only when:
-
-```text
-MOTIVATION
->
-THRESHOLD.
-```
-
-Example:
-
-```text
-Leave hometown.
-```
-
-Character may tolerate worsening conditions until:
-
-```text
-migration threshold crossed.
+MORE CONTEXT
+MAY BE REQUIRED.
 ```
 
 ---
 
-# Accumulated Pressure
+# 126. High-Resolution Decision
 
-Major decisions may emerge gradually.
-
-Conceptually:
+May consider:
 
 ```text
-small problem
-+
-small problem
-+
-small problem
-+
-new crisis
-      ↓
-THRESHOLD CROSSED
-      ↓
-MAJOR DECISION.
+SPECIFIC GOALS
+
+CURRENT BELIEFS
+
+SPECIFIC RELATIONSHIPS
+
+CURRENT PSYCHOLOGY
+
+KNOWN OPTIONS
+
+PERCEIVED RISK
+
+TIME
+
+RESOURCE COST
+
+COMMITMENT
+
+DECISION HISTORY.
 ```
 
 ---
 
-# Last Straw
+# 127. Medium-Resolution Decision
 
-A seemingly small event may trigger a major decision because:
-
-```text
-pressure was already high.
-```
-
-This allows:
+May consider:
 
 ```text
-realistic tipping points.
-```
+DOMINANT GOAL
 
----
+MAJOR RELATIONSHIPS
 
-# Reversibility
+MAJOR BELIEF
 
-Characters may prefer reversible choices when:
+MAJOR CONSTRAINT
 
-```text
-uncertainty high.
-```
-
-Example:
-
-```text
-rent workshop
-```
-
-instead of:
-
-```text
-buy workshop.
+PRIMARY OPTIONS.
 ```
 
 ---
 
-# Irreversible Decisions
+# 128. Low-Resolution Decision
 
-High-cost irreversible choices should generally require:
+May resolve from:
 
 ```text
-stronger confidence
+ROLE
 
-stronger motivation
+BROAD GOAL DIRECTION
 
-greater pressure
+KNOWN WORLD CONDITION
 
-or extreme urgency.
+MAJOR CONSTRAINT
+
+PLAUSIBLE HUMAN RESPONSE.
 ```
 
----
-
-# Experimentation
-
-Characters may choose:
+Low resolution means:
 
 ```text
-small test action
-```
-
-before full commitment.
-
-Example:
-
-```text
-try selling goods
-one day per week
-```
-
-before:
-
-```text
-leaving current job.
-```
-
----
-
-# Option Value
-
-Characters may preserve:
-
-```text
-FUTURE FLEXIBILITY.
-```
-
-This can itself be valuable.
-
----
-
-# Long-Term Versus Short-Term
-
-Characters may weigh:
-
-```text
-IMMEDIATE BENEFIT
-```
-
-against:
-
-```text
-FUTURE CONSEQUENCE.
-```
-
----
-
-# Time Horizon
-
-Characters differ in:
-
-```text
-how far ahead
-they normally plan.
-```
-
-Crisis may shorten:
-
-```text
-TIME HORIZON.
-```
-
----
-
-# Short-Term Bias
-
-Under scarcity:
-
-```text
-immediate survival
-```
-
-may outweigh:
-
-```text
-long-term prosperity.
-```
-
----
-
-# Future Discounting
-
-Conceptually:
-
-```text
-FUTURE BENEFIT
-```
-
-may receive less weight than:
-
-```text
-IMMEDIATE BENEFIT.
-```
-
-The degree varies by:
-
-```text
-character
-
-context
-
-certainty
-
-need pressure.
-```
-
----
-
-# Delayed Consequences
-
-Characters may knowingly choose actions with:
-
-```text
-future cost.
-```
-
-Example:
-
-```text
-use emergency fuel reserve now.
-```
-
-Benefit:
-
-```text
-immediate.
-```
-
-Cost:
-
-```text
-future vulnerability.
-```
-
----
-
-# Unseen Consequences
-
-Characters cannot evaluate consequences they:
-
-```text
-cannot plausibly anticipate.
-```
-
-World Simulation may still produce them.
-
----
-
-# Butterfly Effects
-
-Small decisions may create:
-
-```text
-large delayed consequences.
-```
-
-Characters should not predict these with:
-
-```text
-omniscient precision.
-```
-
----
-
-# Decision and World Simulation
-
-Character decisions become:
-
-```text
-WORLD INPUTS.
-```
-
-Example:
-
-```text
-Trader reroutes convoy.
-```
-
-World Simulation may update:
-
-```text
-fuel consumption
-
-regional supply
-
-traffic
-
-market availability
-
-information flow.
-```
-
----
-
-# World Response
-
-After action:
-
-```text
-World Simulation
-resolves consequences.
-```
-
-Decision Making then receives:
-
-```text
-OUTCOME INFORMATION.
-```
-
----
-
-# Decision Loop
-
-Conceptually:
-
-```text
-PERCEIVE
-↓
-INTERPRET
-↓
-CHOOSE
-↓
-ACT
-↓
-WORLD RESOLVES
-↓
-OBSERVE RESULT
-↓
-LEARN
-↓
-CHOOSE AGAIN.
-```
-
----
-
-# Character Autonomy
-
-Decision Making is the mechanism through which:
-
-```text
-CHARACTERS
-BECOME ACTORS.
-```
-
-They do not merely:
-
-```text
-react to player.
-```
-
-They:
-
-```text
-choose
-
-initiate
-
-refuse
-
-delay
-
-help
-
-compete
-
-adapt.
-```
-
----
-
-# Player Requests
-
-Player requests should enter the character system as:
-
-```text
-DECISION INPUT.
+LESS DETAIL.
 ```
 
 Not:
 
 ```text
-COMMAND.
+LESS AGENCY.
 ```
 
 ---
 
-# Request Evaluation
+# 129. Reconstruction
 
-Character may evaluate:
-
-```text
-Who is asking?
-
-What is requested?
-
-Why?
-
-What will it cost?
-
-Does it conflict with Goals?
-
-Do I trust them?
-
-Do I owe them?
-
-Is it legal?
-
-Is it safe?
-
-Do I want to?
-```
-
----
-
-# Player Cannot Command Everyone
-
-Unless the player possesses legitimate:
+When a low-resolution Character becomes important:
 
 ```text
-AUTHORITY
+RECONSTRUCT
+MISSING DECISION CONTEXT
+FROM EXISTING HISTORY.
 ```
-
-characters retain:
-
-```text
-AGENCY.
-```
-
----
-
-# Refusal
-
-Characters may refuse player requests.
-
-Reasons may include:
-
-```text
-risk
-
-values
-
-relationship
-
-lack of trust
-
-lack of capability
-
-other commitments
-
-fear
-
-role conflict.
-```
-
----
-
-# Conditional Acceptance
-
-Characters may respond:
-
-```text
-"Yes, if..."
-```
-
-Examples:
-
-```text
-payment
-
-protection
-
-information
-
-reciprocal help
-
-deadline change
-
-resource support.
-```
-
----
-
-# Negotiated Decisions
-
-Player interaction may change:
-
-```text
-cost
-
-risk
-
-information
-
-relationship
-
-confidence.
-```
-
-Therefore persuasion should modify:
-
-```text
-DECISION CONDITIONS.
-```
-
-It should not act as:
-
-```text
-MIND CONTROL.
-```
-
----
-
-# Persuasion
-
-Persuasion may succeed by changing:
-
-```text
-belief
-
-perceived benefit
-
-perceived risk
-
-relationship expectation
-
-value interpretation.
-```
-
----
-
-# Persuasion Limits
-
-Strong persuasion should not make:
-
-```text
-ANY CHARACTER
-DO ANYTHING.
-```
-
-Some actions may remain incompatible with:
-
-```text
-identity
-
-values
-
-relationships
-
-risk tolerance.
-```
-
----
-
-# Threats
-
-Threats modify:
-
-```text
-perceived cost of refusal.
-```
-
-But may also create:
-
-```text
-resentment
-
-fear
-
-future resistance
-
-relationship damage.
-```
-
----
-
-# Bribery
-
-Payment modifies:
-
-```text
-benefit.
-```
-
-But character may still reject due to:
-
-```text
-values
-
-risk
-
-law
-
-loyalty
-
-reputation.
-```
-
----
-
-# Coercion
-
-Under coercion, characters still make choices within:
-
-```text
-CONSTRAINED OPTIONS.
-```
-
-Example:
-
-```text
-comply
-
-resist
-
-escape
-
-deceive
-
-delay.
-```
-
----
-
-# Decision Visibility
-
-Not every character decision should be:
-
-```text
-SHOWN TO PLAYER.
-```
-
-Many occur:
-
-```text
-OFFSCREEN.
-```
-
----
-
-# Player-Relevant Decisions
-
-Expose decisions when they:
-
-```text
-affect player
-
-affect important relationship
-
-create opportunity
-
-create conflict
-
-change regional state
-
-create meaningful consequence.
-```
-
----
-
-# Background Decisions
-
-Background characters may use:
-
-```text
-compressed decision models.
-```
-
-Examples:
-
-```text
-work
-
-shop
-
-travel
-
-socialize
-
-rest.
-```
-
----
-
-# High-Resolution Decision Simulation
-
-For important characters:
-
-```text
-evaluate active Goals
-
-knowledge
-
-relationships
-
-risk
-
-values
-
-options
-
-expected outcomes
-
-commitment
-
-decision history.
-```
-
----
-
-# Medium-Resolution Decision Simulation
 
 Use:
 
 ```text
-dominant Goal
+KNOWN LIFE HISTORY
 
-current need pressure
+GOALS
 
-major relationships
+BELIEFS
 
-major knowledge
+RELATIONSHIPS
 
-available opportunities.
+PROFESSION
+
+EXPERTISE
+
+LOCATION
+
+WORLD EVENTS
+
+PRIOR ACTIONS.
+```
+
+Do not invent the convenient decision the current story needs.
+
+---
+
+# 130. Player Interaction
+
+Player actions may change decision context through:
+
+```text
+NEW INFORMATION
+
+NEW OPTION
+
+NEW COST
+
+NEW RISK
+
+RESOURCE OFFER
+
+RELATIONSHIP CHANGE
+
+THREAT
+
+PROMISE
+
+NEGOTIATION.
+```
+
+The player influences decisions by changing reality or perceived reality.
+
+Not through magical Character override.
+
+---
+
+# 131. Persuasion North Star
+
+Correct:
+
+```text
+PLAYER PRESENTS
+NEW INFORMATION
+
+↓
+
+CHARACTER BELIEF
+OR RISK ESTIMATE
+CHANGES
+
+↓
+
+DECISION
+MAY CHANGE.
+```
+
+Incorrect:
+
+```text
+PLAYER PASSES
+SPEECH CHECK
+
+↓
+
+CHARACTER PERSONALITY
+OVERRIDDEN.
 ```
 
 ---
 
-# Low-Resolution Decision Simulation
+# 132. Decision Visibility
 
-Use:
+Not every decision should be shown to the player.
+
+Most Character decisions occur:
 
 ```text
-role
+OFF SCREEN.
+```
 
-broad needs
+Narrative systems decide whether the result becomes player-facing.
 
-regional conditions
+---
 
-population patterns
+# 133. Narrative Boundary
 
-major events.
+Decision Making produces:
+
+```text
+CHOICE.
+```
+
+Autonomy produces:
+
+```text
+ACTION INITIATION.
+```
+
+World Simulation produces:
+
+```text
+CONSEQUENCE.
+```
+
+Living Campaign determines:
+
+```text
+PERSISTENT CAMPAIGN
+RELEVANCE.
+```
+
+Story Framework determines:
+
+```text
+NARRATIVE
+COHERENCE.
+```
+
+Game Master determines:
+
+```text
+PLAYER-FACING
+PRESENTATION.
 ```
 
 ---
 
-# Resolution Promotion
+# 134. No Story-First Decisions
 
-When a low-resolution character becomes relevant:
+Correct:
 
 ```text
-promote simulation detail.
+CHARACTER CONTEXT
+↓
+DECISION
+↓
+ACTION
+↓
+CONSEQUENCE
+↓
+POSSIBLE STORY.
 ```
 
-Reconstruct current decision context from:
+Never:
 
 ```text
-past state
-
-profession
-
-relationships
-
-regional events
-
-major Goals
-
-knowledge environment.
-```
-
----
-
-# Reconstruction Constraint
-
-Do not invent a convenient decision because:
-
-```text
-THE STORY NEEDS IT.
-```
-
-Ask:
-
-```text
-WHAT WOULD THIS CHARACTER
-PLAUSIBLY HAVE DECIDED
-FROM THEIR PRIOR STATE?
+STORY NEEDS BETRAYAL
+↓
+CHARACTER DECIDES
+TO BETRAY.
 ```
 
 ---
 
-# Decision Logging
+# 135. Decision Explainability
 
-Important decisions may record:
+For significant decisions, the system should be able to answer:
 
 ```text
-Decision ID
+WHY DID
+THIS CHARACTER
+CHOOSE THIS?
+```
 
-Character ID
+The explanation should be causal.
 
-Timestamp
+---
 
-Trigger
+# 136. Explainability Example
 
-Relevant Goals
+Good:
 
-Known Options
+```text
+MARA REFUSED
+TO LEAVE
 
-Selected Action
+BECAUSE
 
-Primary Reason
+HER DAUGHTER
+HAD NOT ARRIVED,
 
-Major Tradeoff
+SHE BELIEVED
+THE WESTERN ROAD
+WOULD REMAIN OPEN,
 
-Confidence
+SHE THOUGHT
+WAITING WAS
+LESS DANGEROUS
 
-Expected Outcome
+THAN LEAVING
+WITHOUT HER.
+```
 
-Actual Outcome
+Bad:
 
-Reconsideration Trigger.
+```text
+MARA REFUSED
+BECAUSE
+
+THE STORY
+NEEDED TENSION.
 ```
 
 ---
 
-# Decision ID
+# 137. Decision Record
 
-Example:
+A future implementation may persist significant decisions using references such as:
 
 ```text
-DEC-CHAR184-021
+CHARACTER
+
+TIMESTAMP
+
+DECISION CONTEXT
+
+PERCEIVED OPTIONS
+
+SELECTED OPTION
+
+PRIMARY REASONS
+
+MAJOR TRADEOFF
+
+CONFIDENCE
+
+EXPECTED CONSEQUENCE
+
+RECONSIDERATION CONDITION.
 ```
+
+This is conceptual.
+
+It is not yet a mandatory implementation schema.
 
 ---
 
-# Why Logging Matters
-
-Decision history supports:
-
-```text
-character consistency
-
-memory
-
-learning
-
-relationship explanation
-
-debugging
-
-validation.
-```
-
----
-
-# Decision Explanation
-
-The system should be able to answer:
-
-```text
-WHY DID THIS CHARACTER
-DO THIS?
-```
-
-with a causal explanation.
-
-Example:
-
-```text
-Mara refused evacuation because:
-
-her daughter had not arrived,
-
-she believed the western road
-was still passable,
-
-she considered waiting
-less dangerous than leaving
-without her,
-
-and she had high confidence
-the evacuation window
-would remain open.
-```
-
-This is preferable to:
-
-```text
-Mara refused because
-the story needed tension.
-```
-
----
-
-# Explainability Principle
-
-Important character actions should have:
-
-```text
-TRACEABLE CAUSAL REASONS.
-```
-
----
-
-# Decision Narrative
-
-Internal simulation representation may be:
-
-```text
-Goal:
-Find daughter
-
-Priority:
-Critical
-
-Evacuation:
-High Benefit
-
-Relationship Cost:
-Critical
-
-Belief:
-Road remains open
-
-Decision:
-Wait.
-```
-
-Player-facing narrative may simply be:
-
-```text
-"I'm not leaving without her."
-```
-
----
-
-# Narrative Compression
-
-Complex simulation should produce:
-
-```text
-SIMPLE HUMAN EXPRESSION.
-```
-
-The player should not see:
-
-```text
-UTILITY SCORES.
-```
-
----
-
-# AI Integration
+# 138. AI Integration
 
 AI may assist with:
 
 ```text
-option generation
+OPTION GENERATION
 
-reasoning expression
+PLAUSIBILITY REASONING
 
-dialogue
+TRADEOFF INTERPRETATION
 
-decision explanation.
+DECISION EXPLANATION
+
+CHARACTER DIALOGUE.
 ```
 
-But deterministic systems should constrain:
-
-```text
-what information AI receives
-
-what actions are possible
-
-what Goals matter
-
-what relationships exist
-
-what resources exist.
-```
+But AI must operate only on authoritative state provided to it.
 
 ---
 
-# AI Decision Boundary
+# 139. AI Decision Boundary
 
-AI must not:
+AI must not invent:
 
 ```text
-invent hidden information
+HIDDEN KNOWLEDGE
 
-invent resources
+NEW RELATIONSHIPS
 
-invent relationships
+NEW RESOURCES
 
-ignore Goals
+NEW EXPERTISE
 
-ignore established Values
+NEW GOALS
 
-override simulation state.
+NEW WORLD EVENTS
+
+NEW MEMORIES
 ```
+
+merely to justify an attractive decision.
 
 ---
 
-# AI Proposal Model
+# 140. AI Proposal Model
 
 Conceptually:
 
 ```text
-SIMULATION STATE
-      ↓
-AI GENERATES PLAUSIBLE OPTIONS
-      ↓
-RULE SYSTEM VALIDATES
-      ↓
-DECISION MODEL EVALUATES
-      ↓
-ACTION SELECTED.
+AUTHORITATIVE STATE
+↓
+AI MAY GENERATE
+PLAUSIBLE OPTIONS
+↓
+SYSTEM CHECKS
+INFORMATION,
+CAPABILITY
+AND CAUSAL BOUNDARIES
+↓
+DECISION MODEL
+EVALUATES
+↓
+CHOICE.
 ```
 
 ---
 
-# AI Narrative Model
+# 141. AI Narrative Model
 
-Alternatively:
+A safer mode may be:
 
 ```text
 DECISION SYSTEM
-SELECTS ACTION
-      ↓
-AI EXPLAINS ACTION
+SELECTS CHOICE
+↓
+AI EXPRESSES
+THE DECISION
 IN CHARACTER.
 ```
 
-This is safer for:
+This separates:
 
 ```text
-CANON CONSISTENCY.
+WHAT THEY CHOOSE
+```
+
+from:
+
+```text
+HOW THEY
+EXPRESS IT.
 ```
 
 ---
 
-# Decision Determinism
+# 142. Decision Invariants
 
-Identical state should generally produce:
+## DEC-INV-001 — Characters Decide From Perceived Reality
+
+World Truth must not enter decisions unless it has reached the Character.
+
+## DEC-INV-002 — Decisions Require Plausible Options
+
+Characters cannot choose arbitrary actions disconnected from their known context.
+
+## DEC-INV-003 — Unknown Options Are Normally Unavailable
+
+A Character cannot select an option they do not know exists.
+
+## DEC-INV-004 — Perceived Capability and Actual Capability Are Distinct
+
+Choice uses perceived capability; outcome uses actual capability.
+
+## DEC-INV-005 — Characters Are Boundedly Rational
+
+Perfect optimization is not required.
+
+## DEC-INV-006 — Satisficing Is Valid
+
+Characters may choose acceptable rather than optimal actions.
+
+## DEC-INV-007 — Risk Is Perceived
+
+Subjective risk assessment may differ from World Truth.
+
+## DEC-INV-008 — Decision Cost Matters
+
+Time, resources and opportunity cost may constrain choice.
+
+## DEC-INV-009 — Goals May Conflict
+
+No system should assume all active Goals can be satisfied simultaneously.
+
+## DEC-INV-010 — Relationships May Influence Choice
+
+But Relationship state remains external and authoritative.
+
+## DEC-INV-011 — Psychology Influences but Does Not Dictate Choice
+
+Emotion does not remove agency.
+
+## DEC-INV-012 — Inaction Is Valid
+
+Doing nothing may be a genuine decision.
+
+## DEC-INV-013 — Delay Is Valid
+
+Characters may intentionally postpone commitment.
+
+## DEC-INV-014 — Information Seeking Is Valid
+
+Uncertainty may itself generate an information-gathering choice.
+
+## DEC-INV-015 — Delegation Is Agentic
+
+Choosing another Actor to perform an action remains a Character decision.
+
+## DEC-INV-016 — Player Requests Are Inputs
+
+Player Characters do not automatically command other Characters.
+
+## DEC-INV-017 — Persuasion Changes Conditions
+
+Persuasion is not mind control.
+
+## DEC-INV-018 — Commitment Creates Stability
+
+Characters should not reconsider committed decisions continuously.
+
+## DEC-INV-019 — Reconsideration Requires Meaningful Cause
+
+Major reversals require meaningful state change.
+
+## DEC-INV-020 — Decision Quality and Outcome Quality Are Separate
+
+Successful outcome does not prove good decision quality.
+
+## DEC-INV-021 — Similar State Does Not Require Identical Choice
+
+Human consistency must not become determinism.
+
+## DEC-INV-022 — Randomness Must Remain Bounded
+
+Randomness may break ties but must not replace Character causality.
+
+## DEC-INV-023 — Low Resolution Does Not Reduce Agency
+
+It reduces processing detail.
+
+## DEC-INV-024 — Significant Decisions Should Be Explainable
+
+The Character's choice should have traceable causal reasons.
+
+## DEC-INV-025 — Narrative Cannot Retroactively Create Decision Logic
+
+Story follows Character causality.
+
+---
+
+# 143. Development Locks
+
+Future Decision Making development must not introduce:
 
 ```text
-similar decisions.
-```
+UNIVERSAL UTILITY SCORE
 
-But exact repetition is not mandatory when:
+PERFECT OPTIMIZATION
 
-```text
-options nearly equal
+OMNISCIENT CHARACTERS
 
-human uncertainty high.
+PERFECT FORESIGHT
+
+MORAL ALIGNMENT
+
+AUTOMATIC PLAYER OBEDIENCE
+
+SPEECH-CHECK MIND CONTROL
+
+ATTRIBUTE-TO-ACTION
+LOOKUP TABLES
+
+PSYCHOLOGY-TO-ACTION
+LOOKUP TABLES
+
+CULTURE-TO-ACTION
+LOOKUP TABLES
+
+RANDOM MAJOR DECISIONS
+
+NARRATIVE-FORCED
+BETRAYAL
+
+NARRATIVE-FORCED
+SACRIFICE
+
+AUTOMATIC REVENGE
+
+AUTOMATIC FORGIVENESS
+
+PERFECTLY CONSISTENT
+RATIONALITY
+
+CONTINUOUS
+DECISION FLIPPING
+
+HIGH RESOLUTION
+AS MORE AGENCY
+
+LOW RESOLUTION
+AS LESS AGENCY
+
+OUTCOME-BASED
+RETROACTIVE REASONING.
 ```
 
 ---
 
-# Randomness
-
-Randomness may influence:
-
-```text
-tie breaking
-
-attention
-
-minor preference
-
-uncertain intuition.
-```
-
-It should not cause:
-
-```text
-major personality violations.
-```
-
----
-
-# Decision Noise
-
-Small variation may make behavior:
-
-```text
-LESS MECHANICAL.
-```
-
-But noise must remain:
-
-```text
-BOUNDED.
-```
-
----
-
-# Anti-Optimization Principle
-
-Do not make every character:
-
-```text
-maximally efficient.
-```
+# 144. Anti-Optimization Principle
 
 Humans:
 
 ```text
-waste time
+WASTE TIME
 
-make mistakes
+MISJUDGE RISK
 
-avoid uncomfortable tasks
+HESITATE
 
-follow habits
+PROCRASTINATE
 
-misjudge risk
+FOLLOW HABITS
 
-stay loyal
+MAKE MISTAKES
 
-act emotionally
+ACT LOYALLY
 
-change their minds.
+ACT EMOTIONALLY
+
+CHANGE THEIR MINDS
+
+STAY TOO LONG
+
+LEAVE TOO SOON.
+```
+
+Do not optimize this humanity away.
+
+---
+
+# 145. Anti-Randomness Principle
+
+Do not use randomness as a replacement for:
+
+```text
+MOTIVE
+
+STATE
+
+HISTORY
+
+CONTEXT.
 ```
 
 ---
 
-# Anti-Randomness Principle
+# 146. Anti-Omniscience Principle
 
-Do not use randomness as a substitute for:
+Characters cannot make decisions using:
 
 ```text
-CHARACTER MOTIVATION.
+INFORMATION
+THEY DO NOT HAVE.
 ```
 
 ---
 
-# Anti-Omniscience Principle
+# 147. Anti-Outcome-Bias Principle
 
-Characters cannot choose based on:
-
-```text
-information they do not possess.
-```
-
----
-
-# Anti-Perfect-Foresight Principle
-
-Characters cannot know:
-
-```text
-future simulation outcomes.
-```
-
----
-
-# Anti-Perfect-Rationality Principle
-
-Characters should not always select:
-
-```text
-maximum expected value.
-```
-
----
-
-# Anti-Suicidal-NPC Principle
-
-Characters should normally value:
-
-```text
-their own survival.
-```
-
-Extreme self-sacrifice requires:
-
-```text
-strong causal justification.
-```
-
----
-
-# Anti-Player-Centrism Principle
-
-Characters should not automatically prioritize:
-
-```text
-PLAYER REQUESTS
-```
-
-over:
-
-```text
-their own lives.
-```
-
----
-
-# Anti-Quest-Giver Principle
-
-Characters should not exist merely to:
-
-```text
-assign missions.
-```
-
-They possess:
-
-```text
-their own Goals
-
-their own Plans
-
-their own decisions.
-```
-
----
-
-# Anti-Instant-Flip Principle
-
-Characters should not reverse major decisions because of:
-
-```text
-minor new information.
-```
-
----
-
-# Anti-Static-Decision Principle
-
-Characters should reconsider when:
-
-```text
-conditions meaningfully change.
-```
-
----
-
-# Anti-Moral-Absolute Principle
-
-The simulation should not automatically label every decision:
-
-```text
-GOOD
-
-EVIL.
-```
-
-It should model:
-
-```text
-motivation
-
-cost
-
-consequence
-
-perspective.
-```
-
----
-
-# Anti-Outcome-Bias Principle
-
-Do not assume:
+Never infer:
 
 ```text
 GOOD RESULT
@@ -5334,551 +3868,233 @@ GOOD DECISION.
 
 ---
 
-# Anti-Retroactive-Reasoning Principle
+# 148. Anti-Retroactive-Reasoning Principle
 
-Do not rewrite character reasoning after outcome becomes known.
-
-The character chose using:
+The Character decided using:
 
 ```text
-WHAT THEY KNEW THEN.
+WHAT THEY
+KNEW THEN.
 ```
+
+Do not rewrite their past reasoning after the actual outcome becomes known.
 
 ---
 
-# Anti-Drama Principle
+# 149. Anti-Drama Principle
 
-Do not force characters to choose:
-
-```text
-the most dramatic option.
-```
-
-Drama should emerge from:
+Do not select:
 
 ```text
-credible conflict.
+THE MOST
+DRAMATIC OPTION
 ```
+
+because it creates stronger content.
+
+Select:
+
+```text
+A PLAUSIBLE
+HUMAN OPTION.
+```
+
+Drama must emerge from credible conflict.
 
 ---
 
-# Anti-Constant-Crisis Principle
+# 150. Anti-Constant-Crisis Principle
 
-Most decisions should remain:
+Most human decisions should remain:
 
 ```text
 ORDINARY.
 ```
 
-Characters need:
+Examples:
 
 ```text
-routine
+WHAT TO EAT
 
-stability
+WHETHER TO CALL
 
-small choices
+WHICH ROUTE
 
-daily life.
+WHEN TO REST
+
+WHETHER TO WAIT
+
+WHOM TO ASK.
 ```
 
-Without normality:
+Normal life makes major decisions meaningful.
+
+---
+
+# 151. Anti-Instant-Flip Principle
+
+Characters should not reverse major commitments because of:
 
 ```text
-crisis loses meaning.
-```
-
----
-
-# Decision Consistency Rules
-
-## Rule 1
-
-Characters decide from perceived reality.
-
----
-
-## Rule 2
-
-World Truth must not directly enter decisions unless known.
-
----
-
-## Rule 3
-
-Decisions require plausible triggers.
-
----
-
-## Rule 4
-
-Characters consider limited option sets.
-
----
-
-## Rule 5
-
-Unknown options cannot normally be selected.
-
----
-
-## Rule 6
-
-Perceived capability influences choice.
-
----
-
-## Rule 7
-
-Actual capability influences outcome.
-
----
-
-## Rule 8
-
-Characters possess bounded rationality.
-
----
-
-## Rule 9
-
-Satisficing is valid.
-
----
-
-## Rule 10
-
-Habit is valid.
-
----
-
-## Rule 11
-
-Habit may become outdated.
-
----
-
-## Rule 12
-
-Risk perception is subjective.
-
----
-
-## Rule 13
-
-Risk tolerance may be domain-specific.
-
----
-
-## Rule 14
-
-Goal priority is dynamic.
-
----
-
-## Rule 15
-
-Goals may conflict.
-
----
-
-## Rule 16
-
-Values may conflict.
-
----
-
-## Rule 17
-
-Relationships influence decisions.
-
----
-
-## Rule 18
-
-Role obligations influence decisions.
-
----
-
-## Rule 19
-
-Roles may conflict.
-
----
-
-## Rule 20
-
-Emotion modifies decisions.
-
----
-
-## Rule 21
-
-Emotion does not eliminate agency.
-
----
-
-## Rule 22
-
-Time pressure changes decision depth.
-
----
-
-## Rule 23
-
-Inaction is a valid action.
-
----
-
-## Rule 24
-
-Delay is a valid action.
-
----
-
-## Rule 25
-
-Information seeking is a valid action.
-
----
-
-## Rule 26
-
-Delegation is a valid action.
-
----
-
-## Rule 27
-
-Player requests are inputs, not commands.
-
----
-
-## Rule 28
-
-Characters may refuse.
-
----
-
-## Rule 29
-
-Persuasion modifies decision conditions.
-
----
-
-## Rule 30
-
-Persuasion is not mind control.
-
----
-
-## Rule 31
-
-Threats have future consequences.
-
----
-
-## Rule 32
-
-Characters may violate Values under sufficient pressure.
-
----
-
-## Rule 33
-
-Value violations may create regret.
-
----
-
-## Rule 34
-
-Past decisions influence future decisions.
-
----
-
-## Rule 35
-
-Success may reinforce behavior.
-
----
-
-## Rule 36
-
-Failure may change behavior.
-
----
-
-## Rule 37
-
-Characters may mislearn.
-
----
-
-## Rule 38
-
-Decision quality and outcome quality are separate.
-
----
-
-## Rule 39
-
-Plans require commitment.
-
----
-
-## Rule 40
-
-Meaningful changes trigger reconsideration.
-
----
-
-## Rule 41
-
-Characters may suffer sunk-cost bias.
-
----
-
-## Rule 42
-
-Characters may abandon Goals.
-
----
-
-## Rule 43
-
-Characters may sacrifice.
-
----
-
-## Rule 44
-
-Sacrifice requires meaningful cost.
-
----
-
-## Rule 45
-
-Self-preservation is strong but not absolute.
-
----
-
-## Rule 46
-
-Decision history should support explainability.
-
----
-
-## Rule 47
-
-Important actions require causal justification.
-
----
-
-## Rule 48
-
-Simulation resolution determines decision detail.
-
----
-
-## Rule 49
-
-AI must remain constrained by canonical state.
-
----
-
-## Rule 50
-
-Decisions must produce World Simulation inputs.
-
----
-
-# Validation Questions
-
-For any significant decision, ask:
-
-```text
-What triggered the decision?
-
-What does the character want?
-
-Which Goal is dominant?
-
-What does the character know?
-
-What does the character believe?
-
-Which options do they know exist?
-
-Which options do they believe
-they can perform?
-
-What are the expected benefits?
-
-What are the expected costs?
-
-What risks do they perceive?
-
-How much time do they have?
-
-Which relationships matter?
-
-Which Values matter?
-
-Which roles matter?
-
-What resources are available?
-
-What emotional state matters?
-
-What would happen if they wait?
-
-Why did they choose this option?
-
-What would cause reconsideration?
+MINOR
+NEW INFORMATION.
 ```
 
 ---
 
-# Decision Debugging Questions
+# 152. Anti-Static-Decision Principle
 
-If a character behaves strangely, ask:
+The opposite is also invalid.
+
+Characters should reconsider when:
 
 ```text
-Did hidden World Truth
-leak into decision logic?
-
-Did the character know
-this option existed?
-
-Did they have the resources?
-
-Did their Goal priority change?
-
-Did their relationship state matter?
-
-Did their Values matter?
-
-Was risk evaluated?
-
-Was time pressure considered?
-
-Was the previous Plan committed?
-
-Was there a valid
-reconsideration trigger?
-
-Did AI invent information?
-
-Was randomness given
-too much influence?
+THE WORLD
+MEANINGFULLY CHANGES.
 ```
 
 ---
 
-# Example: Fuel Crisis
+# 153. Validation Questions
 
-Character:
-
-```text
-Mara
-```
-
-Goal A:
+For a significant Character decision, ask:
 
 ```text
-Keep clinic operational.
-Priority:
-HIGH.
-```
+WHAT CREATED
+THE DECISION CONTEXT?
 
-Goal B:
+WHAT DOES
+THE CHARACTER
+PERCEIVE?
 
-```text
-Visit daughter.
-Priority:
-HIGH.
-```
+WHAT DO THEY KNOW?
 
-Resource:
+WHAT DO THEY BELIEVE?
 
-```text
-Fuel:
-LOW.
-```
+WHAT DO THEY WANT?
 
-Knowledge:
+WHICH GOALS
+ARE RELEVANT?
 
-```text
-Fuel deliveries delayed.
+WHICH RELATIONSHIPS
+MATTER?
 
-Next delivery date uncertain.
-```
+WHAT PSYCHOLOGICAL
+STATE MATTERS?
 
-Options:
+WHAT ATTRIBUTES
+CREATE PRESSURE?
 
-```text
-A:
-Use fuel for clinic generator.
+WHAT EXPERTISE
+MATTERS?
 
-B:
-Use fuel to visit daughter.
+WHAT OPTIONS
+DO THEY KNOW?
 
-C:
-Ask neighbor for transport.
+WHAT OPTIONS
+DO THEY BELIEVE
+ARE POSSIBLE?
 
-D:
-Delay visit.
-```
+WHAT RISKS
+DO THEY PERCEIVE?
 
-Relationship:
+WHAT COSTS
+DO THEY EXPECT?
 
-```text
-Daughter:
-VERY HIGH importance.
-```
+WHAT TIME
+DO THEY HAVE?
 
-Role:
+WHAT RESOURCES
+DO THEY HAVE?
 
-```text
-Doctor:
-HIGH duty.
-```
+WHAT DO THEY
+STAND TO LOSE?
 
-Decision:
+WHAT HAPPENS
+IF THEY WAIT?
 
-```text
-Use fuel for clinic.
+IS DELEGATION POSSIBLE?
 
-Ask neighbor
-for transport tomorrow.
-```
+IS MORE INFORMATION
+AVAILABLE?
 
-This satisfies:
+WHY THIS OPTION?
 
-```text
-ROLE DUTY
+WHAT WOULD CAUSE
+RECONSIDERATION?
 
-while preserving:
-
-RELATIONSHIP GOAL
-through alternate Plan.
+IS THE DECISION
+EXPLAINABLE WITHOUT
+USING FUTURE KNOWLEDGE?
 ```
 
 ---
 
-# Example: False Information
+# 154. Debugging Questions
+
+If a Character decision feels wrong, check:
+
+```text
+DID WORLD TRUTH
+LEAK INTO
+CHARACTER KNOWLEDGE?
+
+DID THE CHARACTER
+KNOW THIS OPTION?
+
+DID WE CONFUSE
+ACTUAL CAPABILITY
+WITH PERCEIVED
+CAPABILITY?
+
+DID WE IGNORE
+A MAJOR RELATIONSHIP?
+
+DID WE IGNORE
+PSYCHOLOGICAL STATE?
+
+DID WE IGNORE
+TIME PRESSURE?
+
+DID WE IGNORE
+RESOURCE COST?
+
+DID WE IGNORE
+COMMITMENT?
+
+DID WE REVERSE
+A DECISION
+WITHOUT CAUSE?
+
+DID AI INVENT
+MISSING STATE?
+
+DID RANDOMNESS
+DO TOO MUCH?
+
+DID WE CHOOSE
+THE DRAMATIC OPTION
+INSTEAD OF
+THE PLAUSIBLE ONE?
+```
+
+---
+
+# 155. Example — False Information
 
 World Truth:
 
 ```text
-Eastern road safe.
+EASTERN ROAD
+IS SAFE.
 ```
 
-Character Belief:
+Character belief:
 
 ```text
-Eastern road occupied
-by armed group.
+ARMED GROUP
+CONTROLS
+EASTERN ROAD.
 ```
 
 Confidence:
@@ -5890,27 +4106,29 @@ HIGH.
 Goal:
 
 ```text
-Reach Millhaven.
+REACH MILLHAVEN.
 ```
 
 Options:
 
 ```text
-Eastern road:
-Fast
-Perceived Risk:
-CRITICAL
+EASTERN ROAD
+=
+FAST
+BUT PERCEIVED
+AS DANGEROUS
 
-Western road:
-Slow
-Perceived Risk:
-LOW.
+WESTERN ROAD
+=
+SLOW
+BUT PERCEIVED
+AS SAFE.
 ```
 
 Decision:
 
 ```text
-Western road.
+WESTERN ROAD.
 ```
 
 Objectively:
@@ -5927,108 +4145,69 @@ RATIONAL.
 
 ---
 
-# Example: Relationship Sacrifice
-
-Character:
-
-```text
-Elias
-```
+# 156. Example — Relationship Tradeoff
 
 Goal:
 
 ```text
-Complete trade delivery.
+COMPLETE
+TRADE DELIVERY.
 ```
 
 Friend:
 
 ```text
-Mara
-```
-
-Event:
-
-```text
-Mara injured.
+MARA
+IS INJURED.
 ```
 
 Options:
 
 ```text
-Continue delivery.
+CONTINUE DELIVERY
 
-Help Mara.
+HELP MARA
 
-Call someone else.
+CALL SOMEONE ELSE.
 ```
 
-Relationship:
+The Character may choose:
 
 ```text
-VERY HIGH.
+HELP MARA.
 ```
 
-Delivery Cost of Delay:
+The decision may damage the trade contract.
 
-```text
-HIGH.
-```
-
-Decision:
-
-```text
-Help Mara.
-```
-
-Result:
-
-```text
-trade contract damaged.
-```
-
-The relationship creates:
-
-```text
-REAL ECONOMIC CONSEQUENCE.
-```
+Relationship context creates real economic consequence.
 
 ---
 
-# Example: Role Conflict
+# 157. Example — Role Conflict
 
 Character:
 
 ```text
-Doctor
+DOCTOR
 +
-Parent.
+PARENT.
 ```
 
-Event:
+Situation:
 
 ```text
-Hospital evacuation begins.
+HOSPITAL
+NEEDS HELP
 
-Child missing.
+CHILD
+IS MISSING.
 ```
 
-Goal A:
+Both may carry:
 
 ```text
-Help patients.
-```
-
-Goal B:
-
-```text
-Find child.
-```
-
-Both:
-
-```text
-CRITICAL.
+CRITICAL
+IMPORTANCE.
 ```
 
 There may be:
@@ -6037,141 +4216,80 @@ There may be:
 NO GOOD OPTION.
 ```
 
-Whatever the character chooses may create:
-
-```text
-regret
-
-relationship consequence
-
-identity change
-
-future belief change.
-```
+Whatever is chosen may become personally consequential.
 
 ---
 
-# Example: Sunk Cost
+# 158. Example — Sunk Cost
 
-Character Goal:
-
-```text
-Open restaurant.
-```
-
-Investment:
+Goal:
 
 ```text
-3 years
-
-most savings
-
-public commitment.
+OPEN RESTAURANT.
 ```
 
-Current Outlook:
+History:
+
+```text
+3 YEARS
+
+MOST SAVINGS
+
+PUBLIC COMMITMENT.
+```
+
+Current outlook:
 
 ```text
 POOR.
 ```
 
-Rational economic option:
+Objectively attractive option:
 
 ```text
-close.
+CLOSE.
 ```
 
-Character decision:
+Character chooses:
 
 ```text
-invest again.
+INVEST AGAIN.
 ```
 
 Reason:
 
 ```text
-"I can't walk away now."
+"I CAN'T
+WALK AWAY NOW."
 ```
 
-This is:
-
-```text
-BELIEVABLE BOUNDED RATIONALITY.
-```
+This may be believable bounded rationality.
 
 ---
 
-# Example: Mislearning
+# 159. Example — Player Request
 
-Character chooses:
+Player:
 
 ```text
-cross damaged bridge.
+"COME WITH ME
+TONIGHT."
 ```
 
-Risk:
+Character context:
 
 ```text
-HIGH.
-```
+FAMILY RESPONSIBILITY:
+HIGH
 
-Outcome:
+RELATIONSHIP WITH PLAYER:
+MODERATE
 
-```text
-successful crossing.
-```
+MISSION RISK:
+HIGH
 
-Character belief update:
-
-```text
-Warnings exaggerated.
-```
-
-Future behavior:
-
-```text
-risk tolerance increases.
-```
-
-World Truth:
-
-```text
-bridge remains dangerous.
-```
-
-This may create:
-
-```text
-DELAYED CONSEQUENCE.
-```
-
----
-
-# Example: Player Request
-
-Player asks:
-
-```text
-"Come with me tonight."
-```
-
-Character:
-
-```text
-Goal:
-Protect family.
-
-Relationship with Player:
-MODERATE.
-
-Perceived Mission Risk:
-HIGH.
-
-Expected Benefit:
+EXPECTED BENEFIT:
 LOW.
-
-Family Obligation:
-HIGH.
 ```
 
 Decision:
@@ -6180,77 +4298,68 @@ Decision:
 REFUSE.
 ```
 
-Dialogue:
+Player-facing expression:
 
 ```text
-"I can't. Not tonight.
-My family needs me here."
+"I CAN'T.
+NOT TONIGHT.
+MY FAMILY
+NEEDS ME HERE."
 ```
 
-No arbitrary:
+The refusal is not an NPC block.
 
-```text
-NPC BLOCK.
-```
-
-The refusal emerges from:
-
-```text
-CHARACTER STATE.
-```
+It emerges from Character state.
 
 ---
 
-# Example: Persuasion
+# 160. Example — Persuasion
 
-Initial:
+Initial belief:
 
 ```text
-Character:
-Refuses evacuation.
+ROAD WILL
+REMAIN OPEN.
+```
 
-Belief:
-Road will remain open.
+Decision:
 
-Goal:
-Wait for daughter.
+```text
+WAIT.
 ```
 
 Player provides:
 
 ```text
-verified report
-that road closes in 20 minutes.
+VERIFIED REPORT:
+
+ROAD CLOSES
+IN 20 MINUTES.
 ```
 
 This changes:
 
 ```text
 KNOWLEDGE
-+
+
 RISK
-+
+
 TIME PRESSURE.
 ```
 
 Decision is reevaluated.
 
-Character may now choose:
+Possible new options:
 
 ```text
-evacuate
+EVACUATE
 
-search immediately
+SEARCH IMMEDIATELY
 
-ask player to find daughter
+ASK PLAYER
+TO FIND PERSON
 
-move to checkpoint.
-```
-
-The player did not:
-
-```text
-WIN A SPEECH CHECK.
+MOVE TO CHECKPOINT.
 ```
 
 The player changed:
@@ -6259,405 +4368,210 @@ The player changed:
 DECISION CONDITIONS.
 ```
 
----
-
-# Example: Long-Term Decision
-
-Character:
-
-```text
-Mechanic.
-```
-
-Current State:
-
-```text
-Stable employment.
-```
-
-Long-Term Goal:
-
-```text
-Own workshop.
-```
-
-New Opportunity:
-
-```text
-Workshop available.
-```
-
-Costs:
-
-```text
-High debt
-
-Less free time
-
-Financial risk.
-```
-
-Benefits:
-
-```text
-Independence
-
-Income potential
-
-Identity alignment.
-```
-
-Character may:
-
-```text
-buy
-
-rent
-
-negotiate
-
-delay
-
-reject.
-```
-
-Decision depends on:
-
-```text
-risk tolerance
-
-savings
-
-family obligations
-
-self-belief
-
-market belief
-
-values.
-```
+They did not override agency.
 
 ---
 
-# Example: Last Straw
+# 161. Example — Last Straw
 
 Character has experienced:
 
 ```text
-low wages
+LOW WAGES
 
-bad management
+BAD MANAGEMENT
 
-long commute
+LONG COMMUTE
 
-repeated broken promises.
+BROKEN PROMISES.
 ```
 
-Pressure:
+Accumulated pressure:
 
 ```text
 HIGH.
 ```
 
-Manager changes:
+Manager changes weekend schedule.
 
-```text
-weekend schedule.
-```
-
-The schedule change alone seems:
+The schedule change alone is:
 
 ```text
 SMALL.
 ```
 
-But accumulated pressure crosses:
+But:
 
 ```text
-THRESHOLD.
-```
-
-Decision:
-
-```text
+ACCUMULATED PRESSURE
++
+NEW EVENT
+↓
+TIPPING POINT
+↓
 QUIT.
 ```
 
-This is not:
+This is not random overreaction.
 
-```text
-random overreaction.
-```
-
-It is:
-
-```text
-ACCUMULATED CAUSALITY.
-```
+It is accumulated causality.
 
 ---
 
-# Example: Compromise
+# 162. Example — Good Decision, Bad Outcome
 
-Character A wants:
-
-```text
-evacuate immediately.
-```
-
-Character B wants:
+Character receives reliable warning:
 
 ```text
-stay and protect equipment.
+BRIDGE
+MAY COLLAPSE.
 ```
 
-Negotiation produces:
+Chooses safer route.
+
+Unexpected event:
 
 ```text
-remain 20 minutes
-
-secure critical equipment
-
-leave together.
+LANDSLIDE
+BLOCKS
+SAFER ROUTE.
 ```
 
-Neither gets:
+Outcome:
 
 ```text
-ideal outcome.
+CHARACTER
+BECOMES STRANDED.
 ```
 
-Both receive:
-
-```text
-acceptable outcome.
-```
+The bad outcome does not make the original decision irrational.
 
 ---
 
-# Example: Hidden Action
+# 163. Example — Bad Decision, Good Outcome
 
-Character publicly supports:
+Character ignores reliable warning.
 
-```text
-Council policy.
-```
+Crosses damaged bridge.
 
-Private Belief:
+Bridge holds.
 
-```text
-Policy will fail.
-```
-
-Reason for public support:
+Outcome:
 
 ```text
-career
-
-reputation
-
-faction pressure.
+SUCCESS.
 ```
 
-Private Decision:
-
-```text
-secretly prepare alternative plan.
-```
-
-This creates:
-
-```text
-future political consequence
-
-possible secret exposure
-
-relationship tension.
-```
+The successful outcome does not make the decision process sound.
 
 ---
 
-# Example: Regret
+# 164. Runtime Relationship
 
-Character chooses:
-
-```text
-stay at hospital.
-```
-
-Child evacuates safely with neighbor.
-
-Hospital patients survive.
-
-Objectively:
+The intended Character runtime now becomes:
 
 ```text
-decision produced good outcome.
-```
-
-Character may still feel:
-
-```text
-regret
-
-guilt
-
-fear
-```
-
-because:
-
-```text
-they were not with their child.
-```
-
-Emotional consequence does not require:
-
-```text
-objective failure.
-```
-
----
-
-# Example: Decision Cascade
-
-Trader believes:
-
-```text
-fuel shortage coming.
-```
-
-Decision:
-
-```text
-buy extra fuel.
-```
-
-Other traders observe:
-
-```text
-large purchase.
-```
-
-They infer:
-
-```text
-shortage confirmed.
-```
-
-They buy fuel.
-
-Market responds:
-
-```text
-price rises.
-```
-
-Population observes:
-
-```text
-price increase.
-```
-
-Population believes:
-
-```text
-shortage is real.
-```
-
-Hoarding begins.
-
-Result:
-
-```text
-ACTUAL SHORTAGE.
-```
-
-The cascade is:
-
-```text
-BELIEF
+NEEDS / MOTIVATION
 ↓
-DECISION
+WHY DO I CARE?
+
+GOALS / PLANS
 ↓
-ACTION
+WHAT AM I
+TRYING TO ACHIEVE?
+
+KNOWLEDGE / BELIEFS
 ↓
-WORLD CHANGE
+WHAT DO I
+THINK IS TRUE?
+
+EXPERTISE
 ↓
-NEW BELIEF
-↓
-NEW DECISIONS.
-```
+WHAT CAN I
+ACTUALLY DO?
 
-This is one of the central emergent mechanisms of:
-
-```text
-PROJECT ASCENSION.
-```
-
----
-
-# Foundational Decision Formula
-
-Conceptually:
-
-```text
-PERCEIVED WORLD
+ATTRIBUTES
 +
-NEEDS
-+
-MOTIVATIONS
-+
-GOALS
-+
-PLANS
-+
-VALUES
+PSYCHOLOGY
 +
 RELATIONSHIPS
 +
-PERCEIVED CAPABILITY
-+
-RESOURCES
-+
-RISK
-+
-TIME
-+
-EMOTION
-+
-EXPERIENCE
-      ↓
-POSSIBLE ACTIONS
-      ↓
-FILTERING
-      ↓
-TRADEOFF EVALUATION
-      ↓
-CHOICE
-      ↓
-COMMITMENT
-      ↓
+WORLD CONDITIONS
+↓
+WHAT HUMAN CONTEXT
+AM I IN?
+
+AUTONOMY / INITIATIVE
+↓
+WHY IS ACTION
+RELEVANT NOW?
+
+DECISION MAKING
+↓
+WHAT DO I CHOOSE?
+
 ACTION
-      ↓
-WORLD CONSEQUENCE
-      ↓
+↓
+WHAT DO I TRY?
+
+WORLD SIMULATION
+↓
+WHAT HAPPENS?
+
+LIFE
++
 MEMORY
-      ↓
-LEARNING.
++
+RELATIONSHIPS
++
+PROGRESSION
+↓
+WHAT CHANGES?
 ```
 
 ---
 
-# Human Decision Principle
+# 165. Decision Loop
+
+```text
+WORLD
+↓
+PERCEPTION
+↓
+KNOWLEDGE / BELIEF
+↓
+DECISION CONTEXT
+↓
+OPTIONS
+↓
+TRADEOFFS
+↓
+CHOICE
+↓
+ACTION
+↓
+WORLD CONSEQUENCE
+↓
+EXPERIENCE
+↓
+AUTHORITATIVE
+SYSTEM UPDATES
+↓
+NEW DECISION CONTEXT.
+```
+
+---
+
+# 166. Human Decision Principle
 
 A believable decision is not necessarily:
 
 ```text
-THE SMARTEST DECISION.
+THE SMARTEST
+DECISION.
 ```
 
-It is the decision that becomes understandable when the player knows:
+It is a decision that becomes understandable when we know:
 
 ```text
 WHO THIS PERSON IS
@@ -6668,252 +4582,122 @@ WHAT THEY KNOW
 
 WHAT THEY BELIEVE
 
-WHO THEY LOVE
+WHO MATTERS TO THEM
 
 WHAT THEY FEAR
 
 WHAT THEY CAN DO
 
-WHAT THEY HAVE EXPERIENCED
+WHAT THEY THINK
+THEY CAN DO
 
-WHAT THEY STAND TO LOSE.
+WHAT THEY HAVE
+EXPERIENCED
+
+WHAT THEY HAVE
+TO LOSE
+
+HOW MUCH TIME
+THEY HAVE.
 ```
 
 ---
 
-# Emergent Character Principle
+# 167. Decision North Star
 
-When Decision Making functions correctly:
+The Decision Making system succeeds when two Characters can face the same situation and make different decisions, while both decisions remain understandable.
+
+It succeeds when a Character:
 
 ```text
-THE WRITER
-DOES NOT NEED
-TO DECIDE EVERYTHING
-THE CHARACTER DOES.
+MAKES MISTAKES
+
+MISJUDGES RISK
+
+ACTS WITH COURAGE
+
+ACTS WITH FEAR
+
+WAITs
+
+REFUSES
+
+SACRIFICES
+
+DELEGATES
+
+CHANGES THEIR MIND
+
+STAYS COMMITTED
+
+WALKS AWAY
+
+ASKS FOR HELP
+
+OR DOES NOTHING
 ```
 
-Instead:
+for reasons grounded in who they are and what they believe at that moment.
+
+The goal is not:
 
 ```text
-CHARACTER STATE
-+
-WORLD STATE
-+
-INFORMATION
-+
-MOTIVATION
-+
-RELATIONSHIPS
-      ↓
-DECISION.
+OPTIMAL BEHAVIOR.
 ```
 
-The simulation produces:
+The goal is:
 
 ```text
-BEHAVIOR.
-```
-
-Behavior produces:
-
-```text
-CONSEQUENCE.
-```
-
-Consequence produces:
-
-```text
-STORY.
-```
-
----
-
-# Architectural Result
-
-With this document established:
-
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
-
-Needs_and_Motivation.md
-      ↓
-WHY THEY CARE
-
-Goals_and_Plans.md
-      ↓
-WHAT THEY WANT TO ACHIEVE
-
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-WITHOUT PLAYER INPUT
-
-Profession_and_Capability.md
-      ↓
-WHAT THEY CAN ACTUALLY DO
-
-Personality_and_Values.md
-      ↓
-WHY DIFFERENT PEOPLE
-CHOOSE DIFFERENTLY
-
-Character_Development.md
-      ↓
-HOW CHOICES CHANGE THEM
-
-Aging_and_Life_Events.md
-      ↓
-HOW LIFE CHANGES OVER TIME
-
-Character_Simulation_Resolution.md
-      ↓
-HOW ALL OF THIS SCALES
-ACROSS THE POPULATION.
+PLAUSIBLE
+HUMAN AGENCY.
 ```
 
 ---
 
-# Current Status
+# 168. Closing Principle
+
+> **Project Ascension does not need Characters who always choose correctly. It needs Characters whose choices make sense from inside their own incomplete understanding of the world.**
+
+A Character should never behave because:
 
 ```text
-CHARACTER SYSTEM
-
-README.md
-FOUNDATION DEFINED
-
-Character_State.md
-FOUNDATION DEFINED
-
-Needs_and_Motivation.md
-FOUNDATION DEFINED
-
-Goals_and_Plans.md
-FOUNDATION DEFINED
-
-Knowledge_and_Beliefs.md
-FOUNDATION DEFINED
-
-Decision_Making.md
-FOUNDATION DEFINED
-
-Autonomy_and_Initiative.md
-PENDING
-
-Profession_and_Capability.md
-PENDING
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
+THE STORY
+NEEDS THEM TO.
 ```
 
----
-
-# Next Document
-
-The next recommended document is:
+They should behave because:
 
 ```text
-Canon/Systems/Characters/Autonomy_and_Initiative.md
+THEIR HISTORY
+
+THEIR BELIEFS
+
+THEIR GOALS
+
+THEIR RELATIONSHIPS
+
+THEIR PSYCHOLOGY
+
+THEIR CAPABILITIES
+
+THEIR PERCEPTION
+
+THEIR CIRCUMSTANCES
+
+AND THEIR AGENCY
 ```
 
-Its central question is:
+created a plausible choice.
 
-```text
-WE NOW KNOW
-HOW A CHARACTER CHOOSES.
+That choice enters the world.
 
-BUT WHEN DOES
-THE CHARACTER DECIDE
-TO DO SOMETHING
-WITHOUT THE PLAYER
-CAUSING IT?
-```
-
-It should define:
-
-```text
-autonomous action
-
-initiative
-
-self-generated Goals
-
-self-generated Plans
-
-background activity
-
-offscreen action
-
-scheduled behavior
-
-opportunity detection
-
-threat response
-
-social initiative
-
-relationship initiative
-
-professional initiative
-
-goal pursuit
-
-player-independent action
-
-interruption
-
-waiting
-
-follow-up
-
-persistence
-
-world interaction
-
-autonomy budgets
-
-simulation resolution
-
-player relevance
-
-emergent encounters.
-```
-
-The foundational principle should be:
-
-```text
-THE PLAYER
-IS NOT THE ENGINE
-OF THE WORLD.
-
-THE PLAYER
-IS ONE ACTOR
-WITHIN IT.
-```
+The world decides what happens next.
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Decision Making foundation defining perceived-reality decision logic, decision triggers, candidate actions, bounded rationality, satisficing, risk, cost, goal and value conflict, relationship influence, role obligations, emotion, time pressure, inaction, delegation, learning, commitment, regret, persuasion, player requests, simulation resolution and autonomous character choice. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Initial Decision Making foundation defining perceived-reality decision logic, decision triggers, candidate actions, bounded rationality, satisficing, risk, cost, Goal and Value conflict, Relationship influence, role obligations, emotion, time pressure, inaction, delegation, learning, commitment, regret, persuasion, player requests, simulation resolution and autonomous Character choice. |
+| 1.0 | 2026-08-30 | Rebuilt Decision Making around explicit ownership of Character choice. Preserved perceived-reality reasoning, bounded rationality, limited action sets, risk, uncertainty, tradeoffs, satisficing, heuristics, commitment, reconsideration, inaction, delay, delegation, persuasion, decision stability, explainability and outcome separation. Removed duplicated ownership of Goals, Psychology, Attributes, Relationships, Memory, Learning, Progression, Autonomy, Society and Narrative; aligned Decision Making with the new Character runtime architecture and the project's non-deterministic human model. |

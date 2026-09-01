@@ -1,243 +1,370 @@
 # PROJECT ASCENSION
-# Knowledge and Beliefs System
+
+# Knowledge and Beliefs
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Knowledge and Beliefs |
-| Location | Canon/Systems/Characters/Knowledge_and_Beliefs.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Character Knowledge, Belief, Uncertainty and Information Boundaries |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Knowledge_and_Beliefs.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Epistemic State |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define what a Character has plausibly learned, what they currently believe, how certain they are, and how information reaches, changes, contradicts, or fails to reach them |
 
-> *"People do not act upon the world as it is. They act upon the world as they believe it to be."*
+> **"People do not act upon the world as it is. They act upon the world as they believe it to be."**
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Knowledge and Beliefs system defines how individual characters in Project Ascension perceive, acquire, interpret, store, question, revise, share, and act upon information.
+The Knowledge and Beliefs system defines the Character-level epistemic model of Project Ascension.
 
-Its purpose is to maintain a strict distinction between:
+Its central questions are:
+
+```text
+WHAT HAS
+THIS CHARACTER
+PLAUSIBLY LEARNED?
+
+WHAT DO THEY
+CURRENTLY BELIEVE?
+
+HOW CERTAIN
+ARE THEY?
+
+WHERE DID
+THE INFORMATION
+COME FROM?
+
+HOW OLD
+IS IT?
+
+WHAT CONTRADICTS IT?
+
+WHAT DO THEY
+STILL NOT KNOW?
+```
+
+This system exists because:
 
 ```text
 WORLD TRUTH
+
+IS NOT
+
+CHARACTER REALITY.
 ```
 
-and:
+Characters act from:
 
 ```text
-CHARACTER KNOWLEDGE
-```
-
-and between:
-
-```text
-CHARACTER KNOWLEDGE
-```
-
-and:
-
-```text
-CHARACTER BELIEF.
-```
-
-This distinction is essential for:
-
-```text
-uncertainty
-
-rumors
-
-misunderstandings
-
-investigation
-
-deception
-
-secrets
-
-trust
-
-politics
-
-conflicting reports
-
-human error
-
-information delay
-
-surprise.
+PERCEIVED REALITY.
 ```
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
 The foundational rule is:
 
 ```text
 WORLD TRUTH
 ≠
+CHARACTER PERCEPTION
+≠
 CHARACTER KNOWLEDGE
 ≠
-CHARACTER BELIEF.
+CHARACTER BELIEF
+≠
+PLAYER KNOWLEDGE.
 ```
 
-These three layers must remain separate.
+These layers must remain separate.
 
 ---
 
-# The Three Information Layers
+# 3. Core Information Chain
 
 Conceptually:
 
 ```text
 WORLD TRUTH
-      ↓
+↓
+OBSERVABLE EFFECT
+↓
 INFORMATION PATH
-      ↓
-CHARACTER KNOWLEDGE
-      ↓
+↓
+CHARACTER ACCESS
+↓
+ATTENTION
+↓
+PERCEPTION
+↓
+KNOWLEDGE
+↓
 INTERPRETATION
-      ↓
-CHARACTER BELIEF
-      ↓
+↓
+BELIEF
+↓
 DECISION
-      ↓
-ACTION
+↓
+ACTION.
 ```
 
-A failure or distortion may occur at every stage.
+Distortion, delay or failure may occur at every stage.
 
 ---
 
-# World Truth
+# 4. Ownership
+
+Knowledge and Beliefs owns:
+
+```text
+CHARACTER KNOWLEDGE
+
+KNOWLEDGE CLAIMS
+
+KNOWLEDGE PROVENANCE
+
+INFORMATION SOURCE
+
+SOURCE TYPE
+
+INFORMATION DATE
+
+ACQUIRED DATE
+
+FRESHNESS
+
+CHARACTER CONFIDENCE
+
+VERIFICATION STATE
+
+CORROBORATION
+
+CONTRADICTORY CLAIMS
+
+UNCERTAINTY
+
+PARTIAL KNOWLEDGE
+
+NEGATIVE KNOWLEDGE
+
+BELIEF STATE
+
+BELIEF CONFIDENCE
+
+BELIEF ORIGIN
+
+BELIEF PERSISTENCE
+
+BELIEF REVISION
+
+BELIEF CONTRADICTION
+
+SELF-BELIEF
+
+CAUSAL BELIEF
+
+FUTURE EXPECTATION
+
+INSTITUTIONAL BELIEF
+
+CHARACTER-SPECIFIC
+SOURCE ASSESSMENT
+
+EPISTEMIC EXPLAINABILITY.
+```
+
+---
+
+# 5. What Knowledge and Beliefs Does Not Own
+
+Knowledge and Beliefs does not own:
+
+```text
+WORLD TRUTH
+
+MEMORY
+
+RELATIONSHIP STATE
+
+TRUST STATE
+
+HUMAN ATTRIBUTES
+
+HUMAN PSYCHOLOGY
+
+GOALS
+
+MOTIVATION
+
+DECISION SELECTION
+
+AUTONOMY
+
+EXPERTISE
+
+LIFE HISTORY
+
+PROGRESSION
+
+SOCIETY STATE
+
+FACTION STATE
+
+POPULATION BELIEF
+DISTRIBUTION
+
+NARRATIVE REVELATION.
+```
+
+It may read those systems.
+
+It must not duplicate them.
+
+---
+
+# 6. World Truth
 
 World Truth represents:
 
 ```text
-WHAT IS ACTUALLY TRUE
+WHAT IS
+ACTUALLY TRUE
 IN THE SIMULATION.
 ```
 
 Examples:
 
 ```text
-Bridge:
+BRIDGE:
 DESTROYED
 
-Millhaven:
-NO HOSTILE OCCUPATION
+ROAD:
+OPEN
 
-Fuel Reserve:
-18 DAYS
-
-Character:
+CHARACTER:
 ALIVE
 
-Road:
-BLOCKED
-
-Shipment:
+SHIPMENT:
 DELAYED
+
+FUEL RESERVE:
+18 DAYS.
 ```
 
-World Truth belongs primarily to:
+World Truth belongs to the relevant authoritative system.
+
+Examples may include:
 
 ```text
-World Simulation
+WORLD SIMULATION
 
-Character State
+CHARACTER STATE
 
-Life State
+LIFE
 
-Relationship State
+RELATIONSHIPS
 
-other authoritative systems.
+SOCIETY
+
+FACTIONS.
 ```
 
 ---
 
-# World Truth Principle
-
-World Truth does not automatically become:
+# 7. World Truth Does Not Travel Automatically
 
 ```text
-PLAYER KNOWLEDGE
+WORLD TRUTH
+```
 
+does not automatically become:
+
+```text
 CHARACTER KNOWLEDGE
 
-PUBLIC KNOWLEDGE.
+PLAYER KNOWLEDGE
+
+PUBLIC KNOWLEDGE
+
+AURORA KNOWLEDGE.
 ```
 
-Information must travel.
+Information requires:
+
+```text
+A PATH.
+```
 
 ---
 
-# Character Knowledge
+# 8. Character Knowledge
 
 Character Knowledge represents:
 
-```text
-INFORMATION THE CHARACTER
-HAS PLAUSIBLY ACQUIRED.
-```
+> **Information a Character has plausibly acquired and retained sufficiently for current reasoning.**
 
-Knowledge may originate from:
+Possible sources include:
 
 ```text
-direct observation
+DIRECT OBSERVATION
 
-conversation
+CONVERSATION
 
-radio
+MESSAGE
 
-documents
+DOCUMENT
 
-professional systems
+RADIO
 
-institutions
+PROFESSIONAL NETWORK
 
-personal experience
+INSTITUTION
 
-messages
+RECORD
 
-reports
+REPORT
 
-rumors
+RUMOR
 
-player communication
+PLAYER COMMUNICATION
 
-other characters.
+OTHER CHARACTERS.
 ```
 
 ---
 
-# Character Knowledge Principle
+# 9. Knowledge Requires Access
 
-A character may know something only if there is:
+A Character may know something only if there is:
 
 ```text
-A PLAUSIBLE INFORMATION PATH.
+A PLAUSIBLE
+INFORMATION PATH.
 ```
 
 Conceptually:
 
 ```text
 EVENT
-      ↓
+↓
 OBSERVATION / RECORD
-      ↓
-INFORMATION CHANNEL
-      ↓
-CHARACTER RECEIVES
-      ↓
-KNOWLEDGE STATE
+↓
+CHANNEL
+↓
+CHARACTER ACCESS
+↓
+ATTENTION
+↓
+KNOWLEDGE.
 ```
 
-If no path exists:
+If the chain does not exist:
 
 ```text
 NO KNOWLEDGE.
@@ -245,253 +372,261 @@ NO KNOWLEDGE.
 
 ---
 
-# Character Belief
+# 10. Information Access Is Not Knowledge
 
-Belief represents:
-
-```text
-WHAT THE CHARACTER
-THINKS IS TRUE.
-```
-
-Belief may derive from:
-
-```text
-knowledge
-
-interpretation
-
-memory
-
-values
-
-personality
-
-experience
-
-trust
-
-social influence
-
-rumor
-
-misinformation.
-```
-
-Beliefs may be:
-
-```text
-TRUE
-
-FALSE
-
-PARTIALLY TRUE
-
-UNCERTAIN
-
-OUTDATED
-
-CONTESTED.
-```
-
----
-
-# Knowledge Versus Belief
+Information may be available without becoming Character Knowledge.
 
 Example:
 
-Character knows:
-
 ```text
-Three traders cancelled
-eastern deliveries.
+RADIO BROADCAST
+IS AVAILABLE
+
+BUT
+
+CHARACTER
+IS ASLEEP.
 ```
 
-Character believes:
+Or:
 
 ```text
-The eastern route
-has become dangerous.
-```
+REPORT EXISTS
 
-World Truth:
+BUT
 
-```text
-The route is safe.
-
-Traders cancelled because
-fuel prices increased.
-```
-
-The observation is accurate.
-
-The interpretation is wrong.
-
----
-
-# Critical Behavioral Principle
-
-Characters make decisions from:
-
-```text
-THEIR PERCEIVED WORLD.
-```
-
-Not from:
-
-```text
-SIMULATION TRUTH.
+CHARACTER
+HAS NO ACCESS.
 ```
 
 Therefore:
 
 ```text
-FALSE BELIEF
-+
-RATIONAL DECISION
+AVAILABLE INFORMATION
+≠
+ACQUIRED INFORMATION.
 ```
-
-is valid.
 
 ---
 
-# Knowledge Item
+# 11. Attention
 
-A conceptual Knowledge Item may contain:
+Characters possess limited attention.
+
+They do not absorb every available signal.
+
+Information is more likely to receive attention when it is:
 
 ```text
-Knowledge ID
+URGENT
 
-Character ID
+PERSONALLY RELEVANT
 
-Subject
+GOAL RELEVANT
 
-Claim
+PROFESSIONALLY RELEVANT
 
-Source
+RELATIONSHIP RELEVANT
 
-Source Type
+EMOTIONALLY SALIENT
 
-Acquired Date
-
-Information Date
-
-Confidence
-
-Freshness
-
-Verification
-
-Reliability Estimate
-
-Visibility
-
-Status
-
-Related Evidence
-
-Contradictory Evidence
-
-Superseded By
+UNEXPECTED.
 ```
 
 ---
 
-# Knowledge ID
+# 12. Knowledge Item
+
+A conceptual Knowledge Item may include:
+
+```text
+KNOWLEDGE ID
+
+CHARACTER ID
+
+SUBJECT
+
+CLAIM
+
+SOURCE
+
+SOURCE TYPE
+
+ACQUIRED DATE
+
+INFORMATION DATE
+
+CONFIDENCE
+
+FRESHNESS
+
+VERIFICATION
+
+PROVENANCE
+
+SUPPORTING EVIDENCE
+
+CONTRADICTORY EVIDENCE
+
+STATUS.
+```
+
+This is conceptual architecture.
+
+It is not yet a required implementation schema.
+
+---
+
+# 13. Claim-Level Knowledge
+
+Knowledge should be represented at the level required for meaningful reasoning.
+
+Avoid:
+
+```text
+MILLHAVEN:
+KNOWN.
+```
+
+Prefer:
+
+```text
+MILLHAVEN COMMUNICATION:
+FAILED
+
+CAUSE:
+UNKNOWN
+
+SECURITY:
+UNKNOWN
+
+TRAVEL:
+RESTRICTED
+
+REASON:
+UNKNOWN.
+```
+
+This preserves:
+
+```text
+PARTIAL KNOWLEDGE.
+```
+
+---
+
+# 14. Direct Observation
+
+Direct observation may produce high-confidence knowledge.
 
 Example:
 
 ```text
-KNOW-CHAR184-012
+CHARACTER
+SEES BRIDGE
+COLLAPSE.
 ```
 
-Stable IDs may be useful for:
+But direct observation remains limited.
+
+Seeing:
 
 ```text
-belief references
+SMOKE
+```
 
-decision history
+does not automatically reveal:
 
-memory
+```text
+CAUSE
 
-investigation
+CASUALTIES
 
-information propagation.
+RESPONSIBILITY
+
+FULL EXTENT.
 ```
 
 ---
 
-# Subject
+# 15. Observation Is Interpretation-Limited
 
-The Subject identifies what the information concerns.
-
-Examples:
-
-```text
-Character
-
-Location
-
-Event
-
-Resource
-
-Organization
-
-Route
-
-Institution
-
-Political Proposal
-
-World Condition.
-```
-
----
-
-# Claim
-
-The Claim represents the proposition believed to be factual.
+Two Characters may observe the same event and extract different information.
 
 Example:
 
 ```text
-Subject:
-Eastern Ridge Bridge
-
-Claim:
-Bridge is operational.
+BURNED
+ELECTRICAL HOUSING.
 ```
 
----
-
-# Source
-
-Every non-observed knowledge item should ideally retain provenance.
-
-Examples:
+Engineer may infer:
 
 ```text
-Mara Vale
+PROBABLE
+ELECTRICAL OVERLOAD.
+```
 
-Regional Radio
+Non-expert may infer:
 
-Valley Council Report
+```text
+EQUIPMENT
+IS DAMAGED.
+```
 
-Anonymous Traveler
+Same observation.
 
-Player
+Different usable knowledge.
 
-Personal Observation
+---
 
-Medical Network.
+# 16. Expertise Interaction
+
+Expertise may affect:
+
+```text
+WHAT IS NOTICED
+
+WHAT CAN BE
+RECOGNIZED
+
+WHAT CAN BE
+INFERRED
+
+HOW RISK
+IS INTERPRETED
+
+HOW TECHNICAL
+INFORMATION
+IS UNDERSTOOD.
+```
+
+But:
+
+```text
+EXPERTISE
+≠
+INFALLIBILITY.
+```
+
+Experts may still:
+
+```text
+MISDIAGNOSE
+
+OVERGENERALIZE
+
+LACK CONTEXT
+
+TRUST A
+FAMILIAR PATTERN.
 ```
 
 ---
 
-# Source Type
+# 17. Information Source Types
 
-Recommended conceptual types:
+Useful conceptual source types include:
 
 ```text
 DIRECT OBSERVATION
@@ -514,119 +649,71 @@ RUMOR
 
 INFERENCE
 
-MEMORY
+REMEMBERED INFORMATION
 
 UNKNOWN SOURCE.
 ```
 
 ---
 
-# Direct Observation
+# 18. Firsthand Report
 
-The character personally observes:
-
-```text
-an object
-
-an event
-
-a person
-
-a condition.
-```
+A firsthand source directly observed the relevant event.
 
 Example:
 
 ```text
-Character sees bridge collapse.
+"I SAW
+THE BRIDGE COLLAPSE."
 ```
 
-Knowledge confidence may be:
+Reliability may still depend on:
 
 ```text
-HIGH.
-```
+OBSERVATION QUALITY
 
-But interpretation may still be imperfect.
+HONESTY
 
----
+MEMORY
 
-# Observation Is Not Omniscience
-
-Character sees:
-
-```text
-smoke rising from workshop.
-```
-
-They do not automatically know:
-
-```text
-cause
-
-casualties
-
-responsibility
-
-extent of damage.
-```
-
-Direct observation still has:
-
-```text
-LIMITS.
+INTERPRETATION.
 ```
 
 ---
 
-# Firsthand Report
-
-Someone who directly observed an event tells the character.
+# 19. Secondhand Report
 
 Example:
 
 ```text
-"I saw the bridge collapse."
+"LENA TOLD ME
+THE BRIDGE COLLAPSED."
 ```
 
-Reliability depends upon:
+Each additional transmission may introduce:
 
 ```text
-source honesty
+LOSS
 
-observation quality
+DISTORTION
 
-memory
+SIMPLIFICATION
 
-interpretation.
+ADDED INTERPRETATION.
 ```
 
 ---
 
-# Secondhand Report
+# 20. Provenance Chain
 
-Source heard the information from another source.
-
-Example:
+Where behaviorally important, preserve:
 
 ```text
-"Lena told me
-the bridge collapsed."
+WHO HEARD
+WHAT
+
+FROM WHOM.
 ```
-
-Each transfer creates potential:
-
-```text
-loss
-
-distortion
-
-simplification.
-```
-
----
-
-# Multi-Hop Information
 
 Conceptually:
 
@@ -642,271 +729,208 @@ CHARACTER C
 CHARACTER D.
 ```
 
-With each step:
+This prevents:
 
 ```text
-provenance may weaken
+ONE SOURCE
+REPEATED THREE TIMES
+```
 
-details may change
+from appearing to be:
 
-confidence may change
-
-interpretation may accumulate.
+```text
+THREE INDEPENDENT
+SOURCES.
 ```
 
 ---
 
-# Institutional Report
+# 21. False Corroboration
+
+Critical rule:
+
+```text
+REPETITION
+≠
+INDEPENDENT
+CORROBORATION.
+```
+
+If:
+
+```text
+SOURCE A
+↓
+B
+↓
+C
+↓
+D
+```
+
+then:
+
+```text
+B + C + D
+```
+
+must not be treated as:
+
+```text
+THREE INDEPENDENT
+CONFIRMATIONS.
+```
+
+---
+
+# 22. Institutional Information
+
+Institutions may provide:
+
+```text
+WEATHER REPORTS
+
+MEDICAL REPORTS
+
+TRADE BULLETINS
+
+SECURITY ADVISORIES
+
+COUNCIL RECORDS
+
+INFRASTRUCTURE STATUS.
+```
+
+Institutional information may be:
+
+```text
+PROCEDURALLY STRONG
+```
+
+while still:
+
+```text
+DELAYED
+
+INCOMPLETE
+
+POLITICALLY FRAMED
+
+INCORRECT.
+```
+
+---
+
+# 23. Authority Is Not Truth
+
+Do not treat:
+
+```text
+OFFICIAL
+```
+
+as:
+
+```text
+TRUE.
+```
+
+Do not treat:
+
+```text
+UNOFFICIAL
+```
+
+as:
+
+```text
+FALSE.
+```
+
+Source evaluation remains contextual.
+
+---
+
+# 24. Professional Information Access
+
+Profession may affect access to:
+
+```text
+SPECIALIZED NETWORKS
+
+RECORDS
+
+REPORTS
+
+TERMINOLOGY
+
+INSTITUTIONAL CHANNELS.
+```
 
 Examples:
 
 ```text
-Authority announcement
+DOCTOR
+→ medical network
 
-Hospital status report
+TRADER
+→ price and route network
 
-Trade bulletin
+ENGINEER
+→ infrastructure information
 
-Weather report
+FARMER
+→ agricultural information
 
-Security advisory
-
-Council record.
+OFFICIAL
+→ institutional records.
 ```
 
-Institutional information may have:
+Profession affects:
 
 ```text
-high procedural reliability
+ACCESS.
 ```
 
-while still being:
+Expertise affects:
 
 ```text
-incomplete
-
-delayed
-
-politically framed
-
-incorrect.
+INTERPRETATION.
 ```
 
 ---
 
-# Professional Knowledge
+# 25. Information Date
 
-Characters may receive information through:
-
-```text
-profession-specific networks.
-```
-
-Examples:
+Always distinguish:
 
 ```text
-Doctor:
-medical outbreak reports.
-
-Trader:
-price and route information.
-
-Engineer:
-infrastructure alerts.
-
-Farmer:
-crop and weather conditions.
-
-Official:
-authority reports.
-```
-
-Profession therefore influences:
-
-```text
-INFORMATION ACCESS.
-```
-
----
-
-# Information Acquisition
-
-Characters may acquire knowledge through:
-
-```text
-passive exposure
-```
-
-or:
-
-```text
-active information seeking.
-```
-
----
-
-# Passive Acquisition
-
-Examples:
-
-```text
-hearing radio
-
-seeing road closure
-
-overhearing conversation
-
-receiving work bulletin
-
-watching market prices.
-```
-
----
-
-# Active Acquisition
-
-Examples:
-
-```text
-asking questions
-
-investigating
-
-reading records
-
-calling contacts
-
-traveling to location
-
-comparing reports
-
-observing directly.
-```
-
----
-
-# Information Need
-
-A character may actively seek information because:
-
-```text
-a Goal requires it
-
-uncertainty is high
-
-risk is high
-
-a relationship matters
-
-a contradiction exists
-
-a decision cannot be made confidently.
-```
-
----
-
-# Investigation
-
-Investigation is conceptually:
-
-```text
-UNCERTAINTY
-      ↓
-INFORMATION NEED
-      ↓
-SEARCH
-      ↓
-EVIDENCE
-      ↓
-KNOWLEDGE UPDATE
-      ↓
-BELIEF REVISION
-```
-
-Investigation does not guarantee:
-
-```text
-TOTAL TRUTH.
-```
-
----
-
-# Information Date
-
-Knowledge must distinguish:
-
-```text
-WHEN CHARACTER LEARNED IT
+WHEN INFORMATION
+WAS TRUE
 ```
 
 from:
 
 ```text
-WHEN INFORMATION WAS TRUE.
+WHEN THE CHARACTER
+LEARNED IT.
 ```
 
 Example:
 
 ```text
-Information Date:
+INFORMATION DATE:
 2055-08-31
 
-Acquired Date:
-2055-09-03
-```
-
-This matters for:
-
-```text
-STALE INFORMATION.
+ACQUIRED DATE:
+2055-09-03.
 ```
 
 ---
 
-# Information Age
+# 26. Freshness
 
-A reliable observation can become inaccurate over time.
-
-Example:
-
-```text
-Traveler:
-"The road was closed."
-```
-
-The statement may have been:
-
-```text
-TRUE
-```
-
-when observed.
-
-Three days later:
-
-```text
-road reopened.
-```
-
-The source was reliable.
-
-The information is outdated.
-
----
-
-# Critical Distinction
-
-```text
-SOURCE RELIABILITY
-≠
-INFORMATION FRESHNESS.
-```
-
----
-
-# Freshness
-
-Recommended conceptual states:
+Information may be:
 
 ```text
 CURRENT
@@ -922,18 +946,77 @@ HISTORICAL
 UNKNOWN.
 ```
 
+Freshness depends on the domain.
+
 ---
 
-# Knowledge Confidence
+# 27. Source Reliability vs Freshness
+
+Critical distinction:
+
+```text
+SOURCE RELIABILITY
+≠
+INFORMATION FRESHNESS.
+```
+
+A reliable traveler may accurately report:
+
+```text
+ROAD CLOSED
+THREE DAYS AGO.
+```
+
+The road may now be open.
+
+The source was reliable.
+
+The information became stale.
+
+---
+
+# 28. Knowledge Half-Life
+
+Different information types become stale at different rates.
+
+Examples:
+
+```text
+WEATHER
+→ SHORT
+
+ROAD STATUS
+→ SHORT / MEDIUM
+
+MARKET PRICE
+→ SHORT
+
+CHARACTER LOCATION
+→ SHORT
+
+PROFESSION
+→ MEDIUM
+
+BIRTH DATE
+→ STABLE
+
+HISTORICAL EVENT
+→ LONG.
+```
+
+These are conceptual expectations.
+
+Not fixed numerical durations.
+
+---
+
+# 29. Confidence
 
 Confidence represents:
 
-```text
-HOW CERTAIN
-THE CHARACTER IS.
-```
+> **How certain the Character currently is.**
 
-Recommended levels:
+Possible descriptors:
 
 ```text
 VERY LOW
@@ -951,33 +1034,33 @@ CONFIRMED.
 
 ---
 
-# Confidence Is Subjective
+# 30. Confidence Is Subjective
 
-Character confidence may be:
+A Character may possess:
 
 ```text
-HIGH
+VERY HIGH CONFIDENCE
 ```
 
-while the belief is:
+in:
 
 ```text
-FALSE.
+A FALSE BELIEF.
 ```
 
-Confidence is not truth probability from the simulation's perspective.
-
-It represents:
+Therefore:
 
 ```text
-THE CHARACTER'S CERTAINTY.
+CONFIDENCE
+≠
+TRUTH PROBABILITY.
 ```
 
 ---
 
-# Verification
+# 31. Verification
 
-Knowledge may be:
+Useful conceptual states include:
 
 ```text
 UNVERIFIED
@@ -995,183 +1078,836 @@ REFUTED.
 
 ---
 
-# Corroboration
+# 32. Unknown Is Valid
 
-Multiple independent sources may increase confidence.
-
-Conceptually:
+A Character may correctly hold:
 
 ```text
-SOURCE A
-+
-SOURCE B
-+
-SOURCE C
-      ↓
-CORROBORATION.
-```
-
-But independence matters.
-
----
-
-# False Corroboration
-
-Three people may repeat:
-
-```text
-the same original rumor.
+I DO NOT KNOW.
 ```
 
 This is not:
 
 ```text
-THREE INDEPENDENT SOURCES.
+MISSING DESIGN.
 ```
 
-Conceptually:
+It may be:
 
 ```text
-SOURCE A
-↓
-B
-↓
-C
-↓
-D
-```
-
-should not be treated as:
-
-```text
-B + C + D
-=
-3 independent confirmations.
+THE CORRECT
+EPISTEMIC STATE.
 ```
 
 ---
 
-# Provenance Chain
+# 33. Partial Knowledge
 
-The system should preserve provenance when important.
+A Character may know:
+
+```text
+RELAY FAILED.
+```
+
+without knowing:
+
+```text
+WHY.
+```
+
+They may know:
+
+```text
+ROAD RESTRICTED.
+```
+
+without knowing:
+
+```text
+WHETHER
+THE SETTLEMENT
+IS SAFE.
+```
+
+---
+
+# 34. Contradictory Information
+
+Characters may simultaneously hold:
+
+```text
+CLAIM A
+
+CLAIM B
+
+CLAIM C
+```
+
+about the same subject.
 
 Example:
 
 ```text
-Claim:
-Armed group entered Millhaven.
+BRIDGE DESTROYED
 
-Source Chain:
+BRIDGE OPERATIONAL
 
-Radio Caller
-↓
-Cousin
-↓
-Friend
-↓
-Observed checkpoint guards.
+BRIDGE DAMAGED
+BUT PASSABLE.
 ```
 
-This helps determine:
-
-```text
-how much evidence actually exists.
-```
+The system must not force immediate resolution.
 
 ---
 
-# Source Reliability
-
-Characters may hold beliefs about source reliability.
-
-Example:
-
-```text
-Regional Radio:
-HIGH
-
-Unknown Traveler:
-MODERATE
-
-Political Rival:
-LOW
-
-Close Friend:
-HIGH
-
-Anonymous Note:
-LOW.
-```
-
----
-
-# Trust Is Character-Specific
-
-Source reliability is not universal.
-
-Character A may trust:
-
-```text
-Valley Authority.
-```
-
-Character B may distrust:
-
-```text
-Valley Authority.
-```
-
-The same report therefore produces different confidence.
-
----
-
-# Source Trust
+# 35. Contested State
 
 Conceptually:
 
 ```text
-SOURCE TRUST
-=
-RELATIONSHIP
-+
-PAST ACCURACY
-+
-PROFESSIONAL REPUTATION
-+
-INSTITUTIONAL TRUST
-+
-PERSONAL BIAS
-+
-CURRENT CONTEXT.
+SUBJECT:
+Eastern Bridge
+
+CLAIM A:
+Destroyed
+Confidence:
+Moderate
+
+CLAIM B:
+Operational
+Confidence:
+Low
+
+OVERALL:
+Contested.
 ```
 
 ---
 
-# Reliability History
+# 36. Negative Knowledge
 
-If a source repeatedly provides accurate information:
+A Character may acquire strong evidence that:
 
 ```text
-trust may increase.
+SOMETHING
+IS NOT TRUE.
 ```
 
-If repeatedly wrong:
+Example:
 
 ```text
-trust may decrease.
+DIRECT OBSERVATION
+CONFIRMS
+
+BRIDGE
+DID NOT COLLAPSE.
+```
+
+Negative knowledge can eliminate perceived options or threats.
+
+---
+
+# 37. Absence of Evidence
+
+Always distinguish:
+
+```text
+NO EVIDENCE
+OF THREAT
+```
+
+from:
+
+```text
+EVIDENCE
+THAT NO THREAT
+EXISTS.
+```
+
+This distinction matters especially in:
+
+```text
+SECURITY
+
+MEDICINE
+
+INVESTIGATION
+
+POLITICS.
 ```
 
 ---
 
-# Honest Sources Can Be Wrong
+# 38. Character Belief
 
-A highly trusted source may sincerely provide:
+Belief represents:
+
+> **What the Character currently holds to be true or probably true.**
+
+Beliefs may concern:
 
 ```text
-incorrect information.
+FACTS
+
+PEOPLE
+
+INSTITUTIONS
+
+GROUPS
+
+CAUSES
+
+THE FUTURE
+
+THE SELF
+
+SOCIAL CONDITIONS
+
+THE WORLD.
+```
+
+---
+
+# 39. Knowledge vs Belief
+
+Example:
+
+```text
+KNOWLEDGE:
+
+Three traders cancelled
+eastern deliveries.
+```
+
+Character believes:
+
+```text
+The eastern route
+has become dangerous.
+```
+
+World Truth:
+
+```text
+Route is safe.
+
+Deliveries stopped
+because fuel costs rose.
+```
+
+The observation was correct.
+
+The interpretation was wrong.
+
+---
+
+# 40. Critical Behavioral Principle
+
+Characters make decisions from:
+
+```text
+THEIR
+PERCEIVED WORLD.
+```
+
+Not from:
+
+```text
+SIMULATION TRUTH.
 ```
 
 Therefore:
+
+```text
+FALSE BELIEF
++
+RATIONAL DECISION
+```
+
+is valid.
+
+---
+
+# 41. Belief State
+
+A conceptual Belief State may include:
+
+```text
+BELIEF ID
+
+CHARACTER ID
+
+SUBJECT
+
+STATEMENT
+
+CONFIDENCE
+
+ORIGIN
+
+SUPPORTING EVIDENCE
+
+CONTRADICTORY EVIDENCE
+
+IDENTITY CONNECTION
+
+SOCIAL REINFORCEMENT
+
+PERSISTENCE
+
+STATUS
+
+LAST REEVALUATED.
+```
+
+---
+
+# 42. Factual Belief
+
+Example:
+
+```text
+"THE EASTERN
+BRIDGE IS OPEN."
+```
+
+This may be testable against World Truth.
+
+---
+
+# 43. Causal Belief
+
+Example:
+
+```text
+"REGIONAL SHORTAGES
+HAPPEN BECAUSE
+TRADERS HOARD SUPPLIES."
+```
+
+This may be:
+
+```text
+TRUE
+
+FALSE
+
+PARTIALLY TRUE
+
+OVERGENERALIZED
+
+CONTEXT DEPENDENT.
+```
+
+Causal beliefs strongly influence planning.
+
+---
+
+# 44. Beliefs About People
+
+Example:
+
+```text
+"ELIAS
+KEEPS HIS PROMISES."
+```
+
+This may influence:
+
+```text
+INFORMATION ACCEPTANCE
+
+DELEGATION
+
+EXPECTATION
+
+DECISION MAKING.
+```
+
+The underlying Relationship state remains owned elsewhere.
+
+---
+
+# 45. Institutional Belief
+
+Example:
+
+```text
+"THE VALLEY COUNCIL
+RESPONDS TOO SLOWLY
+DURING CRISES."
+```
+
+This may influence whether a Character:
+
+```text
+WAITS
+
+REPORTS
+
+ACTS INDEPENDENTLY
+
+SEEKS OTHER HELP.
+```
+
+---
+
+# 46. Future Belief
+
+Example:
+
+```text
+"FUEL PRICES
+WILL RISE
+BEFORE WINTER."
+```
+
+Future beliefs may influence:
+
+```text
+PLANNING
+
+PREPARATION
+
+INVESTMENT
+
+GOAL FORMATION.
+```
+
+---
+
+# 47. Self-Belief
+
+Characters hold beliefs about themselves.
+
+Examples:
+
+```text
+"I AM GOOD
+UNDER PRESSURE."
+
+"I AM NOT
+A LEADER."
+
+"I CAN FIX THIS."
+
+"I ALWAYS FAIL
+AT RELATIONSHIPS."
+
+"I CAN TRUST
+MY JUDGMENT."
+```
+
+Self-belief may be:
+
+```text
+ACCURATE
+
+INACCURATE
+
+OUTDATED
+
+CHANGING.
+```
+
+---
+
+# 48. Self-Belief vs Actual Capability
+
+Always preserve:
+
+```text
+SELF-BELIEF
+≠
+ACTUAL CAPABILITY.
+```
+
+Example:
+
+```text
+ACTUAL EXPERTISE:
+HIGH
+
+SELF-BELIEF:
+LOW
+
+↓
+
+PERCEIVED CAPABILITY:
+LOW.
+```
+
+This may affect planning and decisions.
+
+---
+
+# 49. Belief Formation
+
+Conceptually:
+
+```text
+KNOWLEDGE
++
+MEMORY
++
+HUMAN ATTRIBUTES
++
+PSYCHOLOGY
++
+SOURCE ASSESSMENT
++
+EXPERIENCE
++
+SOCIAL CONTEXT
++
+CULTURE
+↓
+BELIEF.
+```
+
+These systems remain separately authoritative.
+
+---
+
+# 50. Information Does Not Equal Acceptance
+
+Receiving information does not mean:
+
+```text
+BELIEVING IT.
+```
+
+Example:
+
+```text
+AUTHORITY:
+"No attack occurred."
+```
+
+Character may believe:
+
+```text
+"They are hiding something."
+```
+
+because of:
+
+```text
+EXISTING BELIEF
+
+PAST EXPERIENCE
+
+LOW TRUST
+
+CONTRADICTORY EVIDENCE.
+```
+
+---
+
+# 51. Belief Persistence
+
+Beliefs may persist because of:
+
+```text
+STRONG EVIDENCE
+
+REPEATED EXPERIENCE
+
+IDENTITY
+
+MEMORY
+
+SOCIAL REINFORCEMENT
+
+CULTURE
+
+EMOTIONAL SIGNIFICANCE
+
+HABIT.
+```
+
+---
+
+# 52. Belief Inertia
+
+Deep beliefs should not usually flip because of:
+
+```text
+ONE CONTRADICTORY FACT.
+```
+
+Possible responses include:
+
+```text
+QUESTION SOURCE
+
+SEEK MORE EVIDENCE
+
+REDUCE CONFIDENCE
+
+REINTERPRET
+
+PARTIALLY MODIFY
+
+RETAIN BELIEF.
+```
+
+---
+
+# 53. Belief Revision
+
+Conceptually:
+
+```text
+CURRENT BELIEF
++
+NEW INFORMATION
++
+SOURCE EVALUATION
++
+CONTRADICTORY EVIDENCE
+↓
+REASSESS
+↓
+CONFIRM
+
+WEAKEN
+
+MODIFY
+
+SUSPEND
+
+OR
+
+REJECT.
+```
+
+---
+
+# 54. Belief Revision Is Not Binary
+
+Prefer:
+
+```text
+"AUTHORITY
+IS USUALLY RELIABLE
+
+BUT
+
+POOR DURING
+LOCAL EMERGENCIES."
+```
+
+over only:
+
+```text
+TRUSTWORTHY
+/
+UNTRUSTWORTHY.
+```
+
+Beliefs should support nuance.
+
+---
+
+# 55. Revision Difficulty
+
+Belief revision may depend on:
+
+```text
+CURRENT CONFIDENCE
+
+QUALITY OF NEW EVIDENCE
+
+SOURCE ASSESSMENT
+
+DIRECT OBSERVATION
+
+IDENTITY CONNECTION
+
+SOCIAL COST
+
+EMOTIONAL INVESTMENT
+
+PAST HISTORY.
+```
+
+---
+
+# 56. Easy-to-Revise Belief
+
+Example:
+
+```text
+"MARKET CLOSES
+AT SIX."
+```
+
+New observation:
+
+```text
+MARKET OPEN
+AT SEVEN.
+```
+
+Revision may be easy.
+
+---
+
+# 57. Difficult-to-Revise Belief
+
+Example:
+
+```text
+"CENTRAL AUTHORITIES
+CANNOT BE TRUSTED."
+```
+
+One successful authority response may only:
+
+```text
+REDUCE CONFIDENCE
+SLIGHTLY.
+```
+
+---
+
+# 58. Belief History
+
+Important belief changes may remain historically relevant.
+
+Example:
+
+```text
+2050
+High institutional trust
+
+2052
+Authority failure
+
+2053
+Conditional trust.
+```
+
+Belief history may later affect:
+
+```text
+DECISIONS
+
+RELATIONSHIPS
+
+IDENTITY
+
+PROGRESSION.
+```
+
+The relevant authoritative systems own their own effects.
+
+---
+
+# 59. Memory Boundary
+
+Knowledge acquired in the past may later be available through:
+
+```text
+MEMORY.
+```
+
+But:
+
+```text
+MEMORY
+OWNS RETENTION,
+RECONSTRUCTION,
+FADING
+AND DISTORTION.
+```
+
+Knowledge and Beliefs may consume remembered information.
+
+It must not duplicate Memory mechanics.
+
+---
+
+# 60. Remembered Information Is Not Original Information
+
+Conceptually:
+
+```text
+ORIGINAL EXPERIENCE
+↓
+MEMORY
+↓
+CURRENT RECALL
+↓
+CURRENT BELIEF.
+```
+
+The remembered form may differ from:
+
+```text
+WHAT ACTUALLY
+HAPPENED.
+```
+
+---
+
+# 61. Trust Boundary
+
+Source evaluation may use:
+
+```text
+RELATIONSHIP TRUST
+
+INSTITUTIONAL TRUST
+
+PROFESSIONAL REPUTATION
+
+PAST ACCURACY
+
+DOMAIN EXPERTISE.
+```
+
+But Knowledge and Beliefs does not own:
+
+```text
+THE UNDERLYING
+TRUST STATE.
+```
+
+---
+
+# 62. Domain-Specific Source Assessment
+
+A Character may trust someone about:
+
+```text
+FARMING
+```
+
+but not:
+
+```text
+POLITICS.
+```
+
+Or trust:
+
+```text
+MEDICAL NETWORK
+```
+
+while distrusting:
+
+```text
+REGIONAL GOVERNMENT.
+```
+
+Source credibility may therefore be contextual.
+
+---
+
+# 63. Honest Sources Can Be Wrong
 
 ```text
 HONEST
@@ -1179,744 +1915,202 @@ HONEST
 CORRECT.
 ```
 
+A trusted person may sincerely report incorrect information.
+
 ---
 
-# Correct Sources Can Be Distrusted
+# 64. Correct Sources Can Be Distrusted
 
-A character may reject accurate information because:
+A Character may reject accurate information because:
 
 ```text
-they distrust the source.
+THE SOURCE
+IS DISTRUSTED.
 ```
 
-This can create persistent false belief.
+This may sustain false belief.
 
 ---
 
-# Information Status
+# 65. Information Seeking Boundary
 
-Recommended knowledge statuses:
+A Character may decide:
 
 ```text
-REPORTED
-
-OBSERVED
-
-BELIEVED TRUE
-
-UNCERTAIN
-
-CONTESTED
-
-BELIEVED FALSE
-
-REFUTED
-
-OUTDATED
-
-SUPERSEDED.
+I NEED
+MORE INFORMATION.
 ```
 
----
-
-# Reported
-
-Character has received the Claim but has not necessarily accepted it.
-
----
-
-# Observed
-
-Character directly perceived relevant evidence.
-
----
-
-# Believed True
-
-Character currently accepts the Claim.
-
----
-
-# Uncertain
-
-Character sees significant ambiguity.
-
----
-
-# Contested
-
-Character knows meaningful contradictory claims exist.
-
----
-
-# Believed False
-
-Character actively rejects the Claim.
-
----
-
-# Refuted
-
-Character possesses evidence they consider sufficient to reject it.
-
----
-
-# Outdated
-
-Information may have been correct but is no longer current.
-
----
-
-# Superseded
-
-A newer knowledge item replaces the older operational understanding.
-
----
-
-# Belief State
-
-A conceptual Belief State may contain:
+The need may arise from:
 
 ```text
-Belief ID
+GOAL
 
-Character ID
+RISK
 
-Subject
+UNCERTAINTY
 
-Statement
+CONTRADICTION
 
-Confidence
+RELATIONSHIP
 
-Origin
+PROFESSION
 
-Supporting Evidence
-
-Contradictory Evidence
-
-Emotional Investment
-
-Value Connection
-
-Social Reinforcement
-
-Persistence
-
-Status
-
-Last Reevaluated
+DECISION CONTEXT.
 ```
+
+Autonomy and Decision Making own:
+
+```text
+WHEN
+AND WHETHER
+THE CHARACTER ACTS.
+```
+
+Knowledge and Beliefs owns the resulting information state.
 
 ---
 
-# Belief ID
-
-Example:
-
-```text
-BEL-CHAR184-008
-```
-
----
-
-# Belief Origin
-
-Beliefs may originate from:
-
-```text
-direct experience
-
-information
-
-education
-
-family
-
-culture
-
-profession
-
-relationships
-
-political ideology
-
-institutional membership
-
-inference
-
-repeated patterns.
-```
-
----
-
-# Belief Types
-
-Beliefs may concern:
-
-```text
-FACT
-
-PERSON
-
-GROUP
-
-INSTITUTION
-
-WORLD CONDITION
-
-CAUSAL MODEL
-
-VALUE INTERPRETATION
-
-FUTURE EXPECTATION
-
-SELF.
-```
-
----
-
-# Factual Belief
-
-Example:
-
-```text
-"The eastern bridge is open."
-```
-
-This can be evaluated against:
-
-```text
-World Truth.
-```
-
----
-
-# Causal Belief
-
-Example:
-
-```text
-"Regional shortages happen
-because traders hoard supplies."
-```
-
-This may be:
-
-```text
-partly true
-
-situationally true
-
-false
-
-overgeneralized.
-```
-
-Causal beliefs strongly influence planning.
-
----
-
-# Character Belief About People
-
-Example:
-
-```text
-"Elias keeps his promises."
-```
-
-This may derive from:
-
-```text
-relationship history.
-```
-
-Such beliefs influence:
-
-```text
-trust
-
-delegation
-
-information acceptance
-
-future decisions.
-```
-
----
-
-# Institutional Belief
-
-Example:
-
-```text
-"The Valley Council
-usually responds too slowly."
-```
-
-This may affect whether a character:
-
-```text
-reports problems
-
-waits for authority
-
-acts independently.
-```
-
----
-
-# Future Belief
-
-Example:
-
-```text
-"Fuel prices will rise before winter."
-```
-
-Future beliefs may produce:
-
-```text
-anticipatory Goals
-
-preparation
-
-stockpiling
-
-investment.
-```
-
----
-
-# Self-Belief
-
-Characters possess beliefs about themselves.
-
-Examples:
-
-```text
-"I am good under pressure."
-
-"I am not a leader."
-
-"I can fix this."
-
-"I always fail at relationships."
-
-"I can trust my judgment."
-```
-
-Self-beliefs may be:
-
-```text
-accurate
-
-inaccurate
-
-changing.
-```
-
-They influence:
-
-```text
-perceived capability
-
-risk tolerance
-
-goal formation.
-```
-
----
-
-# Belief Formation
+# 66. Investigation
 
 Conceptually:
 
 ```text
-INFORMATION
-+
-MEMORY
-+
-PERSONALITY
-+
-VALUES
-+
-SOURCE TRUST
-+
-PAST EXPERIENCE
-+
-SOCIAL CONTEXT
-      ↓
-BELIEF
-```
-
----
-
-# Belief Formation Is Not Automatic
-
-Receiving information does not mean:
-
-```text
-ACCEPTING INFORMATION.
-```
-
-Example:
-
-```text
-Authority:
-"No attack occurred."
-```
-
-Character with low authority trust may believe:
-
-```text
-"They are hiding something."
-```
-
----
-
-# Belief Persistence
-
-Beliefs may persist because of:
-
-```text
-strong evidence
-
-repeated experience
-
-identity
-
-social group
-
-values
-
-emotional importance
-
-habit.
-```
-
----
-
-# Belief Inertia
-
-Characters should not instantly reverse deeply held beliefs from:
-
-```text
-ONE CONTRADICTORY FACT.
-```
-
-Instead they may:
-
-```text
-question source
-
-seek more evidence
-
-reinterpret evidence
-
-reduce confidence
-
-modify belief gradually.
-```
-
----
-
-# Belief Revision
-
-Conceptually:
-
-```text
-EXISTING BELIEF
-      +
+UNCERTAINTY
+↓
+INFORMATION NEED
+↓
+ACTION
+↓
 NEW EVIDENCE
-      ↓
-REASSESSMENT
-      ↓
-CONFIRM
-or
-WEAKEN
-or
-MODIFY
-or
-REJECT.
+↓
+KNOWLEDGE UPDATE
+↓
+BELIEF REASSESSMENT.
 ```
 
----
-
-# Revision Threshold
-
-Belief revision may depend on:
+Investigation does not guarantee:
 
 ```text
-strength of evidence
-
-source trust
-
-number of sources
-
-direct observation
-
-existing confidence
-
-emotional investment
-
-identity connection
-
-social consequences.
+TOTAL TRUTH.
 ```
 
 ---
 
-# Easy-to-Revise Belief
+# 67. Information Sharing Boundary
+
+Characters may share information depending on:
+
+```text
+RELATIONSHIP
+
+TRUST
+
+ROLE
+
+GOAL
+
+PRIVACY
+
+PROFESSIONAL DUTY
+
+RISK
+
+AUTHORITY
+
+CONTEXT.
+```
+
+Decision Making and Autonomy determine:
+
+```text
+WHETHER THEY SHARE.
+```
+
+Knowledge and Beliefs records:
+
+```text
+WHAT INFORMATION
+CAN BE TRANSMITTED.
+```
+
+---
+
+# 68. Information Is Not Automatically Shared
+
+Characters do not automatically broadcast:
+
+```text
+EVERYTHING
+THEY KNOW.
+```
+
+They may:
+
+```text
+WITHHOLD
+
+FORGET
+
+DELAY
+
+ASSUME OTHERS KNOW
+
+LACK COMMUNICATION
+
+CONSIDER IT IRRELEVANT.
+```
+
+---
+
+# 69. Private Knowledge
+
+Not all private information is a Secret.
 
 Example:
 
 ```text
-"The market closes at six."
+CHARACTER
+PLANS TO RESIGN
 ```
 
-New observation:
+may simply not yet have been shared.
+
+---
+
+# 70. Secrets Boundary
+
+A Secret is information whose distribution is intentionally restricted.
+
+Knowledge and Beliefs may reference:
 
 ```text
-Market remains open until eight.
+WHO KNOWS
+
+WHO DOES NOT KNOW
+
+WHAT CLAIM IS HIDDEN.
 ```
 
-Belief revision:
+But broader secret-management, social consequences and institutional access may involve:
 
 ```text
-EASY.
+RELATIONSHIPS
+
+FACTIONS
+
+SOCIETY
+
+NARRATIVE.
 ```
 
 ---
 
-# Difficult-to-Revise Belief
+# 71. Rumor Boundary
 
-Example:
+At Character level, a rumor is:
 
-```text
-"Central authorities
-cannot be trusted."
-```
-
-A single successful authority response may:
-
-```text
-reduce confidence slightly
-```
-
-without completely changing the belief.
-
----
-
-# Belief Transformation
-
-Characters may move from:
-
-```text
-"Authority is trustworthy."
-```
-
-to:
-
-```text
-"Authority is usually trustworthy
-but weak during emergencies."
-```
-
-Belief revision should support:
-
-```text
-NUANCE
-```
-
-rather than only:
-
-```text
-TRUE / FALSE FLIPS.
-```
-
----
-
-# Belief Confidence
-
-Confidence may evolve.
-
-Example:
-
-```text
-Initial:
-LOW
-
-After second report:
-MODERATE
-
-After direct observation:
-HIGH
-
-After contradiction:
-MODERATE
-
-After confirmed evidence:
-VERY HIGH.
-```
-
----
-
-# Contradictory Information
-
-Characters may hold:
-
-```text
-MULTIPLE COMPETING CLAIMS.
-```
-
-Example:
-
-```text
-Report A:
-Bridge destroyed.
-
-Report B:
-Bridge operational.
-
-Report C:
-Bridge damaged but passable.
-```
-
-The system should not force immediate resolution.
-
----
-
-# Contradiction State
-
-Conceptually:
-
-```text
-Subject:
-Eastern Bridge
-
-Claim A:
-Destroyed
-Confidence:
-MODERATE
-
-Claim B:
-Operational
-Confidence:
-LOW
-
-Overall Knowledge:
-CONTESTED.
-```
-
----
-
-# Ambiguity
-
-A character may correctly conclude:
-
-```text
-I DO NOT KNOW.
-```
-
-This is a valid and important state.
-
----
-
-# Uncertainty Principle
-
-```text
-UNKNOWN
-```
-
-is not:
-
-```text
-MISSING SIMULATION.
-```
-
-It is often:
-
-```text
-THE CORRECT CHARACTER STATE.
-```
-
----
-
-# Partial Knowledge
-
-Characters may know only part of an event.
-
-Example:
-
-```text
-Known:
-Relay failed.
-
-Unknown:
-Why.
-
-Known:
-Road restricted.
-
-Unknown:
-Whether settlement is safe.
-```
-
-Information should be tracked at:
-
-```text
-PROPOSITION LEVEL
-```
-
-when necessary.
-
----
-
-# Proposition-Level Knowledge
-
-Avoid:
-
-```text
-Millhaven:
-KNOWN.
-```
-
-Prefer:
-
-```text
-Millhaven Communication:
-FAILED
-
-Cause:
-UNKNOWN
-
-Security:
-UNKNOWN
-
-Travel:
-RESTRICTED
-
-Reason:
-UNKNOWN.
-```
-
-This prevents investigation from becoming:
-
-```text
-ALL OR NOTHING.
-```
-
----
-
-# Rumor
-
-A rumor is:
-
-```text
-AN UNVERIFIED CLAIM
-SPREAD THROUGH
-SOCIAL INFORMATION PATHS.
-```
+> **An unverified socially transmitted claim.**
 
 Rumor does not mean:
 
@@ -1924,244 +2118,118 @@ Rumor does not mean:
 FALSE.
 ```
 
-Rumors may be:
+It may be:
 
 ```text
-true
+TRUE
 
-false
+FALSE
 
-partially true
+PARTIALLY TRUE
 
-outdated
+OUTDATED
 
-misinterpreted.
+MISINTERPRETED.
 ```
 
 ---
 
-# Rumor State
+# 72. Character-Level Rumor State
 
-Conceptually:
+Knowledge and Beliefs owns:
 
 ```text
-Rumor ID
+THIS CHARACTER
+HEARD CLAIM X
 
-Claim
+FROM SOURCE Y
 
-Origin
+WITH CONFIDENCE Z.
+```
 
-Current Spread
+It does not own:
 
-Source Distance
+```text
+REGION-WIDE
+RUMOR PREVALENCE.
+```
 
-Emotional Impact
+That belongs primarily to:
 
-Reliability
-
-Freshness
-
-Mutation History
-
-Affected Groups
+```text
+SOCIETY
++
+WORLD SIMULATION.
 ```
 
 ---
 
-# Rumor Formation
-
-Rumors may emerge from:
-
-```text
-real observation
-
-uncertainty
-
-fear
-
-missing information
-
-misinterpretation
-
-deliberate deception
-
-social simplification.
-```
-
----
-
-# Natural Rumor Example
-
-Observation:
-
-```text
-Checkpoint established.
-```
-
-Interpretation:
-
-```text
-Something dangerous happened.
-```
-
-Retelling:
-
-```text
-"The town is closed."
-```
-
-Next retelling:
-
-```text
-"The town was attacked."
-```
-
-No one needed to:
-
-```text
-DELIBERATELY LIE.
-```
-
----
-
-# Rumor Mutation
-
-Information may change during transmission.
-
-Conceptually:
-
-```text
-"Two trucks left quickly."
-      ↓
-"People were leaving quickly."
-      ↓
-"People are evacuating."
-      ↓
-"The entire town is evacuating."
-```
-
----
-
-# Mutation Drivers
-
-Rumor mutation may be influenced by:
-
-```text
-memory simplification
-
-emotion
-
-bias
-
-assumption
-
-missing context
-
-social incentives
-
-dramatic retelling.
-```
-
----
-
-# Emotional Information
-
-Emotionally intense information may spread faster.
-
-Examples:
-
-```text
-attack
-
-death
-
-disease
-
-betrayal
-
-scarcity
-
-political scandal.
-```
-
----
-
-# Attention Versus Reliability
-
-Critical rule:
-
-```text
-INFORMATION ATTENTION
-≠
-INFORMATION RELIABILITY.
-```
-
-Dramatic claims may spread widely while remaining poorly supported.
-
----
-
-# Misinformation
+# 73. Misinformation
 
 Misinformation is:
 
 ```text
 INCORRECT INFORMATION
 SHARED WITHOUT
-NECESSARY INTENT TO DECEIVE.
+NECESSARY INTENT
+TO DECEIVE.
 ```
 
 ---
 
-# Disinformation
+# 74. Disinformation
 
 Disinformation is:
 
 ```text
-INFORMATION DELIBERATELY
-MANIPULATED OR FABRICATED
-TO CREATE A BELIEF.
+INFORMATION
+DELIBERATELY
+MANIPULATED
+TO CREATE
+A FALSE OR
+MISLEADING BELIEF.
 ```
 
-The distinction matters for:
+Intent matters.
+
+---
+
+# 75. Deception Boundary
+
+A Character may:
 
 ```text
-relationship consequences
+LIE
 
-political consequences
+OMIT
 
-trust
+MISDIRECT
 
-character intent.
+EXAGGERATE
+
+CONCEAL.
+```
+
+Decision Making owns:
+
+```text
+THE CHOICE
+TO DECEIVE.
+```
+
+Knowledge and Beliefs tracks:
+
+```text
+WHAT THE DECEIVER
+KNOWS
+
+WHAT CLAIM
+IS COMMUNICATED.
 ```
 
 ---
 
-# Deception
-
-Characters may deliberately:
-
-```text
-lie
-
-omit information
-
-misdirect
-
-exaggerate
-
-conceal
-
-present technically true
-but misleading information.
-```
-
----
-
-# Deception Requires Intent
-
-Incorrect information alone is not deception.
-
-Conceptually:
+# 76. Incorrect Does Not Mean Deceptive
 
 ```text
 WRONG
@@ -2172,7 +2240,7 @@ ERROR / MISINFORMATION.
 ```
 
 ```text
-WRONG OR MISLEADING
+MISLEADING
 +
 INTENTIONAL
 =
@@ -2181,369 +2249,341 @@ DECEPTION.
 
 ---
 
-# Lying
+# 77. Interpretation vs Fact
 
-A lie may involve:
-
-```text
-Known Truth:
-X
-
-Stated Claim:
-Y
-
-Character Knows:
-Y is false
-
-Intent:
-Cause recipient
-to believe Y.
-```
-
----
-
-# Omission
-
-Character may know:
+Always distinguish:
 
 ```text
-A + B
+FACTUAL CLAIM
 ```
 
-but intentionally reveal:
+from:
 
 ```text
-A only.
+INTERPRETATION.
 ```
-
-The statement may be technically true while:
-
-```text
-strategically incomplete.
-```
-
----
-
-# Secrets
-
-A Secret is information intentionally restricted.
-
-Secret State may include:
-
-```text
-Secret ID
-
-Truth
-
-Known By
-
-Allowed Recipients
-
-Visibility
-
-Sensitivity
-
-Leak Risk
-
-Consequences of Exposure
-```
-
----
-
-# Private Knowledge
-
-Not all private information is a secret.
 
 Example:
 
 ```text
-Character knows
-they plan to resign.
+FACT:
+Authority response
+took 18 hours.
+
+INTERPRETATION A:
+That was fast.
+
+INTERPRETATION B:
+That was dangerously slow.
 ```
 
-They may simply:
+The fact may be shared.
+
+Meaning may remain contested.
+
+---
+
+# 78. Factual Uncertainty vs Interpretive Disagreement
+
+Factual uncertainty:
 
 ```text
-not have told anyone yet.
+WAS THE
+BRIDGE DESTROYED?
+```
+
+Potentially resolvable through evidence.
+
+Interpretive disagreement:
+
+```text
+WAS REBUILDING
+THE BRIDGE
+WORTH THE COST?
+```
+
+May have no single World Truth answer.
+
+---
+
+# 79. Belief About Intent
+
+Characters often infer:
+
+```text
+WHY SOMEONE
+DID SOMETHING.
+```
+
+Example observation:
+
+```text
+PLAYER MISSED
+MEETING.
+```
+
+Possible beliefs:
+
+```text
+THEY FORGOT
+
+THEY WERE DELAYED
+
+THEY DO NOT CARE
+
+THEY HAD
+AN EMERGENCY.
+```
+
+Intent remains uncertain unless evidence exists.
+
+---
+
+# 80. No Telepathy
+
+Characters must not automatically know:
+
+```text
+OTHER ACTORS'
+MOTIVES
+
+OTHER ACTORS'
+GOALS
+
+OTHER ACTORS'
+BELIEFS
+
+PRIVATE PLAYER ACTIONS
+
+SECRET FACTION PLANS.
+```
+
+They infer from:
+
+```text
+OBSERVATION
+
+COMMUNICATION
+
+HISTORY
+
+EVIDENCE
+
+RELATIONSHIPS.
 ```
 
 ---
 
-# Information Visibility
+# 81. Knowledge and Goals
 
-Recommended conceptual levels:
+New knowledge may:
 
 ```text
-PRIVATE
+CREATE CONDITIONS
+FOR A GOAL
 
-RELATIONSHIP-SHARED
+CHANGE A PLAN
 
-GROUP-SHARED
+REMOVE AN OPTION
 
-INSTITUTIONAL
+CREATE AN OPPORTUNITY
 
-REGIONAL
+REVEAL A THREAT.
+```
 
-PUBLIC
+Goals and Plans owns resulting Goal / Plan state.
 
-UNKNOWN.
+---
+
+# 82. Knowledge and Motivation
+
+New information may change:
+
+```text
+WHAT THE CHARACTER
+THINKS MATTERS.
+```
+
+Needs and Motivation owns the resulting motivational pressure.
+
+---
+
+# 83. Knowledge and Decision Making
+
+Decision Making consumes:
+
+```text
+WHAT THE CHARACTER
+THINKS IS TRUE.
+```
+
+Not:
+
+```text
+WHAT THE SIMULATION
+KNOWS IS TRUE.
+```
+
+This boundary is mandatory.
+
+---
+
+# 84. Knowledge and Capability
+
+Actual capability may exist without:
+
+```text
+KNOWLEDGE
+OF HOW TO
+APPLY IT HERE.
+```
+
+Likewise, a Character may believe they possess capability they do not have.
+
+Knowledge and Beliefs contributes to:
+
+```text
+PERCEIVED CAPABILITY.
+```
+
+Expertise owns:
+
+```text
+ACTUAL DOMAIN CAPABILITY.
 ```
 
 ---
 
-# Known By
+# 85. Knowledge and Character State
 
-Important information may track:
+Character State may expose:
 
 ```text
-WHO CURRENTLY KNOWS.
+CURRENTLY RELEVANT
+KNOWLEDGE
+
+CURRENTLY RELEVANT
+BELIEFS
+
+MAJOR UNCERTAINTIES.
 ```
 
-This is particularly important for:
+Knowledge and Beliefs remains authoritative.
+
+---
+
+# 86. Collective Belief Boundary
+
+Groups may develop:
 
 ```text
-secrets
+BELIEF PATTERNS
 
-investigations
+SHARED NARRATIVES
 
-political information
+POPULAR ASSUMPTIONS
 
-relationship information
+COUNTER-BELIEFS.
+```
 
-security events.
+But:
+
+```text
+GROUP
+≠
+HIVE MIND.
+```
+
+Population-level distribution belongs primarily to:
+
+```text
+SOCIETY.
+```
+
+Knowledge and Beliefs remains individual Character state.
+
+---
+
+# 87. Information Networks Boundary
+
+Information may travel through:
+
+```text
+FAMILY NETWORKS
+
+PROFESSIONAL NETWORKS
+
+TRADE NETWORKS
+
+GOVERNMENT SYSTEMS
+
+COMMUNITY NETWORKS
+
+FACTIONS
+
+MEDIA
+
+RADIO
+
+FRIENDSHIPS.
+```
+
+Character-level acquisition belongs here.
+
+Network-scale propagation belongs primarily to:
+
+```text
+SOCIETY
+
+WORLD SIMULATION
+
+FACTIONS
+
+INFRASTRUCTURE.
 ```
 
 ---
 
-# Information Sharing
+# 88. Geography and Information
 
-Characters may share information depending on:
+Information speed depends on more than distance.
 
-```text
-relationship
-
-trust
-
-role
-
-professional obligation
-
-goal
-
-risk
-
-privacy
-
-authority
-
-social context.
-```
-
----
-
-# Sharing Principle
-
-Characters should not automatically broadcast everything they know.
-
----
-
-# Example
-
-Doctor knows:
+Relevant factors include:
 
 ```text
-patient has serious illness.
+COMMUNICATION
+INFRASTRUCTURE
+
+SOCIAL NETWORK
+
+PROFESSIONAL NETWORK
+
+LANGUAGE
+
+TRUST
+
+AUTHORITY
+
+GEOGRAPHY.
 ```
 
-Character may have:
-
-```text
-Professional Duty:
-Confidentiality.
-```
-
-Therefore information is:
-
-```text
-NOT PUBLIC.
-```
-
----
-
-# Role-Based Sharing
-
-Certain roles may require information transmission.
-
-Examples:
-
-```text
-doctor reports outbreak
-
-engineer reports infrastructure danger
-
-security officer reports threat
-
-trader informs business partner
-
-parent tells family.
-```
-
----
-
-# Information Withholding
-
-Characters may withhold information because of:
-
-```text
-privacy
-
-fear
-
-loyalty
-
-professional duty
-
-political strategy
-
-self-protection
-
-uncertainty
-
-lack of relevance.
-```
-
----
-
-# Forgetting to Share
-
-Information may also fail to spread because:
-
-```text
-character is busy
-
-character assumes others know
-
-character forgets
-
-communication unavailable
-
-information seems unimportant.
-```
-
-Not every information failure requires:
-
-```text
-INTENT.
-```
-
----
-
-# Information Networks
-
-Information may propagate through:
-
-```text
-family networks
-
-professional networks
-
-trade networks
-
-government systems
-
-radio
-
-community networks
-
-friendships
-
-factions
-
-institutions.
-```
-
----
-
-# Network-Specific Speed
-
-Different information travels differently.
-
-Example:
-
-```text
-Grain price information:
-Fast through traders.
-
-Medical outbreak:
-Fast through hospitals.
-
-Political rumor:
-Fast socially.
-
-Technical grid failure:
-Fast through utility network.
-
-Private divorce:
-Slow unless socially exposed.
-```
-
----
-
-# Information Distance
-
-Information distance depends on:
-
-```text
-social connection
-
-communication infrastructure
-
-professional network
-
-geography
-
-trust
-
-language
-
-authority.
-```
-
-Like physical consequences:
+Sometimes:
 
 ```text
 NETWORK DISTANCE
 ```
 
-may matter more than:
+matters more than:
 
 ```text
-KILOMETERS.
+PHYSICAL DISTANCE.
 ```
 
 ---
 
-# Information Delay
+# 89. Information Delay
 
-Characters may learn about events:
-
-```text
-minutes
-
-hours
-
-days
-
-months
-
-years
-```
-
-after they occur.
-
----
-
-# Delay Principle
+Always preserve:
 
 ```text
 WORLD EVENT TIME
@@ -2551,604 +2591,82 @@ WORLD EVENT TIME
 CHARACTER KNOWLEDGE TIME.
 ```
 
----
-
-# Delayed Consequence
-
-A character may make a decision using information that:
+A Character may learn about an event:
 
 ```text
-was accurate yesterday
+MINUTES
+
+HOURS
+
+DAYS
+
+MONTHS
+
+YEARS
 ```
 
-but is:
-
-```text
-wrong today.
-```
-
-This is valid.
-
----
-
-# Knowledge Decay
-
-Information may lose usefulness over time.
-
-Examples:
-
-```text
-road condition
-
-market price
-
-character location
-
-security status
-
-weather
-
-availability.
-```
+later.
 
 ---
 
-# Stable Knowledge
+# 90. Outdated but Previously Correct
 
-Some knowledge remains valid longer.
-
-Examples:
-
-```text
-character birth date
-
-historical event
-
-geographic landmark
-
-professional skill.
-```
-
----
-
-# Knowledge Half-Life
-
-Different information domains may conceptually possess different:
-
-```text
-EXPECTED FRESHNESS WINDOWS.
-```
+Knowledge may once have been accurate.
 
 Example:
 
 ```text
-Weather:
-SHORT
+MONDAY:
+Bridge closed.
 
-Road condition:
-SHORT / MEDIUM
+TUESDAY:
+Bridge reopened.
+```
 
-Market price:
-SHORT
+Character who has Monday's information may still believe:
 
-Character profession:
-MEDIUM
+```text
+BRIDGE CLOSED.
+```
 
-Historical event:
-LONG.
+Their information is:
+
+```text
+STALE
+
+NOT
+
+NECESSARILY
+BADLY SOURCED.
 ```
 
 ---
 
-# Memory and Knowledge
+# 91. Knowledge Supersession
 
-Knowledge acquired in the past may become:
+Operational knowledge may be superseded by newer information.
 
-```text
-MEMORY.
-```
-
-Memory is not always an exact copy.
-
-Character memory may:
-
-```text
-simplify
-
-fade
-
-distort
-
-retain emotional weighting.
-```
-
----
-
-# Memory Source
-
-A belief may be based upon:
-
-```text
-WHAT THE CHARACTER
-REMEMBERS
-```
-
-rather than what objectively happened.
-
----
-
-# Memory Confidence
-
-Characters may have confidence in memories.
+But historical truth may remain relevant.
 
 Example:
 
 ```text
-"I think it was Elias
-who warned us."
+BRIDGE WAS CLOSED
+MONDAY
+
+AND
+
+BRIDGE IS OPEN
+TUESDAY.
 ```
 
-Confidence:
-
-```text
-LOW / MODERATE.
-```
+Do not erase history merely because current state changed.
 
 ---
 
-# Collective Belief
+# 92. Knowledge Compression
 
-Groups may develop shared beliefs.
-
-Examples:
-
-```text
-"The eastern road is dangerous."
-
-"The council cannot be trusted."
-
-"That trader cheats customers."
-
-"The old hospital is cursed."
-```
-
-These beliefs may spread socially.
-
----
-
-# Collective Belief Is Not Hive Mind
-
-Not every group member must believe:
-
-```text
-the same thing.
-```
-
-Instead:
-
-```text
-belief prevalence
-
-group norms
-
-social pressure
-
-counter-beliefs
-```
-
-may coexist.
-
----
-
-# Social Reinforcement
-
-Beliefs may strengthen because:
-
-```text
-friends agree
-
-community repeats them
-
-institution teaches them
-
-faction promotes them.
-```
-
----
-
-# Social Cost of Revision
-
-A character may resist changing belief because revision could:
-
-```text
-damage identity
-
-damage group belonging
-
-damage reputation
-
-admit previous error.
-```
-
-This can create realistic belief persistence.
-
----
-
-# Faction Interpretation
-
-Factions may interpret the same event differently.
-
-Example:
-
-World Event:
-
-```text
-regional authority failed
-to contact settlement for 24 hours.
-```
-
-Faction A:
-
-```text
-"Communication infrastructure
-needs more centralized coordination."
-```
-
-Faction B:
-
-```text
-"This proves centralized authority
-does not work."
-```
-
-Same event.
-
-Different causal models.
-
----
-
-# Political Information
-
-Political communication may contain:
-
-```text
-facts
-
-framing
-
-selection
-
-omission
-
-persuasion.
-```
-
-The system should not automatically classify political framing as:
-
-```text
-FALSE.
-```
-
-Two interpretations may emphasize different true facts.
-
----
-
-# Interpretation Versus Fact
-
-Critical distinction:
-
-```text
-FACTUAL CLAIM:
-The authority response took 18 hours.
-
-INTERPRETATION A:
-The response was impressively fast.
-
-INTERPRETATION B:
-The response was dangerously slow.
-```
-
-The factual claim may be shared.
-
-Meaning remains contested.
-
----
-
-# Epistemic Boundary
-
-The system should distinguish:
-
-```text
-FACTUAL UNCERTAINTY
-```
-
-from:
-
-```text
-INTERPRETIVE DISAGREEMENT.
-```
-
----
-
-# Factual Uncertainty
-
-Question:
-
-```text
-Was the bridge destroyed?
-```
-
-Potentially resolvable through evidence.
-
----
-
-# Interpretive Disagreement
-
-Question:
-
-```text
-Was rebuilding the bridge
-worth the cost?
-```
-
-There may be no single simulation-truth answer.
-
----
-
-# Character Expertise
-
-Expertise affects:
-
-```text
-what evidence character notices
-
-how evidence is interpreted
-
-confidence
-
-error rate
-
-source evaluation.
-```
-
----
-
-# Example
-
-A mechanic sees:
-
-```text
-burned electrical housing.
-```
-
-May infer:
-
-```text
-electrical overload.
-```
-
-A non-mechanic sees:
-
-```text
-damage.
-```
-
-Same observation.
-
-Different knowledge extraction.
-
----
-
-# Expertise Does Not Guarantee Correctness
-
-Experts may:
-
-```text
-misdiagnose
-
-overgeneralize
-
-lack context
-
-trust familiar patterns too much.
-```
-
----
-
-# Professional Bias
-
-Experience may create:
-
-```text
-useful pattern recognition
-```
-
-and:
-
-```text
-systematic bias.
-```
-
-Example:
-
-Transport coordinator sees:
-
-```text
-road closure
-+
-communication loss
-```
-
-and suspects:
-
-```text
-security incident
-```
-
-because previous similar events were security-related.
-
-Reasonable.
-
-Possibly wrong.
-
----
-
-# Information Confidence and Decision Making
-
-Low-confidence information may still justify action when:
-
-```text
-risk is high.
-```
-
-Example:
-
-```text
-20% belief
-that bridge may collapse.
-```
-
-A cautious character may avoid crossing.
-
----
-
-# Expected-Risk Reasoning
-
-Conceptually:
-
-```text
-LOW PROBABILITY
-+
-VERY HIGH CONSEQUENCE
-```
-
-may still produce:
-
-```text
-STRONG ACTION.
-```
-
-This belongs primarily to:
-
-```text
-Decision_Making.md
-```
-
-but Knowledge and Beliefs provides the inputs.
-
----
-
-# Absence of Evidence
-
-Characters should distinguish:
-
-```text
-NO EVIDENCE OF THREAT
-```
-
-from:
-
-```text
-EVIDENCE THERE IS NO THREAT.
-```
-
-This distinction becomes important in:
-
-```text
-security
-
-medicine
-
-investigation
-
-politics.
-```
-
----
-
-# Example
-
-Authority says:
-
-```text
-"No hostile activity
-has been confirmed."
-```
-
-This does not necessarily mean:
-
-```text
-"Hostile activity
-has been disproven."
-```
-
----
-
-# Negative Knowledge
-
-Characters may know:
-
-```text
-something is not true.
-```
-
-Example:
-
-```text
-Direct observation confirms
-bridge did not collapse.
-```
-
-This can actively eliminate Plans.
-
----
-
-# Unknown Unknowns
-
-A character may not know:
-
-```text
-what they are missing.
-```
-
-The simulation should not require characters to possess:
-
-```text
-explicit UNKNOWN fields
-for every fact in existence.
-```
-
-Only relevant uncertainty needs representation.
-
----
-
-# Information Relevance
-
-Characters need detailed Knowledge State primarily for information that may affect:
-
-```text
-Goals
-
-Plans
-
-Decisions
-
-Relationships
-
-Safety
-
-Profession
-
-Identity
-
-World consequences.
-```
-
----
-
-# Knowledge Compression
-
-Do not track:
+Do not persist:
 
 ```text
 EVERY FACT
@@ -3156,1168 +2674,479 @@ EVERY CHARACTER
 EVER HEARS.
 ```
 
-Persistent tracking should focus on:
+Persistent tracking should prioritize:
 
 ```text
-behaviorally relevant knowledge
+BEHAVIORALLY RELEVANT
+KNOWLEDGE
 
-relationship-important knowledge
+GOAL-RELEVANT
+KNOWLEDGE
 
-professionally relevant knowledge
+RELATIONSHIP-IMPORTANT
+KNOWLEDGE
 
-historically significant knowledge.
+PROFESSIONALLY
+RELEVANT KNOWLEDGE
+
+SIGNIFICANT
+UNCERTAINTY
+
+IMPORTANT
+BELIEF STATE.
 ```
 
 ---
 
-# High-Resolution Knowledge
+# 93. Simulation Resolution
 
-High-resolution characters may track:
+High resolution may track:
 
 ```text
-specific claims
+SPECIFIC CLAIMS
 
-sources
+SOURCES
 
-confidence
+PROVENANCE
 
-contradictions
+CONFIDENCE
 
-freshness
+FRESHNESS
 
-active investigation
+CONTRADICTIONS
 
-recent conversations.
+RECENT INFORMATION
+
+ACTIVE UNCERTAINTY.
+```
+
+Medium resolution may track:
+
+```text
+MAJOR CURRENT
+KNOWLEDGE
+
+IMPORTANT BELIEFS
+
+PROFESSIONAL AWARENESS
+
+IMPORTANT UNCERTAINTY.
+```
+
+Low resolution may track:
+
+```text
+BROAD AWARENESS
+
+MAJOR LONG-TERM BELIEFS
+
+IMPORTANT SECRETS
+
+MAJOR INFORMATION EVENTS.
 ```
 
 ---
 
-# Medium-Resolution Knowledge
-
-May track:
+# 94. Resolution Principle
 
 ```text
-major current beliefs
+LOW RESOLUTION
+=
+LESS DETAIL
 
-important world awareness
+NOT
 
-professional knowledge
-
-relationship knowledge
-
-significant uncertainties.
+LESS HUMAN
+EPISTEMIC REALITY.
 ```
 
 ---
 
-# Low-Resolution Knowledge
+# 95. Knowledge Reconstruction
 
-May track:
+When a Character moves from low to high resolution, reconstruct knowledge only from:
 
 ```text
-broad awareness
+LOCATION
 
-major beliefs
+PROFESSION
 
-regional information
+EXPERTISE
 
-important secrets
+RELATIONSHIPS
 
-long-term assumptions.
+INFORMATION NETWORKS
+
+PAST STATE
+
+WORLD EVENTS
+
+AVAILABLE CHANNELS.
+```
+
+Never grant knowledge because:
+
+```text
+IT WOULD BE
+USEFUL FOR
+THE SCENE.
 ```
 
 ---
 
-# Background Population Knowledge
+# 96. Reconstruction Question
 
-Population groups may use aggregate measures such as:
-
-```text
-Awareness:
-HIGH
-
-Rumor Prevalence:
-MODERATE
-
-Authority Trust:
-LOW
-
-Belief Distribution:
-MIXED.
-```
-
-Individual persistence is unnecessary until relevant.
-
----
-
-# Knowledge Promotion
-
-When a character becomes high resolution, detailed knowledge should be reconstructed from:
+Always ask:
 
 ```text
-location
-
-profession
-
-relationships
-
-information networks
-
-past state
-
-major events
-
-regional information environment.
-```
-
----
-
-# Reconstruction Constraint
-
-Do not grant knowledge because:
-
-```text
-IT WOULD BE USEFUL
-FOR THE SCENE.
-```
-
-Ask:
-
-```text
-HOW WOULD THIS PERSON
+HOW WOULD
+THIS PERSON
 HAVE LEARNED IT?
 ```
 
 ---
 
-# Player Knowledge
+# 97. Player Knowledge
 
-The player is also an actor with limited knowledge.
+The player is also an Actor with limited knowledge.
 
-The same principles should apply:
+Therefore:
 
 ```text
-World Truth
+WORLD TRUTH
 ≠
-Player Knowledge.
+PLAYER KNOWLEDGE.
 ```
 
-The UI should not casually reveal:
+The player-facing experience must not casually reveal:
 
 ```text
-hidden causes
+HIDDEN CAUSES
 
-NPC secrets
+NPC SECRETS
 
-unverified rumors
+PRIVATE GOALS
 
-true motives.
+UNVERIFIED TRUTH
+
+TRUE MOTIVES.
 ```
 
 ---
 
-# Player-Facing Information
+# 98. Player Knowledge Boundary
 
-Presentation should communicate:
+Narrative and UI should present:
 
 ```text
 WHAT THE PLAYER
-HAS PLAUSIBLY LEARNED.
+HAS PLAUSIBLY
+LEARNED.
 ```
 
 Not:
 
 ```text
-WHAT THE DATABASE KNOWS.
+WHAT THE DATABASE
+KNOWS.
 ```
 
 ---
 
-# Character Knowledge of Player
+# 99. Character Knowledge of Player
 
 Characters do not automatically know:
 
 ```text
-player reputation
+PLAYER ACTIONS
 
-player actions
+PLAYER INVENTORY
 
-player relationships
+PLAYER RELATIONSHIPS
 
-player inventory
+PLAYER REPUTATION
 
-player decisions.
+PLAYER DECISIONS.
 ```
 
-They require:
+They need:
 
 ```text
-observation
+OBSERVATION
 
-report
+REPORT
 
-records
+RECORD
 
-social transmission.
-```
+COMMUNICATION
 
----
-
-# Example
-
-Player secretly helps:
-
-```text
-a rival faction.
-```
-
-Unless information leaks:
-
-```text
-friend should not know.
+SOCIAL TRANSMISSION.
 ```
 
 ---
 
-# Reputation Information
+# 100. Reputation Information
 
-Reputation is partly an information phenomenon.
-
-Character may know:
+A Character may possess:
 
 ```text
-stories about player.
-```
+FIRSTHAND
+PLAYER KNOWLEDGE
 
-They may have:
+SECONDHAND
+PLAYER REPUTATION
 
-```text
-firsthand experience
+OR
 
-secondhand reputation
-
-no awareness.
-```
-
----
-
-# Reputation Distinction
-
-```text
-PLAYER DID SOMETHING
-```
-
-does not guarantee:
-
-```text
-CHARACTER KNOWS PLAYER DID IT.
+NO AWARENESS.
 ```
 
 Therefore:
 
 ```text
-CAUSAL CREDIT
+PLAYER IMPACT
 ≠
-SOCIAL CREDIT.
+PLAYER RECOGNITION.
 ```
 
 ---
 
-# Information About Relationships
+# 101. Information Feedback
 
-Characters may or may not know:
-
-```text
-who is friends with whom
-
-who is romantically involved
-
-who is in conflict
-
-who trusts whom.
-```
-
-Relationship state is not automatically public.
-
----
-
-# Gossip
-
-Gossip is social information concerning:
-
-```text
-people
-
-relationships
-
-behavior
-
-reputation.
-```
-
-Gossip may contain:
-
-```text
-truth
-
-interpretation
-
-speculation
-
-malice
-
-misunderstanding.
-```
-
----
-
-# Information and Relationship Change
-
-Information can alter relationships.
-
-Example:
-
-```text
-Character hears:
-Friend revealed private information.
-```
-
-Even if false:
-
-```text
-trust may decline.
-```
-
-Later correction does not necessarily:
-
-```text
-fully restore relationship.
-```
-
----
-
-# Belief About Intent
-
-Characters often infer:
-
-```text
-WHY SOMEONE ACTED.
-```
-
-Example:
-
-Observed:
-
-```text
-Player missed meeting.
-```
-
-Possible beliefs:
-
-```text
-Player forgot.
-
-Player was delayed.
-
-Player does not care.
-
-Player had emergency.
-```
-
-Relationship consequences depend partly on:
-
-```text
-ATTRIBUTION.
-```
-
----
-
-# Intent Uncertainty
-
-Characters should not automatically know:
-
-```text
-OTHER PEOPLE'S INTENTIONS.
-```
-
-They infer from:
-
-```text
-behavior
-
-history
-
-communication
-
-trust.
-```
-
----
-
-# Intent Misinterpretation
-
-Misunderstanding intent is a major source of:
-
-```text
-relationship conflict
-
-political conflict
-
-social tension.
-```
-
----
-
-# Information and Goals
-
-New information may:
-
-```text
-create Goal
-
-cancel Goal
-
-change Goal
-
-change Plan
-
-change urgency
-
-change priority.
-```
-
----
-
-# Example
-
-Goal:
-
-```text
-Travel to eastern settlement.
-```
-
-New information:
-
-```text
-road flooded.
-```
-
-Goal:
-
-```text
-unchanged.
-```
-
-Plan:
-
-```text
-changes.
-```
-
----
-
-# Information and Motivation
-
-New information may alter perceived need.
-
-Example:
-
-```text
-Character learns
-food reserve is larger than expected.
-```
-
-Result:
-
-```text
-scarcity motivation decreases.
-```
-
----
-
-# Information and Capability
-
-A character may possess actual capability but not know:
-
-```text
-a solution exists.
-```
-
-Example:
-
-```text
-Character owns compatible part
-but does not know
-it fits broken generator.
-```
-
-Knowledge limits practical capability.
-
----
-
-# Information as Resource
-
-Information itself may possess value.
-
-Examples:
-
-```text
-safe route
-
-market price
-
-medical diagnosis
-
-location of supplies
-
-political decision
-
-security warning.
-```
-
-Characters may:
-
-```text
-trade
-
-protect
-
-seek
-
-sell
-
-withhold
-```
-
-information.
-
----
-
-# Information Markets
-
-Some characters or institutions may specialize in:
-
-```text
-collecting
-
-verifying
-
-distributing
-
-selling
-```
-
-information.
-
-Examples:
-
-```text
-traders
-
-scouts
-
-radio networks
-
-journalists
-
-authorities
-
-intelligence groups.
-```
-
----
-
-# Information Scarcity
-
-When communication infrastructure fails:
-
-```text
-information itself becomes scarce.
-```
-
-This may produce:
-
-```text
-uncertainty
-
-rumor
-
-local autonomy
-
-market inefficiency
-
-security fear.
-```
-
----
-
-# Information Overload
-
-Characters may also receive:
-
-```text
-TOO MUCH INFORMATION.
-```
-
-They cannot evaluate everything.
-
-This may produce:
-
-```text
-attention filtering
-
-reliance on trusted sources
-
-simplification
-
-ignored warnings.
-```
-
----
-
-# Attention
-
-Characters should have limited:
-
-```text
-INFORMATION ATTENTION.
-```
-
-High-pressure characters may fail to notice:
-
-```text
-low-priority information.
-```
-
----
-
-# Salience
-
-Information is more likely to receive attention if it is:
-
-```text
-urgent
-
-personally relevant
-
-professionally relevant
-
-emotionally intense
-
-relationship relevant
-
-goal relevant.
-```
-
----
-
-# Information Filtering
+Belief can produce real World consequences.
 
 Conceptually:
 
 ```text
-AVAILABLE INFORMATION
-      ↓
-ACCESS
-      ↓
-ATTENTION
-      ↓
-INTERPRETATION
-      ↓
-KNOWLEDGE.
-```
-
-Characters do not absorb everything available.
-
----
-
-# Forgotten Information
-
-Characters may forget.
-
-Forgetfulness may depend on:
-
-```text
-significance
-
-time
-
-repetition
-
-emotional weight
-
-usage
-
-simulation resolution.
-```
-
----
-
-# Memory Consolidation
-
-Repeated or significant information may become durable:
-
-```text
-CHARACTER MEMORY.
-```
-
-Routine transient information may disappear.
-
----
-
-# Knowledge Supersession
-
-Old information should not simply be deleted when new information arrives.
-
-Example:
-
-```text
-Monday:
-Bridge reported closed.
-
-Tuesday:
-Bridge reopened.
-```
-
-Operational knowledge becomes:
-
-```text
-Bridge open.
-```
-
-But historical knowledge remains:
-
-```text
-Bridge was closed Monday.
-```
-
-when relevant.
-
----
-
-# Belief History
-
-Important belief transitions may also remain meaningful.
-
-Example:
-
-```text
-2050:
-Character strongly trusted authority.
-
-2052:
-Authority failed during crisis.
-
-2053:
-Trust became conditional.
-```
-
-This supports:
-
-```text
-CHARACTER DEVELOPMENT.
-```
-
----
-
-# Character Can Admit Error
-
-Characters should be capable of:
-
-```text
-"I was wrong."
-```
-
-This may affect:
-
-```text
-self-belief
-
-relationships
-
-future confidence
-
-future decision thresholds.
-```
-
----
-
-# Character Can Refuse Error
-
-Some characters may instead:
-
-```text
-deny
-
-rationalize
-
-shift blame
-
-retain belief.
-```
-
-This must be personality- and context-driven rather than universal.
-
----
-
-# Confidence Calibration
-
-Experience may improve a character's ability to:
-
-```text
-estimate uncertainty.
-```
-
-An experienced investigator may more often say:
-
-```text
-"I don't know yet."
-```
-
-rather than overcommit.
-
----
-
-# Epistemic Traits
-
-Characters may differ in tendencies such as:
-
-```text
-skeptical
-
-gullible
-
-curious
-
-dogmatic
-
-open-minded
-
-cautious with evidence
-
-confident
-
-uncertain.
-```
-
-Detailed ownership belongs mainly to:
-
-```text
-Personality_and_Values.md
-```
-
-but these traits modify information handling.
-
----
-
-# Trust Networks
-
-Characters may possess source-specific trust.
-
-Example:
-
-```text
-Mara:
-Trusts medical network HIGH
-
-Trusts political rumor LOW
-
-Trusts Elias personally HIGH
-
-Disagrees with Elias politically.
-```
-
-Trust can therefore be:
-
-```text
-DOMAIN-SPECIFIC.
-```
-
----
-
-# Domain-Specific Trust
-
-Character may trust someone about:
-
-```text
-farming
-```
-
-but not:
-
-```text
-medicine.
-```
-
-Expertise matters.
-
----
-
-# Information Conflict Between Relationships
-
-Two trusted characters may provide:
-
-```text
-contradictory information.
+BELIEF
+↓
+DECISION
+↓
+ACTION
+↓
+WORLD CONSEQUENCE.
 ```
 
 Example:
 
 ```text
-Mara:
-Medical network is safe.
+RUMOR:
+Fuel shortage imminent
 
-Elias:
-Authority clauses create risk.
+↓
+
+PEOPLE STOCKPILE
+
+↓
+
+ACTUAL AVAILABILITY
+FALLS.
 ```
 
-Character must evaluate:
+A false belief may create:
 
 ```text
-domain expertise
-
-relationship trust
-
-evidence
-
-values.
-```
-
----
-
-# Information and Authority
-
-Authorities may possess:
-
-```text
-better access
-
-worse local context
-
-institutional data
-
-political incentives.
-```
-
-Authority information should not automatically be:
-
-```text
-TRUE
-```
-
-or:
-
-```text
-FALSE.
+REAL CONSEQUENCE.
 ```
 
 ---
 
-# Official Uncertainty
+# 102. Self-Fulfilling Belief
 
-Authorities may publish:
-
-```text
-"Cause remains unknown."
-```
-
-The engine should allow institutions to:
+Conceptually:
 
 ```text
-NOT KNOW.
+BELIEF:
+Bank will fail
+
+↓
+
+WITHDRAWALS
+
+↓
+
+LIQUIDITY CRISIS.
 ```
+
+Belief may become part of its own causal chain.
 
 ---
 
-# Institutional Knowledge
+# 103. Self-Defeating Belief
 
-Institutions may possess knowledge beyond any one character.
-
-Example:
+Conceptually:
 
 ```text
-hospital database
+BELIEF:
+Storm may destroy crop
 
-trade ledger
+↓
 
-weather network
+EARLY HARVEST
 
-security reports.
+↓
+
+STORM ARRIVES
+
+↓
+
+CROP LOSS LOW.
 ```
 
-Individual access depends on:
-
-```text
-role
-
-authorization
-
-location
-
-system availability.
-```
+The expected disaster did not occur partly because people believed it might.
 
 ---
 
-# Organizational Secrets
-
-Organizations may restrict information internally.
-
-Different members may possess:
+# 104. Correction Does Not Rewind History
 
 ```text
-different knowledge levels.
+FALSE BELIEF
+↓
+ACTION
+↓
+WORLD CONSEQUENCE
+↓
+CORRECTION
 ```
+
+does not mean:
+
+```text
+CONSEQUENCE
+DISAPPEARS.
+```
+
+History remains.
 
 ---
 
-# Compartmentalization
+# 105. AI Integration
 
-Security-sensitive organizations may intentionally ensure:
-
-```text
-CHARACTER A
-knows only A.
-
-CHARACTER B
-knows only B.
-```
-
-No individual may know:
+AI may assist with:
 
 ```text
-the complete plan.
-```
+PLAUSIBLE INFERENCE
 
----
+BELIEF INTERPRETATION
 
-# Knowledge and AI
+INFORMATION SUMMARIZATION
 
-AI systems may assist with:
+DIALOGUE EXPRESSION
 
-```text
-dialogue
-
-belief interpretation
-
-information summarization
-
-plausible inference.
+CONTRADICTION IDENTIFICATION.
 ```
 
 But AI must receive only:
 
 ```text
-INFORMATION THE CHARACTER
-IS ALLOWED TO KNOW.
+INFORMATION
+THE CHARACTER
+MAY PLAUSIBLY
+ACCESS.
 ```
 
 ---
 
-# AI Knowledge Boundary
+# 106. AI Knowledge Boundary
 
-Never provide hidden World Truth to character dialogue generation unless:
+Never provide hidden World Truth to Character-facing AI if:
 
 ```text
-character knowledge
-supports it.
+THE CHARACTER
+DOES NOT KNOW IT.
 ```
 
-Otherwise AI may accidentally produce:
+Otherwise AI may produce:
 
 ```text
-OMNISCIENT NPC DIALOGUE.
+OMNISCIENT
+CHARACTER DIALOGUE.
 ```
 
 ---
 
-# AI Inference Boundary
+# 107. AI Inference
 
-AI may infer plausible implications from known information.
+AI may infer plausible implications from known information if:
+
+```text
+THE CHARACTER'S
+EXPERTISE
+
+KNOWLEDGE
+
+AND CONTEXT
+SUPPORT IT.
+```
 
 Example:
 
-Character knows:
-
 ```text
-rainfall low
+LOW RAINFALL
 
-reservoir falling
+FALLING RESERVOIR
 
-irrigation demand rising.
-```
+HIGH IRRIGATION DEMAND
 
-Expert farmer may infer:
+↓
 
-```text
-crop risk increasing.
-```
+EXPERT FARMER
+INFERS
 
-This is acceptable if:
-
-```text
-expertise supports inference.
+CROP RISK
+INCREASING.
 ```
 
 ---
 
-# AI Canon Boundary
+# 108. AI Inference Is Not World Truth
 
-AI-generated inference should not automatically become:
+An AI-generated Character inference becomes:
 
 ```text
-World Truth.
+POSSIBLE
+CHARACTER BELIEF
 ```
 
-It becomes:
+not:
 
 ```text
-Character Belief
+WORLD TRUTH.
 ```
 
 unless separately validated.
 
 ---
 
-# Narrative Integration
+# 109. Natural Expression
 
-Narrative should distinguish:
-
-```text
-FACT
-
-REPORT
-
-RUMOR
-
-BELIEF
-
-SPECULATION.
-```
-
-without necessarily using explicit labels in dialogue.
-
----
-
-# Natural Expression
-
-Instead of:
+Internal state:
 
 ```text
-Knowledge Confidence:
-MODERATE.
+CLAIM:
+Bridge destroyed
+
+CONFIDENCE:
+Moderate
+
+SOURCE:
+Market rumor.
 ```
 
-Character may say:
+Natural dialogue:
 
 ```text
 "I heard the bridge is down,
 but I haven't seen it myself."
 ```
 
+The system state should remain structured.
+
+Presentation should remain human.
+
 ---
 
-# High Confidence
+# 110. High-Confidence Expression
 
 ```text
 "I was there.
@@ -4326,1136 +3155,268 @@ It's gone."
 
 ---
 
-# Low Confidence
+# 111. Uncertain Expression
 
 ```text
-"Someone at the market said
-the road might be closed."
+"Someone at the market
+said the road might
+be closed."
 ```
 
 ---
 
-# Conflicting Information
+# 112. Conflicting Information Expression
 
 ```text
-"The radio says it's technical.
+"The radio says
+it's technical.
 
-Jonas thinks it's security.
+Jonas thinks
+it's security.
 
-I don't know which one to believe."
+I don't know
+which is right."
 ```
 
 ---
 
-# Belief Expression
+# 113. Knowledge and Beliefs Invariants
+
+## KNOW-INV-001 — World Truth and Character Knowledge Are Separate
+
+Characters require information access.
+
+## KNOW-INV-002 — Character Knowledge and Belief Are Separate
+
+Receiving information does not guarantee acceptance.
+
+## KNOW-INV-003 — Knowledge Requires a Plausible Information Path
+
+No epistemic teleportation.
+
+## KNOW-INV-004 — Direct Observation Has Limits
+
+Observation does not reveal hidden cause automatically.
+
+## KNOW-INV-005 — Provenance Matters
+
+Behaviorally important information should remain traceable where practical.
+
+## KNOW-INV-006 — Source Reliability and Freshness Are Separate
+
+Reliable old information may be stale.
+
+## KNOW-INV-007 — Confidence Is Subjective
+
+High confidence does not guarantee truth.
+
+## KNOW-INV-008 — Unknown Is Valid
+
+Uncertainty is a real state.
+
+## KNOW-INV-009 — Contradictory Claims May Coexist
+
+Immediate resolution is not required.
+
+## KNOW-INV-010 — Partial Knowledge Is Canonical
+
+Knowledge need not be all-or-nothing.
+
+## KNOW-INV-011 — Rumor Does Not Mean False
+
+Rumor refers to verification and transmission state.
+
+## KNOW-INV-012 — Incorrect Information Does Not Imply Deception
+
+Intent matters.
+
+## KNOW-INV-013 — Belief May Be False
+
+Characters act from perceived reality.
+
+## KNOW-INV-014 — Belief Revision May Be Gradual
+
+Deep beliefs need not flip instantly.
+
+## KNOW-INV-015 — Belief History May Matter
+
+Correction does not erase prior state.
+
+## KNOW-INV-016 — Knowledge May Become Stale
+
+World change can invalidate previously accurate information.
+
+## KNOW-INV-017 — Experts May Be Wrong
+
+Expertise improves reasoning, not omniscience.
+
+## KNOW-INV-018 — Authorities May Be Wrong
+
+Institutional source does not equal truth.
+
+## KNOW-INV-019 — Trusted Sources May Be Wrong
+
+Trust is not correctness.
+
+## KNOW-INV-020 — Accurate Sources May Be Distrusted
+
+Human belief remains subjective.
+
+## KNOW-INV-021 — Player Knowledge Is Limited
+
+UI and narrative must respect epistemic boundaries.
+
+## KNOW-INV-022 — Character Knowledge of Player Requires Transmission
+
+Player action is not automatically socially known.
+
+## KNOW-INV-023 — Other Actors' Intent Is Not Directly Known
+
+Intent must be inferred or communicated.
+
+## KNOW-INV-024 — Correction Does Not Undo Consequences
+
+History remains causal.
+
+## KNOW-INV-025 — AI Inference Does Not Become World Truth
+
+Character inference remains epistemically bounded.
+
+## KNOW-INV-026 — Information Availability Does Not Guarantee Attention
+
+Characters have limited attention.
+
+## KNOW-INV-027 — Low Resolution Does Not Grant Knowledge
+
+Compression preserves causal epistemic continuity.
+
+## KNOW-INV-028 — Knowledge Must Remain Explainable
+
+Important knowledge should have an answer to:
 
 ```text
-"I've dealt with the council
-long enough to know
-they'll wait too long."
+HOW DID
+THEY LEARN THIS?
 ```
 
-This expresses:
+---
+
+# 114. Development Locks
+
+Future Knowledge and Beliefs development must not introduce:
 
 ```text
+OMNISCIENT CHARACTERS
+
+OMNISCIENT PLAYER UI
+
+INSTANT PUBLIC KNOWLEDGE
+
+INSTANT BELIEF CORRECTION
+
+PERFECT MEMORY
+
+PERFECT SOURCE EVALUATION
+
+RUMOR = FALSE
+
+OFFICIAL = TRUE
+
+UNOFFICIAL = FALSE
+
+EXPERT = ALWAYS CORRECT
+
+TRUSTED = ALWAYS CORRECT
+
+ONE GLOBAL
+TRUST VALUE
+
+ONE SETTLEMENT
 BELIEF
-+
-HISTORY
-```
 
-rather than factual certainty.
+HIVE-MIND
+POPULATION BELIEF
 
----
+TELEPATHIC KNOWLEDGE
+OF INTENT
 
-# Story Hook Integration
+AI-INVENTED
+CHARACTER KNOWLEDGE
 
-Story Hooks may emerge from:
+SCENE-CONVENIENT
+KNOWLEDGE
 
-```text
-new information
+RETROACTIVE KNOWLEDGE
 
-conflicting information
-
-rumor
-
-secret exposure
-
-missing information
-
-character belief.
-
-```
-
-But Story Hooks should preserve:
-
-```text
-information uncertainty.
+NARRATIVE REVELATION
+BECOMING CANON
+WITHOUT CAUSAL ACCESS.
 ```
 
 ---
 
-# Mission Integration
-
-Mission objectives must not reveal knowledge the player lacks.
-
-Bad:
-
-```text
-Find the saboteur
-who destroyed the relay.
-```
-
-when sabotage is unknown.
-
-Better:
-
-```text
-Determine why
-the relay stopped transmitting.
-```
-
----
-
-# Critical Mission Rule
-
-```text
-MISSION LANGUAGE
-MUST RESPECT
-PLAYER KNOWLEDGE.
-```
-
----
-
-# Character Request Example
-
-Character believes:
-
-```text
-settlement was attacked.
-```
-
-They may ask:
-
-```text
-"Can you find out
-what happened?"
-```
-
-The system should not correct the character merely because:
-
-```text
-World Truth:
-No attack occurred.
-```
-
----
-
-# Information Consequences
-
-Information can change the world.
-
-Conceptually:
-
-```text
-BELIEF
-      ↓
-ACTION
-      ↓
-WORLD CONSEQUENCE.
-```
-
----
-
-# Example
-
-Rumor:
-
-```text
-Fuel shortage imminent.
-```
-
-Characters:
-
-```text
-stockpile fuel.
-```
-
-Result:
-
-```text
-actual fuel availability falls.
-```
-
-A false belief creates:
-
-```text
-REAL SHORTAGE PRESSURE.
-```
-
----
-
-# Information Feedback Loop
-
-```text
-RUMOR
-      ↓
-BEHAVIOR
-      ↓
-WORLD CHANGE
-      ↓
-NEW EVIDENCE
-      ↓
-RUMOR APPEARS TRUE.
-```
-
-This is a powerful systemic mechanism.
-
----
-
-# Self-Fulfilling Belief
-
-Example:
-
-```text
-Belief:
-Bank will fail.
-```
-
-Population:
-
-```text
-withdraws savings.
-```
-
-Result:
-
-```text
-bank liquidity crisis.
-```
-
-Belief becomes:
-
-```text
-PART OF ITS OWN CAUSALITY.
-```
-
----
-
-# Self-Defeating Belief
-
-Belief may also prevent predicted outcome.
-
-Example:
-
-```text
-Belief:
-Storm may destroy crops.
-```
-
-Farmers:
-
-```text
-harvest early.
-```
-
-Storm arrives.
-
-Crop loss:
-
-```text
-LOW.
-```
-
-Belief was useful even if the predicted damage never occurs.
-
----
-
-# Knowledge and World Ledger
-
-World Ledger stores:
-
-```text
-WHAT ACTUALLY HAPPENED.
-```
-
-It should not be confused with:
-
-```text
-WHAT PEOPLE BELIEVED.
-```
-
----
-
-# Example
-
-World Ledger:
-
-```text
-Relay ER-17 failed
-due to electrical fault.
-```
-
-Character history:
-
-```text
-Jonas initially suspected
-security incident.
-```
-
-Both are valid records.
-
----
-
-# Knowledge and Campaign Memory
-
-Campaign Memory may preserve:
-
-```text
-what player knew
-
-what important characters believed
-
-major misunderstandings
-
-important revelations.
-```
-
-This is especially important when earlier belief influences:
-
-```text
-relationships
-
-decisions
-
-consequences.
-```
-
----
-
-# Belief Memory
-
-Example:
-
-```text
-Character believed player
-abandoned them.
-```
-
-Later truth:
-
-```text
-Player was trapped
-outside region.
-```
-
-Relationship history should preserve:
-
-```text
-the period of mistaken belief.
-```
-
-Later correction does not erase:
-
-```text
-what happened emotionally.
-```
-
----
-
-# Information Revelation
-
-A hidden truth may become known gradually.
-
-Conceptually:
-
-```text
-UNKNOWN
-↓
-RUMOR
-↓
-PARTIAL EVIDENCE
-↓
-STRONG SUSPICION
-↓
-CONFIRMATION.
-```
-
----
-
-# Revelation Principle
-
-Avoid:
-
-```text
-ONE DIALOGUE
-↓
-TOTAL TRUTH.
-```
-
-unless the source genuinely possesses:
-
-```text
-complete reliable knowledge.
-```
-
----
-
-# Discovery
-
-The player or character may infer truth from:
-
-```text
-multiple pieces of evidence.
-```
-
-The engine does not always need a character to say:
-
-```text
-"Here is what really happened."
-```
-
----
-
-# Knowledge Precision
-
-Information systems should support:
-
-```text
-PARTIAL CONFIRMATION.
-```
-
-Example:
-
-Confirmed:
-
-```text
-Relay suffered electrical failure.
-```
-
-Still unknown:
-
-```text
-Why checkpoint exists.
-```
-
-Do not mark entire event:
-
-```text
-SOLVED.
-```
-
----
-
-# Knowledge Correction
-
-When false information is corrected:
-
-```text
-character belief may update.
-```
-
-But consequences already produced remain.
-
----
-
-# Correction Does Not Rewind
-
-```text
-FALSE RUMOR
-↓
-TRADE REROUTING
-↓
-SUPPLY SHORTAGE
-↓
-CORRECTION
-```
-
-The shortage does not disappear retroactively.
-
----
-
-# Reputation and Correction
-
-Character who spread false information may suffer:
-
-```text
-trust loss
-```
-
-depending on:
-
-```text
-intent
-
-certainty
-
-carelessness
-
-history
-
-later correction.
-```
-
----
-
-# Honest Error
-
-Character says:
-
-```text
-"I told people what I believed.
-I was wrong."
-```
-
-This may produce different relationship consequences from:
-
-```text
-deliberate deception.
-```
-
----
-
-# Accountability
-
-Characters may:
-
-```text
-correct themselves
-
-apologize
-
-hide mistake
-
-double down
-
-blame source.
-```
-
-Decision depends on:
-
-```text
-personality
-
-values
-
-stakes
-
-relationships.
-```
-
----
-
-# Information Competition
-
-Different actors may attempt to influence:
-
-```text
-public belief.
-```
-
-Examples:
-
-```text
-government
-
-factions
-
-businesses
-
-religious groups
-
-community leaders
-
-traders
-
-media networks.
-```
-
----
-
-# Information Influence
-
-Actors may use:
-
-```text
-evidence
-
-reputation
-
-authority
-
-repetition
-
-emotion
-
-social networks
-
-selective framing.
-```
-
----
-
-# Persuasion
-
-Persuasion does not necessarily require:
-
-```text
-FALSE INFORMATION.
-```
-
-A character may attempt to change interpretation of:
-
-```text
-TRUE FACTS.
-```
-
----
-
-# Propaganda
-
-Propaganda may include:
-
-```text
-truth
-
-half-truth
-
-symbolic framing
-
-omission
-
-exaggeration
-
-fabrication.
-```
-
-The system should analyze:
-
-```text
-claims
-```
-
-rather than assigning everything a simple:
-
-```text
-PROPAGANDA = FALSE
-```
-
-rule.
-
----
-
-# Knowledge and Personality
-
-Personality may influence:
-
-```text
-source skepticism
-
-confidence
-
-curiosity
-
-belief persistence
-
-information seeking.
-```
-
-Detailed behavior belongs to:
-
-```text
-Personality_and_Values.md.
-```
-
----
-
-# Knowledge and Values
-
-Values may influence:
-
-```text
-which evidence matters
-
-which interpretations feel plausible
-
-which sources are trusted.
-```
-
-This should influence without producing:
-
-```text
-deterministic ideological blindness.
-```
-
----
-
-# Knowledge and Relationships
-
-Relationship trust may influence:
-
-```text
-information acceptance
-
-information sharing
-
-secret disclosure
-
-willingness to investigate.
-```
-
----
-
-# Relationship Information Boundary
-
-Close friendship does not mean:
-
-```text
-TOTAL INFORMATION ACCESS.
-```
-
-Characters may keep:
-
-```text
-secrets
-
-privacy
-
-professional confidentiality
-
-personal uncertainty.
-```
-
----
-
-# Knowledge and Profession
-
-Profession influences:
-
-```text
-information access
-
-interpretation skill
-
-terminology
-
-network connections.
-```
-
-This connects directly with:
-
-```text
-Profession_and_Capability.md.
-```
-
----
-
-# Knowledge and Goals
-
-Goals influence:
-
-```text
-WHAT INFORMATION
-THE CHARACTER SEEKS.
-```
-
-Example:
-
-```text
-Goal:
-Open workshop.
-```
-
-Character becomes attentive to:
-
-```text
-property
-
-equipment prices
-
-loans
-
-labor
-
-permits.
-```
-
----
-
-# Goal-Driven Attention
-
-Two characters in the same market may notice:
-
-```text
-different information.
-```
-
-Farmer notices:
-
-```text
-seed prices.
-```
-
-Mechanic notices:
-
-```text
-equipment parts.
-```
-
-Trader notices:
-
-```text
-regional price differences.
-```
-
----
-
-# Information Opportunity
-
-Knowledge may reveal:
-
-```text
-new opportunity.
-```
-
-Example:
-
-```text
-Character learns
-unused workshop is available.
-```
-
-This may create:
-
-```text
-new Goal.
-```
-
----
-
-# Information Threat
-
-Knowledge may reveal:
-
-```text
-new risk.
-```
-
-Example:
-
-```text
-Character learns
-supplier is failing.
-```
-
-This may create:
-
-```text
-preventative Goal.
-```
-
----
-
-# Knowledge Update Cycle
-
-Conceptually:
-
-```text
-1. Read current Character Knowledge.
-
-2. Read current location.
-
-3. Read profession and information access.
-
-4. Read relationship network.
-
-5. Read available communication channels.
-
-6. Detect new observations.
-
-7. Detect received information.
-
-8. Record source and provenance.
-
-9. Evaluate freshness.
-
-10. Evaluate source trust.
-
-11. Evaluate corroboration.
-
-12. Detect contradictions.
-
-13. Update Knowledge confidence.
-
-14. Evaluate relevant Beliefs.
-
-15. Strengthen, weaken, modify,
-    or preserve Beliefs.
-
-16. Update information needs.
-
-17. Pass changes to Goals,
-    Plans and Decision Making.
-
-18. Propagate shared information
-    where appropriate.
-```
-
----
-
-# Event-Driven Knowledge Updates
-
-Important triggers include:
-
-```text
-direct observation
-
-message arrival
-
-conversation
-
-radio report
-
-document discovery
-
-world event exposure
-
-relationship disclosure
-
-professional report
-
-investigation result.
-```
-
----
-
-# Time-Driven Knowledge Updates
-
-Time may change knowledge through:
-
-```text
-staleness
-
-forgetting
-
-source credibility change
-
-world conditions changing.
-```
-
----
-
-# Belief Update Cycle
-
-Conceptually:
-
-```text
-CURRENT BELIEF
-      ↓
-NEW INFORMATION
-      ↓
-SOURCE EVALUATION
-      ↓
-EVIDENCE COMPARISON
-      ↓
-PERSONAL INTERPRETATION
-      ↓
-CONFIRM
- / WEAKEN
- / MODIFY
- / REJECT
-      ↓
-UPDATED BELIEF.
-```
-
----
-
-# Belief Review Frequency
-
-Not every belief must be reconsidered constantly.
-
-Reevaluation is most likely when:
-
-```text
-new evidence arrives
-
-decision depends on belief
-
-belief causes repeated failure
-
-trusted source challenges belief
-
-world strongly contradicts belief.
-```
-
----
-
-# Simulation Resolution
-
-At high resolution, track:
-
-```text
-specific recent reports
-
-source provenance
-
-confidence
-
-contradictions
-
-active uncertainty
-
-investigation steps.
-```
-
-At medium resolution:
-
-```text
-important current knowledge
-
-major beliefs
-
-professional awareness
-
-relationship knowledge
-
-major uncertainty.
-```
-
-At low resolution:
-
-```text
-broad regional awareness
-
-important long-term beliefs
-
-significant secrets
-
-major information events.
-```
-
----
-
-# Compression
-
-Information compression should preserve:
-
-```text
-WHAT MATTERS TO FUTURE BEHAVIOR.
-```
-
-Do not preserve every transient rumor forever.
-
----
-
-# Rumor Expiration
-
-Rumors may:
-
-```text
-fade
-
-be confirmed
-
-be refuted
-
-transform
-
-remain folklore.
-```
-
----
-
-# Persistent Rumor
-
-Some rumors may survive because:
-
-```text
-truth never confirmed
-
-story is memorable
-
-political use continues
-
-community identity incorporates it.
-```
-
----
-
-# Historical Myth
-
-Over decades, uncertain events may become:
-
-```text
-local legend
-
-collective memory
-
-political mythology.
-```
-
-This belongs partly to:
-
-```text
-Society
-```
-
-but originates in information dynamics.
-
----
-
-# Anti-Omniscience Principle
+# 115. Anti-Omniscience Principle
 
 Characters must never know:
 
 ```text
-hidden World Truth
+HIDDEN WORLD TRUTH
 ```
 
-without plausible access.
+without:
+
+```text
+PLAUSIBLE ACCESS.
+```
 
 ---
 
-# Anti-Telepathy Principle
+# 116. Anti-Telepathy Principle
 
 Characters must not automatically know:
 
 ```text
-what another character thinks
+WHAT OTHERS THINK
 
-what another character intends
+WHAT OTHERS WANT
 
-what player did privately
+WHAT THE PLAYER
+DID PRIVATELY
 
-what distant events occurred.
+WHAT DISTANT EVENTS
+MEAN.
 ```
 
 ---
 
-# Anti-Truth-Label Principle
+# 117. Anti-Truth-Label Principle
 
-Player-facing rumors should not appear as:
+Do not present player-facing information as:
 
 ```text
 RUMOR — FALSE
 ```
 
-unless the player has already verified this.
+unless the player has already established that.
 
 ---
 
-# Anti-Perfect-Memory Principle
+# 118. Anti-Perfect-Memory Principle
 
-Characters do not maintain:
+Character Knowledge is not:
 
 ```text
-perfect factual databases
+A PERFECT DATABASE
+OF EVERYTHING
+THE PERSON
+EVER EXPERIENCED.
 ```
 
-of every event they experienced.
+Memory owns remembered experience.
 
 ---
 
-# Anti-Source-Flattening Principle
+# 119. Anti-Source-Flattening Principle
 
 Do not treat:
 
@@ -5467,863 +3428,406 @@ TRUSTED EXPERT
 ANONYMOUS RUMOR
 ```
 
-as equivalent information.
+as equivalent.
 
 ---
 
-# Anti-Instant-Correction Principle
+# 120. Anti-Hive-Mind Principle
 
-A public correction does not instantly:
-
-```text
-change everyone's belief.
-```
-
-Information must propagate.
-
-Trust matters.
-
----
-
-# Anti-Hive-Mind Principle
-
-A settlement does not have:
+A settlement does not possess:
 
 ```text
 ONE BELIEF.
 ```
 
-Different characters and groups may hold:
+Individuals may hold:
 
 ```text
-different understandings.
+DIFFERENT CLAIMS
+
+DIFFERENT CONFIDENCE
+
+DIFFERENT SOURCES
+
+DIFFERENT INTERPRETATIONS.
 ```
+
+Society may later represent aggregate patterns.
 
 ---
 
-# Anti-Plot-Twist Principle
+# 121. Anti-Plot-Twist Principle
 
 Do not generate false information merely to:
 
 ```text
-SURPRISE THE PLAYER.
+SURPRISE
+THE PLAYER.
 ```
 
 Misinformation should arise from:
 
 ```text
-limited observation
+LIMITED OBSERVATION
 
-bad sources
+STALE INFORMATION
 
-deception
+ERROR
 
-staleness
+BAD SOURCES
 
-human interpretation.
+DECEPTION
+
+HUMAN INTERPRETATION.
 ```
 
 ---
 
-# Anti-Mandatory-Liar Principle
+# 122. Anti-Mandatory-Liar Principle
 
-Information uncertainty does not require:
+Uncertainty does not require:
 
 ```text
-A VILLAIN WHO LIED.
+A PERSON
+WHO LIED.
 ```
 
 Sincere misunderstanding should be common.
 
 ---
 
-# Anti-Exposition Principle
+# 123. Anti-Binary-Belief Principle
 
-Characters should not automatically explain:
-
-```text
-everything they know
-```
-
-to the player.
-
-Conversation depends on:
-
-```text
-context
-
-relationship
-
-purpose
-
-time
-
-privacy.
-```
-
----
-
-# Anti-Binary-Belief Principle
-
-Beliefs should not always be:
+Beliefs need not be:
 
 ```text
 TRUE
-or
+
+OR
+
 FALSE.
 ```
 
 Characters may hold:
 
 ```text
-uncertain
+UNCERTAIN
 
-conditional
+PARTIAL
 
-partial
+CONDITIONAL
 
-probabilistic
+PROBABILISTIC
+
+CONTESTED
 ```
 
 beliefs.
 
 ---
 
-# Anti-Retroactive-Knowledge Principle
+# 124. Anti-Retroactive-Knowledge Principle
 
-If a character was wrong yesterday:
-
-```text
-new truth today
-```
-
-must not rewrite their past as though:
+If the Character learned the truth today:
 
 ```text
-they always knew.
-```
+DO NOT REWRITE
+YESTERDAY
 
----
+AS IF
 
-# Knowledge Consistency Rules
-
-## Rule 1
-
-World Truth and Character Knowledge must remain separate.
-
----
-
-## Rule 2
-
-Character Knowledge and Character Belief must remain separate.
-
----
-
-## Rule 3
-
-Knowledge requires a plausible information path.
-
----
-
-## Rule 4
-
-Direct observation has limits.
-
----
-
-## Rule 5
-
-Sources require provenance where behaviorally important.
-
----
-
-## Rule 6
-
-Source reliability and freshness are separate.
-
----
-
-## Rule 7
-
-Character confidence and objective truth are separate.
-
----
-
-## Rule 8
-
-Unknown is a valid state.
-
----
-
-## Rule 9
-
-Characters may hold contradictory reports.
-
----
-
-## Rule 10
-
-Information should be proposition-level where necessary.
-
----
-
-## Rule 11
-
-Rumor does not mean false.
-
----
-
-## Rule 12
-
-Incorrect information does not automatically imply deception.
-
----
-
-## Rule 13
-
-Deception requires intent.
-
----
-
-## Rule 14
-
-Secrets require restricted knowledge distribution.
-
----
-
-## Rule 15
-
-Information does not automatically become public.
-
----
-
-## Rule 16
-
-Professional roles affect information access.
-
----
-
-## Rule 17
-
-Relationships affect source trust and information sharing.
-
----
-
-## Rule 18
-
-Characters may sincerely be wrong.
-
----
-
-## Rule 19
-
-Experts may be wrong.
-
----
-
-## Rule 20
-
-Authorities may be wrong.
-
----
-
-## Rule 21
-
-Trusted sources may be wrong.
-
----
-
-## Rule 22
-
-Accurate sources may be distrusted.
-
----
-
-## Rule 23
-
-Information may become stale.
-
----
-
-## Rule 24
-
-Old correct information may become currently incorrect.
-
----
-
-## Rule 25
-
-Multiple repetitions of one source do not equal independent corroboration.
-
----
-
-## Rule 26
-
-Beliefs may persist despite contradiction.
-
----
-
-## Rule 27
-
-Beliefs may be revised.
-
----
-
-## Rule 28
-
-Belief revision may be gradual.
-
----
-
-## Rule 29
-
-Belief history may matter.
-
----
-
-## Rule 30
-
-Character decisions must use perceived reality.
-
----
-
-## Rule 31
-
-False beliefs may produce real consequences.
-
----
-
-## Rule 32
-
-Correction does not undo previous consequences.
-
----
-
-## Rule 33
-
-Character knowledge of player requires information access.
-
----
-
-## Rule 34
-
-Player knowledge must remain separate from simulation truth.
-
----
-
-## Rule 35
-
-Mission text must respect player knowledge.
-
----
-
-## Rule 36
-
-AI must not receive hidden knowledge without justification.
-
----
-
-## Rule 37
-
-AI inference does not automatically become World Truth.
-
----
-
-## Rule 38
-
-Information significance determines persistence.
-
----
-
-## Rule 39
-
-Simulation resolution determines knowledge detail.
-
----
-
-## Rule 40
-
-Compression must preserve behaviorally important beliefs.
-
----
-
-## Rule 41
-
-Characters may forget.
-
----
-
-## Rule 42
-
-Characters may admit mistakes.
-
----
-
-## Rule 43
-
-Characters may refuse to admit mistakes.
-
----
-
-## Rule 44
-
-Group belief does not imply unanimous belief.
-
----
-
-## Rule 45
-
-Factual uncertainty and interpretive disagreement must remain separate.
-
----
-
-## Rule 46
-
-Absence of evidence and evidence of absence must remain separate.
-
----
-
-## Rule 47
-
-Information availability does not guarantee attention.
-
----
-
-## Rule 48
-
-Information attention does not guarantee acceptance.
-
----
-
-## Rule 49
-
-Information may itself function as a resource.
-
----
-
-## Rule 50
-
-Information systems must remain causally explainable.
-
----
-
-# Validation Questions
-
-For any significant Knowledge Item, ask:
-
-```text
-What exactly is the Claim?
-
-How did the character learn it?
-
-Who was the source?
-
-Was the source firsthand?
-
-How old is the information?
-
-How reliable does the character
-believe the source is?
-
-Has the Claim been corroborated?
-
-Are the sources independent?
-
-Does contradictory evidence exist?
-
-How confident is the character?
-
-Is the information still current?
-
-Does the player know this?
-
-Who else knows this?
+THEY ALREADY
+KNEW IT.
 ```
 
 ---
 
-# Belief Validation Questions
+# 125. Validation Questions — Knowledge
 
-For any significant Belief, ask:
+For significant Character Knowledge, ask:
 
 ```text
-What does the character believe?
+WHAT EXACTLY
+IS THE CLAIM?
 
-Why?
+HOW DID
+THE CHARACTER
+LEARN IT?
 
-Which evidence supports it?
+WHAT WAS
+THE SOURCE?
 
-Which memories support it?
+WAS IT
+FIRSTHAND?
 
-Which values influence it?
+WHEN WAS
+THE INFORMATION TRUE?
 
-Which relationships influence it?
+WHEN WAS
+IT ACQUIRED?
 
-How confident are they?
+HOW FRESH
+IS IT?
 
-What evidence contradicts it?
+HOW CONFIDENT
+IS THE CHARACTER?
 
-What would cause revision?
+HAS IT BEEN
+VERIFIED?
 
-Is the belief factual
-or interpretive?
+ARE SOURCES
+INDEPENDENT?
 
-Does the character recognize uncertainty?
+WHAT CONTRADICTS IT?
+
+WHAT REMAINS
+UNKNOWN?
+
+WHO ELSE
+PLAUSIBLY KNOWS?
 ```
 
 ---
 
-# Secret Validation Questions
+# 126. Validation Questions — Belief
 
-For any Secret, ask:
+For significant Beliefs, ask:
 
 ```text
-What is being hidden?
+WHAT DOES
+THE CHARACTER
+BELIEVE?
 
-Who knows?
+WHY?
 
-Who does not know?
+WHAT EVIDENCE
+SUPPORTS IT?
 
-Why is it restricted?
+WHAT MEMORIES
+SUPPORT IT?
 
-Who may share it?
+WHAT SOURCE
+DO THEY TRUST?
 
-How could it leak?
+WHAT CONTRADICTS IT?
 
-What consequences would exposure create?
+HOW CONFIDENT
+ARE THEY?
+
+IS THE BELIEF
+FACTUAL,
+CAUSAL,
+INTERPRETIVE,
+FUTURE-ORIENTED
+OR SELF-DIRECTED?
+
+WHAT WOULD
+CAUSE REVISION?
+
+WHAT WOULD
+CAUSE DOUBT?
+
+DO THEY
+RECOGNIZE
+UNCERTAINTY?
 ```
 
 ---
 
-# Rumor Validation Questions
-
-For any significant Rumor, ask:
-
-```text
-Where did it originate?
-
-Was the original observation real?
-
-How many hops occurred?
-
-How has the Claim changed?
-
-Who currently believes it?
-
-How emotionally salient is it?
-
-What information environment
-allows it to spread?
-
-What would weaken it?
-
-What would confirm it?
-```
-
----
-
-# Example: Bridge Information
+# 127. Example — Bridge
 
 World Truth:
 
 ```text
-Bridge:
-DESTROYED
+BRIDGE:
+DESTROYED.
 ```
 
 Character A:
 
 ```text
-Saw collapse.
+SAW COLLAPSE
 
-Knowledge:
+KNOWLEDGE:
 Destroyed
 
-Confidence:
-VERY HIGH
+CONFIDENCE:
+Very High.
 ```
 
 Character B:
 
 ```text
-Spoke with Character A.
+HEARD DIRECTLY
+FROM A
 
-Knowledge:
+KNOWLEDGE:
 Reported destroyed
 
-Confidence:
-HIGH
+CONFIDENCE:
+High.
 ```
 
 Character C:
 
 ```text
-Heard from trader
-that route is blocked.
+HEARD ROUTE
+IS BLOCKED
 
-Belief:
-Bridge probably damaged
+BELIEF:
+Bridge may
+be damaged
 
-Confidence:
-MODERATE
+CONFIDENCE:
+Moderate.
 ```
 
 Character D:
 
 ```text
-Last traveled there yesterday.
+TRAVELED THERE
+YESTERDAY
 
-Knowledge:
-Bridge operational yesterday
+KNOWLEDGE:
+Operational yesterday
 
-Freshness:
-STALE
+FRESHNESS:
+Stale
 
-Belief:
-Bridge probably still open.
+BELIEF:
+Probably still open.
 ```
-
-Four characters.
 
 One World Truth.
 
-Four different information states.
+Four different Character realities.
 
 ---
 
-# Example: Millhaven Rumor
+# 128. Example — False Interpretation
 
 World Truth:
 
 ```text
-Relay electrical failure
+RELAY FAILURE:
+Electrical fault
 
-Respiratory outbreak
+HEALTH CHECKPOINT:
+Temporary
 
-Temporary health checkpoint
-
-No hostile occupation.
+HOSTILE OCCUPATION:
+None.
 ```
 
 Traveler observes:
 
 ```text
-checkpoint
+CHECKPOINT
 
-reduced traffic
+LOW TRAFFIC
 
-vehicles leaving.
+VEHICLES LEAVING.
 ```
 
-Traveler belief:
+Traveler believes:
 
 ```text
-serious incident likely.
+SERIOUS INCIDENT
+LIKELY.
 ```
 
-Market retelling:
+Later retelling becomes:
 
 ```text
-Millhaven evacuating.
+"MILLHAVEN
+IS EVACUATING."
 ```
 
-Radio rumor:
+Another retelling becomes:
 
 ```text
-armed group controls road.
+"ARMED GROUP
+CONTROLS ROAD."
 ```
 
-Player knowledge:
-
-```text
-conflicting.
-```
-
-Characters act:
-
-```text
-traders reroute.
-```
+Characters reroute trade.
 
 Result:
 
 ```text
-real supply pressure.
+REAL SUPPLY
+PRESSURE.
 ```
 
-This demonstrates:
+False interpretation created:
 
 ```text
-FALSE INTERPRETATION
-+
-REAL BEHAVIOR
-=
-REAL WORLD CONSEQUENCE.
+REAL CONSEQUENCE.
 ```
 
 ---
 
-# Example: Relationship Misunderstanding
+# 129. Example — Relationship Misunderstanding
 
 World Truth:
 
 ```text
-Player missed dinner
-because bridge collapsed.
+PLAYER MISSED DINNER
+BECAUSE BRIDGE COLLAPSED.
 ```
 
-Mara knows:
+Character knows:
 
 ```text
-Player did not arrive.
+PLAYER DID NOT ARRIVE.
 
-No message received.
+NO MESSAGE RECEIVED.
 ```
 
-Mara does not know:
+Character believes:
 
 ```text
-bridge collapsed.
+"THEY PRIORITIZED
+WORK AGAIN."
 ```
 
-Possible belief:
+Later:
 
 ```text
-Player prioritized work again.
+BRIDGE COLLAPSE
+BECOMES KNOWN.
 ```
 
-Relationship consequence:
+Belief may change.
+
+But the earlier:
 
 ```text
-disappointment.
+DISAPPOINTMENT
+
+WAITING
+
+RELATIONSHIP EXPERIENCE
 ```
 
-Later information:
-
-```text
-Mara learns about bridge collapse.
-```
-
-Belief revision:
-
-```text
-player absence reinterpreted.
-```
-
-But:
-
-```text
-emotional experience
-of waiting still occurred.
-```
+still happened.
 
 ---
 
-# Example: Authority Trust
+# 130. Example — False Self-Belief
 
-Authority report:
+Actual Expertise:
 
 ```text
-Food reserves adequate
-for six weeks.
+MECHANICAL:
+HIGH.
 ```
-
-Character A:
-
-```text
-Trust Authority:
-HIGH
-
-Belief:
-Short-term supply secure.
-```
-
-Character B:
-
-```text
-Trust Authority:
-LOW
-
-Previous Authority Failure:
-YES
-
-Belief:
-Reserves probably lower
-than reported.
-```
-
-Same information.
-
-Different beliefs.
-
-Different Plans.
-
----
-
-# Example: Professional Expertise
-
-World observation:
-
-```text
-water pressure falling.
-```
-
-Resident:
-
-```text
-Belief:
-Water system may fail.
-```
-
-Engineer:
-
-```text
-Observes:
-pressure oscillation pattern
-
-Belief:
-pump cavitation likely.
-```
-
-Authority official:
-
-```text
-Receives engineering report
-
-Belief:
-technical intervention needed.
-```
-
-Knowledge becomes richer through:
-
-```text
-EXPERTISE
-+
-INFORMATION PATHS.
-```
-
----
-
-# Example: False Self-Belief
-
-Character:
-
-```text
-Mechanical Skill:
-HIGH
 
 Self-Belief:
-"I am terrible with machinery."
-
-Origin:
-Repeated criticism
-during apprenticeship.
-```
-
-Goal:
 
 ```text
-Repair generator.
+"I AM TERRIBLE
+WITH MACHINERY."
 ```
 
 Perceived Capability:
@@ -6335,353 +3839,232 @@ LOW.
 Plan:
 
 ```text
-Seek another mechanic.
+FIND ANOTHER
+MECHANIC.
 ```
 
-Actual Capability:
-
-```text
-HIGH.
-```
-
-The character may miss an opportunity because:
-
-```text
-SELF-BELIEF
-```
-
-is inaccurate.
+Actual capability and self-belief remain different.
 
 ---
 
-# Example: Historical Belief Change
+# 131. Example — Authority
 
-Elias in 2045:
-
-```text
-Belief:
-Interregional institutions
-create dangerous dependency.
-
-Confidence:
-HIGH.
-```
-
-2048:
+Authority report:
 
 ```text
-Sees medical cooperation
-save lives.
+FOOD RESERVES
+ADEQUATE
+FOR SIX WEEKS.
 ```
 
-Belief becomes:
+Character A:
 
 ```text
-Interregional cooperation
-can be valuable,
-but operational autonomy
-must remain local.
+INSTITUTIONAL TRUST:
+HIGH
 
-Confidence:
-HIGH.
+BELIEF:
+Short-term supply secure.
 ```
 
-This is:
+Character B:
 
 ```text
-BELIEF DEVELOPMENT
+INSTITUTIONAL TRUST:
+LOW
+
+PAST FAILURE:
+SIGNIFICANT
+
+BELIEF:
+Reserve probably
+lower than reported.
 ```
 
-not:
+Same information.
 
-```text
-PERSONALITY REPLACEMENT.
-```
+Different beliefs.
 
 ---
 
-# Example: Player Reputation
+# 132. Runtime Relationship
 
-Player helps restore:
-
-```text
-South Fork Bridge.
-```
-
-World Truth:
-
-```text
-Player contributed significantly.
-```
-
-Older trader:
-
-```text
-Observed player involvement.
-
-Knowledge:
-HIGH.
-```
-
-Young resident ten years later:
-
-```text
-Knows bridge history vaguely.
-
-Knowledge of Player:
-NONE.
-```
-
-Regional archive:
-
-```text
-Records player contribution.
-```
-
-Therefore:
-
-```text
-PLAYER IMPACT
-CAN PERSIST
-
-WHILE
-
-PLAYER RECOGNITION
-FADES.
-```
-
----
-
-# Example: Secret Plan
-
-Character:
-
-```text
-Goal:
-Leave political office.
-```
-
-Plan:
-
-```text
-Resign after winter session.
-```
-
-Knowledge:
-
-```text
-Character:
-YES
-
-Partner:
-YES
-
-Council:
-NO
-
-Player:
-NO.
-```
-
-Public behavior:
-
-```text
-continues normally.
-```
-
-The player should not receive:
-
-```text
-"Character plans to resign"
-```
-
-until a valid information path exists.
-
----
-
-# Example: Information Correction
-
-Rumor:
-
-```text
-Regional hospital
-will close.
-```
-
-Character believes:
-
-```text
-TRUE
-```
-
-and begins:
-
-```text
-seeking employment elsewhere.
-```
-
-Later:
-
-```text
-hospital issues verified correction.
-```
-
-Character accepts correction.
-
-But:
-
-```text
-job application already submitted.
-```
-
-This may create:
-
-```text
-new career opportunity.
-```
-
-False information created:
-
-```text
-A REAL NEW POSSIBILITY.
-```
-
----
-
-# Foundational Formula
-
-Conceptually:
+The Character runtime is:
 
 ```text
 WORLD TRUTH
-      ↓
-OBSERVABLE EFFECT
-      ↓
-INFORMATION SOURCE
-      ↓
-TRANSMISSION
-      ↓
+↓
+INFORMATION PATH
+↓
 CHARACTER ACCESS
-      ↓
+↓
 ATTENTION
-      ↓
+↓
 KNOWLEDGE
-      ↓
-SOURCE TRUST
-+
+↓
 MEMORY
 +
-VALUES
+HUMAN ATTRIBUTES
 +
-PERSONALITY
+PSYCHOLOGY
++
+RELATIONSHIPS
++
+CULTURE
 +
 EXPERTISE
-      ↓
+↓
 BELIEF
-      ↓
-GOAL / PLAN / DECISION
-      ↓
+↓
+NEEDS / MOTIVATION
++
+GOALS / PLANS
+↓
+AUTONOMY
+↓
+DECISION MAKING
+↓
 ACTION
-      ↓
+↓
 WORLD CONSEQUENCE.
 ```
 
----
+The ordering is not always strictly linear.
 
-# Character Reality Principle
-
-For behavior:
-
-```text
-THE CHARACTER'S WORLD
-```
-
-is not simply:
-
-```text
-THE WORLD.
-```
-
-It is:
-
-```text
-THE WORLD
-
-AS OBSERVED
-
-AS REPORTED
-
-AS REMEMBERED
-
-AS INTERPRETED
-
-AS BELIEVED.
-```
+Feedback occurs continuously.
 
 ---
 
-# Emergent Conflict Principle
-
-Two rational characters may disagree because:
+# 133. Character Architecture Relationship
 
 ```text
-THEY KNOW DIFFERENT THINGS.
+CHARACTER STATE
+↓
+WHO / WHERE /
+CURRENT RUNTIME STATE
+
+NEEDS AND MOTIVATION
+↓
+WHY SOMETHING
+MATTERS
+
+GOALS AND PLANS
+↓
+WHAT FUTURE
+THE CHARACTER
+WANTS
+
+KNOWLEDGE AND BELIEFS
+↓
+WHAT THE CHARACTER
+THINKS IS TRUE
+
+EXPERTISE
+↓
+WHAT THE CHARACTER
+CAN MEANINGFULLY DO
+
+AUTONOMY
+↓
+WHY ACTION
+BECOMES RELEVANT NOW
+
+DECISION MAKING
+↓
+WHAT THE CHARACTER
+CHOOSES
+
+WORLD SIMULATION
+↓
+WHAT ACTUALLY
+HAPPENS
+
+MEMORY / LIFE /
+RELATIONSHIPS /
+PROGRESSION
+↓
+WHAT CHANGES.
 ```
 
-Or:
+---
+
+# 134. Epistemic North Star
+
+The system succeeds when two intelligent and reasonable Characters may:
 
 ```text
-THEY TRUST DIFFERENT SOURCES.
+DISAGREE
+
+WITHOUT
+
+EITHER BEING
+STUPID.
 ```
 
-Or:
+They may disagree because:
 
 ```text
+THEY KNOW
+DIFFERENT THINGS
+
+THEY TRUST
+DIFFERENT SOURCES
+
+THEY HAVE
+DIFFERENT EXPERIENCE
+
 THEY INTERPRET
-THE SAME FACTS DIFFERENTLY.
-```
+THE SAME FACT
+DIFFERENTLY
 
-Conflict therefore does not require:
+THEIR INFORMATION
+IS DIFFERENTLY
+OUTDATED
 
-```text
-STUPIDITY
-
-EVIL
-
-DECEPTION.
+THEY HOLD
+DIFFERENT CAUSAL
+MODELS.
 ```
 
 ---
 
-# Information Autonomy Principle
+# 135. Information Autonomy Principle
 
-Characters should be capable of:
+Characters must be capable of:
 
 ```text
-finding information
+LEARNING
 
-sharing information
+SEARCHING
 
-protecting information
+ASKING
 
-misunderstanding information
+LISTENING
 
-correcting information
+OBSERVING
 
-lying
+INFERRING
 
-believing rumors
+MISUNDERSTANDING
 
-questioning rumors
+QUESTIONING
 
-changing their minds.
+SHARING
+
+WITHHOLDING
+
+BELIEVING
+
+DOUBTING
+
+CHANGING THEIR MINDS
 ```
 
 without player involvement.
 
 ---
 
-# Core Design Principle
+# 136. Core Design Principle
 
 Project Ascension should never ask only:
 
@@ -6689,216 +4072,110 @@ Project Ascension should never ask only:
 WHAT IS TRUE?
 ```
 
-It should also ask:
+It must also ask:
 
 ```text
 WHO KNOWS?
 
 HOW DO THEY KNOW?
 
-HOW OLD IS THE INFORMATION?
+WHEN DID THEY
+LEARN IT?
 
-WHO DO THEY TRUST?
+HOW OLD
+IS THE INFORMATION?
 
-WHAT DO THEY THINK IT MEANS?
+WHO DO
+THEY TRUST?
 
-HOW CERTAIN ARE THEY?
+WHAT DO THEY
+THINK IT MEANS?
 
-WHAT ARE THEY WRONG ABOUT?
+HOW CERTAIN
+ARE THEY?
 
-WHAT WILL THEY DO
-BECAUSE THEY BELIEVE IT?
+WHAT ARE
+THEY WRONG ABOUT?
+
+WHAT DO THEY
+NOT KNOW?
+
+AND
+
+WHAT WILL THEY
+DO BECAUSE OF
+WHAT THEY BELIEVE?
 ```
 
 ---
 
-# Architectural Result
+# 137. Closing Principle
 
-With this document established:
+World Truth is singular.
 
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
+Human understanding is not.
 
-Needs_and_Motivation.md
-      ↓
-WHY CHANGE MATTERS
-
-Goals_and_Plans.md
-      ↓
-WHAT THEY TRY TO ACHIEVE
-
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-FROM THEIR PERCEIVED WORLD
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-WITHOUT PLAYER INPUT
-
-Profession_and_Capability.md
-      ↓
-WHAT THEY CAN ACTUALLY DO
-
-Personality_and_Values.md
-      ↓
-WHY DIFFERENT PEOPLE
-INTERPRET DIFFERENTLY
-```
-
----
-
-# Current Status
+The same event may become:
 
 ```text
-CHARACTER SYSTEM
+OBSERVATION
 
-README.md
-FOUNDATION DEFINED
+REPORT
 
-Character_State.md
-FOUNDATION DEFINED
+RUMOR
 
-Needs_and_Motivation.md
-FOUNDATION DEFINED
+SUSPICION
 
-Goals_and_Plans.md
-FOUNDATION DEFINED
+CERTAINTY
 
-Knowledge_and_Beliefs.md
-FOUNDATION DEFINED
+MISUNDERSTANDING
 
-Decision_Making.md
-PENDING
+POLITICAL INTERPRETATION
 
-Autonomy_and_Initiative.md
-PENDING
+MEMORY
 
-Profession_and_Capability.md
-PENDING
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
+MYTH.
 ```
 
----
+depending on who receives it, when, through whom and in what context.
 
-# Next Document
+Project Ascension should preserve that uncertainty.
 
-The next recommended document is:
+Characters must never behave as though they have direct access to the simulation database.
 
-```text
-Canon/Systems/Characters/Decision_Making.md
-```
+They live inside the world.
 
-Its central question will be:
+They observe parts of it.
 
-```text
-THE CHARACTER
-NOW HAS:
+They hear about other parts.
 
-NEEDS
+They remember imperfectly.
 
-MOTIVATIONS
+They trust some people.
 
-GOALS
+They distrust others.
 
-PLANS
+They infer.
 
-KNOWLEDGE
+They misunderstand.
 
-BELIEFS.
+They revise.
 
-SO HOW DO THEY
-ACTUALLY CHOOSE?
-```
+Sometimes they are right.
 
-It should define:
+Sometimes they are confidently wrong.
 
-```text
-decision triggers
+And their beliefs can change the world regardless.
 
-option generation
+The central principle is:
 
-option filtering
-
-expected outcomes
-
-risk assessment
-
-uncertainty
-
-goal conflict
-
-value conflict
-
-relationship influence
-
-role obligations
-
-emotion
-
-habit
-
-time pressure
-
-imperfect reasoning
-
-bounded rationality
-
-choice commitment
-
-reconsideration
-
-regret
-
-delegation
-
-inaction
-
-sacrifice.
-```
-
-Most importantly:
-
-```text
-THE BEST DECISION
-IS NOT ALWAYS
-THE MOST HUMAN DECISION.
-```
-
-The system should aim for:
-
-```text
-PLAUSIBLE CHOICE
-```
-
-rather than:
-
-```text
-PERFECT OPTIMIZATION.
-```
+> **World Truth determines what exists. Knowledge determines what a Character has learned. Belief determines what they think is true. Human action emerges from the gap between those three.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Knowledge and Beliefs foundation defining World Truth separation, character knowledge, source provenance, observation, source trust, confidence, freshness, uncertainty, contradiction, rumors, misinformation, deception, secrets, belief formation and revision, information propagation, expertise, collective belief, player information boundaries and information-driven world consequences. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Initial Knowledge and Beliefs foundation defining World Truth separation, Character Knowledge, source provenance, confidence, freshness, contradiction, uncertainty, rumors, misinformation, deception, secrets, belief formation, belief revision, information propagation, expertise effects, collective belief, player information boundaries and information-driven consequences. |
+| 1.0 | 2026-08-30 | Rebuilt Knowledge and Beliefs as the authoritative Character epistemic system. Preserved World Truth separation, information paths, provenance, source evaluation, freshness, confidence, contradiction, partial knowledge, belief formation, self-belief, causal belief, future belief, belief inertia and revision, information delay, AI boundaries and epistemic explainability. Redirected Memory mechanics to Memory, Trust state to Relationships / Trust, collective belief and rumor prevalence to Society / World Simulation, narrative revelation to Narrative, and Character trait ownership to Human Attributes / Human Psychology. |

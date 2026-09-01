@@ -2,55 +2,66 @@
 # Escalation and Recovery System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Escalation and Recovery |
-| Location | Canon/Systems/World_Simulation/Escalation_and_Recovery.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | State Transitions, Cascades, Stabilization, Adaptation and Recovery |
-| Last Updated | 2026-08-09 |
-
-> *"Collapse is not a direction. It is what happens when pressure outruns the systems capable of absorbing it."*
-
----
-
-# Purpose
-
-The Escalation and Recovery system defines how conditions inside Project Ascension's World Simulation change over time.
-
-It connects the major simulation domains:
-
-- Infrastructure
-- Information
-- Authority
-- Population
-- Supply
-- Security
-- Communications
-- Recovery
-
-and determines how:
-
-- pressure accumulates
-- resilience absorbs pressure
-- thresholds are crossed
-- states deteriorate
-- systems stabilize
-- cascades propagate
-- cascades stop
-- interventions change outcomes
-- recovery begins
-- adaptation creates new stable states
-- long-term transformation occurs
-
-This system is the transition engine of World Simulation.
+|---|---|
+| Project | Project Ascension |
+| Document | Escalation and Recovery System |
+| Location | `Canon/Systems/World_Simulation/Escalation_and_Recovery.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / State Transition Architecture |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the shared causal architecture through which World Simulation domains deteriorate, stabilize, recover, adapt and transform without replacing domain ownership or Actor agency |
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-World State should never change merely because enough time has passed.
+The Escalation and Recovery System defines the shared architecture for meaningful state change inside Project Ascension's World Simulation.
+
+It answers:
+
+> **Why does a world condition change, what resists that change, how may consequences propagate, what may stop them, and how can systems stabilize, recover, adapt or transform over time?**
+
+It provides common concepts for:
+
+```text
+PRESSURE
+
+RESILIENCE
+
+BUFFERS
+
+STRAIN
+
+THRESHOLDS
+
+TREND
+
+CASCADES
+
+FEEDBACK LOOPS
+
+STABILIZATION
+
+RECOVERY CAPACITY
+
+RECOVERY BOTTLENECKS
+
+ADAPTATION
+
+PATH DEPENDENCE
+
+TRANSFORMATION.
+```
+
+It does not replace the systems that own the state being changed.
+
+---
+
+# 2. Core Principle
+
+World State must never change merely because enough time has passed.
 
 Avoid:
 
@@ -62,30 +73,209 @@ DAY 60
 Authority becomes Weak.
 
 DAY 90
-Population becomes Volatile.
+Supply becomes Critical.
 ```
 
 Prefer:
 
 ```text
+CURRENT STATE
++
 PRESSURE
 +
-DEPENDENCY FAILURE
-+
-LOW RESILIENCE
+DEPENDENCIES
 +
 TIME
-=
-STATE CHANGE
++
+ACTOR ACTIONS
++
+WORLD EVENTS
++
+RESILIENCE
++
+AVAILABLE BUFFERS
+↓
+CAUSAL CONSEQUENCES
+↓
+POSSIBLE STATE CHANGE.
 ```
 
-World change should have causes.
+The world changes because something happened.
+
+Time allows causes to operate.
+
+Time is not itself the cause.
 
 ---
 
-# Escalation Is Not Inevitable
+# 3. Architectural Role
 
-A negative state does not automatically lead to a worse state.
+Escalation and Recovery is not a universal transition engine that independently changes every domain.
+
+Instead:
+
+```text
+DOMAIN SYSTEM
+OWNS
+ITS STATE
+
+DOMAIN CONDITIONS
+CREATE
+PRESSURE
+
+ACTORS
+CREATE
+ACTIONS
+
+WORLD SIMULATION
+RESOLVES
+CONSEQUENCES
+
+ESCALATION AND RECOVERY
+DEFINES
+THE SHARED
+TRANSITION LANGUAGE.
+```
+
+Therefore:
+
+```text
+Escalation_and_Recovery
+=
+CROSS-DOMAIN
+TRANSITION ARCHITECTURE
+
+NOT
+
+CENTRALIZED
+WORLD CONTROLLER.
+```
+
+---
+
+# 4. Domain Ownership
+
+Each authoritative domain remains responsible for its own state.
+
+Examples:
+
+```text
+Infrastructure State
+→ owns infrastructure condition
+
+Supply State
+→ owns supply condition
+
+Security State
+→ owns physical security condition
+
+Authority State
+→ owns governance capability and authority condition
+
+Information State
+→ owns information environment
+
+Population State
+→ owns population distribution and demographic condition.
+```
+
+Escalation and Recovery may explain:
+
+```text
+WHY
+
+HOW
+
+HOW FAST
+
+UNDER WHAT PRESSURE
+
+WITH WHAT RESILIENCE
+
+THROUGH WHICH DEPENDENCIES
+```
+
+a state changed.
+
+It does not take ownership of that state.
+
+---
+
+# 5. Core Transition Model
+
+The shared conceptual model is:
+
+```text
+CURRENT STATE
+        ↓
+ACTIVE CONDITIONS
+        ↓
+PRESSURES
+        ↓
+RESILIENCE
++
+BUFFERS
+        ↓
+EFFECTIVE STRAIN
+        ↓
+THRESHOLDS
++
+DEPENDENCIES
++
+ACTIVE PROCESSES
+        ↓
+ACTOR ACTIONS
++
+WORLD EVENTS
+        ↓
+ACTION / EVENT RESOLUTION
+        ↓
+CONSEQUENCES
+        ↓
+DETERIORATION
+OR
+STABILIZATION
+OR
+IMPROVEMENT
+OR
+TRANSFORMATION
+OR
+NO MATERIAL CHANGE
+        ↓
+UPDATED AUTHORITATIVE STATE.
+```
+
+This is a causal framework.
+
+It is not a mandatory computational sequence.
+
+---
+
+# 6. State Change Outcomes
+
+A domain may:
+
+```text
+DETERIORATE
+
+STABILIZE
+
+IMPROVE
+
+ADAPT
+
+TRANSFORM
+
+REMAIN UNCHANGED.
+```
+
+No outcome is automatically preferred.
+
+---
+
+# 7. Escalation Is Not Inevitable
+
+A negative condition does not automatically become worse.
 
 Example:
 
@@ -106,34 +296,50 @@ but may instead remain:
 DEGRADED
 ```
 
-or improve toward:
+or improve.
 
-```text
-STRAINED
-```
-
-depending upon:
-
-- current pressure
-- resilience
-- available resources
-- institutional response
-- population behavior
-- external assistance
-- player action
-- random events
-
-The simulation must always allow multiple plausible futures.
+The result depends on actual causes and conditions.
 
 ---
 
-# Recovery Is Not Reversal
+# 8. Recovery Is Not Inevitable
 
-Recovery does not necessarily mean restoring the exact system that existed before disruption.
+A damaged system does not automatically recover because pressure decreases.
 
-A region may recover by rebuilding.
+Example:
 
-It may also recover by adapting.
+```text
+Bridge:
+DESTROYED
+
+Pressure:
+LOW
+```
+
+does not imply:
+
+```text
+Bridge:
+RESTORED.
+```
+
+Recovery requires capability, resources, time and action.
+
+---
+
+# 9. Recovery Is Not Reversal
+
+Canonical rule:
+
+```text
+RECOVERY
+≠
+REVERSAL.
+```
+
+A system may recover by restoring its previous structure.
+
+It may also recover by replacing it.
 
 Example:
 
@@ -142,1204 +348,1298 @@ CENTRALIZED POWER GRID
 FAILED
 ```
 
-does not require:
-
-```text
-CENTRALIZED POWER GRID
-RESTORED
-```
-
-The region may instead develop:
+may eventually become:
 
 ```text
 REGIONAL MICROGRIDS
 +
 LOCAL GENERATION
 +
-ENERGY RATIONING
+MANAGED DEMAND.
 ```
 
-and achieve stable electricity through a different architecture.
+Function may return through a different architecture.
 
 ---
 
-# Transition Model
+# 10. Pressure
 
-A simplified transition process is:
+Pressure represents active forces pushing a system toward:
 
 ```text
-CURRENT STATE
-     │
-     ▼
-PRESSURES
-     │
-     ▼
-RESILIENCE
-     │
-     ▼
-NET STRAIN
-     │
-     ▼
-THRESHOLD CHECK
-     │
-     ├──────────────► DETERIORATION
-     │
-     ├──────────────► STABILIZATION
-     │
-     └──────────────► IMPROVEMENT
-                          │
-                          ▼
-                       RECOVERY
-                          │
-                          ▼
-                       ADAPTATION
+degradation
+
+instability
+
+capacity loss
+
+structural change
+
+or increased operational burden.
 ```
+
+Pressure must have identifiable sources.
 
 ---
 
-# Core Transition Variables
-
-Every major domain should interact with several transition variables.
-
-```text
-TRANSITION STATE
-│
-├── Current State
-├── Pressure
-├── Resilience
-├── Recovery Capacity
-├── Trend
-├── Duration
-├── Momentum
-├── Active Shocks
-├── Active Interventions
-└── Historical Memory
-```
-
----
-
-# Current State
-
-Current State describes the present condition.
-
-Example:
-
-```text
-Supply:
-CONSTRAINED
-```
-
-This alone should not determine what happens next.
-
----
-
-# Pressure
-
-Pressure represents forces pushing the current state toward deterioration or structural change.
+# 11. Pressure Sources
 
 Examples include:
 
-- resource shortage
-- infrastructure failure
-- information uncertainty
-- workforce loss
-- migration
-- political conflict
-- demand increase
-- external attack
-- severe weather
+```text
+resource shortage
 
-Conceptual scale:
+infrastructure failure
+
+workforce loss
+
+demand increase
+
+external attack
+
+severe weather
+
+dependency failure
+
+transport disruption
+
+information disruption
+
+population movement
+
+Actor action.
+```
+
+A pressure record should preserve:
 
 ```text
-NONE
-LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
+SOURCE
+
+TARGET
+
+SEVERITY
+
+DURATION
+
+DIRECTION
+
+CAUSAL ORIGIN.
 ```
 
 ---
 
-# Pressure Sources
+# 12. Pressure Is Not Outcome
 
-Pressure should preserve its causes.
-
-Example:
+Canonical rule:
 
 ```text
-Infrastructure Pressure:
-SEVERE
-
-Sources:
-- fuel shortage
-- maintenance backlog
-- reduced workforce
-- telecommunications degradation
+PRESSURE
+≠
+STATE CHANGE.
 ```
 
-This allows both designers and simulation systems to understand why the pressure exists.
+High pressure may be absorbed.
+
+Moderate pressure may become destructive if sustained long enough.
+
+Low pressure may matter when resilience is already exhausted.
 
 ---
 
-# Pressure Persistence
+# 13. Pressure Persistence
 
 Pressure may be:
 
 ```text
 TRANSIENT
+
 SUSTAINED
+
 CHRONIC
+
 ESCALATING
-VOLATILE
+
+DECLINING
+
+VOLATILE.
 ```
 
-A brief severe pressure may be less damaging than moderate pressure sustained for months.
+Duration matters.
 
 ---
 
-# Cumulative Pressure
+# 14. Cumulative Pressure
 
-Some systems should accumulate strain over time.
+Some pressures create accumulated consequences.
 
 Example:
 
 ```text
-DAY 1
 Maintenance Pressure:
 HIGH
 
-Condition:
-INTACT
+Infrastructure:
+FUNCTIONAL
+```
+
+may persist while:
+
+```text
+Maintenance Backlog:
+INCREASING.
 ```
 
 Later:
 
 ```text
-DAY 20
-Maintenance Pressure:
-HIGH
-
-Maintenance Debt:
-SEVERE
-
-Condition:
-STRAINED
+Infrastructure:
+STRAINED.
 ```
 
-Time matters because unresolved pressure creates accumulated effects.
+The state change occurred because unresolved pressure accumulated consequences.
+
+Not because a timer expired.
 
 ---
 
-# Resilience
+# 15. Resilience
 
-Resilience represents the ability to absorb pressure without losing function.
+Resilience represents the ability of a system to absorb pressure without losing required function.
 
-Sources may include:
-
-- redundancy
-- resources
-- preparedness
-- social cohesion
-- strong institutions
-- technical expertise
-- spare capacity
-- geographic advantages
-- trusted information
-- distributed systems
-
-Conceptual scale:
+Possible sources include:
 
 ```text
-VERY HIGH
-HIGH
-MODERATE
-LOW
-MINIMAL
+redundancy
+
+spare capacity
+
+stored resources
+
+distributed systems
+
+technical capability
+
+alternative routes
+
+alternative suppliers
+
+geographic advantages
+
+institutional capability
+
+local production.
 ```
+
+Social or human contributors remain owned by their authoritative systems.
 
 ---
 
-# Resilience Is Consumable
+# 16. Structural Resilience
 
-Resilience should not always function as a permanent stat.
-
-Some forms may be depleted.
+Some resilience comes from relatively persistent structure.
 
 Examples:
 
 ```text
-Fuel reserves
-Emergency staff
-Food storage
-Backup generators
-Financial reserves
-Public patience
+distributed power generation
+
+multiple transportation corridors
+
+local food production
+
+redundant communication systems
+
+diversified supply sources.
+```
+
+Structural resilience may change.
+
+But it is not normally consumed immediately.
+
+---
+
+# 17. Resilience Buffers
+
+Other resilience comes from consumable buffers.
+
+Examples:
+
+```text
+fuel reserves
+
+stored food
+
+backup generators
+
+reserve equipment
+
+spare parts
+
+reserve personnel
+
+temporary external assistance.
 ```
 
 Conceptually:
 
 ```text
 PRESSURE
-    ↓
-RESILIENCE BUFFER
-    ↓
-BUFFER DEPLETES
-    ↓
-UNDERLYING SYSTEM EXPOSED
+↓
+BUFFER ABSORBS CONSEQUENCE
+↓
+BUFFER DECLINES
+↓
+UNDERLYING SYSTEM
+BECOMES MORE EXPOSED.
 ```
 
 ---
 
-# Structural Resilience
+# 18. Buffer Ownership
 
-Some resilience is persistent.
-
-Examples:
-
-- geography
-- decentralized infrastructure
-- strong institutions
-- local agriculture
-- diversified economy
-
-Structural Resilience may decline slowly rather than being consumed directly.
-
----
-
-# Recovery Capacity
-
-Recovery Capacity represents how effectively a system can restore or replace lost capability.
-
-It depends upon factors such as:
-
-```text
-Resources
-Personnel
-Knowledge
-Time
-Security
-Transportation
-Authority
-Cooperation
-External Assistance
-```
-
-Conceptual states:
-
-```text
-HIGH
-MODERATE
-LOW
-MINIMAL
-NONE
-```
-
----
-
-# Resilience Versus Recovery
-
-These concepts must remain separate.
-
-```text
-RESILIENCE
-How well can the system avoid deteriorating?
-
-RECOVERY
-How well can the system improve after deterioration?
-```
-
-A region may have:
-
-```text
-Resilience:
-LOW
-
-Recovery:
-HIGH
-```
-
-meaning it suffers disruption easily but repairs quickly.
-
-Another may have:
-
-```text
-Resilience:
-HIGH
-
-Recovery:
-LOW
-```
-
-meaning it resists damage well but struggles once its defenses are exceeded.
-
----
-
-# Strain
-
-Strain represents the effective burden placed upon a system after resilience is considered.
-
-Conceptually:
-
-```text
-PRESSURE
--
-RESILIENCE
-=
-STRAIN
-```
-
-This is a conceptual relationship rather than a required numerical formula.
-
-Possible states:
-
-```text
-LOW
-MANAGEABLE
-HIGH
-SEVERE
-OVERLOAD
-```
-
----
-
-# Hidden Strain
-
-A system may appear stable while accumulating severe strain.
+Escalation and Recovery does not own the resources represented by buffers.
 
 Example:
 
 ```text
-Power Service:
+Fuel Reserve
+→ Supply State
+
+Backup Generator
+→ Infrastructure / Resource ownership
+
+Reserve Personnel
+→ Population / Actor systems.
+```
+
+This system may reference their resilience effect.
+
+---
+
+# 19. Hidden Fragility
+
+A system may continue functioning while resilience declines.
+
+Example:
+
+```text
+Power Delivery:
 NORMAL
 
-Infrastructure Condition:
-STRAINED
+Maintenance:
+BACKLOGGED
 
-Maintenance Debt:
-HIGH
-
-Workforce:
-STRAINED
-```
-
-The system still functions.
-
-Its ability to absorb another disruption has declined.
-
----
-
-# Thresholds
-
-Thresholds represent points where current operating behavior can no longer be maintained.
-
-Examples include:
-
-```text
-Generator fuel exhausted.
-
-Hospital occupancy exceeds capacity.
-
-Communication redundancy exhausted.
-
-Food reserve drops below minimum distribution requirement.
-
-Authority loses enough personnel to maintain services.
-```
-
-Thresholds should usually emerge from system conditions.
-
----
-
-# Soft Thresholds
-
-Soft Thresholds increase the probability of change rather than guarantee it.
-
-Example:
-
-```text
-Public Confidence:
+Backup Capacity:
 LOW
 
-Supply:
-CONSTRAINED
-
-Information:
-UNSTABLE
+Repair Capacity:
+STRAINED.
 ```
 
-may substantially increase stockpiling risk.
+Externally:
 
-It does not guarantee stockpiling.
+```text
+FUNCTIONAL.
+```
+
+Structurally:
+
+```text
+FRAGILE.
+```
+
+This is legitimate simulation state.
 
 ---
 
-# Hard Thresholds
+# 20. Strain
 
-Hard Thresholds represent physical or administrative constraints.
+Strain represents the effective burden currently being carried by a system.
+
+Conceptually:
+
+```text
+PRESSURE
+MEETS
+RESILIENCE
+AND
+AVAILABLE BUFFERS
+↓
+STRAIN.
+```
+
+This is not required to be a numeric formula.
+
+Possible descriptions include:
+
+```text
+LOW
+
+MANAGEABLE
+
+HIGH
+
+SEVERE
+
+OVERLOAD.
+```
+
+---
+
+# 21. Hidden Strain
+
+A system may appear operational while accumulating severe strain.
+
+Therefore:
+
+```text
+CURRENT FUNCTION
+≠
+SYSTEM HEALTH.
+```
+
+This allows realistic delayed failure without arbitrary surprises.
+
+---
+
+# 22. Thresholds
+
+A Threshold is a condition at which an existing operating pattern can no longer continue in the same way.
+
+Thresholds may be:
+
+```text
+HARD
+
+SOFT
+
+STRUCTURAL
+
+OPERATIONAL
+
+RESOURCE-BASED.
+```
+
+---
+
+# 23. Hard Threshold
+
+A Hard Threshold represents a physical or structural constraint.
 
 Example:
 
 ```text
-Fuel Reserve:
+Generator Fuel:
 0
 ```
 
 A fuel-dependent generator cannot continue normal operation.
 
-Hard thresholds should remain relatively rare and clearly explainable.
+Hard thresholds should be:
+
+```text
+clear
+
+causal
+
+rare where appropriate
+
+domain-specific.
+```
 
 ---
 
-# Threshold Hysteresis
+# 24. Soft Threshold
 
-Improving a degraded system may require more than simply reversing the pressure that caused degradation.
+A Soft Threshold represents a condition where change becomes increasingly plausible or difficult to avoid.
+
+It does not command Actor behavior.
 
 Example:
 
 ```text
-Supply:
-STRAINED → CRITICAL
-```
-
-after logistics collapse.
-
-Restoring logistics may not immediately return supply to:
-
-```text
-STRAINED
-```
-
-because:
-
-- warehouses are empty
-- workers left
-- contracts collapsed
-- demand patterns changed
-
-This delayed recovery effect is:
-
-```text
-HYSTERESIS
-```
-
----
-
-# Hysteresis Principle
-
-The path downward and the path upward are not necessarily symmetrical.
-
-Conceptually:
-
-```text
-STABLE
-  ↓
-STRAINED
-  ↓
-DEGRADED
-```
-
-may happen rapidly.
-
-Recovery:
-
-```text
-DEGRADED
-  ↑
-STRAINED
-  ↑
-STABLE
-```
-
-may take much longer.
-
----
-
-# Momentum
-
-Systems may possess directional momentum.
-
-Conceptual values:
-
-```text
-STRONG IMPROVEMENT
-IMPROVING
-NEUTRAL
-DETERIORATING
-STRONG DETERIORATION
-```
-
-Momentum reflects accumulated processes already in motion.
-
-Example:
-
-A region may receive new aid today but still possess:
-
-```text
-Deterioration Momentum:
+Supply Pressure:
 HIGH
+
+Visible Availability:
+DECLINING.
 ```
 
-because existing failures continue propagating.
+This may influence Actors.
+
+It does not automatically create:
+
+```text
+stockpiling
+
+panic
+
+violence
+
+migration.
+```
+
+Actors still perceive and choose.
 
 ---
 
-# Momentum Delay
+# 25. Actor Threshold Boundary
 
-Intervention does not always change state immediately.
+Human decisions must not be represented as automatic World Simulation thresholds.
+
+Avoid:
+
+```text
+Trust < 20
+→ population riots.
+```
+
+Instead:
+
+```text
+WORLD CONDITIONS
+↓
+INFORMATION
+↓
+CHARACTER / SOCIETY STATE
+↓
+ACTOR PERCEPTION
+↓
+ACTOR DECISION
+↓
+ACTION
+↓
+WORLD CONSEQUENCE.
+```
+
+---
+
+# 26. Threshold Hysteresis
+
+The conditions required to recover from degradation may differ from the conditions that originally caused it.
+
+Example:
+
+```text
+Logistics failure
+↓
+Warehouses empty
+↓
+Workers relocate
+↓
+Contracts disappear.
+```
+
+Restoring transportation alone may not restore supply immediately.
+
+This is:
+
+```text
+HYSTERESIS.
+```
+
+---
+
+# 27. Hysteresis Principle
+
+Canonical rule:
+
+```text
+THE PATH DOWN
+NEED NOT MATCH
+THE PATH UP.
+```
+
+Deterioration may occur rapidly.
+
+Recovery may require reconstruction of capabilities lost during deterioration.
+
+---
+
+# 28. Trend
+
+Trend represents the current direction of a domain condition.
+
+Canonical values should normally remain compatible with World State:
+
+```text
+IMPROVING
+
+STABLE
+
+DETERIORATING
+
+VOLATILE.
+```
+
+Trend describes direction.
+
+It does not independently cause future state.
+
+---
+
+# 29. Active Causal Processes
+
+Instead of treating Momentum as an independent force, simulation should preserve processes already underway.
+
+Examples:
+
+```text
+ongoing fuel depletion
+
+repair work
+
+population movement
+
+infrastructure degradation
+
+trade restoration
+
+active conflict
+
+resource delivery.
+```
+
+These processes may continue producing consequences until something changes them.
+
+---
+
+# 30. Causal Delay
+
+Causes may take time to propagate.
 
 Example:
 
 ```text
 DAY 1
-Emergency fuel convoy arrives.
 
-DAY 1
-Fuel Pressure decreases.
+Fuel convoy arrives.
 
-DAY 2
-Transportation stabilizes.
+↓
 
-DAY 4
+Fuel pressure decreases.
+
+↓
+
+Transportation availability improves.
+
+↓
+
 Logistics improves.
 
-DAY 7
+↓
+
 Food availability improves.
 ```
 
-Cause and effect should propagate over plausible timescales.
+Each consequence occurs according to plausible system timescales.
 
 ---
 
-# Shock Events
+# 31. Shock
 
-Shock Events produce sudden pressure or direct state change.
+A Shock is a sudden condition or event capable of creating substantial pressure or direct consequences.
 
-Examples include:
-
-- severe weather
-- major infrastructure failure
-- attack
-- earthquake
-- epidemic
-- mass migration
-- major information event
-- sudden government collapse
-
-Shock severity may be:
+Examples:
 
 ```text
-MINOR
-MODERATE
-MAJOR
-SEVERE
-CATASTROPHIC
+storm
+
+earthquake
+
+attack
+
+major infrastructure failure
+
+sudden transport loss
+
+large population displacement
+
+external technological disruption.
+```
+
+A Shock is not generated by Escalation and Recovery.
+
+It originates from:
+
+```text
+World Events
+
+Actors
+
+Environment
+
+other authoritative systems.
 ```
 
 ---
 
-# Shock Absorption
+# 32. Shock Absorption
 
-Shock outcome depends upon pre-existing conditions.
+The same Shock may create different outcomes.
 
 Example:
 
 ```text
-SHOCK:
-Regional storm
+REGION A
 
-REGION A:
 High resilience
++
+redundant systems
 
-Outcome:
-Temporary disruption
+↓
+
+Temporary disruption.
 ```
 
-versus:
+Versus:
 
 ```text
-REGION B:
+REGION B
+
 Low resilience
-High existing pressure
++
+existing pressure
++
+few alternatives
 
-Outcome:
-Infrastructure cascade
+↓
+
+Major degradation.
 ```
 
-The same event may produce different histories.
+Same event.
+
+Different history.
 
 ---
 
-# Compound Shock
+# 33. Compound Conditions
 
-Multiple disruptions may interact.
+Multiple pressures may interact.
 
 Example:
 
 ```text
-Fuel shortage
+HEAT WAVE
 +
-Heat wave
+FUEL SHORTAGE
 +
-Power degradation
+POWER DEGRADATION
 ```
 
-may produce much greater pressure than any event individually.
+may produce consequences greater than any one condition alone.
 
-This is a:
-
-```text
-COMPOUND SHOCK
-```
+Compound effects require explainable interaction.
 
 ---
 
-# Compounding
+# 34. Cascade
 
-Some effects should amplify each other.
-
-Conceptually:
-
-```text
-A + B > A and B independently
-```
-
-Example:
-
-```text
-Low Information Reliability
-+
-Low Authority Trust
-```
-
-may create much stronger compliance problems than either condition alone.
-
----
-
-# Cascade
-
-A Cascade occurs when a state change creates meaningful pressure on another domain.
+A Cascade occurs when a consequence in one system creates meaningful pressure or consequences in another.
 
 Example:
 
 ```text
 POWER
-DEGRADED
-    ↓
-TELECOMMUNICATIONS
-DEGRADED
-    ↓
-INFORMATION
 DEGRADES
-    ↓
-AUTHORITY COORDINATION
-DEGRADES
-    ↓
+↓
+COMMUNICATION
+CAPACITY DECLINES
+↓
+COORDINATION
+BECOMES HARDER
+↓
 REPAIR RESPONSE
 SLOWS
-    ↓
-POWER
-DEGRADES FURTHER
+↓
+POWER RECOVERY
+SLOWS.
 ```
 
 ---
 
-# Cascade Conditions
+# 35. Cascade Requirements
 
-Cascades require:
+A cascade requires:
 
 ```text
-Dependency
+REAL DEPENDENCY
+
 +
-Insufficient Buffer
+
+RELEVANT CONSEQUENCE
+
 +
-Sufficient Severity
+
+INSUFFICIENT ABSORPTION.
 ```
 
-Without these conditions, the cascade should weaken or stop.
+Without those conditions, propagation must weaken, stop or transform.
 
 ---
 
-# Cascade Strength
+# 36. Cascades Are Not Automatic
+
+Canonical rule:
+
+```text
+FAILURE A
+DOES NOT AUTOMATICALLY
+CAUSE FAILURE B.
+```
+
+The simulation must ask:
+
+```text
+Does B depend on A?
+
+How strongly?
+
+Does B have alternatives?
+
+Does B have buffers?
+
+How long does disruption persist?
+
+Can Actors intervene?
+```
+
+---
+
+# 37. Cascade Propagation
+
+Cascades may move:
+
+```text
+DOMAIN
+→ DOMAIN
+
+REGION
+→ REGION
+
+LOCAL
+→ REGIONAL
+
+REGIONAL
+→ NATIONAL
+
+OR
+
+ACROSS MULTIPLE LAYERS.
+```
+
+Propagation follows dependencies.
+
+Not narrative importance.
+
+---
+
+# 38. Cascade Decay
+
+Cascades may weaken through:
+
+```text
+redundancy
+
+alternative supply
+
+stored resources
+
+geographic separation
+
+adaptation
+
+Actor intervention
+
+low dependency
+
+local capability.
+```
+
+This prevents universal failure.
+
+---
+
+# 39. Cascade Break
+
+A Cascade Break occurs when propagation is interrupted.
+
+Example:
+
+```text
+Grid Failure
+↓
+Hospital Power Risk
+↓
+Backup Generator
+↓
+Hospital Function Maintained.
+```
+
+The grid failed.
+
+The hospital did not.
+
+---
+
+# 40. Cascade Redirection
+
+A cascade may also change form.
+
+Example:
+
+```text
+Rail Failure
+↓
+Road Freight Increases
+↓
+Road Congestion
+↓
+Fuel Demand Increases.
+```
+
+The consequence was redirected rather than stopped.
+
+---
+
+# 41. Cascade Amplification
+
+Some systems may amplify incoming pressure.
+
+Example:
+
+```text
+Supply disruption
+
++
+
+already depleted reserves
+
+↓
+
+much larger
+availability consequence.
+```
+
+Amplification must have a causal mechanism.
+
+---
+
+# 42. Feedback Loop
+
+A Feedback Loop occurs when consequences influence conditions that feed back into the original system.
+
+Loops may be:
+
+```text
+REINFORCING
+
+STABILIZING.
+```
+
+---
+
+# 43. Reinforcing Loop
+
+Example:
+
+```text
+Fuel Shortage
+↓
+Transport Capacity Declines
+↓
+Fuel Distribution Worsens
+↓
+Fuel Shortage Deepens.
+```
+
+The loop accelerates deterioration.
+
+---
+
+# 44. Stabilizing Loop
+
+Example:
+
+```text
+Electricity Pressure
+↓
+Demand Reduction
+↓
+Grid Load Declines
+↓
+Electricity Pressure Falls.
+```
+
+Stabilizing loops are as important as reinforcing loops.
+
+---
+
+# 45. Positive Cascades
+
+Cascades are not inherently negative.
+
+Example:
+
+```text
+Road Restored
+↓
+Fuel Delivery Improves
+↓
+Repair Capacity Improves
+↓
+Power Restoration Accelerates
+↓
+Communication Improves.
+```
+
+Recovery may propagate.
+
+---
+
+# 46. No Automatic Cascade
+
+Even a strong dependency does not mean every disturbance propagates.
+
+Canonical rule:
+
+```text
+CASCADE
+=
+POSSIBLE CONSEQUENCE
+
+NOT
+
+MANDATORY CONSEQUENCE.
+```
+
+---
+
+# 47. Escalation
+
+Escalation occurs when the forces driving deterioration increasingly exceed the system's ability to absorb or counter them.
 
 Conceptually:
 
 ```text
-WEAK
-MODERATE
-STRONG
-SEVERE
-```
-
-Strength may depend upon:
-
-- dependency importance
-- available buffers
-- redundancy
-- duration
-- number of affected systems
-
----
-
-# Cascade Propagation
-
-A cascade may travel:
-
-```text
-DOMAIN → DOMAIN
-```
-
-or:
-
-```text
-REGION → REGION
-```
-
-or both.
-
-Example:
-
-```text
-REGION A fuel failure
-      ↓
-Reduced exports
-      ↓
-REGION B supply pressure
-      ↓
-REGION B population behavior
-      ↓
-Regional migration
-      ↓
-REGION C housing pressure
-```
-
----
-
-# Cascade Decay
-
-Cascades should naturally lose strength when encountering:
-
-- redundancy
-- low dependency
-- resource buffers
-- adaptation
-- strong governance
-- alternate supply
-- geographic separation
-
-This prevents every disruption from becoming universal.
-
----
-
-# Cascade Break
-
-A Cascade Break occurs when intervention or resilience stops propagation.
-
-Example:
-
-```text
-Power degradation
-      ↓
-Hospital risk
-      ↓
-Emergency generators
-      ↓
-CASCADE STOPS
-```
-
-Cascade Breaks are important positive system outcomes.
-
----
-
-# Reinforcing Loop
-
-A Reinforcing Loop amplifies its own effects.
-
-Example:
-
-```text
-INFORMATION UNCERTAINTY
-        ↓
-STOCKPILING
-        ↓
-VISIBLE SHORTAGE
-        ↓
-PERCEIVED SHORTAGE
-        ↓
-MORE STOCKPILING
-```
-
-This produces acceleration.
-
----
-
-# Stabilizing Loop
-
-A Stabilizing Loop reduces pressure.
-
-Example:
-
-```text
-SUPPLY PRESSURE
-      ↓
-CONSERVATION REQUEST
-      ↓
-DEMAND DECLINES
-      ↓
-SUPPLY PRESSURE DECREASES
-```
-
-World Simulation should contain both reinforcing and stabilizing loops.
-
----
-
-# Positive Recovery Loop
-
-Recovery may become self-reinforcing.
-
-Example:
-
-```text
-Power restored
-    ↓
-Communications improve
-    ↓
-Repair coordination improves
-    ↓
-Additional infrastructure restored
-    ↓
-Authority confidence improves
-    ↓
-Population cooperation improves
-```
-
-Recovery can cascade just as failure can.
-
----
-
-# Negative Recovery Loop
-
-Recovery may also stall.
-
-Example:
-
-```text
-Infrastructure damaged
-      ↓
-Economy weakens
-      ↓
-Tax/resources decline
-      ↓
-Repair funding declines
-      ↓
-Infrastructure remains damaged
-```
-
-This creates persistent low-function states.
-
----
-
-# Escalation
-
-Escalation means pressure increasingly overwhelms resilience.
-
-A conceptual pattern:
-
-```text
 PRESSURE
-MODERATE
++
+ACTIVE NEGATIVE PROCESSES
++
+DEPENDENCY EFFECTS
+
+OUTRUN
 
 RESILIENCE
-HIGH
-
-STATE
-STABLE
++
+BUFFERS
++
+MITIGATION
++
+RECOVERY ACTION.
 ```
 
-later:
-
-```text
-PRESSURE
-HIGH
-
-RESILIENCE
-MODERATE
-
-STATE
-STRAINED
-```
-
-later:
-
-```text
-PRESSURE
-SEVERE
-
-RESILIENCE
-LOW
-
-STATE
-DEGRADED
-```
-
-No date is predetermined.
-
-The system changes because conditions changed.
+No universal numeric equation is required.
 
 ---
 
-# Escalation Rate
+# 48. Escalation Rate
 
-Different systems escalate at different speeds.
-
-Possible rates:
-
-```text
-SLOW
-MODERATE
-FAST
-RAPID
-SUDDEN
-```
+Different systems operate on different timescales.
 
 Examples:
 
 ```text
-Political legitimacy:
-Often slow.
+Power outage:
+seconds to hours
 
 Fuel availability:
-May change rapidly.
+hours to days
 
-Telecommunications outage:
-May be sudden.
+Supply-chain degradation:
+days to weeks
 
-Migration:
-May accelerate over days or weeks.
+Infrastructure maintenance debt:
+months to years
+
+Population redistribution:
+days to years
+
+Institutional transformation:
+months to decades.
 ```
+
+Domain systems define meaningful timing.
 
 ---
 
-# Escalation Visibility
+# 49. Escalation Visibility Boundary
 
-Escalation may be:
+Actual deterioration belongs to World State.
 
-```text
-VISIBLE
-PARTIALLY VISIBLE
-HIDDEN
-```
+Whether observers know about it belongs elsewhere.
 
 Example:
 
 ```text
-Public Power Service:
-Normal
+Actual Infrastructure:
+STRAINED
 
-Maintenance Debt:
-Critical
+Public Observation:
+NORMAL
+
+Information Confidence:
+LOW.
 ```
 
-The deterioration is mostly hidden until a visible failure occurs.
+Escalation and Recovery owns the causal transition.
+
+Not observer knowledge.
 
 ---
 
-# Early Warning
+# 50. Early Warning
 
-Systems may generate Early Warning indicators before state transitions.
+A domain may expose observable indicators before a transition.
 
 Examples:
 
-- declining reserve margin
-- rising absenteeism
-- longer verification delays
-- growing repair backlog
-- increasing rumor propagation
-- declining institutional compliance
+```text
+declining reserve margin
 
-Early warnings create opportunities for intervention.
+repair backlog
+
+increasing delivery delay
+
+rising failure frequency
+
+reduced redundancy.
+```
+
+These indicators become Information Objects when observed.
+
+They are not automatically known.
 
 ---
 
-# Intervention
+# 51. Actor Intervention
 
-Intervention represents deliberate action intended to alter trajectory.
+Escalation and Recovery does not own Intervention decisions.
 
-Possible actors include:
+Actors decide to act.
 
-- government
-- communities
-- corporations
-- factions
-- military
-- players
-- external allies
+Examples:
 
-Intervention may target:
+```text
+government
+
+community
+
+corporation
+
+Faction
+
+Security Actor
+
+Character
+
+player-controlled Character.
+```
+
+Canonical flow:
+
+```text
+ACTOR
+PERCEIVES CONDITION
+↓
+ACTOR DECIDES
+↓
+ACTION ATTEMPT
+↓
+ACTION RESOLUTION
+↓
+WORLD CONSEQUENCE
+↓
+TRANSITION PRESSURES CHANGE.
+```
+
+---
+
+# 52. Intervention Targets
+
+Actor action may affect:
 
 ```text
 Pressure
+
 Resilience
-Recovery
-Dependency
+
+Buffers
+
+Dependencies
+
 Demand
-Information
-Behavior
+
+Recovery Capacity
+
+Resource Availability
+
+Infrastructure
+
+Security
+
+Information Availability.
 ```
+
+The relevant authoritative domain owns the resulting state.
 
 ---
 
-# Pressure Reduction
+# 53. Intervention Cost
+
+Meaningful interventions normally require:
+
+```text
+resources
+
+time
+
+capability
+
+access
+
+authority
+
+coordination
+
+opportunity cost.
+```
 
 Example:
 
 ```text
-Fuel Pressure:
-HIGH
+Industrial curtailment
+↓
+Electricity demand falls
 
-Intervention:
-Emergency imports.
+BUT
 
-Result:
-Fuel Pressure decreases.
+Industrial production falls.
 ```
 
 ---
 
-# Resilience Increase
+# 54. Intervention Failure
+
+Actor actions may fail because of:
+
+```text
+insufficient capability
+
+incorrect beliefs
+
+poor information
+
+missing resources
+
+unexpected dependency
+
+timing
+
+opposition
+
+world conditions.
+```
+
+Failure must remain explainable through Action Resolution.
+
+---
+
+# 55. Intervention Side Effects
+
+Successful action may still create secondary consequences.
 
 Example:
 
 ```text
-Power Resilience:
-LOW
+Fuel Rationing
+↓
+Emergency Services Stabilize
 
-Intervention:
-Microgrid installation.
+BUT
 
-Result:
-Power Resilience increases.
+Civilian Mobility Declines
+↓
+Workforce Availability Changes.
 ```
+
+Success is not the absence of cost.
 
 ---
 
-# Dependency Reduction
+# 56. Player Action
+
+Player-controlled Characters obey exactly the same causal architecture.
+
+Canonical rule:
+
+```text
+PLAYER ACTION
+IS
+ACTOR ACTION.
+```
+
+Players do not receive privileged world physics.
+
+---
+
+# 57. Player Failure
+
+Failure does not automatically produce catastrophe.
 
 Example:
 
 ```text
-Food Dependency:
-HIGH external dependency
-
-Intervention:
-Local agricultural expansion.
-
-Result:
-External dependency decreases.
+Convoy attempt fails.
 ```
+
+Possible consequence:
+
+```text
+Fuel pressure increases.
+```
+
+What happens next depends on remaining options and conditions.
 
 ---
 
-# Demand Reduction
+# 58. Player-Created Cascades
+
+Players may create unintended consequences.
 
 Example:
 
 ```text
-Electricity Demand:
-HIGH
-
-Intervention:
-Industrial curtailment.
-
-Result:
-Grid strain decreases.
+Bridge Destroyed
+to block hostile movement
+↓
+Security Pressure Reduced Locally
+↓
+Regional Transport Capacity Declines
+↓
+Supply Pressure Increases.
 ```
+
+The same causal rules apply.
 
 ---
 
-# Information Intervention
-
-Example:
-
-```text
-Rumor:
-Water unsafe.
-
-Intervention:
-Independent testing + trusted local communication.
-
-Result:
-Perceived Threat decreases.
-```
-
----
-
-# Intervention Cost
-
-Interventions should require resources or create tradeoffs.
-
-Examples:
-
-```text
-Industrial shutdown
-reduces power demand
-but reduces economic output.
-```
-
-or:
-
-```text
-Grid isolation
-reduces propagation risk
-but reduces regional efficiency.
-```
-
-There should rarely be costless solutions.
-
----
-
-# Intervention Failure
-
-Interventions may fail because of:
-
-- incorrect information
-- insufficient resources
-- poor implementation
-- low compliance
-- unexpected dependency
-- timing
-- external events
-
-Failure should be explainable.
-
----
-
-# Intervention Side Effects
-
-Successful interventions may still create secondary consequences.
-
-Example:
-
-```text
-Fuel rationing
-      ↓
-Emergency services stabilized
-      ↓
-Civilian mobility reduced
-      ↓
-Workforce attendance declines
-```
-
-This produces strategic tradeoffs.
-
----
-
-# Stabilization
+# 59. Stabilization
 
 Stabilization occurs when deterioration stops.
 
-This does not require improvement.
+It does not require restoration.
 
 Example:
 
@@ -1348,64 +1648,44 @@ Infrastructure:
 DEGRADED
 
 Trend:
-STABLE
+STABLE.
 ```
 
-This may be a significant success.
+This may represent a major success.
 
 ---
 
-# Stabilization Conditions
+# 60. Stable Degradation
 
-Stabilization may occur when:
-
-```text
-Pressure
-≤
-Resilience + Adaptation
-```
-
-conceptually.
-
-Possible mechanisms include:
-
-- reduced demand
-- successful rationing
-- emergency repair
-- community adaptation
-- isolation
-- new supply routes
-
----
-
-# Stable Degradation
-
-A region may remain permanently at a lower functional level.
+A lower-function state may become sustainable.
 
 Example:
 
 ```text
-Pre-Crisis:
-Infrastructure = Stable
+Electricity:
+LIMITED
 
-Post-Crisis:
-Infrastructure = Degraded
+Schedule:
+PREDICTABLE
+
+Local Adaptation:
+HIGH
 
 Trend:
-Stable
+STABLE.
 ```
 
-Society adapts around the lower capability.
+The system remains below its historical capability.
 
-This is a valid equilibrium.
+It is no longer deteriorating.
 
 ---
 
-# Equilibrium
+# 61. Equilibrium
 
-An Equilibrium is a condition where pressures and stabilizing forces approximately balance.
+An Equilibrium is a persistent condition in which pressures and stabilizing forces no longer produce rapid structural change.
 
-Possible equilibria include:
+Possible forms include:
 
 ```text
 HIGH-FUNCTION EQUILIBRIUM
@@ -1414,901 +1694,24 @@ LOW-FUNCTION EQUILIBRIUM
 
 FRAGMENTED EQUILIBRIUM
 
-RECOVERY EQUILIBRIUM
+ADAPTED EQUILIBRIUM
+
+RECOVERING EQUILIBRIUM.
 ```
 
-A lower equilibrium is not automatically temporary.
+No equilibrium is automatically temporary.
 
 ---
 
-# Fragile Stability
+# 62. Fragile Stability
 
-A system may appear stable because pressures and resilience are balanced very closely.
+A system may be stable with little remaining margin.
 
-Conceptually:
+Example:
 
 ```text
 State:
-Stable
-
-Margin:
-Minimal
-```
-
-A small shock may trigger rapid deterioration.
-
-This is:
-
-```text
-FRAGILE STABILITY
-```
-
----
-
-# Robust Stability
-
-```text
-State:
-Stable
-
-Resilience:
-High
-
-Pressure:
-Low
-
-Margin:
-High
-```
-
-The system can absorb additional disruption.
-
----
-
-# Recovery
-
-Recovery begins when stabilizing forces consistently exceed degradation forces.
-
-Recovery may involve:
-
-```text
-Repair
-Reconnection
-Resource Restoration
-Institutional Reform
-Population Return
-Trust Restoration
-Adaptation
-```
-
----
-
-# Recovery Stages
-
-A conceptual recovery sequence:
-
-```text
-SURVIVAL
-    ↓
-STABILIZATION
-    ↓
-RESTORATION
-    ↓
-ADAPTATION
-    ↓
-DEVELOPMENT
-```
-
-Not every system passes through every stage.
-
----
-
-# Survival
-
-```text
-SURVIVAL
-```
-
-Immediate objective:
-
-Prevent further deterioration.
-
-Examples:
-
-- emergency power
-- basic food distribution
-- local security
-- temporary shelter
-
----
-
-# Stabilization
-
-```text
-STABILIZATION
-```
-
-Objective:
-
-Create predictable operation.
-
-Examples:
-
-- scheduled electricity
-- reliable rationing
-- consistent local communication
-- defined authority
-
----
-
-# Restoration
-
-```text
-RESTORATION
-```
-
-Objective:
-
-Recover lost capability.
-
-Examples:
-
-- repair infrastructure
-- restore trade
-- reopen hospitals
-- reconnect networks
-
----
-
-# Adaptation
-
-```text
-ADAPTATION
-```
-
-Objective:
-
-Replace systems that cannot or should not be restored.
-
-Examples:
-
-- microgrids
-- local governance
-- regional supply chains
-- radio communication networks
-
----
-
-# Development
-
-```text
-DEVELOPMENT
-```
-
-Objective:
-
-Build beyond immediate recovery.
-
-Examples:
-
-- new institutions
-- improved technology
-- new economic systems
-- regional alliances
-- expansion
-
-This becomes increasingly relevant in The Reconnection.
-
----
-
-# Recovery Threshold
-
-Improvement should normally require more than temporary pressure reduction.
-
-Example:
-
-```text
-Infrastructure:
-CRITICAL
-
-Pressure:
-LOW
-```
-
-may stabilize the condition.
-
-Actual recovery may also require:
-
-```text
-Repair Capacity:
-MODERATE+
-```
-
-Without repair capability, the system may remain Critical but stable.
-
----
-
-# Recovery Momentum
-
-Once recovery begins, it may develop momentum.
-
-Example:
-
-```text
-Road restored
-    ↓
-Fuel deliveries improve
-    ↓
-Repair capacity improves
-    ↓
-Power repairs accelerate
-    ↓
-Economic activity improves
-```
-
-This is a Recovery Cascade.
-
----
-
-# Recovery Bottleneck
-
-Recovery may be limited by one critical factor.
-
-Example:
-
-```text
-Resources:
-Available
-
-Personnel:
-Available
-
-Security:
-Stable
-
-BUT
-
-Transportation:
-Failed
-```
-
-Recovery remains slow.
-
-The limiting factor is the:
-
-```text
-RECOVERY BOTTLENECK
-```
-
----
-
-# Bottleneck Identification
-
-The simulation should identify the strongest limiting factor where useful.
-
-Examples:
-
-```text
-Repair Parts
-Fuel
-Skilled Personnel
-Security
-Authority
-Communications
-Transportation
-```
-
-Removing one bottleneck may dramatically accelerate recovery.
-
----
-
-# Adaptation
-
-Adaptation changes the system rather than simply restoring it.
-
-Examples:
-
-```text
-Formal national supply chains
-        ↓
-Regional trade networks
-
-Centralized healthcare
-        ↓
-Distributed clinics
-
-Automated infrastructure
-        ↓
-Hybrid human control
-```
-
-Adaptation may increase resilience while reducing efficiency.
-
----
-
-# Adaptation Pressure
-
-Persistent disruption increases pressure to adapt.
-
-Conceptually:
-
-```text
-REPEATED FAILURE
-      ↓
-OLD SOLUTION BECOMES UNRELIABLE
-      ↓
-EXPERIMENTATION
-      ↓
-ADAPTATION
-```
-
----
-
-# Successful Adaptation
-
-Successful adaptation may:
-
-- reduce dependency
-- increase local resilience
-- improve recovery
-- create new institutions
-- change culture
-
----
-
-# Failed Adaptation
-
-Not every new system succeeds.
-
-Failure may result from:
-
-- inadequate resources
-- poor design
-- lack of trust
-- political conflict
-- technical limitations
-
-Failed adaptations should remain part of historical memory.
-
----
-
-# Path Dependence
-
-Early decisions may shape later possibilities.
-
-Example:
-
-```text
-Region chooses grid isolation early.
-```
-
-Later:
-
-```text
-Regional energy autonomy improves.
-```
-
-But:
-
-```text
-National reconnection becomes harder.
-```
-
-This is:
-
-```text
-PATH DEPENDENCE
-```
-
-History constrains future options.
-
----
-
-# Irreversible Change
-
-Some transitions may be difficult or impossible to reverse.
-
-Examples:
-
-- destroyed infrastructure
-- lost population
-- ecological damage
-- collapsed institutions
-- lost technical knowledge
-
-These should create long-term consequences.
-
----
-
-# Reversible Change
-
-Other changes are easier to undo.
-
-Examples:
-
-- temporary rationing
-- restricted travel
-- network isolation
-- emergency curfew
-
-The system should distinguish reversible and irreversible decisions where relevant.
-
----
-
-# Option Preservation
-
-Actors may deliberately preserve future options.
-
-Example:
-
-```text
-Authority chooses temporary isolation
-rather than destruction.
-```
-
-This may increase short-term cost while preserving long-term recovery possibilities.
-
-This principle mirrors several historical decisions established in Recovered Records.
-
----
-
-# Regional Divergence
-
-Escalation and recovery must operate regionally.
-
-Example:
-
-```text
-GLOBAL PRESSURE:
-HIGH
-```
-
-does not imply:
-
-```text
-ALL REGIONS:
-DEGRADED
-```
-
-Instead:
-
-```text
-REGION A
-High resilience
-→ Stable
-
-REGION B
-Moderate resilience
-→ Strained
-
-REGION C
-Low resilience
-→ Critical
-```
-
-Regional divergence is an expected outcome.
-
----
-
-# Divergence Feedback
-
-Regional differences may grow over time.
-
-Example:
-
-```text
-Stable Region
-    ↓
-Attracts migration and trade
-    ↓
-Gains workforce
-    ↓
-Recovery improves
-```
-
-while:
-
-```text
-Critical Region
-    ↓
-Loses workforce
-    ↓
-Repair capacity declines
-    ↓
-Recovery slows
-```
-
-This may create widening regional inequality.
-
----
-
-# Convergence
-
-Regions may also become more similar through:
-
-- trade
-- aid
-- political integration
-- shared infrastructure
-- migration
-- common standards
-
-Convergence becomes particularly important during The Reconnection.
-
----
-
-# Cross-Regional Assistance
-
-Stable regions may assist weaker neighbors.
-
-Examples:
-
-- food
-- fuel
-- repair teams
-- medical support
-- security
-- communications
-
-Assistance may reduce local reserves.
-
-This creates political and strategic decisions.
-
----
-
-# Assistance Decision
-
-Example:
-
-```text
-REGION A
-
-Supply:
-Adequate
-
-Neighbor Region B:
-Critical
-
-Decision:
-Export food aid.
-```
-
-Possible consequences:
-
-```text
-Region B:
-Pressure decreases.
-
-Region A:
-Supply resilience decreases.
-
-Regional Relationship:
-Improves.
-```
-
-No decision is purely local.
-
----
-
-# Collapse
-
-Collapse should not be a single universal state.
-
-A domain may collapse.
-
-An institution may collapse.
-
-A regional system may collapse.
-
-Society as a whole may continue functioning through adaptation.
-
----
-
-# Functional Collapse
-
-Functional Collapse occurs when a domain can no longer perform its expected function at the simulated level.
-
-Example:
-
-```text
-National Logistics:
-FAILED
-```
-
-while:
-
-```text
-Regional Logistics:
 FUNCTIONAL
-```
-
-Logistics has not disappeared.
-
-Its previous organizational level has collapsed.
-
----
-
-# Cascading Collapse
-
-Multiple domain collapses may reinforce each other.
-
-Example:
-
-```text
-Authority
-FAILED
-
-Information
-FRAGMENTED
-
-Infrastructure
-CRITICAL
-
-Supply
-CRITICAL
-```
-
-This creates a high-risk environment for wider regional collapse.
-
-It still does not guarantee permanent failure.
-
----
-
-# Systemic Collapse
-
-Systemic Collapse occurs when enough interconnected domains lose function that the existing regional operating model can no longer be sustained.
-
-The result should usually be:
-
-```text
-TRANSFORMATION
-```
-
-not:
-
-```text
-NOTHING EXISTS
-```
-
-New structures emerge.
-
----
-
-# Transformation
-
-When the old system cannot recover, the simulation should ask:
-
-```text
-What replaces it?
-```
-
-Possible answers include:
-
-- new governance
-- new infrastructure
-- new trade
-- new communities
-- new technology
-- new social norms
-
-This is how The Fractured World becomes a living civilization rather than permanent emergency.
-
----
-
-# Escalation and Canonical World States
-
-The system supports the broad historical transitions:
-
-```text
-WS-01
-THE CONNECTED WORLD
-
-        ↓
-
-WS-02
-THE TRANSITION
-
-        ↓
-
-WS-03
-THE FRACTURED WORLD
-
-        ↓
-
-WS-04
-THE RECONNECTION
-```
-
-However, these historical World States must not be generated simply by averaging simulation variables.
-
-They are canonical historical eras.
-
-Dynamic states explain how regions behave within those eras.
-
----
-
-# The Connected World
-
-Typical dynamics include:
-
-```text
-High efficiency
-High connectivity
-High dependency
-Low visible pressure
-Strong recovery systems
-```
-
-Disruption is usually absorbed quickly.
-
----
-
-# The Transition
-
-Typical dynamics include:
-
-```text
-Pressure accumulation
-Protective intervention
-Dependency exposure
-Information uncertainty
-Regional divergence
-```
-
-The major question is whether existing institutions can adapt quickly enough.
-
----
-
-# The Fractured World
-
-Typical dynamics include:
-
-```text
-Regional equilibria
-Local adaptation
-Reduced long-distance coordination
-New institutions
-Persistent fragmentation
-```
-
-The system is no longer continuously collapsing.
-
-New normal states have emerged.
-
----
-
-# The Reconnection
-
-Typical dynamics include:
-
-```text
-Recovery cascades
-Network expansion
-Institutional negotiation
-Regional integration
-New dependencies
-New risks
-```
-
-Reconnection itself may create instability.
-
----
-
-# Recovery Risk
-
-Recovery may increase dependency again.
-
-Example:
-
-```text
-Independent Regional Networks
-        ↓
-Interconnection
-        ↓
-Efficiency increases
-        ↓
-Shared dependency increases
-```
-
-This creates an important Reconnection theme:
-
-```text
-How much integration is safe?
-```
-
----
-
-# Recovery Does Not Mean Return
-
-Project Ascension should never assume:
-
-```text
-RECOVERY
-=
-RETURN TO 2033
-```
-
-Instead:
-
-```text
-RECOVERY
-=
-A STABLE WORLD CAPABLE OF SUSTAINING LIFE,
-INSTITUTIONS AND DEVELOPMENT
-```
-
-even if that world operates very differently.
-
----
-
-# Transition Evaluation
-
-A domain update may conceptually evaluate:
-
-```text
-1. Current State
-2. Active Pressure
-3. Pressure Duration
-4. Resilience
-5. Remaining Buffers
-6. Recovery Capacity
-7. Dependencies
-8. Active Cascades
-9. Active Interventions
-10. Momentum
-11. Historical Modifiers
-```
-
-and determine:
-
-```text
-DETERIORATE
-STABILIZE
-IMPROVE
-NO CHANGE
-```
-
----
-
-# No Mandatory Numeric Formula
-
-The first implementation should not require a complex universal mathematical formula.
-
-Different domains behave differently.
-
-For example:
-
-```text
-Fuel
-```
-
-may respond quickly to inventory depletion.
-
-```text
-Political Legitimacy
-```
-
-may respond more slowly and socially.
-
-The system should use common concepts while allowing domain-specific transition logic.
-
----
-
-# Explainable Simulation
-
-Every significant state transition should preserve an explanation.
-
-Example:
-
-```text
-Supply:
-STRAINED → CONSTRAINED
-
-Primary Cause:
-Rail disruption
-
-Secondary Cause:
-Population increase
 
 Pressure:
 HIGH
@@ -2316,17 +1719,619 @@ HIGH
 Resilience:
 MODERATE
 
-Mitigation:
-Local food reserves
+Remaining Buffers:
+LOW
+
+Trend:
+STABLE.
 ```
 
-This is the Transition Record.
+A small additional disruption may create major consequences.
 
 ---
 
-# Transition Record
+# 63. Robust Stability
 
-Important transitions may create a lightweight internal record.
+Example:
+
+```text
+State:
+FUNCTIONAL
+
+Pressure:
+LOW
+
+Resilience:
+HIGH
+
+Buffers:
+AVAILABLE
+
+Trend:
+STABLE.
+```
+
+The system possesses meaningful ability to absorb future disruption.
+
+---
+
+# 64. Recovery Capacity
+
+Recovery Capacity represents the ability to restore, replace or rebuild lost function.
+
+It may depend on:
+
+```text
+resources
+
+personnel
+
+expertise
+
+tools
+
+transport
+
+security
+
+information
+
+authority
+
+time
+
+external assistance
+
+functional dependencies.
+```
+
+These inputs remain owned by their authoritative systems.
+
+---
+
+# 65. Resilience vs Recovery Capacity
+
+Canonical distinction:
+
+```text
+RESILIENCE
+
+How well can
+the system avoid
+losing function?
+
+
+RECOVERY CAPACITY
+
+How well can
+the system regain
+or replace function
+after loss?
+```
+
+A system may have:
+
+```text
+High Resilience
+Low Recovery Capacity
+```
+
+or:
+
+```text
+Low Resilience
+High Recovery Capacity.
+```
+
+---
+
+# 66. Recovery Requirement
+
+Reduced pressure is not sufficient for recovery.
+
+Conceptually:
+
+```text
+PRESSURE REDUCED
++
+RECOVERY CAPABILITY
++
+RESOURCES
++
+TIME
++
+ACTION
++
+ACCESS
+↓
+POSSIBLE RECOVERY.
+```
+
+---
+
+# 67. Recovery Bottleneck
+
+Recovery may be constrained by a single limiting dependency.
+
+Example:
+
+```text
+Repair Parts:
+AVAILABLE
+
+Personnel:
+AVAILABLE
+
+Security:
+STABLE
+
+Transportation:
+FAILED.
+```
+
+Transportation becomes the bottleneck.
+
+---
+
+# 68. Bottleneck Principle
+
+Removing one bottleneck may reveal another.
+
+Example:
+
+```text
+Transportation Restored
+↓
+Parts Reach Region
+↓
+Skilled Personnel
+becomes new bottleneck.
+```
+
+Recovery is therefore dynamic.
+
+---
+
+# 69. Recovery Cascade
+
+Recovery in one system may improve another.
+
+Example:
+
+```text
+Road Restored
+↓
+Fuel Delivery Improves
+↓
+Repair Teams Mobilize
+↓
+Power Restored
+↓
+Communication Improves.
+```
+
+Positive propagation follows the same dependency logic as deterioration.
+
+---
+
+# 70. Recovery Lag
+
+Recovery effects may appear at different speeds.
+
+Example:
+
+```text
+Bridge Repaired:
+TODAY
+
+Supply Availability:
+IMPROVES OVER DAYS
+
+Regional Production:
+IMPROVES OVER WEEKS.
+```
+
+Causal delay must be preserved.
+
+---
+
+# 71. Uneven Recovery
+
+Recovery should rarely occur uniformly.
+
+Example:
+
+```text
+Power:
+IMPROVING
+
+Supply:
+STABLE
+
+Security:
+STRAINED
+
+Information:
+FRAGMENTED
+
+Authority:
+ADAPTING.
+```
+
+Regions recover in layers.
+
+---
+
+# 72. Local Recovery
+
+Local recovery may occur while higher-level systems remain fragmented.
+
+Example:
+
+```text
+Nation:
+FRAGMENTED
+
+Region:
+STABLE
+
+Settlement:
+RECOVERING.
+```
+
+This should be common during The Fractured World.
+
+---
+
+# 73. Adaptation
+
+Adaptation changes how a system functions rather than merely restoring its earlier form.
+
+Examples:
+
+```text
+National supply chains
+↓
+Regional trade networks
+
+Centralized healthcare
+↓
+Distributed clinics
+
+Centralized electricity
+↓
+Microgrids
+
+National communication dependency
+↓
+Regional radio networks.
+```
+
+---
+
+# 74. Adaptation Requires Actors
+
+Systems do not consciously adapt themselves.
+
+Canonical flow:
+
+```text
+REPEATED FAILURE
+↓
+ACTORS EXPERIENCE CONSEQUENCES
+↓
+ACTORS PERCEIVE PROBLEM
+↓
+ACTORS DEVELOP ALTERNATIVES
+↓
+ACTION
+↓
+WORLD CONSEQUENCE
+↓
+POSSIBLE ADAPTATION.
+```
+
+Adaptation emerges from Actor action and world conditions.
+
+---
+
+# 75. Successful Adaptation
+
+Successful adaptation may:
+
+```text
+reduce dependency
+
+increase resilience
+
+increase recovery capacity
+
+create redundancy
+
+reduce efficiency
+
+change resource requirements
+
+create new dependencies.
+```
+
+Adaptation is not automatically superior.
+
+---
+
+# 76. Failed Adaptation
+
+New systems may fail.
+
+Possible causes include:
+
+```text
+insufficient resources
+
+technical limitations
+
+poor design
+
+incorrect assumptions
+
+Actor opposition
+
+security conditions
+
+missing expertise
+
+dependency failure.
+```
+
+Failed attempts remain part of Systemic History when significant.
+
+---
+
+# 77. Transformation
+
+Transformation occurs when the operating structure after disruption becomes materially different from the previous structure.
+
+Conceptually:
+
+```text
+OLD SYSTEM
+↓
+DISRUPTION
+↓
+FAILURE / DEGRADATION
+↓
+ACTOR RESPONSE
+↓
+ADAPTATION
+↓
+NEW SYSTEM.
+```
+
+Transformation is not equivalent to collapse.
+
+---
+
+# 78. Functional Collapse
+
+Functional Collapse occurs when a system can no longer perform its expected function at the relevant simulation level.
+
+Example:
+
+```text
+National Logistics:
+FAILED
+
+Regional Logistics:
+FUNCTIONAL.
+```
+
+The function did not disappear universally.
+
+Its former organizational structure failed.
+
+---
+
+# 79. Systemic Collapse
+
+Systemic Collapse occurs when enough interconnected functions fail that the existing operating model can no longer sustain itself.
+
+Canonical interpretation:
+
+```text
+SYSTEMIC COLLAPSE
+=
+END OF
+AN OPERATING MODEL
+
+NOT
+
+END OF
+HUMAN ORGANIZATION.
+```
+
+---
+
+# 80. Collapse and Transformation
+
+When an old system can no longer function, the simulation must ask:
+
+```text
+WHAT HAPPENS NEXT?
+```
+
+Possible outcomes include:
+
+```text
+replacement
+
+fragmentation
+
+localization
+
+adaptation
+
+new institutions
+
+new trade
+
+new governance structures
+
+new infrastructure
+
+persistent absence of function.
+```
+
+---
+
+# 81. Path Dependence
+
+Past decisions alter future possibilities.
+
+Example:
+
+```text
+Region isolates grid
+during Transition
+↓
+Regional energy autonomy develops
+↓
+Future national reconnection
+becomes technically
+and politically different.
+```
+
+History constrains future options.
+
+---
+
+# 82. Option Preservation
+
+Actors may deliberately preserve future possibilities.
+
+Example:
+
+```text
+Temporary isolation
+instead of
+permanent destruction.
+```
+
+This may create short-term cost while retaining future options.
+
+The decision belongs to the Actor.
+
+The consequences belong to World Simulation.
+
+---
+
+# 83. Irreversible Change
+
+Some consequences may be difficult or impossible to reverse.
+
+Examples:
+
+```text
+destroyed infrastructure
+
+ecological damage
+
+population loss
+
+lost technical capability
+
+physical destruction
+
+institutional disappearance.
+```
+
+Irreversibility must have a concrete cause.
+
+---
+
+# 84. Reversible Change
+
+Other changes may be easier to reverse.
+
+Examples:
+
+```text
+temporary rationing
+
+temporary route restriction
+
+network isolation
+
+temporary shutdown.
+```
+
+Reversibility should be domain-specific.
+
+---
+
+# 85. Systemic History
+
+Meaningful transitions may become part of Systemic History.
+
+Do not call this:
+
+```text
+Historical Memory.
+```
+
+World systems do not remember psychologically.
+
+Systemic History records:
+
+```text
+WHAT HAPPENED
+
+WHERE
+
+WHEN
+
+WHY
+
+WHAT CHANGED.
+```
+
+---
+
+# 86. Historical Effects
+
+Past events may alter current conditions through persistent consequences.
+
+Example:
+
+```text
+Previous bridge destruction
+↓
+Transport redundancy remains low.
+```
+
+Human interpretation of past events belongs elsewhere.
+
+Example:
+
+```text
+Distrust caused by
+previous evacuation failure
+```
+
+belongs to:
+
+```text
+Characters
+
+Relationships
+
+Society.
+```
+
+---
+
+# 87. Transition Record
+
+Important transitions should create lightweight causal records.
 
 Conceptually:
 
@@ -2340,12 +2345,12 @@ Region:
 Northern Virginia
 
 Previous State:
-Strained
+STRAINED
 
 New State:
-Constrained
+CONSTRAINED
 
-Date:
+Time:
 2034-07-04
 
 Primary Causes:
@@ -2355,489 +2360,1101 @@ Primary Causes:
 Mitigating Factors:
 - warehouse reserves
 
-Trigger:
-Sustained high pressure
+Relevant Dependencies:
+- transportation
+- fuel
 
-Confidence:
-High
+Actor Actions:
+- emergency distribution
+
+Result:
+State transition.
 ```
 
 ---
 
-# Why Transition Records Matter
+# 88. Transition Records Do Not Store Observer Confidence
 
-They support:
+Avoid:
 
-- debugging
-- campaign history
-- AI narrative generation
-- Recovered Record generation
-- Game Master explanation
-- consistency
+```text
+Confidence:
+HIGH
+```
+
+inside authoritative transition truth.
+
+If a transition is uncertain to an observer:
+
+```text
+WORLD TRUTH
+→ Transition Record
+
+OBSERVER CERTAINTY
+→ Information / Knowledge system.
+```
+
+---
+
+# 89. Why Transition Records Matter
+
+Transition Records support:
+
+```text
+causal trace
+
+debugging
+
+continuity
+
+Systemic History
+
+simulation validation
+
+GM explanation
+
+Narrative interpretation.
+```
 
 The simulation should be able to answer:
 
-**Why did this happen?**
+> **Why did this happen?**
 
 ---
 
-# Historical Promotion
+# 90. Regional Divergence
 
-Some simulation events may eventually become major historical events.
-
-Conceptually:
-
-```text
-SIMULATION EVENT
-      ↓
-REGIONAL SIGNIFICANCE
-      ↓
-WORLD SIGNIFICANCE
-      ↓
-HISTORICAL MEMORY
-```
-
-Not every event becomes history.
-
----
-
-# Living Campaign Engine Integration
-
-Escalation and Recovery produces:
-
-```text
-PRESSURES
-TRANSITIONS
-CASCADE RISKS
-RECOVERY OPPORTUNITIES
-```
-
-The Living Campaign Engine may transform these into:
-
-```text
-MISSIONS
-EVENTS
-DECISIONS
-ENCOUNTERS
-```
+Global or national pressure does not imply identical regional outcomes.
 
 Example:
 
 ```text
-Simulation:
-Hospital fuel buffer nearing threshold.
-
-Living Campaign Engine:
-Generate emergency fuel mission.
-```
-
----
-
-# Player Intervention
-
-Players may interrupt escalation.
-
-Example:
-
-```text
-Supply Pressure:
+GLOBAL PRESSURE:
 HIGH
-
-Cause:
-Bridge failure
-
-Player Action:
-Temporary bridge restored
-
-Result:
-Supply Pressure decreases
 ```
+
+may coexist with:
+
+```text
+REGION A
+High resilience
+→ Stable
+
+REGION B
+Moderate resilience
+→ Strained
+
+REGION C
+Low resilience
+→ Critical.
+```
+
+Regional divergence is expected.
 
 ---
 
-# Player Failure
+# 91. Divergence Is Causal
 
-Player failure does not need to mean automatic catastrophe.
+Regional divergence may emerge from differences in:
+
+```text
+geography
+
+dependencies
+
+infrastructure
+
+resources
+
+population
+
+security
+
+authority
+
+information environment
+
+Actor decisions
+
+historical development.
+```
+
+No arbitrary regional difficulty modifier is required.
+
+---
+
+# 92. Cross-Regional Consequences
+
+Regional transitions may affect neighboring or dependent regions.
 
 Example:
 
 ```text
-Mission Failed:
-Fuel convoy lost.
+REGION A
+Fuel Production Declines
+↓
+Exports Decline
+↓
+REGION B
+Supply Pressure Increases
+↓
+Transport Activity Changes
+↓
+REGION C
+Receives Additional Traffic.
 ```
 
-Possible result:
-
-```text
-Fuel Pressure increases.
-
-Alternative convoy route becomes important.
-```
-
-The world reacts.
-
-It does not simply trigger a scripted game-over state.
+Each propagation requires real dependency.
 
 ---
 
-# Player-Created Cascades
+# 93. Cross-Regional Assistance
 
-Players may unintentionally create secondary consequences.
+Actors may move resources or capability between regions.
 
 Example:
 
 ```text
-Players destroy bridge to stop enemy movement.
-      ↓
-Security improves.
-      ↓
-Regional logistics declines.
-      ↓
-Supply pressure increases.
+REGION A
+Adequate Supply
+
+REGION B
+Critical Supply
+
+Actor Decision:
+Send Aid.
 ```
 
-The same causal rules apply to players.
+Possible consequences:
+
+```text
+Region B Pressure:
+REDUCED
+
+Region A Resilience:
+REDUCED.
+```
+
+Relationship consequences belong to Actor / Relationship systems.
 
 ---
 
-# Player-Created Recovery Cascades
+# 94. Regional Convergence
 
-Players may create large positive consequences.
+Regions may become more interconnected through:
+
+```text
+trade
+
+shared infrastructure
+
+migration
+
+political integration
+
+common standards
+
+communication
+
+transport.
+```
+
+This may reduce fragmentation.
+
+It may also create new dependencies.
+
+---
+
+# 95. Reconnection Risk
+
+Reconnection may increase:
+
+```text
+efficiency
+
+capacity
+
+information flow
+
+trade
+
+mobility
+
+recovery capability.
+```
+
+It may simultaneously increase:
+
+```text
+dependency
+
+cascade reach
+
+shared vulnerability
+
+system complexity.
+```
+
+Canonical question:
+
+```text
+HOW MUCH
+INTEGRATION
+IS SAFE?
+```
+
+---
+
+# 96. Recovery Does Not Mean Return
+
+Project Ascension must never assume:
+
+```text
+RECOVERY
+=
+RETURN TO
+THE CONNECTED WORLD.
+```
+
+Recovery means:
+
+```text
+A SYSTEM
+HAS REGAINED
+OR REPLACED
+SUFFICIENT FUNCTION
+
+TO SUPPORT
+A SUSTAINABLE
+OPERATING CONDITION.
+```
+
+---
+
+# 97. World State Era Boundary
+
+The historical World States remain canonical eras:
+
+```text
+WS-01
+THE CONNECTED WORLD
+
+WS-02
+THE TRANSITION
+
+WS-03
+THE FRACTURED WORLD
+
+WS-04
+THE RECONNECTION.
+```
+
+Escalation and Recovery does not calculate which historical era exists by averaging domain variables.
+
+Historical Era is Canon.
+
+Dynamic simulation explains variation within it.
+
+---
+
+# 98. Connected World Dynamics
+
+Typical conditions may include:
+
+```text
+high connectivity
+
+high efficiency
+
+strong institutional capability
+
+large-scale redundancy
+
+high dependency
+
+rapid recovery capability.
+```
+
+These are tendencies.
+
+Not mandatory regional states.
+
+---
+
+# 99. Transition Dynamics
+
+Typical conditions may include:
+
+```text
+pressure accumulation
+
+dependency exposure
+
+protective intervention
+
+information uncertainty
+
+institutional strain
+
+regional divergence
+
+rapid adaptation attempts.
+```
+
+Different regions experience different trajectories.
+
+---
+
+# 100. Fractured World Dynamics
+
+Typical conditions may include:
+
+```text
+regional equilibria
+
+local adaptation
+
+reduced long-distance integration
+
+new institutions
+
+persistent fragmentation
+
+new dependencies.
+```
+
+The Fractured World is not continuous collapse.
+
+---
+
+# 101. Reconnection Dynamics
+
+Typical conditions may include:
+
+```text
+network expansion
+
+regional integration
+
+infrastructure reconnection
+
+institutional negotiation
+
+recovery cascades
+
+new dependencies
+
+new systemic risks.
+```
+
+Reconnection creates new history.
+
+It does not end simulation.
+
+---
+
+# 102. Adaptive Simulation Resolution
+
+Escalation and Recovery supports:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH
+```
+
+simulation resolution.
+
+Resolution changes detail.
+
+Not causality.
+
+---
+
+# 103. Low Resolution
+
+Low resolution may preserve:
+
+```text
+major pressures
+
+major resilience
+
+trend
+
+major cascades
+
+major recovery state
+
+significant transitions
+
+Systemic History.
+```
+
+---
+
+# 104. Medium Resolution
+
+Medium resolution may additionally preserve:
+
+```text
+pressure sources
+
+important buffers
+
+major dependencies
+
+recovery bottlenecks
+
+Actor interventions
+
+regional feedback loops.
+```
+
+---
+
+# 105. High Resolution
+
+High resolution may include:
+
+```text
+individual pressure sources
+
+specific dependencies
+
+specific buffers
+
+threshold conditions
+
+active causal processes
+
+Actor actions
+
+transition delays
+
+cascade propagation
+
+Transition Records.
+```
+
+---
+
+# 106. Resolution Principle
+
+Canonical rule:
+
+```text
+LOW RESOLUTION
+=
+LESS DETAIL
+
+NOT
+
+LESS CAUSALITY.
+```
+
+A distant region continues to:
+
+```text
+deteriorate
+
+stabilize
+
+recover
+
+adapt
+
+transform
+```
+
+when causally justified.
+
+---
+
+# 107. Player Proximity
+
+Player proximity may increase simulation detail.
+
+It must not determine:
+
+```text
+whether change happens
+
+whether recovery happens
+
+whether cascades propagate
+
+whether Actors act.
+```
+
+---
+
+# 108. No Universal Transition Formula
+
+Project Ascension should not use one mathematical formula for every domain.
+
+Different systems behave differently.
 
 Example:
 
 ```text
-Players restore radio tower.
-      ↓
-Information improves.
-      ↓
-Authority coordination improves.
-      ↓
-Repair teams coordinate.
-      ↓
-Infrastructure recovery accelerates.
+Fuel inventory
 ```
 
-This makes player action systemically meaningful.
+may respond quickly to depletion.
+
+```text
+Infrastructure maintenance
+```
+
+may degrade slowly.
+
+```text
+Authority
+```
+
+depends heavily on institutions and Actors.
+
+Shared concepts remain useful.
+
+Domain-specific logic remains necessary.
 
 ---
 
-# Randomness
+# 109. No Universal Update Cycle
 
-Randomness may influence:
+Avoid a rigid global sequence such as:
 
-- exact timing
-- event severity
-- secondary failures
-- human decisions
-- weather
-- equipment reliability
+```text
+1. Calculate Pressure
+2. Calculate Resilience
+3. Roll Transition
+4. Update State
+5. Generate Event.
+```
 
-Randomness should operate within causal constraints.
+Instead:
+
+```text
+CAUSES OCCUR
+↓
+RELEVANT SYSTEMS
+BECOME AFFECTED
+↓
+CONSEQUENCES RESOLVE
+↓
+STATE CHANGES
+WHERE JUSTIFIED.
+```
+
+---
+
+# 110. Randomness Boundary
+
+Randomness is not an independent cause.
+
+Avoid:
+
+```text
+Random Roll:
+Government collapses.
+```
+
+Randomness may be used later to resolve uncertainty within plausible causal bounds.
+
+Example:
+
+```text
+Equipment already damaged
++
+maintenance overdue
++
+high operating load
+
+↓
+
+uncertain exact failure timing.
+```
+
+Randomness may influence timing.
+
+The causal conditions still explain the failure.
+
+---
+
+# 111. Human Decision Boundary
+
+Randomness must not replace Character agency.
 
 Avoid:
 
 ```text
 Random roll:
-Government collapses.
+Population panics.
 ```
 
-Prefer:
-
-```text
-Authority:
-Critical
-
-Cohesion:
-Low
-
-Pressure:
-Severe
-
-Random event determines whether the next crisis triggers leadership failure.
-```
+Humans perceive, interpret and choose through Character and Society systems.
 
 ---
 
-# Probability
+# 112. Information Boundary
 
-Where probability is used, conditions should modify it.
+Actual World State and observer knowledge remain separate.
 
-Conceptually:
-
-```text
-Base Failure Risk
-+
-Pressure
-+
-Dependency Failure
--
-Resilience
--
-Intervention
-=
-Adjusted Risk
-```
-
-No exact universal formula is required at this stage.
-
----
-
-# Uncertainty in Transition
-
-Simulation knowledge may itself be incomplete.
-
-Example:
+Avoid:
 
 ```text
-Infrastructure State:
+Infrastructure:
 Estimated Degraded
 
 Confidence:
 Low
 ```
 
-Transition calculations may still occur internally.
+inside authoritative World State.
 
-Characters and institutions may react to imperfect estimates.
+Instead:
+
+```text
+WORLD TRUTH
+
+Infrastructure:
+DEGRADED
+
+
+OBSERVER INFORMATION
+
+Estimated Condition:
+DEGRADED
+
+Confidence:
+LOW.
+```
 
 ---
 
-# False Stability
+# 113. False Stability
 
-Actors may believe a system has stabilized while hidden pressure remains.
+Actors may believe a system is stable while actual conditions are fragile.
 
 Example:
 
 ```text
-Observed State:
-Stable
+WORLD TRUTH
 
-Actual State:
-Strained
-
-Maintenance Debt:
-Severe
-```
-
-This creates delayed surprises without requiring arbitrary plot twists.
-
----
-
-# False Crisis
-
-Actors may also believe deterioration is worse than reality.
-
-Example:
-
-```text
-Actual Supply:
-Adequate
-
-Public Perception:
-Critical
-```
-
-Behavior may still create real escalation.
-
----
-
-# Recovery Information Problem
-
-Recovery itself requires accurate information.
-
-Without reliable information:
-
-- resources may be misallocated
-- repairs may target the wrong systems
-- aid may arrive in the wrong location
-- authorities may misjudge conditions
-
-Information State therefore directly affects Recovery Capacity.
-
----
-
-# Recovery Coordination
-
-Large-scale recovery usually requires:
-
-```text
-AUTHORITY
-+
-INFORMATION
-+
-TRANSPORTATION
-+
-SUPPLY
-+
-WORKFORCE
-+
-SECURITY
-```
-
-Weakness in any one may become a bottleneck.
-
----
-
-# Local Recovery
-
-Local recovery may occur even when national recovery is impossible.
-
-Example:
-
-```text
-Nation:
-Fragmented
-
-Region:
-Stable and Recovering
-
-Settlement:
-Growing
-```
-
-This should be common in The Fractured World.
-
----
-
-# Uneven Recovery
-
-Recovery should rarely occur uniformly.
-
-Example:
-
-```text
 Power:
-Improving
+FUNCTIONAL
+
+Maintenance Backlog:
+SEVERE
+
+Resilience:
+LOW.
+```
+
+Observer:
+
+```text
+Power appears normal.
+```
+
+The hidden fragility is real.
+
+Observer ignorance belongs elsewhere.
+
+---
+
+# 114. False Crisis
+
+Actors may believe conditions are worse than reality.
+
+Example:
+
+```text
+WORLD TRUTH
 
 Supply:
-Stable
-
-Authority:
-Improving
-
-Information:
-Still Fragmented
+ADEQUATE
 ```
 
-The region recovers in layers.
+while:
+
+```text
+PUBLIC INFORMATION ENVIRONMENT
+
+Supply Collapse Rumor:
+WIDESPREAD.
+```
+
+Actor responses may then create real consequences.
 
 ---
 
-# Recovery Lag
+# 115. Information and Recovery
 
-Social and political recovery may lag behind physical repair.
+Recovery may depend on accurate information.
 
-Example:
+Poor information may result in Actor actions that:
 
 ```text
-Infrastructure:
-Restored
+misallocate resources
 
-Public Trust:
-Low
+target incorrect failures
 
-Migration:
-Still Outbound
+delay repairs
+
+send aid incorrectly
+
+misjudge priorities.
 ```
 
-Repairing systems does not immediately repair confidence.
+Information does not directly lower Recovery Capacity as a magical modifier.
+
+Actors use information.
+
+Their resulting actions affect recovery.
 
 ---
 
-# Memory Effects
+# 116. Recovery Coordination
 
-Historical events modify future transitions.
-
-Examples:
+Large recovery efforts may require dependencies such as:
 
 ```text
-Previous successful rationing:
-+ compliance with future rationing
+Authority
+
+Information
+
+Transportation
+
+Supply
+
+Personnel
+
+Security
+
+Infrastructure
+
+Expertise.
 ```
 
-or:
-
-```text
-Previous failed evacuation:
-- trust in evacuation orders
-```
-
-The simulation should remember meaningful outcomes.
+Missing dependencies may become bottlenecks.
 
 ---
 
-# Scars
+# 117. Society Boundary
 
-Some historical effects may become persistent modifiers.
-
-Conceptually:
+Escalation and Recovery must not directly own:
 
 ```text
-SCAR
+Trust
+
+Social Cohesion
+
+Public Patience
+
+Culture
+
+Collective Identity
+
+Public Confidence.
 ```
 
-Examples:
+These belong to:
 
-- permanent distrust
-- population loss
-- destroyed infrastructure
-- institutional memory loss
-- cultural taboo
-- regional rivalry
+```text
+Society
 
-Scars influence future state without necessarily preventing recovery.
+Relationships
+
+Characters.
+```
+
+Their consequences may affect World Simulation through Actor behavior.
 
 ---
 
-# Legacy
+# 118. Population Behavior Boundary
 
-Positive long-term modifiers may also emerge.
+Population State describes population reality.
 
-Conceptually:
+It does not mean:
 
 ```text
-LEGACY
+Population State
+decides
+what people do.
 ```
 
-Examples:
-
-- strong mutual-aid culture
-- decentralized energy systems
-- experienced emergency governance
-- trusted regional radio network
-
-History can create strengths.
+Population movement and collective patterns must emerge from relevant Character, Society, Faction and world processes.
 
 ---
 
-# Recovery Identity
+# 119. Authority Boundary
 
-Regions may develop cultural identities around how they survived.
+Authority State may represent governance capability and institutional condition.
 
-Example:
+Actual decisions belong to governing Actors.
 
-```text
-"We kept the lights on ourselves."
-```
-
-may later influence:
-
-- political autonomy
-- technological preference
-- national reconnection
-- attitudes toward centralized systems
-
-This connects World Simulation to Society and Narrative.
+Escalation and Recovery consumes resulting actions and consequences.
 
 ---
 
-# Escalation and Recovery Snapshot
+# 120. Faction Boundary
 
-A regional transition snapshot may look like:
+Factions may:
 
 ```text
-ESCALATION / RECOVERY STATE
+cooperate
+
+compete
+
+attack
+
+trade
+
+negotiate
+
+provide services
+
+block recovery
+
+enable recovery.
+```
+
+Faction systems own those decisions.
+
+World Simulation owns the resulting external consequences.
+
+---
+
+# 121. Aurora Boundary
+
+Aurora may:
+
+```text
+observe
+
+predict
+
+communicate
+
+act
+
+intervene
+
+withhold action.
+```
+
+Aurora is an Actor.
+
+Aurora does not control Escalation and Recovery.
+
+Aurora's prediction is not future truth.
+
+---
+
+# 122. Living Campaign Engine Boundary
+
+Escalation and Recovery may expose:
+
+```text
+meaningful pressure
+
+active transition
+
+cascade risk
+
+recovery bottleneck
+
+systemic opportunity
+
+regional transformation.
+```
+
+The Living Campaign Engine may recognize these as campaign-relevant conditions.
+
+It must not automatically convert:
+
+```text
+Threshold
+→ Quest
+
+Pressure
+→ Mission
+
+Failure
+→ Encounter.
+```
+
+---
+
+# 123. Narrative Boundary
+
+Narrative may present:
+
+```text
+crisis
+
+recovery
+
+failure
+
+adaptation
+
+transformation.
+```
+
+Narrative does not determine whether those states occur.
+
+Canonical rule:
+
+```text
+STORY FOLLOWS
+CAUSAL CHANGE.
+
+CAUSAL CHANGE
+DOES NOT FOLLOW
+STORY NEED.
+```
+
+---
+
+# 124. Transition Validation
+
+Before accepting a major state transition, ask:
+
+```text
+WHAT CHANGED?
+
+WHAT CAUSED IT?
+
+WHERE DID
+THE CAUSE ORIGINATE?
+
+HOW LONG
+WAS IT ACTIVE?
+
+WHAT PRESSURE
+DID IT CREATE?
+
+WHAT RESILIENCE
+EXISTED?
+
+WHAT BUFFERS
+WERE AVAILABLE?
+
+WHICH DEPENDENCIES
+MATTERED?
+
+DID ACTORS
+INTERVENE?
+
+WHAT DID
+THEY ACTUALLY DO?
+
+WHAT CONSEQUENCE
+WAS RESOLVED?
+
+WHY DID
+THE STATE CHANGE?
+
+WHAT PREVENTED
+A DIFFERENT OUTCOME?
+
+WHAT SYSTEMS
+ARE AFFECTED NEXT?
+```
+
+---
+
+# 125. Recovery Validation
+
+Before accepting recovery, ask:
+
+```text
+WHAT FUNCTION
+IS RETURNING?
+
+IS IT BEING
+RESTORED
+
+OR
+
+REPLACED?
+
+WHO IS
+DOING THE WORK?
+
+WHAT CAPABILITY
+DO THEY HAVE?
+
+WHAT RESOURCES
+ARE REQUIRED?
+
+WHAT DEPENDENCIES
+MUST FUNCTION?
+
+WHAT BOTTLENECK
+EXISTS?
+
+WHAT HAS
+PERMANENTLY CHANGED?
+
+WHAT NEW
+DEPENDENCIES
+ARE BEING CREATED?
+```
+
+---
+
+# 126. Cascade Validation
+
+Before propagating a cascade, ask:
+
+```text
+IS THERE
+A REAL DEPENDENCY?
+
+WHAT EXACT
+CONSEQUENCE
+IS TRANSMITTED?
+
+HOW STRONG
+IS THE DEPENDENCY?
+
+WHAT BUFFER
+EXISTS?
+
+WHAT ALTERNATIVE
+EXISTS?
+
+HOW LONG
+DOES THE EFFECT LAST?
+
+CAN ACTORS
+RESPOND?
+
+DOES THE CASCADE
+STOP?
+
+DECAY?
+
+REDIRECT?
+
+AMPLIFY?
+```
+
+---
+
+# 127. Transition Snapshot
+
+A regional transition view may conceptually look like:
+
+```text
+ESCALATION / RECOVERY VIEW
 
 Region:
 Northern Virginia
@@ -2849,44 +3466,48 @@ Overall Trend:
 DETERIORATING
 
 Primary Pressures:
-- infrastructure coordination
 - fuel distribution
-- information uncertainty
+- infrastructure coordination
+- transport disruption
 
-Strongest Resilience:
-- institutional capacity
-- technical expertise
+Major Resilience:
+- technical capability
+- infrastructure redundancy
 
-Weakest Resilience:
-- local resource independence
+Depleted Buffers:
+- emergency fuel reserves
 
 Active Cascades:
-1. Fuel → Transportation → Logistics
-2. Information → Public Confidence → Stockpiling
+- Fuel → Transportation → Supply
 
-Stabilizing Loops:
-1. Voluntary conservation
-2. Regional emergency coordination
+Stabilizing Processes:
+- demand reduction
+- emergency distribution
 
 Recovery Capacity:
 MODERATE
 
-Recovery Bottleneck:
+Primary Bottleneck:
 Transportation
 
-Momentum:
-DETERIORATING
+Current Equilibrium:
+UNRESOLVED
 
-Fragility:
-HIGH
+Major Recent Transition:
+Supply
+STRAINED → CONSTRAINED.
 ```
+
+This is an integration view.
+
+The authoritative values remain owned by their domains.
 
 ---
 
-# Fractured World Snapshot
+# 128. Fractured World Example
 
 ```text
-ESCALATION / RECOVERY STATE
+ESCALATION / RECOVERY VIEW
 
 Region:
 Shenandoah Valley
@@ -2899,567 +3520,671 @@ STABLE
 
 Primary Pressures:
 - limited industrial supply
-- seasonal food risk
+- seasonal agricultural risk
 
-Strongest Resilience:
+Major Resilience:
 - local agriculture
-- social cohesion
-- distributed authority
+- distributed energy
+- regional trade
 
 Active Cascades:
 NONE
 
-Stabilizing Loops:
-- local food production
-- mutual aid
-- regional radio
-- decentralized energy
+Stabilizing Processes:
+- local production
+- diversified supply
+- decentralized infrastructure
 
 Recovery Capacity:
 HIGH
 
-Adaptation:
-HIGH
-
 Current Equilibrium:
-REGIONAL STABLE
+ADAPTED REGIONAL STABILITY.
 ```
 
 The region is not continuously collapsing.
 
-It has established a sustainable post-Collapse equilibrium.
+It has changed.
 
 ---
 
-# Reconnection Snapshot
+# 129. Reconnection Example
 
 ```text
-ESCALATION / RECOVERY STATE
-
-Historical Era:
-WS-04 — The Reconnection
+ESCALATION / RECOVERY VIEW
 
 Region:
 Shenandoah Valley
 
+Historical Era:
+WS-04 — The Reconnection
+
 Overall Trend:
 IMPROVING
 
-New Pressure:
-Reconnection Dependency
-
 Recovery Opportunity:
-National rail restoration
+National rail connection
 
-Political Risk:
-Regional autonomy conflict
+New Dependency:
+Long-distance logistics
 
 Infrastructure Opportunity:
 Grid interconnection
 
-Information Opportunity:
-Expanded communication horizon
+Integration Pressure:
+INCREASING
 
-Strategic Question:
-How much integration should be accepted?
+Primary Risk:
+Loss of regional redundancy
+
+Current Transition:
+REGIONAL INTEGRATION.
 ```
 
-Recovery creates new choices rather than ending the simulation.
+Recovery creates new vulnerabilities.
 
 ---
 
-# Escalation Update Cycle
+# 130. Minimum Transition Architecture
 
-A conceptual update cycle:
-
-```text
-1. Read current domain states.
-2. Read all active pressures.
-3. Apply pressure duration.
-4. Consume temporary buffers.
-5. Calculate current resilience.
-6. Process dependencies.
-7. Process active cascades.
-8. Process reinforcing loops.
-9. Process stabilizing loops.
-10. Apply shock events.
-11. Apply institutional interventions.
-12. Apply population behavior.
-13. Apply player actions.
-14. Evaluate thresholds.
-15. Determine state transitions.
-16. Apply transition delays.
-17. Calculate recovery capacity.
-18. Identify recovery bottlenecks.
-19. Process adaptation.
-20. Update momentum.
-21. Generate Transition Records.
-22. Update historical memory.
-23. Generate world events.
-```
-
-Exact implementation may evolve.
-
-The logic should remain traceable.
-
----
-
-# Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active cascades
-- major crisis
-- active recovery
-- campaign-critical systems
-
-Tracks:
+At minimum, major domain transitions should be capable of referencing:
 
 ```text
-Individual pressure sources
-Buffers
-Thresholds
-Dependencies
-Interventions
-Transition Records
-```
-
----
-
-## Medium Resolution
-
-Used for relevant neighboring regions.
-
-Tracks:
-
-```text
-Major pressures
-Resilience
-Trend
-Active cascades
-Recovery capacity
-Major transitions
-```
-
----
-
-## Low Resolution
-
-Used for distant regions.
-
-Tracks:
-
-```text
-Overall trend
-Major pressure
-Resilience
-Major transition events
-Recovery state
-```
-
----
-
-# Minimum Transition Model
-
-A minimum viable implementation should support:
-
-```text
-For each major domain:
-
 Current State
+
 Pressure
+
+Pressure Sources
+
 Resilience
+
+Relevant Buffers
+
 Trend
-Duration
 
-Plus:
-
-Active Shocks
-Active Cascades
 Recovery Capacity
-Recovery Bottleneck
-Interventions
-Historical Modifiers
+
+Relevant Dependencies
+
+Active Causal Processes
+
+Major Cascades
+
+Actor Actions
+
+Significant Thresholds
+
+Transition Records
+
+Systemic History.
 ```
 
-From these, the simulation should be capable of choosing:
+Not every domain needs every field at every resolution.
+
+---
+
+# 131. Escalation and Recovery Invariants
+
+## ER-INV-001 — State Change Requires Cause
+
+No meaningful transition occurs solely because time passed.
+
+---
+
+## ER-INV-002 — Pressure Does Not Guarantee Deterioration
+
+Resilience, buffers and intervention may absorb pressure.
+
+---
+
+## ER-INV-003 — Recovery Is Not Automatic
+
+Reduced pressure does not itself restore lost function.
+
+---
+
+## ER-INV-004 — Recovery Is Not Reversal
+
+Systems may recover through replacement or adaptation.
+
+---
+
+## ER-INV-005 — Domain Systems Retain Ownership
+
+Escalation and Recovery does not become the authoritative owner of domain state.
+
+---
+
+## ER-INV-006 — Resilience and Recovery Capacity Are Separate
+
+Resistance to failure and ability to recover are different properties.
+
+---
+
+## ER-INV-007 — Resilience May Be Structural or Consumable
+
+Not all resilience behaves like a permanent stat.
+
+---
+
+## ER-INV-008 — Cascades Require Real Dependencies
+
+No dependency means no causal cascade.
+
+---
+
+## ER-INV-009 — Cascades May Stop
+
+Buffers, redundancy, adaptation and intervention may break propagation.
+
+---
+
+## ER-INV-010 — Cascades May Decay
+
+Not every consequence remains equally strong across systems or regions.
+
+---
+
+## ER-INV-011 — Cascades May Redirect
+
+Pressure may move into another system instead of disappearing.
+
+---
+
+## ER-INV-012 — Positive Cascades Are Valid
+
+Recovery may propagate through dependencies.
+
+---
+
+## ER-INV-013 — Stabilization Is a Valid Outcome
+
+A system need not recover immediately to stop deteriorating.
+
+---
+
+## ER-INV-014 — Stable Degraded States Are Valid
+
+Lower-function equilibria may persist.
+
+---
+
+## ER-INV-015 — Hysteresis Is Allowed
+
+Recovery conditions need not mirror deterioration conditions.
+
+---
+
+## ER-INV-016 — Actors Own Decisions
+
+World Simulation does not directly command human or institutional behavior.
+
+---
+
+## ER-INV-017 — Player Action Uses Normal Causality
+
+Players receive no privileged transition rules.
+
+---
+
+## ER-INV-018 — Randomness Is Not Independent Cause
+
+Uncertainty may influence timing or resolution only within causal constraints.
+
+---
+
+## ER-INV-019 — Observer Uncertainty Is Not World-State Uncertainty
+
+Confidence belongs to observer systems.
+
+---
+
+## ER-INV-020 — Historical Consequences Persist
+
+Meaningful transitions may alter future conditions.
+
+---
+
+## ER-INV-021 — Adaptation Requires Causal Action
+
+Systems do not spontaneously redesign themselves.
+
+---
+
+## ER-INV-022 — Transformation Is Not Automatic Collapse
+
+Old structures may be replaced by functioning new ones.
+
+---
+
+## ER-INV-023 — Collapse Is Not Universal
+
+Failure may occur at one scale while function survives at another.
+
+---
+
+## ER-INV-024 — Regional Divergence Is Expected
+
+Shared pressure may produce different regional outcomes.
+
+---
+
+## ER-INV-025 — Recovery May Create New Dependencies
+
+Improvement may introduce future vulnerability.
+
+---
+
+## ER-INV-026 — Resolution Changes Detail, Not Causality
+
+Low-resolution regions remain active.
+
+---
+
+## ER-INV-027 — Narrative Does Not Determine Transition
+
+State changes cannot occur for pacing alone.
+
+---
+
+## ER-INV-028 — LCE Does Not Automatically Convert Pressure Into Content
+
+Campaign relevance requires interpretation.
+
+---
+
+## ER-INV-029 — Major Transitions Must Be Explainable
+
+The simulation must preserve causal trace.
+
+---
+
+## ER-INV-030 — The World Continues Without Player Intervention
+
+Escalation, stabilization, recovery and transformation may occur off-screen.
+
+---
+
+# 132. Development Locks
+
+Future development must not introduce:
 
 ```text
-DETERIORATE
-STABILIZE
-IMPROVE
-NO CHANGE
+time-based automatic collapse
+
+automatic recovery
+
+automatic cascades
+
+automatic riots
+
+automatic migration
+
+automatic panic
+
+automatic institutional failure
+
+automatic Actor adaptation
+
+universal transition formulas
+
+universal collapse scores
+
+universal recovery scores
+
+random world collapse
+
+random government collapse
+
+random violence for drama
+
+random recovery for pacing
+
+player-exclusive transition rules
+
+player-required stabilization
+
+player-required recovery
+
+player-required history
+
+LCE-generated world truth
+
+Narrative-generated world truth
+
+Escalation-owned Character decisions
+
+Escalation-owned Faction decisions
+
+Escalation-owned Authority decisions
+
+Escalation-owned Trust
+
+Escalation-owned social cohesion
+
+Escalation-owned observer confidence
+
+Escalation-owned perception
+
+Escalation-owned domain state
+
+Historical Memory as psychological World State
+
+frozen off-screen transitions.
 ```
 
 ---
 
-# Transition Consistency Rules
+# 133. Architecture Test
 
-## Rule 1
-
-State changes require causes.
-
----
-
-## Rule 2
-
-Time alone does not cause escalation.
-
----
-
-## Rule 3
-
-Pressure does not guarantee deterioration.
-
----
-
-## Rule 4
-
-Resilience can be depleted.
-
----
-
-## Rule 5
-
-Recovery Capacity and Resilience are separate.
-
----
-
-## Rule 6
-
-Thresholds may be soft or hard.
-
----
-
-## Rule 7
-
-Cascades require real dependencies.
-
----
-
-## Rule 8
-
-Buffers must be capable of delaying cascades.
-
----
-
-## Rule 9
-
-Cascades should decay when conditions do not support propagation.
-
----
-
-## Rule 10
-
-Positive cascades are as valid as negative cascades.
-
----
-
-## Rule 11
-
-Stabilization is a valid outcome even without recovery.
-
----
-
-## Rule 12
-
-Stable degraded states are valid equilibria.
-
----
-
-## Rule 13
-
-Recovery may take longer than deterioration.
-
----
-
-## Rule 14
-
-Recovery may replace rather than restore systems.
-
----
-
-## Rule 15
-
-Interventions should have costs or constraints.
-
----
-
-## Rule 16
-
-Successful interventions may create secondary problems.
-
----
-
-## Rule 17
-
-Regional outcomes should diverge under different resilience conditions.
-
----
-
-## Rule 18
-
-Player actions obey the same causal rules as every other intervention.
-
----
-
-## Rule 19
-
-Historical events should influence future resilience and behavior.
-
----
-
-## Rule 20
-
-The simulation should never require collapse for narrative convenience.
-
----
-
-## Rule 21
-
-The simulation should never guarantee recovery for narrative convenience.
-
----
-
-## Rule 22
-
-Every major transition should remain explainable.
-
----
-
-# Guiding Questions
-
-Whenever a state changes, the simulation should be able to answer:
-
-**What pressure caused the change?**
-
-**How long had the pressure existed?**
-
-**What resilience was available?**
-
-**Which buffers were consumed?**
-
-**Was a threshold crossed?**
-
-**Which dependencies mattered?**
-
-**Was a cascade involved?**
-
-**What interventions were attempted?**
-
-**Why did they succeed or fail?**
-
-**What prevented worse outcomes?**
-
-**What prevents immediate recovery?**
-
-**What is the current bottleneck?**
-
-**Is the system restoring or adapting?**
-
-**What historical memory will this create?**
-
-If these questions cannot be answered, the transition is probably too scripted.
-
----
-
-# Core Design Principle
-
-Project Ascension should not simulate a world falling apart.
-
-It should simulate:
+Before adding a transition mechanic, ask:
 
 ```text
-SYSTEMS UNDER PRESSURE
+WHO OWNS
+THE STATE?
+
+WHAT ACTUAL
+CAUSE EXISTS?
+
+WHAT PRESSURE
+DOES IT CREATE?
+
+WHAT RESISTS IT?
+
+IS THE RESILIENCE
+STRUCTURAL
+
+OR
+
+CONSUMABLE?
+
+WHAT DEPENDENCY
+CONNECTS THE SYSTEMS?
+
+WHAT BUFFER
+EXISTS?
+
+WHAT ACTOR
+CAN RESPOND?
+
+WHAT DOES
+THAT ACTOR KNOW?
+
+WHAT DO
+THEY CHOOSE?
+
+WHAT ACTION
+DO THEY ATTEMPT?
+
+WHAT DOES
+ACTION RESOLUTION
+DETERMINE?
+
+WHAT CONSEQUENCE
+ACTUALLY OCCURS?
+
+DOES IT
+PROPAGATE?
+
+STOP?
+
+DECAY?
+
+REDIRECT?
+
+AMPLIFY?
+
+WHAT STATE
+NOW CHANGES?
+
+WHY?
+
+AND
+
+WHAT HAPPENS
+IF THE PLAYER
+NEVER SEES IT?
+```
+
+---
+
+# 134. Final Transition Architecture
+
+Conceptually:
+
+```text
+AUTHORITATIVE
+WORLD STATE
+        ↓
+TIME ADVANCES
+        ↓
+WORLD CONDITIONS
++
+EVENTS
++
+ACTOR ACTIONS
+        ↓
+PRESSURES
+        ↓
+RESILIENCE
++
+BUFFERS
+        ↓
+DEPENDENCIES
++
+ACTIVE PROCESSES
+        ↓
+ACTION / EVENT
+RESOLUTION
+        ↓
+PRIMARY CONSEQUENCE
+        ↓
+DOMAIN STATE CHANGE
+        ↓
+CROSS-SYSTEM
+PROPAGATION
         │
-        ▼
-PEOPLE AND INSTITUTIONS RESPOND
-        │
-        ▼
-SOME SYSTEMS FAIL
-        │
-        ▼
-SOME SYSTEMS ADAPT
-        │
-        ▼
+        ├── Cascade
+        ├── Cascade Break
+        ├── Cascade Decay
+        ├── Cascade Redirection
+        ├── Reinforcing Loop
+        └── Stabilizing Loop
+        ↓
+DETERIORATION
+OR
+STABILIZATION
+OR
+RECOVERY
+OR
+ADAPTATION
+OR
+TRANSFORMATION
+        ↓
+UPDATED
+AUTHORITATIVE STATE
+        ↓
+TRANSITION RECORD
+        ↓
+SYSTEMIC HISTORY
+        ↓
+FUTURE CONDITIONS.
+```
+
+---
+
+# 135. Escalation and Recovery North Star
+
+The system succeeds when Project Ascension can answer:
+
+```text
+WHAT CHANGED?
+
+WHY?
+
+WHAT CAUSED
+THE PRESSURE?
+
+HOW LONG
+DID IT ACT?
+
+WHAT RESILIENCE
+EXISTED?
+
+WHAT BUFFER
+ABSORBED IT?
+
+WHAT BUFFER
+FAILED?
+
+WHAT DEPENDENCY
+MATTERED?
+
+WHAT ACTOR
+RESPONDED?
+
+WHAT DID
+THEY TRY?
+
+WHAT ACTUALLY
+HAPPENED?
+
+WHY DID
+THE CONSEQUENCE
+PROPAGATE?
+
+WHY DID
+IT STOP?
+
+WHY DID
+THE SYSTEM
+DETERIORATE?
+
+WHY DID
+IT STABILIZE?
+
+WHAT PREVENTS
+RECOVERY?
+
+WHAT ENABLES
+RECOVERY?
+
+IS THE SYSTEM
+BEING RESTORED
+
+OR
+
+REPLACED?
+
+WHAT NEW
+DEPENDENCIES
+ARE EMERGING?
+
+WHAT PART
+OF THIS CHANGE
+IS PERMANENT?
+
+WHAT HISTORY
+HAS BEEN CREATED?
+
+AND
+
+WHAT WOULD
+HAPPEN NEXT
+IF NO PLAYER
+EVER INTERVENED?
+```
+
+---
+
+# 136. Closing Principle
+
+Project Ascension does not simulate:
+
+```text
+A WORLD
+PROGRAMMED
+TO COLLAPSE.
+```
+
+It simulates:
+
+```text
+A WORLD
+UNDER PRESSURE
+
+WHERE
+
+SYSTEMS RESIST
+
+BUFFERS ARE USED
+
+DEPENDENCIES MATTER
+
+ACTORS RESPOND
+
+SOME INTERVENTIONS FAIL
+
+SOME SUCCEED
+
+CASCADES SOMETIMES SPREAD
+
+CASCADES SOMETIMES STOP
+
+SOME SYSTEMS BREAK
+
+SOME SYSTEMS STABILIZE
+
 SOME SYSTEMS RECOVER
-        │
-        ▼
-NEW SYSTEMS EMERGE
+
+SOME SYSTEMS ADAPT
+
+AND
+
+NEW SYSTEMS EMERGE.
 ```
 
-The Collapse is one historical outcome of those interactions.
+The Collapse is historical.
 
-The simulation itself must remain capable of producing many outcomes.
+Collapse is not the simulation's objective.
 
----
-
-# Completed World Simulation Foundation
-
-With this document, the first World Simulation foundation consists of:
+The simulation's objective is:
 
 ```text
-Canon/
-└── Systems/
-    └── World_Simulation/
-        ├── README.md
-        ├── World_State.md
-        ├── Regional_State.md
-        ├── Infrastructure_State.md
-        ├── Information_State.md
-        ├── Authority_State.md
-        ├── Population_State.md
-        └── Escalation_and_Recovery.md
+CAUSAL CONTINUITY.
 ```
 
----
-
-# Current Status
+The world must always be capable of producing:
 
 ```text
-WORLD SIMULATION
+FAILURE
 
-README.md
-COMPLETE
+SURVIVAL
 
-World_State.md
-FOUNDATION DEFINED
+STABILITY
 
-Regional_State.md
-FOUNDATION DEFINED
+RECOVERY
 
-Infrastructure_State.md
-FOUNDATION DEFINED
+ADAPTATION
 
-Information_State.md
-FOUNDATION DEFINED
+TRANSFORMATION
 
-Authority_State.md
-FOUNDATION DEFINED
+AND
 
-Population_State.md
-FOUNDATION DEFINED
-
-Escalation_and_Recovery.md
-FOUNDATION DEFINED
+UNEXPECTED
+BUT EXPLAINABLE
+HISTORY.
 ```
 
-The foundational World Simulation documentation is now complete.
+The central principle is:
 
----
-
-# Recommended Next Phase
-
-The next phase should not immediately add more World Simulation documents.
-
-The foundation should first be tested against a concrete example.
-
-Recommended test:
-
-```text
-WORLD SIMULATION TEST CASE 001
-
-Region:
-Northern Virginia
-
-Period:
-2034-05-01 → 2034-08-16
-
-Historical Era:
-WS-02 — The Transition
-```
-
-The test should reconstruct the region using the events already established in:
-
-```text
-Recovered_Records/
-```
-
-and ask:
-
-```text
-Can World Simulation reproduce the historical progression we already wrote?
-```
-
-If the answer is yes, the foundation is internally coherent.
-
-If the answer is no, we identify which system definitions are missing.
-
----
-
-# Validation Goal
-
-The first validation should attempt to reproduce:
-
-```text
-MAY
-
-Stable but increasing uncertainty
-
-        ↓
-
-JUNE
-
-Infrastructure and coordination pressure
-
-        ↓
-
-JULY
-
-Regional degradation and population response
-
-        ↓
-
-AUGUST
-
-Decentralized emergency coordination
-```
-
-without scripting those outcomes directly.
-
-The historical records provide the expected result.
-
-World Simulation should explain how the result emerged.
-
----
-
-# After Validation
-
-Once the historical test succeeds, the system can be connected to:
-
-```text
-Canon/Systems/Living_Campaign_Engine/
-```
-
-The Living Campaign Engine can then consume:
-
-- pressures
-- thresholds
-- state changes
-- cascades
-- recovery opportunities
-
-and convert them into playable content.
-
-At that point, Project Ascension moves from:
-
-```text
-A WORLD WITH HISTORY
-```
-
-toward:
-
-```text
-A WORLD CAPABLE OF GENERATING NEW HISTORY
-```
+> **Pressure creates possibility. Resilience shapes exposure. Actors create responses. Dependencies propagate consequences. History emerges from what actually happens.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial escalation, pressure, resilience, thresholds, cascades, stabilization, recovery, adaptation, hysteresis, transformation and transition-record framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial escalation, pressure, resilience, thresholds, cascades, stabilization, recovery, adaptation, hysteresis, transformation and transition-record framework. |
+| 1.0 | 2026-09-01 | Rebuilt Escalation and Recovery as the canonical cross-domain transition architecture for World Simulation. Preserved pressure, resilience, buffers, strain, thresholds, hysteresis, cascades, cascade breaks, feedback loops, stabilization, recovery capacity, bottlenecks, adaptation, path dependence, regional divergence, transformation and explainable Transition Records while removing centralized transition-engine ownership. Reframed interventions as Actor actions, shocks as externally caused events or conditions, Momentum as Trend plus active causal processes, Historical Memory as Systemic History, and removed observer confidence, direct human-behavior ownership, automatic event generation, LCE mission generation, universal update cycles and player-specific transition rules. Established explicit ownership boundaries, adaptive simulation resolution, causal transition validation, thirty invariants and development locks preventing automatic collapse, recovery, cascades and narrative-driven world change. |

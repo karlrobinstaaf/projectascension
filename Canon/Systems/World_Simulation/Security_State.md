@@ -2,262 +2,616 @@
 # Security State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Security State |
-| Location | Canon/Systems/World_Simulation/Security_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Public Safety, Threat, Security Capacity and Territorial Stability |
-| Last Updated | 2026-08-09 |
-
-> *"Crisis does not automatically produce violence. Security depends on what people fear, what institutions can do, and what communities choose to protect together."*
+|---|---|
+| Project | Project Ascension |
+| Document | Security State System |
+| Location | `Canon/Systems/World_Simulation/Security_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Security |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the authoritative physical security environment, actual threats, security capability, security coverage, territorial safety, route security and organized violence within the simulated world without owning human fear, political intent or Actor cognition |
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Security State system defines how public safety, physical threat and security capacity are represented inside Project Ascension's World Simulation.
+The Security State System defines the external physical security environment inside Project Ascension.
 
-Security includes:
+It answers:
 
-- public order
-- crime
-- policing
-- organized violence
-- civil unrest
-- infrastructure protection
-- military support
-- territorial security
-- community defense
-- route security
-- perceived safety
+> **What actual threats exist, where do they exist, who or what can respond to them, how much security coverage exists, how safe are routes and infrastructure, and how may security conditions escalate, stabilize or recover?**
 
-The system exists to distinguish between:
+Security State includes external realities such as:
 
 ```text
 ACTUAL THREAT
-```
 
-and:
+CRIME
 
-```text
+ORGANIZED VIOLENCE
+
 SECURITY CAPACITY
+
+SECURITY COVERAGE
+
+RESPONSE CAPABILITY
+
+TERRITORIAL SECURITY
+
+ROUTE SECURITY
+
+INFRASTRUCTURE PROTECTION
+
+ACTIVE SECURITY INCIDENTS
+
+SECURITY PRESSURE
+
+SECURITY RESILIENCE.
 ```
 
-and:
+Security State does not determine:
 
 ```text
-PERCEIVED SECURITY
+WHAT PEOPLE FEAR
+
+WHAT PEOPLE BELIEVE
+
+WHAT SECURITY ACTORS WANT
+
+WHOM SECURITY ACTORS TRUST
+
+WHAT GOVERNMENTS CHOOSE
+
+WHAT FACTIONS PLAN.
 ```
 
-These may differ significantly.
+Those belong to their authoritative Actor, Society, Relationship, Information and Authority systems.
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
 Project Ascension must never assume:
 
 ```text
 CRISIS
 =
-VIOLENCE
+VIOLENCE.
 ```
 
-Infrastructure degradation, shortages or political uncertainty may increase security pressure.
+Pressure may increase.
 
-They do not automatically produce:
+Institutions may weaken.
 
-- riots
-- looting
-- militias
-- civil war
-- social collapse
+Resources may become scarce.
 
-Human beings frequently respond to disasters with:
+Information may become unreliable.
 
-- cooperation
-- mutual aid
-- informal organization
-- restraint
-- increased community responsibility
+Authority may fragment.
 
-Violence should emerge only when conditions plausibly support it.
+But none of these automatically create:
+
+```text
+RIOTS
+
+LOOTING
+
+MILITIAS
+
+CIVIL WAR
+
+MASS VIOLENCE
+
+SOCIAL COLLAPSE.
+```
+
+Humans may instead respond through:
+
+```text
+COOPERATION
+
+MUTUAL AID
+
+LOCAL ORGANIZATION
+
+RESTRAINT
+
+NEGOTIATION
+
+COMMUNITY RESPONSIBILITY
+
+ADAPTATION.
+```
+
+Violence must have causes.
 
 ---
 
-# Security Is Not One Variable
+# 3. Security Is External State
 
-Security should contain several distinct dimensions.
+Security State describes:
+
+```text
+WHAT PHYSICAL
+SECURITY CONDITIONS
+ACTUALLY EXIST.
+```
+
+It must remain distinct from:
+
+```text
+PERCEIVED SECURITY.
+```
+
+Therefore:
+
+```text
+ACTUAL THREAT
+≠
+PERCEIVED THREAT
+
+ACTUAL SAFETY
+≠
+FELT SAFETY.
+```
+
+Perception belongs to observer systems.
+
+Security owns external reality.
+
+---
+
+# 4. Ownership Boundary
+
+Security State owns:
+
+```text
+actual threat
+
+crime state
+
+organized violence
+
+security capability
+
+security coverage
+
+response capability
+
+territorial security
+
+route security
+
+infrastructure security
+
+security zones
+
+active security incidents
+
+security pressure
+
+security resilience
+
+security-specific
+operational capacity
+
+security actor deployment references
+
+security-specific
+systemic history.
+```
+
+---
+
+# 5. What Security State Does Not Own
+
+Security State does not own:
+
+```text
+fear
+
+perceived safety
+
+Character belief
+
+Character knowledge
+
+public Trust
+
+institutional Trust
+
+social cohesion
+
+political legitimacy
+
+Faction objectives
+
+Security Actor goals
+
+Security Actor loyalty
+
+Authority decisions
+
+Population motivation
+
+Narrative tension.
+```
+
+---
+
+# 6. Security vs Authority
+
+Authority answers:
+
+```text
+WHO HAS
+THE RIGHT
+AND GOVERNANCE CAPACITY
+TO ACT?
+```
+
+Security answers:
+
+```text
+WHAT SECURITY
+CAPABILITY ACTUALLY
+EXISTS
+
+AND
+
+WHAT THREATS
+IT FACES.
+```
+
+Example:
+
+```text
+Authority:
+
+Evacuation order legally valid.
+
+
+Security:
+
+Only 30% of route
+can be protected.
+```
+
+The two states interact.
+
+They do not own each other.
+
+---
+
+# 7. Security vs Actors
+
+Security organizations are Actors or organized groups.
+
+Examples:
+
+```text
+Police Department
+
+Military Unit
+
+Sheriff Department
+
+Community Guard
+
+Private Security Organization
+
+Faction Force.
+```
+
+These Actors own:
+
+```text
+Goals
+
+Plans
+
+Beliefs
+
+Knowledge
+
+Relationships
+
+Loyalty
+
+Decisions.
+```
+
+Security State owns:
+
+```text
+their available
+security capability
+
+deployment
+
+coverage
+
+response capability
+
+external security effect.
+```
+
+---
+
+# 8. Security Actor Reference
+
+Security State may reference relevant Actors.
 
 Conceptually:
 
 ```text
-SECURITY STATE
-│
-├── Security Condition
-├── Threat Level
-├── Security Capacity
-├── Public Order
-├── Crime Pressure
-├── Organized Violence
-├── Territorial Security
-├── Infrastructure Security
-├── Route Security
-├── Community Defense
-├── Perceived Security
-├── Security Pressure
-├── Security Resilience
-└── Trend
+SECURITY ACTOR REFERENCE
+
+ID
+
+Name
+
+Type
+
+Available Personnel
+
+Operational Capability
+
+Deployment Area
+
+Coverage
+
+Mobility
+
+Equipment Access
+
+Logistical Dependencies
+
+Command Relationship Reference.
+```
+
+Do not duplicate:
+
+```text
+Goals
+
+Loyalty
+
+Political Identity
+
+Trust
+
+Objectives
+
+Internal Decision Logic.
 ```
 
 ---
 
-# Security Condition
+# 9. Security Condition
 
-Security Condition summarizes the current physical safety environment.
+Security Condition is a high-level derived summary of current physical safety conditions.
 
 Conceptual states:
 
 ```text
 STABLE
+
 STRAINED
+
 UNSTABLE
+
 CRITICAL
-CONFLICT
+
+ACTIVE CONFLICT.
 ```
 
-This should be derived from more detailed values.
+It should be derived from underlying security state.
 
-It should not independently drive events.
+It must not independently generate events.
 
 ---
 
-# Stable
+# 10. Stable
 
 ```text
 STABLE
 ```
 
-Normal security institutions and community expectations remain broadly effective.
+means expected everyday physical safety remains broadly reliable.
 
-Crime and isolated incidents may still occur.
+Crime and isolated incidents may still exist.
+
+Stable does not mean:
+
+```text
+NO CRIME
+
+NO THREAT
+
+NO SECURITY WORK.
+```
 
 ---
 
-# Strained
+# 11. Strained
 
 ```text
 STRAINED
 ```
 
-Security systems face increased workload or local problems.
+means security systems face elevated operational burden while broad safety remains intact.
 
-Possible indicators include:
+Possible causes include:
 
-- reduced patrol coverage
-- increased theft
-- public demonstrations
-- infrastructure protection demands
-- longer emergency response times
+```text
+increased protection demand
+
+reduced staffing
+
+route pressure
+
+increased crime
+
+large population movement
+
+multiple simultaneous incidents.
+```
 
 ---
 
-# Unstable
+# 12. Unstable
 
 ```text
 UNSTABLE
 ```
 
-Security conditions vary significantly across time or geography.
+means physical safety varies meaningfully across:
 
-Possible characteristics:
+```text
+location
 
-- recurring disorder
-- contested areas
-- increased organized crime
-- weak enforcement
-- local defensive organization
+time
+
+routes
+
+population groups
+
+critical sites.
+```
+
+Security remains present.
+
+It is no longer reliably uniform.
 
 ---
 
-# Critical
+# 13. Critical
 
 ```text
 CRITICAL
 ```
 
-Security institutions cannot reliably maintain expected safety across important areas.
+means existing security systems cannot reliably maintain expected physical safety across important areas or functions.
 
-Possible consequences include:
-
-- widespread route insecurity
-- serious organized violence
-- loss of infrastructure protection
-- territorial control problems
-
----
-
-# Conflict
+Possible conditions include:
 
 ```text
-CONFLICT
+major route insecurity
+
+serious organized crime
+
+loss of critical-site protection
+
+severe coverage gaps
+
+repeated organized violence.
 ```
-
-Organized armed actors are actively contesting people, territory, infrastructure or authority.
-
-Conflict may be:
-
-- localized
-- regional
-- civil
-- interstate
-- factional
-
-Conflict should remain distinct from ordinary crime or unrest.
 
 ---
 
-# Threat Level
+# 14. Active Conflict
 
-Threat Level represents the actual potential for harm.
+```text
+ACTIVE CONFLICT
+```
+
+means organized armed Actors are deliberately contesting:
+
+```text
+territory
+
+people
+
+infrastructure
+
+authority
+
+resources
+
+strategic objectives.
+```
+
+Conflict must remain distinct from:
+
+```text
+crime
+
+protest
+
+civil disobedience
+
+isolated violence.
+```
+
+---
+
+# 15. Threat Level
+
+Threat Level represents the actual potential for physical harm.
 
 Conceptual values:
 
 ```text
 LOW
+
 MODERATE
+
 HIGH
+
 SEVERE
-EXTREME
+
+EXTREME.
 ```
 
-Threat sources may include:
+Threat may arise from:
 
-- crime
-- organized groups
-- political violence
-- military activity
-- hostile factions
-- infrastructure sabotage
-- dangerous environmental conditions
+```text
+crime
+
+organized criminal groups
+
+political violence
+
+armed Factions
+
+military conflict
+
+sabotage
+
+hostile Actors
+
+persistent violent incidents.
+```
+
+Environmental hazards themselves belong to relevant World systems.
+
+Security may consume them where they create security consequences.
 
 ---
 
-# Threat Versus Condition
+# 16. Threat vs Security Condition
 
-A region may have:
+Threat and current security outcome must remain separate.
+
+Example:
 
 ```text
 Threat:
 HIGH
 
+Security Capacity:
+HIGH
+
 Security Condition:
-STABLE
+STABLE.
 ```
 
-if strong security capacity successfully manages the threat.
+The threat exists.
+
+Security systems are containing it.
 
 Conversely:
 
@@ -265,334 +619,614 @@ Conversely:
 Threat:
 MODERATE
 
-Security Condition:
-UNSTABLE
-```
-
-may occur when institutional capacity is weak.
-
----
-
-# Security Capacity
-
-Security Capacity represents the ability to prevent, deter and respond to threats.
-
-Sources include:
-
-- police
-- emergency services
-- courts
-- military support
-- local security
-- communications
-- transport
-- intelligence
-- community cooperation
-
-Conceptual values:
-
-```text
-HIGH
-FUNCTIONAL
-STRAINED
+Security Capacity:
 LOW
-MINIMAL
-NONE
+
+Security Condition:
+UNSTABLE.
 ```
+
+Moderate threat may create large consequences where capacity is weak.
 
 ---
 
-# Security Capacity Components
+# 17. Security Capacity
 
-Where useful, capacity may be divided into:
+Security Capacity represents the practical ability of available security Actors to:
 
 ```text
-Personnel
-Mobility
-Communications
-Intelligence
-Equipment
-Detention
-Investigation
-Command
-Logistics
+prevent
+
+deter
+
+observe
+
+respond
+
+investigate
+
+protect
+
+contain
+
+intervene.
 ```
-
----
-
-# Security Capacity Is Resource Dependent
-
-Security organizations require:
-
-- fuel
-- food
-- vehicles
-- medicine
-- communications
-- ammunition where relevant
-- maintenance
-- personnel
-
-Therefore:
-
-```text
-SUPPLY
-      ↓
-SECURITY CAPACITY
-```
-
-A capable police or military organization may degrade through logistical failure without suffering direct attack.
-
----
-
-# Public Order
-
-Public Order represents the broad degree to which civilian activity remains predictable and governed by accepted rules.
 
 Conceptual states:
 
 ```text
-STABLE
+HIGH
+
+FUNCTIONAL
+
 STRAINED
-VOLATILE
-DISRUPTED
+
+LOW
+
+MINIMAL
+
+NONE.
 ```
-
-Public Order belongs partly to Population State.
-
-Security State tracks the physical security consequences.
 
 ---
 
-# Public Order Versus Security
+# 18. Capacity Components
+
+Security Capacity may derive from:
+
+```text
+Personnel
+
+Equipment
+
+Mobility
+
+Communication
+
+Information Access
+
+Investigation Capability
+
+Command Coordination
+
+Detention Capability
+
+Protective Capability
+
+Logistics
+
+Medical Support.
+```
+
+Many of these are externally supplied.
+
+Security State should not duplicate their authoritative source.
+
+---
+
+# 19. Security Capacity Dependencies
+
+Security capability may depend on:
+
+```text
+SUPPLY
+→ fuel
+→ food
+→ medicine
+→ equipment
+
+INFRASTRUCTURE
+→ roads
+→ communications
+→ power
+→ facilities
+
+INFORMATION
+→ threat reports
+→ intelligence
+→ route information
+
+POPULATION
+→ workforce availability
+
+AUTHORITY
+→ jurisdiction
+→ legal powers
+→ deployment authority.
+```
+
+Security State consumes these states.
+
+---
+
+# 20. Security Workforce
+
+Security State may represent operational security-personnel availability.
+
+Conceptual values:
+
+```text
+ADEQUATE
+
+STRAINED
+
+LOW
+
+CRITICAL
+
+INSUFFICIENT.
+```
+
+The actual people remain owned by:
+
+```text
+Characters
+
+Population
+
+Factions
+
+Institutions.
+```
+
+Security State represents their currently usable security capacity.
+
+---
+
+# 21. Workforce Fatigue Boundary
+
+Fatigue is human state.
+
+Security State should not own individual fatigue.
+
+It may represent:
+
+```text
+Operational Personnel Availability:
+DECLINING
+
+Shift Sustainability:
+LOW.
+```
+
+Underlying Character and Population systems explain why.
+
+---
+
+# 22. Security Logistics
+
+Security Actors require resources.
+
+Examples:
+
+```text
+fuel
+
+vehicles
+
+food
+
+communications
+
+medical supplies
+
+maintenance
+
+protective equipment.
+```
+
+Supply and Infrastructure own those resources and systems.
+
+Security State records resulting operational constraints.
+
+---
+
+# 23. Security Coverage
+
+Security Coverage represents where security capability is actually available.
+
+Conceptual values:
+
+```text
+FULL
+
+BROAD
+
+PARTIAL
+
+LOCALIZED
+
+MINIMAL
+
+NONE.
+```
+
+Coverage is geographic and operational.
+
+---
+
+# 24. Coverage vs Capacity
+
+A region may possess:
+
+```text
+Security Capacity:
+HIGH
+
+Coverage:
+PARTIAL.
+```
+
+because personnel are concentrated around critical sites.
+
+Or:
+
+```text
+Security Capacity:
+LOW
+
+Coverage:
+BROAD.
+```
+
+with thinly distributed personnel.
+
+These are different states.
+
+---
+
+# 25. Response Capability
+
+Response Capability describes the ability to respond to incidents in a useful timeframe.
+
+Conceptual states:
+
+```text
+NORMAL
+
+DELAYED
+
+SEVERELY DELAYED
+
+LIMITED
+
+NO RELIABLE RESPONSE.
+```
+
+Response may depend on:
+
+```text
+mobility
+
+communication
+
+coverage
+
+staffing
+
+route access
+
+incident volume.
+```
+
+---
+
+# 26. Response Time Is Geographic
+
+Response capability may differ substantially inside a region.
 
 Example:
 
 ```text
-Public Order:
-VOLATILE
+Urban Core:
+8 minutes
 
-Security Capacity:
-HIGH
+Outer District:
+45 minutes
+
+Remote Settlement:
+No reliable response.
 ```
 
-may describe mass demonstrations under effective policing.
-
-This is not necessarily:
-
-```text
-Security Condition:
-CRITICAL
-```
+Regional summaries must allow meaningful local exceptions.
 
 ---
 
-# Crime Pressure
+# 27. Crime
 
-Crime Pressure represents conditions increasing incentives or opportunities for criminal behavior.
+Crime State represents actual observed or simulated criminal activity.
 
-Sources may include:
-
-- scarcity
-- unemployment
-- low enforcement
-- black markets
-- inequality
-- institutional disruption
-- organized criminal networks
-
-Conceptual values:
+Possible conceptual categories include:
 
 ```text
 LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
-```
 
----
-
-# Crime Pressure Is Not Crime
-
-High Crime Pressure does not guarantee high crime.
-
-Factors reducing crime may include:
-
-- social cohesion
-- community monitoring
-- legitimate authority
-- mutual aid
-- cultural norms
-- effective policing
-
----
-
-# Crime State
-
-Where necessary, crime may be summarized as:
-
-```text
-LOW
 NORMAL
+
 ELEVATED
+
 HIGH
-SYSTEMIC
+
+SYSTEMIC.
+```
+
+Crime should never be inferred solely from scarcity or social strain.
+
+---
+
+# 28. Crime Pressure
+
+Crime Pressure may represent external conditions increasing opportunity or incentive for crime.
+
+Possible sources include:
+
+```text
+valuable scarce goods
+
+low enforcement coverage
+
+organized criminal networks
+
+high-value transport
+
+resource concentration
+
+market disruption.
+```
+
+But:
+
+```text
+CRIME PRESSURE
+≠
+CRIME.
 ```
 
 ---
 
-# Property Crime
+# 29. Property Crime
 
-Property crime may increase when:
+Property crime may include:
 
-- supply scarcity grows
-- policing declines
-- markets fail
-- valuable goods become concentrated
+```text
+theft
+
+burglary
+
+vehicle theft
+
+cargo theft
+
+resource theft.
+```
+
+It must remain distinct from violent crime.
+
+---
+
+# 30. Violent Crime
+
+Violent crime requires actual violent criminal acts.
+
+Scarcity alone does not create it.
+
+Possible contributors may include:
+
+```text
+organized criminal conflict
+
+retaliation cycles
+
+weak response capability
+
+violent networks
+
+weapon access
+
+territorial criminal disputes.
+```
+
+---
+
+# 31. Organized Crime
+
+Organized criminal Actors may control or influence:
+
+```text
+scarce goods
+
+transport
+
+protection
+
+territory
+
+information
+
+illegal markets.
+```
+
+The organization itself belongs to:
+
+```text
+Factions / Actor systems.
+```
+
+Security State owns:
+
+```text
+the resulting
+crime and security condition.
+```
+
+---
+
+# 32. Criminal Governance Boundary
+
+A criminal organization may begin performing governance-like functions such as:
+
+```text
+protection
+
+dispute resolution
+
+resource control
+
+territorial enforcement.
+```
+
+When that occurs:
+
+```text
+Faction
+→ owns Actor
+
+Authority State
+→ represents governance claim/capacity
+
+Security State
+→ represents physical security consequence.
+```
+
+Security must not absorb Authority ownership.
+
+---
+
+# 33. Civil Unrest Boundary
+
+Civil unrest is not inherently Security State.
 
 Examples:
 
-- theft
-- burglary
-- vehicle theft
-- cargo theft
-
----
-
-# Violent Crime
-
-Violent crime should remain separate from property crime.
-
-Scarcity does not automatically produce widespread violence.
-
-Violent Crime pressure should depend upon additional factors such as:
-
-- organized conflict
-- severe social fragmentation
-- weapon availability
-- low authority
-- retaliatory cycles
-
----
-
-# Organized Crime
-
-Organized criminal groups may emerge or expand when they can provide or control:
-
-- scarce goods
-- transport
-- protection
-- territory
-- information
-- black markets
-
-Organized crime may become functionally entangled with local economies.
-
----
-
-# Criminal Governance
-
-In areas with weak formal authority, criminal organizations may begin providing:
-
-- protection
-- dispute resolution
-- resource distribution
-
-This creates:
-
 ```text
-FUNCTIONAL AUTHORITY
+demonstrations
+
+strikes
+
+occupations
+
+civil disobedience
+
+mass refusal.
 ```
 
-without legitimate governance.
-
-Authority State should track such actors if their influence becomes substantial.
-
----
-
-# Civil Unrest
-
-Civil Unrest includes organized public confrontation that is primarily political or social rather than criminal.
-
-Examples include:
-
-- demonstrations
-- strikes
-- occupations
-- mass refusal
-- roadblocks
-
-Civil unrest should remain separate from violence.
-
----
-
-# Unrest Escalation
-
-A conceptual progression:
+These belong primarily to:
 
 ```text
-DISCONTENT
-    ↓
+Society
+
+Characters
+
+Factions
+
+Authority.
+```
+
+Security State only becomes authoritative where there are actual physical-security consequences such as:
+
+```text
+violence
+
+route obstruction
+
+security deployment
+
+physical confrontation
+
+critical-site risk.
+```
+
+---
+
+# 34. Protest Is Not Violence
+
+Canonical rule:
+
+```text
 PROTEST
-    ↓
-CIVIL DISOBEDIENCE
-    ↓
-CONFRONTATION
-    ↓
-VIOLENT INCIDENTS
-    ↓
-SUSTAINED DISORDER
+≠
+VIOLENCE.
 ```
 
-Each stage should require additional conditions.
+A demonstration involving 100,000 people may occur under:
+
+```text
+Security Condition:
+STABLE.
+```
+
+Population size or political conflict does not automatically imply physical insecurity.
 
 ---
 
-# Unrest De-escalation
+# 35. Organized Violence
 
-Unrest may decline through:
+Organized Violence occurs when structured Actors deliberately use physical force for:
 
-- negotiation
-- concessions
-- improved information
-- restored services
-- trusted leadership
-- reduced shortages
-- fair enforcement
+```text
+political
 
-The simulation should allow political conflict to resolve without violence.
+territorial
 
----
+strategic
 
-# Organized Violence
+Factional
 
-Organized Violence occurs when structured groups deliberately use physical force toward political, territorial or strategic objectives.
+military
+```
 
-Examples include:
-
-- militias
-- insurgencies
-- faction forces
-- paramilitary groups
-- state security forces
-- military units
+objectives.
 
 Conceptual states:
 
 ```text
 NONE
+
 ISOLATED
+
 LOCALIZED
+
 REGIONAL
-WIDESPREAD
+
+WIDESPREAD.
 ```
 
 ---
 
-# Organized Violence Versus Crime
+# 36. Organized Violence Requires Actors
 
-Motivation matters.
+Canonical rule:
+
+```text
+ORGANIZED VIOLENCE
+REQUIRES
+
+ORGANIZED ACTORS
++
+CAPABILITY
++
+INTENT
++
+ACTION.
+```
+
+Security State must never spontaneously generate:
+
+```text
+MILITIA ATTACK
+
+INSURGENCY
+
+FACTION WAR
+
+CIVIL WAR.
+```
+
+---
+
+# 37. Crime vs Political Violence
+
+Motivation and Actor context matter.
 
 Example:
 
@@ -600,231 +1234,124 @@ Example:
 Armed cargo theft
 ```
 
-may be organized crime.
+may be:
 
 ```text
-Armed seizure of a regional government facility
+Organized Crime.
 ```
 
-may be political violence.
-
-The simulation should preserve the distinction where relevant.
-
----
-
-# Security Actors
-
-A region may contain multiple security actors.
-
-Examples:
+While:
 
 ```text
-Police
-Sheriff Departments
-Military
-National Guard
-Private Security
-Community Defense
-Faction Forces
-Militias
-Criminal Organizations
+Armed seizure of
+regional government facility
 ```
 
----
-
-# Security Actor Structure
-
-Conceptually:
+may be:
 
 ```text
-SECURITY ACTOR
-│
-├── ID
-├── Name
-├── Type
-├── Personnel
-├── Equipment
-├── Mobility
-├── Logistics
-├── Intelligence
-├── Territory
-├── Loyalty
-├── Authority Relationship
-├── Public Trust
-└── Objectives
+Political Violence.
 ```
 
----
+The physical event may resemble another.
 
-# Police
-
-Police primarily support:
-
-- public safety
-- law enforcement
-- investigation
-- local order
-- emergency support
-
-Police effectiveness depends heavily upon civilian cooperation and information.
+Its causal context differs.
 
 ---
 
-# Military
+# 38. Territorial Security
 
-Military forces may support:
+Territorial Security describes whether physical movement and safety remain reliably protected across an area.
 
-- strategic infrastructure
-- logistics
-- territorial security
-- emergency transportation
-- defense
-
-Military presence should not automatically replace civilian authority.
-
-Authority relationships matter.
-
----
-
-# Military Support State
-
-Conceptual values:
-
-```text
-NONE
-AVAILABLE
-LIMITED
-ACTIVE
-PRIMARY
-```
-
----
-
-# Security and Authority
-
-Security institutions require recognized command structures.
-
-Example:
-
-```text
-Police:
-Recognize Regional Government
-
-Military:
-Recognize National Government
-
-Community Defense:
-Recognizes Local Council
-```
-
-This may function cooperatively.
-
-If command structures conflict, security instability may increase.
-
----
-
-# Security Loyalty
-
-Security Actor loyalty may be:
-
-```text
-STRONG
-FUNCTIONAL
-DIVIDED
-UNCERTAIN
-BROKEN
-```
-
-Loyalty may be toward:
-
-- institution
-- constitution
-- leader
-- local community
-- faction
-- military command
-
----
-
-# Territorial Security
-
-Territorial Security represents whether movement and control through the region remain predictable.
-
-Conceptual values:
+Conceptual states:
 
 ```text
 SECURE
+
 FUNCTIONAL
+
 CONTESTED
+
 FRAGMENTED
-UNCONTROLLED
+
+UNCONTROLLED.
 ```
 
 ---
 
-# Secure
+# 39. Secure
 
 ```text
 SECURE
 ```
 
-Authorities or accepted local institutions can reliably maintain security across the area.
+means threats are low or reliably contained throughout the area.
 
 ---
 
-# Functional
+# 40. Functional
 
 ```text
 FUNCTIONAL
 ```
 
-Most areas remain secure with limited exceptions.
+means most of the area remains predictably safe with limited exceptions.
 
 ---
 
-# Contested
+# 41. Contested
 
 ```text
 CONTESTED
 ```
 
-Multiple actors actively dispute control over important locations or routes.
+means multiple Actors actively dispute security or physical control over important areas.
 
 ---
 
-# Fragmented
+# 42. Fragmented
 
 ```text
 FRAGMENTED
 ```
 
-Different areas are controlled or protected by different actors without unified security coordination.
+means different areas possess different security providers or conditions without reliable unified coverage.
+
+Fragmentation does not automatically mean violence.
 
 ---
 
-# Uncontrolled
+# 43. Uncontrolled
 
 ```text
 UNCONTROLLED
 ```
 
-No actor can reliably provide security across significant portions of the region.
+means no Actor can reliably provide physical security across substantial areas.
+
+Local security may still exist.
 
 ---
 
-# Territorial Control Versus Security
+# 44. Territorial Security vs Authority
 
-Authority may legally control a region while security is poor.
+Canonical distinction:
 
-Likewise, a community may be physically secure without being governed by the formal authority.
+```text
+AUTHORITY
+≠
+SECURITY CONTROL.
+```
 
-These must remain separate.
+A formal government may retain legal authority over territory it cannot safely operate within.
+
+A local community may remain physically safe while lacking formal governmental control.
 
 ---
 
-# Security Zones
+# 45. Security Zones
 
-High-resolution regions may contain internal security zones.
+High-resolution regional simulation may contain local Security Zones.
 
 Example:
 
@@ -838,43 +1365,57 @@ STRAINED
 Western Route:
 UNSTABLE
 
-Remote Communities:
-LOCAL SECURITY
+Remote Community:
+LOCAL SECURITY.
 ```
 
-Regional averages should not erase meaningful local differences.
+Regional summaries must not erase significant local reality.
 
 ---
 
-# Infrastructure Security
+# 46. Infrastructure Security
 
-Critical infrastructure may require protection.
+Infrastructure Security represents the external security condition surrounding critical infrastructure.
 
-Examples:
-
-- power stations
-- water facilities
-- hospitals
-- fuel depots
-- warehouses
-- communications infrastructure
-- bridges
-
-Infrastructure Security State may be:
+Conceptual states:
 
 ```text
 NORMAL
+
 ELEVATED
+
 PROTECTED
+
 THREATENED
-COMPROMISED
+
+COMPROMISED.
+```
+
+Relevant infrastructure may include:
+
+```text
+power facilities
+
+water facilities
+
+hospitals
+
+fuel depots
+
+warehouses
+
+communications infrastructure
+
+bridges
+
+data centers.
 ```
 
 ---
 
-# Security Resource Allocation
+# 47. Protection Demand
 
-Protecting infrastructure consumes security capacity.
+Critical infrastructure may consume security capacity.
 
 Example:
 
@@ -882,55 +1423,97 @@ Example:
 Security Capacity:
 STRAINED
 
-Infrastructure Protection Demand:
-HIGH
+Infrastructure
+Protection Demand:
+HIGH.
 ```
 
-may reduce:
+Possible consequence:
 
 ```text
-Patrol Coverage
-Investigation Capacity
-Traffic Control
+Patrol Coverage:
+Reduced
+
+Investigation:
+Delayed.
 ```
 
-Protecting one system can weaken another service.
+Protection creates opportunity cost.
 
 ---
 
-# Route Security
+# 48. Protection Prioritization Boundary
 
-Supply and population movement depend upon safe routes.
+Security State does not decide what to protect.
 
-Route Security states:
+Authority or Security Actors decide priorities.
+
+Security State records:
+
+```text
+DEPLOYMENT
+
+COVERAGE
+
+RESULTING
+SECURITY CONSEQUENCES.
+```
+
+---
+
+# 49. Route Security
+
+Route Security represents actual security risk associated with movement along a route.
+
+Conceptual states:
 
 ```text
 SECURE
+
 CAUTION
+
 RISKY
+
 DANGEROUS
-CLOSED
-UNKNOWN
+
+HOSTILE CONTROL
+
+CLOSED BY SECURITY CONDITION.
 ```
 
 ---
 
-# Route Security Factors
+# 50. Unknown Route Security
 
-Examples include:
+`UNKNOWN` should not normally be an authoritative Route Security state.
 
-- criminal activity
-- conflict
-- roadblocks
-- authority control
-- environmental hazards
-- infrastructure damage
+If the simulation knows the route is safe, that remains true.
+
+Observers may not know.
+
+Therefore:
+
+```text
+Actual Route Security:
+RISKY
+
+Player Information:
+UNKNOWN.
+```
+
+Information State owns uncertainty.
 
 ---
 
-# Security Versus Accessibility
+# 51. Security vs Accessibility
 
-A route may be secure but physically impassable.
+Canonical distinction:
+
+```text
+ROUTE SECURITY
+≠
+ROUTE ACCESSIBILITY.
+```
 
 Example:
 
@@ -938,882 +1521,1091 @@ Example:
 Route Security:
 SECURE
 
-Transportation State:
-CLOSED
+Infrastructure:
+IMPASSABLE.
 ```
 
-Likewise:
+Or:
 
 ```text
 Route Security:
 DANGEROUS
 
-Transportation:
-OPEN
+Infrastructure:
+OPEN.
 ```
 
-The distinction matters for movement decisions.
+Travel resolution must consume both.
 
 ---
 
-# Convoys
+# 52. Route Security Sources
 
-High-risk supply movement may require:
+Possible sources include:
 
-- escort
-- scheduling
-- intelligence
-- route clearance
+```text
+criminal activity
 
-Convoys consume security capacity but preserve critical supply.
+organized violence
+
+checkpoints
+
+hostile Actors
+
+armed territorial control
+
+security patrols
+
+escort availability.
+```
+
+Physical infrastructure damage belongs to Infrastructure.
+
+Environmental conditions belong to their relevant World domain.
 
 ---
 
-# Community Defense
+# 53. Convoys
 
-Communities may organize security independently.
+Convoys may be used to move strategically important resources through risky areas.
+
+They may require:
+
+```text
+escort
+
+coordination
+
+route intelligence
+
+security personnel
+
+vehicles
+
+fuel
+
+timing.
+```
+
+A convoy is an Actor action / operational activity.
+
+Security State supplies relevant world conditions.
+
+---
+
+# 54. Community Security
+
+Communities may develop local security structures.
 
 Examples:
 
-- neighborhood watches
-- settlement guards
-- volunteer patrols
-- emergency response groups
+```text
+neighborhood watch
 
-Community Defense is not automatically a militia.
+settlement guards
+
+volunteer patrols
+
+local emergency teams.
+```
+
+These Actors or organizations belong to:
+
+```text
+Society
+
+Factions
+
+Characters
+
+Authority
+```
+
+depending on structure.
+
+Security State records their physical security contribution.
 
 ---
 
-# Community Defense States
+# 55. Community Defense Is Not Militia
 
-Conceptually:
+Canonical rule:
+
+```text
+COMMUNITY DEFENSE
+≠
+MILITIA.
+```
+
+Checking neighbors and organizing emergency patrols are not the same as establishing an armed political organization.
+
+---
+
+# 56. Community Security Capability
+
+Instead of treating Community Defense as a psychological progression ladder, Security State may represent:
 
 ```text
 NONE
-INFORMAL
-ORGANIZED
-FORMALIZED
-MILITARIZED
+
+INFORMAL SUPPORT
+
+ORGANIZED LOCAL SECURITY
+
+FORMAL LOCAL SECURITY
+
+MILITARIZED SECURITY STRUCTURE.
 ```
 
+The transition requires real Actor and institutional history.
+
 ---
 
-# Informal Defense
+# 57. Militarization
+
+Militarization should describe an observable structural change such as:
 
 ```text
-INFORMAL
+armed organization
+
+territorial control
+
+military-style command
+
+formal defensive doctrine
+
+persistent armed patrols.
 ```
 
-Residents coordinate basic safety.
-
-Examples:
-
-- checking neighbors
-- observing streets
-- local emergency communication
+It must not be automatically inferred from crisis.
 
 ---
 
-# Organized Defense
+# 58. Perceived Security Boundary
+
+Perceived Security does not belong to authoritative Security State.
+
+Instead:
 
 ```text
-ORGANIZED
+ACTUAL SECURITY
+→ Security State
+
+SECURITY INFORMATION
+→ Information State
+
+CHARACTER PERCEPTION
+→ Knowledge / Beliefs / Psychology
+
+COLLECTIVE SOCIAL PERCEPTION
+→ Society.
 ```
 
-Community roles, patrols or response procedures become established.
-
----
-
-# Formalized Defense
+Security State should not store:
 
 ```text
-FORMALIZED
-```
-
-Security becomes an institutional community function.
-
-This may include recognized command and rules.
-
----
-
-# Militarized
-
-```text
-MILITARIZED
-```
-
-The community increasingly organizes security around armed force and territorial control.
-
-This should require meaningful historical development.
-
----
-
-# Community Defense Benefits
-
-Possible benefits include:
-
-- improved local visibility
-- deterrence
-- faster response
-- reduced security burden on regional authorities
-
----
-
-# Community Defense Risks
-
-Possible risks include:
-
-- mistaken identification
-- fragmented authority
-- escalation
-- local coercion
-- factional control
-
-The outcome depends upon legitimacy, discipline and relationships.
-
----
-
-# Perceived Security
-
-Perceived Security represents how safe the population believes the region is.
-
-Conceptual states:
-
-```text
-HIGH
-FUNCTIONAL
-STRAINED
-LOW
-CRITICAL
-```
-
----
-
-# Actual Versus Perceived Security
-
-Example:
-
-```text
-Actual Security:
-STABLE
-
 Perceived Security:
 LOW
 ```
 
-may create:
-
-- migration
-- defensive behavior
-- reduced commerce
-- route avoidance
-
-Conversely:
-
-```text
-Actual Security:
-UNSTABLE
-
-Perceived Security:
-HIGH
-```
-
-may expose populations to unexpected risk.
+as its own authoritative variable.
 
 ---
 
-# Security Information
+# 59. Rumor and Security
 
-Security perception depends heavily upon Information State.
-
-Examples:
-
-- crime reports
-- rumors
-- official warnings
-- eyewitness accounts
-- social media
-- community radio
-
-Security information may become distorted.
-
----
-
-# Rumor-Driven Security Pressure
+Rumors may cause real security effects.
 
 Example:
 
 ```text
-Rumor:
-Armed group approaching.
+Information:
 
-Actual Threat:
-LOW
+False report of
+armed group approaching
 
-Perceived Threat:
-HIGH
+↓
+
+Characters / Society:
+
+Defensive mobilization
+
+↓
+
+Security State:
+
+New checkpoints
+
+Visible armed presence
+
+Accidental confrontation risk.
 ```
 
-Possible effects:
+The information did not directly change threat.
 
-```text
-Community mobilization
-Roadblocks
-Population flight
-Accidental confrontation
-```
-
-Information may create security consequences even when the original report is false.
+Actors changed the world.
 
 ---
 
-# Fear Feedback
+# 60. Security Intelligence Boundary
 
-A reinforcing loop may occur:
+Security Actors need intelligence.
+
+But intelligence itself belongs primarily to:
 
 ```text
-SECURITY RUMOR
-      ↓
-DEFENSIVE ACTION
-      ↓
-VISIBLE ARMED PRESENCE
-      ↓
-PERCEIVED THREAT
-      ↓
-MORE DEFENSIVE ACTION
+Information_State.md.
 ```
 
-This can produce escalation without an original hostile actor.
+Security State may consume:
+
+```text
+available threat intelligence
+
+route intelligence
+
+Actor intelligence
+
+infrastructure intelligence.
+```
+
+It should not create a separate competing Information system.
 
 ---
 
-# De-escalation Information
+# 61. Intelligence Blindness
 
-Accurate trusted information may interrupt the loop.
+Low information access may reduce security effectiveness.
 
 Example:
 
 ```text
-Trusted verification
-      ↓
-Perceived Threat decreases
-      ↓
-Defensive mobilization declines
-```
-
-Information resilience therefore supports security resilience.
-
----
-
-# Security Pressure
-
-Security Pressure represents forces increasing operational security burden.
-
-Sources may include:
-
-- crime
-- unrest
-- infrastructure protection
-- migration
-- conflict
-- resource scarcity
-- political disputes
-- misinformation
-- workforce loss
-
-Conceptual scale:
-
-```text
-NONE
-LOW
+Threat:
 MODERATE
-HIGH
-SEVERE
-CRITICAL
+
+Security Information:
+LIMITED
+
+Response Strategy:
+Conservative.
 ```
 
----
+The conservative decision belongs to the Security Actor.
 
-# Security Resilience
-
-Security Resilience represents the ability to maintain safety under increasing pressure.
-
-Sources may include:
-
-- strong institutions
-- public cooperation
-- social cohesion
-- reliable information
-- effective police
-- trained security personnel
-- strong authority
-- local organizations
+Security State records resulting deployment and consequences.
 
 ---
 
-# Security Buffers
+# 62. Security Pressure
 
-Temporary security buffers may include:
+Security Pressure represents forces increasing the operational burden on security capability.
 
-- reserve personnel
-- military assistance
-- emergency funding
-- curfews
-- temporary checkpoints
-- mutual-aid support
-
-These may reduce immediate pressure but have costs.
-
----
-
-# Security Workforce
-
-Security personnel may become strained by:
-
-- long hours
-- family responsibilities
-- illness
-- transport failure
-- supply shortage
-- loss of communications
-- repeated emergencies
-
-Workforce fatigue can reduce capacity without any hostile action.
-
----
-
-# Security Logistics
-
-Security actors require logistics.
-
-Examples:
+Possible sources include:
 
 ```text
-Fuel
-Vehicles
-Food
-Communications
-Medical Support
-Maintenance
+crime
+
+organized violence
+
+critical-site protection demand
+
+large population movement
+
+Faction conflict
+
+resource scarcity consequences
+
+jurisdiction conflict
+
+security incidents
+
+workforce loss.
 ```
-
-Supply collapse may therefore produce security decline.
-
----
-
-# Response Time
-
-Security systems may remain technically operational while response time increases.
 
 Conceptual states:
 
 ```text
-NORMAL
-DELAYED
-SEVERE DELAY
-LIMITED RESPONSE
-NO RELIABLE RESPONSE
-```
+NONE
 
----
+LOW
 
-# Response Time Effects
+MODERATE
 
-Longer response time may increase:
-
-- crime opportunity
-- public fear
-- community self-defense
-- reliance on local authority
-
----
-
-# Security Intelligence
-
-Security requires information about:
-
-- threats
-- routes
-- groups
-- infrastructure
-- population movement
-
-Intelligence State may be:
-
-```text
 HIGH
-FUNCTIONAL
-DEGRADED
-LIMITED
-BLIND
+
+SEVERE
+
+CRITICAL.
 ```
 
 ---
 
-# Intelligence Versus Threat
+# 63. Security Resilience
 
-Low intelligence does not increase actual threat directly.
+Security Resilience represents the system's ability to maintain acceptable physical security despite pressure.
 
-It increases uncertainty.
-
-Authorities may respond more conservatively.
-
----
-
-# Conservative Security Response
-
-Examples include:
-
-- checkpoints
-- restricted movement
-- increased patrols
-- infrastructure lockdown
-
-These may reduce risk while increasing:
-
-- delay
-- population frustration
-- supply pressure
-- legitimacy pressure
-
----
-
-# Curfew
-
-Curfew may reduce:
-
-- nighttime crime
-- movement uncertainty
-- security workload
-
-It may increase:
-
-- legitimacy pressure
-- economic disruption
-- public resistance
-
-Curfew should be a tradeoff, not a universal security solution.
-
----
-
-# Checkpoints
-
-Checkpoints may improve:
-
-- territorial visibility
-- route security
-- threat detection
-
-They may reduce:
-
-- mobility
-- logistics efficiency
-- public trust
-
----
-
-# Security Prioritization
-
-During high pressure, authorities may prioritize:
+Possible contributors include:
 
 ```text
-1. Critical infrastructure
-2. Hospitals
-3. Supply routes
-4. Population centers
-5. Remote areas
+adequate staffing
+
+mobility
+
+logistics
+
+good information
+
+redundancy
+
+local security support
+
+functional command
+
+effective coordination
+
+reliable infrastructure.
 ```
 
-This may leave some areas with low security coverage.
+Some contributing human/social states may come from other systems.
 
 ---
 
-# Security Coverage
+# 64. Security Buffers
 
-Conceptual values:
+Temporary Security buffers may include:
 
 ```text
-FULL
-BROAD
-PARTIAL
-LOCALIZED
-MINIMAL
+reserve personnel
+
+temporary outside assistance
+
+additional funding
+
+temporary military support
+
+emergency equipment
+
+temporary checkpoints
+
+mutual-aid agreements.
 ```
 
-Coverage describes where security capacity is actually present.
+Buffers may reduce pressure temporarily.
+
+They may have costs.
 
 ---
 
-# Security Inequality
-
-Regional Security may hide local differences.
+# 65. Security Buffer Depletion
 
 Example:
 
 ```text
-Regional Security:
+Reserve Personnel:
+HIGH
+
+↓
+
+Repeated deployment
+
+↓
+
+Reserve Personnel:
+LOW
+
+↓
+
+Future Response Capacity:
+Reduced.
+```
+
+Security resilience may therefore degrade before Security Condition changes visibly.
+
+---
+
+# 66. Curfew Boundary
+
+Curfew is an Authority or governing Actor decision.
+
+Security State may represent consequences such as:
+
+```text
+night movement reduced
+
+security workload changed
+
+crime opportunities changed
+
+checkpoint demand changed.
+```
+
+It does not decide curfew.
+
+---
+
+# 67. Checkpoint Boundary
+
+Checkpoints are deployed through Actor action.
+
+Possible security effects:
+
+```text
+route visibility improves
+
+detection improves
+
+mobility slows
+
+security staffing consumed.
+```
+
+Possible social or legitimacy effects belong elsewhere.
+
+---
+
+# 68. Security Prioritization Boundary
+
+Security Actors may prioritize:
+
+```text
+critical infrastructure
+
+hospitals
+
+supply routes
+
+population centers
+
+specific communities
+
+strategic facilities.
+```
+
+The priority decision belongs to the Actor.
+
+Security State owns:
+
+```text
+actual deployment
+
+coverage
+
+consequences.
+```
+
+---
+
+# 69. Security Inequality
+
+Regional security may vary significantly.
+
+Example:
+
+```text
+Regional Condition:
 FUNCTIONAL
 
 Urban Core:
 HIGH COVERAGE
 
 Remote Settlements:
-MINIMAL COVERAGE
+MINIMAL COVERAGE.
 ```
 
-This can influence local governance and community defense.
+Unequal security is a legitimate regional condition.
+
+Its political or moral interpretation belongs elsewhere.
 
 ---
 
-# Security and Supply
+# 70. Security and Supply
 
-Supply scarcity may increase:
+Supply scarcity may create conditions for:
 
-- theft
-- convoy requirements
-- black markets
+```text
+resource theft
 
-Security problems may reduce:
+cargo targeting
 
-- distribution
-- trade
-- access
+route protection demand
+
+criminal markets.
+```
+
+But shortage does not automatically produce any of them.
+
+Security may also reduce Supply access through:
+
+```text
+route danger
+
+territorial conflict
+
+escort requirements
+
+physical seizure.
+```
+
+---
+
+# 71. Security and Infrastructure
+
+Infrastructure affects security through:
+
+```text
+communication availability
+
+transport capability
+
+lighting
+
+data systems
+
+surveillance capability.
+```
+
+Security affects Infrastructure through:
+
+```text
+protection
+
+access restrictions
+
+sabotage
+
+conflict
+
+site control.
+```
+
+---
+
+# 72. Security and Authority
+
+Authority may provide:
+
+```text
+legal framework
+
+jurisdiction
+
+deployment authority
+
+coordination.
+```
+
+Security provides:
+
+```text
+physical enforcement capability
+
+protection
+
+territorial security.
+```
+
+Neither equals the other.
+
+---
+
+# 73. Security and Population
+
+Population State may affect security through:
+
+```text
+population density
+
+movement
+
+workforce availability
+
+civilian concentration
+
+evacuation flow.
+```
+
+Security may affect Population through:
+
+```text
+displacement
+
+mobility restriction
+
+route accessibility
+
+civilian exposure.
+```
+
+Human cooperation and Trust remain externally owned.
+
+---
+
+# 74. Security and Information
+
+Information affects security by changing what Security Actors can observe or verify.
+
+Security events create new Information Objects.
 
 Conceptually:
 
 ```text
-SUPPLY
-   ↕
-SECURITY
+SECURITY EVENT
+↓
+OBSERVATION
+↓
+INFORMATION
+↓
+ACTOR INTERPRETATION
+↓
+ACTION
+↓
+SECURITY CONSEQUENCE.
 ```
 
 ---
 
-# Security and Infrastructure
+# 75. Security and Society
 
-Infrastructure degradation may reduce security through:
-
-- communication loss
-- darkness
-- transportation failure
-- reduced surveillance
-
-Security problems may damage or restrict infrastructure.
-
----
-
-# Security and Authority
-
-Authority depends upon security for enforcement and territorial control.
-
-Security institutions depend upon Authority for:
-
-- legitimacy
-- command
-- resources
-- rules
-
----
-
-# Security and Population
-
-Population cooperation improves security through:
-
-- reporting
-- community organization
-- compliance
-- shared information
-
-Low trust may reduce cooperation.
-
----
-
-# Security and Information
-
-Accurate information improves threat assessment.
-
-Poor information may create:
-
-- overreaction
-- underreaction
-- wasted resources
-- mistaken conflict
-
----
-
-# Security and Migration
-
-Migration may alter security pressure.
-
-Large movements may require:
-
-- traffic control
-- shelter protection
-- route management
-- conflict prevention
-
-Migration does not itself imply security threat.
-
----
-
-# Security and Recovery
-
-Recovery requires a minimum degree of safety.
-
-Repair teams cannot operate effectively where:
+Society owns:
 
 ```text
-Security:
-CRITICAL
+social norms
+
+collective trust
+
+social cohesion
+
+political mobilization
+
+community identity.
 ```
 
-Security may therefore become the Recovery Bottleneck.
+Security State owns:
+
+```text
+actual physical safety
+
+crime
+
+organized violence
+
+coverage
+
+security capability.
+```
 
 ---
 
-# Security Feedback Loops
+# 76. Security and Factions
 
-## Capacity Loop
+Faction systems own:
+
+```text
+armed groups
+
+criminal organizations
+
+militias
+
+military factions
+
+political movements.
+```
+
+Security State owns:
+
+```text
+the physical security
+consequences of
+their actions.
+```
+
+---
+
+# 77. Security Feedback Loops
+
+Security may participate in causal loops.
+
+Example:
 
 ```text
 Security Pressure
-      ↓
-Security Workforce Fatigue
-      ↓
-Security Capacity declines
-      ↓
-Response time increases
-      ↓
-Security Pressure increases
+↓
+Operational Capacity
+Strained
+↓
+Response Delay
+↓
+Crime Opportunity
+Increases
+↓
+Security Pressure
+Increases.
 ```
+
+Each transition must remain causal.
 
 ---
 
-# Trust Loop
+# 78. Information-Security Loop
+
+Example:
 
 ```text
-Fair Security Response
-      ↓
-Public Trust increases
-      ↓
-Public Cooperation increases
-      ↓
-Security effectiveness increases
+False Threat Report
+↓
+Actor Mobilization
+↓
+Visible Armed Presence
+↓
+New Reports
+↓
+Other Actor Mobilization
+↓
+Actual Security Pressure.
 ```
+
+The loop may create a real security problem from initially false information.
 
 ---
 
-# Fear Loop
+# 79. Supply-Security Loop
+
+Example:
 
 ```text
-Security Rumor
-      ↓
-Perceived Threat rises
-      ↓
-Defensive mobilization
-      ↓
-Visible tension increases
-      ↓
-Perceived Threat rises
+Supply Shortage
+↓
+Cargo Theft Increases
+↓
+Escort Demand Increases
+↓
+Transport Slows
+↓
+Supply Access Declines
+↓
+Shortage Pressure Increases.
 ```
+
+This loop is possible.
+
+Not automatic.
 
 ---
 
-# Supply-Security Loop
+# 80. Positive Security Loop
+
+Example:
 
 ```text
-Supply shortage
-      ↓
-Cargo theft increases
-      ↓
-Supply routes require security
-      ↓
-Distribution slows
-      ↓
-Supply shortage worsens
+Route Security Improves
+↓
+Trade Resumes
+↓
+Supply Pressure Falls
+↓
+Crime Opportunity Falls
+↓
+Security Pressure Falls
+↓
+Coverage Improves.
 ```
 
----
-
-# Security Shock
-
-Examples include:
-
-- major attack
-- mass casualty event
-- prison failure
-- sudden leadership assassination
-- armed group arrival
-- critical infrastructure sabotage
-
-Shock outcome depends upon existing:
-
-- capacity
-- cohesion
-- authority
-- information
-- population response
+Security systems must allow constructive feedback.
 
 ---
 
-# Security State Transition
+# 81. Security Shock
 
-A conceptual progression:
+A Security Shock is a major event that rapidly changes threat or security capability.
+
+Examples:
+
+```text
+major attack
+
+mass-casualty security incident
+
+prison failure
+
+critical sabotage
+
+arrival of armed Actor
+
+major security leadership disruption.
+```
+
+Shock outcome depends on existing state.
+
+---
+
+# 82. Security Shock Is Not Random Drama
+
+Major shocks require:
+
+```text
+ACTOR
+
+CAUSE
+
+CAPABILITY
+
+EVENT
+
+OR
+
+EXTERNAL WORLD EVENT.
+```
+
+The simulation must not create a security crisis simply because dramatic pacing requires one.
+
+---
+
+# 83. Security Transition
+
+Security Condition may move:
 
 ```text
 STABLE
-   ↓
+
+↓
+
 STRAINED
-   ↓
+
+↓
+
 UNSTABLE
-   ↓
+
+↓
+
 CRITICAL
-   ↓
-CONFLICT
+
+↓
+
+ACTIVE CONFLICT.
 ```
 
-This is not mandatory.
+This is conceptual.
 
-Recovery may move upward.
+It is not a mandatory ladder.
 
----
-
-# Security Stabilization
-
-Security may stabilize through:
-
-- improved policing
-- community cooperation
-- reduced scarcity
-- trusted authority
-- accurate information
-- negotiated agreements
-- military support
+Direct changes may occur when justified.
 
 ---
 
-# Stable Low-Security Equilibrium
+# 84. De-escalation
 
-A region may adapt to limited formal security.
+Security must be able to improve.
 
-Example:
+Possible causal drivers include:
+
+```text
+threat reduction
+
+successful negotiation
+
+improved supply
+
+better information
+
+increased security capacity
+
+route stabilization
+
+Faction agreement
+
+effective protection
+
+reduced Actor hostility.
+```
+
+Political conflict need not become violence.
+
+Violence need not become permanent.
+
+---
+
+# 85. Stable Low-Formal-Security Equilibrium
+
+A region may have:
 
 ```text
 Formal Security Capacity:
 LOW
 
-Community Defense:
+Local Security Capability:
 HIGH
 
-Violent Threat:
+Actual Threat:
 LOW
 
 Security Condition:
-FUNCTIONAL
+STABLE.
 ```
 
-This may be common during The Fractured World.
+This is particularly plausible during The Fractured World.
+
+Security is not defined by institutional modernity.
+
+It is defined by actual physical safety and capability.
 
 ---
 
-# Security Recovery
+# 86. Security Recovery
 
-Recovery may involve:
+Security recovery may include:
 
-- rebuilding police capacity
-- restoring courts
-- improving routes
-- reintegrating armed groups
-- rebuilding public trust
-- reducing black markets
-- restoring economic activity
+```text
+rebuilding response capability
+
+restoring route security
+
+reducing organized violence
+
+reestablishing investigation
+
+improving coverage
+
+integrating local security systems
+
+restoring logistical support.
+```
+
+Trust recovery or political legitimacy belongs elsewhere.
 
 ---
 
-# Security Adaptation
+# 87. Security Adaptation
 
-Security may transform rather than return to its previous institutional model.
+Security may transform rather than restore its earlier institutional structure.
 
 Example:
 
 ```text
 Central Police
-        ↓
+↓
 Regional Security
-        ↓
-Local Community Defense
-        ↓
-Later Integrated Regional Service
+↓
+Local Security Systems
+↓
+Integrated Regional Service.
 ```
 
----
+This is not automatically decline.
 
-# Disarmament and Reintegration
-
-Where armed community groups become unnecessary, recovery may require:
-
-- negotiated disarmament
-- integration into formal security
-- civilian transition
-- legitimacy agreements
-
-Failure may preserve long-term factional security structures.
+It may be institutional evolution.
 
 ---
 
-# Security Memory
+# 88. Security Integration
 
-Regions should remember major security events.
+Reconnection may require integration of previously independent security systems.
+
+Possible issues include:
+
+```text
+command
+
+jurisdiction
+
+training standards
+
+equipment
+
+law
+
+territorial responsibility
+
+disarmament
+
+institutional recognition.
+```
+
+Security State provides operational integration reality.
+
+Authority and Faction systems own political decisions.
+
+---
+
+# 89. Disarmament Boundary
+
+Disarmament is an Actor / political process.
+
+Security State may record:
+
+```text
+armed personnel count
+
+weapons access
+
+militarized organization
+
+security capability changes.
+```
+
+Negotiation, loyalty and political agreement belong elsewhere.
+
+---
+
+# 90. Security Systemic History
+
+Major security events belong to Systemic History.
 
 Examples:
 
-- massacre
-- successful defense
-- police abandonment
-- fair emergency response
-- occupation
-- community protection
-
-These events influence future:
-
-- trust
-- threat perception
-- authority legitimacy
-- defensive behavior
-
----
-
-# Security Scar
-
-Possible persistent negative effects:
-
 ```text
-Fear of outsiders
-Low institutional trust
-Militarized culture
-Faction rivalry
+mass casualty event
+
+successful defense
+
+major policing withdrawal
+
+occupation
+
+route conflict
+
+regional security compact
+
+security-system integration.
 ```
 
----
-
-# Security Legacy
-
-Possible positive historical effects:
+Do not call this:
 
 ```text
-Trusted community defense
-Strong emergency cooperation
-Effective regional security compact
-Professional local institutions
+Security Memory.
 ```
 
-History creates both vulnerabilities and strengths.
+Regions do not remember psychologically.
 
 ---
 
-# Security State Snapshot
+# 91. Security Legacy Boundary
 
-Example:
+Historical events may later influence:
+
+```text
+Trust
+→ Society / Relationships
+
+Fear
+→ Psychology
+
+Institutional reputation
+→ Society / Actor cognition
+
+Faction hostility
+→ Factions.
+```
+
+Security State owns the historical physical event.
+
+Not every later human interpretation.
+
+---
+
+# 92. Security Snapshot
+
+Conceptually:
 
 ```text
 SECURITY STATE
@@ -1824,6 +2616,7 @@ Northern Virginia
 Historical Era:
 WS-02 — The Transition
 
+
 Security Condition:
 STRAINED
 
@@ -1833,13 +2626,13 @@ MODERATE
 Security Capacity:
 FUNCTIONAL
 
-Public Order:
-STRAINED
+Security Coverage:
+BROAD
 
-Crime Pressure:
-MODERATE
+Response Capability:
+DELAYED
 
-Crime State:
+Crime:
 ELEVATED
 
 Organized Violence:
@@ -1854,39 +2647,36 @@ ELEVATED
 Route Security:
 FUNCTIONAL
 
-Community Defense:
-INFORMAL
-
-Perceived Security:
-STRAINED
-
 Security Pressure:
 HIGH
 
 Security Resilience:
 HIGH
 
-Security Workforce:
+Operational Personnel:
 STRAINED
 
-Security Coverage:
-BROAD
-
-Intelligence:
-FUNCTIONAL
-
 Trend:
-DETERIORATING
-
-Confidence:
-MODERATE
+DETERIORATING.
 ```
 
-This describes a heavily pressured region that remains broadly peaceful.
+No:
+
+```text
+Perceived Security
+
+Confidence
+
+Public Trust
+
+Social Cohesion
+```
+
+is stored here.
 
 ---
 
-# Fractured World Example
+# 93. Fractured World Example
 
 ```text
 SECURITY STATE
@@ -1897,6 +2687,7 @@ Shenandoah Valley
 Historical Era:
 WS-03 — The Fractured World
 
+
 Security Condition:
 STABLE
 
@@ -1906,13 +2697,13 @@ MODERATE
 Formal Security Capacity:
 LOW
 
-Community Defense:
-FORMALIZED
+Local Security Capability:
+HIGH
 
-Public Order:
-STABLE
+Coverage:
+BROAD
 
-Crime Pressure:
+Crime:
 LOW
 
 Organized Violence:
@@ -1927,32 +2718,37 @@ CAUTION
 Infrastructure Security:
 NORMAL
 
-Perceived Security:
-HIGH
+Security Pressure:
+MODERATE
 
 Security Resilience:
 HIGH
 
-Authority Relationship:
-COOPERATIVE
-
 Trend:
-STABLE
+STABLE.
 ```
 
-This is important.
+This illustrates an important principle:
 
-The region possesses less formal security infrastructure than pre-Collapse society but may still be safe.
+```text
+LESS FORMAL
+SECURITY INFRASTRUCTURE
+
+DOES NOT MEAN
+
+LESS ACTUAL SAFETY.
+```
 
 ---
 
-# Unstable Region Example
+# 94. Unstable Region Example
 
 ```text
 SECURITY STATE
 
 Historical Era:
 WS-03 — The Fractured World
+
 
 Security Condition:
 UNSTABLE
@@ -1963,10 +2759,13 @@ HIGH
 Security Capacity:
 LOW
 
-Public Order:
-VOLATILE
+Coverage:
+PARTIAL
 
-Crime Pressure:
+Response Capability:
+LIMITED
+
+Crime:
 HIGH
 
 Organized Violence:
@@ -1975,27 +2774,29 @@ LOCALIZED
 Territorial Security:
 FRAGMENTED
 
-Community Defense:
-MILITARIZED
-
 Route Security:
 DANGEROUS
 
-Perceived Security:
-CRITICAL
+Infrastructure Security:
+THREATENED
+
+Security Pressure:
+SEVERE
 
 Security Resilience:
 LOW
 
 Trend:
-DETERIORATING
+DETERIORATING.
 ```
 
-The system can therefore represent dangerous regions without making them universal.
+Dangerous regions exist.
+
+They are not universal.
 
 ---
 
-# Reconnection Example
+# 95. Reconnection Example
 
 ```text
 SECURITY STATE
@@ -2003,776 +2804,1074 @@ SECURITY STATE
 Historical Era:
 WS-04 — The Reconnection
 
+
 Regional Security:
 STABLE
 
-Local Security Forces:
-STRONG
+Regional Security Capability:
+HIGH
 
 Reconnecting National Security:
 EXPANDING
 
-Jurisdiction:
-NEGOTIATED
+Coverage Integration:
+PARTIAL
 
-Primary Pressure:
-Command integration
+Command Integration:
+INCOMPLETE
 
-Primary Risk:
-Competing authority
-
-Primary Opportunity:
-Shared route security
-```
-
-Reconnection may create new security tension even where violence had previously declined.
-
----
-
-# Security Event Generation
-
-Example:
-
-```text
-Supply:
-CONSTRAINED
-
-Crime Pressure:
-HIGH
-
-Security Capacity:
+Territorial Security:
 FUNCTIONAL
 
-Social Cohesion:
-HIGH
+Primary Security Pressure:
+Jurisdictional Integration
+
+Organized Violence:
+LOW
+
+Trend:
+STABLE.
 ```
 
-Possible event:
-
-```text
-Increased cargo theft
-```
-
-rather than:
-
-```text
-Widespread riots
-```
+The political interpretation belongs to Authority and Society.
 
 ---
 
-# Alternative Security Event
+# 96. Cross-System Example — False Armed Group Report
+
+Information State:
 
 ```text
-Supply:
-CONSTRAINED
+Report:
+
+Armed group approaching.
+
+Verification:
+UNVERIFIED.
+```
+
+Actual Security State:
+
+```text
+Threat Level:
+LOW.
+```
+
+Characters / Factions respond:
+
+```text
+Local defensive deployment.
+```
+
+Security State changes:
+
+```text
+Visible Armed Presence:
+INCREASED
+
+Checkpoint Activity:
+INCREASED
+
+Accidental Encounter Risk:
+INCREASED.
+```
+
+A false report has now created real security pressure.
+
+---
+
+# 97. Cross-System Example — Fuel Convoy
+
+Supply State:
+
+```text
+Fuel:
+CRITICAL.
+```
+
+Authority Actor:
+
+```text
+Decision:
+Move reserve fuel
+to hospital network.
+```
+
+Infrastructure:
+
+```text
+Primary road:
+OPEN.
+```
+
+Security:
+
+```text
+Route Security:
+RISKY.
+```
+
+Security Actor:
+
+```text
+Decision:
+Provide escort.
+```
+
+Action Resolution:
+
+```text
+Convoy reaches destination
+with delay.
+```
+
+Consequences:
+
+```text
+Hospital Fuel:
+Improves
+
+Security Capacity:
+Temporarily Reduced Elsewhere.
+```
+
+No single system owned the whole event.
+
+---
+
+# 98. Cross-System Example — Community Safety
 
 Authority:
+
+```text
+Formal Security Reach:
+LOW.
+```
+
+Society:
+
+```text
+Strong local organization.
+```
+
+Faction / Community Actor:
+
+```text
+Organized neighborhood
+security system.
+```
+
+Security State:
+
+```text
+Local Security Capability:
+HIGH
+
+Actual Threat:
 LOW
 
-Social Cohesion:
+Security Condition:
+STABLE.
+```
+
+This is not automatically:
+
+```text
+MILITIA RULE.
+```
+
+---
+
+# 99. Security Event Boundary
+
+Security State does not generate story events.
+
+Canonical flow:
+
+```text
+ACTOR
++
+WORLD CONDITIONS
++
+SECURITY STATE
+↓
+ACTION
+↓
+ACTION RESOLUTION
+↓
+SECURITY CONSEQUENCE
+↓
+LCE / NARRATIVE
+MAY RECOGNIZE
+RELEVANCE.
+```
+
+Retire:
+
+```text
+SECURITY EVENT GENERATION.
+```
+
+Replace it with:
+
+```text
+SECURITY CONSEQUENCE
+AND
+SIMULATED EVENTS.
+```
+
+---
+
+# 100. Security Update Model
+
+Conceptually:
+
+```text
+CURRENT SECURITY STATE
+        ↓
+ACTUAL THREATS
++
+SECURITY ACTORS
++
+AUTHORITY
++
+INFORMATION
++
+SUPPLY
++
+INFRASTRUCTURE
++
+POPULATION
++
+FACTIONS
++
+TIME
+        ↓
+SECURITY PRESSURE
+        ↓
+SECURITY CAPACITY
++
+COVERAGE
++
+RESILIENCE
++
+ACTOR ACTIONS
+        ↓
+ACTION RESOLUTION
+        ↓
+SECURITY CONSEQUENCES
+        ↓
+CRIME
++
+VIOLENCE
++
+ROUTE SECURITY
++
+TERRITORIAL SECURITY
++
+INFRASTRUCTURE PROTECTION
+        ↓
+UPDATED
+SECURITY STATE
+        ↓
+SYSTEMIC HISTORY.
+```
+
+---
+
+# 101. No Universal Update Sequence
+
+Avoid rigid logic such as:
+
+```text
+1. Calculate crime
+2. Calculate unrest
+3. Generate violence
+4. Update condition.
+```
+
+Security is event- and cause-driven.
+
+One region may first experience:
+
+```text
+Faction conflict.
+```
+
+Another:
+
+```text
+crime increase.
+```
+
+Another:
+
+```text
+security workforce loss.
+```
+
+Another:
+
+```text
+successful stabilization.
+```
+
+---
+
+# 102. Adaptive Simulation Resolution
+
+Security State supports:
+
+```text
 LOW
 
-Security Capacity:
-LOW
+MEDIUM
 
-Information:
-UNSTABLE
+HIGH.
 ```
 
-Possible events:
+Resolution changes detail.
 
-```text
-Organized black-market protection
-Localized violence
-Community roadblocks
-Competing security groups
-```
+Not reality.
 
 ---
 
-# Positive Security Event Generation
+# 103. Low Resolution
 
-Examples:
-
-```text
-Regional security compact formed.
-
-Community patrol integrated with local authority.
-
-Supply-route violence declines.
-
-Police and settlement councils establish shared protocols.
-
-Former militia becomes formal regional security service.
-```
-
-Security should produce opportunities for institutional development.
-
----
-
-# Player Interaction
-
-Players may influence Security through:
-
-- protection
-- investigation
-- mediation
-- diplomacy
-- reconnaissance
-- infrastructure repair
-- supply stabilization
-- exposing misinformation
-- training
-- negotiation
-
----
-
-# Player Security Choice
-
-Example:
-
-```text
-Security Capacity:
-Limited
-
-Two simultaneous threats:
-
-Fuel convoy requires escort.
-
-Settlement reports armed theft.
-```
-
-Players may influence which problem receives limited security resources.
-
----
-
-# Player De-escalation
-
-Combat should not always be the best security intervention.
-
-Players may resolve pressure through:
-
-- proving a rumor false
-- restoring supply
-- negotiating route access
-- exposing corruption
-- mediating between authorities
-
-Removing the cause may be more effective than fighting the symptom.
-
----
-
-# Security Update Cycle
-
-A conceptual Security State update may follow:
-
-```text
-1. Read current Security State.
-2. Read Authority State.
-3. Read Population State.
-4. Read Supply State.
-5. Read Infrastructure State.
-6. Read Information State.
-7. Calculate actual threat.
-8. Calculate perceived threat.
-9. Apply security workforce.
-10. Apply security logistics.
-11. Apply territorial coverage.
-12. Process crime pressure.
-13. Process unrest.
-14. Process organized actors.
-15. Apply community defense.
-16. Process route security.
-17. Process infrastructure protection.
-18. Apply security interventions.
-19. Evaluate escalation thresholds.
-20. Update Security Condition.
-21. Generate security events.
-22. Update regional memory.
-```
-
----
-
-# Security Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active conflicts
-- major security incidents
-- contested authority
-
-May track:
-
-```text
-Individual Security Actors
-Territories
-Routes
-Threats
-Loyalties
-Resources
-```
-
----
-
-## Medium Resolution
-
-Used for neighboring regions.
-
-Tracks:
+Low-resolution Security may preserve:
 
 ```text
 Security Condition
-Threat
-Capacity
-Territorial Security
-Crime Pressure
+
+Threat Level
+
+Security Capacity
+
+Coverage
+
 Organized Violence
+
+Territorial Security
+
+Trend
+
+Major Security Actors
+
+Major Security Events.
 ```
 
 ---
 
-## Low Resolution
+# 104. Medium Resolution
 
-Used for distant regions.
-
-Tracks:
+Medium resolution may additionally preserve:
 
 ```text
-Overall Security
-Threat
-Trend
-Major Security Actors
-Major Events
+Crime
+
+Route Security
+
+Infrastructure Security
+
+Response Capability
+
+Security Pressure
+
+Security Resilience
+
+Important Zones.
 ```
 
 ---
 
-# Minimum Security State
+# 105. High Resolution
+
+High-resolution Security may include:
+
+```text
+specific security Actors
+
+specific routes
+
+specific sites
+
+deployment
+
+coverage
+
+security incidents
+
+response timing
+
+active threats
+
+territorial disputes
+
+Action Resolution context.
+```
+
+Actor cognition remains external.
+
+---
+
+# 106. Resolution Follows Causal Relevance
+
+High resolution may be required for:
+
+```text
+active conflict
+
+strategic route crisis
+
+critical infrastructure threat
+
+large security transition
+
+Faction confrontation
+
+regional integration
+
+player involvement.
+```
+
+Not merely player proximity.
+
+---
+
+# 107. Security Persistence
+
+Security State persists through:
+
+```text
+player absence
+
+session boundaries
+
+regional travel
+
+time advancement
+
+Story Threads
+
+resolution changes.
+```
+
+Threats continue.
+
+Security Actors redeploy.
+
+Routes may become safer or more dangerous.
+
+Conflicts may resolve without the player.
+
+---
+
+# 108. Minimum Security State
 
 A minimum viable Security State should contain:
 
 ```text
 Security Condition
+
 Threat Level
+
 Security Capacity
-Public Order
-Crime Pressure
-Organized Violence
-Territorial Security
-Infrastructure Security
-Route Security
-Community Defense
-Perceived Security
-Security Pressure
-Security Resilience
-Security Workforce
+
 Security Coverage
+
+Response Capability
+
+Crime State
+
+Organized Violence
+
+Territorial Security
+
+Route Security
+
+Infrastructure Security
+
+Security Pressure
+
+Security Resilience
+
+Operational Personnel Availability
+
 Trend
-Confidence
+
+Major Security Actors
+
+Major Security Events
+
+Causal Sources.
 ```
 
-Security Actors should only receive individual simulation where they meaningfully affect gameplay or regional structure.
+No observer-perception field belongs in the authoritative minimum state.
 
 ---
 
-# Security Consistency Rules
+# 109. Security State Invariants
 
-## Rule 1
+## SEC-INV-001 — Crisis Does Not Automatically Produce Violence
 
-Crisis does not automatically create violence.
-
----
-
-## Rule 2
-
-Threat and Security Condition are separate.
+Pressure must not become deterministic conflict.
 
 ---
 
-## Rule 3
+## SEC-INV-002 — Threat and Security Condition Are Separate
 
-Threat and Perceived Threat are separate.
-
----
-
-## Rule 4
-
-Security Capacity and Authority are separate but connected.
+High threat may coexist with stable safety.
 
 ---
 
-## Rule 5
+## SEC-INV-003 — Actual Threat and Perceived Threat Are Separate
 
-Crime Pressure does not automatically equal crime.
-
----
-
-## Rule 6
-
-Property crime and violent crime should not be treated as identical.
+Perceived threat belongs outside Security State.
 
 ---
 
-## Rule 7
+## SEC-INV-004 — Security Capacity and Authority Are Separate
 
-Civil unrest and criminal disorder are separate.
-
----
-
-## Rule 8
-
-Protest does not equal violence.
+Capability and governance legitimacy are distinct.
 
 ---
 
-## Rule 9
+## SEC-INV-005 — Security Actors Remain Actors
 
-Organized violence requires organized actors and plausible motives.
-
----
-
-## Rule 10
-
-Community defense does not automatically equal militia activity.
+Security State does not own their goals, beliefs, loyalty or decisions.
 
 ---
 
-## Rule 11
+## SEC-INV-006 — Crime Pressure Does Not Equal Crime
 
-Military support does not automatically replace civilian authority.
-
----
-
-## Rule 12
-
-Security capacity depends upon supply and infrastructure.
+Actual criminal activity requires causal events and Actors.
 
 ---
 
-## Rule 13
+## SEC-INV-007 — Property Crime and Violent Crime Are Distinct
 
-Security information may be wrong or outdated.
-
----
-
-## Rule 14
-
-Rumors may create real security pressure.
+One does not automatically imply the other.
 
 ---
 
-## Rule 15
+## SEC-INV-008 — Protest Does Not Equal Physical Insecurity
 
-Security responses should have costs and tradeoffs.
-
----
-
-## Rule 16
-
-Protection of critical infrastructure may reduce security elsewhere.
+Political conflict may remain peaceful.
 
 ---
 
-## Rule 17
+## SEC-INV-009 — Organized Violence Requires Organized Actors
 
-Route security and route accessibility are separate.
-
----
-
-## Rule 18
-
-Regions may remain safe with low formal security capacity if local resilience is high.
+Armed conflict may not appear from abstract instability alone.
 
 ---
 
-## Rule 19
+## SEC-INV-010 — Community Defense Does Not Automatically Equal Militia
 
-High formal security capacity does not guarantee legitimacy.
-
----
-
-## Rule 20
-
-Violence should be capable of de-escalating.
+Local security organization may remain civilian and cooperative.
 
 ---
 
-## Rule 21
+## SEC-INV-011 — Territorial Control and Authority Are Separate
 
-Security recovery may create new institutions rather than restoring old ones.
-
----
-
-## Rule 22
-
-Major security events should remain part of regional memory.
+Physical control does not automatically create legitimate governance.
 
 ---
 
-## Rule 23
+## SEC-INV-012 — Route Security and Route Accessibility Are Separate
 
-Players must obey the same security causality as institutions and factions.
-
----
-
-## Rule 24
-
-Security must remain explainable through world conditions.
+Security does not own physical transport condition.
 
 ---
 
-# Guiding Questions
+## SEC-INV-013 — Security Depends on Supply and Infrastructure
 
-For every regional security situation, the simulation should be capable of answering:
+Operational capability requires real material support.
 
-**What is the actual threat?**
+---
 
-**Who creates that threat?**
+## SEC-INV-014 — Security Does Not Own Observer Information
 
-**How capable are security institutions?**
+Threat intelligence belongs to Information State.
 
-**Where can they operate?**
+---
 
-**What resources do they possess?**
+## SEC-INV-015 — Rumors May Create Real Security Consequences Indirectly
 
-**Which areas receive priority?**
+Information influences Actors, who change the world.
 
-**What do people believe the threat is?**
+---
 
-**How reliable is that information?**
+## SEC-INV-016 — Security Responses Have Opportunity Cost
 
-**How much civilian cooperation exists?**
+Protection in one location may reduce coverage elsewhere.
 
-**Are community defense structures emerging?**
+---
 
-**Are routes secure?**
+## SEC-INV-017 — Low Formal Capacity May Coexist With High Actual Safety
 
-**Is infrastructure protected?**
+Security should not privilege pre-Collapse institutions mechanically.
 
-**Are security actors politically aligned?**
+---
 
-**What pressures could produce escalation?**
+## SEC-INV-018 — High Formal Capacity Does Not Guarantee Safety
 
-**What conditions could produce de-escalation?**
+Capability may be misallocated, constrained or overwhelmed.
 
-These questions are more useful than simply asking:
+---
+
+## SEC-INV-019 — Security Can De-Escalate
+
+Conflict and pressure are not one-way processes.
+
+---
+
+## SEC-INV-020 — Security Recovery May Transform Institutions
+
+Recovery does not require restoration of old structures.
+
+---
+
+## SEC-INV-021 — Security State Does Not Generate Narrative Events
+
+Events emerge through Actors and Simulation.
+
+---
+
+## SEC-INV-022 — Security State Does Not Own Human Fear
+
+Psychological state remains human-owned.
+
+---
+
+## SEC-INV-023 — Security State Does Not Own Social Trust
+
+Trust remains relational and social.
+
+---
+
+## SEC-INV-024 — Security State Persists Off-Screen
+
+Player absence does not freeze threats or security capability.
+
+---
+
+## SEC-INV-025 — Resolution Changes Detail, Not Security Reality
+
+Low-resolution regions remain causally active.
+
+---
+
+## SEC-INV-026 — Major Security Change Must Be Explainable
+
+Security conditions require traceable causes.
+
+---
+
+# 110. Development Locks
+
+Future Security State development must not introduce:
 
 ```text
-How dangerous is the region?
-```
+crisis equals violence
 
----
+shortage equals riot
 
-# Core Design Principle
+fear equals violence
 
-Project Ascension should never assume:
+protest equals disorder
 
-```text
-INFRASTRUCTURE FAILS
-        ↓
-PEOPLE PANIC
-        ↓
-VIOLENCE
-        ↓
-SOCIETY COLLAPSES
-```
+community defense equals militia
 
-Instead, the system should allow:
+low authority equals high crime
 
-```text
-INFRASTRUCTURE PRESSURE
-        ↓
-POPULATION CONCERN
-        ↓
-COMMUNITY ORGANIZATION
-        ↓
-AUTHORITY RESPONSE
-        ↓
-SECURITY ADAPTATION
-        ↓
-STABLE LOWER-FUNCTION EQUILIBRIUM
-```
+high authority equals safety
 
-or, under different conditions:
+high security capacity equals legitimacy
 
-```text
-INFRASTRUCTURE PRESSURE
-        ↓
-SUPPLY SHORTAGE
-        ↓
-LOW TRUST
-        ↓
-WEAK AUTHORITY
-        ↓
-COMPETING SECURITY ACTORS
-        ↓
-LOCALIZED CONFLICT
-```
+military presence equals government
 
-Both are possible.
+Crime Pressure equals Crime
 
-Neither should be automatic.
+Perceived Security as Security-owned truth
 
----
+Security-owned Trust
 
-# Relationship to The Connected World
+Security-owned fear
 
-Typical conditions include:
+Security-owned social cohesion
 
-```text
-Strong formal security institutions
-High communications
-High mobility
-Reliable information
-Low community defense requirement
+Security-owned Actor loyalty
+
+Security-owned Actor objectives
+
+Security-owned Authority decisions
+
+Security-owned Faction goals
+
+Security-owned Information confidence
+
+UNKNOWN as actual Security State
+when only observers are uncertain
+
+automatic crime
+
+automatic riots
+
+automatic militia formation
+
+automatic civil war
+
+automatic unrest escalation
+
+automatic violent response
+
+automatic collapse
+
+random armed groups
+
+random assassinations for drama
+
+random security shocks
+
+Security-generated quests
+
+Security-generated narrative events
+
+player-exclusive security rules
+
+frozen distant conflicts.
 ```
 
 ---
 
-# Relationship to The Transition
+# 111. Security Architecture Test
 
-Typical pressures include:
+Before adding a Security mechanic, ask:
 
 ```text
-Infrastructure protection
-Demonstrations
-Supply-route security
-Workforce strain
-Information uncertainty
-```
+WHAT IS
+THE ACTUAL
+PHYSICAL THREAT?
 
-Formal security usually remains functional.
+WHO OR WHAT
+CREATES IT?
+
+IS THERE
+AN ACTOR
+BEHIND IT?
+
+WHAT SECURITY
+CAPABILITY EXISTS?
+
+WHERE?
+
+HOW MUCH
+COVERAGE EXISTS?
+
+HOW QUICKLY
+CAN ACTORS
+RESPOND?
+
+WHAT RESOURCES
+DO THEY REQUIRE?
+
+WHAT INFORMATION
+DO THEY HAVE?
+
+WHO DECIDES
+WHAT THEY DO?
+
+WHAT ROUTES
+ARE ACTUALLY
+SAFE?
+
+WHAT SITES
+REQUIRE PROTECTION?
+
+WHAT IS
+ACTUAL CRIME?
+
+WHAT IS ONLY
+CRIME PRESSURE?
+
+IS THIS
+POLITICAL ACTION
+
+OR
+
+A SECURITY EVENT?
+
+IS THIS
+PERCEPTION
+
+OR
+
+WORLD TRUTH?
+
+WHAT WOULD
+CAUSE ESCALATION?
+
+WHAT WOULD
+CAUSE DE-ESCALATION?
+
+WHAT HAPPENS
+IF THE PLAYER
+NEVER ARRIVES?
+```
 
 ---
 
-# Relationship to The Fractured World
+# 112. Final Security Model
 
-Security becomes increasingly diverse.
-
-Possible regional models include:
+Conceptually:
 
 ```text
-Regional Police
-Settlement Security
-Community Defense
-Military Administration
-Security Coalitions
-Private Security
-```
+WORLD CONDITIONS
+        ↓
+ACTUAL THREATS
+        │
+        ├── Crime
+        ├── Organized Violence
+        ├── Hostile Actors
+        ├── Territorial Conflict
+        └── Security Incidents
+                ↓
+────────────────────────────
+SECURITY STATE
+────────────────────────────
 
-Some regions become violent.
+Security Capacity
 
-Many do not.
+Security Coverage
 
----
+Response Capability
 
-# Relationship to The Reconnection
+Territorial Security
 
-Reconnection creates new questions:
+Route Security
 
-```text
-Who controls reopened routes?
+Infrastructure Security
 
-Whose laws apply?
+Security Pressure
 
-Who disarms local security groups?
-
-Who commands integrated security forces?
-
-Which institutions are trusted?
-```
-
-Security integration may become one of the hardest parts of political reconnection.
-
----
-
-# World Simulation Integration
-
-With Security State established, the major simulation domains are now:
-
-```text
+Security Resilience
+────────────────────────────
+                ↓
+SECURITY ACTORS
+        │
+        ├── Goals
+        ├── Knowledge
+        ├── Decisions
+        └── Actions
+                ↓
+ACTION RESOLUTION
+                ↓
+SECURITY CONSEQUENCE
+                ↓
+UPDATED
 WORLD STATE
-│
-├── Infrastructure
-├── Information
-├── Authority
-├── Population
-├── Supply
-├── Security
-├── Communications
-└── Recovery
-```
-
-The core interaction becomes:
-
-```text
-INFRASTRUCTURE
-      ↕
-SUPPLY
-      ↕
-POPULATION
-      ↕
-SECURITY
-      ↕
-AUTHORITY
-      ↕
+                ↓
 INFORMATION
-```
-
-Every domain may both influence and be influenced by the others.
-
----
-
-# Current Status
-
-```text
-WORLD SIMULATION
-
-README.md
-COMPLETE
-
-World_State.md
-FOUNDATION DEFINED
-
-Regional_State.md
-FOUNDATION DEFINED
-
-Infrastructure_State.md
-FOUNDATION DEFINED
-
-Information_State.md
-FOUNDATION DEFINED
-
-Authority_State.md
-FOUNDATION DEFINED
-
-Population_State.md
-FOUNDATION DEFINED
-
-Supply_State.md
-FOUNDATION DEFINED
-
-Security_State.md
-FOUNDATION DEFINED
-
-Escalation_and_Recovery.md
-FOUNDATION DEFINED
-
-Validation/
-    TEST-001_Northern_Virginia_Transition.md
-    PASS
++
+POPULATION
++
+AUTHORITY
++
+SUPPLY
++
+INFRASTRUCTURE
++
+SOCIETY
+                ↓
+NEW CONDITIONS
+                ↓
+FUTURE SECURITY.
 ```
 
 ---
 
-# Foundation Status
+# 113. Security North Star
 
-The major World Simulation domains are now defined.
-
-The system can represent:
+The system succeeds when Project Ascension can answer:
 
 ```text
-WHAT EXISTS
-World_State
+HOW SAFE
+IS THIS PLACE
+ACTUALLY?
 
-WHERE IT EXISTS
-Regional_State
+WHAT THREATS
+EXIST?
 
-WHAT KEEPS SOCIETY RUNNING
-Infrastructure_State
+WHO CREATES THEM?
 
-WHAT PEOPLE KNOW
-Information_State
+WHERE ARE
+THE THREATS?
 
-WHO CAN ACT
-Authority_State
+WHO CAN
+RESPOND?
 
-HOW PEOPLE RESPOND
-Population_State
+HOW MUCH
+CAPACITY EXISTS?
 
-WHAT RESOURCES ARE AVAILABLE
-Supply_State
+WHERE DOES
+THAT CAPACITY
+ACTUALLY REACH?
 
-HOW SAFE THE WORLD IS
-Security_State
+HOW LONG
+DOES RESPONSE TAKE?
 
-HOW ALL OF IT CHANGES
-Escalation_and_Recovery
+WHICH ROUTES
+ARE SAFE?
+
+WHICH ROUTES
+ARE DANGEROUS?
+
+WHICH INFRASTRUCTURE
+IS PROTECTED?
+
+WHAT CRIME
+IS ACTUALLY OCCURRING?
+
+IS THERE
+ORGANIZED VIOLENCE?
+
+WHO ARE
+THE RELEVANT ACTORS?
+
+WHAT DO
+THEY CHOOSE?
+
+WHAT IS
+ONLY RUMOR?
+
+WHAT IS
+ONLY FEAR?
+
+WHAT COULD
+CAUSE ESCALATION?
+
+WHAT COULD
+CAUSE STABILIZATION?
+
+AND
+
+WHAT WILL
+HAPPEN HERE
+IF THE PLAYER
+NEVER INTERVENES?
 ```
 
 ---
 
-# Next Recommended Step
+# 114. Closing Principle
 
-The next recommended task is:
-
-```text
-WSIM-TEST-002
-Shenandoah Valley — The Fractured World
-```
-
-Suggested location:
+Project Ascension must not build its world on the assumption:
 
 ```text
-Canon/
-└── Systems/
-    └── World_Simulation/
-        └── Validation/
-            └── TEST-002_Shenandoah_Valley_Fractured_World.md
+SYSTEMS FAIL
+
+↓
+
+PEOPLE PANIC
+
+↓
+
+PEOPLE BECOME VIOLENT
+
+↓
+
+CIVILIZATION ENDS.
 ```
 
-TEST-001 demonstrated:
+That is not the simulation we are building.
+
+The world may instead produce:
 
 ```text
-Can World Simulation reproduce deterioration?
+Infrastructure:
+DEGRADED
+
+Supply:
+CONSTRAINED
+
+Authority:
+DECENTRALIZED
+
+Security Capacity:
+LOW
+
+Local Security:
+FUNCTIONAL
+
+Organized Violence:
+NONE
+
+Crime:
+LOW
+
+Region:
+STABLE.
 ```
 
-TEST-002 should test something more difficult:
+Another region under similar material conditions may develop:
 
 ```text
-Can World Simulation produce a society that remains
-stable for years after fragmentation?
+Faction Competition
+
+Route Conflict
+
+Organized Crime
+
+Territorial Fragmentation
+
+Localized Violence.
 ```
 
-The region should face persistent limitations:
+The difference must come from history, Actors, institutions, resources, relationships, information and decisions.
 
-- limited fuel
-- limited medicine
-- weaker long-distance communication
-- reduced industrial supply
-- regional authority
-- lower technological integration
+Not from an apocalypse formula.
 
-while maintaining:
-
-- food security
-- public order
-- functioning governance
-- community cohesion
-- trade
-- adaptation
-- population stability
-
-If TEST-002 succeeds, we will have demonstrated that World Simulation is not merely:
+Security therefore does not ask:
 
 ```text
-A COLLAPSE ENGINE
+HOW BAD
+SHOULD THIS
+REGION BECOME?
 ```
 
-but:
+It asks:
 
 ```text
-A CIVILIZATION ENGINE
+WHAT THREAT
+ACTUALLY EXISTS?
+
+WHO IS
+RESPONDING?
+
+WHAT CAN
+THEY DO?
+
+WHAT DO
+THEY CHOOSE
+TO DO?
+
+AND
+
+WHAT PHYSICAL
+SECURITY REALITY
+EMERGES?
 ```
+
+The central principle is:
+
+> **Security is not the absence of crisis. It is the evolving relationship between actual threats, the Actors capable of responding to them, and the real physical safety that emerges from their actions.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial security condition, threat, capacity, crime, unrest, organized violence, territorial security, community defense, route security, perception and security-recovery framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial security condition, threat, capacity, crime, unrest, organized violence, territorial security, community defense, route security, perception and security-recovery framework. |
+| 1.0 | 2026-09-01 | Rebuilt Security State as canonical external physical-security architecture aligned with Simulation Architecture, World State, Regional State, Infrastructure, Supply, Information, Authority, Population, Society, Characters and Factions. Preserved actual threat, crime, organized violence, security capacity, territorial security, route security, infrastructure protection, coverage, response capability, security pressure, resilience, fragmentation and recovery while removing ownership of perceived security, fear, Trust, social cohesion, Authority legitimacy, Security Actor objectives and loyalty. Reframed security organizations as external Actors, moved intelligence and uncertainty to Information State, replaced Security Memory with Systemic History, removed Security event generation, clarified protest and civil-unrest boundaries, separated route security from accessibility, and established adaptive simulation resolution, invariants and development locks preventing deterministic crisis-to-violence logic. |

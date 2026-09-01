@@ -2,88 +2,124 @@
 # Infrastructure State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Infrastructure State |
-| Location | Canon/Systems/World_Simulation/Infrastructure_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Infrastructure Simulation Layer |
-| Last Updated | 2026-08-09 |
-
-> *"Infrastructure rarely fails all at once. More often, the connections that make it function as one system fail first."*
-
----
-
-# Purpose
-
-The Infrastructure State system defines how essential physical and digital infrastructure is represented inside Project Ascension's World Simulation.
-
-Infrastructure provides the operational foundation upon which modern society depends.
-
-It includes:
-
-- electricity
-- water
-- telecommunications
-- transportation
-- fuel
-- healthcare infrastructure
-- logistics
-- data networks
-- critical industrial systems
-
-The purpose of this system is not to simulate every power line, pump, road or server.
-
-It is to model whether infrastructure can continue delivering the services that populations and institutions depend upon.
+|---|---|
+| Project | Project Ascension |
+| Document | Infrastructure State System |
+| Location | `Canon/Systems/World_Simulation/Infrastructure_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Infrastructure |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the authoritative state, service capability, dependencies, operational modes, fragmentation and recovery context of physical and digital infrastructure |
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-Infrastructure condition is not binary.
+The Infrastructure State System defines how essential physical and digital infrastructure exists and operates inside Project Ascension.
 
-A system does not exist only as:
+It answers:
+
+> **What physical and technical systems exist, what condition are they in, what service can they currently provide, what do they depend on, and how may they fail, fragment, adapt or recover?**
+
+Infrastructure includes the systems that allow civilization to function materially.
+
+Examples include:
+
+```text
+POWER
+
+WATER
+
+TRANSPORTATION
+
+TELECOMMUNICATIONS
+
+DATA INFRASTRUCTURE
+
+HEALTHCARE FACILITIES
+
+FUEL DISTRIBUTION INFRASTRUCTURE
+
+LOGISTICS INFRASTRUCTURE
+
+CRITICAL INDUSTRIAL INFRASTRUCTURE.
+```
+
+Infrastructure State does not simulate every wire, road, pump or server.
+
+It models whether infrastructure can continue providing meaningful service.
+
+---
+
+# 2. Core Principle
+
+Infrastructure is not binary.
+
+Avoid:
 
 ```text
 WORKING
-or
-FAILED
+
+OR
+
+FAILED.
 ```
 
-Infrastructure may be:
+Infrastructure may instead be:
 
-- operational but under pressure
-- physically intact but poorly coordinated
-- functioning locally but disconnected nationally
-- operating manually
-- partially automated
-- degraded but stable
-- technically repairable but lacking parts
-- repaired but unable to reconnect
-- fragmented into independent systems
+```text
+physically intact
+but disconnected
 
-This distinction is fundamental to Project Ascension.
+operational
+but capacity-constrained
+
+degraded
+but stable
+
+locally functional
+but nationally fragmented
+
+automated
+but poorly monitored
+
+manually operated
+
+repairable
+but lacking parts
+
+connected
+but supply-constrained
+
+technically healthy
+but deliberately isolated.
+```
+
+The central principle is:
+
+> **Infrastructure rarely disappears all at once. More often, the relationships that allow it to function as one system fail first.**
 
 ---
 
-# Infrastructure Versus Infrastructure Coordination
+# 3. Infrastructure State vs Coordination
 
-The physical condition of infrastructure must remain separate from the ability to monitor and coordinate it.
+Infrastructure condition and infrastructure coordination must remain separate.
 
 Example:
 
 ```text
-Physical Infrastructure:
+Physical Grid:
 FUNCTIONAL
 
 National Coordination:
-DEGRADED
+FAILED
 ```
 
 The equipment still works.
 
-The wider system can no longer reliably see or coordinate it.
+The integrated system does not.
 
 Likewise:
 
@@ -95,319 +131,530 @@ Regional Coordination:
 STRONG
 ```
 
-may allow local operators to maintain acceptable service despite significant technical problems.
+may allow local operators to preserve service despite technical deterioration.
+
+Therefore:
+
+```text
+PHYSICAL CONDITION
+≠
+COORDINATION CAPABILITY.
+```
 
 ---
 
-# Relationship to Infrastructure Monitoring Levels
+# 4. Relationship to Infrastructure Monitoring Levels
 
 Infrastructure State integrates with:
 
 ```text
-Canon/Systems/Infrastructure_Monitoring_Levels.md
+Canon/Systems/
+Infrastructure_Monitoring_Levels.md
 ```
 
-Infrastructure Monitoring Levels — IML — describe the operational monitoring and coordination environment.
-
-Infrastructure State describes the actual condition of infrastructure and services.
-
-The two systems must not be treated as interchangeable.
-
-Conceptually:
+The distinction is:
 
 ```text
 INFRASTRUCTURE STATE
-"What condition is the infrastructure in?"
+
+What is physically
+and operationally true?
+
 
 IML
-"How effectively can operators observe and coordinate it?"
+
+How effectively can
+operators observe,
+monitor and coordinate it?
 ```
 
-Both influence one another.
+These systems influence one another.
 
-Neither automatically determines the other.
+They are not interchangeable.
 
 ---
 
-# Infrastructure Hierarchy
+# 5. Infrastructure Ownership
 
-Infrastructure should be represented through several levels.
+Infrastructure State owns authoritative external state concerning:
 
 ```text
-INFRASTRUCTURE
-│
-├── Global Networks
-│
-├── National Networks
-│
-├── Regional Systems
-│
-├── Local Systems
-│
-└── Individual Critical Assets
+physical infrastructure condition
+
+technical service capability
+
+operational status
+
+capacity
+
+demand relationship
+
+redundancy
+
+infrastructure dependencies
+
+buffers
+
+repairability
+
+manual operating capability
+
+automation capability
+
+critical assets
+
+connectivity
+
+fragmentation
+
+infrastructure-specific
+recovery capacity.
 ```
-
-Not every infrastructure asset requires individual simulation.
-
-Critical assets may receive additional detail where gameplay or systemic importance justifies it.
 
 ---
 
-# Core Infrastructure Sectors
+# 6. What Infrastructure State Does Not Own
 
-The initial infrastructure model should contain:
+Infrastructure State does not own:
 
 ```text
-INFRASTRUCTURE
-│
-├── Power
-├── Water
-├── Telecommunications
-├── Transportation
-├── Fuel
-├── Healthcare
-├── Logistics
-├── Data Infrastructure
-└── Critical Industry
+Character knowledge
+
+Character belief
+
+public perception
+
+rumor
+
+information confidence
+
+supply inventory
+
+population behavior
+
+authority legitimacy
+
+institutional decision-making
+
+social trust
+
+Character workforce state.
 ```
 
-Additional sectors may be introduced later if required.
+Those belong to other authoritative systems.
+
+Infrastructure may consume their outputs.
 
 ---
 
-# Standard Infrastructure Domain
+# 7. Infrastructure Hierarchy
 
-Every infrastructure sector should expose a common set of values.
+Infrastructure may exist at several levels.
 
 Conceptually:
 
 ```text
-INFRASTRUCTURE SECTOR
-│
-├── Condition
-├── Service Level
-├── Pressure
-├── Resilience
-├── Capacity
-├── Demand
-├── Coordination
-├── Automation
-├── Workforce
-├── Repair Capacity
-├── Dependencies
-├── Trend
-└── Confidence
+GLOBAL NETWORKS
+        ↓
+NATIONAL NETWORKS
+        ↓
+REGIONAL SYSTEMS
+        ↓
+LOCAL SYSTEMS
+        ↓
+CRITICAL ASSETS.
 ```
 
-This provides a consistent model across infrastructure types.
+Not every asset requires individual simulation.
+
+Infrastructure resolution should increase only where causal significance requires it.
 
 ---
 
-# Condition
+# 8. Core Infrastructure Sectors
 
-Condition represents the physical and technical health of the infrastructure.
+The primary infrastructure sectors are:
+
+```text
+POWER
+
+WATER
+
+TRANSPORTATION
+
+TELECOMMUNICATIONS
+
+DATA INFRASTRUCTURE
+
+HEALTHCARE INFRASTRUCTURE
+
+FUEL DISTRIBUTION INFRASTRUCTURE
+
+LOGISTICS INFRASTRUCTURE
+
+CRITICAL INDUSTRIAL INFRASTRUCTURE.
+```
+
+These represent infrastructure functions.
+
+They do not imply that Infrastructure State owns every resource moving through them.
+
+---
+
+# 9. Infrastructure Sector Contract
+
+Where appropriate, infrastructure sectors may expose:
+
+```text
+Condition
+
+Service Level
+
+Operational Status
+
+Capacity
+
+Demand
+
+Pressure
+
+Resilience
+
+Redundancy
+
+Automation Capability
+
+Manual Operating Capability
+
+Repair Capacity
+
+Dependencies
+
+Buffers
+
+Trend
+
+Recovery Capacity
+
+Last Significant Change
+
+Causal Sources.
+```
+
+Not every sector requires every field.
+
+The shared contract exists for consistency.
+
+---
+
+# 10. Condition
+
+Condition represents physical and technical health.
 
 Conceptual states:
 
 ```text
 INTACT
+
 STRAINED
+
 DEGRADED
+
 CRITICAL
-FAILED
+
+FAILED.
 ```
+
+Condition describes infrastructure itself.
+
+It does not describe observer knowledge about infrastructure.
 
 ---
 
-# Intact
+# 11. Intact
 
 ```text
 INTACT
 ```
 
-The infrastructure remains physically and technically capable of normal operation.
+means the infrastructure remains physically and technically capable of normal operation.
 
-This does not necessarily mean service is normal.
+This does not guarantee normal service.
 
-External dependencies may still restrict operation.
+External dependencies may still limit operation.
 
 ---
 
-# Strained
+# 12. Strained
 
 ```text
 STRAINED
 ```
 
-The infrastructure remains operational but is experiencing abnormal pressure.
+means the system remains largely capable but is under abnormal operational pressure.
 
-Examples include:
+Possible causes include:
 
-- deferred maintenance
-- high demand
-- reduced staffing
-- limited spare parts
-- intermittent upstream disruption
+```text
+deferred maintenance
 
-Service may remain largely normal.
+high demand
+
+reduced staffing
+
+restricted upstream input
+
+limited redundancy
+
+temporary damage.
+```
 
 ---
 
-# Degraded
+# 13. Degraded
 
 ```text
 DEGRADED
 ```
 
-The infrastructure has lost meaningful capability.
+means meaningful technical capability has been lost.
 
 Possible effects include:
 
-- reduced capacity
-- intermittent service
-- local outages
-- manual workarounds
-- maintenance backlog
-- reduced redundancy
+```text
+reduced capacity
+
+intermittent service
+
+manual workarounds
+
+local outages
+
+reduced redundancy
+
+increased maintenance burden.
+```
 
 ---
 
-# Critical
+# 14. Critical
 
 ```text
 CRITICAL
 ```
 
-The infrastructure remains partially functional but cannot reliably provide expected service.
+means infrastructure remains partially functional but cannot reliably provide expected service.
 
 Failure risk is high.
 
-Emergency measures are likely required.
+Emergency operating measures may be required.
 
 ---
 
-# Failed
+# 15. Failed
 
 ```text
 FAILED
 ```
 
-The infrastructure can no longer perform its expected function at the simulated level.
+means the infrastructure can no longer perform its expected function at the simulated scale.
 
-Failed does not necessarily mean physically destroyed.
+Failed does not necessarily mean destroyed.
 
 Example:
 
 ```text
-National Power Coordination:
+National Grid Coordination:
 FAILED
 
-Regional Power Systems:
-FUNCTIONAL
+Regional Grid Islands:
+FUNCTIONAL.
 ```
 
-The higher-level system has failed.
+The higher-level system failed.
 
-Electricity may still exist locally.
+Electricity still exists.
 
 ---
 
-# Service Level
+# 16. Operational Status
 
-Condition and service availability must remain separate.
+Condition and Operational Status must remain separate.
+
+Possible status values may include:
+
+```text
+NORMAL
+
+RESTRICTED
+
+EMERGENCY
+
+MANUAL
+
+ISOLATED
+
+SHUTDOWN
+
+OFFLINE.
+```
 
 Example:
 
 ```text
-Power Infrastructure Condition:
+Condition:
+INTACT
+
+Status:
+ISOLATED.
+```
+
+This means the system is physically healthy but intentionally disconnected.
+
+---
+
+# 17. Service Level
+
+Service Level represents what users and dependent systems are currently receiving.
+
+Conceptual states may include:
+
+```text
+NORMAL
+
+LIMITED
+
+INTERRUPTED
+
+CRITICAL
+
+UNAVAILABLE.
+```
+
+Condition and Service Level are distinct.
+
+---
+
+# 18. Condition vs Service
+
+Example:
+
+```text
+Power Condition:
 DEGRADED
 
 Power Service:
-ADEQUATE
+ADEQUATE.
 ```
 
-may occur because:
+This may occur because:
 
-- demand has fallen
-- emergency generation exists
-- rationing is effective
-- local redundancy remains available
+```text
+demand has fallen
+
+backup generation exists
+
+rationing is effective
+
+local redundancy remains.
+```
 
 Conversely:
 
 ```text
-Power Infrastructure Condition:
+Power Condition:
 INTACT
 
 Power Service:
-CONSTRAINED
+LIMITED
 ```
 
-may occur because fuel or external connections are unavailable.
-
----
-
-# Service States
-
-A common conceptual service scale may be:
+may occur because:
 
 ```text
-NORMAL
-LIMITED
-INTERRUPTED
-CRITICAL
-UNAVAILABLE
+fuel unavailable
+
+system deliberately curtailed
+
+upstream connection unavailable
+
+authority prioritization changed.
+```
+
+Therefore:
+
+```text
+CONDITION
+≠
+SERVICE.
 ```
 
 ---
 
-# Capacity
+# 19. Capacity
 
-Capacity represents how much service the infrastructure can theoretically provide under current conditions.
+Capacity represents how much service infrastructure can theoretically provide under current technical conditions.
 
-Conceptually:
+Capacity may be represented numerically where justified.
+
+Example:
 
 ```text
 Capacity:
 72%
 ```
 
-Exact percentages should only be used where useful.
-
-Abstract values may instead be:
+or descriptively:
 
 ```text
 FULL
+
 HIGH
+
 MODERATE
+
 LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
+
+Avoid false precision when exact data adds little value.
 
 ---
 
-# Demand
+# 20. Demand
 
-Demand represents current pressure from users and dependent systems.
+Demand represents the load placed on infrastructure by dependent users and systems.
 
-Conceptual values:
+Conceptual values may include:
 
 ```text
 LOW
+
 NORMAL
+
 HIGH
+
 SEVERE
-EXTREME
+
+EXTREME.
 ```
 
-Infrastructure may fail because demand exceeds available capacity even when the infrastructure itself remains physically intact.
+Infrastructure may experience service failure even while physically intact if:
+
+```text
+DEMAND
+>
+AVAILABLE CAPACITY.
+```
 
 ---
 
-# Capacity Margin
+# 21. Operating Margin
 
-The difference between Capacity and Demand creates operational margin.
+Operating Margin is a derived relationship between capacity and demand.
 
 Example:
 
@@ -419,7 +666,7 @@ Demand:
 NORMAL
 
 Margin:
-SAFE
+SAFE.
 ```
 
 versus:
@@ -432,450 +679,548 @@ Demand:
 HIGH
 
 Margin:
-CRITICAL
+CRITICAL.
 ```
 
-Low operational margin increases vulnerability to additional disruption.
+Margin is derived state.
+
+It must not become a separate authoritative owner.
 
 ---
 
-# Infrastructure Pressure
+# 22. Pressure
 
-Pressure represents forces pushing infrastructure toward deterioration.
+Infrastructure Pressure represents forces pushing infrastructure toward deteriorating condition or reduced service.
 
-Sources may include:
-
-- excessive demand
-- fuel shortages
-- spare-part shortages
-- workforce loss
-- cyber restrictions
-- extreme weather
-- physical damage
-- aging equipment
-- reduced maintenance
-- upstream failures
-- population movement
-
-Conceptual scale:
+Possible sources include:
 
 ```text
-NONE
-LOW
-MODERATE
+excess demand
+
+physical damage
+
+aging equipment
+
+maintenance delay
+
+upstream failures
+
+resource shortage
+
+environmental stress
+
+security conditions
+
+workforce access problems
+
+supply constraints
+
+population change.
+```
+
+Pressure should always remain traceable to causes.
+
+---
+
+# 23. Resilience
+
+Resilience represents infrastructure's ability to absorb disruption without major loss of function.
+
+Possible sources include:
+
+```text
+redundancy
+
+spare capacity
+
+backup systems
+
+manual operation
+
+distributed architecture
+
+local generation
+
+alternative routes
+
+buffer stocks
+
+technical adaptability.
+```
+
+Resilience does not guarantee permanent survival.
+
+---
+
+# 24. Redundancy
+
+Redundancy represents alternative infrastructure paths or capabilities.
+
+Conceptual states may include:
+
+```text
 HIGH
-SEVERE
-CRITICAL
-```
 
----
-
-# Infrastructure Resilience
-
-Resilience represents the ability of infrastructure to absorb disruption without major loss of service.
-
-Sources include:
-
-- redundancy
-- spare capacity
-- local generation
-- backup systems
-- trained personnel
-- stockpiles
-- alternate routes
-- manual controls
-- modular systems
-- distributed architecture
-
----
-
-# Redundancy
-
-Redundancy should be explicitly represented where important.
-
-Conceptual states:
-
-```text
-HIGH
 MODERATE
+
 LOW
-NONE
+
+NONE.
 ```
 
-A system with high redundancy may lose individual assets without losing service.
+High redundancy may allow individual failures without meaningful service loss.
 
-A highly optimized system with little redundancy may be efficient during normal operation but fragile during disruption.
+Highly optimized systems may have low redundancy despite high normal efficiency.
 
 ---
 
-# Efficiency Versus Resilience
+# 25. Efficiency vs Resilience
 
-Project Ascension should preserve the distinction between efficiency and resilience.
-
-A highly optimized infrastructure network may have:
+Canonical principle:
 
 ```text
+EFFICIENCY
+≠
+RESILIENCE.
+```
+
+Example:
+
+```text
+SYSTEM A
+
 Efficiency:
 VERY HIGH
 
 Redundancy:
-LOW
+LOW.
 ```
 
-while an older or decentralized system may have:
+versus:
 
 ```text
+SYSTEM B
+
 Efficiency:
 MODERATE
 
 Redundancy:
-HIGH
+HIGH.
 ```
 
-Under normal conditions, the first system performs better.
+Under normal conditions, System A may outperform System B.
 
-Under prolonged disruption, the second may survive longer.
-
-This tension is a core infrastructure theme.
+During prolonged disruption, System B may survive longer.
 
 ---
 
-# Coordination
+# 26. Automation Capability
 
-Coordination represents the ability to operate infrastructure as a connected system.
+Automation Capability describes how much automated infrastructure control remains technically available.
 
-Coordination depends upon:
-
-- communications
-- telemetry
-- control systems
-- shared data
-- institutional cooperation
-- network visibility
-- functioning command structures
-
-Coordination should integrate with IML.
-
----
-
-# Local Versus Central Coordination
-
-Infrastructure may continue functioning locally after centralized coordination fails.
-
-Example:
-
-```text
-National Coordination:
-FAILED
-
-Regional Coordination:
-FUNCTIONAL
-
-Local Operations:
-STRONG
-```
-
-This creates infrastructure fragmentation rather than universal infrastructure failure.
-
----
-
-# Automation
-
-Modern infrastructure depends heavily upon automation.
-
-Automation State should describe how much automated control remains available.
-
-Conceptually:
+Conceptual states may include:
 
 ```text
 FULL
+
 RESTRICTED
+
 PARTIAL
+
 MINIMAL
-DISABLED
+
+DISABLED.
+```
+
+Automation Capability is separate from:
+
+```text
+Automation Dependency.
 ```
 
 ---
 
-# Automation Dependency
+# 27. Automation Dependency
 
-Infrastructure sectors should also track how dependent they are upon automation.
+Some infrastructure can tolerate automation loss.
+
+Other infrastructure cannot.
 
 Conceptually:
 
 ```text
 LOW
+
 MODERATE
+
 HIGH
-CRITICAL
+
+CRITICAL.
 ```
 
 Example:
 
 ```text
-Automation:
+Automation Capability:
 RESTRICTED
 
 Automation Dependency:
 LOW
 ```
 
-may produce limited impact.
+may have limited consequence.
 
 But:
 
 ```text
-Automation:
+Automation Capability:
 RESTRICTED
 
 Automation Dependency:
 CRITICAL
 ```
 
-may create severe operational problems.
+may create severe operational pressure.
 
 ---
 
-# Manual Operation
+# 28. Manual Operation
 
-Infrastructure may transition from automated to manual operation.
+Automation loss does not automatically equal failure.
 
-This should not be treated as immediate failure.
+Infrastructure may continue through manual or hybrid operation.
 
-Manual operation may preserve essential services.
+Manual operation may produce:
 
-However, it may create:
+```text
+lower capacity
 
-- lower capacity
-- slower response
-- higher staffing requirements
-- increased error risk
-- reduced coordination
-- greater fatigue
+slower response
+
+greater staffing need
+
+reduced coordination
+
+higher fatigue
+
+higher error exposure.
+```
 
 ---
 
-# Manual Operating Capacity
+# 29. Manual Operating Capability
 
-Conceptually:
+Conceptual states may include:
 
 ```text
 HIGH
+
 MODERATE
+
 LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
-This represents how effectively personnel can operate the system without normal automation.
+This represents infrastructure design and procedural ability to operate without normal automation.
+
+It does not directly own workforce availability.
 
 ---
 
-# Workforce
+# 30. Human Dependency
 
-Infrastructure depends upon people.
+Infrastructure depends on humans.
 
-Workforce State should consider:
-
-- staffing
-- technical expertise
-- transportation access
-- fatigue
-- safety
-- communications
-- availability of specialists
-
-Conceptual states:
+Relevant requirements may include:
 
 ```text
-FULL
-ADEQUATE
-STRAINED
-CRITICAL
-INSUFFICIENT
+operators
+
+engineers
+
+technicians
+
+dispatchers
+
+repair teams
+
+specialists
+
+maintenance staff.
+```
+
+Infrastructure State may define:
+
+```text
+REQUIRED HUMAN CAPABILITY.
+```
+
+Actual available people belong to:
+
+```text
+Characters
+
+Population
+
+Institutions
+
+Authority
+
+depending on scale.
 ```
 
 ---
 
-# Workforce Attrition
+# 31. Workforce Access
 
-Workforce capacity may decrease because of:
+Infrastructure may derive an operational workforce availability context from other systems.
 
-- illness
-- evacuation
-- family obligations
-- transportation failure
-- unsafe conditions
-- fatigue
-- migration
-- communication failure
+Example:
 
-Infrastructure may therefore degrade even without physical damage.
+```text
+Required:
+20 qualified technicians
+
+Currently Available:
+8
+
+Result:
+Repair Capacity reduced.
+```
+
+Infrastructure State may consume this state.
+
+It should not become the authoritative owner of those people.
 
 ---
 
-# Technical Expertise
+# 32. Specialist Dependency
 
-Some infrastructure depends upon highly specialized personnel.
+Some infrastructure relies heavily on rare Expertise.
 
 Example:
 
 ```text
 General Workforce:
-ADEQUATE
+AVAILABLE
 
-Specialist Workforce:
-CRITICAL
+Specialized Grid Engineers:
+SCARCE.
 ```
 
-This may severely reduce repair capability.
+This may severely constrain repair or coordination despite adequate overall population.
 
 ---
 
-# Repair Capacity
+# 33. Repair Capacity
 
-Repair Capacity represents the ability to restore damaged infrastructure.
-
-It depends upon:
-
-```text
-Personnel
-+
-Parts
-+
-Tools
-+
-Transportation
-+
-Information
-+
-Energy
-+
-Security
-+
-Time
-```
-
-Conceptual values:
-
-```text
-HIGH
-MODERATE
-LOW
-MINIMAL
-NONE
-```
-
----
-
-# Repair Backlog
-
-Infrastructure may accumulate unresolved problems.
+Repair Capacity represents infrastructure's realistic ability to restore damaged function.
 
 Conceptually:
 
 ```text
-Repair Backlog:
-LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
+REPAIR CAPACITY
+=
+PERSONNEL
++
+EXPERTISE
++
+PARTS
++
+TOOLS
++
+TRANSPORT
++
+INFORMATION
++
+ACCESS
++
+SECURITY
++
+TIME.
 ```
 
-A system may remain functional while its backlog grows.
+Possible states:
+
+```text
+HIGH
+
+MODERATE
+
+LOW
+
+MINIMAL
+
+NONE.
+```
+
+---
+
+# 34. Repair Capacity Is Not Repair
+
+A system may have:
+
+```text
+Repair Capacity:
+HIGH
+```
+
+without currently repairing anything.
+
+Repair requires:
+
+```text
+decision
+
+access
+
+resources
+
+priority
+
+time
+
+action.
+```
+
+Authority and Actor systems may determine whether repair actually occurs.
+
+---
+
+# 35. Repair Backlog
+
+Infrastructure may accumulate unresolved technical problems.
+
+Conceptual states may include:
+
+```text
+LOW
+
+MODERATE
+
+HIGH
+
+SEVERE
+
+CRITICAL.
+```
+
+A system may remain functional while backlog grows.
 
 This creates hidden future pressure.
 
 ---
 
-# Maintenance Debt
+# 36. Maintenance Debt
 
-Maintenance Debt represents deterioration caused by deferred routine work.
+Maintenance Debt represents deterioration risk created by deferred routine work.
 
 Example:
 
 ```text
-Current Condition:
+Condition:
 INTACT
 
 Maintenance Debt:
-HIGH
+HIGH.
 ```
 
-The infrastructure appears healthy.
+The infrastructure still works.
 
-Its future resilience is declining.
+Its resilience is declining.
 
 ---
 
-# Spare Parts
+# 37. Spare Parts Dependency
 
-Repair requires replacement components.
+Infrastructure repair often requires external Supply.
 
-Conceptual availability:
+Infrastructure State should represent:
 
 ```text
-SURPLUS
-ADEQUATE
-STRAINED
-CONSTRAINED
-CRITICAL
-NONE
+PART REQUIREMENTS.
 ```
 
-Spare-part availability may depend heavily upon global and regional supply systems.
+Supply State should own:
+
+```text
+WHETHER THOSE PARTS
+ARE ACTUALLY AVAILABLE.
+```
+
+Therefore:
+
+```text
+INFRASTRUCTURE
+NEEDS PART X
+
+SUPPLY
+OWNS AVAILABILITY
+OF PART X.
+```
 
 ---
 
-# Infrastructure Dependencies
+# 38. Infrastructure Dependencies
 
-Every infrastructure sector should identify important dependencies.
+Every infrastructure sector may identify critical dependencies.
 
 Example:
 
 ```text
-WATER
+WATER SYSTEM
 
 Depends On:
-- electricity
-- treatment chemicals
-- pumps
-- workforce
-- communications
+
+Power
+
+Treatment Chemicals
+
+Pumps
+
+Communication
+
+Human Operators.
 ```
 
-Dependencies create the possibility of cascading effects.
+Dependencies create potential cross-system consequences.
 
 ---
 
-# Dependency Strength
+# 39. Dependency Strength
 
-Dependencies may have different strengths.
-
-Conceptually:
+Dependencies may be classified conceptually as:
 
 ```text
 SUPPORTING
+
 IMPORTANT
-CRITICAL
+
+CRITICAL.
 ```
 
 Example:
 
 ```text
-Hospital → Electricity:
+Hospital
+→ Electricity:
 CRITICAL
 
-Hospital → Public Internet:
-SUPPORTING
+Hospital
+→ Public Internet:
+SUPPORTING.
 ```
 
 ---
 
-# Dependency Graph
+# 40. Dependency Graph
 
-A simplified infrastructure dependency graph may look like:
+Infrastructure is usually networked rather than linear.
+
+Example:
 
 ```text
 POWER
@@ -885,77 +1230,60 @@ POWER
 ├── HEALTHCARE
 ├── DATA
 └── TRANSPORTATION
-      │
-      ▼
-     FUEL
-      │
-      └──────────┐
-                 ▼
-               POWER
+        │
+        ↓
+       FUEL
+        │
+        └──────→ POWER.
 ```
 
-This creates circular dependencies.
-
-Such loops are normal in complex infrastructure.
+Circular dependencies are normal.
 
 ---
 
-# Circular Dependency
+# 41. Circular Dependency
 
-Circular dependency becomes dangerous when multiple systems degrade simultaneously.
+Circular dependency becomes dangerous when several systems degrade simultaneously.
 
 Example:
 
 ```text
-Power failure
-    ↓
-Fuel pumps unavailable
-    ↓
-Generator fuel delivery decreases
-    ↓
-Backup generation declines
-    ↓
-Power failure worsens
+POWER LOSS
+↓
+FUEL PUMPS FAIL
+↓
+GENERATOR FUEL DELIVERY FALLS
+↓
+BACKUP POWER DECLINES
+↓
+POWER LOSS WORSENS.
 ```
 
-The simulation should detect such reinforcing loops.
+The simulation must support reinforcing loops.
 
 ---
 
-# Dependency Buffer
+# 42. Dependency Buffers
 
-Dependencies should not always produce immediate failure.
+Dependencies should not always create immediate failure.
 
-Systems may possess buffers.
-
-Examples:
-
-- batteries
-- water storage
-- fuel reserves
-- emergency generators
-- warehouse stock
-- manual procedures
-
-Conceptually:
+Buffers may include:
 
 ```text
-Dependency Buffer:
-72 hours
+battery reserves
+
+water storage
+
+fuel reserves
+
+emergency generators
+
+warehouse stock
+
+manual procedures
+
+local storage.
 ```
-
-or:
-
-```text
-Dependency Buffer:
-MODERATE
-```
-
----
-
-# Buffer Consumption
-
-Buffers should decline while upstream dependencies remain unavailable.
 
 Example:
 
@@ -963,89 +1291,121 @@ Example:
 Grid Power:
 Unavailable
 
-Hospital Generator Fuel:
-96 hours
+Hospital Backup:
+96 hours.
 ```
 
-After continued operation:
-
-```text
-Hospital Generator Fuel:
-24 hours
-```
-
-This creates delayed consequences.
+This creates delayed consequence.
 
 ---
 
-# Cascading Failure
+# 43. Buffers Are Time-Based
 
-Infrastructure cascades occur when degradation in one system increases pressure on another.
+A buffer may deplete while an upstream dependency remains unavailable.
+
+Example:
+
+```text
+T0
+
+Backup Fuel:
+96 hours
+
+
+T+72H
+
+Backup Fuel:
+24 hours.
+```
+
+This is one of the most important mechanisms for realistic delayed infrastructure failure.
+
+---
+
+# 44. Cascading Failure
+
+Infrastructure cascades occur when one system's degradation increases pressure on another.
 
 Example:
 
 ```text
 POWER
 DEGRADED
-    │
-    ▼
+↓
 TELECOMMUNICATIONS
 PRESSURE INCREASES
-    │
-    ▼
+↓
 COORDINATION
 DEGRADES
-    │
-    ▼
+↓
 REPAIR RESPONSE
 SLOWS
-    │
-    ▼
+↓
 POWER
-PRESSURE INCREASES
+PRESSURE INCREASES.
 ```
-
-Cascades may therefore become self-reinforcing.
 
 ---
 
-# Cascades Are Not Guaranteed
+# 45. Cascades Are Not Automatic
 
-Infrastructure disruption should not automatically create cascading failure.
+Infrastructure failure should not automatically propagate.
 
 Cascades may be interrupted through:
 
-- redundancy
-- stored resources
-- manual operation
-- rapid repair
-- local isolation
-- demand reduction
-- external assistance
+```text
+redundancy
 
-The simulation should evaluate whether propagation conditions actually exist.
+buffers
+
+manual operation
+
+rapid repair
+
+local isolation
+
+demand reduction
+
+external support
+
+alternative infrastructure.
+```
+
+Therefore:
+
+```text
+DEPENDENCY
+≠
+GUARANTEED CASCADE.
+```
 
 ---
 
-# Controlled Isolation
+# 46. Controlled Isolation
 
-Operators may deliberately disconnect infrastructure to prevent wider damage.
+Infrastructure operators may deliberately disconnect systems to prevent wider failure.
 
 Examples:
 
-- power-grid islanding
-- network segmentation
-- pipeline shutdown
-- transportation closure
-- data-center isolation
+```text
+grid islanding
 
-Controlled isolation may reduce immediate risk.
+network segmentation
 
-It may also reduce coordination and capacity.
+pipeline shutdown
+
+bridge closure
+
+data-center isolation
+
+transport restriction.
+```
+
+Controlled isolation may reduce propagation risk while decreasing efficiency or coordination.
 
 ---
 
-# Isolation Tradeoff
+# 47. Isolation Tradeoff
 
 Conceptually:
 
@@ -1059,7 +1419,7 @@ Coordination:
 HIGH
 
 Propagation Risk:
-HIGH
+HIGHER.
 ```
 
 versus:
@@ -1076,289 +1436,445 @@ LOWER
 Propagation Risk:
 LOWER
 
-Local Resilience:
-POTENTIALLY HIGHER
+Local Autonomy:
+HIGHER.
 ```
 
 Neither configuration is universally superior.
 
 ---
 
-# Fragmentation
+# 48. Fragmentation
 
-Infrastructure Fragmentation occurs when local systems continue functioning but lose reliable higher-level integration.
+Infrastructure Fragmentation occurs when local systems remain functional but higher-level integration no longer operates reliably.
 
 Example:
 
 ```text
 NATIONAL POWER SYSTEM
+
 FRAGMENTED
 
-Region A:
+
+REGION A:
 FUNCTIONAL
 
-Region B:
+REGION B:
 FUNCTIONAL
 
-Region C:
+REGION C:
 DEGRADED
 
-Region D:
-ISOLATED
+REGION D:
+ISOLATED.
 ```
 
-The national system no longer operates as one coordinated network.
+Power still exists.
 
-Power has not disappeared.
-
----
-
-# Infrastructure Fragmentation Index
-
-The simulation may eventually use a derived fragmentation value based upon:
-
-- lost connections
-- incompatible operating states
-- reduced telemetry
-- regional isolation
-- failed coordination
-- local autonomy
-
-This should remain a derived diagnostic value rather than a primary gameplay score.
+National integration does not.
 
 ---
 
-# Infrastructure Sectors
+# 49. Fragmentation Is Not Failure
 
----
-
-# Power
-
-Power represents:
-
-- generation
-- transmission
-- distribution
-- grid coordination
-- backup generation
-
-Important dependencies include:
+Canonical principle:
 
 ```text
-Fuel
-Communications
-Workforce
-Control Systems
-Transportation
+FRAGMENTATION
+≠
+FAILURE.
 ```
 
-Power strongly influences almost every other infrastructure sector.
-
----
-
-# Water
-
-Water represents:
-
-- drinking-water treatment
-- pumping
-- distribution
-- wastewater
-- storage
-
-Important dependencies include:
+A fragmented infrastructure environment may contain:
 
 ```text
-Power
-Treatment Chemicals
-Workforce
-Transportation
-Control Systems
+functional local grids
+
+regional radio
+
+local transport
+
+working hospitals
+
+isolated data systems
+
+independent water systems.
 ```
 
-Water systems may continue operating for limited periods after power loss through:
+Civilization has not disappeared.
 
-- gravity
-- storage
-- backup generation
+Integration has weakened.
 
 ---
 
-# Telecommunications
+# 50. Fragmentation May Be Derived
 
-Telecommunications includes:
-
-- cellular networks
-- internet
-- radio infrastructure
-- fiber networks
-- satellite links
-- emergency communications
-
-Dependencies include:
+A future implementation may derive a fragmentation diagnostic from:
 
 ```text
-Power
-Data Infrastructure
-Physical Networks
-Workforce
-Fuel
+lost connections
+
+regional isolation
+
+coordination loss
+
+incompatible operating states
+
+telemetry loss
+
+local autonomy.
 ```
 
-Telecommunications is especially important because its degradation reduces the ability to coordinate repairs elsewhere.
+This should remain diagnostic.
+
+Do not turn it into a primary gameplay score.
 
 ---
 
-# Transportation
+# 51. Power Infrastructure
 
-Transportation includes:
-
-- roads
-- rail
-- ports
-- aviation
-- bridges
-- tunnels
-- transit systems
-
-Transportation enables movement of:
-
-- people
-- food
-- fuel
-- medicine
-- repair personnel
-- spare parts
-
-Transportation failure therefore creates indirect pressure across many sectors.
-
----
-
-# Fuel
-
-Fuel infrastructure includes:
-
-- refining
-- storage
-- pipelines
-- distribution
-- service stations
-- emergency reserves
-
-Fuel supports:
-
-- transportation
-- generators
-- agriculture
-- construction
-- military operations
-- emergency services
-
-Fuel availability and fuel distribution must remain distinct.
-
----
-
-# Healthcare Infrastructure
-
-Healthcare infrastructure includes:
-
-- hospitals
-- clinics
-- pharmacies
-- emergency medical services
-- laboratories
-- medical supply systems
-
-Healthcare depends upon nearly every major infrastructure sector.
+Power infrastructure includes:
 
 ```text
-Power
-Water
-Telecommunications
-Transportation
-Fuel
-Supply
-Workforce
+generation
+
+transmission
+
+distribution
+
+substations
+
+grid control
+
+backup generation.
 ```
 
-Healthcare is therefore highly sensitive to compound disruption.
+Important dependencies may include:
+
+```text
+fuel
+
+communications
+
+human operators
+
+control systems
+
+transportation
+
+critical components.
+```
+
+Power strongly influences other infrastructure.
 
 ---
 
-# Logistics
+# 52. Water Infrastructure
 
-Logistics represents the infrastructure required to move and coordinate goods.
+Water infrastructure includes:
 
-It includes:
+```text
+drinking-water treatment
 
-- warehouses
-- distribution centers
-- routing systems
-- freight networks
-- inventory coordination
+pumping
 
-Logistics is closely related to Supply but should remain distinct.
+storage
+
+distribution
+
+wastewater systems.
+```
+
+Dependencies may include:
+
+```text
+power
+
+treatment chemicals
+
+pumps
+
+human operators
+
+transportation
+
+control systems.
+```
+
+Water may continue temporarily after power loss through storage, gravity and backup systems.
+
+---
+
+# 53. Telecommunications Infrastructure
+
+Telecommunications infrastructure includes:
+
+```text
+cellular systems
+
+fiber
+
+radio infrastructure
+
+satellite links
+
+internet transport
+
+emergency communications.
+```
+
+Physical telecom infrastructure belongs here.
+
+The information carried over those systems belongs to:
+
+```text
+Information_State.md.
+```
+
+---
+
+# 54. Transportation Infrastructure
+
+Transportation infrastructure includes:
+
+```text
+roads
+
+rail
+
+bridges
+
+tunnels
+
+ports
+
+airports
+
+transit systems.
+```
+
+Transportation allows movement of:
+
+```text
+people
+
+food
+
+fuel
+
+medicine
+
+workers
+
+repair parts
+
+industrial goods.
+```
+
+Transportation availability is therefore a major cross-system dependency.
+
+---
+
+# 55. Fuel Distribution Infrastructure
+
+Fuel Distribution Infrastructure includes:
+
+```text
+refineries
+
+storage terminals
+
+pipelines
+
+distribution points
+
+service stations
+
+transfer infrastructure.
+```
+
+Infrastructure State owns:
+
+```text
+THE PHYSICAL
+DISTRIBUTION SYSTEM.
+```
+
+Supply State owns:
+
+```text
+HOW MUCH FUEL
+IS AVAILABLE.
+```
+
+This separation is mandatory.
+
+---
+
+# 56. Healthcare Infrastructure
+
+Healthcare infrastructure includes physical and operational systems such as:
+
+```text
+hospitals
+
+clinics
+
+laboratories
+
+EMS infrastructure
+
+medical facilities.
+```
+
+Healthcare service also depends on:
+
+```text
+personnel
+
+medicine
+
+supplies
+
+power
+
+water
+
+transportation
+
+communication.
+```
+
+Therefore Infrastructure State owns:
+
+```text
+FACILITY
+AND INFRASTRUCTURE CAPABILITY.
+```
+
+It does not own:
+
+```text
+medical personnel
+
+medicine stock
+
+population health.
+```
+
+---
+
+# 57. Logistics Infrastructure
+
+Logistics infrastructure includes:
+
+```text
+warehouses
+
+distribution centers
+
+freight terminals
+
+routing infrastructure
+
+loading systems
+
+physical logistics hubs.
+```
+
+The distinction is:
 
 ```text
 SUPPLY
-What resources exist?
 
-LOGISTICS
-Can they be moved where needed?
+What resources exist
+and where?
+
+
+LOGISTICS INFRASTRUCTURE
+
+What physical systems
+allow those resources
+to move?
 ```
 
 ---
 
-# Data Infrastructure
+# 58. Data Infrastructure
 
 Data Infrastructure includes:
 
-- data centers
-- cloud services
-- identity systems
-- databases
-- network control systems
-- digital coordination platforms
-
-Dependencies include:
-
 ```text
-Power
-Telecommunications
-Cooling
-Security
-Workforce
+data centers
+
+identity platforms
+
+cloud systems
+
+databases
+
+control platforms
+
+digital coordination infrastructure.
 ```
 
-Data infrastructure becomes particularly important during the early Containment Crisis.
+Dependencies may include:
+
+```text
+power
+
+telecommunications
+
+cooling
+
+physical security
+
+human operators.
+```
+
+Data infrastructure does not own:
+
+```text
+information truth
+
+belief
+
+knowledge.
+```
 
 ---
 
-# Critical Industry
+# 59. Critical Industrial Infrastructure
 
-Critical Industry represents production systems necessary for infrastructure continuity.
+Critical Industrial Infrastructure includes production systems required to sustain other infrastructure.
 
-Examples:
+Examples include:
 
-- electrical equipment
-- pharmaceuticals
-- industrial chemicals
-- machine parts
-- fuel processing
-- electronics
-- construction materials
+```text
+electrical equipment production
 
-Loss of industrial capacity may create delayed infrastructure consequences months later.
+industrial chemicals
+
+machine parts
+
+electronics
+
+construction materials
+
+pharmaceutical manufacturing
+
+fuel processing.
+```
+
+Industrial loss may create delayed consequences months later.
 
 ---
 
-# Infrastructure Geography
+# 60. Infrastructure Geography
 
 Infrastructure is spatial.
 
-Regions should identify major infrastructure characteristics.
-
-Examples:
+Regional profiles may identify:
 
 ```text
 Power:
@@ -1377,871 +1893,621 @@ Data:
 High concentration
 
 Healthcare:
-Regional medical center
+Regional medical center.
 ```
 
-This profile determines vulnerability and strategic importance.
+This geographic context should integrate with:
+
+```text
+Regional_State.md.
+```
 
 ---
 
-# Critical Assets
+# 61. Critical Assets
 
-Some infrastructure assets may be important enough to receive individual simulation.
+Some assets may require individual simulation.
 
 Examples:
 
 ```text
-Major power plant
-Regional substation
-Dam
-Water-treatment plant
-Fuel refinery
-Pipeline junction
-Bridge
-Rail terminal
-Hospital
-Data center
-Satellite ground station
+major power plant
+
+substation
+
+dam
+
+water-treatment plant
+
+refinery
+
+pipeline junction
+
+bridge
+
+rail terminal
+
+hospital
+
+data center
+
+satellite ground station.
 ```
 
 ---
 
-# Critical Asset Criteria
+# 62. Critical Asset Criteria
 
-An asset should normally receive individual simulation only when:
+An asset should normally receive individual state when:
 
-- failure has major regional consequences
-- it creates meaningful gameplay
-- it is strategically important
-- players may interact with it
-- it has important narrative significance
+```text
+failure has major consequences
 
-Otherwise it should remain abstracted into regional infrastructure state.
+it is systemically unique
+
+Actors can meaningfully interact with it
+
+it has important dependencies
+
+its condition cannot be represented
+adequately through regional abstraction.
+```
+
+Player presence alone should not be sufficient.
 
 ---
 
-# Critical Asset State
+# 63. Critical Asset State
 
 Conceptually:
 
 ```text
-ASSET
+CRITICAL ASSET
 
-ID:
-INF-ASSET-001
+ID
 
-Type:
-Water Treatment Plant
+Type
 
-Condition:
-DEGRADED
+Location
 
-Operational:
-YES
+Condition
 
-Capacity:
-64%
+Operational Status
 
-Automation:
-PARTIAL
+Service Capacity
 
-Workforce:
-STRAINED
+Dependencies
 
-Repair Capacity:
-MODERATE
+Buffers
 
-Dependencies:
-- Power
-- Treatment Chemicals
+Automation Capability
 
-Strategic Importance:
-HIGH
+Manual Operating Capability
+
+Repair Requirements
+
+Strategic Function
+
+Last Significant Change.
 ```
+
+This is conceptual architecture.
+
+Not a required implementation schema.
 
 ---
 
-# Infrastructure Events
+# 64. Infrastructure Events
 
 Possible infrastructure events include:
 
 ```text
-Equipment failure
-Capacity reduction
-Service interruption
-Grid separation
-Pipeline shutdown
-Bridge closure
-Data-center isolation
-Repair completion
-Emergency generator activation
-Manual-control transition
-Network restoration
+equipment failure
+
+capacity reduction
+
+service interruption
+
+grid separation
+
+pipeline shutdown
+
+bridge closure
+
+data-center isolation
+
+repair completion
+
+manual-mode transition
+
+network restoration.
 ```
+
+Events should have clear causes and consequences.
 
 ---
 
-# Event Severity
+# 65. Event Reach
 
-Infrastructure events may be classified conceptually as:
+Infrastructure event reach may be:
 
 ```text
 LOCAL
+
 REGIONAL
+
 MULTI-REGIONAL
+
 NATIONAL
-GLOBAL
+
+GLOBAL.
 ```
 
-Severity should describe systemic reach rather than dramatic importance.
+Reach describes systemic scope.
+
+Not dramatic importance.
 
 ---
 
-# Infrastructure State Transition
+# 66. Infrastructure State Change
 
-A conceptual transition model:
+Condition change may often follow paths such as:
 
 ```text
 INTACT
-   ↓
+↓
 STRAINED
-   ↓
+↓
 DEGRADED
-   ↓
+↓
 CRITICAL
-   ↓
-FAILED
+↓
+FAILED.
 ```
 
-Recovery may move in the opposite direction.
+But this is not a mandatory ladder.
+
+Catastrophic damage may produce:
+
+```text
+INTACT
+↓
+FAILED.
+```
+
+Likewise recovery may skip intermediate states when causally justified.
 
 ---
 
-# Transition Pressure
+# 67. Degradation Forces
 
-State transitions should depend upon combinations such as:
+Infrastructure degradation may emerge from:
 
 ```text
 Pressure
-+
-Demand
-+
+
+Excess Demand
+
+Physical Damage
+
 Dependency Failure
-+
+
 Maintenance Debt
+
+Loss of Redundancy
+
+Buffer Depletion.
 ```
 
-against:
+---
+
+# 68. Stabilization Forces
+
+Infrastructure stabilization may emerge from:
 
 ```text
 Resilience
-+
+
 Redundancy
-+
-Repair Capacity
-+
+
+Repair
+
 Buffers
+
+Demand Reduction
+
+Controlled Isolation
+
+Adaptation
+
+External Support.
 ```
+
+State change should follow the balance of actual causal conditions.
 
 ---
 
-# Conceptual Transition Logic
+# 69. Time Matters
 
-```text
-DEGRADATION FORCE
-
-Pressure
-+ Excess Demand
-+ Dependency Failure
-+ Damage
-+ Maintenance Debt
-
-versus
-
-STABILIZATION FORCE
-
-Resilience
-+ Redundancy
-+ Repair
-+ Buffers
-+ Adaptation
-```
-
-If degradation dominates for long enough, the state may worsen.
-
-If stabilization dominates, the system may stabilize or recover.
-
----
-
-# Time Matters
-
-Infrastructure degradation should often accumulate.
+Infrastructure often fails slowly.
 
 Example:
 
 ```text
 DAY 1
-Fuel deliveries reduced.
+
+Fuel delivery reduced.
+
 
 DAY 3
+
 Generator reserves declining.
 
+
 DAY 5
-Telecommunications backup sites begin failing.
+
+Telecom backup sites begin failing.
+
 
 DAY 7
-Regional communications coverage degrades.
+
+Regional communication coverage degrades.
 ```
 
-This creates delayed systemic consequences.
+Delayed consequences are central to believable infrastructure simulation.
 
 ---
 
-# Infrastructure Trend
+# 70. Trend
 
-Trend should describe direction:
+Trend describes current direction.
+
+Conceptually:
 
 ```text
 IMPROVING
+
 STABLE
+
 DETERIORATING
-VOLATILE
+
+VOLATILE.
 ```
 
-Trend is useful for understanding whether current conditions are temporary or becoming structural.
+Trend is separate from Condition.
+
+Example:
+
+```text
+Condition:
+DEGRADED
+
+Trend:
+IMPROVING.
+```
 
 ---
 
-# Infrastructure Confidence
+# 71. Infrastructure Does Not Own Confidence
 
-Infrastructure information may become unreliable.
-
-Example:
+Avoid:
 
 ```text
 Condition:
 DEGRADED
 
 Confidence:
-LOW
-
-Last Reliable Telemetry:
-18 hours ago
+LOW.
 ```
 
-Low confidence itself may increase operational pressure.
+if `Condition` represents authoritative simulation truth.
 
----
+Infrastructure State knows what is physically true.
 
-# Telemetry
-
-Telemetry represents machine-generated operational visibility.
-
-Conceptually:
+Uncertainty about that truth belongs to:
 
 ```text
-FULL
-PARTIAL
-LIMITED
-MINIMAL
-NONE
+Information_State.md
+
+Infrastructure Monitoring Levels
+
+observer-specific systems.
 ```
-
-Telemetry loss does not necessarily mean infrastructure failure.
-
-It means operators know less about what is happening.
 
 ---
 
-# Operational Visibility
+# 72. Telemetry Boundary
 
-Operational Visibility combines:
+Telemetry represents infrastructure-generated observation capability.
 
-- telemetry
-- communications
-- reporting
-- human observation
+The physical existence of telemetry systems belongs to Infrastructure.
+
+The meaning of telemetry as observation evidence belongs to:
+
+```text
+Information State
+/
+IML.
+```
 
 Example:
 
 ```text
-Physical Grid:
-Functional
+Telemetry Infrastructure:
+PARTIAL
 
-Operational Visibility:
-Poor
+Actual Grid Condition:
+DEGRADED.
 ```
 
-This was a major dynamic during the Containment Crisis.
+Information systems determine who receives and trusts the telemetry.
 
 ---
 
-# Uncertainty Feedback
+# 73. Operational Visibility
 
-Reduced visibility may create:
+Operational Visibility is primarily an observer / monitoring concept.
+
+Infrastructure State may expose:
 
 ```text
-LOW VISIBILITY
-      ↓
-GREATER UNCERTAINTY
-      ↓
-MORE CONSERVATIVE OPERATION
-      ↓
-REDUCED CAPACITY
-      ↓
-GREATER SYSTEM PRESSURE
+AVAILABLE TELEMETRY
+
+AVAILABLE SENSORS
+
+AVAILABLE COMMUNICATION LINKS.
 ```
 
-Protective behavior can therefore contribute to degradation without being irrational.
+IML and Information State determine:
+
+```text
+HOW WELL
+OPERATORS CAN
+UNDERSTAND
+THE SYSTEM.
+```
 
 ---
 
-# Protective Shutdown
+# 74. Protective Shutdown
 
-Operators may intentionally reduce or stop service.
+Protective shutdown must remain distinct from technical failure.
 
-Examples:
-
-- grid shutdown
-- network isolation
-- pipeline closure
-- bridge closure
-- data-center disconnection
-
-A protective shutdown should be recorded differently from technical failure.
-
-Conceptually:
+Example:
 
 ```text
 Condition:
 INTACT
 
-Operational Status:
+Status:
 SHUTDOWN
 
 Reason:
-PROTECTIVE ISOLATION
+PROTECTIVE ISOLATION.
 ```
 
 This distinction is essential.
 
----
-
-# Operational Status
-
-Infrastructure should therefore maintain an Operational Status separate from Condition.
-
-Possible values:
-
-```text
-NORMAL
-RESTRICTED
-EMERGENCY
-MANUAL
-ISOLATED
-SHUTDOWN
-OFFLINE
-```
+The system may be healthy but intentionally inactive.
 
 ---
 
-# Condition Versus Status
+# 75. Load Shedding
 
-Example:
-
-```text
-Condition:
-INTACT
-
-Status:
-ISOLATED
-```
-
-means the infrastructure is physically healthy but intentionally disconnected.
-
-Example:
-
-```text
-Condition:
-DEGRADED
-
-Status:
-NORMAL
-```
-
-means operators are still attempting ordinary service despite technical deterioration.
-
----
-
-# Service Prioritization
-
-During shortages, authorities may prioritize infrastructure service.
+Infrastructure operators may reduce service deliberately to preserve system stability.
 
 Examples:
 
 ```text
-1. Hospitals
-2. Water systems
-3. Emergency communications
-4. Fuel infrastructure
-5. Public shelters
-6. Residential service
+rolling blackouts
+
+bandwidth restriction
+
+water pressure reduction
+
+transit reduction
+
+industrial curtailment.
 ```
 
-Priorities may vary by region and authority.
+Load shedding is often evidence of active system management.
+
+Not automatic collapse.
 
 ---
 
-# Load Shedding
+# 76. Fuel Rationing Boundary
 
-Infrastructure may intentionally reduce service to preserve system stability.
+Fuel rationing is not itself infrastructure state.
 
-Examples:
-
-- rolling blackouts
-- bandwidth restrictions
-- water pressure reduction
-- fuel rationing
-- transit reduction
-
-Load shedding should often be a sign of active system management rather than immediate collapse.
-
----
-
-# Demand Reduction
-
-Population and institutional behavior may reduce infrastructure pressure.
-
-Examples:
-
-- conservation
-- remote shutdown
-- reduced travel
-- industrial curtailment
-- voluntary rationing
-
-Demand response creates an important connection between Infrastructure State and Population State.
-
----
-
-# Infrastructure Recovery
-
-Recovery may occur through:
-
-- repair
-- replacement
-- reconnection
-- resource delivery
-- restored workforce
-- restored automation
-- reduced demand
-- external assistance
-- local adaptation
-
-Recovery should not always mean returning to the previous architecture.
-
----
-
-# Infrastructure Adaptation
-
-Examples include:
+Infrastructure State may represent:
 
 ```text
-National Grid
-        ↓
-Regional Grid Islands
-
-Centralized Internet
-        ↓
-Regional Mesh Networks
-
-National Logistics
-        ↓
-Regional Trade Networks
-
-Automated Control
-        ↓
-Human / Hybrid Operation
+Fuel Distribution Capacity.
 ```
 
-The new infrastructure may be less efficient but more resilient.
+Supply State may represent:
+
+```text
+Fuel Availability.
+```
+
+Authority may decide:
+
+```text
+Who receives fuel.
+```
+
+This prevents ownership overlap.
 
 ---
 
-# Infrastructure Transformation
+# 77. Service Prioritization
 
-Long-term adaptation may permanently change the system.
+Authorities or institutions may prioritize infrastructure service.
+
+Infrastructure State should consume those decisions.
 
 Example:
 
 ```text
-PRE-COLLAPSE
+Priority:
 
-Highly centralized
-Highly automated
-Globally connected
-Highly efficient
+1. Hospital
+
+2. Water Treatment
+
+3. Emergency Communications.
+```
+
+The prioritization decision belongs to Authority or the relevant operating institution.
+
+Infrastructure State resolves resulting service conditions.
+
+---
+
+# 78. Demand Reduction
+
+Population and institutional behavior may reduce infrastructure demand.
+
+Examples:
+
+```text
+conservation
+
+reduced travel
+
+industrial curtailment
+
+voluntary shutdown
+
+resource rationing.
+```
+
+Population and Authority systems own the behavior.
+
+Infrastructure State consumes the resulting demand changes.
+
+---
+
+# 79. Infrastructure Recovery
+
+Infrastructure recovery may occur through:
+
+```text
+repair
+
+replacement
+
+reconnection
+
+resource delivery
+
+restored human access
+
+restored automation
+
+reduced demand
+
+external assistance
+
+adaptation.
+```
+
+Recovery should remain causal.
+
+---
+
+# 80. Recovery Is Not Restoration
+
+Example:
+
+```text
+NATIONAL GRID
+FAILS
+↓
+REGIONAL MICROGRIDS
+EMERGE
+↓
+ELECTRICITY SERVICE
+RETURNS.
+```
+
+Function recovered.
+
+The previous system did not.
+
+Therefore:
+
+```text
+RECOVERY
+≠
+RESTORATION.
+```
+
+---
+
+# 81. Infrastructure Transformation
+
+Long-term disruption may permanently change infrastructure architecture.
+
+Example:
+
+```text
+BEFORE
+
+Centralized
+
+Automated
+
+Highly connected
+
+Efficient.
 ```
 
 may become:
 
 ```text
-FRACTURED WORLD
+AFTER
 
 Regional
-Hybrid automation
+
+Hybrid
+
 Locally coordinated
+
 Redundant
+
 Less efficient
-More independent
+
+More autonomous.
 ```
 
-This is not simply technological regression.
+This is not necessarily technological regression.
 
-It is technological reorganization.
+It may be technological reorganization.
 
 ---
 
-# Regional Infrastructure Profile
+# 82. Infrastructure and Supply
 
-A region should maintain a summary such as:
+Canonical boundary:
 
 ```text
-REGIONAL INFRASTRUCTURE
+INFRASTRUCTURE
 
-Region:
-Northern Virginia
+Can the physical
+system move,
+process,
+store or deliver
+the resource?
 
-IML:
-[Canonical IML Value]
 
-Power:
-    Condition: Degraded
-    Service: Limited
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
+SUPPLY
 
-Water:
-    Condition: Intact
-    Service: Normal
-    Pressure: Moderate
-    Resilience: High
-    Trend: Stable
-
-Telecommunications:
-    Condition: Degraded
-    Service: Interrupted
-    Pressure: High
-    Resilience: Moderate
-    Trend: Volatile
-
-Transportation:
-    Condition: Strained
-    Service: Limited
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-
-Fuel:
-    Condition: Intact
-    Service: Limited
-    Pressure: Severe
-    Resilience: Low
-    Trend: Deteriorating
-
-Healthcare:
-    Condition: Strained
-    Service: Limited
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-
-Logistics:
-    Condition: Degraded
-    Service: Limited
-    Pressure: High
-    Resilience: Low
-    Trend: Deteriorating
-
-Data Infrastructure:
-    Condition: Intact
-    Status: Restricted
-    Pressure: High
-    Resilience: High
-    Trend: Stable
-```
-
-The exact IML value should always come from the canonical Infrastructure Monitoring Levels system.
-
----
-
-# Example Dependency Event
-
-```text
-EVENT:
-Regional fuel deliveries reduced.
-
-DIRECT EFFECT:
-
-Fuel Service:
-NORMAL → LIMITED
-
-SECONDARY EFFECT:
-
-Transportation Pressure:
-MODERATE → HIGH
-
-Generator Reserve Pressure:
-LOW → MODERATE
-
-Logistics Pressure:
-MODERATE → HIGH
-```
-
-After several days:
-
-```text
-Telecommunications backup fuel:
-CONSTRAINED
-
-Healthcare backup fuel:
-STRAINED
-```
-
-The simulation creates delayed consequences rather than instant collapse.
-
----
-
-# Example Protective Response
-
-```text
-EVENT:
-Unexplained grid coordination anomalies.
-
-AUTHORITY RESPONSE:
-Regional grid isolation.
-
-Power Condition:
-INTACT
-
-Power Status:
-ISOLATED
-
-National Coordination:
-REDUCED
-
-Propagation Risk:
-REDUCED
-
-Regional Efficiency:
-REDUCED
-```
-
-The action solves one problem while creating another.
-
-This is exactly the kind of systemic tradeoff Project Ascension should produce.
-
----
-
-# Example Recovery Event
-
-```text
-EVENT:
-Rail corridor restored.
-
-EFFECT:
-
-Spare Parts Availability:
-CONSTRAINED → STRAINED
-
-Fuel Distribution:
-LIMITED → IMPROVING
-
-Repair Capacity:
-LOW → MODERATE
-
-Infrastructure Pressure:
-HIGH → MODERATE
-```
-
-One restored connection may improve several sectors simultaneously.
-
----
-
-# Infrastructure and Player Interaction
-
-Players may influence infrastructure through:
-
-- repair
-- protection
-- resource delivery
-- technical expertise
-- reconnaissance
-- negotiation
-- restoration of communication
-- reconnecting isolated systems
-- deliberate isolation
-- sabotage
-- construction
-- adaptation
-
-Player actions should follow the same infrastructure rules as institutional actions.
-
----
-
-# Infrastructure Missions
-
-Infrastructure state may naturally generate gameplay.
-
-Examples:
-
-```text
-Deliver transformer components.
-
-Restore a radio relay.
-
-Escort repair technicians.
-
-Restart a water-treatment facility.
-
-Secure fuel for hospital generators.
-
-Investigate unexplained grid behavior.
-
-Reconnect isolated communities.
-
-Choose which system receives limited power.
-```
-
-The simulation creates the problem.
-
-Narrative systems turn the problem into playable content.
-
----
-
-# Infrastructure Choices
-
-Not every infrastructure problem should have a perfect solution.
-
-Example:
-
-```text
-Available Fuel:
-Limited
-
-Hospital:
-Needs fuel.
-
-Water Treatment:
-Needs fuel.
-
-Telecommunications:
-Needs fuel.
-```
-
-The question becomes:
-
-**Where should the limited resource go?**
-
-Such decisions create systemic and narrative consequences.
-
----
-
-# Infrastructure Knowledge
-
-Players should not automatically know infrastructure state.
-
-They may learn through:
-
-- direct observation
-- operators
-- telemetry
-- government reports
-- radio
-- recovered records
-- technical investigation
-
-Example:
-
-```text
-Actual Power Condition:
-DEGRADED
-
-Public Report:
-Temporary outage
-
-Player Knowledge:
-Unknown
-```
-
----
-
-# Relationship to Information State
-
-Infrastructure State creates information.
-
-Information State determines:
-
-- who receives it
-- whether it is trusted
-- whether it is distorted
-- how quickly it spreads
-
-Infrastructure degradation may also reduce information quality by damaging communications.
-
-This creates a two-way relationship.
-
----
-
-# Relationship to Authority State
-
-Authorities may influence infrastructure through:
-
-- rationing
-- prioritization
-- emergency powers
-- isolation orders
-- resource allocation
-- repair coordination
-
-Infrastructure conditions influence Authority through:
-
-- service availability
-- public confidence
-- government capability
-- communication capacity
-
----
-
-# Relationship to Population State
-
-Population behavior influences infrastructure demand.
-
-Examples:
-
-```text
-Stockpiling
-Evacuation
-Conservation
-Workforce participation
-Civil unrest
-```
-
-Infrastructure conditions influence population behavior in return.
-
----
-
-# Relationship to Supply
-
-Infrastructure and Supply should remain distinct.
-
-```text
-SUPPLY:
-Are resources available?
-
-INFRASTRUCTURE:
-Can systems use and distribute them?
+Does the resource
+exist and remain
+available?
 ```
 
 Example:
@@ -2254,267 +2520,1059 @@ Fuel Distribution Infrastructure:
 DEGRADED
 ```
 
-may still create local fuel shortages.
+may still produce local shortages.
 
 ---
 
-# Relationship to Recovery
+# 83. Infrastructure and Information
 
-Infrastructure repair is one of the major components of regional Recovery Capacity.
-
-However, infrastructure recovery may depend upon other domains.
-
-Example:
+Infrastructure provides:
 
 ```text
-Repair Capacity:
-HIGH
+physical communication systems
 
-Security:
-CRITICAL
+telemetry capability
+
+sensors
+
+data infrastructure.
 ```
 
-may prevent technicians from reaching damaged infrastructure.
-
-Systems must remain interconnected.
-
----
-
-# Infrastructure Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active infrastructure crises
-- mission-critical assets
-
-May track:
+Information State owns:
 
 ```text
-Individual sectors
-Critical assets
-Buffers
-Dependencies
-Repair tasks
-Resource consumption
+information availability
+
+reliability
+
+propagation
+
+verification
+
+rumor
+
+observer knowledge.
 ```
+
+The relationship is bidirectional.
+
+Infrastructure degradation may damage information flow.
+
+Poor information may reduce infrastructure coordination.
 
 ---
 
-## Medium Resolution
+# 84. Infrastructure and Authority
 
-Used for:
-
-- neighboring regions
-- strategically important systems
-
-Tracks:
+Authority may influence infrastructure through:
 
 ```text
-Sector states
-Major dependencies
-Repair capacity
-Major events
+prioritization
+
+rationing
+
+emergency orders
+
+isolation
+
+access control
+
+repair coordination.
 ```
 
----
-
-## Low Resolution
-
-Used for distant regions.
-
-Tracks:
+Infrastructure may affect Authority through:
 
 ```text
-Overall infrastructure condition
-Trend
-Pressure
-Resilience
-Major failures
-Major recovery
+service availability
+
+institutional reach
+
+communication capability
+
+operational capacity.
+```
+
+Neither owns the other.
+
+---
+
+# 85. Infrastructure and Population
+
+Population State may affect:
+
+```text
+demand
+
+workforce availability
+
+travel demand
+
+service consumption
+
+local pressure.
+```
+
+Infrastructure may affect:
+
+```text
+mobility
+
+water access
+
+communication
+
+energy access
+
+healthcare access.
+```
+
+Population behavior remains outside Infrastructure ownership.
+
+---
+
+# 86. Infrastructure and Security
+
+Security may affect infrastructure through:
+
+```text
+access
+
+repair ability
+
+physical damage
+
+protection requirements
+
+transport safety.
+```
+
+Infrastructure may affect Security through:
+
+```text
+lighting
+
+communications
+
+transport
+
+surveillance
+
+emergency services
+
+resource access.
+```
+
+Security owns security state.
+
+Infrastructure owns infrastructure state.
+
+---
+
+# 87. Infrastructure and Regional State
+
+`Regional_State.md` provides:
+
+```text
+geography
+
+regional connections
+
+regional dependencies
+
+local exceptions
+
+strategic context.
+```
+
+Infrastructure State provides:
+
+```text
+technical condition
+
+service capability
+
+dependencies
+
+buffers
+
+repairability
+
+fragmentation.
 ```
 
 ---
 
-# Minimum Infrastructure State
+# 88. Infrastructure and World State
 
-A minimum viable infrastructure simulation should store:
+`World_State.md` provides:
+
+```text
+high-level external world truth
+
+global pressure
+
+historical era
+
+regional context.
+```
+
+Infrastructure State provides one authoritative external domain feeding that world state.
+
+---
+
+# 89. Infrastructure and Action Resolution
+
+Characters or institutions may attempt:
+
+```text
+repair
+
+shutdown
+
+reconnection
+
+isolation
+
+construction
+
+sabotage
+
+inspection
+
+manual operation.
+```
+
+Action Resolution combines:
+
+```text
+Actor Capability
+
+Tools
+
+Access
+
+Infrastructure State
+
+Environment
+
+Resources
+
+Time
+↓
+Outcome.
+```
+
+Infrastructure State supplies the infrastructure-specific world conditions.
+
+---
+
+# 90. Player Interaction
+
+Player Characters obey the same infrastructure rules as every other Actor.
+
+They may influence infrastructure through:
+
+```text
+repair
+
+protection
+
+resource delivery
+
+technical expertise
+
+reconnaissance
+
+negotiation
+
+reconnection
+
+isolation
+
+construction
+
+sabotage
+
+adaptation.
+```
+
+Player status does not guarantee infrastructure change.
+
+---
+
+# 91. Infrastructure Does Not Generate Missions
+
+Avoid:
+
+```text
+Infrastructure Crisis
+↓
+Generate Quest.
+```
+
+Prefer:
+
+```text
+Infrastructure State
+↓
+Real World Problem
+↓
+Actors Respond
+↓
+Possible Narrative Relevance.
+```
+
+Narrative may turn a real infrastructure problem into playable content.
+
+Infrastructure State does not own the mission.
+
+---
+
+# 92. Simulation Resolution
+
+Infrastructure State must support adaptive simulation resolution.
+
+Conceptually:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH.
+```
+
+Resolution changes detail.
+
+Not reality.
+
+---
+
+# 93. Low Resolution
+
+Low-resolution Infrastructure State may preserve:
+
+```text
+major sector condition
+
+service trend
+
+pressure
+
+resilience
+
+major dependencies
+
+major outages
+
+major recovery
+
+fragmentation state.
+```
+
+---
+
+# 94. Medium Resolution
+
+Medium resolution may additionally preserve:
+
+```text
+sector-specific conditions
+
+major buffers
+
+major connections
+
+repair capacity
+
+major critical assets
+
+significant events.
+```
+
+---
+
+# 95. High Resolution
+
+High-resolution infrastructure simulation may include:
+
+```text
+specific assets
+
+capacity
+
+buffers
+
+dependency timing
+
+repair requirements
+
+operational modes
+
+specific local service
+
+active Action Resolution.
+```
+
+---
+
+# 96. Resolution Follows Causal Relevance
+
+A distant infrastructure system may require high resolution if it is:
+
+```text
+nationally critical
+
+under active failure
+
+supporting a major region
+
+part of a cascading event
+
+central to Aurora activity.
+```
+
+Player proximity is not the only escalation trigger.
+
+---
+
+# 97. Infrastructure Persistence
+
+Infrastructure State persists through:
+
+```text
+player absence
+
+regional travel
+
+session boundaries
+
+Story Threads
+
+resolution changes
+
+time advancement.
+```
+
+A bridge remains destroyed when the player leaves.
+
+A repaired grid remains repaired.
+
+A buffer continues depleting.
+
+---
+
+# 98. Minimum Infrastructure State
+
+A minimal viable infrastructure representation should be able to express:
 
 ```text
 Region
 
-IML
+Sector
 
-Power
-Water
-Telecommunications
-Transportation
-Fuel
-Healthcare
-Logistics
-Data Infrastructure
+Condition
 
-For each sector:
+Service Level
 
-    Condition
-    Service
-    Pressure
-    Resilience
-    Trend
+Operational Status
 
-Plus:
+Capacity
 
-    Automation
-    Workforce
-    Repair Capacity
-    Major Dependencies
-    Major Buffers
-    Critical Events
+Demand
+
+Pressure
+
+Resilience
+
+Redundancy
+
+Trend
+
+Automation Capability
+
+Manual Operating Capability
+
+Repair Capacity
+
+Major Dependencies
+
+Major Buffers
+
+Critical Assets
+
+Recovery Capacity
+
+Last Significant Change.
 ```
 
-Everything beyond this should justify its simulation cost.
+Everything beyond this should justify its complexity.
 
 ---
 
-# Infrastructure Consistency Rules
+# 99. Infrastructure Example
 
-## Rule 1
+```text
+REGION:
+Northern Virginia
 
-Physical condition and service availability are separate.
 
----
+POWER
 
-## Rule 2
+Condition:
+DEGRADED
 
-Physical condition and operational status are separate.
+Service:
+LIMITED
 
----
+Operational Status:
+RESTRICTED
 
-## Rule 3
+Pressure:
+HIGH
 
-Infrastructure State and IML are separate but connected.
+Resilience:
+MODERATE
 
----
+Redundancy:
+LOW
 
-## Rule 4
+Trend:
+DETERIORATING
 
-Infrastructure may function locally after higher-level coordination fails.
+Automation Capability:
+PARTIAL
 
----
+Manual Operating Capability:
+MODERATE
 
-## Rule 5
+Repair Capacity:
+LOW
 
-Automation loss does not automatically equal infrastructure failure.
+Recovery Capacity:
+MODERATE
 
----
 
-## Rule 6
+MAJOR DEPENDENCIES
 
-Manual operation preserves service at a cost.
+Fuel
 
----
+Telecommunications
 
-## Rule 7
+Specialized Workforce
 
-Dependencies should create delayed as well as immediate consequences.
+Replacement Components
 
----
 
-## Rule 8
+MAJOR BUFFER
 
-Buffers must be capable of interrupting cascades.
+Emergency Generation:
+72 hours
 
----
 
-## Rule 9
+IML
 
-Cascades should never occur merely because the narrative requires them.
-
----
-
-## Rule 10
-
-Protective action may create secondary consequences.
-
----
-
-## Rule 11
-
-Repair requires resources and time.
-
----
-
-## Rule 12
-
-Adaptation may replace restoration.
+Referenced from:
+Infrastructure_Monitoring_Levels.md
+```
 
 ---
 
-## Rule 13
+# 100. Dependency Event Example
 
-Fragmentation is different from failure.
+```text
+EVENT:
 
----
+Regional fuel delivery reduced.
+```
 
-## Rule 14
+Immediate consequence:
 
-Infrastructure should generate both crises and recovery opportunities.
+```text
+Fuel Availability:
+Supply State changes.
+```
 
----
+Infrastructure consequence:
 
-## Rule 15
+```text
+Fuel Distribution:
+Still Functional
 
-Infrastructure state must remain explainable.
+Generator Buffer:
+Begins Depleting
 
----
+Transportation Demand Pressure:
+Increases.
+```
 
-# Guiding Questions
+After several days:
 
-For every infrastructure system, the simulation should be able to answer:
+```text
+Telecommunication Backup Power:
+STRAINED
 
-**What physical condition is it in?**
+Hospital Backup Power:
+CONSTRAINED.
+```
 
-**What service is it currently providing?**
+The result is delayed systemic pressure.
 
-**What does it depend upon?**
-
-**What depends upon it?**
-
-**How much pressure is it under?**
-
-**How resilient is it?**
-
-**How much redundancy remains?**
-
-**Can humans operate it manually?**
-
-**Can it be repaired?**
-
-**What resources are required for repair?**
-
-**Can operators see what is happening?**
-
-**Is it connected to the wider system?**
-
-**What happens if nothing changes?**
-
-These questions define the operational reality of infrastructure.
+Not instant collapse.
 
 ---
 
-# Core Design Principle
+# 101. Protective Response Example
 
-Project Ascension should never assume:
+```text
+EVENT:
+
+Unexplained grid coordination anomalies.
+
+
+AUTHORITY DECISION:
+
+Regional grid isolation.
+
+
+INFRASTRUCTURE RESULT:
+
+Condition:
+INTACT
+
+Operational Status:
+ISOLATED
+
+Regional Service:
+LIMITED
+
+Propagation Risk:
+REDUCED
+
+Efficiency:
+REDUCED.
+```
+
+One risk was reduced.
+
+Another cost was created.
+
+---
+
+# 102. Recovery Event Example
+
+```text
+EVENT:
+
+Rail corridor restored.
+```
+
+Possible downstream consequences:
+
+```text
+Spare Parts Supply:
+Improves
+
+Fuel Distribution:
+Improves
+
+Repair Capacity:
+Improves
+
+Maintenance Backlog:
+Begins Declining
+
+Infrastructure Pressure:
+Reduced.
+```
+
+One restored connection may therefore influence several infrastructure sectors.
+
+---
+
+# 103. Infrastructure State Invariants
+
+## INF-INV-001 — Infrastructure Is Not Binary
+
+Infrastructure may operate under degraded, fragmented or emergency conditions.
+
+---
+
+## INF-INV-002 — Condition and Service Are Separate
+
+Physical health does not directly equal delivered service.
+
+---
+
+## INF-INV-003 — Condition and Operational Status Are Separate
+
+Infrastructure may be healthy but intentionally inactive.
+
+---
+
+## INF-INV-004 — Infrastructure State and IML Are Separate
+
+Physical state and monitoring/coordination capability must not be collapsed.
+
+---
+
+## INF-INV-005 — Infrastructure May Function Locally After Higher-Level Integration Fails
+
+Fragmentation is not universal failure.
+
+---
+
+## INF-INV-006 — Automation Loss Does Not Automatically Equal Failure
+
+Manual or hybrid operation may preserve function.
+
+---
+
+## INF-INV-007 — Manual Operation Has Costs
+
+Capacity, staffing, coordination and fatigue may change.
+
+---
+
+## INF-INV-008 — Dependencies May Produce Delayed Consequences
+
+Buffers prevent instant cascades.
+
+---
+
+## INF-INV-009 — Cascades Are Conditional
+
+Dependency does not guarantee propagation.
+
+---
+
+## INF-INV-010 — Controlled Isolation May Be Rational
+
+Infrastructure may deliberately sacrifice integration to preserve local function.
+
+---
+
+## INF-INV-011 — Repair Requires Causal Inputs
+
+Time, people, parts, access and resources matter.
+
+---
+
+## INF-INV-012 — Recovery Does Not Require Restoration
+
+New infrastructure architecture may replace old systems.
+
+---
+
+## INF-INV-013 — Supply and Infrastructure Are Distinct
+
+Resource existence and distribution capability must not be conflated.
+
+---
+
+## INF-INV-014 — Infrastructure Does Not Own Observer Confidence
+
+Uncertainty belongs to Information and monitoring systems.
+
+---
+
+## INF-INV-015 — Infrastructure Does Not Own People
+
+Human capability is consumed from Character, Population and institutional systems.
+
+---
+
+## INF-INV-016 — Infrastructure Does Not Own Authority Decisions
+
+Prioritization and rationing decisions belong to the relevant authority.
+
+---
+
+## INF-INV-017 — Infrastructure Does Not Own Population Behavior
+
+Demand may depend on population state without transferring ownership.
+
+---
+
+## INF-INV-018 — Infrastructure Persists Off-Screen
+
+Player absence does not freeze technical systems.
+
+---
+
+## INF-INV-019 — Resolution Changes Detail, Not Infrastructure Reality
+
+Low-resolution infrastructure remains causally active.
+
+---
+
+## INF-INV-020 — Major Infrastructure Changes Must Be Explainable
+
+Condition changes require traceable causes.
+
+---
+
+# 104. Development Locks
+
+Future Infrastructure State development must not introduce:
+
+```text
+binary working / failed logic
+
+condition equals service
+
+condition equals operational status
+
+IML equals infrastructure condition
+
+infrastructure-owned confidence
+
+infrastructure-owned public perception
+
+infrastructure-owned Character knowledge
+
+fuel availability owned by Infrastructure
+
+medicine supply owned by Infrastructure
+
+population mood owned by Infrastructure
+
+authority choice owned by Infrastructure
+
+automatic cascades
+
+automatic collapse
+
+automatic repair
+
+manual mode equals failure
+
+automation loss equals failure
+
+fragmentation equals disappearance
+
+player-triggered infrastructure activation
+
+frozen distant infrastructure
+
+narrative-forced failures
+
+random critical failure for drama
+
+player-exclusive repair physics
+
+global Infrastructure Health score.
+```
+
+---
+
+# 105. Infrastructure Architecture Test
+
+Before adding a new infrastructure field or mechanic, ask:
+
+```text
+IS THIS
+PHYSICAL OR TECHNICAL
+INFRASTRUCTURE STATE?
+
+OR
+
+DOES ANOTHER SYSTEM
+OWN IT?
+
+WHAT CONDITION
+IS THE SYSTEM IN?
+
+WHAT SERVICE
+IS IT PROVIDING?
+
+WHAT IS ITS
+OPERATIONAL STATUS?
+
+WHAT DOES IT
+DEPEND ON?
+
+WHAT DEPENDS
+ON IT?
+
+WHAT BUFFERS
+EXIST?
+
+WHAT REDUNDANCY
+EXISTS?
+
+CAN IT OPERATE
+MANUALLY?
+
+WHAT HUMAN
+CAPABILITY
+DOES IT REQUIRE?
+
+CAN IT BE
+REPAIRED?
+
+WHAT PARTS
+AND RESOURCES
+ARE REQUIRED?
+
+WHAT PRESSURE
+IS ACTING ON IT?
+
+WHAT IS
+ITS TREND?
+
+WHAT WOULD
+HAPPEN
+IF NOTHING CHANGED?
+
+CAN THE SYSTEM
+FRAGMENT
+WITHOUT DISAPPEARING?
+
+CAN IT ADAPT
+WITHOUT RETURNING
+TO ITS OLD FORM?
+```
+
+---
+
+# 106. Final Infrastructure Model
+
+Conceptually:
+
+```text
+REGIONAL STATE
+        ↓
+────────────────────────────
+INFRASTRUCTURE STATE
+────────────────────────────
+        │
+        ├── Power
+        ├── Water
+        ├── Transportation
+        ├── Telecommunications
+        ├── Data Infrastructure
+        ├── Healthcare Infrastructure
+        ├── Fuel Distribution Infrastructure
+        ├── Logistics Infrastructure
+        └── Critical Industry
+                │
+                ↓
+        FOR EACH RELEVANT SECTOR
+                │
+                ├── Condition
+                ├── Service Level
+                ├── Operational Status
+                ├── Capacity
+                ├── Demand
+                ├── Pressure
+                ├── Resilience
+                ├── Redundancy
+                ├── Automation Capability
+                ├── Manual Operating Capability
+                ├── Repair Capacity
+                ├── Dependencies
+                ├── Buffers
+                ├── Trend
+                └── Recovery Capacity
+                        │
+                        ↓
+SUPPLY
++
+HUMAN CAPABILITY
++
+AUTHORITY
++
+SECURITY
++
+INFORMATION
++
+TIME
+                        ↓
+INFRASTRUCTURE CHANGE
+                        ↓
+SERVICE CONSEQUENCES
+                        ↓
+REGIONAL / WORLD CONSEQUENCES
+                        ↓
+UPDATED INFRASTRUCTURE STATE.
+```
+
+---
+
+# 107. Infrastructure North Star
+
+The system succeeds when Project Ascension can answer:
+
+```text
+WHAT PHYSICALLY
+STILL EXISTS?
+
+WHAT STILL WORKS?
+
+WHAT SERVICE
+IS ACTUALLY
+BEING DELIVERED?
+
+WHAT HAS BEEN
+DISCONNECTED?
+
+WHAT HAS BEEN
+ISOLATED
+DELIBERATELY?
+
+WHAT DOES
+THE SYSTEM
+DEPEND ON?
+
+WHAT BUFFERS
+ARE RUNNING OUT?
+
+WHO IS REQUIRED
+TO OPERATE IT?
+
+CAN IT BE
+RUN MANUALLY?
+
+CAN IT BE
+REPAIRED?
+
+WHAT PARTS
+ARE NEEDED?
+
+WHAT HAPPENS
+IF NOTHING CHANGES?
+
+CAN LOCAL SYSTEMS
+CONTINUE
+AFTER NATIONAL
+COORDINATION FAILS?
+
+AND
+
+CAN CIVILIZATION
+REORGANIZE
+THE INFRASTRUCTURE
+
+RATHER THAN
+SIMPLY LOSING IT?
+```
+
+---
+
+# 108. Closing Principle
+
+Project Ascension should never reduce infrastructure collapse to:
 
 ```text
 THE GRID FAILED
-=
-NO ELECTRICITY
+
+THEREFORE
+
+NO ELECTRICITY.
 ```
 
-Instead, the simulation should be capable of producing:
+The world should instead be capable of producing:
 
 ```text
 National Grid Coordination:
@@ -2530,103 +3588,42 @@ Hospital Microgrid:
 STABLE
 
 Residential Service:
-LIMITED
+LIMITED.
 ```
 
-Civilization does not simply switch off.
+Infrastructure does not simply switch off.
+
+It degrades.
 
 It fragments.
 
----
+It isolates.
 
-# Current Status
+It consumes reserves.
 
-```text
-WORLD SIMULATION
+Humans improvise.
 
-README.md
-COMPLETE
+Operators prioritize.
 
-World_State.md
-FOUNDATION DEFINED
+Local systems survive.
 
-Regional_State.md
-FOUNDATION DEFINED
+Some networks disappear.
 
-Infrastructure_State.md
-FOUNDATION DEFINED
+Others reorganize.
 
-Information_State.md
-PENDING
+Some infrastructure becomes less efficient but more resilient.
 
-Authority_State.md
-PENDING
+And sometimes the system that survives is no longer the system that existed before.
 
-Population_State.md
-PENDING
+The central principle is:
 
-Escalation_and_Recovery.md
-PENDING
-```
-
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/World_Simulation/Information_State.md
-```
-
-Infrastructure State defines whether systems can continue operating.
-
-Information State will define whether anyone can reliably understand what those systems — or the wider world — are actually doing.
-
-It should establish:
-
-- actual information
-- observed information
-- verification
-- trust
-- rumor
-- misinformation
-- synthetic information
-- information delay
-- information fragmentation
-- institutional knowledge
-- public knowledge
-- player knowledge
-
-This creates one of Project Ascension's most important systemic relationships:
-
-```text
-WORLD CONDITION
-      │
-      ▼
-OBSERVATION
-      │
-      ▼
-INFORMATION
-      │
-      ▼
-PERCEPTION
-      │
-      ▼
-DECISION
-      │
-      ▼
-WORLD CONDITION
-```
-
-Information does not merely describe the simulation.
-
-**Information changes the simulation.**
+> **Infrastructure failure is not the disappearance of technology. It is the loss, degradation or reorganization of the systems that allow technology to function reliably at scale.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial infrastructure sector, condition, service, dependency, automation, workforce, fragmentation, cascade, repair and adaptation framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial infrastructure sector, condition, service, dependency, automation, workforce, fragmentation, cascade, repair and adaptation framework. |
+| 1.0 | 2026-09-01 | Rebuilt Infrastructure State as canonical architecture aligned with World State, Regional State and Simulation Architecture. Preserved condition/service/status separation, IML boundaries, dependencies, buffers, fragmentation, manual operation, repair and adaptation while clarifying ownership boundaries with Supply, Information, Authority, Population, Characters and Security. Removed infrastructure-owned confidence, separated fuel availability from fuel distribution infrastructure, distinguished healthcare facilities from medical supply and workforce, reframed workforce as a consumed external capability, strengthened adaptive simulation resolution and cross-system Action Resolution, and established invariants and development locks preventing binary, player-centric and automatic cascade logic. |

@@ -1,6228 +1,4159 @@
 # PROJECT ASCENSION
-# Character Simulation Resolution System
+
+# Character Simulation Resolution
 
 | Field | Value |
-|--------|-------|
+|---|---|
+| Project | Project Ascension |
 | System | Characters |
 | Document | Character Simulation Resolution |
-| Location | Canon/Systems/Characters/Character_Simulation_Resolution.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Character Resolution, Simulation Detail, Relevance, Proximity, Promotion, Demotion, Compression, Reconstruction, Population Abstraction and Causal Continuity |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Character_Simulation_Resolution.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Scope | Adaptive simulation detail for individual Characters |
+| Owner | Characters |
+| Last Updated | 2026-08-31 |
 
-> *"The world does not stop where the player's attention ends. Only the amount of detail changes."*
-
----
-
-# Purpose
-
-The Character Simulation Resolution system defines how Project Ascension can simulate:
-
-```text
-ONE CHARACTER
-IN EXTREME DETAIL
-```
-
-while simultaneously allowing:
-
-```text
-THOUSANDS
-
-MILLIONS
-
-OR EVENTUALLY
-
-ENTIRE POPULATIONS
-```
-
-to continue existing inside the same world.
-
-The fundamental problem is:
-
-```text
-A LIVING WORLD
-REQUIRES CONTINUITY.
-
-COMPUTATION
-REQUIRES ABSTRACTION.
-```
-
-Therefore Ascension must distinguish between:
-
-```text
-EXISTENCE
-```
-
-and:
-
-```text
-SIMULATION DETAIL.
-```
-
-A character may exist continuously even when the simulation is not resolving:
-
-```text
-every thought
-
-every conversation
-
-every movement
-
-every meal
-
-every decision.
-```
+> **"Simulation resolution changes how much of a life we represent. It does not change whether that life is real."**
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-Simulation resolution determines:
+Character Simulation Resolution defines how much detail the simulation uses when representing an individual Character at any given time.
+
+Project Ascension may contain:
 
 ```text
-HOW MUCH DETAIL
-IS CURRENTLY REQUIRED.
+PLAYER CHARACTERS
+
+COMPANIONS
+
+FAMILY MEMBERS
+
+FRIENDS
+
+RIVALS
+
+LOCAL CONTACTS
+
+FACTION MEMBERS
+
+COMMUNITY LEADERS
+
+WORKERS
+
+TRAVELERS
+
+STRANGERS
+
+AND
+
+LARGE POPULATIONS
+OF PEOPLE
+LIVING BEYOND
+PLAYER OBSERVATION.
 ```
 
-It must never determine:
+These people cannot all be simulated at maximum detail continuously.
+
+But they must not therefore become:
 
 ```text
-WHETHER THE CHARACTER
-EXISTS.
+FROZEN
+
+NON-CAUSAL
+
+PLAYER-DEPENDENT
+
+OR
+
+NARRATIVELY CONVENIENT.
+```
+
+Character Simulation Resolution exists to solve this problem.
+
+Its central question is:
+
+```text
+HOW MUCH
+OF THIS CHARACTER'S
+LIFE
+
+MUST BE
+SIMULATED
+RIGHT NOW
+
+TO PRESERVE
+
+CAUSALITY
+
+CONTINUITY
+
+AGENCY
+
+AND
+
+HUMAN PLAUSIBILITY?
+```
+
+---
+
+# 2. Core Principle
+
+The central rule is:
+
+```text
+SIMULATION RESOLUTION
+CHANGES
+
+DETAIL
+
+NOT
+
+REALITY.
 ```
 
 Therefore:
 
 ```text
-HIGH RESOLUTION
-=
-MORE DETAIL
+LOW RESOLUTION
+≠
+LESS REAL
 
 LOW RESOLUTION
-=
-LESS DETAIL
-
-NOT
+≠
+LESS HUMAN
 
 LOW RESOLUTION
-=
-NO LIFE.
+≠
+LESS AGENCY
+
+LOW RESOLUTION
+≠
+FROZEN
+
+LOW RESOLUTION
+≠
+RANDOM
+
+LOW RESOLUTION
+≠
+UNIMPORTANT.
+```
+
+Resolution determines:
+
+```text
+HOW MUCH
+OF THE CAUSAL PROCESS
+MUST BE REPRESENTED
+EXPLICITLY.
 ```
 
 ---
 
-# Foundational Rule
+# 3. Why Resolution Exists
+
+Full Character simulation may involve:
 
 ```text
-DETAIL MAY CHANGE.
+Life
 
-CAUSAL CONTINUITY
-MUST NOT.
-```
+Memory
 
-This is the foundation of scalable character simulation.
+Human Attributes
 
----
+Psychology
 
-# The Resolution Problem
+Values
 
-Without simulation resolution, Ascension would eventually attempt to process:
+Identity
 
-```text
-every character
+Needs
 
-every second
+Motivation
 
-every Need
+Goals
 
-every Goal
-
-every relationship
-
-every conversation
-
-every decision
-
-every movement
-
-every resource interaction
-
-every life event.
-```
-
-At sufficient population size this becomes:
-
-```text
-COMPUTATIONALLY IMPOSSIBLE.
-```
-
-But simply disabling distant characters creates:
-
-```text
-A FROZEN WORLD.
-```
-
-Neither is acceptable.
-
----
-
-# Resolution Solution
-
-Ascension instead uses:
-
-```text
-VARIABLE SIMULATION RESOLUTION.
-```
-
-Conceptually:
-
-```text
-CHARACTER
-+
-PLAYER PROXIMITY
-+
-RELATIONSHIP RELEVANCE
-+
-CAMPAIGN RELEVANCE
-+
-WORLD RELEVANCE
-+
-CURRENT ACTIVITY
-+
-EVENT EXPOSURE
-+
-CAUSAL IMPORTANCE
-      ↓
-SIMULATION PRIORITY
-      ↓
-SIMULATION RESOLUTION
-      ↓
-REQUIRED DETAIL.
-```
-
----
-
-# Resolution Is Dynamic
-
-Character resolution may:
-
-```text
-INCREASE
-
-DECREASE
-
-REMAIN STABLE.
-```
-
-It should change according to:
-
-```text
-current simulation requirements.
-```
-
----
-
-# Resolution Levels
-
-The canonical conceptual resolution model is:
-
-```text
-R0 — POPULATION
-
-R1 — BACKGROUND
-
-R2 — ACTIVE
-
-R3 — FOCUSED
-
-R4 — IMMEDIATE.
-```
-
-These are:
-
-```text
-SIMULATION RESOLUTION LEVELS.
-```
-
-They are not:
-
-```text
-CHARACTER IMPORTANCE RANKS.
-```
-
----
-
-# R0 — Population Resolution
-
-R0 represents characters primarily through:
-
-```text
-POPULATION STRUCTURES
-
-COHORTS
-
-HOUSEHOLDS
-
-DEMOGRAPHICS
-
-REGIONAL DISTRIBUTIONS.
-```
-
-Individual moment-to-moment simulation is unnecessary.
-
----
-
-# R0 Examples
-
-Examples may include:
-
-```text
-millions of civilians
-across distant regions
-
-large urban populations
-
-background labor markets
-
-regional age cohorts
-
-population migration flows.
-```
-
----
-
-# R0 Simulation
-
-R0 may resolve:
-
-```text
-births
-
-deaths
-
-migration
-
-employment
-
-education
-
-household formation
-
-resource exposure
-
-major crisis effects
-
-demographic change.
-```
-
-These may initially be processed:
-
-```text
-STATISTICALLY
-OR
-AGGREGATELY.
-```
-
----
-
-# R0 Identity
-
-Not every R0 person requires:
-
-```text
-FULL INDIVIDUAL STATE.
-```
-
-However the world must preserve enough information to allow:
-
-```text
-INDIVIDUALIZATION
-```
-
-when required.
-
----
-
-# R0 Principle
-
-```text
-POPULATION ABSTRACTION
-REPRESENTS PEOPLE.
-
-IT DOES NOT REPLACE
-THE FACT THAT PEOPLE EXIST.
-```
-
----
-
-# R1 — Background Resolution
-
-R1 represents:
-
-```text
-INDIVIDUAL CHARACTERS
-```
-
-whose existence matters but whose detailed activity currently does not.
-
----
-
-# R1 State
-
-An R1 character may preserve:
-
-```text
-Character ID
-
-name
-
-age
-
-location
-
-household
-
-profession
-
-broad capability
-
-major relationships
-
-major Goals
-
-major resources
-
-major life state
-
-current broad activity.
-```
-
----
-
-# R1 Processing
-
-R1 may resolve:
-
-```text
-days
-
-weeks
-
-months
-```
-
-rather than:
-
-```text
-seconds or minutes.
-```
-
----
-
-# R1 Examples
-
-```text
-former acquaintance
-in another city
-
-distant relative
-
-shop owner
-the player once met
-
-regional employee
-
-old school friend
-
-previous mission contact.
-```
-
----
-
-# R1 Life
-
-R1 characters may still:
-
-```text
-work
-
-move
-
-change jobs
-
-form relationships
-
-have children
-
-experience loss
-
-age
-
-retire
-
-die.
-```
-
----
-
-# R1 Principle
-
-```text
-BACKGROUND
-DOES NOT MEAN
-STATIC.
-```
-
----
-
-# R2 — Active Resolution
-
-R2 represents characters who are:
-
-```text
-CURRENTLY ACTIVE
-IN A RELEVANT LOCAL
-OR CAUSAL CONTEXT.
-```
-
----
-
-# R2 State
-
-R2 may include:
-
-```text
-current Needs
-
-active Goals
-
-current Plans
-
-local Knowledge
-
-recent Memory
-
-relationship state
-
-profession
-
-capability
-
-resources
-
-current activity
-
-near-term decisions.
-```
-
----
-
-# R2 Processing
-
-R2 may resolve:
-
-```text
-hours
-
-parts of a day
-
-daily cycles
-```
-
-depending on:
-
-```text
-activity
-
-environment
-
-events.
-```
-
----
-
-# R2 Examples
-
-```text
-characters in player's town
-
-employees in relevant workplace
-
-members of active faction
-
-nearby emergency personnel
-
-family members
-
-current contacts.
-```
-
----
-
-# R3 — Focused Resolution
-
-R3 represents characters who are:
-
-```text
-DIRECTLY RELEVANT
-TO CURRENT PLAYER
-OR CAMPAIGN ACTIVITY.
-```
-
----
-
-# R3 State
-
-R3 may resolve:
-
-```text
-detailed Needs
-
-Goal competition
-
-active Plans
+Plans
 
 Knowledge
 
 Beliefs
 
-Memory
-
-Personality
-
-Values
-
 Relationships
+
+Expertise
+
+Profession
 
 Capability
 
-Resources
+Autonomy
 
 Decision Making
 
-Initiative
+Character Development
 
-emotional context
+Current Activity
 
-short-term intention.
+Current Environment
+
+Available Information
+
+Available Resources
+
+Social Context.
+```
+
+Running every system at maximum detail for every Character at all times would create:
+
+```text
+UNNECESSARY
+COMPLEXITY
+
+WITHOUT
+
+MEANINGFUL
+SIMULATION VALUE.
+```
+
+Resolution allows Project Ascension to preserve:
+
+```text
+WORLD CONTINUITY
+```
+
+without requiring:
+
+```text
+UNIVERSAL
+MOMENT-TO-MOMENT
+SIMULATION.
 ```
 
 ---
 
-# R3 Processing
+# 4. Resolution Is Representation
 
-R3 may operate at:
+Character Simulation Resolution is primarily a question of representation.
+
+It does not determine whether a Character:
 
 ```text
-minutes
+exists
 
-short intervals
+has agency
 
-event-driven decisions.
+has history
+
+has relationships
+
+has needs
+
+has Goals
+
+makes choices
+
+experiences consequences
+
+or changes over time.
 ```
+
+Those remain true regardless of resolution.
+
+Resolution determines how explicitly those processes must be represented.
 
 ---
 
-# R3 Examples
+# 5. Resolution Is Not Importance
 
-```text
-mission participants
-
-close companions
-
-negotiation counterpart
-
-current antagonist
-
-critical witness
-
-local leader during crisis
-
-person currently coordinating
-with player.
-```
-
----
-
-# R4 — Immediate Resolution
-
-R4 represents characters currently involved in:
-
-```text
-DIRECT
-HIGH-DETAIL
-INTERACTION.
-```
-
----
-
-# R4 State
-
-R4 may resolve:
-
-```text
-immediate perception
-
-current Knowledge
-
-conversation context
-
-short-term intention
-
-active emotion
-
-current physical state
-
-precise position
-
-available actions
-
-social interpretation
-
-decision evaluation
-
-immediate Memory formation.
-```
-
----
-
-# R4 Processing
-
-R4 may operate:
-
-```text
-EVENT BY EVENT
-
-ACTION BY ACTION
-
-CONVERSATION TURN BY
-CONVERSATION TURN.
-```
-
----
-
-# R4 Examples
-
-```text
-character speaking
-with player
-
-person involved
-in immediate emergency
-
-character performing
-critical task
-
-participant in confrontation
-
-character making
-high-impact decision.
-```
-
----
-
-# Resolution Pyramid
-
-Conceptually:
-
-```text
-                R4
-           IMMEDIATE
-              /\
-             /  \
-            /    \
-           / R3   \
-          /FOCUSED \
-         /----------\
-        /     R2     \
-       /    ACTIVE    \
-      /----------------\
-     /        R1        \
-    /    BACKGROUND      \
-   /----------------------\
-  /           R0           \
- /       POPULATION         \
-/____________________________\
-```
-
-Population size generally increases:
-
-```text
-DOWNWARD.
-```
-
-Simulation detail generally increases:
-
-```text
-UPWARD.
-```
-
----
-
-# Resolution Is Not Social Importance
-
-A president may currently be:
-
-```text
-R1
-```
-
-while an unknown mechanic beside the player may be:
-
-```text
-R4.
-```
-
-Therefore:
-
-```text
-SOCIAL IMPORTANCE
-≠
-SIMULATION RESOLUTION.
-```
-
----
-
-# Resolution Is Not Narrative Importance
-
-A character may be:
-
-```text
-VERY IMPORTANT
-TO THE STORY
-```
-
-while currently requiring only:
-
-```text
-LOW DETAIL.
-```
-
-Likewise a temporary character may require:
-
-```text
-EXTREME DETAIL
-```
-
-during:
-
-```text
-immediate interaction.
-```
-
----
-
-# Resolution Is Not Intelligence
-
-Lower resolution does not mean:
-
-```text
-LESS INTELLIGENT CHARACTER.
-```
-
-It means:
-
-```text
-FEWER INTERNAL PROCESSES
-ARE CURRENTLY EXPLICITLY RESOLVED.
-```
-
----
-
-# Simulation Priority
-
-Resolution derives from:
-
-```text
-SIMULATION PRIORITY.
-```
-
-Conceptually:
-
-```text
-PRIORITY =
-PLAYER PROXIMITY
-+
-RELATIONSHIP RELEVANCE
-+
-CAMPAIGN RELEVANCE
-+
-WORLD RELEVANCE
-+
-EVENT EXPOSURE
-+
-CAUSAL IMPORTANCE
-+
-CURRENT ACTIVITY
-+
-PERSISTENCE REQUIREMENTS.
-```
-
----
-
-# Player Proximity
-
-Proximity may include:
-
-```text
-physical proximity
-
-communication proximity
-
-social proximity
-
-causal proximity.
-```
-
----
-
-# Physical Proximity
-
-Characters physically near:
-
-```text
-player
-```
-
-may require higher resolution because:
-
-```text
-player may interact
-with them immediately.
-```
-
----
-
-# Communication Proximity
-
-A character may be:
-
-```text
-thousands of kilometers away
-```
-
-but participating in:
-
-```text
-live communication.
-```
-
-They may therefore require:
-
-```text
-R3
-OR
-R4.
-```
-
----
-
-# Relationship Proximity
-
-Close relationships may maintain:
-
-```text
-higher continuity requirements
-```
-
-even at distance.
-
-Examples:
-
-```text
-partner
-
-child
-
-parent
-
-close friend
-
-trusted colleague.
-```
-
----
-
-# Causal Proximity
-
-A character may become important because:
-
-```text
-their action is about to
-affect something relevant.
-```
-
-Example:
-
-```text
-engineer in distant power station
-making decision
-that affects player's region.
-```
-
-Physical distance is high.
-
-Causal proximity is:
-
-```text
-VERY HIGH.
-```
-
----
-
-# Campaign Relevance
-
-The Living Campaign Engine may identify characters connected to:
-
-```text
-active missions
-
-Story Hooks
-
-Opportunities
-
-Conflicts
-
-delayed Consequences.
-```
-
-These may receive:
-
-```text
-temporary resolution increase.
-```
-
----
-
-# World Relevance
-
-Some characters may affect:
-
-```text
-large-scale systems.
-```
-
-Examples:
-
-```text
-regional infrastructure operator
-
-political leader
-
-military commander
-
-major business owner
-
-scientist controlling
-critical technology.
-```
-
-Their actions may require:
-
-```text
-higher resolution
-during relevant decisions.
-```
-
----
-
-# Activity Relevance
-
-A character performing:
-
-```text
-routine work
-```
-
-may require:
-
-```text
-lower resolution.
-```
-
-The same character handling:
-
-```text
-critical infrastructure failure
-```
-
-may require:
-
-```text
-higher resolution.
-```
-
----
-
-# Event Exposure
-
-World events may temporarily increase:
-
-```text
-resolution requirements.
-```
-
-Examples:
-
-```text
-earthquake
-
-blackout
-
-war
-
-evacuation
-
-fire
-
-economic collapse
-
-communication failure.
-```
-
----
-
-# Resolution Promotion
-
-Promotion occurs when:
-
-```text
-MORE DETAIL
-BECOMES NECESSARY.
-```
-
-Examples:
-
-```text
-R0 → R1
-
-R1 → R2
-
-R2 → R3
-
-R3 → R4.
-```
-
----
-
-# Promotion Triggers
-
-Possible triggers:
-
-```text
-player approaches
-
-player contacts character
-
-relationship becomes relevant
-
-mission activates
-
-world event reaches character
-
-character begins consequential action
-
-character enters relevant location
-
-information connects character
-to current situation.
-```
-
----
-
-# Promotion Must Preserve History
-
-When character moves from:
-
-```text
-LOW RESOLUTION
-```
-
-to:
+A Character's simulation resolution must not become a hidden measure of human importance.
 
 ```text
 HIGH RESOLUTION
+≠
+IMPORTANT PERSON
+
+LOW RESOLUTION
+≠
+UNIMPORTANT PERSON.
 ```
 
-the system must not generate:
+A Character may be simulated at low resolution simply because:
 
 ```text
-A NEW PERSON.
+they are geographically distant
+
+their immediate activity
+has little causal interaction
+with active simulation
+
+their current life is stable
+
+or
+
+fine-grained detail
+is unnecessary.
 ```
 
-It must reconstruct:
-
-```text
-THE SAME PERSON
-AT HIGHER DETAIL.
-```
+Their life remains real within the world.
 
 ---
 
-# Promotion Formula
+# 6. Resolution Is Not Narrative Status
 
-Conceptually:
+Resolution must not depend solely on:
 
 ```text
-LOW-RESOLUTION STATE
-+
-PERSISTENT HISTORY
-+
-WORLD HISTORY
-+
-RELATIONSHIP HISTORY
-+
-HOUSEHOLD HISTORY
-+
-REGIONAL HISTORY
-+
-ELAPSED TIME
-      ↓
-HIGHER-RESOLUTION STATE.
+IS THIS CHARACTER
+PART OF THE STORY?
 ```
 
----
-
-# Reconstruction
-
-Reconstruction means:
+Project Ascension does not divide humanity into:
 
 ```text
-EXPANDING
-KNOWN CHARACTER STATE
-INTO REQUIRED DETAIL.
-```
+STORY CHARACTERS
 
-It does not mean:
+AND
 
-```text
-INVENTING
-A NEW BIOGRAPHY.
-```
-
----
-
-# Reconstruction Constraints
-
-Generated detail must be consistent with:
-
-```text
-known Character State
-
-age
-
-profession
-
-location
-
-household
-
-relationships
-
-Goals
-
-past events
-
-world history
-
-regional conditions
-
-known player interactions.
-```
-
----
-
-# Deterministic Reconstruction
-
-Whenever possible, reconstruction should be:
-
-```text
-DETERMINISTIC
-OR
-STABLY SEEDED.
-```
-
-This prevents:
-
-```text
-CHARACTER PERSONALITY
-CHANGING EVERY TIME
-THEY ARE LOADED.
-```
-
----
-
-# Stable Character Seed
-
-A persistent character may possess:
-
-```text
-CHARACTER SEED.
-```
-
-This may assist with:
-
-```text
-stable generated details
-
-appearance variation
-
-minor preferences
-
-background texture
-
-behavioral tendencies.
-```
-
----
-
-# Seed Boundary
-
-A seed must not override:
-
-```text
-CANONICAL HISTORY.
-```
-
-Canonical state always has:
-
-```text
-PRIORITY.
-```
-
----
-
-# Latent State
-
-Lower-resolution characters may preserve:
-
-```text
-LATENT STATE.
-```
-
-Latent State contains information that is:
-
-```text
-NOT CURRENTLY
-FULLY SIMULATED
-
-BUT MUST REMAIN
-CONSISTENT.
-```
-
----
-
-# Latent State Examples
-
-```text
-broad personality tendencies
-
-important values
-
-relationship attachment
-
-career direction
-
-major Goals
-
-family obligations
-
-long-term health state
-
-major unresolved conflict.
-```
-
----
-
-# Latent State Principle
-
-```text
-DO NOT DELETE DETAIL
-THAT WILL BE REQUIRED
-FOR CONTINUITY.
+BACKGROUND PEOPLE.
 ```
 
 Instead:
 
 ```text
-COMPRESS IT.
+CHARACTERS EXIST
+IN THE WORLD.
+
+SOME CURRENTLY
+REQUIRE MORE
+SIMULATION DETAIL
+THAN OTHERS.
 ```
 
 ---
 
-# Resolution Demotion
+# 7. Core Resolution Model
 
-Demotion occurs when:
+The canonical Character resolution model uses three broad levels:
 
 ```text
-LESS DETAIL
-IS CURRENTLY REQUIRED.
+LOW RESOLUTION
+
+MEDIUM RESOLUTION
+
+HIGH RESOLUTION.
 ```
 
-Examples:
+These are conceptual simulation modes.
+
+They are not Character properties.
+
+A Character may move between them repeatedly throughout their life.
+
+---
+
+# 8. Low Resolution
+
+Low Resolution represents a Character through major causal state and life trajectory.
+
+Typical explicit representation may include:
 
 ```text
-R4 → R3
+IDENTITY
 
-R3 → R2
+LOCATION / REGION
 
-R2 → R1
+LIFE SITUATION
 
-R1 → R0.
+CURRENT ROLE
+
+MAJOR GOALS
+
+MAJOR RELATIONSHIPS
+
+MAJOR RESPONSIBILITIES
+
+MAJOR CAPABILITIES
+
+MAJOR CONSTRAINTS
+
+MAJOR LIFE EVENTS
+
+IMPORTANT WORLD EXPOSURE
+
+SIGNIFICANT CHARACTER CHANGE.
+```
+
+Low Resolution asks:
+
+```text
+WHAT IS
+HAPPENING
+IN THIS PERSON'S
+LIFE
+
+AT A LEVEL
+THAT MAY MATTER
+CAUSALLY?
 ```
 
 ---
 
-# Demotion Is Compression
+# 9. Low Resolution Does Not Mean Inactivity
 
-Demotion should:
+A low-resolution Character may still:
 
 ```text
-SUMMARIZE
+work
+
+travel
+
+learn
+
+care for family
+
+maintain Relationships
+
+change employment
+
+join organizations
+
+leave organizations
+
+move
+
+become ill
+
+recover
+
+experience loss
+
+gain responsibility
+
+lose responsibility
+
+pursue Goals
+
+abandon Goals
+
+make decisions
+
+respond to World Events
+
+and
+
+change over time.
 ```
 
-rather than:
+The simulation simply does not represent every intermediate step.
+
+---
+
+# 10. Low-Resolution Example
+
+Consider:
 
 ```text
-ERASE.
+MAYA
+
+AGE:
+42
+
+LOCATION:
+OHIO
+
+PROFESSION:
+ELECTRICAL ENGINEER
+
+CURRENT ROLE:
+REGIONAL GRID TECHNICIAN
+
+FAMILY:
+SPOUSE
+ONE CHILD
+
+MAJOR GOAL:
+KEEP FAMILY SECURE
+
+MAJOR RESPONSIBILITY:
+REGIONAL POWER INFRASTRUCTURE
+```
+
+The players leave the region.
+
+Six months pass.
+
+During that period:
+
+```text
+POWER INSTABILITY
+INCREASES
+
+MAYA WORKS
+LONGER HOURS
+
+LOCAL GRID
+BECOMES LESS RELIABLE
+
+MAYA TRAINS
+TWO JUNIOR TECHNICIANS
+
+HER SPOUSE
+WANTS TO LEAVE
+THE REGION
+
+MAYA REFUSES
+BECAUSE OF
+PROFESSIONAL RESPONSIBILITY.
+```
+
+The simulation does not need to resolve:
+
+```text
+EVERY WORK SHIFT
+
+EVERY CONVERSATION
+
+EVERY MEAL
+
+EVERY MINOR DECISION.
+```
+
+But it must preserve the important causal changes.
+
+---
+
+# 11. Medium Resolution
+
+Medium Resolution represents active Character state with enough detail to support meaningful interaction and near-term causality.
+
+Typical explicit representation may include:
+
+```text
+CURRENT LOCATION
+
+CURRENT ROLE
+
+ACTIVE GOALS
+
+BROAD PLANS
+
+IMPORTANT NEEDS
+
+CURRENT MOTIVATIONAL PRESSURES
+
+IMPORTANT BELIEFS
+
+RELEVANT KNOWLEDGE
+
+CURRENT PSYCHOLOGICAL CONDITION
+
+IMPORTANT RELATIONSHIPS
+
+RELEVANT EXPERTISE
+
+AVAILABLE RESOURCES
+
+CURRENT RESPONSIBILITIES
+
+ACTIVE OPEN LOOPS
+
+RECENT SIGNIFICANT EVENTS.
+```
+
+Medium Resolution asks:
+
+```text
+WHAT IS
+THIS PERSON
+CURRENTLY TRYING
+TO DO
+
+AND
+
+WHAT CONDITIONS
+ARE SHAPING
+THEIR LIFE?
 ```
 
 ---
 
-# Demotion Pipeline
+# 12. Medium-Resolution Example
 
-Conceptually:
+The players return to Maya's region.
 
-```text
-HIGH-RESOLUTION STATE
-      ↓
-IDENTIFY PERSISTENT CONSEQUENCES
-      ↓
-WRITE IMPORTANT MEMORY
-      ↓
-WRITE RELATIONSHIP CHANGES
-      ↓
-WRITE GOAL CHANGES
-      ↓
-WRITE CHARACTER DEVELOPMENT
-      ↓
-WRITE WORLD-RELEVANT EVENTS
-      ↓
-COMPRESS TRANSIENT STATE
-      ↓
-LOWER-RESOLUTION STATE.
-```
-
----
-
-# Persistent State
-
-State that should survive demotion may include:
-
-```text
-identity
-
-age
-
-location
-
-household
-
-profession
-
-capability changes
-
-major Goals
-
-important relationships
-
-major Memories
-
-Character Development
-
-major resources
-
-major commitments
-
-major injuries
-
-major life events
-
-reputation
-
-unresolved Consequences.
-```
-
----
-
-# Transient State
-
-State that may usually be compressed includes:
-
-```text
-exact body position
-
-minor temporary emotion
-
-exact recent dialogue wording
-
-momentary attention
-
-short-lived micro-goals
-
-routine movement.
-```
-
----
-
-# Compression Boundary
-
-Transient state may only be discarded when:
-
-```text
-IT NO LONGER
-HAS CAUSAL CONSEQUENCES.
-```
-
----
-
-# Example
-
-Character angrily says:
-
-```text
-"I will never work
-with you again."
-```
-
-The exact:
-
-```text
-body position
-```
-
-may disappear.
+They have not yet met her.
 
 But:
 
 ```text
-relationship damage
+MAYA
+MAY BECOME
+CAUSALLY RELEVANT
 
-Memory
+BECAUSE
 
-new Goal
-
-professional consequence
+THE PLAYERS NEED
+GRID ACCESS.
 ```
 
-must remain.
+The simulation may expand her state:
+
+```text
+ACTIVE GOAL:
+Stabilize substation network
+
+PLAN:
+Recover replacement transformers
+
+CURRENT PRESSURE:
+Severe workload
+
+CURRENT BELIEF:
+Regional government support
+will not arrive
+
+IMPORTANT RELATIONSHIP:
+Growing conflict with spouse
+
+OPEN LOOP:
+Promised local hospital
+priority restoration
+
+RELEVANT EXPERTISE:
+Electrical Engineering
+
+CURRENT RESPONSIBILITY:
+Regional grid coordination.
+```
+
+We now know enough to simulate meaningful interaction.
 
 ---
 
-# State Preservation
+# 13. High Resolution
 
-Resolution changes must preserve:
+High Resolution represents Character state at the detail necessary for immediate action, interaction and decision-making.
+
+Typical explicit representation may include:
 
 ```text
-CAUSALLY IMPORTANT STATE.
+CURRENT ACTIVITY
+
+IMMEDIATE GOALS
+
+ACTIVE PLANS
+
+CURRENT NEED PRESSURES
+
+CURRENT PSYCHOLOGICAL STATE
+
+CURRENTLY ACCESSIBLE MEMORY
+
+RELEVANT KNOWLEDGE
+
+RELEVANT BELIEFS
+
+VALUES / IDENTITY PRESSURES
+
+HUMAN ATTRIBUTE INFLUENCE
+
+RELATIONSHIP CONTEXT
+
+CURRENT TRUST STATE
+
+RELEVANT EXPERTISE
+
+CURRENT CAPABILITY
+
+TOOLS
+
+RESOURCES
+
+ENVIRONMENT
+
+AVAILABLE INFORMATION
+
+PERCEIVED OPTIONS
+
+ACTION FRICTION
+
+AUTONOMY / INITIATIVE
+
+DECISION MAKING.
+```
+
+High Resolution asks:
+
+```text
+WHAT DOES
+THIS PERSON
+
+PERCEIVE
+
+WANT
+
+BELIEVE
+
+AND
+
+CHOOSE
+
+RIGHT NOW?
 ```
 
 ---
 
-# Causal Continuity
+# 14. High Resolution Is Not Total Simulation
 
-Causal continuity means:
+Even High Resolution does not mean:
 
 ```text
-THE FUTURE MUST REMAIN
-CONSISTENT WITH
-WHAT ALREADY HAPPENED.
+SIMULATE
+EVERY BIOLOGICAL
+
+COGNITIVE
+
+EMOTIONAL
+
+AND SOCIAL
+PROCESS.
+```
+
+High Resolution still represents only what is causally relevant.
+
+The principle remains:
+
+```text
+ENOUGH DETAIL
+
+TO SUPPORT
+
+PLAUSIBLE
+CAUSAL BEHAVIOR.
 ```
 
 ---
 
-# Causal Continuity Example
+# 15. Resolution Is Adaptive
 
-Player destroys:
+Characters should not remain permanently assigned to one resolution.
+
+Resolution changes dynamically.
+
+Conceptually:
 
 ```text
-character's vehicle.
+LOW
+↕
+MEDIUM
+↕
+HIGH.
 ```
 
-Character later demotes to:
+Characters may move:
 
 ```text
-R1.
+LOW → HIGH
+
+HIGH → LOW
+
+LOW → MEDIUM
+
+MEDIUM → LOW
+
+MEDIUM → HIGH
+
+HIGH → MEDIUM.
 ```
 
-Months later player returns.
+No progression hierarchy is implied.
 
-The system must not reconstruct:
+---
+
+# 16. Resolution Escalation
+
+Resolution should increase when additional Character detail becomes causally necessary.
+
+Possible escalation triggers include:
 
 ```text
-the same vehicle
-without explanation.
+PLAYER PROXIMITY
+
+DIRECT INTERACTION
+
+MAJOR DECISION
+
+IMMEDIATE DANGER
+
+IMPORTANT RELATIONSHIP EVENT
+
+GOAL CONFLICT
+
+WORLD EVENT EXPOSURE
+
+FACTION INVOLVEMENT
+
+HIGH-CONSEQUENCE ACTION
+
+NEW RESPONSIBILITY
+
+SIGNIFICANT LIFE EVENT
+
+CROSS-SYSTEM CONSEQUENCE
+
+UNCERTAINTY REQUIRING
+INDIVIDUAL DECISION
+
+CHARACTER INITIATIVE
+WITH BROADER CONSEQUENCES.
 ```
 
-Possible valid outcomes:
+---
+
+# 17. Player Proximity Is Not the Only Trigger
+
+A critical rule:
 
 ```text
-vehicle remains destroyed
+PLAYER PROXIMITY
+MAY INCREASE
+RESOLUTION
 
-vehicle was repaired
+BUT
 
-vehicle was replaced
-
-character changed transport.
+PLAYER PROXIMITY
+DOES NOT DEFINE
+REALITY.
 ```
 
-But each requires:
+Characters may require higher resolution even when players are absent.
+
+Example:
 
 ```text
+LOCAL MAYOR
+MUST DECIDE
+
+WHETHER TO
+EVACUATE
+A TOWN.
+```
+
+The players are hundreds of miles away.
+
+The decision may still require:
+
+```text
+MEDIUM
+OR
+HIGH
+CHARACTER RESOLUTION
+```
+
+because the consequence is significant.
+
+---
+
+# 18. Causal Importance
+
+Resolution should respond to:
+
+```text
+CAUSAL IMPORTANCE
+```
+
+not merely:
+
+```text
+SCREEN TIME.
+```
+
+A Character may briefly require high resolution because one decision could affect:
+
+```text
+a family
+
+a settlement
+
+a Faction
+
+a transport route
+
+an institution
+
+or
+
+a regional crisis.
+```
+
+Afterward, the Character may return to lower resolution.
+
+---
+
+# 19. Resolution De-Escalation
+
+Resolution may decrease when detailed simulation is no longer necessary.
+
+Possible conditions include:
+
+```text
+IMMEDIATE CONFLICT
+RESOLVED
+
+PLAYER LEAVES
+
+ACTIVE DECISION
+COMPLETED
+
+CHARACTER ENTERS
+STABLE ROUTINE
+
+CURRENT ACTION
+HAS LOW CAUSAL UNCERTAINTY
+
+DETAILED INTERACTION
+NO LONGER REQUIRED.
+```
+
+De-escalation must preserve relevant state.
+
+---
+
+# 20. De-Escalation Is Compression
+
+When a Character moves from:
+
+```text
+HIGH
+↓
+MEDIUM
+```
+
+or:
+
+```text
+MEDIUM
+↓
+LOW
+```
+
+the simulation compresses detail.
+
+It does not erase history.
+
+Conceptually:
+
+```text
+DETAILED STATE
+↓
+IDENTIFY
+PERSISTENT CONSEQUENCES
+↓
+PRESERVE
+CAUSALLY RELEVANT STATE
+↓
+COMPRESS
+TRANSIENT DETAIL.
+```
+
+---
+
+# 21. What Must Survive Compression
+
+Compression must preserve anything that may matter to future causality.
+
+This may include:
+
+```text
+Life Events
+
+major Memories
+
+important Beliefs
+
+Goal changes
+
+Relationship changes
+
+promises
+
+obligations
+
+conflicts
+
+open commitments
+
+important knowledge
+
+Expertise changes
+
+professional changes
+
+Identity changes
+
+major psychological consequences
+
+injury
+
+resource changes
+
+location changes
+
+social role changes
+
+Faction involvement
+
+significant decisions
+
+unresolved consequences.
+```
+
+---
+
+# 22. Transient Detail
+
+Some state may safely be compressed when it no longer has meaningful causal relevance.
+
+Examples may include:
+
+```text
+momentary irritation
+
+minor conversation wording
+
+routine actions
+
+temporary attention state
+
+irrelevant environmental detail
+
+minor procedural choices.
+```
+
+But:
+
+```text
+TRANSIENT
+DOES NOT MEAN
+UNIMPORTANT BY DEFINITION.
+```
+
+If a seemingly small event created a persistent consequence, the consequence must remain.
+
+---
+
+# 23. Resolution Expansion
+
+When a Character moves to higher resolution, additional detail may be required.
+
+This process is:
+
+```text
+RESOLUTION EXPANSION.
+```
+
+Expansion must derive from existing canonical history.
+
+Conceptually:
+
+```text
+KNOWN CHARACTER STATE
+
++
+
+LIFE HISTORY
+
++
+
+WORLD HISTORY
+
++
+
+KNOWN RELATIONSHIPS
+
++
+
+KNOWN GOALS
+
++
+
+KNOWN ACTIONS
+
++
+
+KNOWN EXPOSURE
+
++
+
+ELAPSED TIME
+
+        ↓
+
+PLAUSIBLE
+DETAIL EXPANSION.
+```
+
+---
+
+# 24. Expansion Is Not Reinvention
+
+The simulation must never do:
+
+```text
+PLAYER MEETS
+LOW-RESOLUTION CHARACTER
+
+        ↓
+
+INVENT WHATEVER
+PERSONALITY,
+HISTORY,
+SKILLS
+AND RELATIONSHIPS
+
+ARE CONVENIENT
+FOR CURRENT STORY.
+```
+
+Instead:
+
+```text
+CURRENT DETAIL
+
+MUST BE
+
+COMPATIBLE WITH
+
+PREVIOUSLY ESTABLISHED
 CAUSAL HISTORY.
 ```
 
 ---
 
-# No Resurrection Through Resolution
+# 25. No Retroactive Convenience
 
-A dead character cannot return because:
+Resolution expansion must not introduce:
 
 ```text
-LOW-RESOLUTION STATE
-WAS RECONSTRUCTED
-INCORRECTLY.
+CONVENIENT EXPERTISE
+
+CONVENIENT RELATIONSHIPS
+
+CONVENIENT TRAUMA
+
+CONVENIENT KNOWLEDGE
+
+CONVENIENT RESOURCES
+
+CONVENIENT BELIEFS
+
+CONVENIENT LOYALTY
+
+CONVENIENT FAMILY
+
+CONVENIENT ACCESS.
 ```
+
+unless those details can plausibly exist within preserved history.
 
 ---
 
-# No Relationship Reset
+# 26. Underspecified Does Not Mean Free
 
-A damaged relationship cannot return to:
-
-```text
-DEFAULT NEUTRAL
-```
-
-because:
-
-```text
-character left active simulation.
-```
-
----
-
-# No Knowledge Reset
-
-Information learned by a character must not disappear because:
-
-```text
-resolution decreased.
-```
-
-Unless:
-
-```text
-memory mechanics
-
-misinformation
-
-forgetting
-
-or later evidence
-```
-
-provide valid cause.
-
----
-
-# No Goal Reset
-
-Long-term Goals should persist across:
-
-```text
-resolution changes.
-```
-
----
-
-# Temporal Resolution
-
-Different resolution levels may process time differently.
-
----
-
-# R4 Temporal Resolution
-
-May resolve:
-
-```text
-seconds
-
-actions
-
-conversation turns.
-```
-
----
-
-# R3 Temporal Resolution
-
-May resolve:
-
-```text
-minutes
-
-short scenes
-
-critical events.
-```
-
----
-
-# R2 Temporal Resolution
-
-May resolve:
-
-```text
-hours
-
-daily cycles.
-```
-
----
-
-# R1 Temporal Resolution
-
-May resolve:
-
-```text
-days
-
-weeks
-
-months.
-```
-
----
-
-# R0 Temporal Resolution
-
-May resolve:
-
-```text
-weeks
-
-months
-
-quarters
-
-years
-```
-
-depending on:
-
-```text
-world activity.
-```
-
----
-
-# Adaptive Temporal Resolution
-
-Temporal resolution should increase when:
-
-```text
-EVENT DENSITY
-INCREASES.
-```
-
----
-
-# Example
-
-A distant region may normally update:
-
-```text
-weekly.
-```
-
-A major earthquake occurs.
-
-The region may temporarily update:
-
-```text
-hourly
-
-or event-driven.
-```
-
----
-
-# Spatial Resolution
-
-Simulation resolution also applies to:
-
-```text
-SPACE.
-```
-
----
-
-# High Spatial Resolution
-
-Near the player:
-
-```text
-building
-
-room
-
-street
-
-vehicle
-
-individual position
-```
-
-may matter.
-
----
-
-# Medium Spatial Resolution
-
-At moderate distance:
-
-```text
-district
-
-town
-
-facility
-
-local region
-```
-
-may be sufficient.
-
----
-
-# Low Spatial Resolution
-
-Far away:
-
-```text
-region
-
-province
-
-country
-
-population zone
-```
-
-may be sufficient.
-
----
-
-# Spatial Promotion
-
-When player approaches:
-
-```text
-REGION
-↓
-TOWN
-↓
-STREET
-↓
-BUILDING
-↓
-ROOM.
-```
-
-Character state may be spatially refined.
-
----
-
-# Spatial Reconstruction
-
-Refinement must respect:
-
-```text
-known location
-
-profession
-
-schedule
-
-household
-
-transport
-
-world conditions.
-```
-
----
-
-# Invalid Spatial Reconstruction
-
-Do not place character:
-
-```text
-AT HOME
-```
-
-if canonical state says:
-
-```text
-they evacuated
-three days earlier.
-```
-
----
-
-# Event-Driven Simulation
-
-Not all character simulation requires:
-
-```text
-CONTINUOUS TICKING.
-```
-
-Many changes may be:
-
-```text
-EVENT DRIVEN.
-```
-
----
-
-# Event Examples
-
-```text
-job shift begins
-
-school year starts
-
-payment due
-
-child born
-
-evacuation ordered
-
-message received
-
-relationship meeting
-
-world event reaches region.
-```
-
----
-
-# Scheduled Events
-
-Characters may maintain:
-
-```text
-FUTURE EVENT REFERENCES.
-```
-
----
-
-# Scheduled Event Example
-
-```text
-Character:
-Elena
-
-Current Resolution:
-R1
-
-Scheduled Event:
-University graduation
-
-Date:
-2038-06-14.
-```
-
-The system does not need:
-
-```text
-daily detailed simulation
-```
-
-to know the event approaches.
-
----
-
-# Event Wake-Up
-
-A scheduled event may:
-
-```text
-WAKE
-```
-
-a character into:
-
-```text
-higher simulation activity.
-```
-
----
-
-# Priority Queue
-
-Character events may enter:
-
-```text
-SIMULATION PRIORITY QUEUE.
-```
-
-Conceptually:
-
-```text
-EVENT TIME
-
-IMPACT
-
-PLAYER RELEVANCE
-
-WORLD RELEVANCE
-
-DEPENDENCIES
-
-CHARACTER RESOLUTION.
-```
-
----
-
-# Lazy Evaluation
-
-Some state does not need to be calculated until:
-
-```text
-IT BECOMES RELEVANT.
-```
-
-This is:
-
-```text
-LAZY EVALUATION.
-```
-
----
-
-# Example
-
-A distant character's exact:
-
-```text
-breakfast
-```
-
-does not need calculation.
-
-Their:
-
-```text
-employment
-
-location
-
-household
-
-major life events
-```
-
-may matter.
-
----
-
-# Lazy Evaluation Boundary
-
-Never defer state when:
-
-```text
-OTHER SIMULATION SYSTEMS
-DEPEND ON IT.
-```
-
----
-
-# Simulation Budget
-
-Ascension should operate within:
-
-```text
-SIMULATION BUDGETS.
-```
-
-Possible budgets:
-
-```text
-CPU
-
-memory
-
-AI inference
-
-database operations
-
-event processing
-
-network synchronization.
-```
-
----
-
-# Budget Allocation
-
-Resources should prioritize:
-
-```text
-R4
-
-then R3
-
-then relevant R2
-
-then R1
-
-then R0.
-```
+A low-resolution Character may have many unspecified details.
 
 But:
 
 ```text
-CRITICAL WORLD EVENTS
+UNSPECIFIED
+≠
+ANYTHING IS POSSIBLE.
 ```
 
-may override normal order.
-
----
-
-# Critical Override
-
-A distant R1 character may temporarily outrank:
+New detail must remain constrained by:
 
 ```text
-nearby routine R3 activity
-```
+age
 
-if they are:
-
-```text
-about to trigger
-major infrastructure failure.
-```
-
----
-
-# Importance Versus Urgency
-
-Distinguish:
-
-```text
-IMPORTANCE
-```
-
-from:
-
-```text
-URGENCY.
-```
-
-A character may be:
-
-```text
-globally important
-but currently inactive.
-```
-
-Another may be:
-
-```text
-locally unimportant
-but currently causing
-urgent consequences.
-```
-
----
-
-# Simulation Priority Formula
-
-Conceptually:
-
-```text
-PRIORITY =
-URGENCY
-×
-CAUSAL IMPACT
-×
-RELEVANCE
-×
-UNCERTAINTY
-×
-INTERACTION POTENTIAL.
-```
-
-Exact implementation may use:
-
-```text
-weighted factors
-
-thresholds
-
-queues
-
-event triggers.
-```
-
----
-
-# Resolution Hysteresis
-
-Resolution should not constantly oscillate:
-
-```text
-R2
-↓
-R3
-↓
-R2
-↓
-R3
-```
-
-because the player moves:
-
-```text
-a few meters.
-```
-
----
-
-# Hysteresis Principle
-
-Promotion and demotion should use:
-
-```text
-DIFFERENT THRESHOLDS
-
-AND / OR
-
-MINIMUM HOLD TIMES.
-```
-
----
-
-# Example
-
-Promote to R3 when:
-
-```text
-relevance > 80.
-```
-
-Demote from R3 only when:
-
-```text
-relevance < 60
-for sufficient time.
-```
-
----
-
-# Resolution Cooldown
-
-After high-impact interaction:
-
-```text
-character may remain
-temporarily elevated
-```
-
-to resolve:
-
-```text
-immediate consequences.
-```
-
----
-
-# Character Pinning
-
-Some characters may be:
-
-```text
-PINNED
-```
-
-to a minimum resolution.
-
-Examples:
-
-```text
-close companion
-
-active dependent
-
-critical leader
-
-active antagonist
-
-character carrying
-critical unresolved state.
-```
-
----
-
-# Pinning Is Temporary
-
-Pinning should not automatically mean:
-
-```text
-PERMANENT MAXIMUM RESOLUTION.
-```
-
----
-
-# Minimum Resolution
-
-A character may have:
-
-```text
-MINIMUM REQUIRED RESOLUTION
-```
-
-based on:
-
-```text
-current responsibilities.
-```
-
----
-
-# Maximum Necessary Resolution
-
-Likewise the system should avoid:
-
-```text
-OVER-SIMULATION.
-```
-
-If R2 is sufficient:
-
-```text
-DO NOT USE R4.
-```
-
----
-
-# Character Importance
-
-Character Importance may influence:
-
-```text
-state retention
-
-history retention
-
-reconstruction detail
-
-minimum resolution.
-```
-
-But it remains separate from:
-
-```text
-CURRENT RESOLUTION.
-```
-
----
-
-# Persistence Class
-
-Characters may possess:
-
-```text
-PERSISTENCE CLASS.
-```
-
-Conceptually:
-
-```text
-EPHEMERAL
-
-PERSISTENT
-
-SIGNIFICANT
-
-CRITICAL.
-```
-
----
-
-# Ephemeral Character
-
-May represent:
-
-```text
-temporary background individual
-```
-
-with limited persistent history.
-
----
-
-# Persistent Character
-
-Has:
-
-```text
-stable identity
+location
 
 history
 
-state continuity.
+profession
+
+culture
+
+family context
+
+known relationships
+
+world conditions
+
+previous actions
+
+available opportunity
+
+elapsed time.
 ```
 
 ---
 
-# Significant Character
+# 27. Causal Reconstruction
 
-Has meaningful:
+When detail must be added, the simulation may reconstruct plausible missing state.
+
+But reconstruction must answer:
 
 ```text
+COULD THIS
+PLAUSIBLY HAVE
+BEEN TRUE
+
+GIVEN EVERYTHING
+WE ALREADY KNOW?
+```
+
+If not:
+
+```text
+DO NOT CREATE IT.
+```
+
+---
+
+# 28. Reconstruction Confidence
+
+Reconstructed state may carry conceptual confidence.
+
+For example:
+
+```text
+KNOWN
+
+STRONGLY IMPLIED
+
+PLAUSIBLY INFERRED
+
+UNRESOLVED.
+```
+
+This is especially useful when historical information is incomplete.
+
+The simulation must not silently convert:
+
+```text
+INFERENCE
+
+INTO
+
+CANONICAL CERTAINTY.
+```
+
+---
+
+# 29. Canonical State Versus Generated Detail
+
+Resolution expansion may generate temporary interpretive detail for simulation.
+
+Not every generated detail needs to become permanent Canon.
+
+A distinction should exist between:
+
+```text
+PERSISTENT
+CHARACTER STATE
+
+AND
+
+TEMPORARY
+SIMULATION DETAIL.
+```
+
+Only causally meaningful persistent state should be retained long-term.
+
+---
+
+# 30. Character Continuity
+
+A Character moving between resolutions must remain recognizably the same person.
+
+Therefore:
+
+```text
+LOW-RESOLUTION MAYA
+
+MEDIUM-RESOLUTION MAYA
+
+HIGH-RESOLUTION MAYA
+```
+
+must not behave as three unrelated Characters.
+
+Resolution changes:
+
+```text
+DETAIL
+```
+
+not:
+
+```text
+IDENTITY.
+```
+
+---
+
+# 31. Human Attributes Across Resolution
+
+Human Attributes remain part of the Character regardless of resolution.
+
+At Low Resolution they may influence broad developmental tendencies.
+
+At Medium Resolution they may influence:
+
+```text
+Goals
+
+social behavior
+
+initiative
+
+response patterns.
+```
+
+At High Resolution they may contribute to immediate behavioral pressure.
+
+But:
+
+```text
+ATTRIBUTES
+DO NOT DISAPPEAR
+AT LOW RESOLUTION.
+```
+
+---
+
+# 32. Psychology Across Resolution
+
+Psychology may be represented differently depending on resolution.
+
+Low Resolution may preserve:
+
+```text
+major psychological condition
+
+long-term strain
+
+major recovery
+
+significant deterioration.
+```
+
+Medium Resolution may preserve:
+
+```text
+current emotional pressures
+
+stress
+
+grief
+
+hope
+
+fatigue
+
+fear.
+```
+
+High Resolution may require more immediate psychological context.
+
+The underlying person remains continuous.
+
+---
+
+# 33. Values and Identity Across Resolution
+
+Values and Identity remain persistent even when not explicitly evaluated.
+
+Low Resolution may only need:
+
+```text
+major identity
+
+major commitments
+
+major value conflicts.
+```
+
+High Resolution may evaluate their influence on a specific choice.
+
+Resolution does not create Values.
+
+It determines when they need explicit evaluation.
+
+---
+
+# 34. Needs and Motivation Across Resolution
+
+Low Resolution may represent dominant long-term pressures.
+
+Medium Resolution may represent active Needs and Motivations.
+
+High Resolution may evaluate:
+
+```text
+WHICH PRESSURES
+MATTER
+RIGHT NOW?
+```
+
+The simulation should not calculate every Need continuously when doing so has no causal value.
+
+---
+
+# 35. Goals and Plans Across Resolution
+
+Goal representation scales naturally.
+
+Low Resolution:
+
+```text
+MAJOR GOALS
++
+BROAD DIRECTION.
+```
+
+Medium Resolution:
+
+```text
+ACTIVE GOALS
++
+BROAD PLANS
++
+OPEN LOOPS.
+```
+
+High Resolution:
+
+```text
+IMMEDIATE GOALS
++
+CURRENT PLAN
++
+AVAILABLE ALTERNATIVES
++
+ACTIVE CONSTRAINTS.
+```
+
+---
+
+# 36. Knowledge and Beliefs Across Resolution
+
+Low Resolution need not preserve every belief explicitly.
+
+It must preserve beliefs that significantly affect:
+
+```text
+life trajectory
+
 relationships
 
-world connections
+Goals
 
-campaign history.
+Faction involvement
+
+major decisions
+
+identity.
+```
+
+Higher resolution may reconstruct relevant belief context from preserved history.
+
+But no Character gains knowledge simply because the simulation now needs it.
+
+---
+
+# 37. Memory Across Resolution
+
+Memory should be represented according to causal relevance.
+
+Low Resolution may preserve:
+
+```text
+major Memories
+
+important remembered relationships
+
+significant interpreted events.
+```
+
+High Resolution may retrieve more specific Memories relevant to current context.
+
+But:
+
+```text
+HIGH RESOLUTION
+≠
+PERFECT MEMORY.
+```
+
+Memory limitations remain.
+
+---
+
+# 38. Expertise Across Resolution
+
+Expertise remains persistent Character state.
+
+Low Resolution may only require major Expertise domains.
+
+High Resolution may require:
+
+```text
+specific domain
+
+specialization
+
+current familiarity
+
+relevant experience
+
+tool interaction.
+```
+
+Resolution cannot create Expertise.
+
+---
+
+# 39. Capability Across Resolution
+
+Capability becomes increasingly contextual as resolution rises.
+
+Low Resolution may ask:
+
+```text
+CAN THIS CHARACTER
+BROADLY PERFORM
+THIS KIND OF ROLE?
+```
+
+High Resolution may ask:
+
+```text
+CAN THIS CHARACTER
+PERFORM THIS
+SPECIFIC TASK
+
+WITH
+
+THESE TOOLS
+
+THIS INFORMATION
+
+THIS PHYSICAL CONDITION
+
+THIS ENVIRONMENT
+
+AND
+
+THIS AMOUNT OF TIME?
 ```
 
 ---
 
-# Critical Character
+# 40. Relationships Across Resolution
 
-Has state whose loss would:
+Relationship state persists across all resolutions.
+
+Low Resolution may preserve:
 
 ```text
-BREAK CAUSAL CONTINUITY
-OR
-MAJOR WORLD SYSTEMS.
+major Relationships
+
+major trust state
+
+family structure
+
+major conflicts
+
+obligations.
+```
+
+Medium Resolution may represent active relational pressures.
+
+High Resolution may evaluate the relationship within immediate interaction.
+
+Relationships do not reset when Characters leave the player's view.
+
+---
+
+# 41. Autonomy Across Resolution
+
+Characters retain autonomy at all resolution levels.
+
+This is mandatory.
+
+```text
+LOW RESOLUTION
+≠
+NO AUTONOMY.
+```
+
+Instead, Autonomy is represented differently.
+
+Low Resolution may resolve:
+
+```text
+MAJOR SELF-DIRECTED
+LIFE ACTIONS.
+```
+
+Medium Resolution may resolve:
+
+```text
+ACTIVE INITIATIVE
+
+FOLLOW-UP
+
+ROUTINES
+
+OPEN LOOPS
+
+REPLANNING.
+```
+
+High Resolution may resolve:
+
+```text
+IMMEDIATE
+ACTION INITIATION.
 ```
 
 ---
 
-# Persistence Is Not Plot Armor
+# 42. Decision Making Across Resolution
 
-Critical characters may:
+Decision Making also scales.
+
+Low Resolution may resolve:
 
 ```text
-fail
-
-change
-
-leave
-
-retire
-
-die.
+MAJOR DECISIONS
 ```
 
-Persistence means:
+using compressed causal context.
+
+Medium Resolution may resolve:
 
 ```text
-STATE MUST BE PRESERVED.
+meaningful near-term choices.
+```
+
+High Resolution may resolve:
+
+```text
+specific perceived options
+
+current information
+
+current pressures
+
+and
+
+immediate choice.
+```
+
+The same fundamental Character architecture applies.
+
+---
+
+# 43. Low Resolution Is Not Random Choice
+
+Compressed simulation must not become:
+
+```text
+RANDOM NPC
+OUTCOME TABLE.
+```
+
+Even when detail is low, outcomes must remain constrained by:
+
+```text
+Character state
+
+Goals
+
+Relationships
+
+capability
+
+location
+
+world conditions
+
+available opportunity
+
+previous history.
+```
+
+---
+
+# 44. Compressed Decision Making
+
+At lower resolution, the simulation may summarize multiple choices into a larger causal outcome.
+
+Example:
+
+Instead of simulating:
+
+```text
+200 INDIVIDUAL
+WORK DECISIONS
+```
+
+the system may resolve:
+
+```text
+MAYA CONTINUES
+WORKING ON
+GRID STABILIZATION
+
+FOR THREE MONTHS
+
+UNDER INCREASING
+RESOURCE SCARCITY.
+```
+
+The compressed result may produce:
+
+```text
+Expertise opportunity
+
+fatigue
+
+relationship strain
+
+new responsibility
+
+resource consumption
+
+infrastructure consequences.
+```
+
+---
+
+# 45. Character Development Across Resolution
+
+Character Development remains active regardless of resolution.
+
+Low Resolution may identify:
+
+```text
+MAJOR DEVELOPMENT
+OVER LONG PERIODS.
+```
+
+Medium Resolution may track:
+
+```text
+active development pressures.
+```
+
+High Resolution may preserve:
+
+```text
+specific causal experiences
+
+interpretations
+
+and
+
+emerging change.
+```
+
+Resolution changes granularity.
+
+Not developmental reality.
+
+---
+
+# 46. Life Across Resolution
+
+Life provides the temporal and biographical continuity that makes lower-resolution simulation possible.
+
+Conceptually:
+
+```text
+LIFE
+PROVIDES
+
+THE CONTINUOUS
+BIOGRAPHICAL PATH
+
+THROUGH WHICH
+
+LOW-RESOLUTION
+SIMULATION
+
+CAN ADVANCE.
+```
+
+A Character's life continues even when detailed Character simulation is inactive.
+
+---
+
+# 47. World Simulation Across Resolution
+
+World Simulation provides the objective conditions surrounding Characters.
+
+Conceptually:
+
+```text
+WORLD SIMULATION
+↓
+WHAT CHANGES
+AROUND THE CHARACTER
+
+CHARACTER SIMULATION
+↓
+WHAT THE CHARACTER
+DOES WITHIN
+THOSE CONDITIONS
+
+LIFE
+↓
+WHAT BECOMES PART
+OF THEIR HISTORY
+
+CHARACTER DEVELOPMENT
+↓
+WHAT PERSISTENT
+PERSONAL CHANGE
+MAY FOLLOW.
+```
+
+---
+
+# 48. Exposure
+
+A Character should only react to World Events they are plausibly exposed to.
+
+Therefore low-resolution simulation must preserve:
+
+```text
+LOCATION
+
+INFORMATION ACCESS
+
+SOCIAL CONNECTION
+
+INSTITUTIONAL CONNECTION
+
+COMMUNICATION ACCESS
+
+AND
+
+RELEVANT WORLD EVENTS.
+```
+
+A Character does not know something merely because:
+
+```text
+THE WORLD SIMULATION
+KNOWS IT.
+```
+
+---
+
+# 49. Information Propagation
+
+At lower resolution, information exposure may be compressed.
+
+But it must remain causal.
+
+Example:
+
+```text
+REGIONAL POWER FAILURE
+↓
+LOCAL RADIO REPORTS
+↓
+MAYA HEARS REPORT
+↓
+BELIEF / GOAL CONTEXT
+MAY CHANGE.
 ```
 
 Not:
 
 ```text
-CHARACTER MUST SURVIVE.
+WORLD EVENT
+↓
+ALL CHARACTERS
+KNOW.
 ```
 
 ---
 
-# Population Abstraction
+# 50. Relationship Propagation
 
-R0 population simulation may use:
+Character actions may affect people beyond immediate simulation.
+
+Example:
 
 ```text
-COHORTS.
+MAYA FAILS
+TO RESTORE
+HOSPITAL POWER
+
+        ↓
+
+HOSPITAL
+IS AFFECTED
+
+        ↓
+
+STAFF AND PATIENTS
+EXPERIENCE CONSEQUENCES
+
+        ↓
+
+RELATIONSHIPS
+AND REPUTATION
+MAY CHANGE.
 ```
+
+These consequences may propagate across different Character resolutions.
 
 ---
 
-# Cohort
+# 51. Resolution and Causal Chains
 
-A cohort may represent people sharing:
+A causal chain may move through Characters at different resolutions.
+
+Example:
 
 ```text
-region
+HIGH-RESOLUTION
+PLAYER ACTION
 
-age range
+        ↓
 
-profession
+WORLD CONSEQUENCE
 
-household type
+        ↓
 
-economic state
+MEDIUM-RESOLUTION
+LOCAL LEADER DECISION
 
-education
+        ↓
 
-risk exposure.
+LOW-RESOLUTION
+POPULATION RESPONSE
+
+        ↓
+
+WORLD STATE CHANGE
+
+        ↓
+
+FUTURE
+PLAYER EXPERIENCE.
 ```
+
+Resolution boundaries must not break causality.
 
 ---
 
-# Cohort Example
+# 52. Resolution and Society
+
+Not every social process requires individual Character simulation.
+
+When behavior becomes sufficiently collective, ownership may pass to:
 
 ```text
-Region:
-Shenandoah Valley
-
-Age:
-25–34
-
-Profession:
-Healthcare
-
-Employment:
-Active
-
-Household:
-Families with children
-
-Population:
-3,420.
+Society.
 ```
 
----
-
-# Cohort Change
-
-A world event may modify:
+Character Simulation Resolution should not create millions of individual Characters merely to simulate:
 
 ```text
-employment
-
 migration
 
-mortality
+population fear
+
+economic adaptation
+
+institutional decline
+
+social norms.
+```
+
+Society may represent aggregate patterns.
+
+Individual Characters remain available when individual agency becomes causally relevant.
+
+---
+
+# 53. Resolution and Factions
+
+Faction behavior does not require high-resolution simulation of every member.
+
+Faction systems may resolve:
+
+```text
+collective goals
+
+organizational decisions
 
 resources
 
-household stability
+leadership
 
-education
+operations.
+```
 
-risk.
+Individual Character resolution rises when:
+
+```text
+specific human agency
+
+internal disagreement
+
+leadership decision
+
+betrayal
+
+negotiation
+
+or
+
+personal consequence
+```
+
+requires it.
+
+---
+
+# 54. Collective State Does Not Replace Individuals
+
+Even when Society or Factions operate at aggregate resolution:
+
+```text
+INDIVIDUAL PEOPLE
+STILL EXIST.
+```
+
+Aggregate systems must not imply:
+
+```text
+EVERY MEMBER
+THINKS THE SAME
+
+OR
+
+ACTS THE SAME.
+```
+
+Individual resolution may expose variation when needed.
+
+---
+
+# 55. Resolution and Narrative
+
+Narrative systems may request more Character detail for presentation.
+
+But:
+
+```text
+NARRATIVE NEED
+MAY TRIGGER
+RESOLUTION EXPANSION
+
+IT MAY NOT
+DICTATE
+CHARACTER STATE.
+```
+
+Story Framework may ask:
+
+```text
+WHO IS
+THIS PERSON
+IN THIS MOMENT?
+```
+
+Character Simulation may expand existing state.
+
+It may not invent a convenient answer that violates history.
+
+---
+
+# 56. Resolution and Game Master
+
+The Game Master may need Character detail to present:
+
+```text
+dialogue
+
+behavior
+
+body language
+
+current priorities
+
+visible emotion
+
+available information.
+```
+
+The GM may request high-resolution Character context.
+
+But the GM does not own the underlying state.
+
+Conceptually:
+
+```text
+CHARACTER SYSTEMS
+↓
+HIGH-RESOLUTION
+CHARACTER CONTEXT
+↓
+GAME MASTER
+↓
+PLAYER-FACING
+EXPRESSION.
 ```
 
 ---
 
-# Cohort Splitting
+# 57. Resolution and Living Campaign Engine
 
-When populations diverge:
+The Living Campaign Engine may identify Characters whose actions or circumstances require simulation attention.
+
+For example:
 
 ```text
-COHORT
-↓
-MULTIPLE COHORTS.
+ACTIVE CONFLICT
+
+UNRESOLVED PROMISE
+
+FACTION LEADERSHIP CHANGE
+
+REGIONAL CRISIS
+
+IMPORTANT RELATIONSHIP
+
+PLAYER RETURN
+
+TIME-SENSITIVE GOAL.
+```
+
+The LCE may request increased Character resolution.
+
+It does not decide what the Character chooses.
+
+---
+
+# 58. Resolution Scheduling
+
+The simulation may conceptually maintain:
+
+```text
+CHARACTERS
+REQUIRING
+ATTENTION
+
+AND
+
+CHARACTERS
+SAFE FOR
+COMPRESSION.
+```
+
+This is not an importance ranking.
+
+It is a simulation scheduling mechanism.
+
+---
+
+# 59. Resolution Triggers
+
+Potential triggers may include:
+
+```text
+PROXIMITY
+
+INTERACTION
+
+CAUSAL IMPORTANCE
+
+DECISION UNCERTAINTY
+
+WORLD EVENT EXPOSURE
+
+RELATIONSHIP CHANGE
+
+GOAL DEADLINE
+
+OPEN LOOP
+
+LIFE EVENT
+
+FACTION ROLE
+
+RESOURCE CRISIS
+
+TRAVEL
+
+DANGER
+
+NEW INFORMATION
+
+MAJOR OPPORTUNITY
+
+MAJOR CONSTRAINT
+
+PLAYER RETURN
+
+CHARACTER INITIATIVE.
+```
+
+No single trigger automatically requires High Resolution.
+
+---
+
+# 60. Resolution Selection
+
+Conceptually:
+
+```text
+CURRENT CHARACTER STATE
++
+CURRENT WORLD CONDITIONS
++
+ACTIVE CAUSAL LINKS
++
+CURRENT UNCERTAINTY
++
+CURRENT CONSEQUENCE SCALE
++
+INTERACTION REQUIREMENTS
+
+        ↓
+
+REQUIRED
+SIMULATION DETAIL
+
+        ↓
+
+LOW
+MEDIUM
+OR
+HIGH.
+```
+
+---
+
+# 61. Minimum Necessary Resolution
+
+The system should use:
+
+```text
+THE LOWEST
+RESOLUTION
+
+THAT STILL
+PRESERVES
+
+CAUSALITY
+
+AGENCY
+
+CONTINUITY
+
+AND
+
+PLAUSIBLE OUTCOME.
+```
+
+This avoids unnecessary complexity.
+
+---
+
+# 62. Escalate Under Uncertainty
+
+When compressed simulation cannot determine a plausible result without making unsupported assumptions:
+
+```text
+INCREASE
+RESOLUTION.
 ```
 
 Example:
 
 ```text
-EVACUATION
+TWO MAJOR GOALS
+CONFLICT
+
+AND
+
+THE OUTCOME
+DEPENDS ON
+PERSONAL VALUES.
 ```
 
-creates:
+A low-resolution summary may be insufficient.
+
+The Character should be expanded before resolving the choice.
+
+---
+
+# 63. Do Not Escalate for Decoration
+
+Resolution should not increase merely to generate:
 
 ```text
-evacuated population
+MORE LORE
 
-remaining population
+MORE DIALOGUE
 
-displaced population.
+MORE BACKSTORY
+
+MORE PERSONALITY DETAIL.
+```
+
+Detail should exist because it supports:
+
+```text
+CAUSAL SIMULATION
+
+OR
+
+PLAYER EXPERIENCE
+OF EXISTING
+CAUSAL STATE.
 ```
 
 ---
 
-# Cohort Merging
+# 64. Time Advancement
 
-Similar cohorts may later:
+Resolution becomes especially important when substantial time passes.
+
+A Character may experience:
 
 ```text
-MERGE
+DAYS
+
+WEEKS
+
+MONTHS
+
+YEARS
 ```
 
-when distinctions no longer matter.
+between detailed interactions.
+
+The simulation must advance their life appropriately.
 
 ---
 
-# Individualization
-
-A person may emerge from:
-
-```text
-R0 POPULATION
-```
-
-into:
-
-```text
-R1 INDIVIDUAL.
-```
-
----
-
-# Individualization Triggers
-
-Examples:
-
-```text
-player interaction
-
-mission relevance
-
-leadership role
-
-relationship connection
-
-important event
-
-unique capability.
-```
-
----
-
-# Individualization Process
+# 65. Time Compression
 
 Conceptually:
 
 ```text
-COHORT CONTEXT
+STARTING STATE
 +
-REGIONAL HISTORY
+ELAPSED TIME
 +
-HOUSEHOLD CONTEXT
+WORLD CONDITIONS
 +
-PROFESSION
+LIFE CONDITIONS
 +
-AGE
+GOALS
 +
-WORLD HISTORY
+RELATIONSHIPS
 +
-STABLE SEED
-      ↓
-INDIVIDUAL CHARACTER.
+RESPONSIBILITIES
++
+CAPABILITY
++
+OPPORTUNITIES
++
+CONSTRAINTS
+
+        ↓
+
+COMPRESSED
+LIFE SIMULATION
+
+        ↓
+
+MAJOR ACTIONS
+
+MAJOR EVENTS
+
+MAJOR CONSEQUENCES
+
+PERSISTENT CHANGE
+
+        ↓
+
+UPDATED STATE.
 ```
 
 ---
 
-# Individualization Consistency
+# 66. Time Compression Is Not Teleportation
 
-The new individual must be:
-
-```text
-PLAUSIBLE MEMBER
-OF THE POPULATION
-THEY CAME FROM.
-```
-
----
-
-# Population Accounting
-
-Individualization must not:
+When time is compressed, the Character must still obey:
 
 ```text
-CREATE EXTRA PEOPLE.
-```
+distance
 
-Conceptually:
-
-```text
-COHORT POPULATION
-- 1
-
-INDIVIDUAL CHARACTERS
-+ 1.
-```
-
----
-
-# Reintegration
-
-Some low-relevance individuals may later be:
-
-```text
-REINTEGRATED
-INTO POPULATION ABSTRACTION.
-```
-
----
-
-# Reintegration Boundary
-
-Do not reintegrate characters with:
-
-```text
-important player relationships
-
-major unique history
-
-critical possessions
-
-unique roles
-
-unresolved Consequences.
-```
-
----
-
-# Identity Preservation
-
-Once a character has meaningful persistent identity:
-
-```text
-DO NOT ERASE THEM
-INTO STATISTICS
-IF THAT WOULD DESTROY HISTORY.
-```
-
----
-
-# Household Resolution
-
-Households may also operate at:
-
-```text
-VARIABLE RESOLUTION.
-```
-
----
-
-# High-Resolution Household
-
-May track:
-
-```text
-each member
+travel time
 
 resources
 
+physical limits
+
+institutional limits
+
+information access
+
 relationships
-
-responsibilities
-
-housing
-
-daily activity.
-```
-
----
-
-# Low-Resolution Household
-
-May track:
-
-```text
-member count
-
-age structure
-
-income band
-
-location
-
-employment
-
-major relationships
-
-major Needs.
-```
-
----
-
-# Household Promotion
-
-When household becomes relevant:
-
-```text
-individual members
-may be instantiated
-or promoted.
-```
-
----
-
-# Household Continuity
-
-Household changes must preserve:
-
-```text
-births
-
-deaths
-
-members leaving
-
-members joining
-
-migration
-
-resource changes.
-```
-
----
-
-# Relationship Resolution
-
-Relationships must also survive:
-
-```text
-resolution changes.
-```
-
----
-
-# High-Resolution Relationship
-
-May include:
-
-```text
-trust
-
-affection
-
-resentment
-
-dependency
-
-recent interactions
-
-expectations
-
-conflicts
-
-commitments.
-```
-
----
-
-# Low-Resolution Relationship
-
-May preserve:
-
-```text
-relationship type
-
-strength
-
-major history
-
-major unresolved issues
-
-last meaningful interaction.
-```
-
----
-
-# Relationship Compression
-
-Do not preserve:
-
-```text
-every conversation.
-```
-
-Preserve:
-
-```text
-what changed
-because of those conversations.
-```
-
----
-
-# Memory Resolution
-
-Memory may be:
-
-```text
-COMPRESSED
-```
-
-without being:
-
-```text
-DELETED.
-```
-
----
-
-# High-Resolution Memory
-
-May preserve:
-
-```text
-specific recent events
-
-dialogue meaning
-
-source
-
-confidence
-
-emotional relevance.
-```
-
----
-
-# Low-Resolution Memory
-
-May preserve:
-
-```text
-important fact
-
-source category
-
-confidence
-
-relationship consequence
-
-major emotional significance.
-```
-
----
-
-# Knowledge Resolution
-
-Knowledge should preserve:
-
-```text
-WHAT CHARACTER
-BELIEVES TO BE TRUE
-```
-
-even when:
-
-```text
-exact evidence history
-is compressed.
-```
-
----
-
-# Goal Resolution
-
-High resolution may model:
-
-```text
-multiple competing Goals
-
-priority
-
-progress
-
-Plans
-
-obstacles.
-```
-
-Low resolution may preserve:
-
-```text
-dominant long-term Goals
-
-major commitments
-
-broad progress.
-```
-
----
-
-# Need Resolution
-
-High resolution may process:
-
-```text
-immediate Needs.
-```
-
-Low resolution may process:
-
-```text
-Need trends
-
-critical shortages
-
-long-term deficits.
-```
-
----
-
-# Profession Resolution
-
-High resolution may model:
-
-```text
-specific tasks
-
-tools
-
-decisions
-
-performance.
-```
-
-Low resolution may model:
-
-```text
-employment
-
-role
-
-productivity
-
-career progression
-
-major incidents.
-```
-
----
-
-# Character Development Resolution
-
-High resolution may detect:
-
-```text
-small repeated experiences.
-```
-
-Low resolution may summarize:
-
-```text
-long-term developmental pressure.
-```
-
----
-
-# Aging Resolution
-
-Aging does not require:
-
-```text
-DAILY PROCESSING.
-```
-
-It may be evaluated through:
-
-```text
-elapsed time
-
-life stage
-
-health
-
-profession
 
 world conditions.
 ```
 
+Compression removes unnecessary detail.
+
+It does not remove constraints.
+
 ---
 
-# Life Event Resolution
+# 67. Long Absence
 
-Life events may wake characters from:
+When a player returns after a long absence, the simulation should be able to answer:
+
+```text
+WHERE IS
+THE CHARACTER?
+
+WHAT HAPPENED
+TO THEM?
+
+WHAT DID
+THEY DO?
+
+WHAT CHANGED
+IN THEIR LIFE?
+
+WHAT CHANGED
+IN THEIR RELATIONSHIPS?
+
+WHAT CHANGED
+IN THEIR CAPABILITY?
+
+WHAT CHANGED
+IN THEIR GOALS?
+
+WHAT DID
+THEY LEARN?
+
+WHAT DO THEY
+BELIEVE NOW?
+
+WHAT REMAINS
+UNCHANGED?
+
+WHY?
+```
+
+Not every answer needs equal detail.
+
+But every major change needs causal support.
+
+---
+
+# 68. No Player Waiting Room
+
+Characters must never behave as if they have been waiting for the player.
+
+Avoid:
+
+```text
+"I HAVE BEEN
+STANDING HERE
+FOR SIX MONTHS
+WAITING FOR YOU."
+```
+
+unless the Character had a real causal reason to do so.
+
+Instead:
+
+```text
+THEY LIVED
+SIX MONTHS
+OF THEIR LIFE.
+```
+
+---
+
+# 69. Missed Opportunities
+
+Time compression must allow Characters to:
+
+```text
+miss opportunities
+
+fail
+
+succeed
+
+change direction
+
+arrive too late
+
+leave before help arrives
+
+make decisions
+the player dislikes.
+```
+
+The world does not preserve opportunities for the player.
+
+---
+
+# 70. Character Death Off-Screen
+
+Characters may die off-screen if causal conditions plausibly produce death.
+
+But:
+
+```text
+OFF-SCREEN
+DEATH
+
+MUST NOT BE
+ARBITRARY.
+```
+
+It should emerge from:
+
+```text
+world conditions
+
+Character actions
+
+risk exposure
+
+health
+
+violence
+
+accident
+
+scarcity
+
+or other
+canonical causes.
+```
+
+Important deaths should preserve sufficient causal history.
+
+---
+
+# 71. No Plot Armor Through Resolution
+
+Lower resolution must not protect a Character from consequences.
 
 ```text
 LOW RESOLUTION
+≠
+IMMUNITY.
 ```
 
-when necessary.
+Likewise:
+
+```text
+HIGH RESOLUTION
+≠
+SPECIAL DANGER.
+```
+
+Resolution should not secretly manipulate survival probability for narrative purposes.
 
 ---
 
-# Example
+# 72. No Disposable Background Humans
 
-Character is:
+Low-resolution Characters must not become:
 
 ```text
-R1.
+EXPENDABLE
+BACKGROUND UNITS.
 ```
 
-Scheduled:
+The simulation may aggregate population behavior when appropriate.
+
+But whenever an individual Character exists as persistent state:
 
 ```text
-retirement
-in six months.
-```
-
-No detailed daily simulation is required.
-
-At retirement:
-
-```text
-career state changes
-
-income changes
-
-Goals may change
-
-household state may change.
-```
-
----
-
-# Regional Aggregation
-
-Large populations may be processed through:
-
-```text
-REGIONAL STATE.
-```
-
-Character simulation may consume:
-
-```text
-economy
-
-security
-
-infrastructure
-
-supplies
-
-information
-
-authority
-
-population
-
-environment.
+THEIR LIFE
+HAS CONTINUITY.
 ```
 
 ---
 
-# Regional Character Effects
+# 73. Birth and New Characters
+
+New Characters may enter the simulation through:
+
+```text
+birth
+
+migration
+
+institutional discovery
+
+Faction contact
+
+community contact
+
+family connection
+
+or
+
+resolution expansion
+of previously aggregated populations.
+```
+
+Their state must be plausible within existing world history.
+
+---
+
+# 74. Population-to-Character Promotion
+
+A previously uninstantiated individual may become a persistent Character.
 
 Example:
 
 ```text
-Regional unemployment:
-18%
+HOSPITAL STAFF
 ```
 
-This may alter:
+exists initially as population context.
+
+Later the players repeatedly interact with:
 
 ```text
-job-loss probability
-
-migration pressure
-
-household resources
-
-career opportunity.
+ONE SPECIFIC NURSE.
 ```
+
+The system may promote that individual into persistent Character state.
 
 ---
 
-# World State Dependency
+# 75. Promotion Must Respect Population Context
 
-Character simulation must not independently invent:
-
-```text
-regional conditions.
-```
-
-It consumes:
+When creating a persistent Character from aggregate population:
 
 ```text
-World Simulation state.
-```
-
----
-
-# World Event Intersection
-
-When World Simulation creates:
-
-```text
-EVENT
-```
-
-the character system determines:
-
-```text
-WHO IS EXPOSED.
-```
-
----
-
-# Exposure Resolution
-
-Conceptually:
-
-```text
-WORLD EVENT
-+
 LOCATION
-+
-HOUSEHOLD
-+
-PROFESSION
-+
-RELATIONSHIPS
-+
-RESOURCES
-+
-ACTIVITY
-      ↓
-CHARACTER EXPOSURE.
-```
 
----
+DEMOGRAPHICS
 
-# Event Intersection at R0
+INSTITUTION
 
-At population level:
+CULTURE
 
-```text
-aggregate exposure.
-```
-
----
-
-# Event Intersection at R1
-
-At background level:
-
-```text
-individual major consequence.
-```
-
----
-
-# Event Intersection at R2–R4
-
-At active levels:
-
-```text
-detailed decision
-
-behavior
-
-movement
-
-communication
-
-consequence.
-```
-
----
-
-# Cascade Promotion
-
-Major events may cause:
-
-```text
-MASS TEMPORARY
-RESOLUTION PROMOTION.
-```
-
----
-
-# Cascade Budget Protection
-
-The system must avoid:
-
-```text
-PROMOTING
-AN ENTIRE CITY
-TO R4
-```
-
-because:
-
-```text
-A DISASTER OCCURRED.
-```
-
-Instead:
-
-```text
-population aggregate
-
-critical households
-
-critical professions
-
-player vicinity
-
-causal actors
-
-campaign-relevant characters
-```
-
-receive different resolution.
-
----
-
-# Representative Simulation
-
-Large-scale events may use:
-
-```text
-REPRESENTATIVE CHARACTERS
-```
-
-for detailed local behavior while:
-
-```text
-population models
-```
-
-handle aggregate outcomes.
-
----
-
-# Representative Boundary
-
-Representative characters must not be treated as:
-
-```text
-LITERAL ACTIONS
-OF EVERY PERSON
-IN THEIR COHORT.
-```
-
----
-
-# Off-Screen Simulation
-
-Off-screen characters continue:
-
-```text
-life
-
-work
-
-relationships
-
-aging
-
-migration
-
-career
-
-household change.
-```
-
----
-
-# Off-Screen Principle
-
-```text
-OFF SCREEN
-=
-NOT OBSERVED
-
-NOT
-
-NONEXISTENT.
-```
-
----
-
-# Off-Screen Update
-
-Off-screen updates may use:
-
-```text
-scheduled events
-
-probability
-
-Goals
-
-Plans
-
-regional state
-
-household state
-
-world events
-
-relationship obligations.
-```
-
----
-
-# Off-Screen Decision
-
-Important off-screen decisions should still derive from:
-
-```text
-Character State
-
-Needs
-
-Goals
-
-Knowledge
-
-Personality
-
-Values
-
-Relationships
-
-Capability
-
-World State.
-```
-
----
-
-# Compressed Decision Making
-
-Lower-resolution decision making may resolve:
-
-```text
-OUTCOME
-```
-
-without simulating:
-
-```text
-EVERY INTERNAL STEP.
-```
-
----
-
-# Example
-
-High resolution:
-
-```text
-character evaluates
-five job offers
-with detailed reasoning.
-```
-
-Low resolution:
-
-```text
-character changes job
-because better opportunity
-aligns with Goals.
-```
-
-Both preserve:
-
-```text
-CAUSAL LOGIC.
-```
-
----
-
-# Decision Reconstruction Boundary
-
-Do not later invent:
-
-```text
-detailed reasoning
-```
-
-that contradicts:
-
-```text
-recorded motive.
-```
-
----
-
-# Long Absence Processing
-
-When large time intervals pass:
-
-```text
-YEARS
-```
-
-the system may process:
-
-```text
-LIFE COURSE COMPRESSION.
-```
-
----
-
-# Long Absence Pipeline
-
-Conceptually:
-
-```text
-START STATE
-↓
-ELAPSED TIME
-↓
 WORLD HISTORY
-↓
-REGIONAL HISTORY
-↓
-HOUSEHOLD EVENTS
-↓
-CAREER EVENTS
-↓
-RELATIONSHIP EVENTS
-↓
-AGING
-↓
-MAJOR DECISIONS
-↓
-MAJOR LIFE EVENTS
-↓
-END STATE.
+
+PROFESSIONAL CONTEXT
+
+SOCIAL CONDITIONS
+
+AND
+
+RECENT EVENTS
 ```
+
+must constrain Character generation.
+
+Do not generate an individual independently of the world that supposedly produced them.
 
 ---
 
-# Long Absence Boundary
-
-Do not calculate:
-
-```text
-EVERY DAY.
-```
-
-Do preserve:
-
-```text
-EVERYTHING
-THAT CHANGED
-THE CHARACTER'S FUTURE.
-```
-
----
-
-# Return Reconstruction
-
-When player returns:
-
-```text
-COMPRESSED HISTORY
-```
-
-is expanded into:
-
-```text
-CURRENT CHARACTER STATE.
-```
-
----
-
-# Return Experience
-
-Player may discover:
-
-```text
-changed appearance
-
-new profession
-
-new household
-
-children
-
-new relationships
-
-new beliefs
-
-different Goals
-
-new reputation
-
-aging
-
-loss
-
-success
-
-migration
-
-retirement.
-```
-
----
-
-# Return Does Not Require Exposition Dump
-
-The simulation should not immediately explain:
-
-```text
-EVERYTHING THAT HAPPENED.
-```
-
-The player discovers history through:
-
-```text
-observation
-
-conversation
-
-environment
-
-records
-
-relationships.
-```
-
----
-
-# Information Boundary
-
-Simulation state and player knowledge remain:
-
-```text
-SEPARATE.
-```
-
----
-
-# Player Cannot Know Because System Knows
-
-If a distant character:
-
-```text
-gets married
-```
-
-the player does not automatically receive:
-
-```text
-SYSTEM NOTIFICATION.
-```
-
-Knowledge requires:
-
-```text
-communication
-
-relationship
-
-observation
-
-public information.
-```
-
----
-
-# Aurora Boundary
-
-Aurora may know:
-
-```text
-only what Aurora
-has access to.
-```
-
-Character simulation may contain:
-
-```text
-GROUND TRUTH
-```
-
-that Aurora does not know.
-
----
-
-# Narrative Boundary
-
-Narrative systems may expose:
-
-```text
-relevant character changes.
-```
-
-They must not convert:
-
-```text
-ALL BACKGROUND LIFE
-```
-
-into:
-
-```text
-PLAYER CONTENT.
-```
-
----
-
-# Living Campaign Boundary
-
-Living Campaign Engine may promote:
-
-```text
-relevant character events
-```
-
-into:
-
-```text
-Story Hooks
-
-Missions
-
-Opportunities
-
-Conflicts.
-```
-
-But resolution is not determined solely by:
-
-```text
-STORY NEED.
-```
-
----
-
-# Simulation Before Narrative
-
-```text
-SIMULATION
-PRODUCES
-CHARACTER EVENTS.
-
-NARRATIVE
-SELECTS
-WHAT BECOMES
-PLAYER-FACING.
-```
-
----
-
-# Concurrency
-
-Multiple characters may act:
-
-```text
-AT THE SAME TIME.
-```
-
-The system must resolve:
-
-```text
-conflicting actions
-
-resource competition
-
-shared events
-
-communication timing
-
-causal ordering.
-```
-
----
-
-# Event Ordering
-
-Events should preserve:
-
-```text
-TEMPORAL ORDER.
-```
-
----
-
-# Same-Time Events
-
-Where events overlap:
-
-```text
-priority
-
-physical causality
-
-communication delay
-
-resource locking
-
-decision order
-```
-
-may determine outcome.
-
----
-
-# Causal Dependency
-
-If:
-
-```text
-Event B
-requires Event A
-```
-
-then:
-
-```text
-B CANNOT RESOLVE
-BEFORE A.
-```
-
----
-
-# Cross-Resolution Interaction
-
-Characters at different resolutions may affect:
-
-```text
-THE SAME EVENT.
-```
-
----
-
-# Example
-
-```text
-R4:
-Player and local engineer
-
-R2:
-repair crew
-
-R1:
-regional manager
-
-R0:
-regional population.
-```
-
-All participate in consequences of:
-
-```text
-POWER FAILURE.
-```
-
-Each requires:
-
-```text
-DIFFERENT DETAIL.
-```
-
----
-
-# Resolution Bridging
-
-The system must translate:
-
-```text
-HIGH-DETAIL ACTION
-```
-
-into:
-
-```text
-LOWER-RESOLUTION CONSEQUENCES.
-```
-
----
-
-# Example
-
-R4 player action:
-
-```text
-destroys transformer.
-```
-
-World Simulation receives:
-
-```text
-transformer unavailable.
-```
-
-Regional state receives:
-
-```text
-reduced power capacity.
-```
-
-R0 population receives:
-
-```text
-blackout exposure.
-```
-
-R1 characters receive:
-
-```text
-major personal consequences.
-```
-
-R2–R4 characters may receive:
-
-```text
-detailed immediate effects.
-```
-
----
-
-# Reverse Resolution Bridging
-
-Aggregate events may also produce:
-
-```text
-HIGH-DETAIL LOCAL EFFECTS.
-```
-
----
-
-# Example
-
-R0 model determines:
-
-```text
-regional fuel shortage.
-```
-
-Player enters:
-
-```text
-local fuel station.
-```
-
-R4 simulation may instantiate:
-
-```text
-queue
-
-staff behavior
-
-limited supply
-
-arguments
-
-purchase restrictions.
-```
-
-These details must derive from:
-
-```text
-REGIONAL FUEL SHORTAGE.
-```
-
----
-
-# Aggregate-to-Individual Consistency
-
-High-resolution scenes must not contradict:
-
-```text
-aggregate world state.
-```
-
----
-
-# Individual-to-Aggregate Consistency
-
-Likewise individual actions with sufficient scale must update:
-
-```text
-aggregate state.
-```
-
----
-
-# Simulation Debt
-
-Deferred detail may create:
-
-```text
-SIMULATION DEBT.
-```
-
-Simulation debt means:
-
-```text
-STATE THAT MUST
-BE RESOLVED
-BEFORE IT BECOMES OBSERVABLE.
-```
-
----
-
-# Example
-
-Player suddenly travels to:
-
-```text
-a region not simulated
-in detail for six months.
-```
-
-Before arrival, the system must resolve:
-
-```text
-regional changes
-
-relevant household changes
-
-important character events
-
-infrastructure changes
-
-population changes.
-```
-
----
-
-# Debt Resolution
-
-Simulation debt should be processed:
-
-```text
-BEFORE
-OBSERVATION
-OR
-INTERACTION.
-```
-
----
-
-# Prefetching
-
-If player appears likely to enter:
-
-```text
-new region
-```
-
-the system may begin:
-
-```text
-PROMOTION
-
-RECONSTRUCTION
-
-DEBT RESOLUTION
-```
-
-before arrival.
-
----
-
-# Predictive Promotion
-
-Possible signals:
-
-```text
-player travel route
-
-active mission destination
-
-communication target
-
-known plans
-
-transport direction.
-```
-
----
-
-# Predictive Promotion Boundary
-
-Do not spend excessive resources predicting:
-
-```text
-EVERY POSSIBLE
-PLAYER DESTINATION.
-```
-
----
-
-# Simulation Checkpoint
-
-Resolution transitions may create:
-
-```text
-CHECKPOINT STATE.
-```
-
-This supports:
-
-```text
-consistency
-
-recovery
-
-debugging
-
-validation.
-```
-
----
-
-# Character Snapshot
+# 76. Promotion Does Not Mean Creation From Nothing
 
 Conceptually:
 
 ```text
-Character ID
+THE PERSON
+ALREADY EXISTED
 
-Timestamp
+IN THE WORLD MODEL
 
-Resolution
+AT LOWER
+REPRESENTATIONAL DETAIL.
+```
 
-Location
+Promotion means:
 
-Household
-
-Profession
-
-Needs Summary
-
-Goals Summary
-
-Knowledge Summary
-
-Relationship Summary
-
-Capability Summary
-
-Resources Summary
-
-Life State
-
-Pending Events
-
-Unresolved Consequences
-
-Persistence Class
-
-Character Seed.
+```text
+THE SIMULATION
+NOW NEEDS
+TO KNOW MORE
+ABOUT THEM.
 ```
 
 ---
 
-# Resolution Transition Record
+# 77. Character Demotion
 
-Conceptually:
+A Character may return to lower resolution after detailed interaction.
+
+This is:
 
 ```text
-Character ID
-
-Timestamp
-
-Previous Resolution
-
-New Resolution
-
-Trigger
-
-State Written
-
-State Reconstructed
-
-Pending Events
-
-Validation Result.
+RESOLUTION DEMOTION.
 ```
 
----
-
-# Simulation Audit
-
-Important characters may maintain:
+Demotion must preserve:
 
 ```text
-RESOLUTION HISTORY
-```
+persistent Character state
 
-for:
+major unresolved issues
 
-```text
-debugging
+relationship consequences
 
-causal verification
-
-test validation.
-```
-
----
-
-# Resolution Failure Types
-
-Possible failures include:
-
-```text
-STATE LOSS
-
-TIMELINE DRIFT
-
-RELATIONSHIP RESET
-
-KNOWLEDGE RESET
-
-GOAL RESET
-
-DUPLICATE CHARACTER
-
-POPULATION DUPLICATION
-
-IMPOSSIBLE LOCATION
-
-UNEXPLAINED RESOURCE
-
-RESURRECTION
-
-EVENT ORDER ERROR
-
-OVER-SIMULATION
-
-UNDER-SIMULATION.
-```
-
----
-
-# Under-Simulation
-
-Under-simulation occurs when:
-
-```text
-important consequences
-are not resolved.
-```
-
----
-
-# Over-Simulation
-
-Over-simulation occurs when:
-
-```text
-detail is processed
-that has no meaningful
-causal or observational value.
-```
-
----
-
-# Resolution Efficiency Principle
-
-```text
-SIMULATE
-ONLY THE DETAIL
-THAT MATTERS.
-
-PRESERVE
-EVERY CONSEQUENCE
-THAT MATTERS.
-```
-
----
-
-# Resolution Validation
-
-For each character, ask:
-
-```text
-What resolution
-are they currently using?
-
-Why?
-
-What requires
-this level of detail?
-
-Could lower resolution
-preserve the same causality?
-
-Is important state
-being retained?
-
-Are pending events preserved?
-
-Could they affect
-the player?
-
-Could they affect
-important world systems?
-
-Are they exposed
-to active world events?
-
-Should they be promoted?
-
-Should they be demoted?
-```
-
----
-
-# Promotion Validation
-
-Before promotion:
-
-```text
-What triggered promotion?
-
-How much time passed?
-
-What happened
-during low resolution?
-
-What world events
-affected them?
-
-What household events occurred?
-
-What career events occurred?
-
-What relationship events occurred?
-
-What Goals changed?
-
-What Knowledge changed?
-
-What major Memories exist?
-
-Does reconstructed state
-match known history?
-```
-
----
-
-# Demotion Validation
-
-Before demotion:
-
-```text
-What changed
-during high resolution?
-
-Which changes are persistent?
-
-Which Memories matter?
-
-Which relationships changed?
-
-Which Goals changed?
-
-Which commitments remain?
-
-Which resources changed?
-
-Which injuries remain?
-
-Which pending events remain?
-
-Which world consequences
-must be written?
-
-Which transient state
-can safely disappear?
-```
-
----
-
-# Population Validation
-
-Ask:
-
-```text
-Does population accounting
-remain consistent?
-
-Were individuals
-created from cohorts?
-
-Were cohort counts reduced?
-
-Were deaths counted?
-
-Were births counted?
-
-Was migration counted?
-
-Were individualized characters
-double-counted?
-
-Were reintegrated characters
-handled correctly?
-```
-
----
-
-# Long Absence Validation
-
-Ask:
-
-```text
-How much time passed?
-
-Which world events occurred?
-
-Which regional events occurred?
-
-Which characters changed
-life stage?
-
-Who changed profession?
-
-Who migrated?
-
-Who formed households?
-
-Who left households?
-
-Who had children?
-
-Who retired?
-
-Who died?
-
-Which relationships changed?
-
-Which major Goals succeeded?
-
-Which major Goals failed?
-
-Which unresolved Consequences
-matured?
-
-What will the player
-notice on return?
-```
-
----
-
-# Cross-System Validation
-
-Character resolution must remain consistent with:
-
-```text
-World Simulation
-
-Living Campaign Engine
-
-Relationships
-
-Society
-
-Progression
-
-Narrative
-
-AI
-
-Infrastructure
-
-Information
-
-Authority
-
-Population.
-```
-
----
-
-# Example: Player Walks Into Café
-
-Before arrival:
-
-```text
-regional population:
-R0
-
-café owner:
-R1
-
-employees:
-R1
-
-nearby recurring contact:
-R2.
-```
-
-Player enters café.
-
-System promotes:
-
-```text
-owner:
-R1 → R3
-
-staff:
-R1 → R2
-
-recurring contact:
-R2 → R4.
-```
-
-A conversation begins.
-
-Relevant character becomes:
-
-```text
-R4.
-```
-
-Other customers may remain:
-
-```text
-R1
-or
-R2.
-```
-
-The entire neighborhood does not require:
-
-```text
-R4.
-```
-
----
-
-# Example: Phone Call Across World
-
-Character:
-
-```text
-R1
-
-Location:
-another country.
-```
-
-Player calls them.
-
-Character becomes:
-
-```text
-R3 / R4
-```
-
-for:
-
-```text
-communication context.
-```
-
-Their physical environment may remain:
-
-```text
-R1 / R2
-```
-
-unless relevant.
-
-Therefore resolution may be:
-
-```text
-DOMAIN SPECIFIC.
-```
-
----
-
-# Domain-Specific Resolution
-
-A character does not necessarily require:
-
-```text
-ALL SYSTEMS
-AT SAME RESOLUTION.
-```
-
----
-
-# Example
-
-During phone call:
-
-```text
-Conversation:
-R4
-
-Knowledge:
-R4
-
-Relationship:
-R4
-
-Physical location:
-R1
-
-Local environment:
-R1
-
-Profession:
-R1.
-```
-
----
-
-# Resolution Vector
-
-Advanced implementations may represent resolution as:
-
-```text
-Character Resolution Vector.
-```
-
-Conceptually:
-
-```text
-Physical:
-R1
-
-Social:
-R4
-
-Knowledge:
-R4
-
-Economic:
-R1
-
-Professional:
-R1
-
-Household:
-R2
-
-Narrative:
-R3.
-```
-
----
-
-# Resolution Vector Boundary
-
-The initial implementation may use:
-
-```text
-SINGLE CHARACTER
-RESOLUTION LEVEL.
-```
-
-Domain-specific resolution may be introduced when:
-
-```text
-performance
-or
-simulation fidelity
-requires it.
-```
-
----
-
-# Example: Distant Infrastructure Operator
-
-Operator begins:
-
-```text
-R1.
-```
-
-Power grid event occurs.
-
-Their professional role becomes:
-
-```text
-causally critical.
-```
-
-System promotes:
-
-```text
-Professional:
-R4
-
-Decision Making:
-R3
-
-Physical:
-R2.
-```
-
-They make decision.
-
-Decision updates:
-
-```text
-Infrastructure State.
-```
-
-After consequence resolves:
-
-```text
-operator demotes.
-```
-
----
-
-# Example: Child Growing Off-Screen
-
-Child last seen:
-
-```text
-Age:
-8
-
-Resolution:
-R2.
-```
-
-Player leaves region.
-
-Child demotes:
-
-```text
-R1.
-```
-
-Ten years pass.
-
-During low resolution:
-
-```text
-education progresses
-
-household changes
-
-relationships develop
-
-world events occur
-
-Goals emerge.
-```
-
-Player returns.
-
-Character is now:
-
-```text
-Age:
-18.
-```
-
-System reconstructs:
-
-```text
-current education
-
-personality development
-
-relationships
+promises
 
 Goals
 
-Knowledge
+important knowledge
 
-capability.
+major Memories
+
+development
+
+location
+
+role
+
+responsibilities.
 ```
 
-The player meets:
+---
+
+# 78. Demotion Does Not Delete Personhood
+
+The Character does not become:
+
+```text
+GENERIC NPC #412.
+```
+
+after the player leaves.
+
+Persistent identity remains.
+
+---
+
+# 79. Re-Promotion
+
+When a previously detailed Character returns to higher resolution:
+
+```text
+PREVIOUS DETAILED STATE
++
+ELAPSED HISTORY
++
+LOW-RESOLUTION DEVELOPMENT
++
+CURRENT WORLD CONDITIONS
+
+        ↓
+
+CURRENT
+HIGH-RESOLUTION
+CHARACTER.
+```
+
+The new state should feel like:
 
 ```text
 THE SAME PERSON
 
-TEN YEARS LATER.
-```
-
-Not:
-
-```text
-AN EIGHT-YEAR-OLD
-WHO WAITED.
-```
-
----
-
-# Example: Population Individualization
-
-Player enters:
-
-```text
-hospital.
-```
-
-Regional population model contains:
-
-```text
-healthcare cohort.
-```
-
-A nurse becomes relevant.
-
-System individualizes:
-
-```text
-Name:
-Maya
-
-Age:
-34
-
-Profession:
-Nurse
-
-Household:
-partner + child
-
-Experience:
-11 years.
-```
-
-These details must be consistent with:
-
-```text
-regional healthcare workforce
-
-age distribution
-
-education
-
-population
-
-world history.
-```
-
-Maya now becomes:
-
-```text
-persistent individual.
-```
-
-If the player forms:
-
-```text
-important relationship
-```
-
-Maya should never later become:
-
-```text
-anonymous population statistic.
-```
-
----
-
-# Example: Mass Evacuation
-
-Population:
-
-```text
-180,000.
-```
-
-Evacuation begins.
-
-Do not simulate:
-
-```text
-180,000
-individual route decisions
-at R4.
-```
-
-Instead:
-
-```text
-R0:
-population movement
-
-R1:
-important households
-
-R2:
-local traffic participants
-
-R3:
-critical responders
-
-R4:
-player vicinity.
-```
-
-Aggregate traffic conditions feed:
-
-```text
-high-resolution local scenes.
-```
-
-Player actions may feed back into:
-
-```text
-aggregate evacuation outcome.
-```
-
----
-
-# Example: Relationship Preservation
-
-Player argues with:
-
-```text
-Elena.
-```
-
-At R4:
-
-```text
-trust decreases
-
-resentment increases
-
-Memory created
-
-future cooperation changes.
-```
-
-Player leaves.
-
-Elena demotes:
-
-```text
-R4 → R1.
-```
-
-Two years later:
-
-```text
-player returns.
-```
-
-System reconstructs:
-
-```text
-relationship history
-
-subsequent life events
-
-possible forgiveness
-
-possible increased resentment.
-```
-
-It must not reconstruct:
-
-```text
-DEFAULT FRIENDLY ELENA.
-```
-
----
-
-# Example: Distant Death
-
-Player's former mentor is:
-
-```text
-R1
-```
-
-in another region.
-
-A major event causes:
-
-```text
-mentor death.
-```
-
-Character becomes:
-
-```text
-DECEASED.
-```
-
-Consequences propagate to:
-
-```text
-household
-
-profession
-
-relationships
-
-inheritance
-
-community.
-```
-
-Player may not learn immediately.
-
-Weeks later:
-
-```text
-message arrives.
-```
-
-Player knowledge changes.
-
-The death occurred:
-
-```text
-WHEN IT OCCURRED.
-```
-
-Not:
-
-```text
-WHEN PLAYER LEARNED
-ABOUT IT.
-```
-
----
-
-# Example: Simulation Debt
-
-Player unexpectedly boards:
-
-```text
-high-speed transport
-```
-
-to a distant region.
-
-The region has been:
-
-```text
-low resolution
-for eight months.
-```
-
-System resolves:
-
-```text
-eight months
-of regional history
-```
-
-before player arrival.
-
-It determines:
-
-```text
-business closures
-
-population movement
-
-infrastructure changes
-
-relevant character life events
-
-political changes.
-```
-
-Then high-resolution environment is:
-
-```text
-INSTANTIATED
-FROM THAT HISTORY.
-```
-
----
-
-# Example: Critical Override
-
-Player is currently:
-
-```text
-shopping
-```
-
-with several nearby characters at:
-
-```text
-R3.
-```
-
-A distant operator at:
-
-```text
-R1
-```
-
-detects:
-
-```text
-reactor cooling failure.
-```
-
-The operator's priority becomes:
-
-```text
-CRITICAL.
-```
-
-System promotes them despite:
-
-```text
-distance.
-```
-
-Because:
-
-```text
-CAUSAL IMPORTANCE
-OVERRIDES
-PHYSICAL PROXIMITY.
-```
-
----
-
-# Example: Ordinary Day
-
-Millions of characters experience:
-
-```text
-ordinary routine.
-```
-
-The system does not need to simulate:
-
-```text
-millions of breakfasts
-
-millions of commutes
-
-millions of conversations.
-```
-
-It may resolve:
-
-```text
-employment
-
-households
-
-resources
-
-regional movement
-
-demographic change.
-```
-
-When one character becomes relevant:
-
-```text
-DETAIL EXPANDS.
-```
-
----
-
-# Example: Resolution Chain
-
-```text
-R0
-
-Unknown regional electrician
-exists inside workforce cohort.
-```
-
-Player needs:
-
-```text
-specialist repair.
-```
-
-System identifies candidate.
-
-```text
-R0 → R1.
-```
-
-Character gains persistent identity.
-
-Player contacts character.
-
-```text
-R1 → R3.
-```
-
-Negotiation begins.
-
-```text
-R3 → R4.
-```
-
-Character joins repair.
-
-After mission:
-
-```text
-R4 → R2.
-```
-
-Months later:
-
-```text
-R2 → R1.
-```
-
-Years later character remains:
-
-```text
-SAME PERSON
-
-WITH SAME HISTORY.
-```
-
----
-
-# Anti-Frozen-World Principle
-
-Do not treat:
-
-```text
-LOW RESOLUTION
-```
-
-as:
-
-```text
-PAUSED.
-```
-
----
-
-# Anti-Omniscient-Simulation Principle
-
-Do not process:
-
-```text
-EVERY DETAIL
-EVERYWHERE
-ALL THE TIME.
-```
-
----
-
-# Anti-Player-Bubble Principle
-
-The world does not exist only inside:
-
-```text
-PLAYER RADIUS.
-```
-
----
-
-# Anti-Resolution-Amnesia Principle
-
-Characters must not forget:
-
-```text
-important history
-```
-
-because resolution changed.
-
----
-
-# Anti-Reconstruction-Reroll Principle
-
-Reconstruction must not:
-
-```text
-REROLL CHARACTER
-EVERY TIME.
-```
-
----
-
-# Anti-Population-Duplication Principle
-
-Individualized characters must not remain:
-
-```text
-DOUBLE COUNTED
-```
-
-inside population abstraction.
-
----
-
-# Anti-Importance-Equals-Resolution Principle
-
-Important characters do not require:
-
-```text
-MAXIMUM RESOLUTION
-AT ALL TIMES.
-```
-
----
-
-# Anti-Proximity-Only Principle
-
-Distance alone must not determine:
-
-```text
-SIMULATION PRIORITY.
-```
-
----
-
-# Anti-Narrative-Override Principle
-
-Narrative importance must not erase:
-
-```text
-simulation causality.
-```
-
----
-
-# Anti-Detail-Loss Principle
-
-Demotion must not erase:
-
-```text
-persistent consequences.
-```
-
----
-
-# Anti-Simulation-Explosion Principle
-
-Large events must not automatically promote:
+AFTER
 
-```text
-EVERY AFFECTED PERSON
-TO MAXIMUM DETAIL.
-```
-
----
-
-# Anti-Background-Disposable Principle
-
-Background characters are not:
-
-```text
-DISPOSABLE COPIES.
-```
-
-Once persistent history exists:
-
-```text
-IDENTITY MATTERS.
-```
-
----
-
-# Anti-Dead-Character-Reload Principle
-
-Dead characters remain:
-
-```text
-DEAD
-```
-
-across:
-
-```text
-resolution changes
-
-region reloads
-
-long absences
-
-reconstruction.
-```
-
----
-
-# Anti-Timeline-Drift Principle
-
-Elapsed time must remain:
-
-```text
-CONSISTENT
-ACROSS ALL RESOLUTIONS.
+REAL TIME
+AND EXPERIENCE.
 ```
 
 ---
 
-# Anti-Information-Leak Principle
+# 80. Resolution Memory
 
-Simulation knowledge must not automatically become:
+The simulation may preserve a conceptual record of:
 
 ```text
-PLAYER KNOWLEDGE
+LAST HIGH-RESOLUTION STATE
 
-CHARACTER KNOWLEDGE
+LAST DIRECT INTERACTION
 
-AURORA KNOWLEDGE.
-```
+MAJOR EVENTS SINCE
 
----
+MAJOR STATE CHANGES
 
-# Anti-Fake-History Principle
+UNRESOLVED COMMITMENTS
 
-Reconstruction may fill:
+CURRENT LOCATION
 
-```text
-UNOBSERVED DETAIL.
-```
+CURRENT ROLE
 
-It must not rewrite:
+CURRENT MAJOR GOALS
 
-```text
-OBSERVED HISTORY.
+IMPORTANT RELATIONSHIPS.
 ```
-
----
 
-# Anti-Overfitting Principle
+This supports continuity.
 
-Do not generate enormous histories for:
-
-```text
-characters
-who do not require them.
-```
-
 ---
 
-# Anti-Underfitting Principle
+# 81. Resolution Does Not Override Ownership
 
-Do not reduce important characters to:
+Character Simulation Resolution does not become a second owner of Character systems.
 
-```text
-generic archetypes
-```
+It may request, compress or expand representations.
 
-when their history requires:
+It does not own:
 
 ```text
-individual continuity.
-```
-
----
+Goals
 
-# Anti-Resolution-Flicker Principle
+Beliefs
 
-Characters should not constantly:
+Memory
 
-```text
-PROMOTE
-DEMOTE
-PROMOTE
-DEMOTE
-```
+Relationships
 
-because of tiny relevance changes.
+Expertise
 
----
+Psychology
 
-# Anti-Plot-Armor-Persistence Principle
+Attributes
 
-Persistent state does not imply:
+Values
 
-```text
-guaranteed survival.
-```
+Identity
 
----
+Life Events
 
-# Anti-Prefetch-Waste Principle
+Capability
 
-Do not simulate high detail:
+Decisions
 
-```text
-EVERYWHERE PLAYER
-MIGHT POSSIBLY GO.
+Development.
 ```
-
----
-
-# Resolution Consistency Rules
-
-## Rule 1
-
-Every persistent character has continuous existence across simulation time.
-
----
-
-## Rule 2
-
-Resolution controls detail, not existence.
-
----
-
-## Rule 3
-
-Lower resolution must preserve causal continuity.
-
----
-
-## Rule 4
-
-Promotion expands state rather than replacing identity.
-
----
-
-## Rule 5
-
-Demotion compresses state rather than erasing history.
-
----
-
-## Rule 6
-
-Persistent consequences survive all resolution transitions.
-
----
-
-## Rule 7
-
-Dead characters remain dead.
-
----
-
-## Rule 8
-
-Major relationship changes remain persistent.
-
----
-
-## Rule 9
-
-Major Knowledge changes remain persistent.
-
----
-
-## Rule 10
-
-Long-term Goals remain persistent unless changed through simulation.
-
----
-
-## Rule 11
-
-Major Character Development remains persistent.
-
----
-
-## Rule 12
-
-Age progresses at every resolution.
-
----
-
-## Rule 13
-
-Life events may occur at every resolution.
-
----
-
-## Rule 14
-
-Lower-resolution decisions still require plausible causality.
-
----
-
-## Rule 15
-
-Resolution may increase because of physical proximity.
-
----
-
-## Rule 16
-
-Resolution may increase because of communication.
-
----
-
-## Rule 17
-
-Resolution may increase because of relationship relevance.
-
----
-
-## Rule 18
-
-Resolution may increase because of campaign relevance.
-
----
-
-## Rule 19
-
-Resolution may increase because of causal importance.
-
----
-
-## Rule 20
-
-Resolution may increase because of world events.
-
----
-
-## Rule 21
-
-Distance alone does not determine resolution.
-
----
-
-## Rule 22
-
-Social importance alone does not determine resolution.
-
----
-
-## Rule 23
-
-Narrative importance alone does not determine resolution.
-
----
-
-## Rule 24
-
-Resolution changes should avoid oscillation.
-
----
-
-## Rule 25
-
-Critical consequences may override normal simulation budgets.
-
----
-
-## Rule 26
-
-Population abstraction must preserve population accounting.
-
----
-
-## Rule 27
-
-Individualization must not create duplicate population.
-
----
-
-## Rule 28
-
-Persistent individuals must retain stable identity.
-
----
-
-## Rule 29
-
-Reconstruction must respect canonical history.
-
----
-
-## Rule 30
-
-Reconstruction should be deterministic or stably seeded where possible.
-
----
-
-## Rule 31
-
-Canonical state overrides generated detail.
-
----
-
-## Rule 32
-
-World events affect characters only through plausible exposure.
-
----
-
-## Rule 33
-
-High-resolution scenes must respect aggregate world state.
-
----
-
-## Rule 34
-
-High-impact individual actions must update aggregate state.
-
----
-
-## Rule 35
-
-Simulation debt must resolve before affected state becomes observable.
-
----
-
-## Rule 36
-
-Off-screen characters continue living.
-
----
-
-## Rule 37
-
-Player knowledge remains separate from simulation truth.
-
----
-
-## Rule 38
-
-Aurora knowledge remains separate from simulation truth.
-
----
-
-## Rule 39
-
-Narrative systems select from simulation rather than rewriting it.
-
----
-
-## Rule 40
-
-Simulation detail should be proportional to causal and observational need.
-
----
-
-## Rule 41
-
-Routine activity should normally remain compressed.
-
----
-
-## Rule 42
-
-Major events should wake relevant characters when necessary.
-
----
-
-## Rule 43
-
-Households preserve continuity across resolution changes.
-
----
-
-## Rule 44
-
-Relationships preserve continuity across resolution changes.
-
----
-
-## Rule 45
-
-Memory may compress but important meaning must survive.
-
----
-
-## Rule 46
-
-Profession and career progression continue off-screen.
-
----
-
-## Rule 47
-
-Aging and life stages continue off-screen.
-
----
-
-## Rule 48
-
-Long absence processing must preserve major biography.
-
----
-
-## Rule 49
-
-The player may encounter consequences of events they never witnessed.
-
----
-
-## Rule 50
-
-The world must remain causally coherent regardless of where simulation detail was concentrated.
 
 ---
 
-# Foundational Resolution Formula
+# 82. Ownership Model
 
 Conceptually:
 
 ```text
+AUTHORITATIVE SYSTEMS
+↓
+OWN STATE
+
+CHARACTER SIMULATION RESOLUTION
+↓
+DETERMINES
+HOW MUCH STATE
+MUST BE EXPLICITLY
+REPRESENTED
+
+CHARACTER SYSTEMS
+↓
+SIMULATE
+REQUIRED PROCESSES
+
+WORLD SIMULATION
+↓
+RESOLVES
+WORLD CONSEQUENCES.
+```
+
+---
+
+# 83. Resolution and AI
+
+AI may assist by:
+
+```text
+summarizing low-resolution history
+
+expanding relevant Character context
+
+identifying missing causal information
+
+detecting contradictions
+
+selecting relevant state
+
+proposing plausible compressed actions
+
+identifying when higher resolution is required
+
+reconstructing compatible detail
+
+explaining state changes.
+```
+
+---
+
+# 84. AI Is Not the Source of Truth
+
+AI-generated Character detail must remain constrained by:
+
+```text
+CANON
+
+WORLD STATE
+
+CHARACTER STATE
+
+LIFE HISTORY
+
+RELATIONSHIPS
+
+KNOWN EVENTS
+
+AVAILABLE INFORMATION
+
+AND
+
+SYSTEM OWNERSHIP.
+```
+
+AI must not use its own general knowledge as Character knowledge.
+
+---
+
+# 85. AI Expansion Rule
+
+When expanding a Character:
+
+```text
+USE
+WHAT IS KNOWN
+
+INFER
+ONLY WHAT IS
+CAUSALLY PLAUSIBLE
+
+LABEL
+UNCERTAINTY
+
+DO NOT
+INVENT CONVENIENCE.
+```
+
+---
+
+# 86. Missing Information
+
+If a high-resolution decision depends on information that does not exist:
+
+```text
+DO NOT
+SILENTLY INVENT
+THE ANSWER.
+```
+
+Possible responses include:
+
+```text
+increase simulation detail
+
+derive from existing history
+
+preserve uncertainty
+
+or
+
+leave the state unresolved.
+```
+
+---
+
+# 87. AI Compression Rule
+
+When compressing Character history, AI must preserve:
+
+```text
+CAUSE
+
+CHOICE
+
+CONSEQUENCE
+
+PERSISTENT CHANGE
+
+UNRESOLVED STATE.
+```
+
+A summary that removes why something happened is insufficient.
+
+---
+
+# 88. AI Reconstruction Boundary
+
+AI may infer:
+
+```text
+plausible connective detail
+```
+
+between known states.
+
+It may not invent:
+
+```text
+major Life Events
+
+major Relationships
+
+major Expertise
+
+major trauma
+
+major identity change
+
+major resources
+
+major authority
+
+major knowledge
+```
+
+without causal support.
+
+---
+
+# 89. Resolution Validation
+
+Whenever resolution changes, ask:
+
+```text
+WHAT RESOLUTION
+IS REQUIRED?
+
+WHY?
+
+WHAT CAUSAL
+QUESTIONS MUST
+BE ANSWERED?
+
+WHAT STATE
+MUST BE EXPLICIT?
+
+WHAT MAY
+BE COMPRESSED?
+
+WHAT MUST
+BE PRESERVED?
+
+WHAT INFORMATION
+IS MISSING?
+
+CAN THE CURRENT
+RESOLUTION
+SUPPORT A
+PLAUSIBLE OUTCOME?
+
+IF NOT,
+SHOULD RESOLUTION
+INCREASE?
+```
+
+---
+
+# 90. Compression Validation
+
+Before lowering resolution:
+
+```text
+WHAT JUST HAPPENED?
+
+WHAT CHANGED?
+
+WHAT REMAINS
+UNRESOLVED?
+
+WHAT PROMISES
+EXIST?
+
+WHAT GOALS
+REMAIN ACTIVE?
+
+WHAT RELATIONSHIPS
+CHANGED?
+
+WHAT KNOWLEDGE
+WAS GAINED?
+
+WHAT BELIEFS
+CHANGED?
+
+WHAT LIFE EVENTS
+OCCURRED?
+
+WHAT DEVELOPMENT
+PRESSURE EXISTS?
+
+WHAT FUTURE
+CONSEQUENCES
+MAY FOLLOW?
+```
+
+Preserve what matters.
+
+---
+
+# 91. Expansion Validation
+
+Before raising resolution:
+
+```text
+WHAT DO
+WE ALREADY KNOW?
+
+HOW MUCH TIME
+HAS PASSED?
+
+WHAT HAPPENED
+IN THE WORLD?
+
+WHAT WAS THIS
+CHARACTER EXPOSED TO?
+
+WHAT DID THEY
+PLAUSIBLY DO?
+
+WHAT STATE
+MUST NOW
+BE EXPLICIT?
+
+WHAT CAN
+BE INFERRED?
+
+WHAT REMAINS
+UNKNOWN?
+
+WOULD ANY
+NEW DETAIL
+CONTRADICT
+EXISTING HISTORY?
+```
+
+---
+
+# 92. Long-Absence Validation
+
+For substantial elapsed time:
+
+```text
+WHERE DID
+THE CHARACTER LIVE?
+
+WHAT WORLD EVENTS
+AFFECTED THAT PLACE?
+
+WHAT RESPONSIBILITIES
+DID THEY HAVE?
+
+WHAT GOALS
+DID THEY PURSUE?
+
+WHAT RESOURCES
+WERE AVAILABLE?
+
+WHO WERE THEIR
+IMPORTANT RELATIONSHIPS?
+
+WHAT OPPORTUNITIES
+EXISTED?
+
+WHAT CONSTRAINTS
+EXISTED?
+
+WHAT MAJOR
+DECISIONS OCCURRED?
+
+WHAT CHANGED?
+
+WHAT DID NOT CHANGE?
+
+WHY?
+```
+
+---
+
+# 93. Resolution Invariants
+
+## CSR-INV-001 — Resolution Changes Detail, Not Reality
+
+Lower resolution never makes a Character less real within the simulation.
+
+---
+
+## CSR-INV-002 — Resolution Does Not Remove Agency
+
+Characters retain agency at every resolution level.
+
+---
+
+## CSR-INV-003 — Off-Screen Does Not Mean Frozen
+
+Characters continue living when players are absent.
+
+---
+
+## CSR-INV-004 — Resolution Is Not Importance
+
+Simulation detail is not a measure of human value or narrative importance.
+
+---
+
+## CSR-INV-005 — Resolution Is Not Player Proximity
+
+Player proximity may influence resolution but does not define it.
+
+---
+
+## CSR-INV-006 — Causality Crosses Resolution Boundaries
+
+Actions and consequences may propagate between Characters and systems operating at different resolutions.
+
+---
+
+## CSR-INV-007 — Compression Preserves Persistent State
+
+Lowering resolution must not erase causally relevant history.
+
+---
+
+## CSR-INV-008 — Expansion Must Respect Existing History
+
+Higher-resolution detail must remain compatible with prior state.
+
+---
+
+## CSR-INV-009 — Unspecified Does Not Mean Unconstrained
+
+Missing detail must remain bounded by established Canon and history.
+
+---
+
+## CSR-INV-010 — No Retroactive Convenience
+
+Resolution expansion cannot invent useful Character traits, knowledge, Expertise, Relationships or resources merely because the current situation needs them.
+
+---
+
+## CSR-INV-011 — Low Resolution Is Not Random Simulation
+
+Compressed Character outcomes remain causally constrained.
+
+---
+
+## CSR-INV-012 — High Resolution Is Not Omniscience
+
+Greater simulation detail does not grant Characters additional knowledge.
+
+---
+
+## CSR-INV-013 — Character Identity Persists Across Resolution
+
+Resolution changes must preserve recognizable Character continuity.
+
+---
+
+## CSR-INV-014 — Authoritative Systems Retain Ownership
+
+Character Simulation Resolution does not own the state it represents.
+
+---
+
+## CSR-INV-015 — Resolution May Increase Without Player Presence
+
+Important off-screen decisions may require greater detail.
+
+---
+
+## CSR-INV-016 — Resolution May Decrease After Player Interaction
+
+Persistent Characters do not require permanent high-resolution simulation.
+
+---
+
+## CSR-INV-017 — Low Resolution Does Not Provide Plot Armor
+
+Characters remain subject to plausible consequence.
+
+---
+
+## CSR-INV-018 — Low Resolution Does Not Make Characters Disposable
+
+Persistent Characters retain continuity and history.
+
+---
+
+## CSR-INV-019 — Time Compression Preserves Constraints
+
+Distance, resources, capability, information and world conditions remain relevant during compressed simulation.
+
+---
+
+## CSR-INV-020 — Population Promotion Must Respect World Context
+
+New persistent Characters must plausibly emerge from the populations and institutions that produced them.
+
+---
+
+## CSR-INV-021 — Character Development Continues Across Resolution
+
+Persistent change may occur even when detailed simulation is compressed.
+
+---
+
+## CSR-INV-022 — Missing Information Must Not Become Silent Canon
+
+Inference and established state must remain distinguishable.
+
+---
+
+## CSR-INV-023 — Resolution Should Be Minimal But Sufficient
+
+Use the lowest simulation detail that preserves causal plausibility.
+
+---
+
+## CSR-INV-024 — Uncertainty May Require Escalation
+
+If a consequential outcome cannot be resolved plausibly at current detail, increase resolution.
+
+---
+
+## CSR-INV-025 — Narrative Need Cannot Override Character State
+
+Story systems may request detail.
+
+They may not dictate what that detail must reveal.
+
+---
+
+# 94. Resolution Locks
+
+The following designs must not be introduced without explicit architectural review.
+
+### LOCK 1 — No Player-Centric Reality
+
+Do not make Characters active only when players are nearby.
+
+---
+
+### LOCK 2 — No NPC Freeze
+
+Do not suspend Character life because they are off-screen.
+
+---
+
+### LOCK 3 — No Random Off-Screen Arc
+
+Do not generate arbitrary development during player absence.
+
+---
+
+### LOCK 4 — No Resolution-Based Agency
+
+Do not reduce a Character's agency because simulation detail is lower.
+
+---
+
+### LOCK 5 — No Resolution-Based Plot Armor
+
+Do not protect or kill Characters based on whether they are currently visible.
+
+---
+
+### LOCK 6 — No Convenient Promotion
+
+Do not generate whatever Character state is currently useful when increasing resolution.
+
+---
+
+### LOCK 7 — No Canonical Amnesia
+
+Do not discard persistent history during compression.
+
+---
+
+### LOCK 8 — No Omniscient Expansion
+
+Do not give Characters information they could not possess when increasing resolution.
+
+---
+
+### LOCK 9 — No Universal High Resolution
+
+Do not require every persistent Character to run at maximum detail continuously.
+
+---
+
+### LOCK 10 — No Detail for Detail's Sake
+
+Do not increase simulation complexity merely because more detail can be generated.
+
+---
+
+### LOCK 11 — No Importance Score as Resolution
+
+Do not equate narrative importance with required simulation resolution.
+
+---
+
+### LOCK 12 — No Player Waiting Room
+
+Do not preserve Characters in unchanged states until players return.
+
+---
+
+### LOCK 13 — No Background Human Expendability
+
+Do not treat low-resolution persistent Characters as disposable simulation objects.
+
+---
+
+### LOCK 14 — No Unconstrained Backfill
+
+Do not treat missing Character history as permission to invent anything.
+
+---
+
+### LOCK 15 — No Aggregate Hive Mind
+
+Do not assume individual Characters behave identically because they belong to the same population, Society or Faction.
+
+---
+
+### LOCK 16 — No Silent Resolution Contradiction
+
+If expansion reveals that existing state cannot plausibly support the required detail, surface the contradiction rather than rewriting history silently.
+
+---
+
+# 95. Runtime Model
+
+The broad runtime relationship is:
+
+```text
+WORLD SIMULATION
+↓
+CURRENT WORLD CONDITIONS
+
+        +
+
 CHARACTER STATE
 +
-PLAYER PROXIMITY
+LIFE HISTORY
 +
-COMMUNICATION
+RELATIONSHIPS
 +
-RELATIONSHIP RELEVANCE
+CURRENT LOCATION
 +
-CAMPAIGN RELEVANCE
+CURRENT ROLE
 +
-WORLD RELEVANCE
+ACTIVE CAUSAL LINKS
+
+        ↓
+
+RESOLUTION ASSESSMENT
+
+        ↓
+
+WHAT LEVEL OF
+CHARACTER DETAIL
+IS REQUIRED?
+
+        ↓
+
+┌─────────────────────┐
+│   LOW RESOLUTION    │
+│                     │
+│ Life trajectory     │
+│ Major Goals         │
+│ Major Relationships │
+│ Major Events        │
+│ Major Change        │
+└─────────────────────┘
+
+          OR
+
+┌─────────────────────┐
+│  MEDIUM RESOLUTION  │
+│                     │
+│ Active Goals        │
+│ Broad Plans         │
+│ Important Beliefs   │
+│ Psychology          │
+│ Relationships       │
+│ Open Loops          │
+│ Current Conditions  │
+└─────────────────────┘
+
+          OR
+
+┌─────────────────────┐
+│   HIGH RESOLUTION   │
+│                     │
+│ Immediate Goals     │
+│ Current Psychology  │
+│ Relevant Memory     │
+│ Knowledge/Beliefs   │
+│ Values/Identity     │
+│ Capability          │
+│ Relationships       │
+│ Perceived Options   │
+│ Autonomy            │
+│ Decision Making     │
+└─────────────────────┘
+
+        ↓
+
+CHARACTER ACTION
+
+        ↓
+
+WORLD CONSEQUENCE
+
+        ↓
+
+LIFE HISTORY
 +
-EVENT EXPOSURE
+MEMORY
 +
-CAUSAL IMPORTANCE
+RELATIONSHIPS
 +
-SIMULATION BUDGET
-      ↓
-SIMULATION PRIORITY
-      ↓
-RESOLUTION LEVEL
-      ↓
-REQUIRED DETAIL
-      ↓
-SIMULATION
-      ↓
-PERSISTENT CONSEQUENCES
-      ↓
-COMPRESSED CONTINUITY.
+CHARACTER DEVELOPMENT
++
+OTHER AUTHORITATIVE
+SYSTEM UPDATES
+
+        ↓
+
+UPDATED CHARACTER
+
+        ↓
+
+FUTURE
+RESOLUTION ASSESSMENT.
 ```
 
 ---
 
-# Promotion Principle
+# 96. Example — Returning After Two Years
+
+The players meet:
 
 ```text
-WHEN DETAIL
-BECOMES NECESSARY,
+DANIEL REYES
 
-EXPAND
-THE EXISTING PERSON.
+AGE:
+31
+
+PROFESSION:
+PARAMEDIC
+
+LOCATION:
+DENVER
+```
+
+Daniel is simulated at High Resolution during several sessions.
+
+The players then leave Colorado.
+
+Daniel moves to Low Resolution.
+
+Two years pass.
+
+During that period:
+
+```text
+EMERGENCY SERVICES
+BECOME LESS RELIABLE
+
+DANIEL CONTINUES
+MEDICAL WORK
+
+HOSPITAL CAPACITY
+DECLINES
+
+DANIEL BEGINS
+TRAINING VOLUNTEERS
+
+HIS BROTHER
+LEAVES THE REGION
+
+DANIEL BECOMES
+RESPONSIBLE FOR
+A LOCAL CLINIC.
+```
+
+When the players return:
+
+```text
+LOW
+↓
+MEDIUM
+↓
+HIGH
+```
+
+Daniel is expanded.
+
+The system may now find:
+
+```text
+Expertise:
+greater practical experience
+
+Profession:
+role has changed
+
+Identity:
+possible stronger
+caregiver / leader identity
+
+Relationships:
+some changed or lost
+
+Goals:
+clinic survival
+now dominates
+
+Psychology:
+current strain
+requires evaluation
+
+Responsibility:
+substantially increased.
+```
+
+But Daniel should not suddenly possess:
+
+```text
+military expertise
+
+new political connections
+
+advanced engineering skills
+
+or
+
+perfect knowledge
+of national events
+```
+
+unless his history supports them.
+
+The result should feel like:
+
+```text
+DANIEL
+DID NOT WAIT
+FOR THE PLAYERS.
+
+HE LIVED
+TWO YEARS.
 ```
 
 ---
 
-# Demotion Principle
+# 97. Example — Off-Screen Decision Escalation
+
+A settlement leader is currently at Medium Resolution.
+
+A wildfire approaches.
+
+The Character must choose whether to:
 
 ```text
-WHEN DETAIL
-IS NO LONGER NECESSARY,
+EVACUATE NOW
 
-COMPRESS
-THE PERSON'S STATE.
+OR
 
-DO NOT ERASE
-THE PERSON'S HISTORY.
+WAIT FOR
+MORE INFORMATION.
 ```
+
+The decision depends on:
+
+```text
+beliefs
+
+risk tolerance
+
+responsibility
+
+available information
+
+relationships
+
+prior experience
+
+current psychological state.
+```
+
+Medium Resolution may be insufficient.
+
+Therefore:
+
+```text
+CONSEQUENTIAL
+UNCERTAINTY
+
+        ↓
+
+RESOLUTION
+ESCALATES
+
+        ↓
+
+HIGH-RESOLUTION
+DECISION MAKING
+
+        ↓
+
+CHOICE
+
+        ↓
+
+WORLD CONSEQUENCE.
+```
+
+The players are not present.
+
+That does not matter.
 
 ---
 
-# Population Principle
+# 98. Example — No Escalation Required
+
+A baker in a stable settlement continues operating for another week.
+
+Relevant conditions remain stable.
+
+The Character:
 
 ```text
-A POPULATION
-IS NOT A NUMBER
-INSTEAD OF PEOPLE.
+works
 
-IT IS A COMPRESSED
-REPRESENTATION
-OF PEOPLE.
+maintains household
+
+interacts with community
+
+uses resources
+
+continues routine.
 ```
+
+No major conflict or uncertainty exists.
+
+The simulation does not need:
+
+```text
+HIGH-RESOLUTION
+DAILY DECISION MAKING.
+```
+
+Low or Medium Resolution is sufficient.
 
 ---
 
-# Off-Screen Principle
+# 99. Example — Character Promotion
+
+The players arrive at a functioning hospital.
+
+Initially the simulation contains:
 
 ```text
-THE PLAYER
-DOES NOT CREATE TIME
-BY OBSERVING IT.
+HOSPITAL
 
-TIME PASSES
-EVERYWHERE.
+STAFF:
+42
+
+CURRENT CAPACITY:
+68%
+
+MAJOR CONDITIONS:
+staff shortage
+medicine shortage
+power instability.
 ```
 
----
+The players repeatedly interact with one nurse.
 
-# Reconstruction Principle
+The Character becomes individually relevant.
+
+Resolution expands from:
 
 ```text
-UNOBSERVED DETAIL
-MAY BE RECONSTRUCTED.
+POPULATION CONTEXT
 
-OBSERVED HISTORY
-MAY NOT BE REWRITTEN.
+        ↓
+
+PERSISTENT CHARACTER.
 ```
 
----
-
-# Causality Principle
+The new Character must be consistent with:
 
 ```text
-THE SIMULATION
-MAY FORGET DETAIL.
+hospital staffing
 
-IT MUST NEVER
-FORGET CONSEQUENCE.
+regional history
+
+professional requirements
+
+current shortages
+
+local culture
+
+recent events.
 ```
 
----
-
-# Scale Principle
+The system may establish:
 
 ```text
-ONE PERSON
-CAN BE SIMULATED
-AS A PERSON.
+name
 
-ONE MILLION PEOPLE
-CAN BE SIMULATED
-AS A POPULATION.
+age
 
-AND ANY ONE
-OF THOSE MILLION
-CAN BECOME
-A PERSON IN DETAIL
-
-WITHOUT CEASING
-TO HAVE EXISTED BEFORE.
-```
-
----
-
-# Living World Principle
-
-When Character Simulation Resolution interacts with:
-
-```text
-Character State
-
-Needs
-
-Goals
-
-Knowledge
-
-Decision Making
-
-Autonomy
-
-Profession
-
-Personality
-
-Character Development
-
-Aging
+Life history
 
 Relationships
 
-Society
+Values
 
-World Simulation
-
-Living Campaign Engine
-```
-
-Ascension gains the ability to maintain:
-
-```text
-CONTINUITY
-WITHOUT
-SIMULATING EVERYTHING.
-```
-
----
-
-# Architectural Result
-
-The complete Character foundation now becomes:
-
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
-
-Needs_and_Motivation.md
-      ↓
-WHY THEY CARE
-
-Goals_and_Plans.md
-      ↓
-WHAT THEY WANT
-
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-WITHOUT PLAYER INPUT
-
-Profession_and_Capability.md
-      ↓
-WHAT THEY CAN DO
-
-Personality_and_Values.md
-      ↓
-WHY THEY CHOOSE
-DIFFERENTLY
-
-Character_Development.md
-      ↓
-HOW EXPERIENCE
-CHANGES THEM
-
-Aging_and_Life_Events.md
-      ↓
-HOW THEIR LIFE
-MOVES THROUGH TIME
-
-Character_Simulation_Resolution.md
-      ↓
-HOW ALL OF THIS
-SCALES ACROSS
-THE LIVING WORLD.
-```
-
----
-
-# Character System Completion State
-
-```text
-Canon/
-└── Systems/
-    └── Characters/
-        ├── README.md
-        ├── Character_State.md
-        ├── Needs_and_Motivation.md
-        ├── Goals_and_Plans.md
-        ├── Knowledge_and_Beliefs.md
-        ├── Decision_Making.md
-        ├── Autonomy_and_Initiative.md
-        ├── Profession_and_Capability.md
-        ├── Personality_and_Values.md
-        ├── Character_Development.md
-        ├── Aging_and_Life_Events.md
-        └── Character_Simulation_Resolution.md
-```
-
----
-
-# Current Status
-
-```text
-CHARACTER SYSTEM
-
-README.md
-FOUNDATION DEFINED
-
-Character_State.md
-FOUNDATION DEFINED
-
-Needs_and_Motivation.md
-FOUNDATION DEFINED
-
-Goals_and_Plans.md
-FOUNDATION DEFINED
-
-Knowledge_and_Beliefs.md
-FOUNDATION DEFINED
-
-Decision_Making.md
-FOUNDATION DEFINED
-
-Autonomy_and_Initiative.md
-FOUNDATION DEFINED
-
-Profession_and_Capability.md
-FOUNDATION DEFINED
-
-Personality_and_Values.md
-FOUNDATION DEFINED
-
-Character_Development.md
-FOUNDATION DEFINED
-
-Aging_and_Life_Events.md
-FOUNDATION DEFINED
-
-Character_Simulation_Resolution.md
-FOUNDATION DEFINED
-```
-
----
-
-# Character Foundation Status
-
-With this document:
-
-```text
-THE FOUNDATIONAL
-CHARACTER SIMULATION
-ARCHITECTURE
-IS COMPLETE.
-```
-
-This does not mean:
-
-```text
-NO MORE CHARACTER
-DOCUMENTS WILL EVER
-BE REQUIRED.
-```
-
-It means the system now has enough architectural definition to answer:
-
-```text
-WHO IS THIS PERSON?
-
-WHAT DO THEY NEED?
-
-WHAT DO THEY WANT?
-
-WHAT DO THEY KNOW?
-
-HOW DO THEY DECIDE?
-
-WHEN DO THEY ACT?
-
-WHAT CAN THEY DO?
-
-WHO ARE THEY?
-
-HOW DO THEY CHANGE?
-
-HOW DO THEY AGE?
-
-WHAT HAPPENS
-WHEN THE PLAYER
-IS NOT THERE?
-
-HOW CAN MILLIONS
-OF OTHER PEOPLE
-CONTINUE TO EXIST?
-```
-
----
-
-# Recommended Next Architectural Step
-
-Before adding more character subsystems, the recommended next step is:
-
-```text
-VALIDATE
-THE COMPLETE
-CHARACTER STACK.
-```
-
-A dedicated validation suite should test interactions between:
-
-```text
-Needs
+Attributes
 
 Goals
 
-Knowledge
+Beliefs
 
-Decision Making
+Expertise
 
-Autonomy
-
-Profession
-
-Personality
-
-Development
-
-Aging
-
-Resolution.
+current Psychology
 ```
 
-Recommended validation scenarios:
+as required.
+
+But these must describe:
 
 ```text
-TEST-001
-Autonomous Character
-Without Player Interaction
-
-TEST-002
-Conflicting Goals
-and Limited Knowledge
-
-TEST-003
-Character Development
-After Repeated Failure
-
-TEST-004
-Long Absence
-and Life Course Progression
-
-TEST-005
-Resolution Promotion
-and State Reconstruction
-
-TEST-006
-Resolution Demotion
-and Memory Preservation
-
-TEST-007
-Population Individualization
-
-TEST-008
-Relationship Continuity
-Across Resolution Changes
-
-TEST-009
-Distant Character
-Causes Local Consequence
-
-TEST-010
-Death, Succession
-and Legacy Across Resolutions.
-```
-
-The purpose would not be to test:
-
-```text
-INDIVIDUAL FILES
-IN ISOLATION.
-```
-
-It would test:
-
-```text
-THE CHARACTER
-AS ONE INTEGRATED
-SIMULATION SYSTEM.
+A PERSON
+WHO PLAUSIBLY
+ALREADY LIVED
+IN THIS WORLD.
 ```
 
 ---
 
-# Final Principle
+# 100. Example — Compression With Open Loop
+
+A Character promises:
 
 ```text
-THE PLAYER
-MAY WALK AWAY.
-
-THE CAMERA
-MAY MOVE.
-
-THE SIMULATION
-MAY REDUCE DETAIL.
-
-BUT THE CHARACTER'S
-LIFE CONTINUES.
+"I WILL CONTACT
+MY SISTER
+IN CHICAGO."
 ```
+
+The players leave.
+
+The Character moves to Low Resolution.
+
+The promise must not disappear.
+
+It becomes an:
+
+```text
+OPEN LOOP.
+```
+
+During compressed simulation:
+
+```text
+communication becomes available
+
+        ↓
+
+Character may act
+on the commitment
+
+        ↓
+
+contact succeeds
+or fails
+
+        ↓
+
+new consequences follow.
+```
+
+The player does not need to be present.
+
+---
+
+# 101. Architectural Boundaries
+
+The ownership boundary is:
+
+```text
+CHARACTER STATE
+=
+WHAT IS TRUE
+ABOUT THE CHARACTER
+
+LIFE
+=
+WHAT HAPPENS
+ACROSS THEIR LIFE
+
+AUTONOMY
+=
+WHEN SELF-DIRECTED
+ACTION BECOMES RELEVANT
+
+DECISION MAKING
+=
+WHAT THEY CHOOSE
+
+CHARACTER DEVELOPMENT
+=
+HOW HISTORY MAY PRODUCE
+PERSISTENT PERSONAL CHANGE
+
+WORLD SIMULATION
+=
+WHAT ACTUALLY HAPPENS
+IN THE WORLD
+
+CHARACTER SIMULATION RESOLUTION
+=
+HOW MUCH OF THESE
+PROCESSES MUST BE
+REPRESENTED EXPLICITLY
+RIGHT NOW.
+```
+
+---
+
+# 102. The Fundamental Separation
+
+The architecture must preserve:
+
+```text
+SIMULATION DETAIL
+
+≠
+
+SIMULATION EXISTENCE.
+```
+
+This is the reason the Resolution system exists.
+
+Project Ascension cannot simulate every person at maximum detail.
+
+But it also cannot create a world where:
+
+```text
+ONLY OBSERVED
+PEOPLE EXIST.
+```
+
+---
+
+# 103. Design Test
+
+Whenever designing Character simulation behavior, ask:
+
+```text
+DOES THIS CHARACTER
+CONTINUE TO EXIST
+WHEN UNOBSERVED?
+
+DO THEY RETAIN
+AGENCY?
+
+DOES TIME
+PASS FOR THEM?
+
+DOES THEIR LOCATION
+MATTER?
+
+DO WORLD EVENTS
+AFFECT THEM?
+
+CAN THEY ACT
+WITHOUT THE PLAYER?
+
+CAN THEIR ACTIONS
+AFFECT THE WORLD?
+
+CAN THEY CHANGE?
+
+CAN THEY FAIL?
+
+CAN THEY DIE?
+
+CAN THEIR
+RELATIONSHIPS CHANGE?
+
+CAN THEIR GOALS CHANGE?
+
+CAN THEY SURPRISE
+THE PLAYER
+
+WITHOUT
+
+CONTRADICTING
+THEIR HISTORY?
+
+CAN WE REDUCE
+SIMULATION DETAIL
+
+WITHOUT
+
+REDUCING
+THEIR HUMAN REALITY?
+```
+
+If the answer to the final question is yes:
+
+```text
+THE RESOLUTION
+MODEL IS WORKING.
+```
+
+---
+
+# 104. North Star
+
+```text
+THE WORLD
+DOES NOT STOP
+
+WHEN THE PLAYER
+LOOKS AWAY.
+
+PEOPLE
+DO NOT FREEZE.
+
+THEY WORK.
+
+THEY TRAVEL.
+
+THEY WAIT.
+
+THEY CHOOSE.
+
+THEY CHANGE
+THEIR MINDS.
+
+THEY KEEP
+PROMISES.
+
+THEY BREAK
+PROMISES.
+
+THEY LEARN.
+
+THEY FAIL.
+
+THEY LOVE.
+
+THEY ARGUE.
+
+THEY LEAVE.
+
+THEY RETURN.
+
+THEY GROW OLDER.
+
+THEY BECOME
+DIFFERENT.
+
+SOMETIMES
+THEY DIE.
+
+AND
+
+WHEN THE PLAYER
+MEETS THEM AGAIN
+
+THEY SHOULD FEEL
+LIKE PEOPLE
+
+WHO HAVE BEEN
+LIVING
+
+IN THE SAME WORLD
+
+THE ENTIRE TIME.
+```
+
+---
+
+# 105. Closing Principle
+
+Character Simulation Resolution exists so Project Ascension can support a world larger than the player's immediate perception without sacrificing human continuity.
+
+The system should always prefer:
+
+```text
+ENOUGH DETAIL
+TO PRESERVE
+CAUSAL REALITY
+```
+
+over:
+
+```text
+MAXIMUM DETAIL
+EVERYWHERE.
+```
+
+The final principle is:
+
+> **A Character does not become less real when the simulation knows less about their current moment. Their life continues. Resolution determines only how closely we are looking.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Character Simulation Resolution foundation defining R0–R4 resolution levels, dynamic promotion and demotion, state compression, deterministic reconstruction, causal continuity, temporal and spatial resolution, event-driven simulation, simulation budgets, hysteresis, persistence classes, population cohorts, individualization, household and relationship resolution, off-screen processing, simulation debt, cross-resolution interaction and scalable character continuity. |
+|---|---|---|
+| 1.0 | 2026-08-31 | Established the canonical Character Simulation Resolution architecture. Defined Low, Medium and High Character resolution; adaptive escalation and de-escalation; compression and expansion; off-screen continuity; time compression; population-to-Character promotion; cross-resolution causality; ownership boundaries with Life, Character Development, Autonomy, Decision Making, World Simulation, Society, Factions, Narrative and the Living Campaign Engine; AI reconstruction boundaries; canonical invariants and Resolution Locks. Established the core principle that simulation resolution changes detail, not reality, agency or human continuity. |

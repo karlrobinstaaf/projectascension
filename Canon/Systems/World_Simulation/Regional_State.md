@@ -2,118 +2,345 @@
 # Regional State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Regional State |
-| Location | Canon/Systems/World_Simulation/Regional_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Regional Simulation Layer |
-| Last Updated | 2026-08-09 |
-
-> *"A nation may share one flag while its regions live in entirely different realities."*
-
----
-
-# Purpose
-
-The Regional State system defines how individual regions are represented inside Project Ascension's World Simulation.
-
-Regions are the primary operational units of the living world.
-
-They translate global and national pressures into conditions that directly affect:
-
-- cities
-- settlements
-- infrastructure
-- institutions
-- populations
-- factions
-- trade
-- security
-- player experience
-
-The Regional State system allows different parts of the world to evolve differently even while sharing the same larger historical environment.
+|---|---|
+| Project | Project Ascension |
+| Document | Regional State System |
+| Location | `Canon/Systems/World_Simulation/Regional_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Regional State |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the regional simulation layer through which geography, systems, resources, dependencies, pressures and history create distinct local realities |
 
 ---
 
-# Core Principle
+# 1. Purpose
+
+The Regional State System defines how geographically meaningful parts of the world exist and evolve inside Project Ascension's World Simulation.
+
+Regions are the primary operational units of large-scale world simulation.
+
+They translate:
+
+```text
+GLOBAL CONDITIONS
++
+NATIONAL CONDITIONS
++
+GEOGRAPHY
++
+LOCAL SYSTEMS
++
+RESOURCES
++
+DEPENDENCIES
++
+HISTORY
++
+NEIGHBORING CONDITIONS
++
+EVENTS
++
+TIME
+↓
+DISTINCT
+REGIONAL REALITY.
+```
+
+Regional State answers:
+
+> **What is objectively true about this region, why is it true, what does it depend on, and how is it changing?**
+
+---
+
+# 2. Core Principle
 
 A region is not simply a smaller version of a nation.
 
-It has its own:
+Every region exists through a unique combination of:
 
 - geography
-- population
+- population distribution
 - infrastructure
 - resources
 - institutions
 - dependencies
-- culture
-- neighboring relationships
-- historical memory
-- strengths
+- neighboring systems
+- settlements
+- historical conditions
+- strategic functions
 - vulnerabilities
+- strengths
+- external pressures
+- accumulated consequences
 
-Two regions exposed to the same pressure should not automatically produce the same outcome.
+Therefore:
+
+```text
+SAME PRESSURE
++
+DIFFERENT REGION
+=
+POSSIBLY
+DIFFERENT OUTCOME.
+```
+
+Regional divergence is not an exception.
+
+It is fundamental to Project Ascension.
 
 ---
 
-# Regional Divergence
+# 3. Why Regions Exist
 
-Regional divergence is fundamental to Project Ascension.
+A purely national simulation would flatten too much reality.
 
-Example:
+Avoid:
+
+```text
+UNITED STATES
+
+Infrastructure:
+DEGRADED
+
+Supply:
+STRAINED
+
+Security:
+UNSTABLE.
+```
+
+This tells us very little about what people actually experience.
+
+Prefer:
+
+```text
+NORTHERN VIRGINIA
+
+Infrastructure:
+DEGRADED
+
+Supply:
+CONSTRAINED
+
+Security:
+STABLE
+
+
+SHENANDOAH VALLEY
+
+Infrastructure:
+STRAINED
+
+Supply:
+STABLE
+
+Security:
+FUNCTIONAL
+
+
+SOUTHERN CALIFORNIA
+
+Infrastructure:
+CRITICAL
+
+Supply:
+CRITICAL
+
+Security:
+VOLATILE.
+```
+
+All three regions may exist within the same country and historical era.
+
+---
+
+# 4. Regional Divergence
+
+Consider:
 
 ```text
 GLOBAL CONDITION:
+
 Fuel imports reduced.
-
-REGION A:
-Local refining capacity
-Strong rail infrastructure
-Low population density
-
-Result:
-Supply = Strained
-
-REGION B:
-Import dependent
-Dense urban population
-Weak storage
-
-Result:
-Supply = Critical
 ```
 
-The global event is shared.
+Region A:
 
-The regional experience is not.
+```text
+Local refining:
+Available
+
+Rail:
+Strong
+
+Population density:
+Low
+
+Alternative energy:
+Available
+
+Result:
+
+Supply:
+STRAINED.
+```
+
+Region B:
+
+```text
+Import dependency:
+High
+
+Population density:
+Very High
+
+Storage:
+Low
+
+Transportation:
+Fuel dependent
+
+Result:
+
+Supply:
+CRITICAL.
+```
+
+The external pressure is shared.
+
+The regional outcome is not.
+
+Therefore:
+
+```text
+GLOBAL CONDITIONS
+CREATE PRESSURE.
+
+REGIONAL CONDITIONS
+SHAPE CONSEQUENCES.
+```
 
 ---
 
-# Region Definition
+# 5. Region Definition
 
-A Region is a simulation area large enough to contain meaningful internal systems but small enough to possess distinctive operational conditions.
+A Region is:
+
+> **A geographically and systemically meaningful simulation area large enough to contain interacting world systems but specific enough to possess distinct operational conditions.**
 
 A region may correspond to:
 
 - part of a state
 - several neighboring states
 - a metropolitan corridor
-- a major geographic area
-- a strategic infrastructure zone
-- a culturally connected territory
+- an agricultural basin
+- an industrial corridor
+- a mountain region
+- a coastal system
+- an infrastructure network
+- a strategically interconnected geographic area
 
-Regional boundaries should serve simulation and narrative needs.
+Regional boundaries do not need to match political borders exactly.
 
-They do not need to match political borders exactly.
+But they must have plausible real-world reasons to exist.
 
 ---
 
-# Region Identity
+# 6. Real Geography First
 
-Every region should contain stable identity data.
+Project Ascension should prefer recognizable real-world geography.
+
+Regions should emerge from actual factors such as:
+
+- terrain
+- watersheds
+- metropolitan systems
+- transportation corridors
+- energy networks
+- agricultural areas
+- industrial concentrations
+- population patterns
+- political boundaries
+- cultural geography
+- logistics networks
+
+Avoid creating arbitrary game regions merely to divide the map.
+
+Conceptually:
+
+```text
+REAL GEOGRAPHY
++
+REAL INFRASTRUCTURE
++
+REAL DEPENDENCIES
+↓
+SIMULATION REGION.
+```
+
+---
+
+# 7. Regional Boundaries
+
+A regional boundary represents a meaningful change in simulation context.
+
+Possible reasons include:
+
+```text
+GEOGRAPHY
+
+INFRASTRUCTURE
+
+POPULATION
+
+ECONOMY
+
+RESOURCE ACCESS
+
+AUTHORITY
+
+TRANSPORTATION
+
+DEPENDENCY NETWORKS
+
+HISTORICAL DEVELOPMENT.
+```
+
+A boundary should answer:
+
+> **Why does simulation behavior meaningfully change here?**
+
+If no good answer exists, the boundary may not be necessary.
+
+---
+
+# 8. Regional Scale
+
+Regions should not be universally equal in physical size.
+
+A dense metropolitan corridor may require a smaller region than a sparsely populated agricultural area.
+
+Therefore:
+
+```text
+REGIONAL SCALE
+=
+FUNCTIONAL
+
+NOT
+
+UNIFORM.
+```
+
+The correct size is the scale at which meaningful system interactions can be represented without unnecessary detail.
+
+---
+
+# 9. Region Identity
+
+Every region should maintain stable identity information.
 
 Conceptually:
 
@@ -122,20 +349,23 @@ REGION IDENTITY
 │
 ├── Region ID
 ├── Name
-├── Parent Nation
-├── Geographic Type
-├── Core Population
+├── Historical Parent Nation
+├── Geographic Context
 ├── Major Settlements
 ├── Neighboring Regions
-├── Strategic Weight
-└── Historical Era
+├── Strategic Functions
+└── Canonical Geography References.
 ```
+
+Identity data should change rarely.
+
+Dynamic conditions belong to Regional State.
 
 ---
 
-# Region ID
+# 10. Region ID
 
-Each region should have a unique identifier.
+Each region should possess a unique identifier.
 
 Example:
 
@@ -146,826 +376,1120 @@ REG-US-NOVA
 for:
 
 ```text
-Northern Virginia
+Northern Virginia.
 ```
 
-Exact naming conventions may be standardized later.
+Exact naming conventions may be standardized during implementation.
+
+The identifier exists for persistence and reference.
+
+It does not define simulation behavior.
 
 ---
 
-# Region Name
+# 11. Region Name
 
-Each region should have a recognizable human-readable name.
+Region names should preferably reflect recognizable geographic terminology.
 
-Examples:
+Examples may include:
 
 ```text
 Northern Virginia
-Pacific Northwest
+
+Shenandoah Valley
+
 Great Lakes Corridor
+
 Central Texas
+
 Southern California
-Appalachian Interior
+
+Pacific Northwest.
 ```
 
-Names should reflect how people in the setting would reasonably describe the area.
+Avoid unnecessarily fictionalizing real geography.
+
+Post-Emergence names may develop through history where causally justified.
 
 ---
 
-# Parent Nation
+# 12. Historical Parent Nation
 
-Regions belong to or originate within a national political context.
+Regions retain their historical national context.
 
 Example:
 
 ```text
-Parent Nation:
-United States
+Historical Parent Nation:
+
+United States.
 ```
 
-During later World States, political control may become disputed or fragmented.
+This should remain distinct from current practical authority.
 
-The Parent Nation field should therefore distinguish:
+A region may historically belong to the United States while current governing power is:
 
 ```text
-Historical Parent Nation
+State Government
+
+Regional Emergency Authority
+
+Municipal Coalition
+
+Military Administration
+
+Faction Authority
+
+Distributed Local Governance
+
+Contested Authority.
 ```
 
-from:
+Detailed authority belongs to:
 
 ```text
-Current Governing Authority
-```
-
-where necessary.
-
----
-
-# Geographic Type
-
-Geography significantly influences regional resilience.
-
-Possible types include:
-
-```text
-Urban Core
-Metropolitan Corridor
-Industrial Region
-Agricultural Region
-Mountain Region
-Coastal Region
-Desert Region
-Forest Region
-Mixed Region
-```
-
-A region may possess multiple geographic traits.
-
----
-
-# Population
-
-Regions should track broad population conditions rather than every individual.
-
-Important population values may include:
-
-```text
-Population Size
-Population Density
-Population Trend
-Migration Pressure
-Workforce Availability
-Dependency Ratio
-```
-
-Detailed behavior belongs in:
-
-```text
-Population_State.md
+Authority_State.md
 ```
 
 ---
 
-# Population Size
+# 13. Historical Era
 
-Population Size should generally be represented through meaningful categories or estimates.
+Every region exists within the campaign's current canonical historical era.
 
 Example:
 
 ```text
-Population:
-5.4 million
+Historical Era:
+
+WS-03
+THE FRACTURED WORLD.
 ```
 
-or:
+But:
 
 ```text
-Population Scale:
-Large
+HISTORICAL ERA
+≠
+REGIONAL CONDITION.
 ```
 
-Exact numbers may be useful for certain systems but should not be required everywhere.
+Two regions inside The Fractured World may have radically different realities.
 
 ---
 
-# Population Density
+# 14. Geographic Context
 
-Population density affects:
+Regional geography provides persistent physical context.
 
-- supply demand
-- infrastructure load
-- evacuation difficulty
-- disease transmission
-- transportation dependency
-- local resilience
-- food production potential
+Relevant factors may include:
 
-Conceptual categories:
+- terrain
+- climate
+- coastlines
+- rivers
+- mountains
+- agricultural land
+- urban density
+- natural resources
+- transportation geography
+- disaster exposure
+- water availability
+
+Geography creates constraints and opportunities.
+
+It does not determine outcomes alone.
+
+---
+
+# 15. Geography Is Not Destiny
+
+Example:
 
 ```text
-VERY LOW
-LOW
-MODERATE
-HIGH
-VERY HIGH
+MOUNTAIN REGION
+```
+
+may gain:
+
+```text
+Defensive advantage
+
+Hydroelectric potential
+
+Geographic isolation.
+```
+
+But the same geography may create:
+
+```text
+Transportation vulnerability
+
+Limited agricultural land
+
+Difficult logistics
+
+Communication isolation.
+```
+
+Therefore:
+
+```text
+GEOGRAPHY
+CREATES CONDITIONS
+
+NOT
+
+PREDETERMINED OUTCOMES.
 ```
 
 ---
 
-# Population Trend
+# 16. Major Settlements
 
-Population Trend describes the current direction of population change.
+Regions may contain significant settlements such as:
 
-Possible values:
+- cities
+- towns
+- industrial zones
+- military installations
+- research centers
+- transport hubs
+- refugee settlements
+- agricultural centers
+
+Example:
 
 ```text
-GROWING
-STABLE
-DECLINING
-RAPIDLY DECLINING
-VOLATILE
+NORTHERN VIRGINIA
+
+Major Settlements:
+
+Arlington
+Alexandria
+Fairfax
+Reston.
 ```
 
-Population movement may result from:
+Regional conditions influence settlements.
 
-- migration
-- evacuation
-- conflict
-- economic opportunity
-- infrastructure conditions
-- resource availability
-- environmental pressure
+They do not mechanically determine every local condition.
 
 ---
 
-# Strategic Weight
+# 17. Internal Regional Variation
 
-Strategic Weight represents how strongly a region influences wider systems.
+A region is itself an abstraction.
 
-Factors may include:
+Conditions may differ significantly within it.
 
-- population
-- political importance
-- energy production
-- transportation hubs
-- food production
-- industrial capacity
-- military infrastructure
-- telecommunications
-- financial infrastructure
+Example:
+
+```text
+REGIONAL SUPPLY:
+
+STRAINED
+
+
+URBAN CORE:
+
+ADEQUATE
+
+
+OUTER DISTRICTS:
+
+CRITICAL.
+```
+
+Regional State must therefore support:
+
+```text
+LOCAL EXCEPTIONS.
+```
+
+---
+
+# 18. Local Exceptions
 
 Conceptually:
 
 ```text
-LOW
-MODERATE
-HIGH
+REGION:
+
+Infrastructure:
+DEGRADED
+
+
+LOCAL EXCEPTIONS:
+
+Settlement A:
+STABLE
+
+Industrial Corridor:
 CRITICAL
+
+Military Installation:
+FUNCTIONAL.
 ```
 
-Strategic Weight is not a measure of human importance.
-
-It measures systemic influence.
+Exceptions prevent regional abstraction from erasing important local realities.
 
 ---
 
-# Major Settlements
+# 19. Resolution and Internal Detail
 
-Each region may contain one or more important settlements.
+Regional State should only represent internal detail when that detail is causally or experientially relevant.
 
-Examples:
+Avoid simulating every town independently at all times.
+
+Instead:
 
 ```text
-Major Settlements:
-- Arlington
-- Alexandria
-- Fairfax
-- Reston
+REGIONAL BASELINE
++
+IMPORTANT EXCEPTIONS
++
+ACTIVE LOCAL SYSTEMS.
 ```
 
-Settlements may eventually maintain their own detailed simulation state.
-
-Regional conditions should influence settlements without completely determining them.
+When higher resolution becomes necessary, additional local detail may be derived from established regional history and conditions.
 
 ---
 
-# Neighboring Regions
+# 20. Core Regional Domains
 
-Regions should explicitly track their neighbors.
-
-Example:
+Every region may expose authoritative state from the primary World Simulation domains:
 
 ```text
-Northern Virginia
+INFRASTRUCTURE
 
-Neighbors:
-- Washington Metropolitan Core
-- Shenandoah Valley
-- Central Virginia
-- Western Maryland
+SUPPLY
+
+SECURITY
+
+AUTHORITY
+
+INFORMATION
+
+POPULATION.
 ```
 
-Neighbor relationships allow:
+Detailed ownership belongs to:
 
-- migration
-- trade
-- conflict
-- information flow
-- infrastructure sharing
-- cascading effects
+```text
+Infrastructure_State.md
+
+Supply_State.md
+
+Security_State.md
+
+Authority_State.md
+
+Information_State.md
+
+Population_State.md.
+```
+
+Regional State coordinates their geographic relationship.
+
+It does not duplicate their internal mechanics.
 
 ---
 
-# Regional State Domains
+# 21. Regional Domain References
 
-Every region should expose the standard World Simulation domains:
+Conceptually:
 
 ```text
 REGIONAL STATE
 │
-├── Infrastructure
-├── Communications
-├── Authority
-├── Information
-├── Population
-├── Supply
-├── Security
-└── Recovery
+├── Infrastructure State
+├── Supply State
+├── Security State
+├── Authority State
+├── Information State
+└── Population State.
 ```
 
-Each domain should include:
+Where appropriate, domains may expose:
 
 ```text
-State
+Current State
+
 Pressure
+
 Resilience
+
 Trend
-Confidence
+
+Recovery Capacity
+
+Last Significant Change
+
+Causal Sources.
 ```
+
+Regional State does not redefine those values.
 
 ---
 
-# Example
+# 22. Recovery Is Not a Regional Peer Domain
+
+Avoid:
 
 ```text
-Infrastructure:
-    State: Degraded
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-    Confidence: High
+Infrastructure
+Supply
+Security
+Authority
+Information
+Population
+Recovery.
 ```
 
----
+Recovery is not equivalent to these domains.
 
-# Infrastructure
-
-Regional Infrastructure describes the practical condition of essential systems including:
-
-- electricity
-- water
-- transportation
-- telecommunications
-- fuel
-- healthcare infrastructure
-- logistics
-- data networks
-
-Regional Infrastructure should integrate with:
+Instead:
 
 ```text
-Infrastructure_Monitoring_Levels.md
+Infrastructure
+├── Recovery Capacity
+
+Supply
+├── Recovery Capacity
+
+Authority
+├── Recovery Capacity
 ```
 
 where appropriate.
 
----
-
-# Communications
-
-Regional Communications describes how effectively the region can exchange operational information internally and externally.
-
-This includes:
-
-- emergency communications
-- internet
-- cellular networks
-- radio
-- government communication
-- interregional communication
-- local networks
-
-Regional Communications may differ from national ECL.
-
-Example:
+Detailed escalation and recovery behavior belongs to:
 
 ```text
-National ECL:
-ECL-4
-
-Regional Communications:
-Functional
+Escalation_and_Recovery.md.
 ```
 
-A region may remain internally well connected while national coordination deteriorates.
+---
+
+# 23. Communications
+
+Communications remain extremely important to regional simulation.
+
+However, they should not automatically become a separate universal peer domain if their state is already represented through:
+
+```text
+Infrastructure
++
+Information.
+```
+
+Physical and digital communication capability belongs primarily to:
+
+```text
+Infrastructure_State.md.
+```
+
+Information availability, reliability and propagation belong primarily to:
+
+```text
+Information_State.md.
+```
+
+Regional State may reference communication conditions without creating duplicate ownership.
 
 ---
 
-# Authority
+# 24. Population Context
 
-Regional Authority represents the practical governing capacity inside the region.
+Regional State may reference broad population facts such as:
 
-This may include:
+```text
+Population Scale
 
-- state government
-- county government
-- municipal government
-- emergency management
-- law enforcement
-- military support
-- regional councils
-- settlement coalitions
+Population Density
 
-Authority is not simply legal status.
+Population Distribution
 
-It measures whether institutions can actually act.
+Population Trend.
+```
 
----
+Detailed population dynamics belong to:
 
-# Information
+```text
+Population_State.md.
+```
 
-Regional Information describes the quality of the local informational environment.
-
-Factors include:
-
-- trusted local media
-- emergency alerts
-- rumor
-- misinformation
-- government credibility
-- community communication
-- external information access
-
-A region may possess strong local information while losing reliable national information.
+Regional State provides the geographic context within which those dynamics occur.
 
 ---
 
-# Population
+# 25. Population Is Not One Mood
 
-Regional Population State describes broad human behavior.
+Regional State must not reduce a population to:
+
+```text
+CALM
+
+ANXIOUS
+
+HOSTILE.
+```
+
+A population is not a collective mind.
+
+Different communities and individuals may respond differently to identical conditions.
+
+Collective population patterns may still exist.
+
+But they must not erase human variation.
+
+---
+
+# 26. Strategic Functions
+
+Regions may perform strategically important functions within wider systems.
 
 Examples include:
 
 ```text
-CALM
-CONCERNED
-ANXIOUS
-MOBILIZING
-VOLATILE
-DISPLACED
+Food Production
+
+Energy Production
+
+Transportation Hub
+
+Port Access
+
+Industrial Manufacturing
+
+Data Infrastructure
+
+Political Administration
+
+Military Infrastructure
+
+Healthcare Capacity
+
+Research Capacity
+
+Financial Infrastructure.
 ```
 
-Exact terminology will be defined in:
-
-```text
-Population_State.md
-```
+These functions create systemic influence.
 
 ---
 
-# Supply
+# 27. Strategic Importance Is Not Human Importance
 
-Regional Supply represents access to essential goods.
-
-Examples:
-
-- food
-- fuel
-- medicine
-- spare parts
-- industrial supplies
-- water-treatment chemicals
-- batteries
-- agricultural inputs
-
-Regional Supply should track both:
-
-```text
-Availability
-```
-
-and:
-
-```text
-Distribution Capacity
-```
-
-A region may possess resources but lack the ability to move them.
-
----
-
-# Security
-
-Regional Security represents physical stability.
-
-It includes:
-
-- crime
-- policing
-- organized violence
-- civil unrest
-- militia activity
-- infrastructure protection
-- military presence
-- local defense
-
-Security should not automatically worsen because other domains worsen.
-
----
-
-# Recovery
-
-Regional Recovery represents the ability to restore or replace damaged systems.
-
-Recovery depends upon:
-
-- technical personnel
-- spare parts
-- transport
-- communications
-- energy
-- institutions
-- community cooperation
-- external assistance
-- local resources
-
-Recovery Capacity should be one of the most important variables in the simulation.
-
----
-
-# Regional Resilience Profile
-
-In addition to domain-specific resilience, every region may maintain a broader Resilience Profile.
-
-Possible components:
-
-```text
-Infrastructure Resilience
-Institutional Resilience
-Social Resilience
-Economic Resilience
-Resource Resilience
-Geographic Resilience
-```
-
----
-
-# Infrastructure Resilience
-
-Factors include:
-
-- redundancy
-- maintenance
-- local power
-- distributed generation
-- spare capacity
-- technical expertise
-
----
-
-# Institutional Resilience
-
-Factors include:
-
-- competent government
-- emergency planning
-- trusted institutions
-- clear authority
-- interagency cooperation
-
----
-
-# Social Resilience
-
-Factors include:
-
-- community trust
-- mutual aid
-- civic participation
-- social cohesion
-- low polarization
-
----
-
-# Economic Resilience
-
-Factors include:
-
-- economic diversity
-- local production
-- financial reserves
-- adaptable businesses
-- functioning trade
-
----
-
-# Resource Resilience
-
-Factors include:
-
-- food production
-- water availability
-- fuel access
-- storage
-- industrial capacity
-
----
-
-# Geographic Resilience
-
-Factors include:
-
-- defensible geography
-- climate
-- transportation alternatives
-- natural resources
-- population distribution
-
-Geography may also create vulnerabilities.
-
----
-
-# Regional Vulnerabilities
-
-Every region should maintain explicit vulnerabilities.
-
-Examples:
-
-```text
-- single power corridor
-- import-dependent food supply
-- limited water availability
-- aging bridges
-- high population density
-- political fragmentation
-- dependence on one fuel source
-```
-
-Vulnerabilities create pressure when relevant events occur.
-
----
-
-# Regional Strengths
-
-Likewise, regions should track strengths.
-
-Examples:
-
-```text
-- hydroelectric generation
-- agricultural production
-- strong local government
-- high community trust
-- multiple transport routes
-- local manufacturing
-- strong medical capacity
-```
-
-Strengths may become sources of resilience or recovery.
-
----
-
-# Resource Profile
-
-Each region should maintain a basic resource profile.
+Never interpret strategic importance as a measure of human worth.
 
 Conceptually:
 
 ```text
-RESOURCE PROFILE
-│
-├── Food
-├── Water
-├── Energy
-├── Fuel
-├── Medicine
-├── Industrial Capacity
-├── Transportation
-└── Technical Capacity
+SYSTEMIC IMPORTANCE
+≠
+HUMAN VALUE.
 ```
 
-Detailed inventory simulation is not required at this level.
+A sparsely populated agricultural region may be systemically critical.
 
-The profile represents strategic availability.
+A densely populated city may have enormous human importance while contributing differently to infrastructure networks.
+
+These are different concepts.
 
 ---
 
-# Resource States
+# 28. Avoid One Universal Strategic Score
 
-Possible conceptual values:
+The previous concept of a single:
 
 ```text
-SURPLUS
-ADEQUATE
-STRAINED
-CONSTRAINED
-CRITICAL
+Strategic Weight:
+HIGH
 ```
+
+may be useful as shorthand but should not become authoritative simulation logic.
+
+Prefer explicit strategic functions:
+
+```text
+Food Production:
+NATIONAL SIGNIFICANCE
+
+Rail Connectivity:
+REGIONAL SIGNIFICANCE
+
+Political Importance:
+LOW
+
+Energy Production:
+MODERATE.
+```
+
+This preserves why the region matters.
 
 ---
 
-# Resource Surplus
+# 29. Regional Strengths
 
-A region with Surplus resources may export them.
+Regions should preserve persistent or slowly changing structural strengths.
+
+Examples:
+
+```text
+Strong agricultural base
+
+Multiple transport routes
+
+Distributed electricity generation
+
+Large technical workforce
+
+Major medical capacity
+
+Local manufacturing
+
+Reliable water supply
+
+Strong emergency institutions.
+```
+
+Strengths may contribute to:
+
+- resilience
+- recovery capacity
+- adaptation
+- strategic importance
+
+But they do not guarantee success.
+
+---
+
+# 30. Regional Vulnerabilities
+
+Regions should also preserve meaningful vulnerabilities.
+
+Examples:
+
+```text
+Single power corridor
+
+Import-dependent food supply
+
+Limited water availability
+
+Aging bridges
+
+Extreme population density
+
+Single fuel dependency
+
+High flood exposure
+
+Dependence on external data infrastructure.
+```
+
+Vulnerabilities become important when relevant pressure reaches them.
+
+---
+
+# 31. Vulnerability Is Conditional
+
+A vulnerability does not mean failure is currently occurring.
 
 Example:
 
 ```text
-Food:
-SURPLUS
+Fuel Dependency:
+HIGH
 ```
 
-may create trade opportunities with neighboring regions.
+may remain irrelevant while fuel flows normally.
+
+When:
+
+```text
+External Fuel Flow:
+DISRUPTED
+```
+
+the vulnerability becomes active.
+
+Conceptually:
+
+```text
+VULNERABILITY
++
+RELEVANT PRESSURE
+↓
+RISK OF
+CONSEQUENCE.
+```
 
 ---
 
-# Resource Dependency
+# 32. Strength Is Conditional
 
-Regions should track major external dependencies.
+Likewise:
+
+```text
+Strong Agricultural Production
+```
+
+does not automatically guarantee food security.
+
+Agriculture may still depend on:
+
+- fuel
+- fertilizer
+- machinery
+- labor
+- water
+- transport
+- storage
+- electricity
+
+Strengths exist within dependency networks.
+
+---
+
+# 33. Regional Resource Context
+
+Regional State should preserve high-level resource context.
+
+Possible categories include:
+
+```text
+Food
+
+Water
+
+Energy
+
+Fuel
+
+Medicine
+
+Industrial Capacity
+
+Transportation Capacity
+
+Technical Capacity.
+```
+
+Detailed supply behavior belongs to:
+
+```text
+Supply_State.md.
+```
+
+Regional State primarily records structural availability and dependencies.
+
+---
+
+# 34. Resource Production
+
+A region may produce resources important to itself or others.
 
 Example:
 
 ```text
-Northern Virginia
+SHENANDOAH VALLEY
+
+Food Production:
+HIGH
+
+Fuel Production:
+LOW
+
+Electricity Production:
+MODERATE.
+```
+
+Production alone does not equal access.
+
+Resources must often be:
+
+```text
+PRODUCED
+↓
+STORED
+↓
+TRANSPORTED
+↓
+DISTRIBUTED
+↓
+ACCESSED.
+```
+
+---
+
+# 35. Resource Dependency
+
+Regions should identify major external dependencies.
+
+Example:
+
+```text
+NORTHERN VIRGINIA
 
 Food Dependency:
+HIGH
+
+Fuel Dependency:
 HIGH
 
 Electricity Dependency:
 MODERATE
 
-Fuel Dependency:
-HIGH
-
-Data Infrastructure:
-HIGHLY CONNECTED
+Data Connectivity Dependency:
+HIGH.
 ```
 
-Dependency influences vulnerability to external disruption.
+Dependency creates pathways through which external disruption may become local pressure.
 
 ---
 
-# Resource Independence
+# 36. Regional Self-Sufficiency Should Be Rare
 
-No region should automatically become fully self-sufficient after fragmentation.
+Project Ascension should resist the common post-collapse assumption that regions rapidly become self-sufficient.
 
-True regional independence is difficult.
-
-A region may produce food but require:
+A food-producing region may still depend on:
 
 - fuel
 - fertilizer
 - machinery
 - medicine
 - electronics
+- spare parts
+- specialist labor
+- financial systems
+- external markets
 
-Interdependence should remain important even during The Fractured World.
+Therefore:
+
+```text
+FRAGMENTATION
+DOES NOT
+REMOVE
+INTERDEPENDENCE.
+```
+
+It often makes interdependence more visible.
 
 ---
 
-# Regional Connections
+# 37. Regional Connections
 
-Connections describe relationships between regions.
+Regions interact through connections.
 
-Types may include:
+Possible connection types include:
 
 ```text
 Road
+
 Rail
+
 Power Grid
-Fuel Pipeline
-Water
+
+Pipeline
+
+Water System
+
 Trade Route
+
+Air Route
+
 Data Network
-Political Alliance
-Migration Route
+
+Communication Link
+
+Migration Route.
 ```
 
-Each connection may possess its own state.
+Political relationships or alliances may influence these connections but belong to their respective authoritative systems.
 
 ---
 
-# Connection State
+# 38. Connection State
+
+Physical or operational connections may possess state.
 
 Conceptually:
 
 ```text
-OPEN
+FUNCTIONAL
+
 STRAINED
+
 RESTRICTED
+
 DISRUPTED
-CLOSED
-UNKNOWN
+
+FAILED.
 ```
 
 Example:
 
 ```text
-Rail:
-Northern Virginia → Shenandoah Valley
+Rail Connection:
+
+Northern Virginia
+↔
+Shenandoah Valley
 
 State:
-STRAINED
+STRAINED.
 ```
+
+Observer uncertainty about the connection belongs to Information State.
+
+`UNKNOWN` is therefore normally an observer state, not authoritative physical state.
 
 ---
 
-# Connection Importance
+# 39. Connections May Be Asymmetric
 
-Connections may possess strategic importance.
+A connection does not always operate equally in both directions.
 
-Conceptually:
+Example:
 
 ```text
-LOW
-MODERATE
-HIGH
-CRITICAL
+ROAD CORRIDOR
+
+Northern Virginia
+→ Shenandoah Valley
+
+Civilian Access:
+RESTRICTED
+
+
+Shenandoah Valley
+→ Northern Virginia
+
+Emergency Supply Access:
+FUNCTIONAL.
 ```
 
-A single bridge or transmission line may be disproportionately important.
+Direction and access conditions may matter.
 
 ---
 
-# Flows
+# 40. Connection Importance
 
-Regional connections carry flows.
+Some connections are disproportionately important.
 
-Examples:
+Example:
 
 ```text
-Food Flow
-Fuel Flow
-Population Flow
-Power Flow
-Information Flow
-Trade Flow
-Military Flow
+ONE BRIDGE
 ```
 
-A connection may support multiple flows.
+may carry:
+
+```text
+60% of regional freight.
+```
+
+Its failure may therefore matter more than several minor roads failing simultaneously.
+
+Importance should derive from function and dependency.
+
+Not from arbitrary game weighting.
 
 ---
 
-# Flow Direction
+# 41. Regional Flows
+
+Connections carry flows.
+
+Possible flows include:
+
+```text
+Food
+
+Fuel
+
+Electricity
+
+Water
+
+Medicine
+
+Industrial Goods
+
+People
+
+Information
+
+Trade
+
+Emergency Support.
+```
+
+Flows create interdependence between regions.
+
+---
+
+# 42. Flow Direction
 
 Flows may be:
 
 ```text
 INBOUND
+
 OUTBOUND
-BIDIRECTIONAL
+
+BIDIRECTIONAL.
 ```
 
 Example:
 
 ```text
-Shenandoah Valley
-    │
-    └── FOOD → Northern Virginia
+SHENANDOAH VALLEY
+│
+└── FOOD
+    ↓
+NORTHERN VIRGINIA
 
-Northern Virginia
-    │
-    └── MEDICAL SERVICES → Shenandoah Valley
+
+NORTHERN VIRGINIA
+│
+└── SPECIALIZED MEDICAL SERVICES
+    ↓
+SHENANDOAH VALLEY.
 ```
 
-This creates interdependence.
+Neither region is simply stronger.
+
+They perform different functions.
 
 ---
 
-# Cascading Regional Effects
+# 43. Flow Capacity
 
-A regional disruption may affect neighbors.
+A connection may physically exist while flow capacity declines.
+
+Example:
+
+```text
+ROAD:
+
+FUNCTIONAL
+
+Fuel Availability:
+
+LOW
+
+Freight Capacity:
+
+30% NORMAL.
+```
+
+Therefore:
+
+```text
+CONNECTION EXISTS
+≠
+NORMAL FLOW EXISTS.
+```
+
+This distinction is essential to realistic systemic simulation.
+
+---
+
+# 44. Neighboring Regions
+
+Regions should explicitly identify meaningful neighbors.
+
+Example:
+
+```text
+NORTHERN VIRGINIA
+
+Neighbors:
+
+Washington Metropolitan Core
+
+Shenandoah Valley
+
+Central Virginia
+
+Western Maryland.
+```
+
+Neighbor relationships enable:
+
+- trade
+- migration
+- infrastructure sharing
+- information flow
+- assistance
+- conflict
+- cascading pressure
+- adaptation
+
+---
+
+# 45. Neighbor Influence
+
+A neighboring region may create:
+
+```text
+SUPPORT
+
+PRESSURE
+
+DEPENDENCY
+
+RISK
+
+OPPORTUNITY.
+```
+
+Example:
+
+```text
+REGION A
+
+Food:
+SURPLUS
+
+
+REGION B
+
+Food:
+CRITICAL.
+```
+
+This may create:
+
+```text
+Trade
+
+Aid
+
+Migration
+
+Political negotiation
+
+Smuggling
+
+Export restrictions
+
+Security pressure.
+```
+
+None are automatic.
+
+Actors and systems determine what actually happens.
+
+---
+
+# 46. Cascading Regional Effects
+
+A regional change may propagate through dependencies.
 
 Example:
 
@@ -974,603 +1498,1192 @@ REGION A
 
 Fuel:
 CRITICAL
-    │
-    ▼
-Transportation:
-DEGRADED
-    │
-    ▼
-Exports to REGION B:
-REDUCED
-    │
-    ▼
-REGION B Supply Pressure:
-INCREASES
+↓
+Transport Capacity:
+DECLINES
+↓
+Exports:
+DECLINE
+↓
+REGION B
+Supply Pressure:
+INCREASES.
 ```
 
 The effect may continue outward.
 
+But propagation must remain causal.
+
 ---
 
-# Cascades Should Decay
+# 47. Cascades Must Encounter Resistance
 
-Not every cascade should spread indefinitely.
+Cascades should not spread indefinitely simply because systems are connected.
 
-Factors that reduce propagation include:
+Propagation may be reduced by:
 
 - redundancy
-- alternate suppliers
+- alternative suppliers
 - stockpiles
 - low dependency
-- strong resilience
-- rapid adaptation
+- local production
+- substitution
+- strong institutions
+- rationing
+- adaptation
+- geographic alternatives
 
-This prevents every disruption from automatically becoming global.
+Conceptually:
+
+```text
+CASCADE
+↓
+MEETS
+RESILIENCE
++
+ALTERNATIVES
++
+ADAPTATION.
+```
 
 ---
 
-# Regional Adaptation
+# 48. Cascades May Transform
 
-Regions should be capable of changing how they operate.
+A pressure does not need to remain the same type as it moves.
 
-Examples include:
+Example:
 
-- local rationing
+```text
+REGION A
+Infrastructure Failure
+↓
+REGION B
+Supply Pressure
+↓
+REGION B
+Population Movement
+↓
+REGION C
+Housing Pressure.
+```
+
+This is a systemic cascade.
+
+Not simple state copying.
+
+---
+
+# 49. Regional Pressure Sources
+
+Regional pressure may originate externally or internally.
+
+External examples:
+
+```text
+Global trade disruption
+
+Neighbor instability
+
+Climate event
+
+Foreign conflict
+
+Migration
+
+National policy
+
+Supply disruption.
+```
+
+Internal examples:
+
+```text
+Infrastructure degradation
+
+Resource shortage
+
+Institutional conflict
+
+Population pressure
+
+Security incidents
+
+Workforce shortage
+
+Local disaster.
+```
+
+Pressure sources should remain traceable.
+
+---
+
+# 50. Regional Adaptation
+
+Regions may alter how essential functions are achieved.
+
+Examples:
+
 - decentralized energy
 - alternative transportation
 - community agriculture
 - local manufacturing
-- radio networks
-- regional currency
-- barter
+- regional radio
+- local distribution networks
+- rationing
 - mutual aid
-- new governance structures
+- new governance arrangements
+- substitute technologies
+- changed trade relationships
 
-Adaptation may improve resilience even if the old system is never restored.
+Adaptation is a major part of Project Ascension's world evolution.
 
 ---
 
-# Adaptation Versus Recovery
-
-These concepts should remain distinct.
-
-## Recovery
-
-Restore previous capability.
+# 51. Adaptation Is Not Restoration
 
 Example:
 
 ```text
-Repair the regional power grid.
+OLD GRID
+FAILS
+↓
+LOCAL MICROGRIDS
+EMERGE
+↓
+ELECTRICITY ACCESS
+RETURNS.
 ```
 
-## Adaptation
+The original system was not restored.
 
-Create a new method of fulfilling the need.
+Function was recovered through adaptation.
+
+Therefore:
+
+```text
+RECOVERY
+≠
+RESTORATION.
+```
+
+---
+
+# 52. Adaptation Creates New Dependencies
+
+Adaptation should not automatically remove vulnerability.
 
 Example:
 
 ```text
-Build distributed microgrids.
+DIESEL GENERATORS
+REPLACE GRID POWER
 ```
 
-Both may improve regional conditions.
+may solve electricity access temporarily while creating:
 
-Adaptation becomes increasingly important during The Fractured World.
+```text
+Fuel Dependency
 
----
+Maintenance Dependency
 
-# Regional Identity Over Time
+Spare-Part Dependency.
+```
 
-Long-term simulation should allow regions to develop distinctive identities.
+Adaptation changes the dependency network.
 
-These may emerge from:
-
-- historical experiences
-- resources
-- political structures
-- local culture
-- survival strategies
-- neighboring relationships
-
-A region may become known as:
-
-- trade-oriented
-- isolationist
-- militarized
-- cooperative
-- agricultural
-- technological
-- religious
-- authoritarian
-- decentralized
-
-These identities should emerge from history rather than be assigned randomly.
+It does not eliminate systems thinking.
 
 ---
 
-# Regional Memory
+# 53. Efficiency Versus Resilience
 
-Regions should maintain historical memory of significant events.
+Highly efficient systems may depend on:
+
+- centralization
+- specialization
+- just-in-time logistics
+- long supply chains
+- digital coordination
+
+More resilient systems may use:
+
+- redundancy
+- stockpiles
+- local production
+- spare capacity
+- multiple suppliers
+
+Therefore:
+
+```text
+EFFICIENCY
+≠
+RESILIENCE.
+```
+
+This tension is important to Project Ascension.
+
+---
+
+# 54. Regional Autonomy
+
+A region may become increasingly capable of operating without higher-level coordination.
 
 Examples:
 
 ```text
-- famine
-- occupation
-- successful mutual-aid effort
-- government abandonment
-- infrastructure restoration
-- violent conflict
-- major migration
-- outside assistance
+Local electricity
+
+Local food production
+
+Independent communications
+
+Local water systems
+
+Regional manufacturing
+
+Regional authority.
 ```
 
-These events may influence future behavior.
-
----
-
-# Regional Trust
-
-A region may develop trust or distrust toward:
-
-- national government
-- neighboring regions
-- specific factions
-- military forces
-- technology
-- outsiders
-
-This may become important within:
+But:
 
 ```text
-Relationships/
-Society/
-Living_Campaign_Engine/
+AUTONOMY
+≠
+SELF-SUFFICIENCY.
 ```
+
+A highly autonomous region may still depend on external medicine, technology, fuel or specialist components.
 
 ---
 
-# Regional Authority Structure
+# 55. Regional Fragmentation
 
-A region should identify its primary governing arrangement.
-
-Examples:
-
-```text
-Federal / State Government
-Regional Emergency Authority
-Military Administration
-Municipal Coalition
-Settlement Council
-Corporate Administration
-Faction Control
-Distributed Community Governance
-Contested Authority
-```
-
-The authority structure may change over time.
-
----
-
-# Authority Coverage
-
-Regional Authority may not control the entire region evenly.
-
-Conceptually:
-
-```text
-Authority Coverage:
-HIGH
-MODERATE
-LOW
-FRAGMENTED
-```
-
-A region may contain:
-
-- stable cities
-- contested rural areas
-- autonomous settlements
-- abandoned zones
-
----
-
-# Regional Security Distribution
-
-Security should also allow internal variation.
+Fragmentation may occur inside regions as well as between them.
 
 Example:
 
 ```text
-Regional Security:
-STABLE
+REGION
 
 Urban Core:
-Stable
+FUNCTIONAL
 
 Northern Corridor:
-Unstable
+CONTESTED
 
-Western Rural Zone:
-Low Authority / Low Violence
+Western Rural Area:
+LOCALLY AUTONOMOUS
+
+Industrial Zone:
+INFRASTRUCTURE FAILURE.
 ```
 
-High-resolution detail should only be used where gameplay requires it.
+Regional State should support this without immediately splitting every difference into a new region.
 
 ---
 
-# Regional Information Network
+# 56. When to Split a Region
 
-Regions should track how information moves internally.
+A region may require subdivision when internal differences become persistent and systemically significant.
 
-Possible structures:
+Possible signals include:
 
 ```text
-CENTRALIZED
-DISTRIBUTED
-FRAGMENTED
-LOCALIZED
+Different authority systems
+
+Persistent infrastructure separation
+
+Independent supply networks
+
+Long-term communication separation
+
+Distinct migration patterns
+
+Different security realities
+
+Stable political separation.
 ```
 
-Examples:
-
-**Centralized**
-
-Government and large media provide most trusted information.
-
-**Distributed**
-
-Multiple reliable local systems cooperate.
-
-**Fragmented**
-
-Different groups possess incompatible information environments.
-
-**Localized**
-
-Information rarely travels beyond immediate communities.
+A temporary local exception is not enough.
 
 ---
 
-# Regional Perception
+# 57. When Not to Split a Region
 
-Population perception may differ from simulation reality.
+Do not create a new region merely because:
+
+- one event occurred
+- one settlement differs
+- players arrived
+- a Story Thread needs a new location
+- additional map complexity feels interesting
+
+Regional boundaries should reflect persistent simulation reality.
+
+---
+
+# 58. Regional Systemic History
+
+Regions should preserve significant world history affecting their current conditions.
+
+This should be called:
+
+```text
+REGIONAL SYSTEMIC HISTORY
+```
+
+rather than Regional Memory.
+
+Regions do not remember in the human psychological sense.
+
+---
+
+# 59. Regional Systemic History Examples
+
+Possible entries include:
+
+```text
+2034-06
+
+First sustained infrastructure restrictions.
+
+
+2034-07
+
+Major outbound migration begins.
+
+
+2034-08
+
+Emergency coordination shifts
+from national to regional structures.
+```
+
+History may explain current:
+
+- dependencies
+- infrastructure
+- authority
+- population distribution
+- vulnerabilities
+- adaptation
+- trade
+- regional identity
+
+---
+
+# 60. Regional History Is Not Character Memory
 
 Example:
 
 ```text
-Actual Security:
-Stable
+REGIONAL SYSTEMIC HISTORY:
 
-Public Perception:
-Dangerous
+Regional blackout
+lasted eleven days.
+
+
+CHARACTER MEMORY:
+
+"My mother disappeared
+during the blackout."
 ```
 
-Possible consequence:
+These are different authoritative states.
+
+World Simulation owns the first.
+
+Human Memory owns the second.
+
+---
+
+# 61. Regional Identity May Emerge Through History
+
+Over time, regions may become socially or politically recognized in new ways.
+
+Examples might include perceptions of a region as:
 
 ```text
-Population movement
-Reduced commerce
-Increased defensive behavior
+Agricultural
+
+Trade-oriented
+
+Isolationist
+
+Technological
+
+Militarized
+
+Decentralized.
 ```
 
-Perception itself changes the region.
+But these should not be randomly assigned personality traits to geography.
 
----
-
-# Migration
-
-Regions may experience:
+They must emerge from:
 
 ```text
-INBOUND MIGRATION
-OUTBOUND MIGRATION
-TRANSIT MIGRATION
+HISTORY
++
+SOCIAL DEVELOPMENT
++
+INSTITUTIONS
++
+FACTIONS
++
+CULTURE
++
+MATERIAL CONDITIONS.
 ```
 
-Migration affects:
+Detailed social identity belongs primarily to Society and Culture.
 
-- population
-- supply
-- housing
-- workforce
-- security
-- politics
-- community relations
+Regional State preserves relevant external context.
 
 ---
 
-# Migration Pressure
+# 62. Regional Trust Does Not Belong to Regional State
 
-Migration should emerge from push and pull factors.
-
-Push factors:
-
-- insecurity
-- shortages
-- infrastructure failure
-- environmental pressure
-- political repression
-
-Pull factors:
-
-- stability
-- food
-- employment
-- family
-- security
-- functioning services
-
----
-
-# Migration Is Not Automatically Negative
-
-Incoming population may increase pressure.
-
-It may also increase:
-
-- workforce
-- technical skill
-- military capacity
-- agriculture
-- trade
-- cultural diversity
-
-Migration consequences depend upon regional capacity and social response.
-
----
-
-# Regional Economy
-
-Regional economic function may be represented abstractly.
-
-Possible states:
+Avoid:
 
 ```text
-GROWING
-FUNCTIONAL
-STRAINED
-CONTRACTING
-LOCALIZED
+REGION TRUSTS
+NATIONAL GOVERNMENT.
 ```
 
-A localized economy may still function through:
+A region is not a mind.
 
-- local currency
-- trade
-- barter
-- rationing
-- cooperative production
+Trust may exist through:
+
+```text
+Population patterns
+→ Society
+
+Individual trust
+→ Relationships / Character state
+
+Faction trust
+→ Factions
+
+Institutional relationships
+→ Authority / institutional systems.
+```
+
+Regional State may reference the consequences of these states.
+
+It does not own a universal regional Trust score.
 
 ---
 
-# Economic Specialization
+# 63. Regional Cohesion Does Not Mean Collective Mind
 
-Regions may possess economic specializations.
+A region may display broad patterns of cooperation or fragmentation.
 
-Examples:
+But:
+
+```text
+REGIONAL COHESION
+≠
+EVERYONE AGREES.
+```
+
+If a cohesion summary is used, it must derive from underlying social and institutional conditions.
+
+Detailed collective social state belongs primarily to:
+
+```text
+Society.
+```
+
+---
+
+# 64. Regional Economy
+
+Economic conditions matter greatly.
+
+However, Regional State should not silently become an entire economic simulation.
+
+Regional State may preserve high-level context such as:
+
+```text
+Major Production
+
+Trade Dependency
+
+Employment Structure
+
+Industrial Capacity
+
+Market Access
+
+Economic Specialization.
+```
+
+Detailed economic systems may be introduced later only if needed.
+
+---
+
+# 65. Economic Specialization
+
+Examples include:
 
 ```text
 Agriculture
+
 Manufacturing
+
 Technology
+
 Energy
-Trade
+
 Mining
+
 Transportation
+
 Finance
-Healthcare
+
+Healthcare.
 ```
 
-Specialization creates both strength and dependency.
-
----
-
-# Regional Technology Level
-
-Technology availability may vary significantly.
-
-A region may possess:
+Specialization may create both:
 
 ```text
-Advanced AI infrastructure
-Modern digital infrastructure
-Legacy digital systems
-Hybrid systems
-Low-tech systems
+STRENGTH
 ```
 
-This becomes increasingly important after The Collapse.
+and:
 
----
-
-# Technology Dependency
-
-Regions should track not only technology level but dependency.
+```text
+DEPENDENCY.
+```
 
 Example:
 
 ```text
-Technology Level:
-HIGH
+HIGH AGRICULTURAL OUTPUT
 
-Technology Dependency:
-HIGH
+BUT
+
+HIGH FUEL DEPENDENCY.
 ```
 
-This may create greater vulnerability during systemic disruption.
+---
+
+# 66. Technology Context
+
+Regions may differ significantly in available technology and technological dependency.
+
+Possible context includes:
+
+```text
+Advanced AI infrastructure
+
+Modern digital infrastructure
+
+Legacy digital systems
+
+Hybrid systems
+
+Low-tech fallback capability.
+```
+
+Technology should not be represented through one universal Technology Level if doing so hides meaningful differences.
+
+---
+
+# 67. Technology Dependency
+
+A technologically advanced region may also be highly vulnerable.
+
+Example:
+
+```text
+Digital Capability:
+VERY HIGH
+
+Digital Dependency:
+VERY HIGH
+
+Fallback Capability:
+LOW.
+```
 
 Another region may have:
 
 ```text
-Technology Level:
+Digital Capability:
 MODERATE
 
-Technology Dependency:
+Digital Dependency:
 LOW
+
+Fallback Capability:
+HIGH.
 ```
 
-and prove more resilient.
+The second may prove more resilient during certain disruptions.
 
 ---
 
-# Local Autonomy
+# 68. Authority Distribution
 
-Regional resilience may increase when essential systems can operate independently.
-
-Examples:
-
-- microgrids
-- local food production
-- independent radio
-- local water
-- local manufacturing
-
-However, autonomy may reduce broader efficiency.
-
-This mirrors a fundamental Project Ascension theme:
-
-**Efficiency and resilience are not always the same thing.**
-
----
-
-# Regional Cohesion
-
-Cohesion represents the degree to which communities inside the region cooperate.
-
-Possible conceptual states:
-
-```text
-HIGH
-FUNCTIONAL
-STRAINED
-FRAGMENTED
-HOSTILE
-```
-
-Cohesion may be influenced by:
-
-- trust
-- shared identity
-- resource distribution
-- leadership
-- inequality
-- external threats
-- historical grievances
-
----
-
-# Internal Inequality
-
-A region may contain very unequal local conditions.
+Authority may vary significantly inside a region.
 
 Example:
 
 ```text
-Regional Supply:
-STRAINED
+REGIONAL AUTHORITY:
 
-Urban Core:
-ADEQUATE
+FUNCTIONAL
 
-Outer Districts:
-CRITICAL
+
+URBAN CORE:
+
+Strong municipal authority
+
+
+RURAL WEST:
+
+Limited state presence
+
+
+NORTHERN CORRIDOR:
+
+Contested.
 ```
 
-Regional averages must not erase meaningful internal inequality.
+Detailed authority logic belongs to:
 
-Where relevant, the simulation should store exceptions.
+```text
+Authority_State.md.
+```
+
+Regional State provides geographic distribution.
 
 ---
 
-# Regional Exceptions
+# 69. Security Distribution
 
-A Region may contain local exceptions to its dominant state.
+Security may also vary internally.
+
+Example:
+
+```text
+REGIONAL SECURITY:
+
+STABLE
+
+
+CITY CENTER:
+
+Stable
+
+
+NORTHERN CORRIDOR:
+
+Unstable
+
+
+WESTERN RURAL AREA:
+
+Low Authority
+Low Violence.
+```
+
+Low authority does not automatically mean high violence.
+
+High authority does not automatically mean safety.
+
+---
+
+# 70. Information Distribution
+
+Information conditions may differ inside a region.
+
+Example:
+
+```text
+URBAN CORE:
+
+High connectivity
+
+High misinformation pressure
+
+
+RURAL AREA:
+
+Low connectivity
+
+Strong local information networks.
+```
+
+Detailed information reliability, propagation, observation and perception belong to:
+
+```text
+Information_State.md.
+```
+
+---
+
+# 71. Actual State Versus Observed State
+
+Regional State stores authoritative regional truth.
+
+Example:
+
+```text
+ACTUAL SECURITY:
+
+STABLE.
+```
+
+Characters or institutions may believe:
+
+```text
+SECURITY:
+
+DANGEROUS.
+```
+
+Both may coexist.
+
+Therefore:
+
+```text
+REGIONAL TRUTH
+≠
+REGIONAL PERCEPTION.
+```
+
+---
+
+# 72. Unknown State Belongs to Observers
+
+Avoid authoritative Regional State values such as:
+
+```text
+Security:
+UNKNOWN.
+```
+
+if the simulation itself knows the physical condition.
+
+Instead:
+
+```text
+ACTUAL SECURITY:
+
+STABLE
+
+
+PLAYER KNOWLEDGE:
+
+UNCONFIRMED
+
+
+LAST RELIABLE REPORT:
+
+19 DAYS AGO.
+```
+
+Observation state belongs to Information and observer systems.
+
+---
+
+# 73. Migration
+
+Migration is an important cross-regional process.
+
+Possible patterns include:
+
+```text
+INBOUND
+
+OUTBOUND
+
+TRANSIT
+
+CIRCULAR
+
+SEASONAL
+
+DISPLACEMENT.
+```
+
+Detailed population effects belong to:
+
+```text
+Population_State.md.
+```
+
+Regional State provides:
+
+- origin
+- destination
+- geographic routes
+- regional pressures
+- capacity context
+
+---
+
+# 74. Migration Pressure
+
+Migration may emerge from push and pull conditions.
+
+Push examples:
+
+```text
+Insecurity
+
+Shortages
+
+Infrastructure failure
+
+Environmental pressure
+
+Political repression
+
+Loss of employment.
+```
+
+Pull examples:
+
+```text
+Security
+
+Food
+
+Employment
+
+Family
+
+Services
+
+Housing
+
+Political stability.
+```
+
+But migration remains human behavior.
+
+It must not become a mechanical equation that determines individual choices.
+
+---
+
+# 75. Migration Is Not Automatically Negative
+
+Incoming populations may increase:
+
+```text
+Housing Pressure
+
+Supply Demand
+
+Service Demand.
+```
+
+They may also increase:
+
+```text
+Workforce
+
+Technical Expertise
+
+Agricultural Labor
+
+Trade
+
+Entrepreneurship
+
+Social Networks
+
+Institutional Capacity.
+```
+
+Consequences depend on context.
+
+---
+
+# 76. Regional Summary State
+
+A descriptive regional summary may sometimes be useful.
+
+Example:
+
+```text
+REGIONAL CONDITION:
+
+STRAINED.
+```
+
+But it must never become the authoritative driver of underlying domains.
 
 Conceptually:
 
 ```text
-Region:
-Infrastructure = Degraded
-
-Exceptions:
-- Settlement A = Stable
-- Industrial Zone = Critical
+DOMAIN STATES
+↓
+REGIONAL SUMMARY.
 ```
 
-This supports "disconnected realities" inside regions as well as between them.
-
----
-
-# Regional Pressure Sources
-
-Common sources include:
+Never:
 
 ```text
-External:
-- global trade
-- neighboring instability
-- climate
-- war
-- migration
-
-Internal:
-- infrastructure
-- political conflict
-- shortages
-- crime
-- public fear
-- workforce loss
+REGIONAL SUMMARY
+↓
+FORCES
+ALL DOMAIN STATES.
 ```
-
-Pressure sources should be visible to the simulation.
 
 ---
 
-# Regional Recovery Sources
+# 77. No Universal Regional Health Score
 
-Common recovery sources include:
+Avoid:
 
 ```text
-- skilled personnel
-- external aid
-- functioning transport
-- local resources
-- strong institutions
-- community cooperation
-- restored infrastructure
-- technological substitution
+Regional Health:
+63%
+
+Regional Stability:
+7/10
+
+Collapse:
+74%.
 ```
+
+Such scores create false precision and flatten systemic differences.
+
+Regional reality should emerge from its underlying domains and relationships.
 
 ---
 
-# Regional Stability
+# 78. Regional State and Time
 
-Regional Stability may be used as a descriptive summary.
-
-However, it should not replace individual domains.
-
-Conceptual values:
-
-```text
-STABLE
-STRAINED
-UNSTABLE
-FRAGMENTED
-CRITICAL
-```
-
-A Regional Stability summary should be derived from underlying conditions.
-
-It should not drive them.
-
----
-
-# Example Regional Profile
+Regional State exists at simulation time:
 
 ```text
 REGIONAL STATE
+AT TIME T.
+```
+
+Different regional systems change at different rates.
+
+Example:
+
+```text
+Security incident:
+Hours
+
+Supply pressure:
+Days
+
+Migration:
+Days / weeks
+
+Infrastructure degradation:
+Weeks / months
+
+Authority transformation:
+Weeks / years.
+```
+
+No universal regional update frequency is required.
+
+---
+
+# 79. Adaptive Regional Resolution
+
+Regional simulation operates at adaptive resolution.
+
+Conceptually:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH.
+```
+
+Resolution determines how much detail is explicitly represented.
+
+It does not determine whether the region exists or changes.
+
+---
+
+# 80. Low Resolution
+
+Low-resolution regional simulation may preserve:
+
+```text
+Core Domain States
+
+Major Pressures
+
+Major Dependencies
+
+Trend
+
+Significant Events
+
+Systemic History
+
+Major Flows.
+```
+
+The region continues evolving.
+
+---
+
+# 81. Medium Resolution
+
+Medium resolution may additionally represent:
+
+```text
+Important Connections
+
+Flow Changes
+
+Active Regional Events
+
+Significant Local Exceptions
+
+Cross-Domain Effects
+
+Major Actor Influence.
+```
+
+---
+
+# 82. High Resolution
+
+High resolution may represent:
+
+```text
+Local Conditions
+
+Specific Settlements
+
+Detailed Connections
+
+Active Infrastructure
+
+Immediate Security Conditions
+
+Detailed Information Flows
+
+Specific World Events.
+```
+
+High resolution is appropriate where causal activity requires it.
+
+Not merely because players are nearby.
+
+---
+
+# 83. Resolution Should Follow Causal Relevance
+
+Player location is one reason for increased resolution.
+
+It is not the only reason.
+
+A distant region may require high resolution because:
+
+```text
+Major war
+
+Critical infrastructure failure
+
+National food production
+
+Aurora activity
+
+Large migration cascade
+
+Major political transition.
+```
+
+Therefore:
+
+```text
+RESOLUTION
+FOLLOWS
+CAUSAL RELEVANCE
+
+NOT ONLY
+PLAYER PROXIMITY.
+```
+
+---
+
+# 84. Region Expansion
+
+When a low-resolution region requires additional detail:
+
+```text
+ESTABLISHED STATE
++
+ESTABLISHED HISTORY
++
+GEOGRAPHY
++
+DEPENDENCIES
++
+PAST EVENTS
+↓
+HIGHER-RESOLUTION DETAIL.
+```
+
+The simulation may derive previously unrepresented detail.
+
+It must not rewrite established history.
+
+---
+
+# 85. No Convenient Backfill
+
+Avoid:
+
+```text
+PLAYER ARRIVES
+
+THEREFORE
+
+SIMULATION INVENTS
+WHATEVER LOCAL HISTORY
+THE STORY NEEDS.
+```
+
+Prefer:
+
+```text
+PLAYER ARRIVES
+
+EXISTING REGIONAL HISTORY
++
+CURRENT STATE
++
+CAUSAL CONDITIONS
+↓
+LOCAL DETAIL
+IS RESOLVED.
+```
+
+---
+
+# 86. Regional State Snapshot
+
+A Regional State Snapshot may represent authoritative regional conditions at a specific time.
+
+Example:
+
+```text
+REGIONAL STATE SNAPSHOT
+
+Simulation Time:
+2034-07-10
 
 Region:
 Northern Virginia
@@ -1578,754 +2691,1289 @@ Northern Virginia
 Region ID:
 REG-US-NOVA
 
-Parent Nation:
+Historical Parent Nation:
 United States
 
 Historical Era:
 WS-02 — The Transition
 
-Strategic Weight:
-HIGH
 
-Population Density:
-VERY HIGH
+GEOGRAPHIC CONTEXT
 
-Population Trend:
-DECLINING
-
-Geography:
+Type:
 Metropolitan Corridor
 
+Population Density:
+Very High
 
-DOMAINS
+
+CORE DOMAINS
 
 Infrastructure:
-    State: Degraded
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-    Confidence: High
-
-Communications:
-    State: Functional
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-    Confidence: High
-
-Authority:
-    State: Functional
-    Pressure: Moderate
-    Resilience: High
-    Trend: Stable
-    Confidence: High
-
-Information:
-    State: Unstable
-    Pressure: High
-    Resilience: Low
-    Trend: Deteriorating
-    Confidence: Moderate
-
-Population:
-    State: Concerned
-    Pressure: High
-    Resilience: Moderate
-    Trend: Volatile
-    Confidence: Moderate
+DEGRADED
 
 Supply:
-    State: Constrained
-    Pressure: High
-    Resilience: Moderate
-    Trend: Deteriorating
-    Confidence: High
-
-Security:
-    State: Stable
-    Pressure: Moderate
-    Resilience: High
-    Trend: Stable
-    Confidence: High
-
-Recovery:
-    State: Moderate
-    Pressure: High
-    Resilience: Moderate
-    Trend: Stable
-    Confidence: Moderate
-```
-
----
-
-# Example Resource Profile
-
-```text
-RESOURCE PROFILE
-
-Food:
-STRAINED
-
-Water:
-ADEQUATE
-
-Electricity:
-DEGRADED
-
-Fuel:
 CONSTRAINED
 
-Medicine:
-ADEQUATE
+Security:
+STABLE
 
-Industrial Capacity:
-LIMITED
+Authority:
+FUNCTIONAL
 
-Transportation:
+Information:
+UNSTABLE
+
+Population:
+UNDER PRESSURE
+
+
+MAJOR DEPENDENCIES
+
+Food:
+External
+
+Fuel:
+External
+
+Data Connectivity:
+High
+
+
+MAJOR STRENGTHS
+
+Technical Workforce
+
+Healthcare Capacity
+
+Emergency Institutions
+
+
+MAJOR VULNERABILITIES
+
+Population Density
+
+Food Dependency
+
+Fuel Dependency
+
+Transport Congestion.
+```
+
+This is conceptual architecture.
+
+Not a required technical serialization format.
+
+---
+
+# 87. Regional Connections Example
+
+```text
+NORTHERN VIRGINIA
+
+
+SHENANDOAH VALLEY
+
+Road:
+STRAINED
+
+Food Flow:
+INBOUND
+
+Population Flow:
+OUTBOUND
+
+
+WASHINGTON METROPOLITAN CORE
+
+Road:
 DEGRADED
 
-Technical Capacity:
-HIGH
+Data Connection:
+FUNCTIONAL
+
+Institutional Coordination:
+ACTIVE
+
+
+CENTRAL VIRGINIA
+
+Rail:
+RESTRICTED
+
+Fuel Flow:
+REDUCED.
 ```
+
+The important principle is that neighboring relationships are explicit and causal.
 
 ---
 
-# Example Vulnerabilities
+# 88. Regional Systemic History Example
 
 ```text
-VULNERABILITIES
-
-- high population density
-- heavy dependence on regional transport
-- limited local food production
-- high technology dependency
-- proximity to national government infrastructure
-```
-
----
-
-# Example Strengths
-
-```text
-STRENGTHS
-
-- high technical expertise
-- strong healthcare capacity
-- functioning regional authority
-- extensive communications infrastructure
-- significant emergency-response capability
-```
-
----
-
-# Example Connections
-
-```text
-CONNECTIONS
-
-Shenandoah Valley
-    Road: Strained
-    Food Flow: Inbound
-    Population Flow: Outbound
-
-Washington Metropolitan Core
-    Road: Degraded
-    Data: Functional
-    Government Coordination: High
-
-Central Virginia
-    Rail: Restricted
-    Fuel Flow: Reduced
-```
-
----
-
-# Example Regional Memory
-
-```text
-REGIONAL MEMORY
+REGIONAL SYSTEMIC HISTORY
 
 2034-06
-First sustained infrastructure restrictions.
+
+Sustained infrastructure restrictions begin.
+
 
 2034-07
-Significant outbound population movement.
+
+Outbound migration increases significantly.
+
 
 2034-08
-Emergency coordination becomes increasingly regional.
+
+Emergency coordination becomes
+increasingly regional.
+
+
+2034-09
+
+Local logistics network established
+between Northern Virginia
+and Shenandoah Valley.
 ```
+
+This history may influence future simulation.
 
 ---
 
-# Regional Update Cycle
+# 89. Regional Change Process
 
-A regional simulation update may follow:
+Regional change should be understood as a causal network rather than a rigid universal update loop.
+
+Conceptually:
 
 ```text
-1. Read current Regional State.
-2. Apply global pressures.
-3. Apply national pressures.
-4. Process neighboring-region effects.
-5. Process resource flows.
-6. Process infrastructure dependencies.
-7. Process authority response.
-8. Process population response.
-9. Apply local events.
-10. Apply player effects.
-11. Process resilience.
-12. Process recovery.
-13. Calculate domain transitions.
-14. Update regional flows.
-15. Generate significant events.
-16. Update regional memory.
+CURRENT REGIONAL STATE
+        ↓
+GLOBAL PRESSURES
++
+NATIONAL PRESSURES
++
+NEIGHBOR EFFECTS
++
+REGIONAL EVENTS
++
+ACTOR ACTIONS
++
+RESOURCE FLOWS
++
+DEPENDENCIES
++
+TIME
+        ↓
+DOMAIN-SPECIFIC
+PRESSURE
+        ↓
+RESILIENCE
++
+VULNERABILITY
++
+RECOVERY CAPACITY
++
+ADAPTATION
+        ↓
+POSSIBLE
+DOMAIN CHANGE
+        ↓
+CROSS-DOMAIN
+CONSEQUENCES
+        ↓
+UPDATED
+REGIONAL STATE
+        ↓
+SYSTEMIC HISTORY.
 ```
 
-The exact technical implementation may change.
-
-The causal logic should remain understandable.
+The order may vary depending on causal relationships.
 
 ---
 
-# Regional Event Generation
+# 90. No Universal Regional Update Sequence
 
-Events should emerge from conditions.
+Avoid rigid architecture such as:
+
+```text
+1. Update Supply
+2. Update Security
+3. Update Authority
+4. Update Population.
+```
+
+Real causal sequences may differ.
+
+Example:
+
+```text
+AUTHORITY DECISION
+↓
+FUEL RATIONING
+↓
+TRANSPORT CHANGE
+↓
+SUPPLY CHANGE
+↓
+POPULATION RESPONSE.
+```
+
+Another event may begin with infrastructure.
+
+The simulation should follow causality.
+
+---
+
+# 91. Regional Events
+
+Regional events should emerge from:
+
+```text
+CURRENT CONDITIONS
++
+ACTOR ACTIONS
++
+EXTERNAL EVENTS
++
+SYSTEM INTERACTIONS.
+```
 
 Example:
 
 ```text
 Supply:
 CONSTRAINED
-
-Population Pressure:
-HIGH
 
 Authority:
 FUNCTIONAL
 
 Information:
 RELIABLE
+↓
+POSSIBLE RESPONSE:
+
+Regional rationing program.
 ```
 
-Possible event:
+This is a plausible possibility.
+
+It is not an automatic event.
+
+---
+
+# 92. World Simulation Does Not Generate Story Events
+
+Avoid thinking:
 
 ```text
-Regional rationing program
+REGION NEEDS
+AN INTERESTING EVENT.
 ```
 
-Alternative conditions:
+Instead:
 
 ```text
-Supply:
-CONSTRAINED
+REGIONAL CONDITIONS
+CREATE
+POSSIBLE CONSEQUENCES.
+```
+
+Actors then act.
+
+World Simulation resolves what happens.
+
+Story Framework determines whether the resulting event becomes narratively relevant.
+
+---
+
+# 93. Positive Development
+
+World Simulation must support construction and improvement as naturally as deterioration.
+
+Possible developments include:
+
+```text
+Trade agreement
+
+Infrastructure restoration
+
+New transport route
+
+Mutual-aid network
+
+Successful harvest
+
+Institutional reform
+
+Energy adaptation
+
+Regional cooperation.
+```
+
+The world is not a machine designed only to generate crises.
+
+---
+
+# 94. Local-to-Regional Consequences
+
+Local actions may affect Regional State when their scale justifies it.
+
+Example:
+
+```text
+LOCAL ACTION:
+
+Restore water treatment plant.
+
+
+LOCAL CONSEQUENCE:
+
+Water access improves.
+
+
+REGIONAL CONSEQUENCE:
 
 Population Pressure:
-HIGH
+Slightly Reduced
 
-Authority:
-WEAK
-
-Information:
-UNSTABLE
+Recovery Capacity:
+Improved.
 ```
 
-Possible events:
-
-```text
-Panic purchasing
-Black market growth
-Localized shortages
-Population movement
-```
-
-The same supply state creates different narratives.
+A small local action should rarely transform an entire region instantly.
 
 ---
 
-# Regional Opportunity Generation
+# 95. Regional-to-World Consequences
 
-World Simulation should generate positive opportunities as well.
+Strategically important regional changes may influence larger systems.
 
 Example:
 
 ```text
-Supply:
-CONSTRAINED
+GREAT PLAINS
 
-Recovery:
-HIGH
-
-Neighboring Region:
-Food Surplus
-```
-
-Possible events:
-
-```text
-New trade agreement
-Convoy mission
-Rail restoration project
-Regional alliance
-```
-
-World Simulation should produce opportunities to build, not only problems to survive.
-
----
-
-# Player Interaction
-
-Player actions may affect regional states through:
-
-- infrastructure repair
-- diplomacy
-- information
-- trade
-- security
-- community support
-- leadership
-- technology
-- migration decisions
-
-Player impact should scale with action.
-
-A small action should rarely transform an entire region immediately.
-
----
-
-# Local-to-Regional Impact
-
-Example:
-
-```text
-PLAYER ACTION:
-Restore local water treatment plant.
-
-Local Impact:
-Water = Stable
-
-Regional Impact:
-Minor increase in Recovery Capacity
-Reduced Population Pressure
-```
-
-A sufficiently important local system may create larger effects.
-
----
-
-# Regional-to-World Impact
-
-Strategically important regions may influence wider conditions.
-
-Example:
-
-```text
-Region:
-Great Plains
-
-Food Production:
-Critical national importance
-
-Regional Failure:
+Major Food Production
 ↓
-National Supply Pressure increases
+Regional Agricultural Failure
 ↓
-Neighboring Regional Supply Pressure increases
+National Supply Pressure
+↓
+Neighboring Regional Pressure
+↓
+Trade Reconfiguration
+↓
+Migration Pressure.
 ```
 
-This creates meaningful systemic geography.
+This creates systemic geography.
 
 ---
 
-# Simulation Resolution
+# 96. Actor Influence
 
-Regional simulation detail should depend upon relevance.
-
-## High Resolution
-
-Used for:
-
-- player region
-- campaign-critical regions
-- active conflicts
-- major events
-
-Tracks:
-
-- detailed domains
-- flows
-- local exceptions
-- active events
-
-## Medium Resolution
-
-Used for nearby or strategically relevant regions.
-
-Tracks:
-
-- domain states
-- major pressures
-- flows
-- significant events
-
-## Low Resolution
-
-Used for distant regions.
-
-Tracks:
-
-- broad state
-- trend
-- pressure
-- major memory
-
----
-
-# Region Activation
-
-When a low-resolution region becomes campaign-relevant, the simulation may generate additional detail based upon its accumulated history.
-
-The new detail must remain consistent with:
-
-- prior state
-- pressures
-- memory
-- neighboring effects
-
-The system should not rewrite its past merely because the player arrives.
-
----
-
-# Unknown Regional State
-
-Player knowledge may be incomplete.
-
-Example:
+Regional State may be changed through actions by:
 
 ```text
-REGION:
-Western Pennsylvania
+Characters
 
-Actual State:
-Stored internally
+Communities
 
-Known State:
+Factions
 
-Infrastructure:
-Unknown
+Institutions
 
-Authority:
-Unconfirmed
+Governments
 
-Security:
-Estimated Stable
+Companies
 
-Last Contact:
-19 days ago
+Military organizations
+
+Aurora
+
+Other AI systems.
 ```
 
-This supports exploration and uncertainty.
+World Simulation owns the external consequences.
+
+The originating Actor system owns the decision.
 
 ---
 
-# Regional Discovery
+# 97. Player Influence
 
-Players may improve regional knowledge through:
+Player Characters obey the same causal logic as other Actors.
 
+Conceptually:
+
+```text
+PLAYER ACTION
++
+CAPABILITY
++
+ACCESS
++
+RESOURCES
++
+TIME
++
+WORLD CONDITIONS
+↓
+WORLD CONSEQUENCE.
+```
+
+Player status alone provides no special regional influence.
+
+---
+
+# 98. Regional State and World State
+
+`World_State.md` owns:
+
+```text
+Authoritative high-level
+external world truth
+
+Global conditions
+
+National context
+
+Regional references
+
+Cross-regional systemic context
+
+World systemic history.
+```
+
+`Regional_State.md` owns:
+
+```text
+Regional geographic simulation context
+
+Regional domain coordination
+
+Regional dependencies
+
+Regional connections
+
+Regional flows
+
+Regional strengths
+
+Regional vulnerabilities
+
+Regional internal exceptions
+
+Regional systemic history
+
+Regional simulation resolution.
+```
+
+---
+
+# 99. Regional State and Infrastructure
+
+`Infrastructure_State.md` owns detailed infrastructure state and behavior.
+
+Regional State provides:
+
+```text
+WHERE
+THE INFRASTRUCTURE EXISTS
+
+WHAT REGION
+DEPENDS ON IT
+
+WHAT OTHER REGIONS
+IT CONNECTS.
+```
+
+Regional State must not duplicate infrastructure mechanics.
+
+---
+
+# 100. Regional State and Supply
+
+`Supply_State.md` owns detailed supply conditions and supply-system behavior.
+
+Regional State provides:
+
+```text
+Production context
+
+Regional demand context
+
+Resource dependencies
+
+Connections
+
+Flows
+
+Geographic constraints.
+```
+
+---
+
+# 101. Regional State and Security
+
+`Security_State.md` owns detailed security conditions.
+
+Regional State provides:
+
+```text
+Geographic distribution
+
+Regional context
+
+Neighbor effects
+
+Critical locations
+
+Connection context.
+```
+
+---
+
+# 102. Regional State and Authority
+
+`Authority_State.md` owns governing capacity, authority and institutional control.
+
+Regional State provides:
+
+```text
+Geographic coverage
+
+Historical national context
+
+Regional boundaries
+
+Local exceptions
+
+Neighbor context.
+```
+
+---
+
+# 103. Regional State and Information
+
+`Information_State.md` owns:
+
+```text
+Information availability
+
+Reliability
+
+Propagation
+
+Rumor
+
+Verification
+
+Observation
+
+Information asymmetry.
+```
+
+Regional State provides the geography and connectivity through which information moves.
+
+---
+
+# 104. Regional State and Population
+
+`Population_State.md` owns broad population dynamics.
+
+Regional State provides:
+
+```text
+Geography
+
+Population distribution
+
+Infrastructure context
+
+Supply context
+
+Migration connections
+
+Environmental conditions.
+```
+
+---
+
+# 105. Regional State and Society
+
+Society owns collective social conditions such as:
+
+- cohesion
+- social norms
+- collective trust
+- polarization
+- community organization
+
+Regional State provides the external geographic and material environment.
+
+Therefore:
+
+```text
+REGION
+≠
+SOCIETY.
+```
+
+Multiple social realities may exist inside one region.
+
+---
+
+# 106. Regional State and Factions
+
+Factions may operate across:
+
+- one settlement
+- one region
+- several regions
+- national territory
+
+Regional State should not absorb Faction identity or agency.
+
+Instead:
+
+```text
+FACTION
+ACTS
+
+WORLD SIMULATION
+RESOLVES
+
+REGIONAL STATE
+CHANGES.
+```
+
+---
+
+# 107. Regional State and Characters
+
+Characters exist inside regional conditions.
+
+Regional State may influence:
+
+- available infrastructure
+- supply access
 - travel
-- radio
-- trade
-- reconnaissance
-- faction contacts
-- recovered records
-- satellite data
-- direct observation
+- information access
+- physical security
+- institutional access
 
-Knowledge becomes a gameplay resource.
+But Regional State does not own:
 
----
-
-# Relationship to World State
-
-`World_State.md` defines:
-
-- hierarchy
-- global pressures
-- state structure
-- knowledge layers
-- historical memory
-
-`Regional_State.md` defines:
-
-- how individual regions actually exist inside that structure
-- how they differ
-- how they influence one another
-- how regional states produce gameplay
+- Character beliefs
+- Character psychology
+- Character goals
+- Character decisions
+- Character memory
 
 ---
 
-# Relationship to Infrastructure State
+# 108. Regional State and Life
 
-`Infrastructure_State.md` will define detailed infrastructure behavior.
+Regional conditions become part of human life history through exposure.
 
-Regional State should reference those values rather than duplicate infrastructure logic.
+Example:
 
----
+```text
+REGIONAL EVENT:
 
-# Relationship to Information State
+Three-month fuel crisis.
+```
 
-`Information_State.md` will define:
+may become:
 
-- information reliability
-- rumor
-- knowledge
-- verification
-- perception
+```text
+LIFE EVENT:
 
-Regional State provides the geographic container for those systems.
+Character loses employment
+after transport network collapse.
+```
 
----
+World Simulation owns the external event.
 
-# Relationship to Authority State
-
-`Authority_State.md` will define how institutional control and legitimacy operate.
-
-Regional State identifies which authority structures exist where.
+Life owns the individual's biographical consequence.
 
 ---
 
-# Relationship to Population State
+# 109. Regional State and Escalation / Recovery
 
-`Population_State.md` will define broad population behavior.
+`Escalation_and_Recovery.md` defines how:
 
-Regional State supplies:
+```text
+Pressure
 
-- local conditions
-- pressures
-- resources
+Resilience
+
+Vulnerability
+
+Recovery Capacity
+
+Adaptation
+
+Cascades
+
+Time
+```
+
+may produce domain transitions.
+
+Regional State stores and coordinates the regional context in which these processes occur.
+
+---
+
+# 110. Regional State and Narrative
+
+Regional State does not create drama.
+
+It creates reality.
+
+Conceptually:
+
+```text
+REGIONAL CONDITIONS
+↓
+EVENTS
++
+ACTOR ACTION
+↓
+CONSEQUENCES
+↓
+STORY FRAMEWORK
+IDENTIFIES
+NARRATIVE RELEVANCE.
+```
+
+Never reverse this relationship.
+
+---
+
+# 111. Regional State and Aurora
+
+Aurora may affect regions through:
+
 - information
+- infrastructure
+- technology
+- institutions
+- communication
+- indirect Actor influence
+- strategic intervention
 
-that influence population response.
+But Aurora does not own Regional State.
 
----
+Nor does Aurora automatically know everything about every region.
 
-# Relationship to Escalation and Recovery
-
-`Escalation_and_Recovery.md` will define how:
-
-- pressure
-- resilience
-- cascades
-- recovery
-
-cause regional domain changes.
-
-Regional State stores the values used by those processes.
+Aurora remains an Actor interacting with World Truth.
 
 ---
 
-# Regional State Minimum Data
+# 112. Regional Persistence
 
-A minimum viable Regional State should contain:
+Regional State must persist through:
+
+- player absence
+- travel
+- session boundaries
+- Story Thread changes
+- time advancement
+- changes in simulation resolution
+
+A region continues existing when nobody is watching.
+
+---
+
+# 113. Minimum Regional State
+
+A minimal viable Regional State should contain:
 
 ```text
 Region ID
-Name
-Parent Nation
-Historical Era
 
-Strategic Weight
-Population Density
-Population Trend
+Name
+
+Historical Parent Nation
+
+Historical Era Reference
+
+Geographic Context
+
+Major Settlements
+
+Neighboring Regions
+
+Strategic Functions
+
+
+CORE DOMAIN REFERENCES
 
 Infrastructure
-Communications
-Authority
-Information
-Population
+
 Supply
+
 Security
-Recovery
 
-For each domain:
-    State
-    Pressure
-    Resilience
-    Trend
-    Confidence
+Authority
 
-Resource Profile
-Major Dependencies
+Information
+
+Population
+
+
+STRUCTURAL CONTEXT
+
 Major Strengths
+
 Major Vulnerabilities
-Neighboring Regions
+
+Major Resource Dependencies
+
 Major Connections
-Historical Memory
+
+Major Flows
+
+Relevant Local Exceptions
+
+Regional Systemic History.
 ```
 
-Everything else should justify its complexity.
+Everything beyond this should justify its complexity.
 
 ---
 
-# Design Principles
+# 114. Regional State Invariants
 
-The Regional State system follows these rules.
+## RS-INV-001 — Regions Are Operational Simulation Units
 
-## Rule 1
-
-Regions exposed to identical pressures may produce different outcomes.
+Regions are the primary geographic level for large-scale World Simulation.
 
 ---
 
-## Rule 2
+## RS-INV-002 — Regions Are Not Smaller Nations
 
-Geography and infrastructure matter.
-
----
-
-## Rule 3
-
-Resources must be able to move between regions.
+Regional conditions emerge from their own geography, systems, dependencies and history.
 
 ---
 
-## Rule 4
+## RS-INV-003 — Same Pressure May Produce Different Outcomes
 
-Regional self-sufficiency should be rare.
-
----
-
-## Rule 5
-
-Fragmentation does not imply wasteland.
+Regional divergence is expected.
 
 ---
 
-## Rule 6
+## RS-INV-004 — Real Geography Matters
 
-Strong local conditions may coexist with weak national conditions.
-
----
-
-## Rule 7
-
-Weak local conditions may coexist with stable neighboring regions.
+Regional structure should be grounded in plausible real-world geography and infrastructure wherever possible.
 
 ---
 
-## Rule 8
+## RS-INV-005 — Regional Boundaries Require Functional Meaning
 
-Population perception may differ from actual conditions.
-
----
-
-## Rule 9
-
-Regional history affects future behavior.
+Regions must not exist solely as arbitrary game-map partitions.
 
 ---
 
-## Rule 10
+## RS-INV-006 — Regional State Does Not Replace Domain Systems
 
-Adaptation is as important as restoration.
-
----
-
-## Rule 11
-
-Player influence should obey the same causal logic as every other actor.
+Infrastructure, Supply, Security, Authority, Information and Population retain authoritative ownership of their internal state.
 
 ---
 
-## Rule 12
+## RS-INV-007 — Regional State Is Not One Score
 
-Regional detail should increase only when it improves gameplay.
+No universal regional health, collapse or stability value may replace domain state.
 
 ---
 
-# Guiding Question
+## RS-INV-008 — Regional Abstraction Must Allow Local Exceptions
 
-Every Regional State should allow the system to answer:
+Regional averages must not erase significant internal variation.
 
-**Why is life different here than it is one region away?**
+---
+
+## RS-INV-009 — Connections Matter
+
+Regions interact through explicit physical and systemic relationships.
+
+---
+
+## RS-INV-010 — Flows Require Capacity
+
+A physical connection does not guarantee normal resource or population flow.
+
+---
+
+## RS-INV-011 — Interdependence Persists
+
+Fragmentation does not automatically produce regional self-sufficiency.
+
+---
+
+## RS-INV-012 — Cascades Require Dependency
+
+Regional problems do not automatically propagate to neighboring regions.
+
+---
+
+## RS-INV-013 — Cascades Encounter Resilience
+
+Redundancy, adaptation and alternatives may reduce propagation.
+
+---
+
+## RS-INV-014 — Adaptation May Replace Old Systems
+
+Regional recovery does not require restoration of previous structures.
+
+---
+
+## RS-INV-015 — Regions Do Not Have Minds
+
+Regional State must not own universal regional trust, emotion, belief or intent.
+
+---
+
+## RS-INV-016 — Regional Truth Is Separate From Perception
+
+Observer knowledge and perception belong to Information and observer systems.
+
+---
+
+## RS-INV-017 — Regional History Persists
+
+Meaningful past regional events may continue affecting current conditions.
+
+---
+
+## RS-INV-018 — Resolution Changes Detail, Not Reality
+
+Low-resolution regions remain causally active.
+
+---
+
+## RS-INV-019 — Player Absence Does Not Freeze Regions
+
+Regional simulation continues off-screen.
+
+---
+
+## RS-INV-020 — Player Presence Does Not Rewrite Regional History
+
+Higher-resolution detail must remain consistent with established state and history.
+
+---
+
+## RS-INV-021 — Player Actions Obey Regional Causality
+
+Player Characters receive no privileged simulation rules.
+
+---
+
+## RS-INV-022 — Regional Change Must Be Explainable
+
+Significant state changes require causal grounding.
+
+---
+
+## RS-INV-023 — Narrative Does Not Determine Regional State
+
+Regional reality must not be changed merely to produce desired story beats.
+
+---
+
+# 115. Development Locks
+
+Future Regional State development must not introduce:
+
+- arbitrary game-map regions
+- universal Regional Health scores
+- universal Regional Collapse scores
+- universal regional Trust
+- universal regional Emotion
+- universal regional Personality
+- regional collective minds
+- automatic national-to-regional state copying
+- automatic regional cascades
+- automatic regional recovery
+- automatic regional self-sufficiency
+- player-centered regional activation
+- frozen distant regions
+- convenient history generation when players arrive
+- `UNKNOWN` as authoritative physical truth where only observers are uncertain
+- `Confidence` as uncertainty in authoritative Regional State
+- Recovery as a universal peer domain
+- Communications as duplicate ownership across Infrastructure and Information
+- regional economic simulation without demonstrated need
+- regional technology scores that erase dependency structure
+- narrative-forced regional events
+- player actions with privileged world physics
+
+---
+
+# 116. Regional Architecture Test
+
+Before adding a new Regional State field or mechanic, ask:
+
+```text
+IS THIS
+GEOGRAPHIC
+REGIONAL CONTEXT?
+
+OR
+
+DOES ANOTHER SYSTEM
+ALREADY OWN IT?
+
+DOES IT REPRESENT
+WORLD TRUTH?
+
+OR
+
+OBSERVER KNOWLEDGE?
+
+WHY DOES
+THE REGION EXIST?
+
+WHAT MAKES IT
+DIFFERENT FROM
+ITS NEIGHBORS?
+
+WHAT DOES IT
+PRODUCE?
+
+WHAT DOES IT
+DEPEND ON?
+
+WHAT CONNECTS IT
+TO OTHER REGIONS?
+
+WHAT CAN FLOW
+THROUGH THOSE
+CONNECTIONS?
+
+WHAT ARE ITS
+STRENGTHS?
+
+WHAT ARE ITS
+VULNERABILITIES?
+
+WHAT HISTORY
+SHAPED IT?
+
+CAN IT CHANGE
+OFF-SCREEN?
+
+CAN LOCAL CONDITIONS
+DIFFER FROM
+THE REGIONAL BASELINE?
+
+CAN THE SYSTEM
+EXPLAIN
+WHY IT CHANGED?
+```
+
+If these questions cannot be answered, the concept may belong elsewhere or require further architectural work.
+
+---
+
+# 117. Final Regional Model
+
+Conceptually:
+
+```text
+GLOBAL WORLD STATE
+        ↓
+NATIONAL CONTEXT
+        ↓
+────────────────────────────
+REGIONAL STATE
+────────────────────────────
+        │
+        ├── Geography
+        │
+        ├── Major Settlements
+        │
+        ├── Infrastructure
+        │
+        ├── Supply
+        │
+        ├── Security
+        │
+        ├── Authority
+        │
+        ├── Information
+        │
+        ├── Population
+        │
+        ├── Strategic Functions
+        │
+        ├── Strengths
+        │
+        ├── Vulnerabilities
+        │
+        ├── Dependencies
+        │
+        ├── Connections
+        │
+        ├── Flows
+        │
+        ├── Local Exceptions
+        │
+        └── Systemic History
+        │
+        ↓
+PRESSURE
++
+RESILIENCE
++
+DEPENDENCY
++
+EVENTS
++
+ACTOR ACTION
++
+TIME
+        ↓
+REGIONAL CHANGE
+        ↓
+LOCAL CONSEQUENCES
++
+NEIGHBOR CONSEQUENCES
++
+HIGHER-LEVEL CONSEQUENCES
+        ↓
+UPDATED
+REGIONAL STATE
+        ↓
+REGIONAL SYSTEMIC HISTORY.
+```
+
+---
+
+# 118. Regional State North Star
+
+Every Regional State should ultimately allow Project Ascension to answer:
+
+```text
+WHY IS
+LIFE DIFFERENT
+HERE
+
+THAN IT IS
+ONE REGION AWAY?
+
+WHAT DOES
+THIS REGION
+DEPEND ON?
+
+WHO DEPENDS
+ON IT?
+
+WHAT KEEPS
+IT FUNCTIONING?
+
+WHAT MAKES
+IT VULNERABLE?
+
+WHAT CONNECTS
+IT TO
+THE OUTSIDE WORLD?
+
+WHAT HAPPENED
+HERE BEFORE?
+
+WHAT IS
+CHANGING NOW?
+
+WHAT WILL
+CONTINUE TO CHANGE
+
+IF THE PLAYER
+NEVER COMES HERE?
+```
 
 The answer should emerge from:
 
-- geography
-- resources
-- infrastructure
-- history
-- institutions
-- population
-- connections
-- decisions
+```text
+GEOGRAPHY
 
-not simply because the narrative requires the regions to feel different.
+INFRASTRUCTURE
 
----
+RESOURCES
 
-# Current Status
+DEPENDENCIES
+
+POPULATION
+
+INSTITUTIONS
+
+CONNECTIONS
+
+HISTORY
+
+ACTOR DECISIONS
+
+AND TIME.
+```
+
+Never simply:
 
 ```text
-WORLD SIMULATION
-
-README.md
-COMPLETE
-
-World_State.md
-FOUNDATION DEFINED
-
-Regional_State.md
-FOUNDATION DEFINED
-
-Infrastructure_State.md
-PENDING
-
-Information_State.md
-PENDING
-
-Authority_State.md
-PENDING
-
-Population_State.md
-PENDING
-
-Escalation_and_Recovery.md
-PENDING
+BECAUSE
+THE STORY
+NEEDS THIS REGION
+TO BE DIFFERENT.
 ```
 
 ---
 
-# Next Document
+# 119. Closing Principle
 
-The next recommended document is:
+Project Ascension is not a world where civilization disappears evenly.
 
-```text
-Canon/Systems/World_Simulation/Infrastructure_State.md
-```
+It is a world where systems lose their former ability to remain reliably connected.
 
-Regional State establishes **where** simulation occurs.
+One region may keep electricity but lose medicine.
 
-Infrastructure State will define one of the most important systems determining **whether a region can continue functioning**.
+Another may produce food but lack fuel.
 
-It should connect:
+A city may remain technologically advanced while becoming dependent on increasingly fragile supply routes.
 
-- physical infrastructure
-- digital infrastructure
-- service availability
-- dependency chains
-- redundancy
-- repair
-- manual operation
-- IML
-- cascading failures
+A rural region may lose national connectivity while preserving strong local systems.
 
-while preserving the principle established throughout Project Ascension:
+A damaged region may rebuild the old system.
 
-**Infrastructure does not have to disappear for civilization to lose the ability to coordinate it.**
+Another may invent something different.
+
+Some places may become safer.
+
+Some may become more dangerous.
+
+Some may become more independent.
+
+Others may discover how dependent they always were.
+
+The same historical event may reach neighboring regions in entirely different ways.
+
+That difference must come from the world itself.
+
+The central principle is:
+
+> **A region is where global history becomes local reality.**
+
+And that local reality continues to evolve whether the player sees it or not.
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Regional State identity, domain, resilience, resource, connection, migration, memory and simulation-resolution framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial Regional State identity, domains, resilience, resources, connections, migration, memory and simulation-resolution concepts. |
+| 1.0 | 2026-09-01 | Rebuilt Regional State as canonical architecture aligned with World State and the current Project Ascension ownership model. Established regions as functional geographic simulation units grounded in real geography; clarified domain ownership; removed Recovery as a peer domain; separated Communications across Infrastructure and Information; replaced Regional Memory with Regional Systemic History; removed universal regional Trust and collective-mind concepts; clarified actual versus observed state; strengthened dependencies, connections, flows, local exceptions, cascading effects, adaptation, regional subdivision, off-screen continuity and adaptive simulation resolution; and established invariants and development locks preventing player-centric, deterministic and duplicate simulation logic. |

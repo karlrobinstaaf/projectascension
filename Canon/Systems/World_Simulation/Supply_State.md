@@ -2,361 +2,647 @@
 # Supply State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Supply State |
-| Location | Canon/Systems/World_Simulation/Supply_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Resource Availability, Production, Distribution and Strategic Reserves |
-| Last Updated | 2026-08-09 |
-
-> *"A resource does not matter because it exists. It matters because it can reach the place where it is needed."*
-
----
-
-# Purpose
-
-The Supply State system defines how essential resources are represented inside Project Ascension's World Simulation.
-
-Supply includes:
-
-- food
-- water
-- fuel
-- medicine
-- industrial materials
-- spare parts
-- agricultural inputs
-- batteries
-- critical chemicals
-- other strategically important goods
-
-The system determines whether resources are:
-
-- produced
-- imported
-- stored
-- transported
-- distributed
-- consumed
-- rationed
-- depleted
-- redirected
-- restored
-
-Supply connects infrastructure, population, authority, trade and recovery.
+|---|---|
+| Project | Project Ascension |
+| Document | Supply State System |
+| Location | `Canon/Systems/World_Simulation/Supply_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Supply |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define the authoritative availability, production, storage, consumption, dependency, scarcity, substitution, resilience and recovery state of strategically important resources |
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-Supply is not a single inventory value.
+The Supply State System defines how essential resources exist and remain available within Project Ascension.
 
-A resource may exist while remaining unavailable.
+It answers:
+
+> **What resources exist, where are they, how are they produced, how much is available, how quickly are they being consumed, what do they depend on, what buffers remain, and what happens when supply becomes constrained?**
+
+Supply includes strategically important resources such as:
+
+```text
+FOOD
+
+RAW WATER
+
+POTABLE WATER STORES
+
+FUEL
+
+MEDICINE
+
+MEDICAL CONSUMABLES
+
+SPARE PARTS
+
+INDUSTRIAL MATERIALS
+
+AGRICULTURAL INPUTS
+
+BATTERIES
+
+CRITICAL CHEMICALS
+
+SPECIALIZED COMPONENTS.
+```
+
+Supply State does not answer whether every resource can physically reach every user.
+
+That requires interaction with Infrastructure, Security, Authority, Information, Population and other systems.
+
+---
+
+# 2. Core Principle
+
+A resource does not matter merely because it exists.
+
+It matters because it remains usable within the world.
 
 Conceptually:
 
 ```text
 RESOURCE EXISTS
-      │
-      ▼
-CAN IT BE PRODUCED?
-      │
-      ▼
-CAN IT BE STORED?
-      │
-      ▼
-CAN IT BE TRANSPORTED?
-      │
-      ▼
-CAN IT BE DISTRIBUTED?
-      │
-      ▼
-CAN PEOPLE ACCESS IT?
+↓
+RESOURCE CAN BE PRODUCED
+OR IMPORTED
+↓
+RESOURCE CAN BE STORED
+↓
+RESOURCE REMAINS USABLE
+↓
+RESOURCE CAN REACH
+THE REQUIRED LOCATION
+↓
+RESOURCE CAN BE ACCESSED
+↓
+RESOURCE CAN BE CONSUMED
+OR USED.
 ```
 
-Failure at any stage may create effective shortage.
+Supply State owns the resource side of this chain.
+
+Other systems may determine whether movement, allocation or access succeeds.
 
 ---
 
-# Supply Versus Logistics
+# 3. Resource Existence vs Availability
 
-Supply and Logistics must remain distinct.
+Canonical distinction:
 
 ```text
-SUPPLY
-What resources exist and are potentially available?
-
-LOGISTICS
-Can those resources be moved to where they are needed?
+RESOURCE EXISTENCE
+≠
+RESOURCE AVAILABILITY.
 ```
 
 Example:
 
 ```text
-Regional Food Supply:
+Regional Fuel Inventory:
 ADEQUATE
 
-Logistics:
-DEGRADED
+Local Fuel Availability:
+CRITICAL.
 ```
 
-may still produce:
+The fuel exists.
+
+It is not effectively available at the relevant location.
+
+This may result from:
 
 ```text
-Local Food Shortages
+distribution failure
+
+route closure
+
+allocation
+
+security conditions
+
+access restrictions
+
+infrastructure failure.
 ```
+
+Supply State must preserve this distinction.
 
 ---
 
-# Supply Versus Infrastructure
+# 4. Supply vs Infrastructure
 
-Infrastructure enables supply.
-
-Examples:
-
-```text
-Power
-Transportation
-Fuel
-Warehousing
-Data Systems
-Telecommunications
-```
-
-Supply in turn supports infrastructure through:
-
-```text
-Fuel
-Replacement Parts
-Industrial Materials
-Chemicals
-```
-
-The relationship is bidirectional.
-
----
-
-# Supply Hierarchy
-
-Supply may be represented across several levels.
+Supply and Infrastructure are separate authoritative domains.
 
 ```text
 SUPPLY
-│
-├── Global
-├── National
-├── Regional
-├── Local
-└── Household / Facility
+
+What resource exists?
+
+How much exists?
+
+Where is it?
+
+How quickly is it
+being produced,
+consumed or depleted?
+
+
+INFRASTRUCTURE
+
+What physical systems
+allow the resource
+to be produced,
+processed,
+stored,
+transported
+or delivered?
 ```
 
-World Simulation should normally operate at Regional level.
+Example:
 
-Critical facilities or missions may use Local or Facility-level detail.
+```text
+Fuel Supply:
+ADEQUATE
+
+Fuel Distribution Infrastructure:
+DEGRADED.
+```
+
+The resource exists.
+
+The physical system moving it does not operate normally.
 
 ---
 
-# Core Supply Categories
+# 5. Supply vs Logistics Infrastructure
 
-The initial Supply model should include:
+Supply must not duplicate physical logistics state.
+
+Infrastructure owns:
+
+```text
+roads
+
+rail
+
+ports
+
+warehouses
+
+distribution centers
+
+pipelines
+
+fuel terminals
+
+freight terminals
+
+physical logistics hubs.
+```
+
+Supply owns:
+
+```text
+resource inventory
+
+resource production
+
+resource imports
+
+resource demand
+
+resource consumption
+
+resource reserves
+
+resource dependency
+
+resource scarcity.
+```
+
+Infrastructure determines whether movement is physically possible.
+
+Supply determines what is available to move.
+
+---
+
+# 6. Supply vs Allocation
+
+Supply State may identify scarcity.
+
+It does not decide who receives scarce resources.
+
+Example:
+
+```text
+Medicine Availability:
+CRITICAL
+
+Essential Demand:
+HIGH.
+```
+
+Authority, institutions, communities or other Actors may decide:
+
+```text
+WHO RECEIVES
+THE MEDICINE.
+```
+
+Supply State then records the resulting resource movement and consumption.
+
+Therefore:
 
 ```text
 SUPPLY
-│
-├── Food
-├── Water
-├── Fuel
-├── Medicine
-├── Spare Parts
-├── Industrial Materials
-├── Agricultural Inputs
-├── Energy Storage
-└── Critical Chemicals
-```
+OWNS SCARCITY.
 
-Additional categories may be introduced when justified.
-
----
-
-# Standard Supply Domain
-
-Each Supply category should expose:
-
-```text
-SUPPLY CATEGORY
-│
-├── Availability
-├── Production
-├── Imports
-├── Inventory
-├── Strategic Reserves
-├── Distribution Capacity
-├── Demand
-├── Consumption
-├── Dependency
-├── Pressure
-├── Resilience
-├── Trend
-└── Confidence
+ACTORS
+OWN ALLOCATION DECISIONS.
 ```
 
 ---
 
-# Availability
+# 7. Supply vs Information
 
-Availability represents the amount of usable resource currently accessible to the region.
+Supply State owns actual resource truth.
 
-Conceptual states:
+Information State owns:
 
 ```text
-SURPLUS
-ADEQUATE
-STRAINED
-CONSTRAINED
-CRITICAL
-UNAVAILABLE
+reported inventory
+
+supply intelligence
+
+observer knowledge
+
+confidence
+
+rumor
+
+verification
+
+information delay
+
+information distortion.
 ```
 
----
-
-# Surplus
+Therefore:
 
 ```text
-SURPLUS
+ACTUAL SUPPLY
+≠
+KNOWN SUPPLY.
 ```
 
-The region possesses more usable supply than current demand requires.
-
-Potential consequences include:
-
-- export
-- stockpiling
-- reserve building
-- price reduction
-- diplomatic leverage
-
----
-
-# Adequate
+Example:
 
 ```text
-ADEQUATE
-```
-
-Supply meets normal demand with reasonable margin.
-
----
-
-# Strained
-
-```text
-STRAINED
-```
-
-Supply remains sufficient but operational margin is reduced.
-
-Possible signs include:
-
-- higher prices
-- reduced variety
-- delayed deliveries
-- smaller inventories
-- reduced reserves
-
----
-
-# Constrained
-
-```text
-CONSTRAINED
-```
-
-Supply is insufficient for unrestricted normal consumption.
-
-Possible responses include:
-
-- rationing
-- prioritization
-- conservation
-- reduced commercial use
-
----
-
-# Critical
-
-```text
-CRITICAL
-```
-
-Supply cannot reliably meet essential demand.
-
-Authorities and communities must decide who or what receives limited resources.
-
----
-
-# Unavailable
-
-```text
-UNAVAILABLE
-```
-
-The resource cannot currently be accessed at the simulated level.
-
-This does not necessarily mean the resource does not physically exist elsewhere.
-
----
-
-# Production
-
-Production represents how much of a resource the region can generate internally.
-
-Examples:
-
-```text
-Agriculture
-Refining
-Pharmaceutical Production
-Manufacturing
-Water Treatment
-Battery Production
-```
-
-Conceptual states:
-
-```text
-SURPLUS
-HIGH
-MODERATE
+Actual Fuel Inventory:
 LOW
-MINIMAL
-NONE
+
+Regional Government Belief:
+ADEQUATE.
+```
+
+The discrepancy is valid.
+
+---
+
+# 8. Supply vs Population
+
+Population behavior may influence Supply through:
+
+```text
+demand
+
+consumption
+
+stockpiling
+
+conservation
+
+migration
+
+substitution.
+```
+
+Supply consumes these effects.
+
+It does not own the behavior producing them.
+
+---
+
+# 9. Supply vs Security
+
+Security may affect whether resources can safely move or remain accessible.
+
+Supply State may expose:
+
+```text
+RESOURCE LOCATION
+
+RESOURCE REQUIREMENT
+
+RESOURCE CRITICALITY.
+```
+
+Security owns:
+
+```text
+route threat
+
+theft risk
+
+organized violence
+
+territorial control
+
+protection capability.
 ```
 
 ---
 
-# Local Production
+# 10. Supply Hierarchy
 
-Local production increases resilience by reducing external dependency.
+Supply may exist at multiple scales.
 
-However, production itself may depend upon:
+```text
+GLOBAL
+↓
+NATIONAL
+↓
+REGIONAL
+↓
+LOCAL
+↓
+FACILITY
+↓
+HOUSEHOLD.
+```
 
-- power
-- fuel
-- workforce
-- machinery
-- raw materials
-- water
-- transportation
+World Simulation should normally operate at the lowest resolution required to preserve causality.
 
-Local production is therefore not equivalent to independence.
+Regional state will often be sufficient.
+
+Critical facilities or events may require local or facility-level simulation.
 
 ---
 
-# Production Capacity Versus Output
+# 11. Core Supply Categories
 
-Production Capacity and actual Output should remain separate.
+The default Supply architecture should support:
+
+```text
+FOOD
+
+WATER RESOURCES
+
+FUEL
+
+MEDICINE
+
+MEDICAL CONSUMABLES
+
+SPARE PARTS
+
+INDUSTRIAL MATERIALS
+
+AGRICULTURAL INPUTS
+
+ENERGY STORAGE
+
+CRITICAL CHEMICALS.
+```
+
+Additional resources should be introduced only when causally significant.
+
+---
+
+# 12. Resource State Contract
+
+A significant Supply category may expose:
+
+```text
+Availability
+
+Production Capacity
+
+Current Production
+
+Imports
+
+Inventory
+
+Strategic Reserves
+
+Demand
+
+Essential Demand
+
+Consumption
+
+Import Dependency
+
+Critical Dependencies
+
+Pressure
+
+Resilience
+
+Substitutability
+
+Criticality
+
+Trend
+
+Recovery Capacity
+
+Last Significant Change
+
+Causal Sources.
+```
+
+Not every resource requires every field.
+
+---
+
+# 13. Availability
+
+Availability represents usable resource currently accessible at the simulated scale.
+
+Conceptual states:
+
+```text
+SURPLUS
+
+ADEQUATE
+
+STRAINED
+
+CONSTRAINED
+
+CRITICAL
+
+UNAVAILABLE.
+```
+
+---
+
+# 14. Surplus
+
+```text
+SURPLUS
+```
+
+means usable supply exceeds current demand with meaningful margin.
+
+Possible consequences may include:
+
+```text
+export potential
+
+reserve building
+
+local abundance
+
+trade leverage.
+```
+
+Supply State records the surplus.
+
+Actors determine what is done with it.
+
+---
+
+# 15. Adequate
+
+```text
+ADEQUATE
+```
+
+means usable supply meets current demand with reasonable operating margin.
+
+Adequate does not imply independence.
+
+A region may have:
+
+```text
+Availability:
+ADEQUATE
+
+Import Dependency:
+CRITICAL.
+```
+
+---
+
+# 16. Strained
+
+```text
+STRAINED
+```
+
+means supply remains sufficient but margins are declining.
+
+Possible causes include:
+
+```text
+falling inventory
+
+reduced imports
+
+increasing demand
+
+reduced production
+
+increasing consumption.
+```
+
+---
+
+# 17. Constrained
+
+```text
+CONSTRAINED
+```
+
+means supply cannot support unrestricted normal demand.
+
+Essential demand may still be met.
+
+---
+
+# 18. Critical
+
+```text
+CRITICAL
+```
+
+means available supply cannot reliably satisfy essential demand.
+
+This creates allocation pressure.
+
+It does not itself determine allocation.
+
+---
+
+# 19. Unavailable
+
+```text
+UNAVAILABLE
+```
+
+means the resource cannot currently be accessed at the simulated scale.
+
+The resource may still exist elsewhere.
+
+---
+
+# 20. Production Capacity
+
+Production Capacity represents the maximum plausible current production capability before temporary operating constraints are applied.
+
+Examples:
+
+```text
+Agricultural Capacity
+
+Refining Capacity
+
+Pharmaceutical Capacity
+
+Industrial Production Capacity.
+```
+
+Conceptual values:
+
+```text
+SURPLUS
+
+HIGH
+
+MODERATE
+
+LOW
+
+MINIMAL
+
+NONE.
+```
+
+---
+
+# 21. Current Production
+
+Current Production represents actual output.
+
+This must remain separate from Production Capacity.
 
 Example:
 
@@ -364,129 +650,228 @@ Example:
 Production Capacity:
 HIGH
 
-Current Output:
-LOW
+Current Production:
+LOW.
 ```
 
 Possible causes:
 
-- fuel shortage
-- missing workforce
-- missing inputs
-- power restriction
-
----
-
-# Imports
-
-Imports represent externally sourced supply.
-
-Conceptual states:
-
 ```text
-HIGH
-MODERATE
-LOW
-MINIMAL
-NONE
+fuel shortage
+
+missing inputs
+
+workforce shortage
+
+power restriction
+
+security conditions
+
+infrastructure failure.
 ```
 
 ---
 
-# Import Dependency
+# 22. Production Dependency
 
-Import Dependency represents how dependent the region is upon incoming resources.
+Production may depend upon:
+
+```text
+power
+
+water
+
+fuel
+
+raw materials
+
+workforce
+
+machinery
+
+specialized parts
+
+transportation
+
+industrial chemicals
+
+information
+
+access.
+```
+
+Production therefore exists inside a dependency network.
+
+---
+
+# 23. Local Production
+
+Local production may improve resilience.
+
+But:
+
+```text
+LOCAL PRODUCTION
+≠
+SELF-SUFFICIENCY.
+```
+
+A farming region may still depend on:
+
+```text
+fertilizer
+
+fuel
+
+machinery parts
+
+seed
+
+electricity
+
+transportation.
+```
+
+---
+
+# 24. Imports
+
+Imports represent externally sourced resources entering the simulated region.
 
 Conceptual values:
 
 ```text
-LOW
-MODERATE
 HIGH
-CRITICAL
+
+MODERATE
+
+LOW
+
+MINIMAL
+
+NONE.
+```
+
+Imports are current flow.
+
+They are separate from Import Dependency.
+
+---
+
+# 25. Import Dependency
+
+Import Dependency represents structural reliance on external sources.
+
+Conceptually:
+
+```text
+LOW
+
+MODERATE
+
+HIGH
+
+CRITICAL.
 ```
 
 Example:
 
 ```text
-Food Import Dependency:
-HIGH
+Medicine Availability:
+ADEQUATE
+
+Import Dependency:
+CRITICAL.
 ```
 
-does not mean the region has low food supply today.
+The current state is stable.
 
-It means supply is vulnerable to sustained external disruption.
+The future state may be vulnerable.
 
 ---
 
-# Inventory
+# 26. Inventory
 
-Inventory represents immediately available stored resources.
+Inventory represents stored resource available for normal use.
 
-Conceptually:
+Conceptual states:
 
 ```text
 HIGH
+
 ADEQUATE
+
 LOW
+
 CRITICAL
-DEPLETED
+
+DEPLETED.
 ```
 
-Inventory is a buffer.
+Inventory is a buffer between inflow and consumption.
 
 ---
 
-# Inventory Days
+# 27. Inventory Duration
 
-Where useful, supply may use estimated duration.
+Where useful, inventory may be expressed in time.
 
 Example:
 
 ```text
 Hospital Oxygen:
 4 days
+
+Regional Diesel:
+11 days
+at current consumption.
 ```
 
-or:
-
-```text
-Regional Fuel Inventory:
-11 days at current consumption
-```
-
-Exact numbers should only be used where they improve gameplay or simulation.
+Exact numbers should be used only when causally useful.
 
 ---
 
-# Strategic Reserves
+# 28. Strategic Reserves
 
-Strategic Reserves are resources intentionally held outside normal consumption.
+Strategic Reserves are resources intentionally separated from normal consumption.
 
-Examples include:
+Examples:
 
-- national fuel reserves
-- emergency medical stockpiles
-- food reserves
-- spare transformers
-- treatment chemicals
+```text
+national fuel reserves
+
+emergency medicine
+
+food reserves
+
+spare transformers
+
+water-treatment chemicals.
+```
 
 Conceptual states:
 
 ```text
 FULL
+
 HIGH
+
 MODERATE
+
 LOW
+
 CRITICAL
-DEPLETED
+
+DEPLETED.
 ```
 
 ---
 
-# Reserve Release
+# 29. Reserve Release
 
-Authorities may release strategic reserves to reduce immediate pressure.
+Supply State records whether reserves remain and how they change.
+
+The decision to release them belongs to the controlling Actor or institution.
 
 Example:
 
@@ -497,113 +882,87 @@ CONSTRAINED
 Strategic Reserve:
 HIGH
 
-Intervention:
-Reserve release
+Authority Decision:
+Release Reserve
 
 Result:
-Availability improves temporarily.
+
+Current Availability:
+Improves
+
+Strategic Reserve:
+Declines.
 ```
 
 ---
 
-# Reserve Tradeoff
+# 30. Reserve Tradeoff
 
-Using reserves solves current problems by reducing future resilience.
+Canonical principle:
+
+```text
+RESERVE USE
+REDUCES
+FUTURE RESILIENCE.
+```
 
 Conceptually:
 
 ```text
-CURRENT PRESSURE
-      ↓
+CURRENT SHORTAGE
+↓
 RESERVE RELEASE
-      ↓
-CURRENT PRESSURE DECREASES
-      ↓
-FUTURE BUFFER DECREASES
+↓
+CURRENT PRESSURE FALLS
+↓
+FUTURE BUFFER SHRINKS.
 ```
 
-There should be no free reserve use.
+Reserve use must never be free.
 
 ---
 
-# Distribution Capacity
+# 31. Demand
 
-Distribution Capacity represents the ability to move resources from inventory or production to users.
-
-It depends upon:
-
-- transportation
-- fuel
-- workforce
-- warehouses
-- communications
-- security
-- information systems
-
-Conceptual states:
-
-```text
-HIGH
-FUNCTIONAL
-STRAINED
-LOW
-CRITICAL
-FAILED
-```
-
----
-
-# Supply Availability Versus Distribution
-
-Example:
-
-```text
-Food Availability:
-ADEQUATE
-
-Distribution Capacity:
-LOW
-```
-
-may create:
-
-```text
-Urban Shortages
-Rural Surplus
-```
-
-Regional totals can conceal local scarcity.
-
----
-
-# Demand
-
-Demand represents current resource requirement.
+Demand represents how much resource would currently be required under prevailing conditions.
 
 Conceptual states:
 
 ```text
 LOW
+
 NORMAL
+
 HIGH
+
 SEVERE
-EXTREME
+
+EXTREME.
 ```
 
-Demand may increase through:
+Demand may change because of:
 
-- population growth
-- migration
-- weather
-- infrastructure failure
-- emergency operations
-- stockpiling
+```text
+population
+
+weather
+
+migration
+
+infrastructure requirements
+
+emergency operations
+
+economic activity
+
+institutional requirements.
+```
 
 ---
 
-# Essential Demand
+# 32. Essential Demand
 
-Supply should distinguish:
+Supply must distinguish:
 
 ```text
 TOTAL DEMAND
@@ -612,32 +971,32 @@ TOTAL DEMAND
 from:
 
 ```text
-ESSENTIAL DEMAND
+ESSENTIAL DEMAND.
 ```
 
 Example:
 
-Fuel may be insufficient for normal civilian consumption but sufficient for:
+Fuel may be insufficient for normal civilian demand while still being sufficient for:
 
-- hospitals
-- emergency services
-- water systems
-- critical transport
+```text
+hospitals
 
-This creates prioritization choices.
+water systems
+
+emergency services
+
+critical freight.
+```
+
+Who receives priority remains an Actor decision.
 
 ---
 
-# Consumption
+# 33. Consumption
 
-Consumption represents actual use.
+Consumption represents actual resource use.
 
-Consumption may differ from Demand due to:
-
-- rationing
-- conservation
-- scarcity
-- inability to access supply
+Demand and Consumption must remain separate.
 
 Example:
 
@@ -646,170 +1005,300 @@ Demand:
 HIGH
 
 Consumption:
-MODERATE
+MODERATE.
 ```
 
-because rationing restricts use.
+Possible causes include:
+
+```text
+scarcity
+
+rationing
+
+conservation
+
+access failure
+
+substitution.
+```
 
 ---
 
-# Supply Margin
+# 34. Consumption Rate
 
-Supply Margin represents the difference between usable supply and essential demand.
+Where causally useful, consumption may be represented as a rate.
+
+Example:
+
+```text
+Diesel Inventory:
+10 million liters
+
+Consumption:
+1 million liters/day.
+```
+
+This enables meaningful depletion timing.
+
+Avoid unnecessary precision.
+
+---
+
+# 35. Supply Margin
+
+Supply Margin is a derived relationship between usable supply and demand.
 
 Conceptually:
 
 ```text
 SURPLUS
+
 SAFE
+
 NARROW
+
 CRITICAL
-DEFICIT
+
+DEFICIT.
 ```
+
+It is diagnostic.
+
+It should not become an independent authoritative state domain.
 
 ---
 
-# Supply Pressure
+# 36. Supply Pressure
 
 Supply Pressure represents forces pushing availability toward worse states.
 
-Sources may include:
+Possible causes include:
 
-- import disruption
-- production loss
-- migration
-- stockpiling
-- transportation failure
-- workforce loss
-- infrastructure failure
-- conflict
-- seasonal demand
+```text
+import disruption
+
+production loss
+
+inventory depletion
+
+increasing demand
+
+migration
+
+resource diversion
+
+infrastructure failure
+
+security disruption
+
+input shortage
+
+seasonal change.
+```
 
 Conceptual scale:
 
 ```text
 NONE
+
 LOW
+
 MODERATE
+
 HIGH
+
 SEVERE
-CRITICAL
+
+CRITICAL.
 ```
 
 ---
 
-# Supply Resilience
+# 37. Supply Resilience
 
-Supply Resilience represents the ability to absorb disruption.
+Supply Resilience represents the ability to absorb disruption without severe loss of availability.
 
 Sources may include:
 
-- local production
-- diversified suppliers
-- strategic reserves
-- storage
-- alternate routes
-- low demand
-- strong logistics
-- substitution
-
----
-
-# Supply Buffers
-
-Important buffers include:
-
 ```text
-Inventory
-Strategic Reserves
-Household Stock
-Commercial Stock
-Substitute Goods
+local production
+
+diversified suppliers
+
+inventory
+
+strategic reserves
+
+substitution
+
+alternative inputs
+
+lower demand
+
+regional trade
+
+multiple production sources.
 ```
 
-Buffers delay shortage.
-
 ---
 
-# Buffer Depletion
+# 38. Buffers
 
-Conceptually:
+Important resource buffers may include:
 
 ```text
-IMPORTS FAIL
-    ↓
-INVENTORY USED
-    ↓
-STRATEGIC RESERVE USED
-    ↓
-HOUSEHOLD STOCK USED
-    ↓
-VISIBLE SHORTAGE
+normal inventory
+
+strategic reserves
+
+commercial stock
+
+household stock
+
+facility stock
+
+substitute resources.
 ```
 
-Different buffers operate at different levels.
+Different buffers exist under different ownership.
+
+Supply State may aggregate resource consequences while preserving ownership boundaries.
 
 ---
 
-# Substitution
+# 39. Buffer Depletion
 
-Some resources may be replaced.
+Supply shortage often appears after delay.
 
 Example:
 
 ```text
-Gasoline shortage
-      ↓
-Rail transport increased
+IMPORTS FAIL
+↓
+COMMERCIAL INVENTORY USED
+↓
+FACILITY INVENTORY USED
+↓
+STRATEGIC RESERVES RELEASED
+↓
+VISIBLE SHORTAGE.
+```
+
+The sequence depends on Actor decisions and resource access.
+
+---
+
+# 40. Delayed Supply Consequences
+
+Supply effects may emerge long after the original disruption.
+
+Example:
+
+```text
+FERTILIZER SHORTAGE
+↓
+REDUCED PLANTING
+↓
+LOWER HARVEST
+↓
+FOOD PRODUCTION FALLS
+↓
+FOOD PRESSURE INCREASES.
+```
+
+This may take months.
+
+Delayed causality is mandatory.
+
+---
+
+# 41. Substitution
+
+Some resources may be replaced by alternatives.
+
+Example:
+
+```text
+Gasoline Shortage
+↓
+Rail Use Increases.
 ```
 
 or:
 
 ```text
-Imported medicine unavailable
-      ↓
-Alternative local medication used
+Specific Medicine Unavailable
+↓
+Alternative Treatment Used.
 ```
 
-Substitution increases resilience.
+Substitution may reduce Supply Pressure.
 
 ---
 
-# Substitution Limits
+# 42. Substitutability
 
-Not all resources are interchangeable.
+Resources may have different levels of substitutability.
 
-Examples:
+Conceptually:
 
-- specialized medicine
-- transformer equipment
-- water-treatment chemicals
-- aircraft parts
+```text
+HIGH
 
-Low substitutability creates strategic vulnerability.
+MODERATE
+
+LOW
+
+NONE.
+```
+
+Examples of low-substitutability resources may include:
+
+```text
+specialized medicine
+
+transformers
+
+specific industrial components
+
+water-treatment chemicals.
+```
 
 ---
 
-# Resource Criticality
+# 43. Resource Criticality
 
-Resources may possess different Criticality.
+Criticality represents the consequences created if a resource becomes unavailable.
 
 Conceptually:
 
 ```text
 LOW
+
 MODERATE
+
 HIGH
-CRITICAL
+
+CRITICAL.
 ```
 
-Criticality reflects consequences of shortage.
+Criticality does not mean scarcity.
+
+A resource may be:
+
+```text
+Availability:
+SURPLUS
+
+Criticality:
+CRITICAL.
+```
 
 ---
 
-# Resource Dependency Graph
+# 44. Dependency Graph
 
-Supply chains may depend upon one another.
+Resources may depend on other resources.
 
 Example:
 
@@ -819,1907 +1308,2377 @@ AGRICULTURE
 ├── Fuel
 ├── Fertilizer
 ├── Water
+├── Seed
 ├── Equipment Parts
-└── Transportation
-       │
-       ▼
-      FOOD
+└── Chemicals
+        ↓
+      FOOD.
 ```
 
-Food supply can therefore degrade because of shortages outside agriculture itself.
+Resource dependency may therefore create delayed cascades.
 
 ---
 
-# Food Supply
+# 45. Supply Cascades
 
-Food includes:
-
-- production
-- imports
-- processing
-- storage
-- distribution
-- retail
-- emergency reserves
-
-Important dependencies include:
-
-```text
-Fuel
-Transportation
-Electricity
-Water
-Labor
-Agricultural Inputs
-```
-
----
-
-# Food Production
-
-Regional food production should consider:
-
-- farmland
-- season
-- labor
-- fertilizer
-- fuel
-- machinery
-- water
-- storage
-
-Food production changes slowly compared with many other resources.
-
----
-
-# Food Distribution
-
-Food shortage may occur quickly if distribution fails even when production remains intact.
+Supply cascades occur when shortage of one resource reduces production or availability of another.
 
 Example:
 
 ```text
-Regional Food Production:
-HIGH
-
-Transport:
-FAILED
-
-Urban Food Availability:
-CRITICAL
+FUEL SHORTAGE
+↓
+AGRICULTURAL OPERATIONS REDUCED
+↓
+FOOD PRODUCTION FALLS
+↓
+FOOD PRESSURE INCREASES.
 ```
 
 ---
 
-# Water Supply
+# 46. Cascades Are Conditional
 
-Water is unusual because it is both a resource and an infrastructure-delivered service.
+Dependency does not guarantee collapse.
 
-Supply State should represent:
+A cascade may be interrupted by:
 
-- raw water availability
-- treatment chemicals
-- stored potable water
+```text
+inventory
 
-Infrastructure State should represent:
+substitution
 
-- treatment
-- pumping
-- distribution
+alternative suppliers
+
+demand reduction
+
+reserve use
+
+adaptation
+
+restored infrastructure.
+```
+
+Therefore:
+
+```text
+DEPENDENCY
+≠
+GUARANTEED SHORTAGE.
+```
 
 ---
 
-# Fuel Supply
+# 47. Food Supply
 
-Fuel includes:
+Food Supply may include:
 
-- petroleum products
-- alternative fuels
-- generator fuel
-- aviation fuel
-- industrial fuel
+```text
+agricultural output
+
+processed food
+
+stored food
+
+imports
+
+commercial inventory
+
+emergency reserves.
+```
+
+Important dependencies may include:
+
+```text
+fuel
+
+water
+
+agricultural inputs
+
+electricity
+
+labor
+
+storage
+
+transportation.
+```
+
+---
+
+# 48. Food Production
+
+Food production should account for slow causal processes.
+
+Relevant factors may include:
+
+```text
+season
+
+planting
+
+harvest
+
+weather
+
+fertilizer
+
+fuel
+
+water
+
+labor
+
+machinery
+
+storage.
+```
+
+Food production cannot instantly respond to shortage.
+
+---
+
+# 49. Water Supply
+
+Water requires a strict distinction between resource and infrastructure.
+
+Supply State owns:
+
+```text
+raw water availability
+
+stored potable water
+
+treatment chemicals
+
+portable water reserves.
+```
+
+Infrastructure State owns:
+
+```text
+treatment infrastructure
+
+pumping
+
+distribution systems
+
+storage infrastructure.
+```
+
+---
+
+# 50. Fuel Supply
+
+Fuel Supply may include:
+
+```text
+petroleum products
+
+diesel
+
+gasoline
+
+aviation fuel
+
+generator fuel
+
+industrial fuel
+
+alternative fuels.
+```
 
 Fuel strongly affects:
 
-- transport
-- logistics
-- agriculture
-- emergency power
-- construction
-
----
-
-# Fuel Distribution
-
-Fuel distribution may become constrained before fuel itself becomes scarce.
-
-Example:
-
 ```text
-Regional Fuel Inventory:
-ADEQUATE
+transportation
 
-Service Stations Operational:
-40%
+agriculture
+
+emergency power
+
+construction
+
+logistics
+
+industry.
 ```
 
-The resource exists.
+---
 
-Access is limited.
+# 51. Fuel Distribution Boundary
+
+Supply State owns:
+
+```text
+fuel inventory
+
+fuel production
+
+fuel imports
+
+fuel reserves
+
+fuel demand
+
+fuel consumption.
+```
+
+Infrastructure State owns:
+
+```text
+refineries as physical assets
+
+pipelines
+
+terminals
+
+service stations
+
+distribution infrastructure.
+```
+
+This boundary is mandatory.
 
 ---
 
-# Medicine
+# 52. Medicine
 
-Medicine includes:
+Medicine Supply may include:
 
-- pharmaceuticals
-- medical consumables
-- oxygen
-- blood products
-- specialized equipment
+```text
+pharmaceuticals
 
-Medicine often has:
+medical consumables
+
+oxygen
+
+blood products
+
+specialized equipment
+
+diagnostic supplies.
+```
+
+Medicine often combines:
 
 ```text
 HIGH CRITICALITY
+
 LOW SUBSTITUTABILITY
+
+HIGH IMPORT DEPENDENCY.
 ```
 
-and may therefore become a strategic supply priority.
+This creates strategic vulnerability.
 
 ---
 
-# Medical Supply Chain
+# 53. Medicine vs Healthcare Infrastructure
 
-Medical supply may depend upon:
+Supply State owns:
 
 ```text
-Global Production
-Cold Storage
-Air Transport
-Road Logistics
-Hospitals
-Pharmacies
+medicine
+
+medical consumables
+
+oxygen
+
+blood products
+
+medical equipment availability.
 ```
 
-This creates sensitivity to international and regional disruption.
+Infrastructure State owns:
+
+```text
+hospitals
+
+clinics
+
+laboratories
+
+physical medical facilities.
+```
+
+Characters / Population own medical personnel depending on scale.
 
 ---
 
-# Spare Parts
+# 54. Spare Parts
 
-Spare Parts are critical for infrastructure recovery.
+Spare Parts are strategically important because they often influence future capability rather than immediate service.
 
 Examples:
 
-- transformers
-- pumps
-- telecommunications equipment
-- vehicles
-- industrial control components
+```text
+transformers
 
-Spare parts often produce delayed rather than immediate shortages.
+pumps
+
+vehicle parts
+
+telecommunications components
+
+industrial control systems
+
+machine components.
+```
 
 ---
 
-# Spare-Part Delay
+# 55. Spare-Part Delay
 
 Example:
 
 ```text
 MONTH 1
-Equipment still operating.
+
+Equipment remains operational.
+
 
 MONTH 2
-Failures begin accumulating.
+
+Failures accumulate.
+
 
 MONTH 3
+
 Replacement parts unavailable.
 
+
 MONTH 4
-Infrastructure reliability declines sharply.
+
+Infrastructure reliability declines.
 ```
 
-Supply effects may therefore emerge long after trade disruption begins.
+A Supply shock may therefore become an Infrastructure crisis much later.
 
 ---
 
-# Industrial Materials
+# 56. Industrial Materials
 
-Industrial Materials include:
-
-- steel
-- copper
-- chemicals
-- plastics
-- electronics
-- machine components
-
-These support long-term repair and reconstruction.
-
----
-
-# Agricultural Inputs
-
-Agricultural Inputs include:
-
-- fertilizer
-- seed
-- fuel
-- pesticides
-- machinery parts
-- animal feed
-
-Shortages may reduce future food production rather than immediate availability.
-
----
-
-# Delayed Supply Effects
-
-Supply State should model delayed consequences.
-
-Example:
+Industrial Materials may include:
 
 ```text
-Fertilizer shortage today
-      ↓
-Reduced planting
-      ↓
-Lower harvest months later
-      ↓
-Food Pressure increases
+steel
+
+copper
+
+plastics
+
+industrial chemicals
+
+electronics
+
+machine components
+
+construction materials.
 ```
 
-This is a long-horizon cascade.
+They support:
+
+```text
+repair
+
+maintenance
+
+production
+
+construction
+
+recovery.
+```
 
 ---
 
-# Energy Storage
+# 57. Agricultural Inputs
 
-Energy Storage includes:
+Agricultural Inputs may include:
 
-- batteries
-- stored fuel
-- grid-scale storage
+```text
+fertilizer
 
-It acts as a buffer between power production and demand.
+seed
 
----
+fuel
 
-# Critical Chemicals
+pesticides
 
-Examples include:
+machinery parts
 
-- water-treatment chemicals
-- industrial gases
-- medical chemicals
-- refinery inputs
+animal feed.
+```
 
-Small shortages may create disproportionately large effects.
+Shortages may affect future production rather than current Food Availability.
 
 ---
 
-# Geographic Distribution
+# 58. Energy Storage
 
-Supply should be spatial.
+Supply State may represent stored energy resources such as:
+
+```text
+batteries
+
+stored fuel
+
+replaceable battery systems.
+```
+
+Infrastructure State owns physical grid-scale storage infrastructure where appropriate.
+
+The distinction should follow:
+
+```text
+RESOURCE
+vs
+PHYSICAL SYSTEM.
+```
+
+---
+
+# 59. Critical Chemicals
+
+Critical Chemicals may include:
+
+```text
+water-treatment chemicals
+
+industrial gases
+
+medical chemicals
+
+refinery inputs
+
+specialized manufacturing chemicals.
+```
+
+Small shortages may create disproportionately large consequences.
+
+---
+
+# 60. Geographic Distribution
+
+Supply is spatial.
 
 Example:
 
 ```text
 REGION
 
-Northern Zone:
+Rural North:
 Food Surplus
 
 Urban Core:
 Food Constrained
 
-Southern Zone:
-Adequate
+Southern Corridor:
+Food Adequate.
 ```
 
-Regional averages should not erase important local differences.
+Regional averages must not erase causally important local scarcity.
 
 ---
 
-# Supply Nodes
+# 61. Resource Location
 
-Important supply infrastructure may be represented as nodes.
+Where relevant, Supply State should preserve where important resources are located.
 
 Examples:
 
 ```text
-Warehouse
-Fuel Depot
-Port
-Rail Terminal
-Distribution Center
-Reservoir
-Refinery
+regional stockpile
+
+hospital storage
+
+fuel depot inventory
+
+warehouse inventory
+
+agricultural storage
+
+industrial reserve.
 ```
 
-Critical nodes may receive individual simulation where useful.
+The physical facility belongs to Infrastructure.
+
+The resource inside it belongs to Supply.
 
 ---
 
-# Supply Routes
+# 62. Supply Routes
 
-Resources move through routes.
+Supply State may reference routes required for resource movement.
+
+It does not own route condition.
+
+Example:
+
+```text
+Food Supply
+
+Primary Route:
+I-81 Corridor.
+```
+
+Infrastructure owns whether the route physically functions.
+
+Security owns whether movement is safe.
+
+Supply consumes both states.
+
+---
+
+# 63. Alternate Sources
+
+Supply resilience may increase through alternative sources.
 
 Examples:
 
 ```text
-Road
-Rail
-Pipeline
-Ship
-Air
-Power Network
+secondary supplier
+
+regional production
+
+alternative import source
+
+substitute material
+
+local manufacturing.
 ```
 
-Each route may have:
-
-```text
-State
-Capacity
-Security
-Reliability
-```
+Alternate sources are distinct from alternate physical routes.
 
 ---
 
-# Route Failure
+# 64. Supply Chain Depth
 
-A route failure should increase supply pressure based upon dependency.
-
-Example:
-
-```text
-Rail Route:
-FAILED
-
-Food Dependency on Rail:
-HIGH
-
-Result:
-Food Pressure increases strongly.
-```
-
-If dependency is low, the effect should remain limited.
-
----
-
-# Alternate Routes
-
-Alternate routes increase resilience.
-
-Example:
-
-```text
-Primary Rail:
-FAILED
-
-Secondary Road:
-FUNCTIONAL
-```
-
-Result:
-
-```text
-Distribution Capacity:
-STRAINED
-```
-
-rather than:
-
-```text
-FAILED
-```
-
----
-
-# Supply Chain Depth
-
-Some resources require long chains.
+Some resources require long dependency chains.
 
 Example:
 
 ```text
 MEDICINE
 
-Raw Material
-    ↓
+Raw Materials
+↓
 Manufacturing
-    ↓
+↓
 Packaging
-    ↓
+↓
 Cold Storage
-    ↓
+↓
 Transport
-    ↓
-Hospital
+↓
+Regional Inventory
+↓
+Hospital Inventory.
 ```
 
-Failure at any stage may reduce supply.
+Failure at any stage may eventually affect Availability.
 
 ---
 
-# Supply Chain Visibility
+# 65. Supply Chain Visibility Boundary
 
-Authorities may not have complete knowledge of supply chains.
+Supply State owns the actual chain.
+
+Information State owns how much Actors know about it.
 
 Example:
 
 ```text
-Regional Government:
-Believes medicine supply adequate.
+Actual Supplier:
+FAILED
 
-Hospital Network:
-Knows one critical supplier is failing.
+Government Knowledge:
+UNKNOWN.
 ```
 
-Information State therefore affects Supply planning.
+Supply should never contain observer Confidence as authoritative resource state.
 
 ---
 
-# Inventory Visibility
+# 66. Stockpiling
 
-Digital systems normally provide rapid inventory visibility.
-
-During disruption:
-
-```text
-Actual Inventory:
-Unknown
-
-Reported Inventory:
-Adequate
-
-Confidence:
-Low
-```
-
-Poor visibility may cause inefficient allocation.
-
----
-
-# Supply Allocation
-
-Authorities and organizations may prioritize resources.
-
-Examples:
-
-```text
-Fuel Priority:
-1. Hospitals
-2. Water
-3. Emergency Services
-4. Freight
-5. Civilian Use
-```
-
-Allocation may improve critical-system resilience while reducing general availability.
-
----
-
-# Rationing
-
-Rationing reduces demand or redistributes scarce supply.
-
-Forms include:
-
-```text
-Voluntary
-Price-Based
-Quota-Based
-Priority-Based
-Community-Based
-Authority-Enforced
-```
-
----
-
-# Rationing Effectiveness
-
-Rationing depends upon:
-
-- legitimacy
-- enforcement
-- information
-- distribution capacity
-- perceived fairness
-
-Effective rationing may stabilize supply.
-
-Poorly implemented rationing may increase:
-
-- black markets
-- distrust
-- stockpiling
-
----
-
-# Fairness
-
-Perceived fairness matters.
+Stockpiling may move resources between storage locations.
 
 Example:
-
-```text
-Supply:
-Critical
-
-Rationing:
-Transparent and equitable
-```
-
-may preserve:
-
-```text
-Social Cohesion
-Authority Legitimacy
-```
-
-while unequal access may increase unrest pressure.
-
----
-
-# Black Markets
-
-Black markets may emerge when:
-
-```text
-Demand:
-HIGH
-
-Legal Supply:
-RESTRICTED
-
-Enforcement:
-LIMITED
-```
-
-They may:
-
-- improve access for some
-- increase inequality
-- divert supply
-- create crime pressure
-
-Black markets should have mixed effects.
-
----
-
-# Price
-
-Price may function as a supply-pressure signal where markets remain active.
-
-Conceptually:
-
-```text
-NORMAL
-ELEVATED
-HIGH
-EXTREME
-UNSTABLE
-```
-
-The system does not require detailed economic modeling at this stage.
-
----
-
-# Price Versus Availability
-
-High prices do not necessarily mean physical shortage.
-
-They may reflect:
-
-- uncertainty
-- transport cost
-- speculative demand
-
-Likewise, fixed prices do not guarantee availability.
-
----
-
-# Stockpiling
-
-Population stockpiling transfers supply from:
 
 ```text
 COMMERCIAL INVENTORY
+↓
+HOUSEHOLD INVENTORY.
 ```
 
-to:
+Total regional resource may remain unchanged.
 
-```text
-HOUSEHOLD INVENTORY
-```
-
-Total regional resources may initially remain unchanged.
-
-But distribution changes.
+Availability to other consumers may change significantly.
 
 ---
 
-# Stockpiling Effect
+# 67. Stockpiling Is Not Automatically Irrational
+
+Stockpiling may be:
+
+```text
+reasonable preparation
+
+fear response
+
+strategic preparation
+
+institutional planning
+
+speculation.
+```
+
+The behavior belongs to the relevant Actor or Population system.
+
+Supply records the resulting inventory movement.
+
+---
+
+# 68. Hoarding
+
+Hoarding may represent unusually concentrated resource control.
+
+Supply may record:
+
+```text
+RESOURCE CONCENTRATION.
+```
+
+The motivations and social consequences belong elsewhere.
+
+---
+
+# 69. Conservation
+
+Conservation reduces Consumption.
 
 Example:
 
 ```text
-Regional Food:
-ADEQUATE
-
-Retail Food:
-CONSTRAINED
-
-Household Food:
+Fuel Demand:
 HIGH
+
+Conservation Behavior:
+ACTIVE
+
+Actual Consumption:
+MODERATE.
 ```
 
-Visible retail shortages may therefore overstate total resource shortage.
+The behavior belongs to Actors, Population or Authority.
+
+Supply records its resource consequence.
 
 ---
 
-# Hoarding
+# 70. Demand Destruction
 
-Hoarding may be used for unusually concentrated resource accumulation beyond plausible household preparation.
-
-It should remain distinct from normal preparedness.
-
-Hoarding may increase:
-
-- local scarcity
-- inequality
-- black-market potential
-
----
-
-# Conservation
-
-Conservation reduces demand.
-
-Examples:
-
-```text
-Lower fuel use
-Reduced electricity consumption
-Food substitution
-Water conservation
-```
-
-Conservation may create a stabilizing loop.
-
----
-
-# Demand Destruction
-
-Severe disruption may reduce demand because activities stop.
+Demand may fall because activities cease.
 
 Example:
 
 ```text
-Industry shuts down
-      ↓
-Industrial Fuel Demand falls
+Industrial Activity Falls
+↓
+Industrial Fuel Demand Falls.
 ```
 
-This may free fuel for essential services.
-
-Economic decline can therefore create short-term supply relief.
+This may temporarily improve Fuel Availability despite worsening economic conditions.
 
 ---
 
-# Supply and Migration
+# 71. Migration
 
-Migration changes both sides of the equation.
+Migration may change regional demand.
 
-Origin region:
-
-```text
-Population declines
-      ↓
-Demand declines
-```
-
-Destination region:
+Origin:
 
 ```text
-Population increases
-      ↓
-Demand increases
+Population Falls
+↓
+Demand Falls.
 ```
 
-This can produce cross-regional supply pressure.
+Destination:
+
+```text
+Population Rises
+↓
+Demand Rises.
+```
+
+Population owns migration.
+
+Supply consumes resulting demand change.
 
 ---
 
-# Supply and Workforce
+# 72. Workforce Boundary
 
-Production and distribution depend upon workers.
+Production may require workers.
+
+Supply State may expose:
+
+```text
+Required Workforce Capability.
+```
+
+Actual workers belong to:
+
+```text
+Characters
+
+Population
+
+Institutions.
+```
 
 Example:
 
 ```text
 Food Inventory:
-Adequate
+ADEQUATE
 
-Warehouse Workforce:
-Critical
+Required Warehouse Workforce:
+Unavailable
 
 Result:
-Distribution Capacity declines.
+Resource Access may decline.
 ```
 
----
-
-# Supply and Authority
-
-Authority may influence Supply through:
-
-- reserves
-- rationing
-- requisition
-- trade agreements
-- allocation
-- emergency imports
-
-Supply outcomes affect legitimacy.
+The cause remains cross-system.
 
 ---
 
-# Supply and Information
+# 73. Rationing Boundary
 
-Information influences:
+Rationing is an Actor policy or behavior.
 
-- demand expectations
-- stockpiling
-- route planning
-- inventory allocation
-- price
+Supply State may record its consequences:
 
-False shortage reports can create real distribution problems.
+```text
+reduced consumption
 
----
+changed access
 
-# Supply and Security
+resource preservation
 
-Supply routes may require protection.
+reserve preservation.
+```
 
-Security degradation may cause:
-
-- convoy disruption
-- theft
-- route closure
-- increased transport cost
-
-Supply scarcity may in return increase Security pressure.
+But Supply State does not independently decide to ration.
 
 ---
 
-# Supply and Recovery
+# 74. Allocation Boundary
 
-Recovery requires materials.
+Allocation belongs to:
+
+```text
+Authority
+
+Institutions
+
+Communities
+
+Factions
+
+other controlling Actors.
+```
+
+Supply provides:
+
+```text
+what exists
+
+how much exists
+
+where it exists
+
+what demand exists
+
+what scarcity exists.
+```
+
+Actors decide what to do.
+
+---
+
+# 75. Price Boundary
+
+Price may act as a signal where markets function.
+
+Supply State does not require a detailed economic simulation.
+
+Where relevant, price may be derived from:
+
+```text
+scarcity
+
+demand
+
+transport cost
+
+risk
+
+market behavior
+
+policy.
+```
+
+Economic ownership should be established separately before detailed price mechanics are introduced.
+
+---
+
+# 76. Black Market Boundary
+
+Black markets are not Supply mechanics.
+
+They emerge through interaction between:
+
+```text
+scarcity
+
+Actors
+
+Authority
+
+Security
+
+Society
+
+economic exchange.
+```
+
+Supply State records resource movement resulting from them.
+
+It does not generate them automatically.
+
+---
+
+# 77. Supply Shock
+
+A Supply Shock is a significant causal event affecting resource availability or future availability.
 
 Examples:
 
 ```text
-Infrastructure repair
-needs spare parts.
+crop failure
 
-Healthcare recovery
-needs medicine.
+import interruption
 
-Agriculture recovery
-needs fuel and fertilizer.
+production shutdown
+
+warehouse inventory loss
+
+trade interruption
+
+resource contamination
+
+strategic reserve loss.
 ```
 
-Supply may therefore become the primary Recovery Bottleneck.
+Infrastructure failures may cause Supply shocks but remain infrastructure events at their source.
 
 ---
 
-# Supply Feedback Loops
+# 78. Supply Shock Consequences
 
-## Shortage Loop
+Shock severity depends upon:
 
 ```text
-SUPPLY PRESSURE
-      ↓
-STOCKPILING
-      ↓
-RETAIL AVAILABILITY FALLS
-      ↓
-PERCEIVED SHORTAGE INCREASES
-      ↓
-MORE STOCKPILING
+inventory
+
+reserves
+
+production
+
+imports
+
+demand
+
+substitutability
+
+dependency
+
+alternative sources
+
+time.
 ```
+
+A major external shock may have little immediate visible effect if buffers are strong.
 
 ---
 
-# Conservation Loop
+# 79. Stable Scarcity
+
+Scarcity does not automatically equal crisis.
+
+Example:
 
 ```text
-SUPPLY PRESSURE
-      ↓
-CONSERVATION
-      ↓
-DEMAND FALLS
-      ↓
-SUPPLY PRESSURE DECREASES
+Fuel Availability:
+CONSTRAINED
+
+Trend:
+STABLE
+
+Consumption:
+CONTROLLED
+
+Strategic Reserves:
+MODERATE.
+```
+
+A society may adapt to persistent scarcity.
+
+---
+
+# 80. Supply Stabilization
+
+Supply may stabilize through:
+
+```text
+reduced consumption
+
+new production
+
+new imports
+
+substitution
+
+reserve release
+
+alternative sources
+
+lower demand
+
+infrastructure recovery.
+```
+
+Some mechanisms are Supply changes.
+
+Others originate in external systems.
+
+---
+
+# 81. Supply Recovery
+
+Supply may recover through:
+
+```text
+production restoration
+
+new suppliers
+
+restored imports
+
+inventory rebuilding
+
+reserve replenishment
+
+substitution
+
+demand stabilization
+
+resource recovery.
+```
+
+Recovery must remain causal.
+
+---
+
+# 82. Availability Recovery vs Resilience Recovery
+
+These are separate.
+
+Example:
+
+```text
+Current Availability:
+ADEQUATE
+
+Strategic Reserves:
+LOW
+
+Import Dependency:
+CRITICAL.
+```
+
+The immediate shortage is over.
+
+The system remains fragile.
+
+---
+
+# 83. Reserve Replenishment
+
+Full recovery may require rebuilding buffers after current Availability returns.
+
+Example:
+
+```text
+Availability:
+ADEQUATE
+
+Strategic Reserve:
+LOW
+
+Trend:
+IMPROVING.
+```
+
+This is partial recovery.
+
+---
+
+# 84. Supply Adaptation
+
+Long-term adaptation may transform supply architecture.
+
+Example:
+
+```text
+GLOBAL IMPORTS
+↓
+REGIONAL PRODUCTION
+
+JUST-IN-TIME INVENTORY
+↓
+STRATEGIC STOCKPILES
+
+SINGLE SUPPLIERS
+↓
+DIVERSIFIED SOURCES
+
+SPECIALIZED GOODS
+↓
+SUBSTITUTABLE ALTERNATIVES.
 ```
 
 ---
 
-# Logistics Loop
+# 85. Efficiency vs Resilience
+
+Canonical principle:
+
+```text
+EFFICIENCY
+≠
+RESILIENCE.
+```
+
+Connected World supply chains may be:
+
+```text
+fast
+
+specialized
+
+globally integrated
+
+low inventory
+
+highly efficient.
+```
+
+Fractured World supply chains may become:
+
+```text
+slower
+
+regional
+
+redundant
+
+higher inventory
+
+less efficient
+
+more resilient.
+```
+
+This is transformation.
+
+Not simple regression.
+
+---
+
+# 86. Supply Feedback Loops
+
+Supply may participate in reinforcing or stabilizing loops.
+
+Example:
 
 ```text
 FUEL SHORTAGE
-      ↓
-TRANSPORT CAPACITY FALLS
-      ↓
-SUPPLY DELIVERY FALLS
-      ↓
-FUEL DELIVERY ALSO FALLS
+↓
+TRANSPORT CAPABILITY FALLS
+↓
+RESOURCE MOVEMENT FALLS
+↓
+FUEL DELIVERY FALLS
+↓
+FUEL SHORTAGE WORSENS.
 ```
 
-This can become strongly reinforcing.
+But the physical transport effect belongs to Infrastructure.
+
+Supply records the resource consequences.
 
 ---
 
-# Recovery Loop
+# 87. Positive Recovery Loop
+
+Example:
 
 ```text
 SPARE PARTS ARRIVE
-      ↓
+↓
 INFRASTRUCTURE REPAIR IMPROVES
-      ↓
-LOGISTICS IMPROVES
-      ↓
-MORE SUPPLIES ARRIVE
+↓
+PRODUCTION CAPABILITY IMPROVES
+↓
+SUPPLY AVAILABILITY IMPROVES.
 ```
 
 Positive cascades must remain possible.
 
 ---
 
-# Supply Shock
+# 88. Cross-System Causality
 
-Examples include:
-
-- port closure
-- crop failure
-- refinery shutdown
-- trade embargo
-- major warehouse loss
-- sudden migration
-- pipeline failure
-
-Shock outcome depends upon:
-
-- inventory
-- reserves
-- alternate routes
-- production
-- demand
-
----
-
-# Supply Transition
-
-A conceptual state progression:
-
-```text
-SURPLUS
-   ↓
-ADEQUATE
-   ↓
-STRAINED
-   ↓
-CONSTRAINED
-   ↓
-CRITICAL
-   ↓
-UNAVAILABLE
-```
-
-Improvement may move upward.
-
----
-
-# State Transition Causes
-
-Examples:
-
-```text
-ADEQUATE → STRAINED
-
-Possible Causes:
-- import reduction
-- demand increase
-- inventory decline
-```
-
-```text
-CONSTRAINED → CRITICAL
-
-Possible Causes:
-- distribution failure
-- reserve depletion
-- migration surge
-```
-
----
-
-# Supply Stabilization
-
-A supply system may stabilize through:
-
-- rationing
-- new imports
-- reduced demand
-- local production
-- substitution
-- improved distribution
-
-A constrained supply state may remain stable indefinitely if society adapts.
-
----
-
-# Stable Scarcity
+Supply should interact through explicit causal contracts.
 
 Example:
 
 ```text
-Fuel:
+INFRASTRUCTURE EVENT:
+
+Rail corridor fails.
+```
+
+Infrastructure updates:
+
+```text
+Rail Capacity:
+UNAVAILABLE.
+```
+
+Supply consumes that state:
+
+```text
+Food Imports:
+REDUCED
+
+Fuel Imports:
+REDUCED.
+```
+
+Supply then updates:
+
+```text
+Inventory Trend:
+DETERIORATING
+
+Supply Pressure:
+INCREASING.
+```
+
+No system silently edits another system's authoritative state.
+
+---
+
+# 89. World Event vs Supply Consequence
+
+A World Event may affect Supply.
+
+Example:
+
+```text
+Hurricane
+↓
+Port Closed
+↓
+Imports Reduced
+↓
+Inventory Depletes
+↓
+Availability Becomes Constrained.
+```
+
+The hurricane is not a Supply Event.
+
+The reduced imports and resulting scarcity are Supply consequences.
+
+---
+
+# 90. Supply and Action Resolution
+
+Actors may attempt:
+
+```text
+produce
+
+transport
+
+recover
+
+trade
+
+allocate
+
+consume
+
+store
+
+release reserves
+
+substitute
+
+protect
+
+steal
+
+destroy.
+```
+
+Supply State provides resource-specific world truth to Action Resolution.
+
+It does not decide Actor intent.
+
+---
+
+# 91. Player Interaction
+
+Player Characters obey the same Supply rules as all other Actors.
+
+They may affect Supply through plausible actions such as:
+
+```text
+restoring access
+
+recovering resources
+
+negotiating trade
+
+supporting production
+
+transporting resources
+
+protecting resources
+
+discovering new sources.
+```
+
+Their actions require normal Action Resolution.
+
+---
+
+# 92. Supply Does Not Generate Quests
+
+Avoid:
+
+```text
+MEDICINE LOW
+↓
+GENERATE MEDICINE QUEST.
+```
+
+Prefer:
+
+```text
+MEDICINE LOW
+↓
+REAL WORLD CONSEQUENCE
+↓
+ACTORS RESPOND
+↓
+POSSIBLE PLAYER RELEVANCE
+↓
+NARRATIVE PRESENTATION.
+```
+
+Supply creates state.
+
+Narrative determines presentation.
+
+---
+
+# 93. Supply Knowledge
+
+Supply State contains actual resource truth.
+
+Actors may know:
+
+```text
+less
+
+more
+
+incorrect information
+
+outdated information
+
+partial information.
+```
+
+Knowledge and Information systems own those epistemic states.
+
+---
+
+# 94. Information Can Create Real Supply Consequences
+
+False information may still affect Supply indirectly.
+
+Example:
+
+```text
+False Shortage Report
+↓
+Population Stockpiling
+↓
+Commercial Inventory Falls
+↓
+Local Availability Falls.
+```
+
+Information caused behavior.
+
+Behavior caused resource movement.
+
+Supply records the resulting state.
+
+---
+
+# 95. Supply and World States
+
+World States provide historical context.
+
+They do not mechanically set Supply values.
+
+---
+
+# 96. Connected World
+
+The Connected World may commonly feature:
+
+```text
+high trade
+
+high specialization
+
+low inventories
+
+fast logistics
+
+high efficiency
+
+high external dependency.
+```
+
+This produces abundance.
+
+It may also create vulnerability.
+
+---
+
+# 97. Transition
+
+The Transition may expose hidden dependencies.
+
+Possible patterns include:
+
+```text
+imports become unreliable
+
+inventory begins declining
+
+regional conditions diverge
+
+strategic reserves become relevant
+
+substitution increases
+
+scarcity becomes uneven.
+```
+
+These are possible emergent outcomes.
+
+Not scripted requirements.
+
+---
+
+# 98. Fractured World
+
+The Fractured World may develop:
+
+```text
+regional production
+
+higher inventories
+
+local stockpiles
+
+shorter supply chains
+
+regional trade
+
+greater substitution
+
+persistent specialized shortages.
+```
+
+Different regions may develop very different resource profiles.
+
+---
+
+# 99. Reconnection
+
+Reconnection may restore:
+
+```text
+long-distance trade
+
+specialized production
+
+larger markets
+
+resource variety.
+```
+
+It may also recreate:
+
+```text
+external dependency
+
+systemic coupling
+
+long supply chains.
+```
+
+Reconnection therefore creates both opportunity and vulnerability.
+
+---
+
+# 100. Simulation Resolution
+
+Supply State supports adaptive simulation resolution.
+
+Conceptually:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH.
+```
+
+Resolution changes detail.
+
+Not resource reality.
+
+---
+
+# 101. Low Resolution
+
+Low-resolution Supply State may preserve:
+
+```text
+major shortages
+
+major surpluses
+
+key dependencies
+
+overall trend
+
+major resource shocks.
+```
+
+Resources continue changing off-screen.
+
+---
+
+# 102. Medium Resolution
+
+Medium resolution may preserve:
+
+```text
+resource categories
+
+availability
+
+production
+
+imports
+
+inventory
+
+demand
+
+pressure
+
+resilience
+
+trend.
+```
+
+---
+
+# 103. High Resolution
+
+High resolution may preserve:
+
+```text
+specific resources
+
+inventory duration
+
+facility inventories
+
+strategic reserves
+
+specific dependencies
+
+production inputs
+
+consumption rates
+
+resource locations
+
+active allocation consequences.
+```
+
+---
+
+# 104. Resolution Follows Causal Relevance
+
+A distant Supply system may require high resolution if:
+
+```text
+it supplies multiple regions
+
+a strategic resource is failing
+
+a major cascade is developing
+
+it supports critical infrastructure
+
+it influences Aurora-related events.
+```
+
+Player proximity is not the only trigger.
+
+---
+
+# 105. Supply Persistence
+
+Supply State persists through:
+
+```text
+player absence
+
+session boundaries
+
+regional travel
+
+time advancement
+
+Story Threads
+
+resolution changes.
+```
+
+Inventory continues depleting.
+
+Crops continue growing.
+
+Production continues or stops.
+
+Reserves remain consumed.
+
+---
+
+# 106. Minimum Supply State
+
+A minimum regional Supply representation should normally include:
+
+```text
+Food
+
+Water Resources
+
+Fuel
+
+Medicine
+
+Spare Parts.
+```
+
+For each relevant category:
+
+```text
+Availability
+
+Production
+
+Imports
+
+Inventory
+
+Demand
+
+Essential Demand
+
+Consumption
+
+Dependency
+
+Pressure
+
+Resilience
+
+Trend.
+```
+
+Additional detail should be added only when causally necessary.
+
+---
+
+# 107. Supply State Example
+
+```text
+REGION:
+Northern Virginia
+
+
+FOOD
+
+Availability:
+STRAINED
+
+Production:
+LOW
+
+Imports:
+HIGH
+
+Inventory:
+ADEQUATE
+
+Demand:
+HIGH
+
+Import Dependency:
+HIGH
+
+Pressure:
+HIGH
+
+Resilience:
+MODERATE
+
+Trend:
+DETERIORATING
+
+
+FUEL
+
+Availability:
 CONSTRAINED
+
+Production:
+MINIMAL
+
+Imports:
+HIGH
+
+Inventory:
+LOW
+
+Strategic Reserves:
+MODERATE
+
+Demand:
+HIGH
+
+Import Dependency:
+CRITICAL
+
+Pressure:
+SEVERE
+
+Resilience:
+LOW
+
+Trend:
+DETERIORATING
+
+
+MEDICINE
+
+Availability:
+ADEQUATE
+
+Inventory:
+STRAINED
+
+Import Dependency:
+HIGH
+
+Criticality:
+CRITICAL
+
+Substitutability:
+LOW
+
+Pressure:
+HIGH
+
+Trend:
+DETERIORATING.
+```
+
+Infrastructure determines whether those resources can physically move through the region.
+
+---
+
+# 108. Fractured World Example
+
+```text
+REGION:
+Shenandoah Valley
+
+
+FOOD
+
+Availability:
+SURPLUS
+
+Production:
+HIGH
+
+Import Dependency:
+LOW
+
+Inventory:
+HIGH
+
+Resilience:
+HIGH
 
 Trend:
 STABLE
 
-Rationing:
-FUNCTIONAL
-```
 
-This may become a long-term equilibrium.
+FUEL
 
-Scarcity does not automatically mean crisis.
+Availability:
+CONSTRAINED
 
----
+Production:
+MINIMAL
 
-# Supply Recovery
+Import Dependency:
+HIGH
 
-Supply may recover through:
-
-- production restoration
-- route restoration
-- trade
-- reserve replenishment
-- improved distribution
-- migration stabilization
-
----
-
-# Reserve Replenishment
-
-After immediate crisis:
-
-```text
-Current Supply:
-ADEQUATE
-
-Strategic Reserves:
+Inventory:
 LOW
+
+Resilience:
+LOW
+
+Trend:
+STABLE
+
+
+MEDICINE
+
+Availability:
+STRAINED
+
+Import Dependency:
+CRITICAL
+
+Substitutability:
+LOW
+
+Resilience:
+LOW
+
+Trend:
+STABLE
+
+
+INDUSTRIAL MATERIALS
+
+Availability:
+CONSTRAINED
+
+Import Dependency:
+HIGH
+
+Trend:
+STABLE.
 ```
 
-The system is functional but remains fragile.
-
-Full recovery requires rebuilding reserves.
-
----
-
-# Supply Adaptation
-
-Long-term adaptation may include:
+This region is not simply:
 
 ```text
-Global imports
-        ↓
-Regional production
-
-Just-in-time inventory
-        ↓
-Strategic stockpiles
-
-Long supply chains
-        ↓
-Shorter regional chains
-
-Specialized goods
-        ↓
-Substitutable local alternatives
-```
-
----
-
-# Efficiency Versus Resilience
-
-Modern supply chains may be:
-
-```text
-Efficient
-Fast
-Low Inventory
-Globally Integrated
-```
-
-Post-Collapse supply may become:
-
-```text
-Slower
-Higher Inventory
-Regional
-Redundant
-Less Efficient
-More Resilient
-```
-
-This is transformation, not simply regression.
-
----
-
-# Supply State Snapshot
-
-Example:
-
-```text
-SUPPLY STATE
-
-Region:
-Northern Virginia
-
-Historical Era:
-WS-02 — The Transition
-
-Food:
-    Availability: STRAINED
-    Production: LOW
-    Imports: HIGH
-    Inventory: ADEQUATE
-    Distribution: STRAINED
-    Demand: HIGH
-    Dependency: HIGH
-    Pressure: HIGH
-    Resilience: MODERATE
-    Trend: DETERIORATING
-
-Water:
-    Availability: ADEQUATE
-    Production: HIGH
-    Distribution: FUNCTIONAL
-    Pressure: MODERATE
-    Resilience: HIGH
-    Trend: STABLE
-
-Fuel:
-    Availability: CONSTRAINED
-    Imports: HIGH
-    Inventory: LOW
-    Distribution: STRAINED
-    Demand: HIGH
-    Strategic Reserves: MODERATE
-    Pressure: SEVERE
-    Resilience: LOW
-    Trend: DETERIORATING
-
-Medicine:
-    Availability: ADEQUATE
-    Inventory: STRAINED
-    Distribution: FUNCTIONAL
-    Dependency: HIGH
-    Pressure: HIGH
-    Resilience: MODERATE
-    Trend: DETERIORATING
-
-Spare Parts:
-    Availability: STRAINED
-    Dependency: CRITICAL
-    Pressure: HIGH
-    Resilience: LOW
-    Trend: DETERIORATING
-```
-
----
-
-# Fractured World Example
-
-```text
-SUPPLY STATE
-
-Region:
-Shenandoah Valley
-
-Historical Era:
-WS-03 — The Fractured World
-
-Food:
-    Availability: SURPLUS
-    Production: HIGH
-    Imports: LOW
-    Distribution: FUNCTIONAL
-    Demand: NORMAL
-    Resilience: HIGH
-
-Water:
-    Availability: ADEQUATE
-    Resilience: HIGH
-
-Fuel:
-    Availability: CONSTRAINED
-    Local Production: MINIMAL
-    Dependency: HIGH
-    Rationing: FUNCTIONAL
-
-Medicine:
-    Availability: STRAINED
-    Dependency: HIGH
-    Resilience: LOW
-
-Industrial Materials:
-    Availability: CONSTRAINED
-
-Overall Supply Trend:
 STABLE
 ```
 
-The region may be highly resilient in food while remaining dependent upon external medicine and industrial goods.
+or:
+
+```text
+COLLAPSED.
+```
+
+It is resilient in some resources and vulnerable in others.
 
 ---
 
-# Reconnection Example
+# 109. Supply State Invariants
 
-```text
-SUPPLY STATE
+## SUP-INV-001 — Resource Existence and Availability Are Separate
 
-Region:
-Shenandoah Valley
-
-Historical Era:
-WS-04 — The Reconnection
-
-Food:
-SURPLUS
-
-Fuel:
-STRAINED → ADEQUATE
-
-Medicine:
-STRAINED → ADEQUATE
-
-Industrial Materials:
-CONSTRAINED → STRAINED
-
-New Trade Dependency:
-INCREASING
-```
-
-Reconnection improves availability while creating new dependencies.
+A resource may exist without being accessible.
 
 ---
 
-# Supply Event Generation
+## SUP-INV-002 — Supply and Infrastructure Are Separate
 
-Example:
+Supply owns resources.
+
+Infrastructure owns physical systems.
+
+---
+
+## SUP-INV-003 — Production Capacity and Current Production Are Separate
+
+Potential output does not equal actual output.
+
+---
+
+## SUP-INV-004 — Inventory and Strategic Reserves Are Separate
+
+Normal stock and protected reserve stock must not be conflated.
+
+---
+
+## SUP-INV-005 — Demand and Consumption Are Separate
+
+Need does not equal actual use.
+
+---
+
+## SUP-INV-006 — Availability and Import Dependency Are Separate
+
+Current abundance may coexist with structural vulnerability.
+
+---
+
+## SUP-INV-007 — Supply Does Not Own Allocation Decisions
+
+Actors decide who receives scarce resources.
+
+---
+
+## SUP-INV-008 — Supply Does Not Own Observer Knowledge
+
+Actual resource truth remains separate from reported or believed supply.
+
+---
+
+## SUP-INV-009 — Supply Does Not Own Physical Route State
+
+Infrastructure owns transportation and distribution infrastructure.
+
+---
+
+## SUP-INV-010 — Supply Does Not Own Security State
+
+Threat and protection belong to Security.
+
+---
+
+## SUP-INV-011 — Supply Does Not Own Population Behavior
+
+Stockpiling, conservation and migration originate elsewhere.
+
+---
+
+## SUP-INV-012 — Reserve Use Reduces Future Resilience
+
+Buffers cannot be consumed without consequence.
+
+---
+
+## SUP-INV-013 — Supply Effects May Be Delayed
+
+Shortage does not always appear immediately after disruption.
+
+---
+
+## SUP-INV-014 — Dependencies Require Real Causal Links
+
+Supply cascades must be explainable.
+
+---
+
+## SUP-INV-015 — Cascades Are Conditional
+
+Buffers, substitution and adaptation may interrupt them.
+
+---
+
+## SUP-INV-016 — Stable Scarcity Is Valid
+
+Scarcity does not automatically create collapse.
+
+---
+
+## SUP-INV-017 — Local Production Does Not Equal Self-Sufficiency
+
+Production itself may depend on external inputs.
+
+---
+
+## SUP-INV-018 — Recovery Does Not End When Availability Returns
+
+Inventories and reserves may remain dangerously low.
+
+---
+
+## SUP-INV-019 — Resolution Changes Detail, Not Resource Reality
+
+Low-resolution Supply remains causally active.
+
+---
+
+## SUP-INV-020 — Player Absence Does Not Freeze Supply
+
+Resources continue to be produced, consumed and depleted.
+
+---
+
+## SUP-INV-021 — Supply Does Not Generate Narrative Need
+
+Resource state exists independently of story requirements.
+
+---
+
+## SUP-INV-022 — Major Supply Changes Must Be Explainable
+
+Availability changes require traceable causes.
+
+---
+
+# 110. Development Locks
+
+Future Supply development must not introduce:
 
 ```text
-Fuel:
-CONSTRAINED
+single universal Supply score
 
-Distribution:
-STRAINED
+resource exists equals resource available
 
-Authority:
-FUNCTIONAL
+availability equals distribution capability
 
-Public Trust:
-HIGH
-```
+Supply-owned road state
 
-Possible event:
+Supply-owned warehouse condition
 
-```text
-Regional fuel rationing
-```
+Supply-owned pipeline condition
 
-Alternative:
+Supply-owned security
 
-```text
-Fuel:
-CONSTRAINED
+Supply-owned Authority decisions
 
-Authority:
-LOW
+Supply-owned public trust
 
-Information:
-UNSTABLE
-```
+Supply-owned observer confidence
 
-Possible events:
+Supply-owned Character knowledge
 
-```text
-Fuel queues
-Black-market expansion
-Route competition
-Stockpiling
+automatic rationing
+
+automatic black markets
+
+automatic stockpiling
+
+automatic violence
+
+automatic cascades
+
+automatic shortage from dependency
+
+automatic recovery
+
+free reserve use
+
+local production equals independence
+
+player-triggered resource existence
+
+frozen distant resources
+
+quest-generated scarcity
+
+narrative-forced shortage
+
+random shortage for drama
+
+player-exclusive resource rules.
 ```
 
 ---
 
-# Supply Opportunity Generation
+# 111. Supply Architecture Test
 
-Supply should create positive gameplay opportunities.
-
-Examples:
+Before adding a Supply mechanic, ask:
 
 ```text
-New trade route discovered.
+WHAT RESOURCE
+ARE WE MODELING?
 
-Warehouse reopened.
+DOES IT
+ACTUALLY EXIST?
 
-Local farm cooperative expands.
+WHERE IS IT?
 
-Refinery restart becomes possible.
+HOW MUCH
+IS AVAILABLE?
 
-Medicine convoy arrives.
+HOW MUCH
+IS STORED?
 
-Regional trade agreement proposed.
+HOW MUCH
+IS RESERVED?
+
+HOW MUCH
+IS BEING PRODUCED?
+
+WHAT IS
+PRODUCTION CAPACITY?
+
+WHAT IS
+CURRENT DEMAND?
+
+WHAT IS
+ESSENTIAL DEMAND?
+
+WHAT IS
+ACTUAL CONSUMPTION?
+
+WHAT DOES
+PRODUCTION
+DEPEND ON?
+
+HOW DEPENDENT
+IS THE REGION
+ON IMPORTS?
+
+WHAT BUFFERS
+EXIST?
+
+HOW FAST
+ARE THEY
+BEING DEPLETED?
+
+CAN THE RESOURCE
+BE SUBSTITUTED?
+
+HOW CRITICAL
+IS IT?
+
+WHAT IS
+THE CURRENT
+BOTTLENECK?
+
+IS THE BOTTLENECK
+ACTUALLY SUPPLY
+
+OR
+
+INFRASTRUCTURE?
+
+SECURITY?
+
+AUTHORITY?
+
+INFORMATION?
+
+WORKFORCE?
+
+WHAT HAPPENS
+IF NOTHING CHANGES?
+
+WHAT WOULD
+ALLOW RECOVERY?
 ```
 
 ---
 
-# Player Interaction
+# 112. Final Supply Model
 
-Players may affect supply through:
-
-- escort
-- trade
-- production
-- negotiation
-- repair
-- route discovery
-- resource recovery
-- rationing decisions
-- protection
-- information
-
----
-
-# Player Supply Choices
-
-Example:
+Conceptually:
 
 ```text
-Medicine Supply:
-Critical
-
-Available Shipment:
-Limited
-
-Options:
-
-Hospital A
-Population: Large
-
-Hospital B
-Specialist Care
-
-Remote Settlement
-No alternative access
+RESOURCE SOURCES
+        │
+        ├── Local Production
+        ├── Imports
+        └── Existing Inventory
+                │
+                ↓
+        RESOURCE AVAILABILITY
+                │
+                ├── Inventory
+                ├── Strategic Reserves
+                ├── Demand
+                ├── Essential Demand
+                ├── Consumption
+                ├── Dependency
+                ├── Criticality
+                ├── Substitutability
+                ├── Pressure
+                ├── Resilience
+                └── Trend
+                        │
+                        ↓
+        INFRASTRUCTURE
+        +
+        SECURITY
+        +
+        AUTHORITY
+        +
+        POPULATION
+        +
+        INFORMATION
+        +
+        TIME
+                        ↓
+        REAL RESOURCE ACCESS
+                        ↓
+        CONSUMPTION
+        /
+        STORAGE
+        /
+        REDIRECTION
+        /
+        RESERVE USE
+                        ↓
+        UPDATED SUPPLY STATE
+                        ↓
+        FUTURE AVAILABILITY.
 ```
 
-The system may create meaningful allocation decisions without a universally correct answer.
-
 ---
 
-# Player-Created Supply Cascade
+# 113. Supply North Star
 
-Example:
+The system succeeds when Project Ascension can answer:
 
 ```text
-Players restore bridge.
-      ↓
-Distribution improves.
-      ↓
-Food Availability improves.
-      ↓
-Public Confidence improves.
-      ↓
-Stockpiling decreases.
+WHAT EXISTS?
+
+WHERE IS IT?
+
+HOW MUCH EXISTS?
+
+HOW MUCH
+IS ACTUALLY
+AVAILABLE?
+
+WHERE DOES IT
+COME FROM?
+
+CAN IT
+BE PRODUCED
+LOCALLY?
+
+WHAT INPUTS
+DOES PRODUCTION
+REQUIRE?
+
+HOW DEPENDENT
+IS THE REGION
+ON IMPORTS?
+
+HOW MUCH
+INVENTORY REMAINS?
+
+HOW LARGE
+ARE THE RESERVES?
+
+HOW QUICKLY
+ARE THEY
+BEING CONSUMED?
+
+WHAT IS
+NORMAL DEMAND?
+
+WHAT IS
+ESSENTIAL DEMAND?
+
+WHAT IS
+THE BOTTLENECK?
+
+CAN THE RESOURCE
+BE SUBSTITUTED?
+
+WHAT HAPPENS
+WHEN THE BUFFER
+RUNS OUT?
+
+WHAT HAPPENS
+IF NOTHING CHANGES?
+
+CAN THE REGION
+ADAPT TO
+LONG-TERM SCARCITY?
+
+AND
+
+CAN SUPPLY
+RECOVER
+WITHOUT RETURNING
+TO THE OLD
+GLOBAL SYSTEM?
 ```
 
-Player action may produce effects beyond the immediate mission.
-
 ---
 
-# Supply Knowledge
+# 114. Closing Principle
 
-Supply information may be uncertain.
-
-Example:
+Project Ascension should never reduce resource scarcity to:
 
 ```text
-Reported Fuel Inventory:
+THERE IS FOOD
+
+THEREFORE
+
+PEOPLE HAVE FOOD.
+```
+
+Nor should it reduce shortage to:
+
+```text
+IMPORTS STOPPED
+
+THEREFORE
+
+THE REGION STARVES.
+```
+
+The simulation should instead understand:
+
+```text
+Food Production:
+MODERATE
+
+Imports:
+FAILED
+
+Commercial Inventory:
 ADEQUATE
 
-Actual Fuel Inventory:
-LOW
+Strategic Reserves:
+HIGH
 
-Confidence:
-LOW
+Demand:
+HIGH
+
+Import Dependency:
+HIGH
+
+Trend:
+DETERIORATING.
 ```
 
-Authorities and populations respond to available knowledge rather than hidden truth.
+The shortage has not arrived yet.
 
----
+But the conditions that may create it already exist.
 
-# Supply Intelligence
-
-Information about supply may itself become valuable.
-
-Examples:
+Likewise:
 
 ```text
-Which town has fuel?
+Regional Food:
+SURPLUS
 
-Which road is open?
+Urban Availability:
+CONSTRAINED
 
-Where are medical supplies stored?
-
-Which region has grain surplus?
+Transport Infrastructure:
+DEGRADED.
 ```
 
-Supply intelligence may drive trade, migration and conflict.
+The food exists.
 
----
+The problem is somewhere else.
 
-# Supply Update Cycle
+Supply therefore represents more than scarcity.
 
-A conceptual Supply State update may follow:
-
-```text
-1. Read current inventory.
-2. Read local production.
-3. Read imports.
-4. Process route capacity.
-5. Process distribution.
-6. Calculate demand.
-7. Apply population behavior.
-8. Apply rationing and conservation.
-9. Apply authority allocation.
-10. Apply infrastructure constraints.
-11. Apply workforce constraints.
-12. Apply security effects.
-13. Consume inventory.
-14. Apply reserve use.
-15. Apply substitution.
-16. Calculate pressure.
-17. Evaluate thresholds.
-18. Update availability.
-19. Update trend.
-20. Generate supply events.
-21. Update historical memory where significant.
-```
-
----
-
-# Supply Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active shortages
-- critical facilities
-- major trade routes
-
-May track:
-
-```text
-Individual resources
-Inventory days
-Routes
-Warehouses
-Strategic reserves
-Allocation decisions
-```
-
----
-
-## Medium Resolution
-
-Used for nearby regions.
-
-Tracks:
-
-```text
-Resource categories
-Availability
-Production
-Imports
-Distribution
-Pressure
-Trend
-```
-
----
-
-## Low Resolution
-
-Used for distant regions.
-
-Tracks:
-
-```text
-Overall Supply
-Key Surpluses
-Key Shortages
-Dependency
-Trend
-Major Events
-```
-
----
-
-# Minimum Supply State
-
-A minimum viable Supply State should contain:
-
-```text
-Food
-Water
-Fuel
-Medicine
-Spare Parts
-
-For each:
-
-Availability
-Production
-Imports
-Inventory
-Distribution
-Demand
-Dependency
-Pressure
-Resilience
-Trend
-
-Plus:
-
-Strategic Reserves
-Major Supply Routes
-Major Supply Dependencies
-Rationing State
-```
-
-Additional resource categories should be added only where useful.
-
----
-
-# Supply Consistency Rules
-
-## Rule 1
-
-Resource existence and resource access are separate.
-
----
-
-## Rule 2
-
-Supply and Logistics are separate.
-
----
-
-## Rule 3
-
-Availability and Distribution Capacity are separate.
-
----
-
-## Rule 4
-
-Production Capacity and current Production Output are separate.
-
----
-
-## Rule 5
-
-Imports increase current availability but may increase dependency.
-
----
-
-## Rule 6
-
-Inventory and Strategic Reserves are separate.
-
----
-
-## Rule 7
-
-Using reserves reduces future resilience.
-
----
-
-## Rule 8
-
-Demand and Consumption are separate.
-
----
-
-## Rule 9
-
-Population behavior may move inventory without changing total regional resources.
-
----
-
-## Rule 10
-
-Stockpiling does not automatically mean irrational behavior.
-
----
-
-## Rule 11
-
-Rationing may stabilize supply.
-
----
-
-## Rule 12
-
-Perceived fairness influences rationing effectiveness.
-
----
-
-## Rule 13
-
-Supply effects may be delayed.
-
----
-
-## Rule 14
-
-Supply chains require real dependencies.
-
----
-
-## Rule 15
-
-Alternate routes and substitution must be able to interrupt cascades.
-
----
-
-## Rule 16
-
-Local production does not automatically equal self-sufficiency.
-
----
-
-## Rule 17
-
-Critical specialized goods may remain import dependent even in resilient regions.
-
----
-
-## Rule 18
-
-Stable scarcity is a valid long-term equilibrium.
-
----
-
-## Rule 19
-
-Supply recovery may require rebuilding reserves after availability returns.
-
----
-
-## Rule 20
-
-Supply adaptation may increase resilience while reducing efficiency.
-
----
-
-## Rule 21
-
-Regional supply conditions may vary internally.
-
----
-
-## Rule 22
-
-Supply allocation decisions should create understandable tradeoffs.
-
----
-
-# Guiding Questions
-
-For every important resource, the simulation should be capable of answering:
-
-**How much exists?**
-
-**Where is it?**
-
-**Where does it come from?**
-
-**Can it be produced locally?**
-
-**How dependent is the region on imports?**
-
-**How much inventory exists?**
-
-**How large are strategic reserves?**
-
-**Can it be transported?**
-
-**Can it be distributed?**
-
-**Who needs it?**
-
-**Who receives priority?**
-
-**How quickly is it being consumed?**
-
-**What happens when buffers run out?**
-
-**Can something substitute for it?**
-
-**What is the current bottleneck?**
-
-**What would allow supply to recover?**
-
-These questions define supply more accurately than a single shortage value.
-
----
-
-# Core Design Principle
-
-Project Ascension should never assume:
-
-```text
-FOOD EXISTS IN THE REGION
-=
-PEOPLE HAVE FOOD
-```
-
-Instead:
+It represents the material relationship between:
 
 ```text
 PRODUCTION
-    +
-IMPORTS
-    +
-INVENTORY
-    +
-TRANSPORT
-    +
-DISTRIBUTION
-    +
-ACCESS
-=
-USABLE SUPPLY
+
+STORAGE
+
+DEPENDENCY
+
+DEMAND
+
+CONSUMPTION
+
+BUFFERS
+
+SUBSTITUTION
+
+TIME.
 ```
 
-Any link can become the limiting factor.
+Resources move through a living world.
 
----
+They are produced.
 
-# Relationship to The Connected World
+Stored.
 
-The Connected World typically possesses:
+Consumed.
 
-```text
-High trade
-Low inventory
-High logistics efficiency
-High specialization
-High external dependency
-```
+Protected.
 
-This produces tremendous abundance.
+Redirected.
 
-It may also create vulnerability to systemic disruption.
+Lost.
 
----
+Substituted.
 
-# Relationship to The Transition
+Replenished.
 
-The Transition exposes those dependencies.
+And sometimes transformed into entirely new supply systems.
 
-Typical progression:
+The central principle is:
 
-```text
-Imports remain available
-        ↓
-Coordination becomes less reliable
-        ↓
-Distribution slows
-        ↓
-Inventory falls
-        ↓
-Rationing begins
-        ↓
-Regional supply conditions diverge
-```
-
-Physical scarcity may appear later than operational scarcity.
-
----
-
-# Relationship to The Fractured World
-
-Supply systems adapt toward:
-
-```text
-Regional production
-Higher inventories
-Local storage
-Trade networks
-Rationing
-Substitution
-```
-
-Different regions develop distinctive resource profiles.
-
----
-
-# Relationship to The Reconnection
-
-Reconnection restores:
-
-- long-distance trade
-- specialized production
-- larger markets
-- greater resource variety
-
-But also recreates external dependency.
-
-The strategic question becomes:
-
-```text
-How much efficiency should be exchanged for dependency?
-```
-
----
-
-# World Simulation Integration
-
-Supply now completes another major loop:
-
-```text
-INFRASTRUCTURE
-      ↓
-LOGISTICS
-      ↓
-SUPPLY
-      ↓
-POPULATION
-      ↓
-AUTHORITY
-      ↓
-ALLOCATION / BEHAVIOR
-      ↓
-SUPPLY
-```
-
-and:
-
-```text
-SUPPLY
-      ↓
-INFRASTRUCTURE REPAIR
-      ↓
-RECOVERY
-      ↓
-SUPPLY CAPACITY
-```
-
-Supply is therefore both an outcome and a driver of world state.
-
----
-
-# Current Status
-
-```text
-WORLD SIMULATION
-
-README.md
-COMPLETE
-
-World_State.md
-FOUNDATION DEFINED
-
-Regional_State.md
-FOUNDATION DEFINED
-
-Infrastructure_State.md
-FOUNDATION DEFINED
-
-Information_State.md
-FOUNDATION DEFINED
-
-Authority_State.md
-FOUNDATION DEFINED
-
-Population_State.md
-FOUNDATION DEFINED
-
-Supply_State.md
-FOUNDATION DEFINED
-
-Security_State.md
-PENDING
-
-Escalation_and_Recovery.md
-FOUNDATION DEFINED
-
-Validation/
-    TEST-001_Northern_Virginia_Transition.md
-    PASS
-```
-
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/World_Simulation/Security_State.md
-```
-
-Supply State defines:
-
-```text
-WHAT PEOPLE AND SYSTEMS NEED
-```
-
-Security State will define:
-
-```text
-WHETHER PEOPLE, INSTITUTIONS AND RESOURCE FLOWS CAN OPERATE SAFELY
-```
-
-It should distinguish:
-
-- security condition
-- security capacity
-- threat
-- crime
-- unrest
-- organized violence
-- policing
-- military support
-- infrastructure protection
-- territorial security
-- community defense
-- perceived security
-
-Most importantly, it should preserve the same principle we used for Population:
-
-```text
-CRISIS
-≠
-VIOLENCE
-```
-
-A region can be under severe infrastructure and supply pressure while remaining socially peaceful.
-
-That distinction will be essential when we later test a stable society in **The Fractured World**.
+> **A resource shortage is not simply the absence of a resource. It is the point at which production, inventory, dependency, demand, access and time can no longer provide enough usable supply where it is needed.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial supply availability, production, imports, inventory, reserves, distribution, demand, rationing, dependency, feedback and adaptation framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial supply availability, production, imports, inventory, reserves, distribution, demand, rationing, dependency, feedback and adaptation framework. |
+| 1.0 | 2026-09-01 | Rebuilt Supply State as canonical resource architecture aligned with Simulation Architecture and Infrastructure State. Preserved availability, production, imports, inventory, strategic reserves, demand, consumption, dependency, substitution, criticality, delayed effects, resilience, stable scarcity and adaptation while separating physical logistics from Supply, allocation from resource state, population behavior from Supply, observer knowledge from actual resource truth, and Security from resource availability. Established explicit cross-system contracts, adaptive simulation resolution, invariants and development locks. |

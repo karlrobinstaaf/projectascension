@@ -1,66 +1,76 @@
 # PROJECT ASCENSION
-# Profession and Capability System
+
+# Profession and Capability
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Profession and Capability |
-| Location | Canon/Systems/Characters/Profession_and_Capability.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Profession, Skills, Experience, Expertise, Tools, Training and Character Capability |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Profession_and_Capability.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Capability Context |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define a Character's professional context and determine what they can realistically attempt under current conditions without duplicating Expertise, Life, Progression, Knowledge or World Simulation |
 
-> *"Wanting to do something does not mean knowing how to do it. Knowing how to do it does not mean having what is needed to succeed."*
+> **"Knowing how to do something matters. Having the conditions required to actually do it matters just as much."**
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Profession and Capability system defines what characters in Project Ascension are actually capable of doing.
-
-It connects:
+The Profession and Capability system defines the relationship between:
 
 ```text
-Profession
+WHO A CHARACTER
+HAS BECOME
+PROFESSIONALLY
 
-Education
+AND
 
-Training
-
-Skills
-
-Experience
-
-Knowledge
-
-Physical Ability
-
-Cognitive Ability
-
-Social Ability
-
-Tools
-
-Equipment
-
-Resources
-
-Networks
-
-Environment
+WHAT THEY CAN
+REALISTICALLY DO
+RIGHT NOW.
 ```
 
-into:
+Its central questions are:
 
 ```text
-PRACTICAL CAPABILITY.
+WHAT PROFESSIONAL
+CONTEXT DOES THIS
+CHARACTER HAVE?
+
+WHAT EXPERTISE
+IS RELEVANT?
+
+WHAT PHYSICAL,
+MATERIAL,
+SOCIAL
+AND ENVIRONMENTAL
+CONDITIONS EXIST?
+
+WHAT CAN THIS
+CHARACTER
+REALISTICALLY ATTEMPT?
 ```
 
-The purpose is to prevent:
+The system exists to prevent:
 
 ```text
 INTENTION
+```
+
+from automatically becoming:
+
+```text
+CAPABILITY.
+```
+
+And to prevent:
+
+```text
+EXPERTISE
 ```
 
 from automatically becoming:
@@ -71,6493 +81,105 @@ SUCCESS.
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
-A character may:
+A Character may:
 
 ```text
-WANT TO DO SOMETHING.
+WANT TO ACT.
 ```
 
 They may:
 
 ```text
-DECIDE TO DO IT.
+DECIDE TO ACT.
 ```
 
-But the simulation must still ask:
+But the simulation must still determine:
 
 ```text
-CAN THEY ACTUALLY DO IT?
+CAN THEY
+REALISTICALLY
+ATTEMPT THIS?
 ```
 
----
-
-# Foundational Capability Model
-
-Conceptually:
+Capability therefore exists between:
 
 ```text
 INTENTION
-+
-RELEVANT SKILL
-+
-KNOWLEDGE
-+
-EXPERIENCE
-+
-PHYSICAL / COGNITIVE ABILITY
-+
-TOOLS
-+
-RESOURCES
-+
-TIME
-+
-ENVIRONMENT
-+
-ASSISTANCE
-      ↓
-EFFECTIVE CAPABILITY
-      ↓
-ACTION ATTEMPT
-      ↓
-OUTCOME.
-```
-
----
-
-# Capability Is Contextual
-
-Capability is not simply:
-
-```text
-CHARACTER SKILL SCORE.
-```
-
-The same character may succeed or fail depending on:
-
-```text
-task difficulty
-
-available tools
-
-time
-
-fatigue
-
-injury
-
-weather
-
-information
-
-assistance
-
-resource availability.
-```
-
----
-
-# Profession
-
-Profession represents:
-
-```text
-A CHARACTER'S
-PRIMARY DEVELOPED
-AREA OF WORK.
-```
-
-Examples:
-
-```text
-Doctor
-
-Nurse
-
-Mechanic
-
-Engineer
-
-Teacher
-
-Farmer
-
-Electrician
-
-Driver
-
-Trader
-
-Carpenter
-
-Programmer
-
-Police Officer
-
-Administrator
-
-Journalist
-
-Cook
-
-Construction Worker.
-```
-
----
-
-# Profession Is Not Identity
-
-A character is not merely:
-
-```text
-THEIR JOB.
-```
-
-Profession influences:
-
-```text
-skills
-
-knowledge
-
-routine
-
-income
-
-relationships
-
-social role
-
-opportunities
-
-responsibilities.
-```
-
-But characters possess:
-
-```text
-many capabilities
-outside profession.
-```
-
----
-
-# Occupation
-
-Occupation represents:
-
-```text
-WHAT THE CHARACTER
-CURRENTLY DOES FOR WORK.
-```
-
-Profession and occupation may differ.
-
-Example:
-
-```text
-Profession:
-Engineer
-
-Current Occupation:
-Warehouse Worker.
-```
-
----
-
-# Employment State
-
-Recommended conceptual states:
-
-```text
-EMPLOYED
-
-SELF-EMPLOYED
-
-UNEMPLOYED
-
-STUDENT
-
-RETIRED
-
-TEMPORARILY UNABLE TO WORK
-
-INFORMAL WORK
-
-UNPAID CARE WORK.
-```
-
----
-
-# Multiple Occupations
-
-Characters may have:
-
-```text
-multiple jobs
-
-seasonal work
-
-side businesses
-
-volunteer roles.
-```
-
-Example:
-
-```text
-Primary:
-Teacher
-
-Secondary:
-Farm Work
-
-Volunteer:
-Emergency Response.
-```
-
----
-
-# Professional History
-
-Characters should possess:
-
-```text
-CAREER HISTORY.
-```
-
-Conceptually:
-
-```text
-Education
-↓
-Training
-↓
-Early Employment
-↓
-Experience
-↓
-Specialization
-↓
-Current Profession.
-```
-
----
-
-# Career History Matters
-
-Two characters with the same profession may differ because of:
-
-```text
-years of experience
-
-work environments
-
-specialization
-
-past failures
-
-past successes
-
-mentors
-
-employers.
-```
-
----
-
-# Skill
-
-A Skill represents:
-
-```text
-LEARNED ABILITY
-TO PERFORM
-A CATEGORY OF TASK.
-```
-
-Examples:
-
-```text
-Vehicle Repair
-
-Electrical Repair
-
-Medicine
-
-Surgery
-
-Cooking
-
-Driving
-
-Negotiation
-
-Programming
-
-Carpentry
-
-Farming
-
-Logistics
-
-Leadership.
-```
-
----
-
-# Skill Domains
-
-Recommended broad domains:
-
-```text
-TECHNICAL
-
-MEDICAL
-
-PHYSICAL
-
-SOCIAL
-
-COGNITIVE
-
-CRAFT
-
-SURVIVAL
-
-ADMINISTRATIVE
-
-COMMERCIAL
-
-SCIENTIFIC
-
-CREATIVE
-
-LEADERSHIP.
-```
-
----
-
-# Technical Skills
-
-Examples:
-
-```text
-mechanical repair
-
-electrical systems
-
-electronics
-
-construction
-
-plumbing
-
-network systems
-
-machine operation.
-```
-
----
-
-# Medical Skills
-
-Examples:
-
-```text
-first aid
-
-nursing
-
-diagnosis
-
-surgery
-
-pharmacy
-
-emergency medicine
-
-mental health support.
-```
-
----
-
-# Physical Skills
-
-Examples:
-
-```text
-lifting
-
-climbing
-
-running
-
-swimming
-
-manual handling
-
-precision movement.
-```
-
----
-
-# Social Skills
-
-Examples:
-
-```text
-negotiation
-
-persuasion
-
-teaching
-
-leadership
-
-mediation
-
-sales
-
-interviewing.
-```
-
----
-
-# Cognitive Skills
-
-Examples:
-
-```text
-analysis
-
-planning
-
-mathematics
-
-diagnosis
-
-research
-
-problem solving
-
-memory-intensive work.
-```
-
----
-
-# Craft Skills
-
-Examples:
-
-```text
-carpentry
-
-metalwork
-
-sewing
-
-cooking
-
-machining
-
-repair craftsmanship.
-```
-
----
-
-# Survival Skills
-
-Examples:
-
-```text
-navigation
-
-fire making
-
-shelter construction
-
-foraging
-
-wilderness medicine
-
-tracking.
-```
-
----
-
-# Administrative Skills
-
-Examples:
-
-```text
-accounting
-
-documentation
-
-procurement
-
-scheduling
-
-regulatory work
-
-resource coordination.
-```
-
----
-
-# Commercial Skills
-
-Examples:
-
-```text
-sales
-
-pricing
-
-procurement
-
-market evaluation
-
-business management
-
-trade negotiation.
-```
-
----
-
-# Scientific Skills
-
-Examples:
-
-```text
-biology
-
-chemistry
-
-physics
-
-environmental analysis
-
-laboratory methods.
-```
-
----
-
-# Creative Skills
-
-Examples:
-
-```text
-writing
-
-music
-
-design
-
-photography
-
-visual art
-
-craft design.
-```
-
----
-
-# Leadership Skills
-
-Examples:
-
-```text
-coordination
-
-delegation
-
-crisis management
-
-motivation
-
-strategic planning
-
-public communication.
-```
-
----
-
-# Skill Granularity
-
-Skills should not become:
-
-```text
-THOUSANDS OF
-MICRO-SKILLS.
-```
-
-Use enough granularity to create:
-
-```text
-meaningful capability differences.
-```
-
----
-
-# Skill Hierarchy
-
-Skills may conceptually support:
-
-```text
-DOMAIN
-↓
-SKILL
-↓
-SPECIALIZATION.
-```
-
-Example:
-
-```text
-Medicine
-↓
-Emergency Medicine
-↓
-Trauma Care.
-```
-
----
-
-# Skill Level
-
-Recommended conceptual levels:
-
-```text
-NONE
-
-NOVICE
-
-BASIC
-
-COMPETENT
-
-PROFICIENT
-
-EXPERT
-
-MASTER.
-```
-
----
-
-# None
-
-Character possesses:
-
-```text
-NO MEANINGFUL TRAINING.
-```
-
-They may still attempt:
-
-```text
-simple intuitive tasks.
-```
-
----
-
-# Novice
-
-Character possesses:
-
-```text
-minimal exposure.
-```
-
-They may perform:
-
-```text
-very simple tasks
-with guidance.
-```
-
----
-
-# Basic
-
-Character possesses:
-
-```text
-basic training
-or limited experience.
-```
-
----
-
-# Competent
-
-Character can perform:
-
-```text
-normal tasks
-independently.
-```
-
----
-
-# Proficient
-
-Character handles:
-
-```text
-difficult tasks
-
-unusual situations
-
-some improvisation.
-```
-
----
-
-# Expert
-
-Character possesses:
-
-```text
-deep domain knowledge
-
-extensive experience
-
-high reliability.
-```
-
----
-
-# Master
-
-Character represents:
-
-```text
-exceptional capability
-within the domain.
-```
-
-This should be:
-
-```text
-RARE.
-```
-
----
-
-# Skill Level Principle
-
-Skill level should influence:
-
-```text
-what tasks are recognized
-
-which options are generated
-
-task speed
-
-error probability
-
-resource efficiency
-
-ability to improvise
-
-quality of outcome.
-```
-
----
-
-# Skill Does Not Guarantee Success
-
-Even an:
-
-```text
-EXPERT
-```
-
-may fail because of:
-
-```text
-insufficient tools
-
-bad information
-
-extreme conditions
-
-time pressure
-
-fatigue
-
-unexpected complication
-
-bad luck.
-```
-
----
-
-# Low Skill Does Not Guarantee Failure
-
-A novice may succeed because:
-
-```text
-task is easy
-
-instructions available
-
-expert guidance exists
-
-good tools exist
-
-luck favors attempt.
-```
-
----
-
-# Knowledge Versus Skill
-
-Critical distinction:
-
-```text
-KNOWING WHAT TO DO
-```
-
-is not identical to:
-
-```text
-BEING ABLE TO DO IT.
-```
-
----
-
-# Knowledge Example
-
-Character has read:
-
-```text
-how to repair
-an electrical panel.
-```
-
-Knowledge:
-
-```text
-MODERATE.
-```
-
-Practical Skill:
-
-```text
-LOW.
-```
-
-They may understand:
-
-```text
-the procedure
-```
-
-while lacking:
-
-```text
-safe execution capability.
-```
-
----
-
-# Skill Without Full Knowledge
-
-A highly experienced worker may possess:
-
-```text
-practical ability
-```
-
-without:
-
-```text
-formal theoretical knowledge.
-```
-
-Example:
-
-```text
-experienced mechanic
-diagnoses engine sound
-through pattern recognition.
-```
-
----
-
-# Explicit Knowledge
-
-Examples:
-
-```text
-technical procedures
-
-medical facts
-
-regulations
-
-mathematics
-
-maps
-
-written instructions.
-```
-
----
-
-# Tacit Knowledge
-
-Tacit knowledge represents:
-
-```text
-KNOWLEDGE LEARNED
-THROUGH EXPERIENCE
-THAT IS DIFFICULT
-TO FULLY EXPLAIN.
-```
-
-Examples:
-
-```text
-recognizing abnormal machine sound
-
-reading a tense room
-
-knowing when dough is ready
-
-judging unstable structure.
-```
-
----
-
-# Experience
-
-Experience represents:
-
-```text
-PRACTICAL EXPOSURE
-TO REAL SITUATIONS.
-```
-
-Experience influences:
-
-```text
-speed
-
-judgment
-
-pattern recognition
-
-confidence
-
-risk recognition
-
-improvisation.
-```
-
----
-
-# Experience Is Domain-Specific
-
-A character may have:
-
-```text
-20 years
-of general medicine
-```
-
-but:
-
-```text
-little trauma experience.
-```
-
----
-
-# Experience Breadth
-
-Breadth represents:
-
-```text
-HOW MANY DIFFERENT
-SITUATIONS
-THE CHARACTER HAS ENCOUNTERED.
-```
-
----
-
-# Experience Depth
-
-Depth represents:
-
-```text
-HOW MUCH EXPERIENCE
-THE CHARACTER HAS
-WITH A PARTICULAR TASK.
-```
-
----
-
-# Repeated Experience
-
-Repeated exposure may improve:
-
-```text
-speed
-
-reliability
-
-confidence.
-```
-
-But repeated routine does not necessarily create:
-
-```text
-expertise in unusual situations.
-```
-
----
-
-# Expertise
-
-Expertise emerges from:
-
-```text
-SKILL
-+
-KNOWLEDGE
-+
-EXPERIENCE
-+
-PATTERN RECOGNITION.
-```
-
----
-
-# Expert Recognition
-
-Experts may notice:
-
-```text
-problems
-
-risks
-
-opportunities
-```
-
-that others do not.
-
-Example:
-
-```text
-Engineer hears
-unusual pump vibration.
-```
-
-Non-expert:
-
-```text
-notices nothing unusual.
-```
-
----
-
-# Expertise Creates Options
-
-An expert may generate:
-
-```text
-ACTION OPTIONS
-```
-
-that do not occur to:
-
-```text
-non-experts.
-```
-
----
-
-# Expertise and Decision Making
-
-Therefore capability influences:
-
-```text
-Decision_Making.md
-```
-
-before action begins.
-
-It affects:
-
-```text
-what the character
-believes is possible.
-```
-
----
-
-# Education
-
-Education represents:
-
-```text
-FORMAL STRUCTURED LEARNING.
-```
-
-Examples:
-
-```text
-school
-
-university
-
-vocational training
-
-professional education.
-```
-
----
-
-# Education Does Not Equal Skill
-
-A graduate may possess:
-
-```text
-high theoretical knowledge
-```
-
-but:
-
-```text
-limited practical experience.
-```
-
----
-
-# Training
-
-Training represents:
-
-```text
-DIRECT PREPARATION
-FOR SPECIFIC TASKS.
-```
-
-Examples:
-
-```text
-first aid course
-
-machine certification
-
-fire response training
-
-driver training
-
-military training.
-```
-
----
-
-# Certification
-
-Certification represents:
-
-```text
-FORMALLY RECOGNIZED
-QUALIFICATION.
-```
-
-Examples:
-
-```text
-medical license
-
-commercial driving license
-
-electrical certification
-
-professional accreditation.
-```
-
----
-
-# Certification Versus Capability
-
-Certification indicates:
-
-```text
-EXPECTED MINIMUM COMPETENCE.
-```
-
-It does not guarantee:
-
-```text
-current capability.
-```
-
-A certified professional may be:
-
-```text
-out of practice
-
-injured
-
-impaired
-
-inexperienced.
-```
-
----
-
-# Uncertified Capability
-
-A character may possess:
-
-```text
-real practical skill
-```
-
-without:
-
-```text
-formal certification.
-```
-
-This may affect:
-
-```text
-legality
-
-employment
-
-trust
-
-institutional access.
-```
-
----
-
-# Learning
-
-Characters may improve capability through:
-
-```text
-education
-
-training
-
-practice
-
-experience
-
-mentorship
-
-self-study
-
-observation.
-```
-
----
-
-# Learning Requires Time
-
-Skill growth should not occur:
-
-```text
-INSTANTLY.
-```
-
----
-
-# Learning Model
-
-Conceptually:
-
-```text
-PRACTICE
-+
-INSTRUCTION
-+
-EXPERIENCE
-+
-TIME
-      ↓
-SKILL DEVELOPMENT.
-```
-
----
-
-# Practice
-
-Repeated practice may improve:
-
-```text
-execution
-
-speed
-
-confidence
-
-reliability.
-```
-
----
-
-# Quality of Practice
-
-Practice quality matters.
-
-```text
-BAD PRACTICE
-```
-
-may reinforce:
-
-```text
-BAD HABITS.
-```
-
----
-
-# Feedback
-
-Learning improves when characters receive:
-
-```text
-accurate feedback.
-```
-
-Without feedback:
-
-```text
-mistakes may persist.
-```
-
----
-
-# Mentorship
-
-A more capable character may:
-
-```text
-teach
-
-supervise
-
-demonstrate
-
-correct.
-```
-
-Mentorship can accelerate:
-
-```text
-skill development.
-```
-
----
-
-# Teaching Capability
-
-Being able to:
-
-```text
-DO SOMETHING
-```
-
-does not automatically mean:
-
-```text
-BEING GOOD
-AT TEACHING IT.
-```
-
----
-
-# Self-Study
-
-Characters may learn through:
-
-```text
-books
-
-manuals
-
-courses
-
-recordings
-
-documentation
-
-practice.
-```
-
-Effectiveness depends on:
-
-```text
-task
-
-existing knowledge
-
-learning resources
-
-motivation.
-```
-
----
-
-# Learning Opportunity
-
-Characters require:
-
-```text
-ACCESS
-```
-
-to learning.
-
-Examples:
-
-```text
-teacher
-
-school
-
-manual
-
-equipment
-
-internet
-
-practice environment.
-```
-
----
-
-# Skill Growth Initiative
-
-A capability gap may generate:
-
-```text
-NEW GOAL:
-LEARN SKILL.
-```
-
-This connects directly to:
-
-```text
-Autonomy_and_Initiative.md.
-```
-
----
-
-# Skill Decay
-
-Unused skills may:
-
-```text
-DECLINE.
-```
-
-Especially:
-
-```text
-precision skills
-
-procedural memory
-
-rapid-response capability.
-```
-
----
-
-# Skill Decay Rate
-
-Decay depends on:
-
-```text
-skill type
-
-previous expertise
-
-time unused
-
-age
-
-continued related activity.
-```
-
----
-
-# Expert Retention
-
-Deep expertise should usually decay:
-
-```text
-MORE SLOWLY
-```
-
-than:
-
-```text
-recent novice learning.
-```
-
----
-
-# Refresher Training
-
-Characters may restore capability through:
-
-```text
-practice
-
-retraining
-
-supervised work.
-```
-
----
-
-# Physical Capability
-
-Some tasks require:
-
-```text
-PHYSICAL CAPABILITY.
-```
-
-Relevant dimensions may include:
-
-```text
-strength
-
-endurance
-
-mobility
-
-dexterity
-
-coordination
-
-vision
-
-hearing.
-```
-
----
-
-# Physical Capability Is Task-Specific
-
-Example:
-
-```text
-High strength
-```
-
-does not imply:
-
-```text
-high fine-motor precision.
-```
-
----
-
-# Physical Condition
-
-Temporary conditions may modify capability:
-
-```text
-fatigue
-
-injury
-
-hunger
-
-cold
-
-heat
-
-sleep deprivation
-
-stress.
-```
-
----
-
-# Cognitive Capability
-
-Some tasks depend heavily on:
-
-```text
-attention
-
-memory
-
-reasoning
-
-planning
-
-pattern recognition
-
-mental endurance.
-```
-
----
-
-# Cognitive Load
-
-Capability may decline when:
-
-```text
-too many tasks
-
-stress high
-
-sleep poor
-
-time pressure extreme.
-```
-
----
-
-# Social Capability
-
-Social action also requires:
-
-```text
-CAPABILITY.
-```
-
-Examples:
-
-```text
-negotiation
-
-leadership
-
-teaching
-
-persuasion
-
-mediation
-
-sales
-
-public speaking.
-```
-
----
-
-# Social Context
-
-A socially capable character may still struggle because of:
-
-```text
-low trust
-
-hostile audience
-
-cultural differences
-
-bad reputation
-
-power imbalance.
-```
-
----
-
-# Emotional Capability
-
-Some situations require:
-
-```text
-emotional regulation
-
-patience
-
-empathy
-
-stress tolerance.
-```
-
-These may affect:
-
-```text
-leadership
-
-caregiving
-
-negotiation
-
-crisis response.
-```
-
----
-
-# Capability Profile
-
-Each important character may conceptually possess:
-
-```text
-Profession
-
-Occupation
-
-Education
-
-Training
-
-Certifications
-
-Skills
-
-Specializations
-
-Experience
-
-Physical Capability
-
-Cognitive Capability
-
-Social Capability
-
-Tools
-
-Professional Network.
-```
-
----
-
-# Tools
-
-Many capabilities require:
-
-```text
-TOOLS.
-```
-
-Examples:
-
-```text
-mechanic tools
-
-medical equipment
-
-computer
-
-vehicle
-
-construction equipment
-
-communication device.
-```
-
----
-
-# Tool Requirement
-
-Character skill alone may be insufficient.
-
-Example:
-
-```text
-Expert Mechanic
-+
-No Tools
-```
-
-may have lower effective capability than:
-
-```text
-Competent Mechanic
-+
-Full Workshop.
-```
-
----
-
-# Tool Quality
-
-Tools may vary by:
-
-```text
-availability
-
-quality
-
-condition
-
-precision
-
-compatibility.
-```
-
----
-
-# Tool Condition
-
-Equipment may be:
-
-```text
-NEW
-
-GOOD
-
-WORN
-
-DAMAGED
-
-BROKEN.
-```
-
----
-
-# Tool Failure
-
-Equipment may fail during:
-
-```text
-action.
-```
-
-This may create:
-
-```text
-new problem
-
-delay
-
-injury risk
-
-resource cost.
-```
-
----
-
-# Improvised Tools
-
-Characters may substitute:
-
-```text
-IMPROVISED TOOLS.
-```
-
-Success depends on:
-
-```text
-skill
-
-experience
-
-creativity
-
-task tolerance.
-```
-
----
-
-# Improvisation
-
-Improvisation represents:
-
-```text
-USING AVAILABLE
-RESOURCES
-IN NON-STANDARD WAYS.
-```
-
----
-
-# Expert Improvisation
-
-Experts may improvise effectively because they understand:
-
-```text
-underlying principles.
-```
-
----
-
-# Dangerous Improvisation
-
-Low-skill improvisation may create:
-
-```text
-temporary success
-
-hidden failure
-
-future risk.
-```
-
----
-
-# Materials
-
-Some tasks require:
-
-```text
-CONSUMABLE MATERIALS.
-```
-
-Examples:
-
-```text
-medicine
-
-fuel
-
-wire
-
-wood
-
-spare parts
-
-food ingredients
-
-construction materials.
-```
-
----
-
-# Missing Materials
-
-If critical materials are absent:
-
-```text
-task may become impossible
-```
-
-or require:
-
-```text
-substitution.
-```
-
----
-
-# Material Quality
-
-Low-quality materials may affect:
-
-```text
-reliability
-
-durability
-
-safety
-
-outcome quality.
-```
-
----
-
-# Environment
-
-Capability is influenced by:
-
-```text
-WHERE
-AND UNDER WHAT CONDITIONS
-THE TASK OCCURS.
-```
-
----
-
-# Environmental Modifiers
-
-Examples:
-
-```text
-weather
-
-lighting
-
-temperature
-
-noise
-
-space
-
-terrain
-
-infrastructure
-
-danger.
-```
-
----
-
-# Example
-
-Electrical repair:
-
-```text
-Workshop:
-GOOD CONDITIONS.
-```
-
-Same repair:
-
-```text
-Flooded basement
-during blackout:
-EXTREME CONDITIONS.
-```
-
-Character skill remains:
-
-```text
-THE SAME.
-```
-
-Effective capability does not.
-
----
-
-# Time
-
-Time affects capability.
-
-With:
-
-```text
-sufficient time
-```
-
-characters may:
-
-```text
-prepare
-
-research
-
-check work
-
-seek help.
-```
-
----
-
-# Time Pressure
-
-Under severe time pressure:
-
-```text
-error probability increases.
-```
-
-Experts may be better at:
-
-```text
-maintaining performance.
-```
-
----
-
-# Preparation
-
-Preparation can increase:
-
-```text
-EFFECTIVE CAPABILITY.
-```
-
-Examples:
-
-```text
-study map
-
-gather tools
-
-inspect equipment
-
-consult manual
-
-rehearse procedure.
-```
-
----
-
-# Information Quality
-
-Correct information improves:
-
-```text
-task execution.
-```
-
-Incorrect information may reduce:
-
-```text
-effective capability.
-```
-
----
-
-# Instructions
-
-Characters may perform tasks above normal skill when provided:
-
-```text
-good instructions
-
-expert supervision
-
-clear procedures.
-```
-
----
-
-# Remote Guidance
-
-Example:
-
-```text
-Novice
-+
-Expert on radio
-```
-
-may perform:
-
-```text
-moderately difficult repair.
-```
-
----
-
-# Guidance Limits
-
-Some tasks cannot realistically be transferred through:
-
-```text
-instructions alone.
-```
-
-Example:
-
-```text
-complex surgery.
-```
-
----
-
-# Assistance
-
-Multiple characters may combine:
-
-```text
-capabilities.
-```
-
----
-
-# Team Capability
-
-Conceptually:
-
-```text
-INDIVIDUAL CAPABILITIES
-+
-COORDINATION
-+
-COMMUNICATION
-+
-LEADERSHIP
-+
-TOOLS
-      ↓
-TEAM CAPABILITY.
-```
-
----
-
-# Team Complementarity
-
-A team may succeed because members possess:
-
-```text
-different complementary skills.
-```
-
-Example:
-
-```text
-Engineer
-
-Electrician
-
-Mechanic
-
-Operator.
-```
-
----
-
-# Team Bottleneck
-
-A missing critical specialization may limit:
-
-```text
-ENTIRE TEAM.
-```
-
----
-
-# Coordination Cost
-
-Adding more people does not always increase:
-
-```text
-capability.
-```
-
-Large teams require:
-
-```text
-coordination.
-```
-
----
-
-# Leadership
-
-Effective leadership may improve:
-
-```text
-team coordination
-
-task allocation
-
-communication
-
-decision speed.
-```
-
----
-
-# Institutional Capability
-
-Organizations possess capability beyond:
-
-```text
-individual skill.
-```
-
-Institutional capability may include:
-
-```text
-staff
-
-equipment
-
-procedures
-
-facilities
-
-supply chains
-
-records
-
-authority
-
-communication networks.
-```
-
----
-
-# Example
-
-A doctor alone may provide:
-
-```text
-limited emergency care.
-```
-
-A functioning hospital provides:
-
-```text
-laboratory
-
-pharmacy
-
-nurses
-
-surgery
-
-diagnostics
-
-sterilization
-
-records.
-```
-
-Therefore:
-
-```text
-DOCTOR
-≠
-HOSPITAL.
-```
-
----
-
-# Institutional Failure
-
-When infrastructure fails:
-
-```text
-individual professionals
-may remain skilled
-```
-
-while:
-
-```text
-institutional capability collapses.
-```
-
----
-
-# Professional Network
-
-Characters may know:
-
-```text
-colleagues
-
-suppliers
-
-experts
-
-clients
-
-institutions
-
-former coworkers.
-```
-
-This network expands:
-
-```text
-PRACTICAL CAPABILITY.
-```
-
----
-
-# Network Capability
-
-A character may not know:
-
-```text
-how to solve problem
-```
-
-but may know:
-
-```text
-WHO DOES.
-```
-
-This is a meaningful capability.
-
----
-
-# Referral
-
-Example:
-
-```text
-General Doctor
-```
-
-recognizes:
-
-```text
-specialist required.
-```
-
-Capability includes:
-
-```text
-knowing when
-not to act alone.
-```
-
----
-
-# Expert Humility
-
-High expertise may increase awareness of:
-
-```text
-LIMITATIONS.
-```
-
-Therefore experts may sometimes be:
-
-```text
-MORE CAUTIOUS
-```
-
-than novices.
-
----
-
-# Overconfidence
-
-Low experience may produce:
-
-```text
-overestimated capability.
-```
-
----
-
-# Perceived Capability
-
-Critical distinction:
-
-```text
-ACTUAL CAPABILITY
-```
-
-versus:
-
-```text
-PERCEIVED CAPABILITY.
-```
-
----
-
-# Actual Capability
-
-Determines:
-
-```text
-WHAT THE CHARACTER
-CAN REALISTICALLY DO.
-```
-
----
-
-# Perceived Capability
-
-Influences:
-
-```text
-WHAT THE CHARACTER
-BELIEVES THEY CAN DO.
-```
-
----
-
-# Underconfidence
-
-Example:
-
-```text
-Actual Skill:
-HIGH
-
-Perceived Skill:
-LOW.
-```
-
-Character may:
-
-```text
-avoid task
-
-seek help
-
-decline opportunity.
-```
-
----
-
-# Overconfidence Example
-
-```text
-Actual Skill:
-LOW
-
-Perceived Skill:
-HIGH.
-```
-
-Character may:
-
-```text
-attempt dangerous task.
-```
-
----
-
-# Capability Calibration
-
-Experience may gradually align:
-
-```text
-PERCEIVED CAPABILITY
-```
-
-with:
-
-```text
-ACTUAL CAPABILITY.
-```
-
-But bias may remain.
-
----
-
-# Capability and Decision Making
-
-Decision Making should use:
-
-```text
-PERCEIVED CAPABILITY
-```
-
-when choosing.
-
-Action resolution should use:
-
-```text
-ACTUAL CAPABILITY.
-```
-
----
-
-# Fundamental Separation
-
-```text
-DECISION:
-"I can do this."
-
-REALITY:
-Can they actually?
-```
-
-These must remain:
-
-```text
-SEPARATE.
-```
-
----
-
-# Task Difficulty
-
-Tasks should possess:
-
-```text
-DIFFICULTY.
-```
-
-Recommended conceptual levels:
-
-```text
-TRIVIAL
-
-EASY
-
-ROUTINE
-
-CHALLENGING
-
-DIFFICULT
-
-EXTREME
-
-SPECIALIST.
-```
-
----
-
-# Trivial Task
-
-Requires:
-
-```text
-little meaningful capability.
-```
-
----
-
-# Routine Task
-
-A competent character should normally:
-
-```text
-succeed reliably.
-```
-
----
-
-# Challenging Task
-
-Requires:
-
-```text
-relevant skill
-
-attention
-
-reasonable conditions.
-```
-
----
-
-# Difficult Task
-
-May require:
-
-```text
-high skill
-
-good tools
-
-experience
-
-preparation.
-```
-
----
-
-# Extreme Task
-
-May require:
-
-```text
-expert capability
-
-excellent conditions
-
-team support
-
-specialized equipment.
-```
-
----
-
-# Specialist Task
-
-Requires:
-
-```text
-specific specialization.
-```
-
-General skill may not be sufficient.
-
----
-
-# Capability Margin
-
-Conceptually:
-
-```text
-EFFECTIVE CAPABILITY
--
-TASK DIFFICULTY
-=
-CAPABILITY MARGIN.
-```
-
----
-
-# High Positive Margin
-
-Expected result:
-
-```text
-high reliability
-
-fast completion
-
-good quality.
-```
-
----
-
-# Narrow Margin
-
-Expected result:
-
-```text
-uncertainty
-
-possible errors
-
-greater time.
-```
-
----
-
-# Negative Margin
-
-Expected result:
-
-```text
-high failure probability
-
-partial success
-
-dangerous mistakes.
-```
-
----
-
-# Capability Resolution
-
-Outcome should not be:
-
-```text
-BINARY
-SUCCESS / FAILURE
-```
-
-for every task.
-
----
-
-# Outcome Spectrum
-
-Recommended conceptual outcomes:
-
-```text
-EXCEPTIONAL SUCCESS
-
-SUCCESS
-
-SUCCESS WITH COST
-
-PARTIAL SUCCESS
-
-FAILURE
-
-FAILURE WITH DAMAGE
-
-CATASTROPHIC FAILURE.
-```
-
----
-
-# Success With Cost
-
-Example:
-
-```text
-repair succeeds
-```
-
-but:
-
-```text
-extra parts consumed
-
-tool damaged
-
-takes much longer.
-```
-
----
-
-# Partial Success
-
-Example:
-
-```text
-generator restored
-```
-
-but:
-
-```text
-only at reduced capacity.
-```
-
----
-
-# Failure With Damage
-
-Example:
-
-```text
-repair fails
-```
-
-and:
-
-```text
-component becomes harder
-to repair later.
-```
-
----
-
-# Catastrophic Failure
-
-Reserved for situations where failure plausibly causes:
-
-```text
-major injury
-
-equipment destruction
-
-structural collapse
-
-large secondary consequence.
-```
-
-It should not be:
-
-```text
-routine punishment.
-```
-
----
-
-# Quality
-
-Successful actions may produce different:
-
-```text
-QUALITY LEVELS.
-```
-
-Examples:
-
-```text
-temporary repair
-
-functional repair
-
-good repair
-
-excellent repair.
-```
-
----
-
-# Durability
-
-A low-quality success may:
-
-```text
-FAIL LATER.
-```
-
-This creates:
-
-```text
-DELAYED CONSEQUENCE.
-```
-
----
-
-# Hidden Defects
-
-Poor execution may produce:
-
-```text
-apparently successful result
-```
-
-with:
-
-```text
-hidden defect.
-```
-
----
-
-# Detection of Defects
-
-Experts may be more likely to:
-
-```text
-notice hidden problems.
-```
-
----
-
-# Speed
-
-Higher capability may reduce:
-
-```text
-TASK TIME.
-```
-
----
-
-# Efficiency
-
-Higher capability may reduce:
-
-```text
-resource consumption
-
-waste
-
-tool damage.
-```
-
----
-
-# Safety
-
-Higher capability may improve:
-
-```text
-risk recognition
-
-safe procedure
-
-error recovery.
-```
-
----
-
-# Failure Recognition
-
-Experts may recognize:
-
-```text
-WHEN AN ATTEMPT
-IS FAILING.
-```
-
-This allows:
-
-```text
-stop
-
-change method
-
-seek help.
-```
-
----
-
-# Novice Persistence
-
-A novice may continue:
-
-```text
-without realizing
-the situation is worsening.
-```
-
----
-
-# Capability Boundaries
-
-Some tasks should be:
-
-```text
-FUNCTIONALLY IMPOSSIBLE
-```
-
-without necessary capability.
-
-Example:
-
-```text
-complex neurosurgery
-```
-
-cannot be solved by:
-
-```text
-high motivation alone.
-```
-
----
-
-# Hard Requirements
-
-Tasks may require:
-
-```text
-specific certification
-
-specific tool
-
-minimum physical capability
-
-minimum team size
-
-specific knowledge
-
-specific facility.
-```
-
----
-
-# Soft Requirements
-
-Other requirements may simply:
-
-```text
-increase difficulty.
-```
-
----
-
-# Capability Substitution
-
-Sometimes one capability can partially substitute for another.
-
-Example:
-
-```text
-high experience
-```
-
-may compensate for:
-
-```text
-limited formal education.
-```
-
----
-
-# Tool Substitution
-
-Better tools may compensate for:
-
-```text
-moderate skill
-```
-
-within limits.
-
----
-
-# Team Substitution
-
-Multiple competent workers may sometimes compensate for:
-
-```text
-lack of one expert.
-```
-
-But not always.
-
----
-
-# Time Substitution
-
-More time may allow:
-
-```text
-research
-
-careful execution
-
-multiple attempts.
-```
-
----
-
-# Resource Substitution
-
-Scarcity may force:
-
-```text
-alternative materials
-
-different method
-
-lower-quality result.
-```
-
----
-
-# Improvisation Limit
-
-Substitution should never become:
-
-```text
-ANYTHING CAN SOLVE ANYTHING.
-```
-
----
-
-# Specialization
-
-Characters may specialize within professions.
-
-Example:
-
-```text
-Engineer
-```
-
-specializations:
-
-```text
-Electrical
-
-Mechanical
-
-Civil
-
-Chemical
-
-Software.
-```
-
----
-
-# Specialization Matters
-
-An:
-
-```text
-Electrical Engineer
-```
-
-is not automatically:
-
-```text
-expert civil engineer.
-```
-
----
-
-# Cross-Domain Skill
-
-Related skills may provide:
-
-```text
-PARTIAL TRANSFER.
-```
-
-Example:
-
-```text
-mechanical engineering
-```
-
-may assist with:
-
-```text
-vehicle repair.
-```
-
-But does not equal:
-
-```text
-experienced mechanic.
-```
-
----
-
-# Transferable Skills
-
-Examples:
-
-```text
-leadership
-
-mathematics
-
-documentation
-
-problem solving
-
-communication
-
-project management.
-```
-
----
-
-# Capability Discovery
-
-Characters may not know:
-
-```text
-everything another character can do.
-```
-
-Capability knowledge must propagate through:
-
-```text
-reputation
-
-observation
-
-conversation
-
-records
-
-recommendation.
-```
-
----
-
-# Known Capability
-
-Example:
-
-```text
-Player knows:
-Mara is a doctor.
-```
-
-Player may not know:
-
-```text
-Mara previously worked
-in trauma medicine.
-```
-
----
-
-# Hidden Capability
-
-Characters may possess:
-
-```text
-skills not publicly known.
-```
-
-This can create:
-
-```text
-surprising but causally valid behavior.
-```
-
----
-
-# Hidden Capability Constraint
-
-Hidden capability must exist:
-
-```text
-BEFORE
-IT BECOMES CONVENIENT.
-```
-
-Do not retroactively create:
-
-```text
-perfect skill
-for current problem.
-```
-
----
-
-# Reputation
-
-Characters may develop:
-
-```text
-PROFESSIONAL REPUTATION.
-```
-
-Examples:
-
-```text
-reliable mechanic
-
-excellent surgeon
-
-dishonest trader
-
-careful electrician
-
-poor manager.
-```
-
----
-
-# Reputation Versus Capability
-
-Reputation may be:
-
-```text
-accurate
-
-outdated
-
-exaggerated
-
-unfair.
-```
-
----
-
-# Professional Trust
-
-Characters may select experts based on:
-
-```text
-reputation
-
-relationship
-
-past experience
-
-certification
-
-recommendation.
-```
-
----
-
-# Professional Failure
-
-Failure may affect:
-
-```text
-reputation
-
-confidence
-
-employment
-
-relationships
-
-future opportunities.
-```
-
----
-
-# Professional Success
-
-Success may create:
-
-```text
-better reputation
-
-more customers
-
-promotion
-
-new opportunities
-
-higher confidence.
-```
-
----
-
-# Career Progression
-
-Characters may progress through:
-
-```text
-training
-
-entry-level work
-
-experience
-
-specialization
-
-leadership
-
-expert status.
-```
-
----
-
-# Promotion
-
-Promotion may depend on:
-
-```text
-skill
-
-experience
-
-reputation
-
-relationships
-
-institutional politics
-
-opportunity.
-```
-
----
-
-# Career Stagnation
-
-A capable character may remain:
-
-```text
-in same position
-```
-
-because of:
-
-```text
-lack of opportunity
-
-location
-
-family obligations
-
-discrimination
-
-low ambition
-
-institutional structure.
-```
-
-Capability does not automatically create:
-
-```text
-career success.
-```
-
----
-
-# Career Change
-
-Characters may change profession because of:
-
-```text
-new interests
-
-economic pressure
-
-injury
-
-migration
-
-opportunity
-
-burnout
-
-life events.
-```
-
----
-
-# Retraining
-
-Career change may require:
-
-```text
-NEW CAPABILITY DEVELOPMENT.
-```
-
----
-
-# Apprenticeship
-
-Some skills may be learned through:
-
-```text
-working under
-experienced practitioner.
-```
-
----
-
-# Institutional Training
-
-Organizations may train:
-
-```text
-employees
-
-volunteers
-
-members.
-```
-
-This can increase:
-
-```text
-regional capability.
-```
-
----
-
-# Capability Distribution
-
-Skills should not be:
-
-```text
-EVENLY DISTRIBUTED
-ACROSS THE WORLD.
-```
-
----
-
-# Regional Capability
-
-Regions may possess different concentrations of:
-
-```text
-doctors
-
-engineers
-
-farmers
-
-mechanics
-
-teachers
-
-specialists.
-```
-
----
-
-# Capability Scarcity
-
-Loss of a small number of specialists may create:
-
-```text
-REGIONAL VULNERABILITY.
-```
-
----
-
-# Specialist Dependency
-
-Example:
-
-```text
-Region has:
-one qualified grid engineer.
-```
-
-If that person:
-
-```text
-leaves
-
-becomes injured
-
-dies
-
-refuses work
-```
-
-regional infrastructure capability changes.
-
----
-
-# Capability Migration
-
-Migration may alter:
-
-```text
-regional skill distribution.
-```
-
-Example:
-
-```text
-medical workers leave region.
-```
-
-Result:
-
-```text
-healthcare capability declines.
-```
-
----
-
-# Brain Drain
-
-Sustained specialist migration may create:
-
-```text
-LONG-TERM INSTITUTIONAL DECLINE.
-```
-
----
-
-# Skill Clusters
-
-Certain locations may attract:
-
-```text
-specific expertise.
-```
-
-Examples:
-
-```text
-industrial town
-
-university city
-
-agricultural region
-
-medical center
-
-technology hub.
-```
-
----
-
-# Capability Networks
-
-Regional capability is not merely:
-
-```text
-NUMBER OF EXPERTS.
-```
-
-It also depends on:
-
-```text
-communication
-
-transport
-
-institutions
-
-supply chains
-
-coordination.
-```
-
----
-
-# Infrastructure Dependency
-
-Professionals may depend on:
-
-```text
-electricity
-
-water
-
-communications
-
-transport
-
-digital systems.
-```
-
-Infrastructure failure may reduce:
-
-```text
-effective capability.
-```
-
----
-
-# Example
-
-Programmer:
-
-```text
-Expert.
-```
-
-Without:
-
-```text
-electricity
-
-computer
-
-network access
-```
-
-effective capability for many tasks becomes:
-
-```text
-VERY LOW.
-```
-
----
-
-# Supply Dependency
-
-A professional may know exactly:
-
-```text
-what is needed
-```
-
-but be unable to act because:
-
-```text
-required materials unavailable.
-```
-
----
-
-# Capability and Scarcity
-
-Scarcity may shift valuable capabilities.
-
-Example:
-
-Normal conditions:
-
-```text
-basic repair skill
-moderately useful.
-```
-
-Infrastructure collapse:
-
-```text
-repair skill
-extremely valuable.
-```
-
----
-
-# Capability Value Is Contextual
-
-A capability's social or economic value depends on:
-
-```text
-WORLD CONDITIONS.
-```
-
----
-
-# Emergency Capability
-
-Crisis may reveal:
-
-```text
-previously secondary skills.
-```
-
-Example:
-
-```text
-Teacher
-+
-former paramedic.
-```
-
-During emergency:
-
-```text
-medical capability
-becomes dominant.
-```
-
----
-
-# Role Transition
-
-Characters may temporarily adopt:
-
-```text
-different functional roles
-```
-
-because of crisis.
-
----
-
-# Emergency Improvisation
-
-Crisis may require:
-
-```text
-working outside normal profession.
-```
-
-But capability limits still apply.
-
----
-
-# Volunteer Capability
-
-Characters may contribute:
-
-```text
-basic useful skills
-```
-
-without professional expertise.
-
-Examples:
-
-```text
-transport
-
-food preparation
-
-manual labor
-
-communication
-
-basic first aid.
-```
-
----
-
-# Capability Matching
-
-Organizations and characters should attempt to match:
-
-```text
-TASK
-```
-
-with:
-
-```text
-APPROPRIATE PERSON.
-```
-
----
-
-# Bad Assignment
-
-Poor information or authority may assign:
-
-```text
-wrong person
-```
-
-to task.
-
-This may reduce:
-
-```text
-success probability.
-```
-
----
-
-# Capability Search
-
-When facing a task beyond personal capability, characters may:
-
-```text
-SEARCH FOR SOMEONE
-WHO CAN DO IT.
-```
-
----
-
-# Expert Search
-
-Conceptually:
-
-```text
-PROBLEM
-↓
-REQUIRED CAPABILITY
-↓
-KNOWN CONTACTS
-↓
-PROFESSIONAL NETWORK
-↓
-INSTITUTIONS
-↓
-PUBLIC SEARCH.
-```
-
----
-
-# Capability as Social Resource
-
-Knowing skilled people is itself:
-
-```text
-A FORM OF
-SOCIAL CAPABILITY.
-```
-
----
-
-# Player Capability
-
-Player capabilities should follow:
-
-```text
-THE SAME WORLD RULES.
-```
-
-The player should not automatically possess:
-
-```text
-universal competence.
-```
-
----
-
-# Player Learning
-
-The player may:
-
-```text
-learn
-
-practice
-
-train
-
-gain experience.
-```
-
-But should remain subject to:
-
-```text
-time
-
-resources
-
-instruction
-
-practice requirements.
-```
-
----
-
-# Player Delegation
-
-The player should often benefit from:
-
-```text
-FINDING THE RIGHT PERSON
-```
-
-rather than:
-
-```text
-DOING EVERYTHING PERSONALLY.
-```
-
----
-
-# Specialist Relationships
-
-Relationships with skilled characters may become valuable because:
-
-```text
-THEY ARE PEOPLE
-WITH REAL CAPABILITY.
-```
-
-Not merely:
-
-```text
-SERVICE MENUS.
-```
-
----
-
-# Capability and Relationship
-
-A character may choose whether to use their skill for someone based on:
-
-```text
-relationship
-
-payment
-
-duty
-
-risk
-
-time
-
-values
-
-other commitments.
-```
-
-Capability does not imply:
-
-```text
-AVAILABILITY.
-```
-
----
-
-# Availability
-
-A skilled character may be:
-
-```text
-busy
-
-far away
-
-injured
-
-unwilling
-
-unreachable
-
-already committed.
-```
-
----
-
-# Capability Access
-
-Therefore:
-
-```text
-KNOWN EXPERT
-```
-
-does not equal:
-
-```text
-AVAILABLE EXPERT.
-```
-
----
-
-# Capability Competition
-
-Multiple characters may need:
-
-```text
-the same specialist.
-```
-
-This can create:
-
-```text
-priority conflict
-
-waiting
-
-negotiation
-
-political pressure.
-```
-
----
-
-# Emergency Triage
-
-Scarce expert capability may require:
-
-```text
-PRIORITIZATION.
-```
-
-Example:
-
-```text
-one surgeon
-
-multiple critical patients.
-```
-
-This becomes:
-
-```text
-DECISION MAKING
-+
-CAPABILITY SCARCITY.
-```
-
----
-
-# Capability Bottleneck
-
-A single missing skill may block:
-
-```text
-entire Plan.
-```
-
-Example:
-
-```text
-Bridge repair team
-has workers and materials
-but no structural engineer.
-```
-
----
-
-# Dependency Chains
-
-Complex actions may require:
-
-```text
-MULTIPLE CAPABILITIES
-IN SEQUENCE.
-```
-
-Example:
-
-```text
-restore water system
-```
-
-may require:
 
-```text
-inspection
-
-engineering diagnosis
-
-part fabrication
-
-electrical repair
-
-mechanical repair
-
-testing.
-```
-
----
-
-# Capability Chain Failure
-
-If one stage fails:
-
-```text
-downstream tasks
-may become blocked.
-```
-
----
-
-# Capability and Planning
-
-Goals_and_Plans should consider:
-
-```text
-REQUIRED CAPABILITIES.
-```
-
----
-
-# Plan Feasibility
-
-Before executing complex Plan:
-
-```text
-What skills are required?
-
-Who has them?
-
-What tools are required?
-
-What materials are required?
-
-What facilities are required?
-
-How long will it take?
-
-Which dependencies exist?
-```
-
----
-
-# Unrealistic Plan
-
-A Plan may be:
-
-```text
-DESIRED
-```
-
-but:
-
-```text
-NOT CURRENTLY FEASIBLE.
-```
-
-This should create:
-
-```text
-SUBGOALS.
-```
-
----
-
-# Capability Subgoal
-
-Example:
-
-```text
-Goal:
-Repair radio tower.
-
-Missing:
-Electrical expertise.
-```
-
-New Subgoal:
-
-```text
-Find electrician.
-```
-
----
-
-# Tool Subgoal
-
-Missing:
-
-```text
-replacement transformer.
-```
-
-New Subgoal:
-
-```text
-Acquire transformer.
-```
-
----
-
-# Training Subgoal
-
-Missing:
-
-```text
-navigation skill.
-```
-
-New Subgoal:
-
-```text
-Learn navigation.
-```
-
----
-
-# Capability and Autonomy
-
-Characters may autonomously recognize:
-
-```text
-CAPABILITY GAPS.
-```
-
-This may trigger:
-
-```text
-learning
-
-delegation
-
-recruitment
-
-tool acquisition
-
-Plan change.
-```
-
----
-
-# Capability and Identity
-
-Profession may influence:
-
-```text
-SELF-CONCEPT.
-```
-
-Example:
-
-```text
-"I am a doctor."
-```
-
-This may affect:
-
-```text
-Values
-
-Goals
-
-Decision Making
-
-Autonomy.
-```
-
----
-
-# Loss of Capability
-
-A character may lose capability through:
-
-```text
-injury
-
-age
-
-illness
-
-equipment loss
-
-institutional collapse
-
-skill decay.
-```
+AND
 
----
-
-# Capability Loss and Identity
-
-Loss of professional capability may create:
-
-```text
-identity crisis
-
-Goal change
-
-relationship change
-
-career transition.
-```
-
----
-
-# Recovery
-
-Some lost capability may return through:
-
-```text
-rest
-
-rehabilitation
-
-replacement equipment
-
-retraining.
-```
-
----
-
-# Permanent Loss
-
-Some capability changes may be:
-
-```text
-PERMANENT.
-```
-
-Characters must adapt.
-
----
-
-# Adaptation
-
-Characters may respond to capability loss by:
-
-```text
-changing role
-
-learning new skills
-
-delegating
-
-using assistive tools
-
-retiring
-
-teaching others.
-```
-
----
-
-# Aging
-
-Capability may change over:
-
-```text
-DECADES.
-```
-
-Physical capability may decline while:
-
-```text
-experience
-
-judgment
-
-knowledge
-```
-
-increase.
-
-Detailed aging belongs to:
-
-```text
-Aging_and_Life_Events.md.
-```
-
----
-
-# Intergenerational Capability
-
-Skills may transfer through:
-
-```text
-families
-
-schools
-
-apprenticeships
-
-institutions
-
-communities.
-```
-
----
-
-# Knowledge Loss
-
-If specialists disappear without transferring knowledge:
-
-```text
-CAPABILITY MAY BE LOST
-FROM A COMMUNITY.
-```
-
----
-
-# Institutional Memory
-
-Organizations may preserve capability through:
-
-```text
-manuals
-
-records
-
-training programs
-
-procedures
-
-experienced staff.
-```
-
----
-
-# Institutional Memory Loss
-
-Collapse may destroy:
-
-```text
-records
-
-training pipelines
-
-professional networks.
-```
-
-Recovery may therefore require:
-
-```text
-more than replacing equipment.
-```
-
----
-
-# Capability and Recovery
-
-World recovery depends on:
-
-```text
-PEOPLE WHO KNOW
-HOW TO REBUILD.
-```
-
-Infrastructure repair requires:
-
-```text
-human capability
-
-tools
-
-materials
-
-organization.
+ACTION RESOLUTION.
 ```
 
 ---
 
-# Recovery Bottleneck
+# 3. Capability Is Contextual
 
-Example:
+Capability is not:
 
 ```text
-Power plant intact.
-
-Fuel available.
-
-Transmission line damaged.
-
-No qualified repair crew.
-```
-
-Power remains:
-
-```text
-OFFLINE.
-```
-
----
-
-# Capability as Infrastructure
-
-Human expertise should be treated as:
-
-```text
-SOFT INFRASTRUCTURE.
+ONE CHARACTER
+STAT.
 ```
-
----
-
-# Soft Infrastructure Principle
 
-A functioning society requires:
+It emerges from interaction between:
 
 ```text
-PEOPLE
+EXPERTISE
 
 KNOWLEDGE
 
-SKILLS
+PHYSICAL CONDITION
 
-INSTITUTIONS
+COGNITIVE CONDITION
 
-NETWORKS
-```
-
-as much as:
-
-```text
-ROADS
-
-POWER
-
-WATER
-
-MACHINES.
-```
-
----
-
-# Capability and World Simulation
-
-Character capability should influence:
-
-```text
-infrastructure repair
-
-economic production
-
-medical outcomes
-
-education
-
-trade
-
-governance
-
-emergency response
-
-technological maintenance.
-```
-
----
-
-# Capability and Society
-
-Society should depend on:
-
-```text
-DISTRIBUTED HUMAN COMPETENCE.
-```
-
----
-
-# Capability and Living Campaign Engine
-
-Capability shortages may generate:
-
-```text
-opportunities
-
-conflicts
-
-requests
-
-migration
-
-competition
-
-institutional problems.
-```
-
-But the Living Campaign Engine should detect:
-
-```text
-REAL CAPABILITY CONDITIONS.
-```
-
-It should not invent shortages merely to:
-
-```text
-CREATE MISSIONS.
-```
-
----
-
-# Example
-
-World Simulation determines:
-
-```text
-water pump failed.
-```
-
-Infrastructure system determines:
-
-```text
-repair requires
-industrial electrician.
-```
-
-Regional state shows:
-
-```text
-only electrician
-left region last month.
-```
-
-Result:
-
-```text
-REAL CAPABILITY GAP.
-```
-
-Living Campaign Engine may expose:
-
-```text
-find electrician
-
-contact former electrician
-
-transport specialist
-
-develop temporary workaround.
-```
-
-The story emerges from:
-
-```text
-SIMULATION STATE.
-```
-
----
-
-# Capability and Consequence
-
-A failed capability check may create:
-
-```text
-new world state.
-```
-
-Example:
-
-```text
-poor generator repair
-```
-
-may cause:
-
-```text
-higher fuel consumption.
-```
-
-Later:
-
-```text
-fuel shortage worsens.
-```
-
----
-
-# Hidden Consequence
-
-Characters may believe:
-
-```text
-repair succeeded.
-```
-
-World Simulation may track:
-
-```text
-hidden defect.
-```
-
----
-
-# Expert Inspection
-
-Later:
-
-```text
-expert examines repair.
-```
-
-They may discover:
-
-```text
-hidden defect.
-```
-
-This creates:
-
-```text
-causal continuity.
-```
-
----
-
-# Capability Record
-
-Important characters may conceptually track:
-
-```text
-Profession
-
-Occupation
-
-Employment State
-
-Education
-
-Training
-
-Certifications
-
-Skills
-
-Specializations
-
-Experience
-
-Known Tools
-
-Professional Network
-
-Capability Limitations
-
-Perceived Capability
-
-Professional Reputation.
-```
-
----
-
-# Skill Record
-
-Conceptually:
-
-```text
-Skill ID
-
-Domain
-
-Skill
-
-Specialization
-
-Level
-
-Experience
-
-Last Used
-
-Training Source
-
-Confidence
-
-Certification
-
-Decay Rate.
-```
-
----
-
-# Profession Record
-
-Conceptually:
-
-```text
-Profession ID
-
-Profession
-
-Specialization
-
-Years Experience
-
-Current Occupation
-
-Employer
-
-Employment State
-
-Professional Network
-
-Reputation
-
-Major Career Events.
-```
-
----
-
-# Capability Requirement Record
-
-Tasks may conceptually define:
-
-```text
-Task ID
-
-Required Skills
-
-Minimum Skill
-
-Preferred Skill
-
-Required Tools
-
-Required Materials
-
-Required Facility
-
-Required Team
-
-Expected Time
-
-Environmental Constraints
-
-Failure Risks.
-```
-
----
-
-# Capability Evaluation
-
-Conceptually:
-
-```text
-TASK REQUIREMENTS
-      ↓
-CHARACTER / TEAM CAPABILITY
-      ↓
 TOOLS
-      ↓
+
 MATERIALS
-      ↓
+
+FACILITIES
+
+ACCESS
+
+TIME
+
 ENVIRONMENT
-      ↓
-TIME
-      ↓
-CONDITION
-      ↓
-EFFECTIVE CAPABILITY
-      ↓
-OUTCOME RESOLUTION.
+
+ASSISTANCE
+
+AUTHORITY
+
+TASK REQUIREMENTS.
+```
+
+Therefore:
+
+```text
+THE SAME CHARACTER
+
+MAY HAVE
+
+DIFFERENT EFFECTIVE
+CAPABILITY
+
+IN DIFFERENT
+CONDITIONS.
 ```
 
 ---
 
-# Capability Explainability
-
-The system should be able to answer:
-
-```text
-WHY COULD THIS CHARACTER
-DO THIS?
-```
-
-and:
-
-```text
-WHY COULD THEY NOT?
-```
-
----
-
-# Example Explanation
-
-```text
-Elias successfully repaired
-the delivery truck because:
-
-he had twelve years
-of mechanical experience,
-
-the failure was within
-his specialization,
-
-he had access to
-a full workshop,
-
-the required replacement part
-was available,
-
-and he had enough time
-to perform the repair properly.
-```
-
----
-
-# Failure Explanation
-
-```text
-Elias could not repair
-the control module because:
-
-the fault required
-specialized electronics expertise,
-
-he lacked diagnostic equipment,
-
-and no replacement module
-was available.
-```
-
-This is better than:
-
-```text
-SKILL CHECK FAILED.
-```
-
----
-
-# AI Integration
-
-AI may assist with:
-
-```text
-identifying relevant skills
-
-suggesting plausible methods
-
-describing professional behavior
-
-generating expert dialogue
-
-proposing capability gaps.
-```
-
-But AI must remain constrained by:
-
-```text
-CHARACTER CAPABILITY STATE.
-```
-
----
-
-# AI Capability Boundary
-
-AI must not allow a character to:
-
-```text
-suddenly know medicine
-
-repair unfamiliar technology
-
-speak unknown language
-
-operate specialized machinery
-
-perform expert surgery
-```
-
-without:
-
-```text
-canonical capability support.
-```
-
----
-
-# AI Knowledge Boundary
-
-General AI model knowledge must not become:
-
-```text
-CHARACTER KNOWLEDGE.
-```
-
----
-
-# Critical AI Rule
-
-```text
-THE MODEL MAY KNOW.
-
-THE CHARACTER MAY NOT.
-```
-
----
-
-# AI Professional Expression
-
-AI may express:
-
-```text
-HOW AN EXPERT
-WOULD TALK
-```
-
-only when the character:
-
-```text
-IS ACTUALLY AN EXPERT.
-```
-
----
-
-# AI Capability Proposal
+# 4. Foundational Capability Model
 
 Conceptually:
 
 ```text
-TASK
+RELEVANT EXPERTISE
 +
-CHARACTER STATE
-      ↓
-AI PROPOSES
-PLAUSIBLE METHOD
-      ↓
-SYSTEM CHECKS
-SKILLS / TOOLS / KNOWLEDGE
-      ↓
-VALID METHOD
-OR
-REJECTED METHOD.
-```
-
----
-
-# Anti-Universal-Competence Principle
-
-No character should become:
-
-```text
-GOOD AT EVERYTHING.
-```
-
----
-
-# Anti-Profession-Magic Principle
-
-Profession does not grant:
-
-```text
-ALL SKILLS
-RELATED TO A FIELD.
-```
-
----
-
-# Anti-Skill-Check-Only Principle
-
-Capability should not reduce to:
-
-```text
-ONE NUMBER
+RELEVANT KNOWLEDGE
 +
-RANDOM ROLL.
-```
-
----
-
-# Anti-Motivation-Equals-Skill Principle
-
-Wanting something badly does not create:
-
-```text
-technical ability.
-```
-
----
-
-# Anti-Tool-Ignorance Principle
-
-Skills requiring tools should respect:
-
-```text
-TOOL AVAILABILITY.
-```
-
----
-
-# Anti-Material-Ignorance Principle
-
-Tasks requiring materials should respect:
-
-```text
-SUPPLY.
-```
-
----
-
-# Anti-Infrastructure-Ignorance Principle
-
-Professionals may depend on:
-
-```text
-FUNCTIONING INFRASTRUCTURE.
-```
-
----
-
-# Anti-Instant-Learning Principle
-
-Characters cannot become experts:
-
-```text
-OVERNIGHT.
-```
-
----
-
-# Anti-Certification-Magic Principle
-
-Certification does not guarantee:
-
-```text
-mastery.
-```
-
----
-
-# Anti-Experience-Ignorance Principle
-
-Years of practical exposure should matter.
-
----
-
-# Anti-Expert-Omniscience Principle
-
-Experts still possess:
-
-```text
-LIMITED KNOWLEDGE.
-```
-
----
-
-# Anti-Expert-Perfection Principle
-
-Experts can:
-
-```text
-make mistakes.
-```
-
----
-
-# Anti-Novice-Hopelessness Principle
-
-Novices can:
-
-```text
-learn
-
-assist
-
-perform simple tasks
-
-succeed under guidance.
-```
-
----
-
-# Anti-Random-Hidden-Skill Principle
-
-Do not reveal:
-
-```text
-perfect hidden capability
-```
-
-only because:
-
-```text
-current plot requires it.
-```
-
----
-
-# Anti-Player-Superhuman Principle
-
-The player follows:
-
-```text
-THE SAME CAPABILITY LOGIC.
-```
-
----
-
-# Anti-NPC-Service-Menu Principle
-
-Skilled characters are:
-
-```text
-PEOPLE
-```
-
-not:
-
-```text
-FUNCTION BUTTONS.
-```
-
-They may:
-
-```text
-refuse
-
-be unavailable
-
-ask payment
-
-have other priorities.
-```
-
----
-
-# Anti-Infinite-Specialist Principle
-
-Every region should not conveniently contain:
-
-```text
-EVERY POSSIBLE EXPERT.
-```
-
----
-
-# Anti-Instant-Recovery Principle
-
-Regional capability lost through:
-
-```text
-migration
-
-death
-
-institutional collapse
-```
-
-may take:
-
-```text
-YEARS
-```
-
-to rebuild.
-
----
-
-# Anti-Binary-Outcome Principle
-
-Tasks may produce:
-
-```text
-partial
-
-temporary
-
-costly
-
-delayed
-```
-
-outcomes.
-
----
-
-# Anti-Outcome-Equals-Capability Principle
-
-One success does not prove:
-
-```text
-high skill.
-```
-
-One failure does not prove:
-
-```text
-low skill.
-```
-
----
-
-# Capability Consistency Rules
-
-## Rule 1
-
-Intention does not create capability.
-
----
-
-## Rule 2
-
-Capability does not guarantee success.
-
----
-
-## Rule 3
-
-Profession and occupation are distinct.
-
----
-
-## Rule 4
-
-Profession does not define the whole character.
-
----
-
-## Rule 5
-
-Skills are domain-specific.
-
----
-
-## Rule 6
-
-Specializations matter.
-
----
-
-## Rule 7
-
-Knowledge and practical skill are distinct.
-
----
-
-## Rule 8
-
-Experience matters.
-
----
-
-## Rule 9
-
-Tacit knowledge matters.
-
----
-
-## Rule 10
-
-Education does not equal expertise.
-
----
-
-## Rule 11
-
-Certification does not equal current capability.
-
----
-
-## Rule 12
-
-Uncertified skill may exist.
-
----
-
-## Rule 13
-
-Learning requires time.
-
----
-
-## Rule 14
-
-Practice quality matters.
-
----
-
-## Rule 15
-
-Feedback improves learning.
-
----
-
-## Rule 16
-
-Skills may decay.
-
----
-
-## Rule 17
-
-Physical condition affects capability.
-
----
-
-## Rule 18
-
-Cognitive condition affects capability.
-
----
-
-## Rule 19
-
-Social capability is real capability.
-
----
-
-## Rule 20
-
-Tools affect effective capability.
-
----
-
-## Rule 21
-
-Materials affect effective capability.
-
----
-
-## Rule 22
-
-Environment affects effective capability.
-
----
-
-## Rule 23
-
-Time affects effective capability.
-
----
-
-## Rule 24
-
-Preparation affects effective capability.
-
----
-
-## Rule 25
-
-Assistance may increase capability.
-
----
-
-## Rule 26
-
-Teams require coordination.
-
----
-
-## Rule 27
-
-Institutions possess capability beyond individuals.
-
----
-
-## Rule 28
-
-Professional networks extend practical capability.
-
----
-
-## Rule 29
-
-Knowing who can help is a capability.
-
----
-
-## Rule 30
-
-Perceived capability influences decisions.
-
----
-
-## Rule 31
-
-Actual capability influences outcomes.
-
----
-
-## Rule 32
-
-Overconfidence and underconfidence are valid.
-
----
-
-## Rule 33
-
-Task difficulty must matter.
-
----
-
-## Rule 34
-
-Outcome need not be binary.
-
----
-
-## Rule 35
-
-Quality and durability matter.
-
----
-
-## Rule 36
-
-Poor work may create hidden defects.
-
----
-
-## Rule 37
-
-Experts may recognize failure earlier.
-
----
-
-## Rule 38
-
-Some tasks possess hard requirements.
-
----
-
-## Rule 39
-
-Capability substitution has limits.
-
----
-
-## Rule 40
-
-Hidden capability must have prior causal existence.
-
----
-
-## Rule 41
-
-Reputation and actual capability are distinct.
-
----
-
-## Rule 42
-
-Capability does not imply availability.
-
----
-
-## Rule 43
-
-Capability shortages may create bottlenecks.
-
----
-
-## Rule 44
-
-Complex Plans may require capability chains.
-
----
-
-## Rule 45
-
-Capability gaps should create subgoals.
-
----
-
-## Rule 46
-
-Regional capability may change through migration.
-
----
-
-## Rule 47
-
-Human expertise is soft infrastructure.
-
----
-
-## Rule 48
-
-World recovery requires human capability.
-
----
-
-## Rule 49
-
-AI knowledge must not become character knowledge.
-
----
-
-## Rule 50
-
-The player follows the same capability logic as other characters.
-
----
-
-# Validation Questions
-
-For any significant capability-dependent action, ask:
-
-```text
-What is the task?
-
-What profession is relevant?
-
-Which skill is required?
-
-Which specialization is required?
-
-How difficult is the task?
-
-What is the character's actual skill?
-
-What experience do they have?
-
-Do they understand the problem?
-
-Have they done this before?
-
-Do they possess the required tools?
-
-Are the tools functional?
-
-Are materials available?
-
-Is a facility required?
-
-Is the facility available?
-
-How much time exists?
-
-What are the environmental conditions?
-
-Is the character tired or injured?
-
-Can another character assist?
-
-Does a specialist exist?
-
-Can that specialist be reached?
-
-Does the character believe
-they can perform the task?
-
-Is that belief accurate?
-
-What happens if the attempt fails?
-
-Can failure create hidden damage?
-
-Can the character recognize failure?
-
-Would they know when to stop?
-```
-
----
-
-# Capability Gap Validation
-
-When a character cannot perform a task, ask:
-
-```text
-What exactly is missing?
-
-Skill?
-
-Knowledge?
-
-Experience?
-
-Tool?
-
-Material?
-
-Facility?
-
-Time?
-
-Physical capability?
-
-Specialization?
-
-Certification?
-
-Assistance?
-
-Information?
-
-Can the missing capability
-be acquired?
-
-Can someone else perform it?
-
-Can the Plan change?
-
-Can the task be simplified?
-
-Can a temporary solution work?
-```
-
----
-
-# Professional Character Validation
-
-For an important professional character, ask:
-
-```text
-What is their profession?
-
-What is their current occupation?
-
-How did they learn it?
-
-How many years have they worked?
-
-Where have they worked?
-
-What are they especially good at?
-
-What are they bad at?
-
-What specialization do they possess?
-
-What equipment do they normally use?
-
-Who are their professional contacts?
-
-What is their reputation?
-
-How accurate is that reputation?
-
-What professional failures
-have shaped them?
-
-What professional successes
-have shaped them?
-
-What do they believe
-their own limits are?
-```
-
----
-
-# Example: Mechanic
-
-Character:
-
-```text
-Elias
-```
-
-Profession:
-
-```text
-Mechanic.
-```
-
-Experience:
-
-```text
-12 years.
-```
-
-Specialization:
-
-```text
-diesel vehicles.
-```
-
-Task:
-
-```text
-repair delivery truck.
-```
-
-Problem:
-
-```text
-fuel injector failure.
-```
-
-Tools:
-
-```text
-full workshop.
-```
-
-Parts:
-
-```text
-available.
-```
-
-Expected Capability:
-
-```text
-HIGH.
-```
-
-Likely outcome:
-
-```text
-successful repair.
-```
-
----
-
-# Example: Mechanic Outside Specialization
-
-Same character:
-
-```text
-Elias.
-```
-
-Task:
-
-```text
-repair advanced
-industrial control system.
-```
-
-Relevant Skill:
-
-```text
-electronics.
-```
-
-Elias:
-
-```text
-Basic Electronics.
-```
-
-Diagnostic Equipment:
-
-```text
-Unavailable.
-```
-
-Expected Capability:
-
-```text
-LOW.
-```
-
-Decision may become:
-
-```text
-seek specialist.
-```
-
----
-
-# Example: Doctor Without Hospital
-
-Character:
-
-```text
-Mara.
-```
-
-Profession:
-
-```text
-Doctor.
-```
-
-Skill:
-
-```text
-Emergency Medicine:
-Expert.
-```
-
-Event:
-
-```text
-serious internal injury.
-```
-
-Available:
-
-```text
-basic medical kit.
-```
-
-Unavailable:
-
-```text
-surgery
-
-imaging
-
-blood supply
-
-hospital equipment.
-```
-
-Mara remains:
-
-```text
-HIGHLY SKILLED.
-```
-
-But practical treatment capability is:
-
-```text
-SEVERELY LIMITED.
-```
-
----
-
-# Example: Novice With Guidance
-
-Character:
-
-```text
-Basic Mechanical Skill.
-```
-
-Problem:
-
-```text
-simple belt replacement.
-```
-
-Remote Expert:
-
-```text
-available by radio.
-```
-
-Tools:
-
-```text
-available.
-```
-
-Manual:
-
-```text
-available.
-```
-
-Result:
-
-```text
-task becomes feasible.
-```
-
-Possible outcome:
-
-```text
-slow but successful repair.
-```
-
----
-
-# Example: Overconfidence
-
-Character:
-
-```text
-Electrical Skill:
-NOVICE.
-```
-
-Perceived Capability:
-
-```text
-HIGH.
-```
-
-Task:
-
-```text
-repair damaged
-high-voltage system.
-```
-
-Decision:
-
-```text
-attempt personally.
-```
-
-Actual Risk:
-
-```text
-EXTREME.
-```
-
-This may create:
-
-```text
-failure
-
-injury
-
-additional infrastructure damage.
-```
-
----
-
-# Example: Underconfidence
-
-Character:
-
-```text
-Carpentry Skill:
-PROFICIENT.
-```
-
-Perceived Capability:
-
-```text
-LOW.
-```
-
-Opportunity:
-
-```text
-construction contract.
-```
-
-Character decision:
-
-```text
-decline.
-```
-
-Result:
-
-```text
-missed economic opportunity.
-```
-
-Capability affects the world through:
-
-```text
-BELIEF
-```
-
-as well as:
-
-```text
-REALITY.
-```
-
----
-
-# Example: Capability Bottleneck
-
-Regional water system fails.
-
-Available:
-
-```text
-workers
-
-vehicles
-
-replacement pump
-
-mechanics.
-```
-
-Missing:
-
-```text
-industrial electrician.
-```
-
-Result:
-
-```text
-repair cannot be completed.
-```
-
-Regional consequences:
-
-```text
-water availability falls
-
-businesses close
-
-population begins stockpiling
-
-authority seeks specialist.
-```
-
-Living Campaign Engine may detect:
-
-```text
-CAPABILITY BOTTLENECK.
-```
-
----
-
-# Example: Specialist Migration
-
-Region contains:
-
-```text
-3 surgeons.
-```
-
-Economic decline causes:
-
-```text
-2 surgeons to relocate.
-```
-
-Remaining surgeon:
-
-```text
-overworked.
-```
-
-Consequences:
-
-```text
-waiting times rise
-
-complex procedures delayed
-
-medical transfers increase
-
-regional healthcare resilience falls.
-```
-
-No infrastructure building was destroyed.
-
-Yet:
-
-```text
-SYSTEM CAPABILITY DECLINED.
-```
-
----
-
-# Example: Institutional Collapse
-
-Hospital possesses:
-
-```text
-Doctors:
-HIGH SKILL
-
-Nurses:
-HIGH SKILL.
-```
-
-But:
-
-```text
-Power:
-UNSTABLE
-
-Water:
-LIMITED
-
-Medicine:
-LOW
-
-Laboratory:
-OFFLINE.
-```
-
-Institutional capability becomes:
-
-```text
-LOWER
-THAN STAFF SKILL
-WOULD SUGGEST.
-```
-
----
-
-# Example: Learning
-
-Character:
-
-```text
-Young mechanic apprentice.
-```
-
-Initial:
-
-```text
-Vehicle Repair:
-BASIC.
-```
-
-Over two years:
-
-```text
-works daily
-
-receives mentorship
-
-performs increasingly
-difficult repairs
-
-receives feedback.
-```
-
-Capability may progress toward:
-
-```text
-COMPETENT
-
-then
-
-PROFICIENT.
-```
-
-Not because:
-
-```text
-XP BAR FILLED.
-```
-
-But because:
-
-```text
-TIME
-+
-PRACTICE
-+
-EXPERIENCE
-+
-MENTORSHIP.
-```
-
----
-
-# Example: Hidden Defect
-
-Character:
-
-```text
-Basic Electrical Skill.
-```
-
-Task:
-
-```text
-repair generator wiring.
-```
-
-Outcome:
-
-```text
-generator starts.
-```
-
-Character believes:
-
-```text
-SUCCESS.
-```
-
-Actual World State:
-
-```text
-connection improperly secured.
-```
-
-Two weeks later:
-
-```text
-connection overheats.
-```
-
-Possible consequence:
-
-```text
-generator failure
-
-fire
-
-power loss.
-```
-
-The delayed event has:
-
-```text
-CAUSAL HISTORY.
-```
-
----
-
-# Example: Team Capability
-
-Task:
-
-```text
-restore damaged bridge.
-```
-
-Team:
-
-```text
-Civil Engineer:
-Expert
-
-Construction Workers:
-Competent
-
-Heavy Equipment Operator:
-Proficient
-
-Electrician:
-Competent.
-```
-
-Resources:
-
-```text
-materials available
-
-equipment available.
-```
-
-Result:
-
-```text
-high repair capability.
-```
-
-Remove:
-
-```text
-Civil Engineer.
-```
-
-Team may still perform:
-
-```text
-basic stabilization
-```
-
-but not safely complete:
-
-```text
-full structural restoration.
-```
-
----
-
-# Example: Capability Cascade
-
-Infrastructure Event:
-
-```text
-power grid failure.
-```
-
-Required repair capability:
-
-```text
-specialized grid engineering.
-```
-
-Regional specialist:
-
-```text
-injured.
-```
-
-Nearest alternative specialist:
-
-```text
-180 km away.
-```
-
-Transport system:
-
-```text
-fuel constrained.
-```
-
-Authority must decide:
-
-```text
-allocate scarce fuel
-to specialist transport
-```
-
-instead of:
-
-```text
-other emergency use.
-```
-
-This creates:
-
-```text
-CAPABILITY GAP
-↓
-RESOURCE CONFLICT
-↓
-AUTHORITY DECISION
-↓
-WORLD CONSEQUENCE
-↓
-CAMPAIGN OPPORTUNITY.
-```
-
----
-
-# Foundational Capability Formula
-
-Conceptually:
-
-```text
-PROFESSION
-+
-SKILL
-+
-SPECIALIZATION
-+
-KNOWLEDGE
-+
-EXPERIENCE
-+
-PHYSICAL CAPABILITY
-+
-COGNITIVE CAPABILITY
-+
-SOCIAL CAPABILITY
+CURRENT CONDITION
 +
 TOOLS
 +
@@ -6570,34 +192,4212 @@ TIME
 ENVIRONMENT
 +
 ASSISTANCE
-      ↓
-EFFECTIVE CAPABILITY
-      ↓
-TASK ATTEMPT
-      ↓
-OUTCOME QUALITY
 +
-COST
+ACCESS
+        ↓
+EFFECTIVE CAPABILITY
+        ↓
+ACTION ATTEMPT
+        ↓
+WORLD RESOLUTION.
+```
+
+This is a causal model.
+
+It is not a mandatory numeric formula.
+
+---
+
+# 5. Ownership
+
+Profession and Capability owns:
+
+```text
+CURRENT PROFESSION
+
+CURRENT OCCUPATION
+
+EMPLOYMENT CONTEXT
+
+CURRENT PROFESSIONAL ROLE
+
+PROFESSIONAL ACCESS
+
+PROFESSIONAL AUTHORITY
+
+CAPABILITY CONTEXT
+
+CAPABILITY REQUIREMENTS
+
+EFFECTIVE CAPABILITY
+
+CAPABILITY GAPS
+
+CAPABILITY BOTTLENECKS
+
+TOOL DEPENDENCE
+
+MATERIAL DEPENDENCE
+
+FACILITY DEPENDENCE
+
+ENVIRONMENTAL DEPENDENCE
+
+TIME DEPENDENCE
+
+ASSISTANCE DEPENDENCE
+
+CAPABILITY SUBSTITUTION
+
+CAPABILITY EXPLAINABILITY.
+```
+
+---
+
+# 6. What Profession and Capability Does Not Own
+
+This system does not own:
+
+```text
+EXPERTISE LEVELS
+
+EXPERTISE DOMAINS
+
+EXPERTISE SPECIALIZATIONS
+
+LEARNING
+
+SKILL DEVELOPMENT
+
+SKILL DECAY
+
+KNOWLEDGE
+
+BELIEFS
+
+MEMORY
+
+LIFE HISTORY
+
+CAREER HISTORY
+
+AGING
+
+HUMAN ATTRIBUTES
+
+HUMAN PSYCHOLOGY
+
+RELATIONSHIP STATE
+
+REPUTATION STATE
+
+GOALS
+
+PLANS
+
+DECISIONS
+
+AUTONOMY
+
+PROGRESSION
+
+WORLD OUTCOMES
+
+SOCIETY STATE
+
+REGIONAL POPULATION
+CAPABILITY.
+```
+
+Those remain authoritative in their respective systems.
+
+---
+
+# 7. Profession
+
+Profession represents:
+
+> **A developed field of work or practice that forms part of the Character's current or historical human context.**
+
+Examples:
+
+```text
+PHYSICIAN
+
+NURSE
+
+ENGINEER
+
+MECHANIC
+
+TEACHER
+
+FARMER
+
+ELECTRICIAN
+
+DRIVER
+
+TRADER
+
+CARPENTER
+
+PROGRAMMER
+
+JOURNALIST
+
+ADMINISTRATOR.
+```
+
+Profession describes:
+
+```text
+PROFESSIONAL CONTEXT.
+```
+
+It does not by itself define:
+
+```text
+EXPERTISE.
+```
+
+---
+
+# 8. Profession Is Not Identity
+
+A Character is not merely:
+
+```text
+THEIR JOB.
+```
+
+Profession may influence:
+
+```text
+ROUTINE
+
+RESPONSIBILITY
+
+SOCIAL ROLE
+
+ACCESS
+
+INCOME
+
+NETWORKS
+
+INSTITUTIONAL POSITION
+
+OPPORTUNITIES.
+```
+
+But the Character remains:
+
+```text
+A WHOLE HUMAN BEING.
+```
+
+---
+
+# 9. Profession Is Not Expertise
+
+Critical distinction:
+
+```text
+PROFESSION
+≠
+EXPERTISE.
+```
+
+Example:
+
+```text
+PROFESSION:
+Physician
+
+EXPERTISE:
+General Medicine — High
+
+Emergency Medicine — Moderate
+
+Trauma Surgery — Low.
+```
+
+The profession provides context.
+
+`Expertise_System.md` determines actual developed capability.
+
+---
+
+# 10. Profession Does Not Grant Universal Competence
+
+A profession must never mean:
+
+```text
+CAN DO EVERYTHING
+IN THE FIELD.
+```
+
+Example:
+
+```text
+ENGINEER
+```
+
+does not imply:
+
+```text
+ELECTRICAL ENGINEERING
+
+CIVIL ENGINEERING
+
+SOFTWARE ENGINEERING
+
+CHEMICAL ENGINEERING
+
+MECHANICAL ENGINEERING
+```
+
+at equivalent expertise.
+
+---
+
+# 11. Occupation
+
+Occupation represents:
+
+> **What the Character currently does for work.**
+
+Profession and occupation may differ.
+
+Example:
+
+```text
+PROFESSIONAL BACKGROUND:
+Engineer
+
+CURRENT OCCUPATION:
+Warehouse Worker.
+```
+
+---
+
+# 12. Profession vs Occupation
+
+Always preserve:
+
+```text
+PROFESSION
+=
+DEVELOPED PROFESSIONAL
+BACKGROUND
+
+OCCUPATION
+=
+CURRENT WORK.
+```
+
+A Character may:
+
+```text
+CHANGE JOB
+
+BECOME UNEMPLOYED
+
+RETIRE
+
+WORK OUTSIDE
+THEIR PROFESSION
+
+HOLD MULTIPLE JOBS.
+```
+
+without instantly losing prior Expertise.
+
+---
+
+# 13. Employment Context
+
+Useful conceptual employment states may include:
+
+```text
+EMPLOYED
+
+SELF-EMPLOYED
+
+UNEMPLOYED
+
+STUDENT
+
+RETIRED
+
+INFORMAL WORK
+
+UNPAID CARE WORK
+
+TEMPORARILY
+UNABLE TO WORK.
+```
+
+These states describe current work context.
+
+They do not define personal worth or capability.
+
+---
+
+# 14. Multiple Occupations
+
+Characters may hold:
+
+```text
+MULTIPLE JOBS
+
+SEASONAL WORK
+
+SIDE WORK
+
+VOLUNTEER ROLES
+
+INFORMAL RESPONSIBILITIES.
+```
+
+Example:
+
+```text
+PRIMARY OCCUPATION:
+Teacher
+
+SECONDARY:
+Farm Worker
+
+VOLUNTEER ROLE:
+Emergency Response.
+```
+
+---
+
+# 15. Professional History Boundary
+
+Career history belongs primarily to:
+
+```text
+LIFE.
+```
+
+Profession and Capability may reference:
+
+```text
+FORMER PROFESSION
+
+FORMER OCCUPATION
+
+FORMER EMPLOYER
+
+PAST SPECIALIST ROLE
+
+MAJOR PROFESSIONAL
+EXPERIENCE.
+```
+
+But it should not maintain a duplicate biography.
+
+---
+
+# 16. Professional Role
+
+A current professional role may include:
+
+```text
+TITLE
+
+FUNCTION
+
+AUTHORITY
+
+RESPONSIBILITY
+
+ORGANIZATION
+
+WORK LOCATION
+
+ACCESS.
+```
+
+Example:
+
+```text
+PROFESSION:
+Physician
+
+ROLE:
+Regional Medical Director.
+```
+
+Role may create capabilities through:
+
+```text
+AUTHORITY
+
+ACCESS
+
+NETWORKS
+
+INSTITUTIONAL RESOURCES.
+```
+
+---
+
+# 17. Role Is Not Expertise
+
+A Character may hold:
+
+```text
+HIGH AUTHORITY
+```
+
+without being:
+
+```text
+THE MOST TECHNICALLY
+CAPABLE PERSON.
+```
+
+Likewise:
+
+```text
+HIGH EXPERTISE
+```
+
+does not automatically imply:
+
+```text
+LEADERSHIP AUTHORITY.
+```
+
+---
+
+# 18. Expertise Reference
+
+Actual developed competence belongs to:
+
+```text
+Canon/Systems/Characters/
+Character_System/
+Expertise_System.md
+```
+
+Profession and Capability consumes:
+
+```text
+RELEVANT EXPERTISE
+
+RELEVANT SPECIALIZATION
+
+RELEVANT EXPERIENCE
+```
+
+when evaluating capability.
+
+It must not define a second Expertise scale.
+
+---
+
+# 19. Expertise Principle
+
+Expertise influences:
+
+```text
+WHAT TASKS
+CAN BE UNDERSTOOD
+
+WHAT RISKS
+ARE RECOGNIZED
+
+WHAT METHODS
+ARE AVAILABLE
+
+WHAT ERRORS
+CAN BE DETECTED
+
+WHAT ACTIONS
+ARE PLAUSIBLE.
+```
+
+But:
+
+```text
+EXPERTISE
+DOES NOT GUARANTEE
+SUCCESS.
+```
+
+---
+
+# 20. Knowledge Boundary
+
+Knowledge and Expertise remain separate.
+
+```text
+KNOWING WHAT
+SHOULD BE DONE
+
+≠
+
+BEING ABLE
+TO DO IT.
+```
+
+Knowledge belongs to:
+
+```text
+Knowledge_and_Beliefs.md.
+```
+
+Expertise belongs to:
+
+```text
+Expertise_System.md.
+```
+
+Capability evaluates how those states interact in the current task.
+
+---
+
+# 21. Explicit Knowledge
+
+A Character may possess:
+
+```text
+INSTRUCTIONS
+
+PROCEDURES
+
+MAPS
+
+TECHNICAL FACTS
+
+REGULATIONS
+
+DOCUMENTATION.
+```
+
+This may help execution.
+
+It does not automatically create practical Expertise.
+
+---
+
+# 22. Tacit Expertise
+
+A Character may also possess practical pattern recognition gained through experience.
+
+Example:
+
+```text
+MECHANIC
+HEARS ENGINE
+```
+
+and recognizes:
+
+```text
+ABNORMAL
+COMBUSTION PATTERN.
+```
+
+This should be represented through Expertise rather than creating a parallel Tacit Knowledge system here.
+
+---
+
+# 23. Actual Capability
+
+Actual Capability answers:
+
+> **Given this Character's actual Expertise and current conditions, what can they realistically attempt?**
+
+It depends on:
+
+```text
+ACTUAL EXPERTISE
+
+ACTUAL KNOWLEDGE
+
+ACTUAL CONDITION
+
+ACTUAL TOOLS
+
+ACTUAL MATERIALS
+
+ACTUAL ACCESS
+
+ACTUAL TIME
+
+ACTUAL ENVIRONMENT.
+```
+
+---
+
+# 24. Perceived Capability
+
+Perceived Capability answers:
+
+> **What does the Character believe they can realistically do?**
+
+This belongs partly to:
+
+```text
+Knowledge and Beliefs
+```
+
+and is consumed by:
+
+```text
+Decision Making.
+```
+
+Always preserve:
+
+```text
+ACTUAL CAPABILITY
+≠
+PERCEIVED CAPABILITY.
+```
+
+---
+
+# 25. Underconfidence
+
+Example:
+
+```text
+ACTUAL EXPERTISE:
+HIGH
+
+SELF-BELIEF:
+LOW
+
+PERCEIVED CAPABILITY:
+LOW.
+```
+
+Possible Decision:
+
+```text
+DECLINE TASK
+
+SEEK HELP
+
+DELEGATE.
+```
+
+The Character may be more capable than they believe.
+
+---
+
+# 26. Overconfidence
+
+Example:
+
+```text
+ACTUAL EXPERTISE:
+LOW
+
+SELF-BELIEF:
+HIGH
+
+PERCEIVED CAPABILITY:
+HIGH.
+```
+
+Possible Decision:
+
+```text
+ATTEMPT DANGEROUS TASK.
+```
+
+World Resolution may then expose the real capability gap.
+
+---
+
+# 27. Fundamental Separation
+
+```text
+DECISION MAKING:
+
+"DO I THINK
+I CAN DO THIS?"
+
+VERSUS
+
+CAPABILITY:
+
+"CAN I
+REALISTICALLY
+DO THIS?"
+```
+
+These must remain separate.
+
+---
+
+# 28. Task Requirements
+
+A capability-dependent task may require some combination of:
+
+```text
+EXPERTISE
+
+SPECIALIZATION
+
+KNOWLEDGE
+
+TOOLS
+
+MATERIALS
+
+FACILITY
+
+PHYSICAL CONDITION
+
+COGNITIVE CONDITION
+
+AUTHORITY
+
+TEAM
+
+TIME
+
+ENVIRONMENT.
+```
+
+Not every task requires every component.
+
+---
+
+# 29. Hard Requirements
+
+Some requirements may be effectively mandatory.
+
+Examples:
+
+```text
+SPECIFIC TOOL
+
+SPECIFIC FACILITY
+
+SPECIFIC MATERIAL
+
+SPECIFIC AUTHORIZATION
+
+SPECIFIC SPECIALIZATION
+
+MINIMUM TEAM SIZE.
+```
+
+Example:
+
+```text
+COMPLEX SURGERY
+
+WITHOUT
+
+SURGICAL FACILITY
+
+MAY BE
+FUNCTIONALLY IMPOSSIBLE.
+```
+
+---
+
+# 30. Soft Requirements
+
+Other conditions change:
+
+```text
+DIFFICULTY
+
+TIME
+
+QUALITY
+
+RISK
+
+RESOURCE COST
+```
+
+without making the task impossible.
+
+Example:
+
+```text
+POOR LIGHTING
+
+WORN TOOLS
+
+LIMITED TIME.
+```
+
+---
+
+# 31. Capability Gap
+
+A Capability Gap exists when:
+
+```text
+TASK REQUIREMENT
+
+EXCEEDS
+
+CURRENT AVAILABLE
+CAPABILITY.
+```
+
+The gap should be explainable.
+
+---
+
+# 32. Capability Gap Types
+
+Examples:
+
+```text
+EXPERTISE GAP
+
+SPECIALIZATION GAP
+
+KNOWLEDGE GAP
+
+TOOL GAP
+
+MATERIAL GAP
+
+FACILITY GAP
+
+ACCESS GAP
+
+PHYSICAL GAP
+
+TIME GAP
+
+ASSISTANCE GAP
+
+AUTHORITY GAP.
+```
+
+---
+
+# 33. Capability Gap Does Not Automatically Mean Failure
+
+A gap may create:
+
+```text
+PLAN CHANGE
+
+HELP SEEKING
+
+DELEGATION
+
+TRAINING GOAL
+
+TOOL ACQUISITION
+
+RESOURCE ACQUISITION
+
+TASK SIMPLIFICATION
+
+DELAY
+
+ABANDONMENT.
+```
+
+The relevant downstream systems determine which response occurs.
+
+---
+
+# 34. Capability Gap and Goals
+
+Goals and Plans may consume:
+
+```text
+REQUIRED CAPABILITY.
+```
+
+Example:
+
+```text
+GOAL:
+Restore radio tower
+
+KNOWN GAP:
+No electrical expertise.
+```
+
+Possible new Goal / Sub-Goal:
+
+```text
+FIND ELECTRICIAN.
+```
+
+Profession and Capability identifies the gap.
+
+Goals and Plans owns the resulting intentional structure.
+
+---
+
+# 35. Capability Gap and Autonomy
+
+Autonomy may detect that:
+
+```text
+A CURRENT PLAN
+CANNOT CONTINUE.
+```
+
+This may create behavioral relevance.
+
+Profession and Capability does not initiate the response.
+
+---
+
+# 36. Capability Gap and Decision Making
+
+Decision Making may consider:
+
+```text
+ATTEMPT
+
+WAIT
+
+DELEGATE
+
+SEEK SPECIALIST
+
+CHANGE METHOD
+
+ABANDON.
+```
+
+Capability informs those options.
+
+It does not choose among them.
+
+---
+
+# 37. Tools
+
+Many tasks require:
+
+```text
+TOOLS.
+```
+
+Examples:
+
+```text
+MEDICAL EQUIPMENT
+
+MECHANIC TOOLS
+
+COMPUTER
+
+VEHICLE
+
+TEST EQUIPMENT
+
+CONSTRUCTION EQUIPMENT
+
+COMMUNICATION DEVICE.
+```
+
+---
+
+# 38. Tool Availability
+
+Always distinguish:
+
+```text
+TOOL EXISTS
+```
+
+from:
+
+```text
+CHARACTER CAN
+ACCESS TOOL.
+```
+
+---
+
+# 39. Tool Condition
+
+Tools may be:
+
+```text
+FUNCTIONAL
+
+WORN
+
+DAMAGED
+
+UNRELIABLE
+
+BROKEN
+
+UNKNOWN.
+```
+
+Tool condition may alter Effective Capability.
+
+---
+
+# 40. Tool Quality
+
+Different tools may influence:
+
+```text
+PRECISION
+
+SPEED
+
+SAFETY
+
+QUALITY
+
+RANGE OF
+POSSIBLE METHODS.
+```
+
+---
+
+# 41. Tool Dependence
+
+Example:
+
+```text
+EXPERT MECHANIC
++
+NO TOOLS
+```
+
+may have lower Effective Capability for a repair than:
+
+```text
+COMPETENT MECHANIC
++
+FULL WORKSHOP.
+```
+
+This does not mean the second Character has greater Expertise.
+
+It means their current capability context is stronger.
+
+---
+
+# 42. Improvised Tools
+
+Characters may use:
+
+```text
+NON-STANDARD
+TOOLS
+```
+
+when conditions require.
+
+Whether this is plausible depends on:
+
+```text
+EXPERTISE
+
+TASK
+
+AVAILABLE MATERIALS
+
+RISK
+
+TOLERANCE
+
+ENVIRONMENT.
+```
+
+---
+
+# 43. Improvisation Boundary
+
+Improvisation is not:
+
+```text
+ANYTHING
+CAN SOLVE
+ANYTHING.
+```
+
+Substitution must remain physically and causally plausible.
+
+---
+
+# 44. Materials
+
+Some tasks require:
+
+```text
+CONSUMABLE
+OR REPLACEMENT
+MATERIALS.
+```
+
+Examples:
+
+```text
+MEDICINE
+
+FUEL
+
+WIRE
+
+WOOD
+
+SPARE PARTS
+
+FOOD INGREDIENTS
+
+CONSTRUCTION MATERIALS.
+```
+
+---
+
+# 45. Material Availability
+
+A Character may possess full Expertise but still be unable to complete a task because:
+
+```text
+CRITICAL MATERIAL
+IS ABSENT.
+```
+
+This is a valid capability failure.
+
+---
+
+# 46. Material Quality
+
+Material quality may affect:
+
+```text
+SAFETY
+
+DURABILITY
+
+OUTPUT QUALITY
+
+RELIABILITY.
+```
+
+---
+
+# 47. Facilities
+
+Some capabilities require:
+
+```text
+ENVIRONMENTS
+BUILT FOR
+THE TASK.
+```
+
+Examples:
+
+```text
+HOSPITAL
+
+WORKSHOP
+
+LABORATORY
+
+DATA CENTER
+
+FABRICATION FACILITY
+
+KITCHEN
+
+GARAGE.
+```
+
+---
+
+# 48. Facility Dependency
+
+Example:
+
+```text
+PHYSICIAN
+```
+
+may remain highly skilled while losing access to:
+
+```text
+IMAGING
+
+LABORATORY
+
+STERILIZATION
+
+SURGERY
+
+BLOOD SUPPLY
+
+PHARMACY.
+```
+
+Therefore:
+
+```text
+PHYSICIAN
+≠
+HOSPITAL.
+```
+
+---
+
+# 49. Infrastructure Dependency
+
+Professional capability may depend on:
+
+```text
+ELECTRICITY
+
+WATER
+
+NETWORKS
+
+TRANSPORT
+
+COMMUNICATION
+
+SUPPLY CHAINS.
+```
+
+World Simulation owns those external systems.
+
+Profession and Capability consumes their current availability.
+
+---
+
+# 50. Environment
+
+Capability depends on:
+
+```text
+WHERE
+
+AND
+
+UNDER WHAT CONDITIONS
+```
+
+the action occurs.
+
+Environmental context may include:
+
+```text
+WEATHER
+
+LIGHT
+
+TEMPERATURE
+
+NOISE
+
+SPACE
+
+TERRAIN
+
+DANGER
+
+CONTAMINATION
+
+INFRASTRUCTURE.
+```
+
+---
+
+# 51. Environmental Example
+
+Same Character.
+
+Same Expertise.
+
+Same task.
+
+Situation A:
+
+```text
+ELECTRICAL REPAIR
+
+FULL WORKSHOP
+
+GOOD LIGHTING
+
+POWER ISOLATED.
+```
+
+Situation B:
+
+```text
+ELECTRICAL REPAIR
+
+FLOODED BASEMENT
+
+BLACKOUT
+
+TIME PRESSURE.
+```
+
+The Expertise is unchanged.
+
+Effective Capability is not.
+
+---
+
+# 52. Time
+
+Time affects capability.
+
+With more time, a Character may:
+
+```text
+PREPARE
+
+RESEARCH
+
+INSPECT
+
+CHECK WORK
+
+SEEK HELP
+
+TRY SAFER METHODS.
+```
+
+---
+
+# 53. Time Pressure
+
+Under severe time pressure:
+
+```text
+ERROR RISK
+MAY RISE
+
+PREPARATION
+MAY FALL
+
+OPTION RANGE
+MAY NARROW.
+```
+
+Experts may sometimes perform better under pressure because of:
+
+```text
+EXPERIENCE
+
+PATTERN RECOGNITION
+
+PROCEDURAL FAMILIARITY.
+```
+
+But they remain human.
+
+---
+
+# 54. Preparation
+
+Preparation may improve Effective Capability.
+
+Examples:
+
+```text
+STUDY MAP
+
+INSPECT EQUIPMENT
+
+GATHER TOOLS
+
+READ PROCEDURE
+
+SET UP WORKSPACE
+
+REHEARSE STEPS.
+```
+
+Preparation belongs to Action / Plan context.
+
+Capability evaluates its effect.
+
+---
+
+# 55. Guidance
+
+Characters may perform beyond their unaided practical range when supported by:
+
+```text
+INSTRUCTIONS
+
+EXPERT SUPERVISION
+
+REMOTE GUIDANCE
+
+PROCEDURE
+
+CHECKLIST.
+```
+
+---
+
+# 56. Guidance Limits
+
+Instructions do not automatically transfer Expertise.
+
+Some tasks depend heavily on:
+
+```text
+PRACTICE
+
+TACTILE JUDGMENT
+
+PATTERN RECOGNITION
+
+FINE MOTOR CONTROL
+
+EXPERIENCE.
+```
+
+Example:
+
+```text
+COMPLEX SURGERY
+```
+
+cannot generally be transferred through:
+
+```text
+RADIO INSTRUCTIONS
+ALONE.
+```
+
+---
+
+# 57. Assistance
+
+Multiple Characters may combine capabilities.
+
+Conceptually:
+
+```text
+INDIVIDUAL EXPERTISE
++
+COMPLEMENTARY EXPERTISE
++
+TOOLS
++
+COORDINATION
++
+COMMUNICATION
+        ↓
+TEAM EFFECTIVE
+CAPABILITY.
+```
+
+---
+
+# 58. Team Capability Boundary
+
+This document may evaluate how a Character participates in a task involving others.
+
+It should not become a complete organizational simulation system.
+
+Persistent group structure belongs elsewhere.
+
+---
+
+# 59. Complementarity
+
+A team may succeed because different Actors provide:
+
+```text
+DIFFERENT
+CAPABILITIES.
+```
+
+Example:
+
+```text
+CIVIL ENGINEER
+
+ELECTRICIAN
+
+MECHANIC
+
+EQUIPMENT OPERATOR.
+```
+
+---
+
+# 60. Team Bottleneck
+
+A missing specialization may block:
+
+```text
+THE ENTIRE
+TASK.
+```
+
+Example:
+
+```text
+BRIDGE TEAM
+
+HAS:
+
+WORKERS
+
+MATERIALS
+
+EQUIPMENT
+
+BUT
+
+NO STRUCTURAL
+ENGINEER.
+```
+
+Full restoration may remain infeasible.
+
+---
+
+# 61. Coordination Cost
+
+Adding more people does not automatically create more capability.
+
+Larger teams may require:
+
+```text
+COMMUNICATION
+
+TASK ALLOCATION
+
+LEADERSHIP
+
+SHARED PROCEDURE
+
+COORDINATION.
+```
+
+---
+
+# 62. Institutional Context
+
+Organizations may provide capabilities unavailable to an isolated Character through:
+
+```text
+STAFF
+
+TOOLS
+
+FACILITIES
+
+PROCEDURES
+
+SUPPLY CHAINS
+
+AUTHORITY
+
+RECORDS
+
+COMMUNICATION.
+```
+
+But institutional capability itself belongs primarily to broader Society / World Simulation architecture.
+
+---
+
+# 63. Character Access to Institutional Capability
+
+This document is concerned with:
+
+```text
+CAN THIS CHARACTER
+ACCESS
+
+THE INSTITUTIONAL
+CAPABILITY?
+```
+
+Possible constraints include:
+
+```text
+EMPLOYMENT
+
+ROLE
+
+AUTHORITY
+
+LOCATION
+
+RELATIONSHIP
+
+LAW
+
+COMMUNICATION
+
+ORGANIZATIONAL STATE.
+```
+
+---
+
+# 64. Institutional Failure
+
+A professional may retain:
+
+```text
+HIGH PERSONAL
+EXPERTISE
+```
+
+while their practical capability collapses because:
+
+```text
+INSTITUTION
+FAILS.
+```
+
+Example:
+
+```text
+DOCTOR:
+HIGH EXPERTISE
+
+HOSPITAL:
+NO POWER
+
+NO WATER
+
+NO LAB
+
+LOW MEDICINE.
+```
+
+---
+
+# 65. Professional Networks
+
+Professional context may give a Character access to:
+
+```text
+COLLEAGUES
+
+SUPPLIERS
+
+SPECIALISTS
+
+FORMER COWORKERS
+
+CLIENTS
+
+INSTITUTIONS.
+```
+
+This may expand practical options.
+
+---
+
+# 66. Knowing Who Can Help
+
+A Character need not personally possess every Capability.
+
+They may possess:
+
+```text
+KNOWLEDGE OF
+WHO CAN HELP.
+```
+
+That knowledge belongs to:
+
+```text
+Knowledge and Beliefs.
+```
+
+The relationship or network connection belongs to:
+
+```text
+Relationships
+or relevant social system.
+```
+
+Capability consumes both when evaluating available assistance.
+
+---
+
+# 67. Known Expert vs Available Expert
+
+Critical distinction:
+
+```text
+KNOWN EXPERT
+
+≠
+
+AVAILABLE EXPERT.
+```
+
+A specialist may be:
+
+```text
+BUSY
+
+INJURED
+
+FAR AWAY
+
+UNWILLING
+
+UNREACHABLE
+
+DECEASED
+
+ALREADY COMMITTED.
+```
+
+---
+
+# 68. Capability Access
+
+Therefore:
+
+```text
+EXPERT EXISTS
+```
+
+does not imply:
+
+```text
+CHARACTER CAN
+USE THAT EXPERT.
+```
+
+---
+
+# 69. Authority
+
+Some tasks require:
+
+```text
+PERMISSION
+
+LEGAL AUTHORITY
+
+INSTITUTIONAL AUTHORITY
+
+SECURITY ACCESS
+
+CREDENTIALS.
+```
+
+A Character may have:
+
+```text
+TECHNICAL CAPABILITY
+```
+
+without:
+
+```text
+AUTHORITY
+TO ACT.
+```
+
+---
+
+# 70. Certification
+
+Certification may provide:
+
+```text
+LEGAL AUTHORITY
+
+INSTITUTIONAL ACCESS
+
+EMPLOYMENT ELIGIBILITY
+
+EXPECTED MINIMUM
+QUALIFICATION.
+```
+
+But:
+
+```text
+CERTIFICATION
+≠
+CURRENT EXPERTISE.
+```
+
+---
+
+# 71. Uncertified Expertise
+
+A Character may possess:
+
+```text
+REAL PRACTICAL
+EXPERTISE
+```
+
+without formal certification.
+
+This may create:
+
+```text
+LEGAL
+
+SOCIAL
+
+EMPLOYMENT
+
+INSTITUTIONAL
+```
+
+limitations without erasing actual capability.
+
+---
+
+# 72. Capability and Physical Condition
+
+Physical state may affect:
+
+```text
+STRENGTH
+
+ENDURANCE
+
+DEXTERITY
+
+MOBILITY
+
+VISION
+
+HEARING
+
+FINE MOTOR CONTROL.
+```
+
+The underlying physical condition belongs to the relevant Life / physical system.
+
+Capability consumes its current effect.
+
+---
+
+# 73. Physical Capability Is Task-Specific
+
+```text
+HIGH STRENGTH
+```
+
+does not imply:
+
+```text
+HIGH FINE-MOTOR
+PRECISION.
+```
+
+Avoid universal:
+
+```text
+PHYSICAL CAPABILITY
+SCORE.
+```
+
+---
+
+# 74. Cognitive Condition
+
+Current cognitive condition may affect:
+
+```text
+ATTENTION
+
+WORKING MEMORY
+
+REASONING
+
+MENTAL ENDURANCE
+
+ERROR RECOGNITION
+
+TASK SWITCHING.
+```
+
+Its authoritative source belongs elsewhere.
+
+Capability consumes the current effect.
+
+---
+
+# 75. Psychological Context
+
+Psychological state may influence:
+
+```text
+CONCENTRATION
+
+STRESS TOLERANCE
+
+SOCIAL PERFORMANCE
+
+DECISION PRESSURE
+
+PERSISTENCE.
+```
+
+Human Psychology remains authoritative.
+
+Capability does not duplicate it.
+
+---
+
+# 76. Social Capability
+
+Some tasks require learned human capability such as:
+
+```text
+NEGOTIATION
+
+TEACHING
+
+PUBLIC COMMUNICATION
+
+MEDIATION
+
+LEADERSHIP.
+```
+
+Where these are true learned competencies, they should be represented through:
+
+```text
+EXPERTISE.
+```
+
+They must not be confused with:
+
+```text
+PERSONALITY.
+```
+
+---
+
+# 77. Social Context
+
+Even a highly capable negotiator may struggle because of:
+
+```text
+LOW TRUST
+
+POWER IMBALANCE
+
+CULTURAL DIFFERENCE
+
+HOSTILE AUDIENCE
+
+BAD REPUTATION
+
+NO AUTHORITY.
+```
+
+Social outcome is contextual.
+
+---
+
+# 78. Capability Substitution
+
+Some missing capability may be partially compensated by another factor.
+
+Examples:
+
+```text
+MORE TIME
+
+BETTER TOOLS
+
+EXPERT GUIDANCE
+
+TEAM SUPPORT
+
+RELATED EXPERTISE
+
+BETTER FACILITY.
+```
+
+---
+
+# 79. Substitution Has Limits
+
+Never allow:
+
+```text
+ENOUGH BONUS FACTORS
+```
+
+to make:
+
+```text
+ANY TASK
+POSSIBLE.
+```
+
+Hard physical and professional limits remain.
+
+---
+
+# 80. Related Expertise
+
+Related Expertise may provide partial transfer.
+
+Example:
+
+```text
+MECHANICAL ENGINEERING
+```
+
+may help with:
+
+```text
+VEHICLE REPAIR.
+```
+
+But it does not automatically equal:
+
+```text
+EXPERIENCED
+AUTOMOTIVE MECHANIC.
+```
+
+---
+
+# 81. Capability Scarcity
+
+The absence of required capability may become:
+
+```text
+A REAL
+WORLD BOTTLENECK.
+```
+
+Example:
+
+```text
+POWER PLANT:
+INTACT
+
+FUEL:
+AVAILABLE
+
+TRANSMISSION:
+DAMAGED
+
+QUALIFIED CREW:
+NONE.
+```
+
+Result:
+
+```text
+POWER REMAINS
+OFFLINE.
+```
+
+---
+
+# 82. Character-Level vs Regional Capability
+
+This system owns:
+
+```text
+WHAT THIS
+CHARACTER CAN DO.
+```
+
+It does not own:
+
+```text
+HOW MANY
+ELECTRICIANS
+EXIST IN
+THE REGION.
+```
+
+That belongs to:
+
+```text
+SOCIETY
+
+WORLD SIMULATION
+
+POPULATION STATE.
+```
+
+---
+
+# 83. Human Capability as Soft Infrastructure
+
+The broader world should recognize:
+
+```text
+HUMAN EXPERTISE
+AS A FORM OF
+SOFT INFRASTRUCTURE.
+```
+
+A society requires:
+
+```text
+PEOPLE
+
+KNOWLEDGE
+
+EXPERTISE
+
+INSTITUTIONS
+
+NETWORKS
+```
+
+in addition to:
+
+```text
+ROADS
+
+POWER
+
+WATER
+
+MACHINES.
+```
+
+This principle belongs to the broader simulation architecture.
+
+Profession and Capability provides the Character-level foundation for it.
+
+---
+
+# 84. Capability Migration Boundary
+
+When specialists:
+
+```text
+MOVE
+
+DIE
+
+RETIRE
+
+BECOME INJURED
+
+CHANGE ROLE
+```
+
+regional capability may change.
+
+The Character's state change belongs to:
+
+```text
+LIFE
++
+CHARACTERS.
+```
+
+The aggregate regional effect belongs to:
+
+```text
+SOCIETY
++
+WORLD SIMULATION.
+```
+
+---
+
+# 85. Capability Value Is Contextual
+
+The usefulness of a capability changes with the world.
+
+Example:
+
+```text
+CONNECTED WORLD:
+
+BASIC REPAIR EXPERTISE
+=
+USEFUL.
+```
+
+During infrastructure fragmentation:
+
+```text
+BASIC REPAIR EXPERTISE
+=
+POTENTIALLY CRITICAL.
+```
+
+The Expertise did not necessarily change.
+
+The environment did.
+
+---
+
+# 86. Emergency Role Shift
+
+Crisis may make secondary Expertise more relevant.
+
+Example:
+
+```text
+CURRENT OCCUPATION:
+Teacher
+
+PAST EXPERTISE:
+Paramedicine.
+```
+
+Emergency:
+
+```text
+MASS CASUALTY EVENT.
+```
+
+Current functional role may temporarily become:
+
+```text
+MEDICAL RESPONDER.
+```
+
+---
+
+# 87. Role Shift Does Not Create Expertise
+
+Crisis may change:
+
+```text
+WHAT THE CHARACTER
+IS ASKED TO DO.
+```
+
+It must not create:
+
+```text
+EXPERTISE
+THEY NEVER HAD.
+```
+
+---
+
+# 88. Capability Loss
+
+Effective Capability may fall because of:
+
+```text
+INJURY
+
+ILLNESS
+
+FATIGUE
+
+EQUIPMENT LOSS
+
+MATERIAL LOSS
+
+FACILITY LOSS
+
+ACCESS LOSS
+
+INFRASTRUCTURE FAILURE.
+```
+
+The underlying cause remains owned by its authoritative system.
+
+---
+
+# 89. Long-Term Capability Change
+
+Long-term Expertise development or decay belongs to:
+
+```text
+PROGRESSION.
+```
+
+Life circumstances producing that development belong to:
+
+```text
+LIFE.
+```
+
+Profession and Capability reflects:
+
+```text
+CURRENT RESULT.
+```
+
+---
+
+# 90. Aging Boundary
+
+Aging may alter:
+
+```text
+PHYSICAL CONDITION
+
+SPEED
+
+ENDURANCE
+
+REACTION
+
+EXPERIENCE
+
+ROLE.
+```
+
+Detailed aging belongs to:
+
+```text
+Canon/Systems/Life/
+Life_Course_and_Aging.md
+```
+
+This document consumes resulting current capability conditions.
+
+---
+
+# 91. Learning Boundary
+
+Learning belongs to:
+
+```text
+PROGRESSION
++
+EXPERTISE
++
+LIFE.
+```
+
+Do not implement:
+
+```text
+PRACTICE
+→ SKILL LEVEL UP
+```
+
+inside Profession and Capability.
+
+---
+
+# 92. Career Development Boundary
+
+Promotion, retraining, career change and professional development are primarily:
+
+```text
+LIFE
+
++
+PROGRESSION.
+```
+
+Profession and Capability exposes:
+
+```text
+CURRENT PROFESSIONAL
+RESULT.
+```
+
+---
+
+# 93. Capability Requirement
+
+A task may conceptually define:
+
+```text
+RELEVANT EXPERTISE
+
+SPECIALIZATION
+
+KNOWLEDGE
+
+TOOLS
+
+MATERIALS
+
+FACILITY
+
+TEAM
+
+TIME
+
+ENVIRONMENTAL
+LIMITATIONS
+
+HARD REQUIREMENTS.
+```
+
+---
+
+# 94. Capability Evaluation
+
+Conceptually:
+
+```text
+TASK REQUIREMENTS
+        ↓
+RELEVANT EXPERTISE
+        ↓
+CURRENT CHARACTER CONDITION
+        ↓
+TOOLS / MATERIALS / FACILITIES
+        ↓
+TIME / ENVIRONMENT
+        ↓
+ASSISTANCE / ACCESS
+        ↓
+EFFECTIVE CAPABILITY.
+```
+
+The result informs Action Resolution.
+
+---
+
+# 95. Capability Does Not Resolve the Outcome
+
+Critical architectural rule:
+
+```text
+PROFESSION AND CAPABILITY
+DETERMINES
+
+WHAT THE CHARACTER
+BRINGS TO THE ATTEMPT.
+```
+
+It does not own:
+
+```text
+THE FINAL
+WORLD OUTCOME.
+```
+
+That belongs to:
+
+```text
+WORLD SIMULATION
+/
+ACTION RESOLUTION
+ARCHITECTURE.
+```
+
+---
+
+# 96. Outcome Spectrum Boundary
+
+The old architecture correctly recognized that outcomes need not be binary.
+
+Possible world outcomes may include:
+
+```text
+SUCCESS
+
+SUCCESS WITH COST
+
+PARTIAL SUCCESS
+
+FAILURE
+
+FAILURE WITH DAMAGE.
+```
+
+But Profession and Capability does not own the canonical resolution table.
+
+It supplies:
+
+```text
+CAPABILITY INPUT.
+```
+
+---
+
+# 97. Quality Boundary
+
+Capability may influence:
+
+```text
+SPEED
+
+EFFICIENCY
+
+SAFETY
+
+QUALITY
+
+RESOURCE USE
+
+ERROR DETECTION.
+```
+
+The resulting physical or World state belongs to the relevant simulation system.
+
+---
+
+# 98. Hidden Defects
+
+A poor attempt may produce:
+
+```text
+APPARENT SUCCESS
+```
+
+while World Truth contains:
+
+```text
+HIDDEN DEFECT.
+```
+
+Knowledge and Beliefs determines whether the Character knows the defect exists.
+
+World Simulation owns the actual defect.
+
+---
+
+# 99. Failure Recognition
+
+Relevant Expertise may allow a Character to recognize:
+
+```text
+THE ATTEMPT
+IS FAILING.
+```
+
+This may create a new Decision context:
+
+```text
+STOP
+
+CHANGE METHOD
+
+SEEK HELP
+
+CONTINUE.
+```
+
+Capability informs recognition.
+
+Decision Making owns the choice.
+
+---
+
+# 100. Capability and Planning
+
+Goals and Plans should be able to ask:
+
+```text
+WHAT CAPABILITY
+IS REQUIRED?
+
+DO I HAVE IT?
+
+WHO HAS IT?
+
+WHAT TOOLS
+ARE REQUIRED?
+
+WHAT MATERIALS?
+
+WHAT FACILITY?
+
+WHAT DEPENDENCIES?
+```
+
+Profession and Capability provides these constraints.
+
+---
+
+# 101. Plan Feasibility
+
+A Plan may be:
+
+```text
+DESIRED
+```
+
+while remaining:
+
+```text
+CURRENTLY
+INFEASIBLE.
+```
+
+This is valid.
+
+Intent does not create capability.
+
+---
+
+# 102. Capability and Autonomy
+
+Autonomy may recognize:
+
+```text
+CAPABILITY GAP
+
+RESOURCE GAP
+
+ACCESS GAP
+
+SPECIALIST GAP.
+```
+
+This may trigger consideration of:
+
+```text
+HELP
+
+DELEGATION
+
+LEARNING
+
+RECRUITMENT
+
+ACQUISITION
+
+PLAN CHANGE.
+```
+
+Profession and Capability identifies the constraint.
+
+Autonomy decides when it becomes behaviorally relevant.
+
+---
+
+# 103. Capability and Decision Making
+
+Decision Making should usually use:
+
+```text
+PERCEIVED CAPABILITY.
+```
+
+World Resolution should use:
+
+```text
+ACTUAL CAPABILITY.
+```
+
+This distinction is mandatory.
+
+---
+
+# 104. Capability and Knowledge
+
+A Character may not know:
+
+```text
+WHAT ANOTHER
+CHARACTER CAN DO.
+```
+
+Professional capability must be learned through:
+
+```text
+OBSERVATION
+
+RECORD
+
+REPUTATION
+
+CONVERSATION
+
+RECOMMENDATION
+
+PAST EXPERIENCE.
+```
+
+Knowledge and Beliefs owns that epistemic state.
+
+---
+
+# 105. Hidden Capability
+
+A Character may possess Expertise unknown to others.
+
+Example:
+
+```text
+CURRENT OCCUPATION:
+Teacher
+
+PAST EXPERTISE:
+Paramedicine.
+```
+
+This may later surprise others.
+
+But:
+
+```text
+THE CAPABILITY
+MUST HAVE EXISTED
+BEFORE IT
+BECAME USEFUL.
+```
+
+---
+
+# 106. No Retroactive Expertise
+
+Never create:
+
+```text
+PERFECT HIDDEN
+SPECIALIZATION
+```
+
+because:
+
+```text
+THE CURRENT
+PROBLEM NEEDS IT.
+```
+
+Relevant capability requires:
+
+```text
+LIFE HISTORY
+
+TRAINING
+
+EXPERIENCE
+
+PRIOR CANONICAL
+SUPPORT.
+```
+
+---
+
+# 107. Reputation Boundary
+
+Professional reputation may influence:
+
+```text
+WHO GETS CONTACTED
+
+WHO GETS HIRED
+
+WHO IS TRUSTED
+
+WHO IS SELECTED.
+```
+
+But:
+
+```text
+REPUTATION
+≠
+ACTUAL CAPABILITY.
+```
+
+Profession and Capability may reference reputation.
+
+It should not own a global Reputation system.
+
+---
+
+# 108. Availability Boundary
+
+Capability does not imply:
+
+```text
+AVAILABILITY.
+```
+
+A highly capable Character may be:
+
+```text
+UNWILLING
+
+BUSY
+
+INJURED
+
+FAR AWAY
+
+UNREACHABLE
+
+COMMITTED ELSEWHERE.
+```
+
+This is essential for living-world simulation.
+
+---
+
+# 109. Skilled Characters Are People
+
+A specialist is not:
+
+```text
+A SERVICE MENU.
+```
+
+They possess:
+
+```text
+GOALS
+
+RELATIONSHIPS
+
+NEEDS
+
+RESPONSIBILITIES
+
+AUTONOMY
+
+DECISION MAKING.
+```
+
+They may refuse.
+
+---
+
+# 110. Player Capability
+
+Player Characters follow:
+
+```text
+THE SAME
+CAPABILITY RULES.
+```
+
+The player does not automatically receive:
+
+```text
+UNIVERSAL COMPETENCE
+
+PERFECT TOOL USE
+
+INSTANT LEARNING
+
+EXPERTISE
+BY NARRATIVE IMPORTANCE.
+```
+
+---
+
+# 111. Player Delegation
+
+A strong Project Ascension strategy may often be:
+
+```text
+FIND THE
+RIGHT PERSON.
+```
+
+Rather than:
+
+```text
+BECOME GOOD
+AT EVERYTHING.
+```
+
+This gives Relationships and Society practical importance.
+
+---
+
+# 112. AI Integration
+
+AI may assist with:
+
+```text
+IDENTIFYING
+RELEVANT EXPERTISE
+
+IDENTIFYING
+TASK REQUIREMENTS
+
+PROPOSING
+PLAUSIBLE METHODS
+
+IDENTIFYING
+CAPABILITY GAPS
+
+EXPRESSING
+PROFESSIONAL BEHAVIOR.
+```
+
+---
+
+# 113. AI Capability Boundary
+
+AI must not allow a Character to suddenly:
+
+```text
+PERFORM SURGERY
+
+REPAIR GRID SYSTEM
+
+OPERATE SPECIALIZED
+MACHINERY
+
+SPEAK UNKNOWN LANGUAGE
+
+UNDERSTAND
+UNKNOWN TECHNOLOGY
+```
+
+without canonical support.
+
+---
+
+# 114. AI Model Knowledge Boundary
+
+Critical rule:
+
+```text
+THE AI MODEL
+MAY KNOW.
+
+THE CHARACTER
+MAY NOT.
+```
+
+General model knowledge must not become:
+
+```text
+CHARACTER KNOWLEDGE
+
+OR
+
+CHARACTER EXPERTISE.
+```
+
+---
+
+# 115. AI Professional Expression
+
+AI may express:
+
+```text
+HOW AN EXPERT
+WOULD SPEAK
+```
+
+only when the Character's Canon supports:
+
+```text
+THAT EXPERTISE.
+```
+
+---
+
+# 116. AI Method Proposal
+
+Conceptually:
+
+```text
+TASK
++
+CHARACTER STATE
++
+EXPERTISE
++
+AVAILABLE CONTEXT
+        ↓
+AI PROPOSES
+PLAUSIBLE METHOD
+        ↓
+SYSTEM VALIDATES
+CAPABILITY REQUIREMENTS
+        ↓
+METHOD ACCEPTED
+OR REJECTED.
+```
+
+---
+
+# 117. Capability Explainability
+
+For any significant capability-dependent attempt, the system should be able to answer:
+
+```text
+WHY COULD
+THIS CHARACTER
+ATTEMPT THIS?
+
+AND
+
+WHAT LIMITED
+THEM?
+```
+
+---
+
+# 118. Good Capability Explanation
+
+Example:
+
+```text
+ELIAS COULD REPAIR
+THE DELIVERY TRUCK
+
+BECAUSE
+
+THE FAILURE FELL
+WITHIN HIS
+MECHANICAL EXPERTISE,
+
+HE HAD RELEVANT
+EXPERIENCE,
+
+A FULL WORKSHOP,
+
+THE REQUIRED PART,
+
+AND ENOUGH TIME.
+```
+
+---
+
+# 119. Good Capability Failure Explanation
+
+```text
+ELIAS COULD NOT
+REPAIR THE
+CONTROL MODULE
+
+BECAUSE
+
+THE FAILURE REQUIRED
+ADVANCED ELECTRONICS
+EXPERTISE,
+
+HE LACKED
+DIAGNOSTIC EQUIPMENT,
+
+AND NO REPLACEMENT
+MODULE WAS AVAILABLE.
+```
+
+This is preferable to:
+
+```text
+SKILL CHECK FAILED.
+```
+
+---
+
+# 120. Capability Invariants
+
+## CAP-INV-001 — Intention Does Not Create Capability
+
+Wanting to act does not provide the means to act.
+
+---
+
+## CAP-INV-002 — Profession Does Not Equal Expertise
+
+A professional label does not grant universal domain mastery.
+
+---
+
+## CAP-INV-003 — Occupation and Profession Are Distinct
+
+Current work may differ from developed professional background.
+
+---
+
+## CAP-INV-004 — Expertise Has One Authoritative System
+
+Profession and Capability must not define a second Expertise scale.
+
+---
+
+## CAP-INV-005 — Knowledge and Practical Capability Are Distinct
+
+Understanding does not guarantee execution.
+
+---
+
+## CAP-INV-006 — Actual and Perceived Capability Are Distinct
+
+Decision Making uses perceived capability.
+
+Resolution uses actual capability.
+
+---
+
+## CAP-INV-007 — Capability Is Contextual
+
+Tools, time, environment and other conditions matter.
+
+---
+
+## CAP-INV-008 — Capability Does Not Guarantee Success
+
+World Resolution remains separate.
+
+---
+
+## CAP-INV-009 — Low Expertise Does Not Guarantee Failure
+
+Easy tasks, guidance and favorable conditions may permit success.
+
+---
+
+## CAP-INV-010 — Tools Matter
+
+Tool-dependent tasks must respect tool availability and condition.
+
+---
+
+## CAP-INV-011 — Materials Matter
+
+Required consumables and components cannot be ignored.
+
+---
+
+## CAP-INV-012 — Facilities Matter
+
+Institution-dependent tasks must respect facility access.
+
+---
+
+## CAP-INV-013 — Infrastructure Matters
+
+Professional capability may degrade when supporting infrastructure fails.
+
+---
+
+## CAP-INV-014 — Time Matters
+
+Preparation and time pressure may alter Effective Capability.
+
+---
+
+## CAP-INV-015 — Environment Matters
+
+The same task under different conditions may create different capability.
+
+---
+
+## CAP-INV-016 — Assistance May Extend Capability
+
+But team coordination and hard limits remain.
+
+---
+
+## CAP-INV-017 — Capability Substitution Has Limits
+
+No combination of weak substitutes makes every task possible.
+
+---
+
+## CAP-INV-018 — Some Tasks Have Hard Requirements
+
+Motivation cannot bypass physical or professional impossibility.
+
+---
+
+## CAP-INV-019 — Capability Gaps Are Real World Constraints
+
+A Plan may be impossible until missing capability is acquired.
+
+---
+
+## CAP-INV-020 — Hidden Capability Requires Prior Causal Existence
+
+No retroactive specialist skill.
+
+---
+
+## CAP-INV-021 — Capability Does Not Imply Availability
+
+Skilled Actors remain autonomous people.
+
+---
+
+## CAP-INV-022 — Reputation Does Not Equal Capability
+
+Social belief and actual competence remain separate.
+
+---
+
+## CAP-INV-023 — Player Characters Follow the Same Rules
+
+No player-specific universal competence.
+
+---
+
+## CAP-INV-024 — AI Knowledge Does Not Become Character Capability
+
+The model's knowledge is not the Character's state.
+
+---
+
+## CAP-INV-025 — Capability Must Be Explainable
+
+Significant capability should be traceable to authoritative state and conditions.
+
+---
+
+# 121. Development Locks
+
+Future Profession and Capability development must not introduce:
+
+```text
+A SECOND
+EXPERTISE SYSTEM
+
+A SECOND
+SKILL LEVEL SYSTEM
+
+PROFESSION-BASED
+MAGIC COMPETENCE
+
+UNIVERSAL
+CAPABILITY SCORE
+
+UNIVERSAL
+PHYSICAL SCORE
+
+UNIVERSAL
+SOCIAL SCORE
+
+MOTIVATION
+AS TECHNICAL SKILL
+
+CERTIFICATION
+AS MASTERY
+
+INSTANT LEARNING
+
+XP-BASED
+CAPABILITY GROWTH
+INSIDE THIS SYSTEM
+
+RETROACTIVE
+HIDDEN EXPERTISE
+
+TOOLS THAT
+DO NOT MATTER
+
+MATERIALS THAT
+DO NOT MATTER
+
+FACILITIES THAT
+DO NOT MATTER
+
+INFRASTRUCTURE
+THAT DOES NOT MATTER
+
+EXPERTS WHO
+NEVER FAIL
+
+NOVICES WHO
+CANNOT CONTRIBUTE
+
+KNOWN EXPERT
+EQUALS AVAILABLE EXPERT
+
+NPC SPECIALISTS
+AS SERVICE MENUS
+
+PLAYER UNIVERSAL
+COMPETENCE
+
+AI-GENERATED
+UNSUPPORTED EXPERTISE
+
+CAPABILITY
+DIRECTLY DETERMINING
+WORLD OUTCOME.
+```
+
+---
+
+# 122. Anti-Universal-Competence Principle
+
+No Character should become:
+
+```text
+GOOD AT EVERYTHING.
+```
+
+Real human capability is:
+
+```text
+UNEQUAL
+
+SPECIALIZED
+
+HISTORICAL
+
+CONTEXTUAL.
+```
+
+---
+
+# 123. Anti-Profession-Magic Principle
+
+Do not reason:
+
+```text
+THEY ARE
+AN ENGINEER
+
+SO
+
+THEY CAN
+FIX IT.
+```
+
+Instead ask:
+
+```text
+WHAT KIND
+OF ENGINEER?
+
+WHAT EXPERTISE?
+
+WHAT EXPERIENCE?
+
+WHAT TOOLS?
+
+WHAT CONDITIONS?
+
+WHAT TASK?
+```
+
+---
+
+# 124. Anti-Skill-Check Principle
+
+Do not reduce capability to:
+
+```text
+NUMBER
+
++
+
+RANDOM ROLL.
+```
+
+The relevant causal context matters.
+
+---
+
+# 125. Anti-Motivation-Equals-Capability Principle
+
+```text
+WANTING IT
+MORE
+```
+
+does not produce:
+
+```text
+MEDICAL
+
+ENGINEERING
+
+TECHNICAL
+
+PROFESSIONAL
+EXPERTISE.
+```
+
+---
+
+# 126. Anti-Expert-Omniscience Principle
+
+Experts still possess:
+
+```text
+LIMITED KNOWLEDGE.
+```
+
+They may encounter:
+
+```text
+UNFAMILIAR SYSTEM
+
+MISSING DATA
+
+NOVEL FAILURE
+
+BAD INFORMATION.
+```
+
+---
+
+# 127. Anti-Expert-Perfection Principle
+
+Experts may:
+
+```text
+MAKE MISTAKES
+
+MISDIAGNOSE
+
+FAIL
+
+MISS INFORMATION
+
+BECOME FATIGUED
+
+LACK TOOLS.
+```
+
+---
+
+# 128. Anti-Novice-Hopelessness Principle
+
+Novices may:
+
+```text
+ASSIST
+
+LEARN
+
+FOLLOW PROCEDURE
+
+PERFORM SIMPLE TASKS
+
+WORK UNDER GUIDANCE.
+```
+
+---
+
+# 129. Anti-Convenient-Specialist Principle
+
+The world must not always contain:
+
+```text
+THE EXACT
+SPECIALIST REQUIRED
+```
+
+within convenient reach.
+
+Capability scarcity is legitimate World state.
+
+---
+
+# 130. Anti-Instant-Recovery Principle
+
+Lost specialist capability may take:
+
+```text
+MONTHS
+
+YEARS
+
+OR
+
+GENERATIONS
+```
+
+to rebuild.
+
+This broader recovery process belongs to:
+
+```text
+LIFE
+
+PROGRESSION
+
+SOCIETY
+
+WORLD SIMULATION.
+```
+
+---
+
+# 131. Validation Questions
+
+For a capability-dependent action, ask:
+
+```text
+WHAT IS
+THE TASK?
+
+WHAT EXPERTISE
+IS RELEVANT?
+
+WHAT SPECIALIZATION
+IS REQUIRED?
+
+WHAT DOES
+THE CHARACTER
+ACTUALLY KNOW?
+
+WHAT HAVE THEY
+ACTUALLY PRACTICED?
+
+WHAT IS THEIR
+CURRENT PHYSICAL
+CONDITION?
+
+WHAT IS THEIR
+CURRENT COGNITIVE
+CONDITION?
+
+WHAT TOOLS
+ARE REQUIRED?
+
+ARE THEY AVAILABLE?
+
+ARE THEY FUNCTIONAL?
+
+WHAT MATERIALS
+ARE REQUIRED?
+
+ARE THEY AVAILABLE?
+
+IS A FACILITY
+REQUIRED?
+
+IS IT FUNCTIONAL?
+
+HOW MUCH TIME
+EXISTS?
+
+WHAT ENVIRONMENTAL
+CONDITIONS MATTER?
+
+IS ASSISTANCE
+AVAILABLE?
+
+DOES THE CHARACTER
+HAVE AUTHORITY
+OR ACCESS?
+
+WHAT IS
+THE CAPABILITY GAP?
+
+CAN ANY REQUIREMENT
+BE SUBSTITUTED?
+
+IS THE TASK
+ACTUALLY FEASIBLE?
+
+WHAT DOES
+THE CHARACTER
+BELIEVE ABOUT
+THEIR CAPABILITY?
+
+IS THAT BELIEF
+ACCURATE?
+```
+
+---
+
+# 132. Capability Gap Validation
+
+When a task cannot currently be performed:
+
+```text
+WHAT EXACTLY
+IS MISSING?
+
+EXPERTISE?
+
+SPECIALIZATION?
+
+KNOWLEDGE?
+
+TOOL?
+
+MATERIAL?
+
+FACILITY?
+
+TIME?
+
+PHYSICAL CONDITION?
+
+AUTHORITY?
+
+ACCESS?
+
+ASSISTANCE?
+
+CAN THE GAP
+BE CLOSED?
+
+CAN THE PLAN
+CHANGE?
+
+CAN SOMEONE ELSE
+DO IT?
+
+CAN THE TASK
+BE SIMPLIFIED?
+
+CAN A TEMPORARY
+SOLUTION WORK?
+```
+
+---
+
+# 133. Professional Character Validation
+
+For an important professional Character:
+
+```text
+WHAT IS THEIR
+PROFESSION?
+
+WHAT IS THEIR
+CURRENT OCCUPATION?
+
+WHAT ROLE
+DO THEY HOLD?
+
+WHAT EXPERTISE
+DO THEY ACTUALLY HAVE?
+
+WHAT SPECIALIZATION?
+
+WHAT EXPERIENCE
+SUPPORTS IT?
+
+WHAT PROFESSIONAL
+ACCESS DO THEY HAVE?
+
+WHAT AUTHORITY
+DO THEY HAVE?
+
+WHAT TOOLS
+DO THEY NORMALLY USE?
+
+WHAT FACILITY
+DO THEY DEPEND ON?
+
+WHAT NETWORKS
+CAN THEY ACCESS?
+
+WHAT DO THEY
+BELIEVE THEIR
+LIMITS ARE?
+
+HOW ACCURATE
+IS THAT SELF-BELIEF?
+```
+
+---
+
+# 134. Example — Mechanic
+
+Character:
+
+```text
+ELIAS.
+```
+
+Profession:
+
+```text
+MECHANIC.
+```
+
+Relevant Expertise:
+
+```text
+VEHICLE REPAIR:
+HIGH
+
+DIESEL SYSTEMS:
+HIGH.
+```
+
+Task:
+
+```text
+REPAIR
+DELIVERY TRUCK.
+```
+
+Fault:
+
+```text
+FUEL INJECTOR.
+```
+
+Context:
+
+```text
+FULL WORKSHOP
+
+PART AVAILABLE
+
+ENOUGH TIME.
+```
+
+Effective Capability:
+
+```text
+HIGH.
+```
+
+World Resolution may therefore strongly favor a successful outcome.
+
+But success is not declared by this system alone.
+
+---
+
+# 135. Example — Outside Specialization
+
+Same Character:
+
+```text
+ELIAS.
+```
+
+Task:
+
+```text
+REPAIR ADVANCED
+INDUSTRIAL
+CONTROL SYSTEM.
+```
+
+Relevant Expertise:
+
+```text
+ELECTRONICS:
+LOW.
+```
+
+Diagnostic equipment:
+
+```text
+UNAVAILABLE.
+```
+
+Effective Capability:
+
+```text
+LOW.
+```
+
+Possible Decision:
+
+```text
+SEEK SPECIALIST.
+```
+
+Profession:
+
+```text
+MECHANIC
+```
+
+did not magically solve the gap.
+
+---
+
+# 136. Example — Physician Without Hospital
+
+Character:
+
+```text
+MARA.
+```
+
+Profession:
+
+```text
+PHYSICIAN.
+```
+
+Relevant Expertise:
+
+```text
+EMERGENCY MEDICINE:
+HIGH.
+```
+
+Situation:
+
+```text
+SERIOUS
+INTERNAL INJURY.
+```
+
+Available:
+
+```text
+BASIC MEDICAL KIT.
+```
+
+Unavailable:
+
+```text
+IMAGING
+
+SURGERY
+
+BLOOD SUPPLY
+
+LAB
+
+HOSPITAL.
+```
+
+Mara remains:
+
+```text
+HIGHLY EXPERT.
+```
+
+Her current practical treatment capability is:
+
+```text
+SEVERELY LIMITED.
+```
+
+---
+
+# 137. Example — Novice With Guidance
+
+Character Expertise:
+
+```text
+MECHANICAL:
+BASIC.
+```
+
+Task:
+
+```text
+SIMPLE BELT
+REPLACEMENT.
+```
+
+Available:
+
+```text
+TOOLS
+
+MANUAL
+
+REMOTE EXPERT.
+```
+
+Effective Capability becomes:
+
+```text
+SUFFICIENT
+FOR ATTEMPT.
+```
+
+Possible World outcome:
+
+```text
+SLOW BUT
+SUCCESSFUL REPAIR.
+```
+
+---
+
+# 138. Example — Overconfidence
+
+Actual Expertise:
+
+```text
+ELECTRICAL:
+LOW.
+```
+
+Perceived Capability:
+
+```text
+HIGH.
+```
+
+Task:
+
+```text
+DAMAGED
+HIGH-VOLTAGE
+SYSTEM.
+```
+
+Decision:
+
+```text
+ATTEMPT.
+```
+
+Capability evaluation:
+
+```text
+SEVERE GAP.
+```
+
+The Character's belief enabled the attempt.
+
+It did not make the attempt safe.
+
+---
+
+# 139. Example — Capability Bottleneck
+
+Regional water system fails.
+
+Available:
+
+```text
+WORKERS
+
+VEHICLES
+
+REPLACEMENT PUMP
+
+MECHANICS.
+```
+
+Missing:
+
+```text
+INDUSTRIAL
+ELECTRICIAN.
+```
+
+Resulting task state:
+
+```text
+FULL REPAIR
+CURRENTLY BLOCKED.
+```
+
+The resulting regional consequence belongs to World Simulation.
+
+The missing Character capability was a real causal input.
+
+---
+
+# 140. Example — Institutional Collapse
+
+Hospital staff:
+
+```text
+PHYSICIANS:
+HIGH EXPERTISE
+
+NURSES:
+HIGH EXPERTISE.
+```
+
+Hospital condition:
+
+```text
+POWER:
+UNSTABLE
+
+WATER:
+LIMITED
+
+MEDICINE:
+LOW
+
+LAB:
+OFFLINE.
+```
+
+Therefore:
+
+```text
+INSTITUTIONAL
+TREATMENT CAPABILITY
+
+IS LOWER
+
+THAN STAFF
+EXPERTISE ALONE
+WOULD SUGGEST.
+```
+
+---
+
+# 141. Runtime Relationship
+
+The Character runtime now becomes:
+
+```text
+CHARACTER STATE
+↓
+WHO / WHERE /
+CURRENT CONTEXT
+
+NEEDS / MOTIVATION
+↓
+WHY DOES
+THIS MATTER?
+
+GOALS / PLANS
+↓
+WHAT FUTURE
+DO THEY WANT?
+
+KNOWLEDGE / BELIEFS
+↓
+WHAT DO THEY
+THINK IS TRUE?
+
+EXPERTISE
+↓
+WHAT DEVELOPED
+CAPABILITY
+DO THEY HAVE?
+
+PROFESSION / CAPABILITY
+↓
+WHAT CAN THEY
+REALISTICALLY ATTEMPT
+UNDER CURRENT CONDITIONS?
+
+AUTONOMY
+↓
+WHY IS ACTION
+RELEVANT NOW?
+
+DECISION MAKING
+↓
+WHAT DO THEY CHOOSE?
+
+ACTION ATTEMPT
+↓
+WHAT DO THEY TRY?
+
+WORLD SIMULATION
+↓
+WHAT ACTUALLY HAPPENS?
+
+LIFE
++
+MEMORY
++
+RELATIONSHIPS
++
+PROGRESSION
+↓
+WHAT CHANGES?
+```
+
+---
+
+# 142. Capability Causal Model
+
+```text
+LIFE HISTORY
+        ↓
+EXPERTISE
+        ↓
+CURRENT PROFESSION
+AND ROLE
+        ↓
+CURRENT TASK
+        ↓
+KNOWLEDGE
++
+PHYSICAL CONDITION
++
+COGNITIVE CONDITION
++
+TOOLS
++
+MATERIALS
++
+FACILITY
 +
 TIME
 +
-RISK
+ENVIRONMENT
 +
+ASSISTANCE
++
+ACCESS
+        ↓
+EFFECTIVE CAPABILITY
+        ↓
+ACTION ATTEMPT
+        ↓
+WORLD RESOLUTION
+        ↓
 CONSEQUENCE.
 ```
 
 ---
 
-# Human Capability Principle
+# 143. Profession North Star
 
-A believable character is not defined by:
+Profession succeeds as a system when:
 
 ```text
-WHAT THE STORY
-NEEDS THEM TO KNOW.
+A CHARACTER'S
+WORK HISTORY
+AND CURRENT ROLE
+
+MATTER
+
+WITHOUT
+
+BECOMING
+THEIR ENTIRE IDENTITY.
 ```
 
-They are defined by:
+---
+
+# 144. Capability North Star
+
+Capability succeeds when the simulation can explain:
+
+```text
+WHY THIS PERSON
+COULD DO THIS
+
+WHY ANOTHER PERSON
+COULD NOT
+
+WHY THE SAME PERSON
+COULD DO IT YESTERDAY
+
+BUT NOT TODAY
+
+AND
+
+WHY HAVING
+THE RIGHT EXPERT
+STILL MAY NOT
+BE ENOUGH.
+```
+
+---
+
+# 145. Human Capability Principle
+
+A believable Character is not capable because:
+
+```text
+THE STORY
+NEEDS THEM
+TO BE.
+```
+
+They are capable because of:
 
 ```text
 WHAT THEY LEARNED
@@ -6606,315 +4406,86 @@ WHAT THEY PRACTICED
 
 WHAT THEY EXPERIENCED
 
-WHAT THEY HAVE AVAILABLE
+WHAT THEY CURRENTLY
+HAVE ACCESS TO
 
-AND WHAT THEIR
-CURRENT CONDITIONS ALLOW.
+AND
+
+WHAT CURRENT
+CONDITIONS ALLOW.
 ```
 
 ---
 
-# Capability Principle
+# 146. World Principle
+
+Human capability is one of the invisible foundations of civilization.
+
+Infrastructure does not maintain itself.
+
+Hospitals do not function because:
 
 ```text
-INTENTION
-DOES NOT CREATE
-CAPABILITY.
+THE BUILDING EXISTS.
+```
+
+Power grids do not recover because:
+
+```text
+THE WIRES EXIST.
+```
+
+Agriculture does not continue because:
+
+```text
+LAND EXISTS.
+```
+
+Civilization also requires:
+
+```text
+PEOPLE
+WHO KNOW
+WHAT TO DO
+
+AND
+
+THE CONDITIONS
+THAT ALLOW THEM
+TO DO IT.
 ```
 
 ---
 
-# Success Principle
+# 147. Closing Principle
 
-```text
-CAPABILITY
-DOES NOT GUARANTEE
-SUCCESS.
-```
+Profession gives context.
 
----
+Expertise provides developed competence.
 
-# Expertise Principle
+Knowledge provides understanding.
 
-```text
-EXPERTISE
-CHANGES WHAT
-A CHARACTER NOTICES,
-CONSIDERS,
-AND CAN DO.
-```
+Tools and materials provide means.
 
----
+Facilities and infrastructure provide environment.
 
-# Society Principle
+Time provides opportunity.
 
-```text
-A SOCIETY
-IS NOT ONLY
-ITS INFRASTRUCTURE.
+Other people may provide assistance.
 
-IT IS ALSO
-THE PEOPLE
-WHO KNOW HOW
-TO OPERATE,
-MAINTAIN,
-REPAIR,
-AND REBUILD IT.
-```
+And World conditions determine what is physically possible.
 
----
+None of those alone equals capability.
 
-# Emergent World Principle
+The central principle is:
 
-When capability is treated as real world state:
-
-```text
-PEOPLE MOVE
-
-SKILLS MOVE
-
-INSTITUTIONS CHANGE
-
-CAPABILITY CHANGES
-
-BOTTLENECKS EMERGE
-
-RECOVERY SLOWS
-
-OPPORTUNITIES APPEAR
-
-POWER SHIFTS.
-```
-
-Therefore:
-
-```text
-HUMAN CAPABILITY
-BECOMES PART
-OF WORLD SIMULATION.
-```
-
----
-
-# Architectural Result
-
-With this document established:
-
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
-
-Needs_and_Motivation.md
-      ↓
-WHY THEY CARE
-
-Goals_and_Plans.md
-      ↓
-WHAT THEY WANT TO ACHIEVE
-
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-WITHOUT PLAYER INPUT
-
-Profession_and_Capability.md
-      ↓
-WHAT THEY CAN
-ACTUALLY DO
-
-Personality_and_Values.md
-      ↓
-WHY DIFFERENT PEOPLE
-BEHAVE DIFFERENTLY
-
-Character_Development.md
-      ↓
-HOW EXPERIENCE
-CHANGES THEM
-
-Aging_and_Life_Events.md
-      ↓
-HOW THEIR CAPABILITIES
-AND LIVES CHANGE OVER TIME
-
-Character_Simulation_Resolution.md
-      ↓
-HOW ALL OF THIS
-SCALES ACROSS
-THE POPULATION.
-```
-
----
-
-# Current Status
-
-```text
-CHARACTER SYSTEM
-
-README.md
-FOUNDATION DEFINED
-
-Character_State.md
-FOUNDATION DEFINED
-
-Needs_and_Motivation.md
-FOUNDATION DEFINED
-
-Goals_and_Plans.md
-FOUNDATION DEFINED
-
-Knowledge_and_Beliefs.md
-FOUNDATION DEFINED
-
-Decision_Making.md
-FOUNDATION DEFINED
-
-Autonomy_and_Initiative.md
-FOUNDATION DEFINED
-
-Profession_and_Capability.md
-FOUNDATION DEFINED
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
-```
-
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/Characters/Personality_and_Values.md
-```
-
-Its central question is:
-
-```text
-TWO CHARACTERS
-CAN HAVE
-
-THE SAME GOAL,
-
-THE SAME INFORMATION,
-
-THE SAME CAPABILITY,
-
-AND THE SAME OPPORTUNITY—
-
-SO WHY DO THEY
-STILL CHOOSE
-DIFFERENTLY?
-```
-
-It should define:
-
-```text
-personality
-
-temperament
-
-values
-
-principles
-
-preferences
-
-aversions
-
-risk disposition
-
-social orientation
-
-empathy
-
-patience
-
-curiosity
-
-ambition
-
-loyalty
-
-honesty
-
-duty
-
-independence
-
-status orientation
-
-material preference
-
-tradition
-
-adaptability
-
-self-concept
-
-moral boundaries
-
-value conflict
-
-personality stability
-
-personality change
-
-contextual behavior
-
-behavioral tendencies
-
-individual variation.
-```
-
-The foundational principle should be:
-
-```text
-PERSONALITY
-DOES NOT SCRIPT
-BEHAVIOR.
-
-IT CHANGES
-THE WEIGHT
-OF POSSIBLE BEHAVIORS.
-```
-
-And:
-
-```text
-VALUES
-DO NOT MAKE
-CHARACTERS PERFECT.
-
-VALUES CREATE
-PRIORITIES,
-BOUNDARIES,
-AND CONFLICT.
-```
+> **A Character can only do what their real expertise and current conditions plausibly allow — and even then, the world still gets the final say.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
+|---|---|---|
 | 0.1 | 2026-08-09 | Initial Profession and Capability foundation defining profession, occupation, skills, specialization, knowledge, experience, expertise, education, training, certification, learning, skill decay, physical and cognitive capability, tools, materials, environmental conditions, team and institutional capability, perceived versus actual capability, task difficulty, outcome quality, professional networks, regional capability, specialist scarcity, capability bottlenecks and human expertise as soft infrastructure. |
+| 1.0 | 2026-08-30 | Rebuilt Profession and Capability around current professional context and contextual effective capability. Preserved profession versus occupation, actual versus perceived capability, tools, materials, facilities, time, environment, assistance, access, capability requirements, gaps, bottlenecks and human capability as a real world constraint. Removed duplicate ownership of Expertise levels and specializations, Knowledge, Learning, Skill Decay, Career Development, Aging, Reputation, regional capability distribution and final outcome resolution, redirecting those responsibilities to their authoritative systems. |

@@ -1,153 +1,2832 @@
 # PROJECT ASCENSION
-# Character System
+
+# Characters
 
 | Field | Value |
-|--------|-------|
-| System | Characters |
-| Location | Canon/Systems/Characters/README.md |
-| Type | Core Simulation System |
-| Scope | Individual Character Simulation |
-| Version | 0.1 |
-| Status | Foundation |
-| Last Updated | 2026-08-09 |
+|---|---|
+| Project | Project Ascension |
+| Document | Characters README |
+| Location | `Canon/Systems/Characters/README.md` |
+| Version | 1.0 |
+| Status | Active Canon |
+| Category | Systems / Characters |
+| Owner | Characters |
+| Last Updated | 2026-08-31 |
+| Primary Function | Provide the canonical entry point, ownership map and runtime overview for the Project Ascension Character architecture |
 
-> *"A character is not waiting to be encountered. They are already living."*
-
----
-
-# Purpose
-
-The Character System defines how individual people exist, think, act, change, and persist within Project Ascension.
-
-Its purpose is not primarily to create:
-
-```text
-NPCs
-```
-
-in the traditional game sense.
-
-Its purpose is to simulate:
-
-```text
-PEOPLE.
-```
-
-A character may exist whether or not:
-
-```text
-the player knows them
-
-the player can currently reach them
-
-they have dialogue
-
-they offer a Mission
-
-they are important to the campaign
-
-they ever meet the player.
-```
-
-The foundational principle is:
-
-```text
-CHARACTERS EXIST
-INDEPENDENTLY OF
-PLAYER ATTENTION.
-```
+> **"A believable Character is not a collection of stats. They are a persistent human life shaped by history, relationships, knowledge, values, capability, choice and time."**
 
 ---
 
-# Core Philosophy
+# 1. Purpose
 
-Traditional game characters often behave conceptually like:
+The Characters section defines how individual human beings exist, think, want, choose, act and change within Project Ascension.
+
+The architecture is designed around one central principle:
 
 ```text
-PLAYER ARRIVES
-      ↓
-CHARACTER ACTIVATES
-      ↓
-DIALOGUE
-      ↓
-QUEST
-      ↓
-CHARACTER WAITS
+CHARACTERS
+ARE PEOPLE
+
+NOT
+
+GAME OBJECTS.
 ```
 
-Project Ascension instead aims for:
+A Character should not exist only to:
 
 ```text
-CHARACTER EXISTS
-      ↓
-HAS NEEDS
-      ↓
-HAS KNOWLEDGE
-      ↓
-HAS VALUES
-      ↓
-HAS RELATIONSHIPS
-      ↓
-FORMS GOALS
-      ↓
-MAKES PLANS
-      ↓
-ACTS
-      ↓
-WORLD RESPONDS
-      ↓
-CHARACTER LEARNS
-      ↓
-CHARACTER CHANGES
+give missions
+
+deliver dialogue
+
+reward the player
+
+block progress
+
+provide exposition
+
+or
+
+fill a scene.
 ```
 
-The player may intersect this process.
-
-The player does not create it.
-
----
-
-# Core Principle
+They should exist as:
 
 ```text
-THE PLAYER IS
-A PERSON IN THE WORLD.
+PERSISTENT
+HUMAN ACTORS
 
-CHARACTERS ARE
-PEOPLE IN THE WORLD.
-```
+WITH
 
-The simulation may give the player unique capabilities or presentation privileges.
+HISTORY
 
-It should not require the world to treat every other human as:
+RELATIONSHIPS
 
-```text
-A SUPPORTING OBJECT
-FOR THE PLAYER.
+LIMITED KNOWLEDGE
+
+VALUES
+
+NEEDS
+
+GOALS
+
+CAPABILITY
+
+AUTONOMY
+
+AND
+
+TIME.
 ```
 
 ---
 
-# Character Definition
+# 2. Architectural Philosophy
 
-A character is a persistent simulated human entity possessing some combination of:
+No single Character document owns the whole person.
+
+Instead, Project Ascension separates human state into narrowly defined authoritative systems.
+
+The core rule is:
 
 ```text
-Identity
+ONE STATE DOMAIN
 
-Physical State
+=
 
-Location
+ONE AUTHORITATIVE OWNER.
+```
 
-Age
+Other systems may:
 
-Personality
+```text
+READ
+
+REFERENCE
+
+DERIVE
+
+SUMMARIZE
+
+OR
+
+REQUEST CHANGE.
+```
+
+They must not create competing authoritative copies.
+
+---
+
+# 3. Character Architecture Overview
+
+The current Character architecture is:
+
+```text
+HUMANITY
+↓
+WHAT KIND OF HUMAN
+IS THIS?
+
+LIFE
+↓
+WHAT HAS HAPPENED
+TO THEM?
+
+CHARACTER STATE
+↓
+WHO ARE THEY,
+WHERE ARE THEY,
+AND WHAT IS
+CURRENTLY TRUE?
+
+VALUES / IDENTITY
+↓
+WHAT MATTERS
+AND WHO DO THEY
+BELIEVE THEY ARE?
+
+NEEDS / MOTIVATION
+↓
+WHY DOES SOMETHING
+MATTER NOW?
+
+GOALS / PLANS
+↓
+WHAT FUTURE
+DO THEY WANT?
+
+KNOWLEDGE / BELIEFS
+↓
+WHAT DO THEY
+THINK IS TRUE?
+
+EXPERTISE
+↓
+WHAT HAVE THEY
+LEARNED TO DO?
+
+PROFESSION / CAPABILITY
+↓
+WHAT CAN THEY
+REALISTICALLY ATTEMPT?
+
+AUTONOMY
+↓
+WHY DOES ACTION
+BECOME RELEVANT NOW?
+
+DECISION MAKING
+↓
+WHAT DO THEY CHOOSE?
+
+ACTION
+↓
+WHAT DO THEY TRY?
+
+WORLD SIMULATION
+↓
+WHAT ACTUALLY HAPPENS?
+
+MEMORY
++
+LIFE
++
+RELATIONSHIPS
++
+CHARACTER DEVELOPMENT
+↓
+WHAT CHANGES?
+
+CHARACTER SIMULATION RESOLUTION
+↓
+HOW MUCH OF THIS
+MUST BE
+SIMULATED EXPLICITLY
+RIGHT NOW?
+```
+
+---
+
+# 4. Directory Structure
+
+```text
+Canon/Systems/Characters/
+
+├── Character_System/
+│   ├── Character_Creation.md
+│   └── Expertise_System.md
+│
+├── Autonomy_and_Initiative.md
+├── CHARACTER_ARCHITECTURE_AUDIT.md
+├── Character_Development.md
+├── Character_Simulation_Resolution.md
+├── Character_State.md
+├── Decision_Making.md
+├── Goals_and_Plans.md
+├── Knowledge_and_Beliefs.md
+├── Needs_and_Motivation.md
+├── Profession_and_Capability.md
+├── Values_and_Identity.md
+└── README.md
+```
+
+---
+
+# 5. Character Creation
+
+Location:
+
+```text
+Character_System/
+Character_Creation.md
+```
+
+Character Creation defines how a new Character receives plausible starting state.
+
+Its responsibility is:
+
+```text
+CREATE
+A BELIEVABLE
+STARTING PERSON.
+```
+
+It may establish:
+
+```text
+identity
+
+Life context
+
+profession
+
+Expertise
+
+starting resources
+
+Relationships
 
 Values
 
+Goals
+
+personal history
+
+strengths
+
+weaknesses
+
+secrets.
+```
+
+It must not redefine how those systems operate after creation.
+
+---
+
+# 6. Character Creation Principle
+
+```text
+CHARACTER CREATION
+=
+INITIAL STATE
+
+NOT
+
+ONGOING
+CHARACTER LOGIC.
+```
+
+For example:
+
+```text
+Character Creation
+may assign:
+
+Engineering Expertise 3
+```
+
+but:
+
+```text
+Expertise_System.md
+defines
+
+what Expertise 3
+actually means.
+```
+
+---
+
+# 7. Expertise System
+
+Location:
+
+```text
+Character_System/
+Expertise_System.md
+```
+
+Expertise defines:
+
+```text
+WHAT A CHARACTER
+HAS LEARNED
+TO DO.
+```
+
+It owns:
+
+```text
+Expertise domains
+
+Expertise levels
+
+specialization
+
+learned practical competence.
+```
+
+Expertise improves:
+
+```text
+information interpretation
+
+available methods
+
+risk awareness
+
+technical understanding
+
+possible actions.
+```
+
+But:
+
+```text
+EXPERTISE
+DOES NOT
+GUARANTEE SUCCESS.
+```
+
+---
+
+# 8. Character State
+
+Location:
+
+```text
+Character_State.md
+```
+
+Character State is the runtime coordination view of a persistent Character.
+
+It answers:
+
+```text
+WHO IS THIS PERSON?
+
+ARE THEY ALIVE?
+
+WHERE ARE THEY?
+
+WHAT ARE THEY
+CURRENTLY DOING?
+
+WHEN WAS
+THIS STATE TRUE?
+
+WHICH AUTHORITATIVE
+SYSTEMS DEFINE
+THE REST?
+```
+
+Character State owns:
+
+```text
+stable Character ID
+
+current identity labels
+
+existence status
+
+current location
+
+travel state
+
+current activity
+
+timestamps
+
+runtime context
+
+state references.
+```
+
+---
+
+# 9. Character State Is Not the Whole Character
+
+Character State must not become:
+
+```text
+A MONOLITHIC
+CHARACTER DATABASE.
+```
+
+It references authoritative systems rather than duplicating them.
+
+Conceptually:
+
+```text
+CHARACTER STATE
+=
+CURRENT
+COORDINATION VIEW
+
+OF
+
+DISTRIBUTED
+AUTHORITATIVE STATE.
+```
+
+---
+
+# 10. Values and Identity
+
+Location:
+
+```text
+Values_and_Identity.md
+```
+
+Values and Identity answers:
+
+```text
+WHAT MATTERS
+TO THIS PERSON?
+
+WHO DO THEY
+BELIEVE THEY ARE?
+
+WHAT WILL THEY
+PROTECT?
+
+WHAT WILL THEY
+REFUSE?
+
+WHAT CHOICE
+WOULD CREATE
+INTERNAL CONFLICT?
+```
+
+It owns:
+
+```text
+Values
+
+value conflict
+
+targeted Loyalty
+
+moral boundaries
+
+Identity statements
+
+self-concept
+
+Identity conflict
+
+Preferences
+
+Aversions.
+```
+
+---
+
+# 11. Values and Identity Principle
+
+```text
+VALUES
+=
+WHAT MATTERS
+
+IDENTITY
+=
+WHO I BELIEVE
+I AM.
+```
+
+Neither directly determines behavior.
+
+They create:
+
+```text
+PRESSURE
+
+MEANING
+
+BOUNDARIES
+
+AND
+
+INTERNAL COST.
+```
+
+---
+
+# 12. Needs and Motivation
+
+Location:
+
+```text
+Needs_and_Motivation.md
+```
+
+Needs and Motivation answers:
+
+```text
+WHY DOES
+SOMETHING
+MATTER NOW?
+```
+
+It owns:
+
+```text
+Need state
+
+Need pressure
+
+Need satisfaction
+
+Need urgency
+
+Motivational pressure
+
+Motivational direction
+
+competing motivations.
+```
+
+---
+
+# 13. Need / Motivation Boundary
+
+The architecture preserves:
+
+```text
+NEED
+≠
+MOTIVATION
+
+MOTIVATION
+≠
+GOAL
+
+GOAL
+≠
+ACTION.
+```
+
+A Need creates pressure.
+
+Motivation gives that pressure direction.
+
+Agency still determines what happens next.
+
+---
+
+# 14. Goals and Plans
+
+Location:
+
+```text
+Goals_and_Plans.md
+```
+
+Goals and Plans defines intentional future state.
+
+It answers:
+
+```text
+WHAT FUTURE
+DOES THE CHARACTER
+WANT?
+
+AND
+
+HOW DO THEY
+CURRENTLY INTEND
+TO PURSUE IT?
+```
+
+It owns:
+
+```text
+Goals
+
+Goal state
+
+Goal conflict
+
+Goal hierarchy
+
+Goal transformation
+
+Plans
+
+sub-goals
+
+fallback plans
+
+Plan adaptation.
+```
+
+---
+
+# 15. Goal Principle
+
+```text
+GOAL
+≠
+MISSION.
+```
+
+A Character may have a Goal that:
+
+```text
+never involves
+the player
+
+never becomes
+a Story Thread
+
+never becomes
+a quest.
+```
+
+The Character's life exists independently of narrative utility.
+
+---
+
+# 16. Knowledge and Beliefs
+
+Location:
+
+```text
+Knowledge_and_Beliefs.md
+```
+
+Knowledge and Beliefs answers:
+
+```text
+WHAT HAS
+THIS CHARACTER
+PLAUSIBLY LEARNED?
+
+WHAT DO THEY
+CURRENTLY BELIEVE?
+
+HOW CERTAIN
+ARE THEY?
+
+HOW DID
+THEY LEARN IT?
+```
+
+It owns:
+
+```text
+Character Knowledge
+
+source provenance
+
+freshness
+
+confidence
+
+verification
+
+uncertainty
+
+Belief state
+
+Belief revision
+
+self-belief
+
+causal Beliefs
+
+future expectations.
+```
+
+---
+
+# 17. Epistemic Principle
+
+The architecture preserves:
+
+```text
+WORLD TRUTH
+≠
+CHARACTER PERCEPTION
+≠
+CHARACTER KNOWLEDGE
+≠
+CHARACTER BELIEF
+≠
+PLAYER KNOWLEDGE.
+```
+
+Characters act from:
+
+```text
+THE WORLD
+AS THEY
+BELIEVE IT TO BE.
+```
+
+---
+
+# 18. Profession and Capability
+
+Location:
+
+```text
+Profession_and_Capability.md
+```
+
+Profession and Capability answers:
+
+```text
+WHAT PROFESSIONAL
+CONTEXT DOES
+THIS CHARACTER HAVE?
+
+AND
+
+WHAT CAN THEY
+REALISTICALLY
+DO RIGHT NOW?
+```
+
+It owns:
+
+```text
+profession
+
+occupation
+
+professional role
+
+professional access
+
+authority
+
+effective Capability
+
+Capability requirements
+
+Capability gaps
+
+tool dependence
+
+material dependence
+
+facility dependence
+
+environmental dependence
+
+time dependence
+
+assistance dependence.
+```
+
+---
+
+# 19. Profession / Expertise / Capability Boundary
+
+The architecture preserves:
+
+```text
+PROFESSION
+=
+PROFESSIONAL CONTEXT
+
+EXPERTISE
+=
+WHAT I HAVE
+LEARNED TO DO
+
+CAPABILITY
+=
+WHAT I CAN
+REALISTICALLY DO
+HERE AND NOW.
+```
+
+And:
+
+```text
+CAPABILITY
+≠
+OUTCOME.
+```
+
+---
+
+# 20. Actual vs Perceived Capability
+
+Critical distinction:
+
+```text
+PERCEIVED CAPABILITY
+=
+WHAT THE CHARACTER
+THINKS THEY CAN DO
+
+ACTUAL CAPABILITY
+=
+WHAT THEY CAN
+REALISTICALLY DO.
+```
+
+Decision Making uses:
+
+```text
+PERCEIVED CAPABILITY.
+```
+
+World resolution uses:
+
+```text
+ACTUAL CAPABILITY.
+```
+
+---
+
+# 21. Autonomy and Initiative
+
+Location:
+
+```text
+Autonomy_and_Initiative.md
+```
+
+Autonomy answers:
+
+```text
+WHY DOES
+ACTION BECOME
+RELEVANT NOW?
+
+AND
+
+WHEN DOES
+THE CHARACTER
+INITIATE ACTION
+WITHOUT PLAYER
+PROMPT?
+```
+
+It consumes:
+
+```text
+Goals
+
 Needs
 
+Plans
+
+Open Loops
+
+Responsibilities
+
+Relationships
+
+deadlines
+
+new information
+
+World Events
+
+current Character State.
+```
+
+---
+
+# 22. Autonomy Principle
+
+Characters are not:
+
+```text
+PLAYER-TRIGGERED
+ENTITIES.
+```
+
+They may:
+
+```text
+start conversations
+
+follow up
+
+change Plans
+
+leave
+
+travel
+
+seek help
+
+keep commitments
+
+break commitments
+
+respond to events
+
+act without
+player involvement.
+```
+
+---
+
+# 23. Decision Making
+
+Location:
+
+```text
+Decision_Making.md
+```
+
+Decision Making answers:
+
+```text
+WHAT DOES
+THE CHARACTER
+CHOOSE NOW?
+```
+
+It evaluates plausible options using current Character context.
+
+Relevant inputs may include:
+
+```text
+Goals
+
+Needs
+
+Values
+
+Identity
+
+Beliefs
+
+Relationships
+
+Psychology
+
+Perceived Capability
+
+risk
+
+time
+
+current conditions.
+```
+
+---
+
+# 24. Decision Principle
+
+Decision Making must not become:
+
+```text
+ONE UNIVERSAL
+WEIGHTED FORMULA.
+```
+
+Avoid:
+
+```text
+Goal 30%
+Value 20%
+Risk 25%
+Relationship 25%.
+```
+
+Human decision-making should remain:
+
+```text
+CONTEXTUAL
+
+CAUSAL
+
+EXPLAINABLE
+
+BUT
+
+NOT
+MECHANICALLY
+DETERMINISTIC.
+```
+
+---
+
+# 25. Character Development
+
+Location:
+
+```text
+Character_Development.md
+```
+
+Character Development answers:
+
+```text
+HOW DOES
+A CHARACTER
+CHANGE OVER TIME?
+```
+
+It owns:
+
+```text
+developmental causality
+
+development pressure
+
+developmental inertia
+
+persistent change plausibility
+
+path dependence
+
+regression
+
+reversal
+
+cross-system change coordination.
+```
+
+---
+
+# 26. Character Development Principle
+
+```text
+CHARACTER DEVELOPMENT
+≠
+LEVELING UP
+
+CHARACTER DEVELOPMENT
+≠
+AUTOMATIC IMPROVEMENT
+
+CHARACTER DEVELOPMENT
+≠
+PREWRITTEN ARC.
+```
+
+Instead:
+
+```text
+CHARACTER DEVELOPMENT
+=
+CAUSALLY EXPLAINABLE
+CHANGE THROUGH
+LIVED HISTORY.
+```
+
+---
+
+# 27. Development Does Not Own Resulting State
+
+Example:
+
+```text
+Repeated technical work
+↓
+Development pressure
+↓
+Possible Expertise change
+↓
+Expertise System
+owns the result.
+```
+
+Character Development coordinates:
+
+```text
+WHY CHANGE
+IS PLAUSIBLE.
+```
+
+It does not become a second owner of every changing state.
+
+---
+
+# 28. Character Simulation Resolution
+
+Location:
+
+```text
+Character_Simulation_Resolution.md
+```
+
+Character Simulation Resolution answers:
+
+```text
+HOW MUCH
+OF THIS PERSON'S
+LIFE
+
+MUST BE
+SIMULATED
+EXPLICITLY
+RIGHT NOW?
+```
+
+It defines:
+
+```text
+LOW
+
+MEDIUM
+
+HIGH
+```
+
+simulation resolution.
+
+---
+
+# 29. Resolution Principle
+
+The central rule is:
+
+```text
+SIMULATION RESOLUTION
+CHANGES
+
+DETAIL
+
+NOT
+
+REALITY.
+```
+
+Therefore:
+
+```text
+LOW RESOLUTION
+≠
+FROZEN
+
+LOW RESOLUTION
+≠
+NO AGENCY
+
+LOW RESOLUTION
+≠
+NO CHANGE
+
+LOW RESOLUTION
+≠
+LESS HUMAN.
+```
+
+---
+
+# 30. Low Resolution
+
+Low Resolution preserves major causal continuity.
+
+Typical state may include:
+
+```text
+identity
+
+location / region
+
+Life situation
+
+major Goals
+
+major Relationships
+
+major responsibilities
+
+major Expertise
+
+major constraints
+
+major events
+
+major Character change.
+```
+
+---
+
+# 31. Medium Resolution
+
+Medium Resolution adds enough current state for meaningful near-term simulation.
+
+Typical state may include:
+
+```text
+active Goals
+
+broad Plans
+
+important Needs
+
 Motivations
+
+Beliefs
+
+Knowledge
+
+Psychology
+
+Relationships
+
+resources
+
+Open Loops
+
+recent events.
+```
+
+---
+
+# 32. High Resolution
+
+High Resolution exposes detailed current state required for immediate interaction and choice.
+
+Typical state may include:
+
+```text
+current activity
+
+immediate Goals
+
+active Plans
+
+current pressure
+
+Values
+
+Identity
+
+Memory
+
+Knowledge
+
+Beliefs
+
+Psychology
+
+Relationship context
+
+Capability
+
+available options
+
+Autonomy
+
+Decision Making.
+```
+
+---
+
+# 33. Resolution Is an Overlay
+
+Character Simulation Resolution is not:
+
+```text
+ANOTHER STEP
+IN THE RUNTIME.
+```
+
+It operates across the Character architecture.
+
+Conceptually:
+
+```text
+LOW
+MEDIUM
+HIGH
+
+=
+
+HOW MUCH
+OF THE SAME
+CHARACTER SYSTEM
+MUST BE
+EXPLICITLY REPRESENTED.
+```
+
+---
+
+# 34. Character Architecture Audit
+
+Location:
+
+```text
+CHARACTER_ARCHITECTURE_AUDIT.md
+```
+
+The audit validates:
+
+```text
+ownership
+
+system boundaries
+
+runtime flow
+
+off-screen continuity
+
+simulation resolution
+
+AI boundaries
+
+Narrative boundaries
+
+remaining architectural gaps.
+```
+
+It should be used when adding or modifying major Character architecture.
+
+---
+
+# 35. Humanity Dependencies
+
+Character systems depend heavily on:
+
+```text
+Canon/Universe/Humanity/
+```
+
+Key documents include:
+
+```text
+The_Human_Condition.md
+
+Human_Attributes.md
+
+Human_Psychology.md
+
+Historical_DNA.md
+
+Memory.md
+
+Family.md
+
+Trust.md
+
+Culture.md
+```
+
+---
+
+# 36. Human Attributes Boundary
+
+Human Attributes answers:
+
+```text
+HOW DOES
+THIS PERSON
+TEND TO RESPOND?
+```
+
+It does not answer:
+
+```text
+WHAT DO THEY
+VALUE?
+
+WHAT DO THEY
+BELIEVE?
+
+WHAT DO THEY
+WANT?
+
+HOW DO THEY
+FEEL RIGHT NOW?
+```
+
+---
+
+# 37. Human Psychology Boundary
+
+Human Psychology answers:
+
+```text
+WHAT IS
+THE CHARACTER'S
+CURRENT OR EVOLVING
+PSYCHOLOGICAL CONDITION?
+```
+
+It does not own:
+
+```text
+Values
+
+Identity
+
+Goals
+
+Motivation
+
+stable Attributes.
+```
+
+---
+
+# 38. Memory Boundary
+
+Memory answers:
+
+```text
+WHAT REMAINS
+OF EXPERIENCE?
+```
+
+It owns:
+
+```text
+remembered experience
+
+Memory significance
+
+Memory accessibility
+
+Memory reconstruction
+
+fading
+
+distortion.
+```
+
+Memory is not identical to:
+
+```text
+Knowledge
+
+World Truth
+
+Life Event
+
+Character Development.
+```
+
+---
+
+# 39. Life Dependency
+
+Character systems depend on:
+
+```text
+Canon/Systems/Life/
+```
+
+Life answers:
+
+```text
+WHAT HAPPENS
+ACROSS
+THE CHARACTER'S LIFE?
+```
+
+It owns:
+
+```text
+Life Events
+
+Life Course
+
+Aging
+
+biographical continuity
+
+major personal transitions.
+```
+
+---
+
+# 40. Life vs Character Development
+
+The distinction is:
+
+```text
+LIFE
+=
+WHAT HAPPENED
+
+CHARACTER DEVELOPMENT
+=
+HOW THAT HISTORY
+MAY HAVE
+PERSISTENTLY
+CHANGED THE PERSON.
+```
+
+---
+
+# 41. Relationships Dependency
+
+Character systems depend on:
+
+```text
+Canon/Systems/Relationships/
+```
+
+Relationships owns:
+
+```text
+PERSISTENT
+ACTOR-TO-ACTOR
+RELATIONAL STATE.
+```
+
+Examples may include:
+
+```text
+Trust
+
+affection
+
+resentment
+
+obligation
+
+dependency
+
+distance
+
+relational history.
+```
+
+---
+
+# 42. Trust Boundary
+
+The architecture must preserve:
+
+```text
+SOCIAL TRUST
+=
+GENERAL HUMAN
+DISPOSITION
+
+RELATIONSHIP TRUST
+=
+STATE TOWARD
+SPECIFIC ACTOR
+
+TARGETED LOYALTY
+=
+VALUE-BASED
+COMMITMENT TOWARD
+SPECIFIC TARGET.
+```
+
+These are different concepts.
+
+---
+
+# 43. World Simulation Dependency
+
+World Simulation owns:
+
+```text
+WHAT ACTUALLY
+HAPPENS.
+```
+
+Characters provide:
+
+```text
+intent
+
+action attempt
+
+Capability
+
+location
+
+context.
+```
+
+World Simulation provides:
+
+```text
+physical consequence
+
+external consequence
+
+environmental response.
+```
+
+---
+
+# 44. World Truth Boundary
+
+Never collapse:
+
+```text
+CHARACTER BELIEF
+
+INTO
+
+WORLD TRUTH.
+```
+
+Likewise:
+
+```text
+CHARACTER INTENTION
+
+DOES NOT
+
+CREATE
+WORLD OUTCOME.
+```
+
+---
+
+# 45. Society Dependency
+
+Society handles collective patterns that should not require individual Character simulation everywhere.
+
+Examples may include:
+
+```text
+population behavior
+
+social norms
+
+migration
+
+institutional patterns
+
+collective belief distribution
+
+economic adaptation.
+```
+
+Character systems remain responsible for:
+
+```text
+INDIVIDUAL HUMAN
+STATE AND AGENCY.
+```
+
+---
+
+# 46. Faction Boundary
+
+Factions may own:
+
+```text
+organizational Goals
+
+resources
+
+leadership
+
+territory
+
+operations
+
+institutional state.
+```
+
+Individual members remain:
+
+```text
+CHARACTERS.
+```
+
+Faction membership must not erase:
+
+```text
+individual Values
+
+individual Beliefs
+
+individual Goals
+
+individual Relationships
+
+individual agency.
+```
+
+---
+
+# 47. Living Campaign Engine Boundary
+
+The Living Campaign Engine may identify:
+
+```text
+important conditions
+
+active conflicts
+
+open consequences
+
+Characters requiring attention
+
+regional change
+
+emerging Story Threads.
+```
+
+It may request:
+
+```text
+greater simulation resolution.
+```
+
+It may not determine:
+
+```text
+what a Character
+must choose.
+```
+
+---
+
+# 48. Narrative Boundary
+
+Narrative systems may:
+
+```text
+present
+
+frame
+
+summarize
+
+reveal
+
+dramatize
+```
+
+Character state.
+
+They may not:
+
+```text
+invent
+
+override
+
+rewrite
+
+or
+
+retroactively alter
+```
+
+Character reality for scene convenience.
+
+---
+
+# 49. Story Relevance Boundary
+
+A Character may have:
+
+```text
+Need
+
+Goal
+
+Problem
+
+Secret
+
+Conflict
+
+Relationship
+
+Responsibility.
+```
+
+None automatically becomes:
+
+```text
+MISSION
+
+QUEST
+
+STORY HOOK.
+```
+
+Narrative relevance is downstream from Character reality.
+
+---
+
+# 50. Character Runtime
+
+The Character runtime should be understood as a causal network rather than a rigid one-way pipeline.
+
+A useful conceptual flow is:
+
+```text
+WORLD CONDITION
+        ↓
+CHARACTER EXPOSURE
+        ↓
+PERCEPTION
+        ↓
+KNOWLEDGE
+        ↓
+BELIEF
+        ↓
+VALUES / IDENTITY
++
+NEEDS / MOTIVATION
+        ↓
+GOALS / PLANS
+        ↓
+AUTONOMY
+        ↓
+DECISION MAKING
+        ↓
+ACTION ATTEMPT
+        ↓
+ACTUAL CAPABILITY
++
+WORLD CONDITIONS
+        ↓
+WORLD CONSEQUENCE
+        ↓
+LIFE
++
+MEMORY
++
+RELATIONSHIPS
++
+PSYCHOLOGY
++
+CHARACTER DEVELOPMENT
+        ↓
+UPDATED
+AUTHORITATIVE STATE
+        ↓
+NEW CHARACTER CONTEXT.
+```
+
+---
+
+# 51. Runtime Is Not Strictly Linear
+
+Feedback occurs continuously.
+
+Examples:
+
+```text
+NEW INFORMATION
+→ Goal changes
+
+MOTIVATION
+→ information seeking
+
+RELATIONSHIP CHANGE
+→ Belief change
+
+WORLD EVENT
+→ new Need pressure
+
+FAILURE
+→ Plan change
+
+MEMORY
+→ future Decision pressure.
+```
+
+Therefore:
+
+```text
+CHARACTER ARCHITECTURE
+=
+CAUSAL NETWORK
+
+NOT
+
+LINEAR SCRIPT.
+```
+
+---
+
+# 52. Character State Overlay
+
+Character State operates across the runtime.
+
+It provides:
+
+```text
+THE CURRENT
+CHARACTER-CENTRIC
+COORDINATION VIEW.
+```
+
+It is not:
+
+```text
+ONE STEP
+BETWEEN SYSTEMS.
+```
+
+---
+
+# 53. Simulation Resolution Overlay
+
+Character Simulation Resolution also operates across the runtime.
+
+It determines:
+
+```text
+HOW MUCH
+OF EACH RELEVANT
+SYSTEM
+
+MUST BE
+REPRESENTED
+RIGHT NOW.
+```
+
+---
+
+# 54. Off-Screen Continuity
+
+The architecture requires:
+
+```text
+PLAYER ABSENCE
+≠
+CHARACTER PAUSE.
+```
+
+Characters may continue:
+
+```text
+working
+
+traveling
+
+aging
+
+learning
+
+changing roles
+
+maintaining Relationships
+
+forming Relationships
+
+pursuing Goals
+
+abandoning Goals
+
+changing Plans
+
+experiencing Life Events
+
+responding to World Events
+
+making decisions
+
+developing.
+```
+
+---
+
+# 55. Player Absence Principle
+
+The world must never behave as:
+
+```text
+PLAYER LEFT
+
+↓
+
+NPCS WAIT.
+```
+
+Instead:
+
+```text
+PLAYER LEFT
+
+↓
+
+TIME CONTINUED
+
+↓
+
+OTHER PEOPLE
+KEPT LIVING.
+```
+
+---
+
+# 56. Human Agency
+
+Character systems should support:
+
+```text
+SAME SITUATION
+
++
+
+DIFFERENT PERSON
+
+=
+
+DIFFERENT
+PLAUSIBLE RESPONSE.
+```
+
+Variation may emerge from:
+
+```text
+Attributes
+
+Values
+
+Identity
+
+Beliefs
+
+Relationships
+
+Goals
+
+Needs
+
+Psychology
+
+Expertise
+
+Life history
+
+current context.
+```
+
+---
+
+# 57. Human Contradiction
+
+Characters may:
+
+```text
+value honesty
+and lie
+
+value family
+and fail family
+
+believe themselves brave
+and feel afraid
+
+want safety
+and take risk
+
+trust someone
+and still disagree
+
+hold two conflicting Goals.
+```
+
+This is not automatically inconsistent design.
+
+The question is:
+
+```text
+IS THE
+CAUSAL PATH
+UNDERSTANDABLE?
+```
+
+---
+
+# 58. No Deterministic Character Logic
+
+Avoid:
+
+```text
+ATTRIBUTE X
+=
+ACTION Y
+
+NEED X
+=
+ACTION Y
+
+VALUE X
+=
+ACTION Y
+
+GOAL X
+=
+ACTION Y
+
+PROFESSION X
+=
+CAPABILITY Y.
+```
+
+Characters should emerge from interaction between multiple systems.
+
+---
+
+# 59. No Omniscience
+
+Characters must only reason from:
+
+```text
+INFORMATION
+THEY PLAUSIBLY
+POSSESS.
+```
+
+Never allow:
+
+```text
+WORLD DATABASE
+KNOWLEDGE
+
+TO BECOME
+
+CHARACTER KNOWLEDGE
+WITHOUT A PATH.
+```
+
+---
+
+# 60. No Player-Centric Character Model
+
+Characters should not exist primarily as:
+
+```text
+QUEST GIVERS
+
+VENDORS
+
+COMPANIONS
+
+ENEMIES
+
+REWARD SOURCES.
+```
+
+Those may describe:
+
+```text
+THE PLAYER'S
+CURRENT RELATIONSHIP
+TO THEM.
+```
+
+They must not define:
+
+```text
+WHO THE PERSON IS.
+```
+
+---
+
+# 61. No Universal Character Level
+
+Project Ascension must not introduce:
+
+```text
+CHARACTER LEVEL.
+```
+
+A person may simultaneously be:
+
+```text
+world-class researcher
+
+poor driver
+
+injured
+
+socially isolated
+
+trusted professionally
+
+inexperienced at survival.
+```
+
+One number cannot represent this.
+
+---
+
+# 62. No Universal XP
+
+The Character architecture must not use:
+
+```text
+GENERIC XP
+
+MISSION XP
+
+KILL XP
+
+SESSION XP.
+```
+
+Development must remain:
+
+```text
+DOMAIN-SPECIFIC
+
+CAUSAL
+
+HISTORICAL.
+```
+
+---
+
+# 63. No Global Trust
+
+Trust must remain contextual.
+
+Avoid:
+
+```text
+TRUST = 72.
+```
+
+Prefer:
+
+```text
+GENERAL SOCIAL TRUST
+→ Human Attributes
+
+TRUST IN PERSON A
+→ Relationships
+
+TRUST IN INSTITUTION
+→ Belief / social context
+
+LOYALTY TO PERSON A
+→ Values and Identity.
+```
+
+---
+
+# 64. No Global Reputation
+
+A universal Reputation score should not be introduced.
+
+Different people and institutions may hold:
+
+```text
+different information
+
+different interpretations
+
+different opinions
+
+different histories
+```
+
+about the same Character.
+
+---
+
+# 65. AI Boundary
+
+AI may assist with:
+
+```text
+reasoning
+
+summarization
+
+dialogue
+
+causal interpretation
+
+context selection
+
+plausible inference
+
+Character expression.
+```
+
+AI must not silently create Canon.
+
+---
+
+# 66. AI Must Not Invent Character State
+
+AI must not invent:
+
+```text
+family
+
+trauma
+
+Expertise
+
+Relationships
+
+Goals
+
+Values
+
+Memories
+
+resources
+
+authority
+
+knowledge
+
+Life Events
+```
+
+merely because they would make a scene work.
+
+---
+
+# 67. Unknown Is Valid
+
+The architecture should prefer:
+
+```text
+UNKNOWN
+
+UNRESOLVED
+
+INSUFFICIENT INFORMATION
+```
+
+over:
+
+```text
+CONVENIENT INVENTION.
+```
+
+---
+
+# 68. Character Architecture Locks
+
+The following principles are considered architectural locks:
+
+```text
+ONE AUTHORITATIVE OWNER
+PER STATE DOMAIN
+
+NO CHARACTER LEVEL
+
+NO GENERIC XP
+
+NO GLOBAL TRUST
+
+NO GLOBAL LOYALTY
+
+NO GLOBAL REPUTATION
+
+NO PLAYER-CENTRIC NPC ACTIVATION
+
+NO QUEST-GIVER CHARACTER MODEL
+
+NO OFF-SCREEN FREEZE
+
+NO OMNISCIENT CHARACTER KNOWLEDGE
+
+NO ATTRIBUTE-TO-ACTION LOOKUP
+
+NO NEED-TO-ACTION LOOKUP
+
+NO GOAL-TO-ACTION LOOKUP
+
+NO PROFESSION-MAGIC
+
+NO AUTOMATIC CHARACTER ARC
+
+NO NARRATIVE OVERRIDE
+
+NO AI-INVENTED CANON
+
+NO RESOLUTION-BASED PERSONHOOD.
+```
+
+---
+
+# 69. Retired Architecture
+
+The following former Character architecture is no longer canonical:
+
+```text
+Personality_and_Values.md
+```
+
+Its responsibilities are now split between:
+
+```text
+Human_Attributes.md
+
+and
+
+Values_and_Identity.md.
+```
+
+If the old file remains in the repository, it should be retired or removed after repository verification.
+
+---
+
+# 70. Progression Architecture
+
+A separate generic Character Progression layer is not currently required.
+
+Long-term individual Character change is owned by:
+
+```text
+Character_Development.md
+```
+
+while resulting state remains owned by domain systems such as:
+
+```text
+Expertise
+
+Human Psychology
+
+Relationships
+
+Knowledge and Beliefs
+
+Values and Identity
+
+Goals and Plans
+
+Life.
+```
+
+A legacy Progression system should not remain authoritative if it duplicates Character Development.
+
+---
+
+# 71. Known Cross-System Questions
+
+The Character architecture is currently considered coherent.
+
+Remaining questions belong primarily to wider Simulation architecture.
+
+These include:
+
+```text
+Action Resolution
+
+Resource Ownership
+
+Reputation Aggregation
+
+Institutional Roles
+
+Responsibility Coordination.
+```
+
+These should not automatically become new Character subsystems.
+
+---
+
+# 72. Action Resolution Question
+
+The remaining architectural chain includes:
+
+```text
+CHARACTER CHOOSES
+↓
+ACTION ATTEMPT
+↓
+ACTUAL CAPABILITY
++
+TASK REQUIREMENTS
++
+WORLD CONDITIONS
+↓
+OUTCOME.
+```
+
+The exact ownership of:
+
+```text
+ACTION RESOLUTION
+```
+
+should be confirmed against:
+
+```text
+Simulation_Architecture.md
+
+and
+
+World_Simulation/
+```
+
+before any new system is created.
+
+---
+
+# 73. Resource Ownership Question
+
+Characters may:
+
+```text
+own
+
+control
+
+borrow
+
+access
+
+lose
+
+or
+
+be denied
+```
+
+resources.
+
+Character State and Capability may reference those resources.
+
+The authoritative resource architecture should be validated elsewhere.
+
+Do not create:
+
+```text
+Character_Inventory.md
+```
+
+without confirming a real ownership gap.
+
+---
+
+# 74. Reputation Question
+
+Reputation may exist as:
+
+```text
+individual belief
+
+relationship history
+
+community perception
+
+professional reputation
+
+institutional reputation
+
+Faction reputation.
+```
+
+These may require different owners.
+
+Do not collapse them into:
+
+```text
+ONE GLOBAL
+REPUTATION SYSTEM.
+```
+
+---
+
+# 75. Responsibility Question
+
+Responsibilities may originate from:
+
+```text
+profession
+
+relationship
+
+promise
+
+role
+
+institution
+
+law
+
+family.
+```
+
+The origin should remain authoritative.
+
+Character State may expose current responsibility context.
+
+Autonomy may consume it.
+
+---
+
+# 76. Open Loops
+
+An Open Loop represents something unresolved that may require future attention.
+
+Examples:
+
+```text
+promise
+
+pending response
+
+unfinished task
+
+planned follow-up
+
+unresolved question.
+```
+
+Open Loops should remain contextual.
+
+For now:
+
+```text
+Goals / Plans
+own intentional loops
+
+Relationships
+own relational obligations
+
+Character State
+exposes relevant loops
+
+Autonomy
+consumes them.
+```
+
+---
+
+# 77. Character Architecture Validation
+
+Before adding a new Character system, ask:
+
+```text
+WHAT QUESTION
+DOES THIS NEW
+SYSTEM ANSWER?
+
+IS THAT QUESTION
+ALREADY OWNED?
+
+WHAT STATE
+WOULD IT OWN?
+
+DOES THAT STATE
+ALREADY HAVE
+AN AUTHORITATIVE OWNER?
+
+IS THIS REALLY
+A CHARACTER SYSTEM
+
+OR
+
+DOES IT BELONG
+TO LIFE,
+SOCIETY,
+RELATIONSHIPS,
+WORLD SIMULATION,
+NARRATIVE
+OR ANOTHER AREA?
+
+CAN THE SAME
+PROBLEM BE SOLVED
+THROUGH REFERENCES
+INSTEAD OF
+A NEW SYSTEM?
+```
+
+---
+
+# 78. New System Rule
+
+Create a new Character system only when:
+
+```text
+A REAL
+AUTHORITATIVE
+STATE DOMAIN
+IS MISSING.
+```
+
+Do not create new systems merely because:
+
+```text
+A CONCEPT
+IS INTERESTING
+
+OR
+
+A DOCUMENT
+WOULD BE USEFUL.
+```
+
+---
+
+# 79. Character Architecture North Star
+
+The Character architecture succeeds when the simulation can answer:
+
+```text
+WHO IS THIS PERSON?
+
+WHAT HAVE
+THEY LIVED THROUGH?
+
+WHAT MATTERS
+TO THEM?
+
+WHO DO THEY
+BELIEVE THEY ARE?
+
+WHAT DO THEY WANT?
+
+WHAT DO THEY
+THINK IS TRUE?
+
+WHAT HAVE THEY
+LEARNED TO DO?
+
+WHAT CAN THEY
+ACTUALLY DO HERE?
+
+WHY DO THEY
+CARE NOW?
+
+WHY WOULD THEY
+ACT NOW?
+
+WHAT DO THEY
+CHOOSE?
+
+WHAT HAPPENS?
+
+WHAT DO THEY
+REMEMBER?
+
+HOW DOES
+THE EXPERIENCE
+AFFECT THEM?
+
+AND
+
+WHAT HAPPENS
+TO THEIR LIFE
+
+WHEN THE PLAYER
+IS SOMEWHERE ELSE?
+```
+
+---
+
+# 80. Character Architecture Principle
+
+A believable Character does not emerge from:
+
+```text
+ONE PERSONALITY SCORE
+
+ONE MOTIVATION SCORE
+
+ONE RELATIONSHIP SCORE
+
+ONE CHARACTER LEVEL
+
+OR
+
+ONE AI PROMPT.
+```
+
+They emerge from the interaction of:
+
+```text
+History
+
+Human Attributes
+
+Psychology
+
+Values
+
+Identity
+
+Needs
+
+Motivation
 
 Goals
 
@@ -157,3795 +2836,74 @@ Knowledge
 
 Beliefs
 
-Memories
+Expertise
 
-Skills
-
-Capabilities
-
-Profession
-
-Resources
+Capability
 
 Relationships
 
-Responsibilities
+Autonomy
 
-Social Roles
+Choice
 
-Reputation
+Consequence
 
-Current Activity
+Memory
 
-Emotional Context
+Development
 
-Life History
-
-Future Intentions
-```
-
-Not every character requires identical simulation depth.
-
-But every persistent character should remain conceptually compatible with the same underlying model.
-
----
-
-# Character State
-
-At any meaningful point in time, a character has:
-
-```text
-CURRENT STATE.
-```
-
-Conceptually:
-
-```text
-CHARACTER STATE
-=
-WHO THEY ARE
-+
-WHERE THEY ARE
-+
-WHAT THEY KNOW
-+
-WHAT THEY BELIEVE
-+
-WHAT THEY NEED
-+
-WHAT THEY WANT
-+
-WHAT THEY CAN DO
-+
-WHO THEY KNOW
-+
-WHAT THEY ARE DOING
-+
-WHAT HAS HAPPENED TO THEM
-```
-
-Character State is dynamic.
-
-It changes through:
-
-```text
-time
-
-world events
-
-personal decisions
-
-relationships
-
-work
-
-conflict
-
-success
-
-failure
-
-injury
-
-aging
-
-migration
-
-information
-
-player interaction.
+Time.
 ```
 
 ---
 
-# Character Identity
+# 81. Closing Principle
 
-Every persistent character should have a stable identity.
+Project Ascension should create Characters who feel like people who existed before the player met them and who continue to exist after the player leaves.
 
-Identity may include:
+They should have:
 
 ```text
-Name
-
-Age
-
-Birth Information
-
-Origin
-
-Current Residence
-
-Family Context
-
-Profession
-
-Social Roles
-
-Affiliations
-
-Personal History
-
-Known Languages
-
-Cultural Background
-```
-
-Identity should not be confused with:
-
-```text
-CURRENT STATE.
-```
-
-For example:
-
-```text
-Profession:
-Doctor
-```
-
-may change.
-
-But:
-
-```text
-Previous Profession:
-Doctor
-```
-
-may remain part of character history.
-
----
-
-# Persistent Identity
-
-Characters must remain recognizable across time.
-
-This means change should produce:
-
-```text
-CONTINUITY
-```
-
-rather than:
-
-```text
-RANDOM REPLACEMENT.
-```
-
-Conceptually:
-
-```text
-PAST CHARACTER
-      +
-EXPERIENCE
-      +
-TIME
-      ↓
-CURRENT CHARACTER
-```
-
-The system should be able to explain:
-
-```text
-HOW DID THIS PERSON
-BECOME WHO THEY ARE NOW?
-```
-
----
-
-# Needs
-
-Characters possess needs.
-
-Examples may include:
-
-```text
-food
-
-water
-
-shelter
-
-safety
-
-health
-
-rest
-
-income
-
-belonging
-
-family stability
-
-social connection
-
-purpose
-
-status
-
-autonomy
-
-security
-
-recognition.
-```
-
-Needs influence behavior.
-
-They do not automatically determine behavior.
-
----
-
-# Need Principle
-
-```text
-NEED
-≠
-ACTION.
-```
-
-Instead:
-
-```text
-NEED
-+
-PERSONALITY
-+
-VALUES
-+
-KNOWLEDGE
-+
-AVAILABLE OPTIONS
-+
-CURRENT CONDITIONS
-      ↓
-POSSIBLE MOTIVATION
-```
-
-Two characters experiencing the same shortage may react differently.
-
----
-
-# Example
-
-Two characters both experience:
-
-```text
-FOOD INSECURITY.
-```
-
-Character A may:
-
-```text
-seek additional work.
-```
-
-Character B may:
-
-```text
-ask family for help.
-```
-
-Character C may:
-
-```text
-steal.
-```
-
-Character D may:
-
-```text
-leave the region.
-```
-
-Character E may:
-
-```text
-organize community distribution.
-```
-
-The world condition is shared.
-
-The human response is not.
-
----
-
-# Motivation
-
-Motivation represents:
-
-```text
-WHY A CHARACTER
-WANTS SOMETHING.
-```
-
-Possible motivations include:
-
-```text
-survival
-
-love
-
-fear
-
-duty
-
-ambition
-
-loyalty
-
-revenge
-
-curiosity
-
-wealth
-
-security
-
-belief
-
-responsibility
-
-status
-
-guilt
-
-hope.
-```
-
-Multiple motivations may coexist.
-
-They may also conflict.
-
----
-
-# Internal Conflict
-
-A character may simultaneously want:
-
-```text
-TO PROTECT FAMILY
-```
-
-and:
-
-```text
-TO FULFILL PUBLIC DUTY.
-```
-
-Or:
-
-```text
-TO HELP THE PLAYER
-```
-
-and:
-
-```text
-TO PROTECT THEIR ORGANIZATION.
-```
-
-Therefore:
-
-```text
-CHARACTER MOTIVATION
-IS NOT ALWAYS
-A SINGLE PRIORITY.
-```
-
-Internal conflict is expected.
-
----
-
-# Goals
-
-Characters form goals from:
-
-```text
-needs
-
-motivations
-
-values
-
-responsibilities
-
-relationships
-
-world conditions
-
-opportunities.
-```
-
-Goals may exist at different scales.
-
-Examples:
-
-```text
-Immediate:
-Find medicine today.
-
-Short-Term:
-Repair the truck.
-
-Medium-Term:
-Secure a reliable supplier.
-
-Long-Term:
-Expand the family business.
-
-Life Goal:
-Build a safer future for children.
-```
-
----
-
-# Goal Persistence
-
-Goals may:
-
-```text
-continue
-
-succeed
-
-fail
-
-change
-
-be abandoned
-
-be delayed
-
-be replaced
-
-become impossible.
-```
-
-Characters should not preserve goals forever simply because:
-
-```text
-THE PLAYER HAS NOT
-INTERACTED WITH THEM.
-```
-
----
-
-# Plans
-
-Goals can generate plans.
-
-Conceptually:
-
-```text
-GOAL
-      ↓
-AVAILABLE OPTIONS
-      ↓
-PLAN
-      ↓
-ACTION
-      ↓
-RESULT
-```
-
-Plans may include:
-
-```text
-travel
-
-trade
-
-conversation
-
-negotiation
-
-work
-
-research
-
-repair
-
-recruitment
-
-avoidance
-
-preparation
-
-cooperation
-
-deception
-
-conflict.
-```
-
----
-
-# Plan Failure
-
-Plans are not guaranteed to succeed.
-
-They interact with:
-
-```text
-world conditions
-
-character capability
-
-resources
-
-other characters
-
-institutions
-
-information
-
-chance
-
-player actions.
-```
-
-Therefore:
-
-```text
-PLAN
-≠
-FUTURE FACT.
-```
-
----
-
-# Knowledge
-
-Characters know only what they have plausibly learned.
-
-Knowledge may originate from:
-
-```text
-direct observation
-
-conversation
-
-radio
-
-documents
-
-institutions
-
-professional networks
-
-rumors
-
-player communication
-
-personal experience.
-```
-
----
-
-# Knowledge Boundary
-
-A character must not automatically know:
-
-```text
-WORLD TRUTH.
-```
-
-Instead:
-
-```text
-WORLD TRUTH
-      ↓
-INFORMATION PATH
-      ↓
-CHARACTER KNOWLEDGE
-```
-
-If no plausible path exists:
-
-```text
-NO KNOWLEDGE.
-```
-
----
-
-# Beliefs
-
-Knowledge and belief are separate.
-
-A character may possess:
-
-```text
-correct information
-
-incorrect information
-
-incomplete information
-
-uncertain information
-
-contradictory information.
-```
-
-They may therefore believe something that is:
-
-```text
-FALSE.
-```
-
----
-
-# Example
-
-World Truth:
-
-```text
-A grain shortage
-was caused by drought.
-```
-
-Character Knowledge:
-
-```text
-Food prices are increasing.
-```
-
-Character Belief:
-
-```text
-Traders are intentionally
-creating the shortage.
-```
-
-Their actions should follow:
-
-```text
-WHAT THEY BELIEVE
-```
-
-rather than omniscient simulation truth.
-
----
-
-# Memory
-
-Characters remember meaningful experiences.
-
-Character Memory may include:
-
-```text
-people
-
-promises
-
-conflicts
-
-help
-
-betrayal
-
-success
-
-failure
-
-loss
-
-danger
-
-important conversations
-
-shared experiences
-
-major life events.
-```
-
-Memory should influence:
-
-```text
-future decisions
-
-relationships
-
-beliefs
-
-expectations
-
-emotional reactions.
-```
-
----
-
-# Memory Is Selective
-
-Characters should not possess:
-
-```text
-PERFECT EVENT LOGS.
-```
-
-Memory may:
-
-```text
-fade
-
-simplify
-
-distort
-
-remain vivid
-
-be reinforced
-
-be reinterpreted.
-```
-
-Significance matters.
-
----
-
-# Memory Persistence
-
-A trivial interaction from ten years earlier may be:
-
-```text
-FORGOTTEN.
-```
-
-A life-saving event from ten years earlier may remain:
-
-```text
-EXTREMELY IMPORTANT.
-```
-
-Therefore:
-
-```text
-MEMORY PERSISTENCE
-≠
-TIME ALONE.
-```
-
----
-
-# Personality
-
-Personality influences how a character tends to:
-
-```text
-interpret
-
-decide
-
-communicate
-
-cooperate
-
-react
-
-take risks
-
-handle conflict.
-```
-
-Possible dimensions may include:
-
-```text
-cautious ↔ risk-taking
-
-reserved ↔ expressive
-
-trusting ↔ suspicious
-
-patient ↔ impulsive
-
-cooperative ↔ competitive
-
-pragmatic ↔ idealistic.
-```
-
-These should influence behavior without becoming rigid scripts.
-
----
-
-# Personality Principle
-
-```text
-PERSONALITY
-INFLUENCES BEHAVIOR.
-
-IT DOES NOT
-DETERMINE EVERY ACTION.
-```
-
-A cautious person may still take a major risk when:
-
-```text
-their child is in danger.
-```
-
-Context matters.
-
----
-
-# Values
-
-Values represent deeper principles a character considers important.
-
-Examples:
-
-```text
-family
-
-freedom
-
-community
-
-order
-
-faith
-
-wealth
-
-justice
-
-loyalty
-
-tradition
-
-knowledge
-
-independence
-
-duty.
-```
-
-Values may influence:
-
-```text
-goals
-
-political opinions
-
-relationships
-
-moral decisions
-
-professional choices.
-```
-
----
-
-# Conflicting Values
-
-A character may value:
-
-```text
-LOYALTY
-```
-
-and:
-
-```text
-JUSTICE.
-```
-
-If a friend commits wrongdoing:
-
-```text
-VALUES MAY COLLIDE.
-```
-
-This can create:
-
-```text
-hesitation
-
-internal conflict
-
-relationship change
-
-unexpected decisions.
-```
-
----
-
-# Capability
-
-Characters differ in what they can realistically accomplish.
-
-Capability may depend upon:
-
-```text
-skills
-
-education
-
-experience
-
-health
-
-equipment
-
-resources
-
-authority
-
-relationships
-
-location
-
-time.
-```
-
----
-
-# Capability Principle
-
-```text
-WANTING SOMETHING
-DOES NOT MEAN
-BEING ABLE TO DO IT.
-```
-
-A character may have:
-
-```text
-strong motivation
-```
-
-but:
-
-```text
-low capability.
-```
-
-This itself may generate behavior such as:
-
-```text
-seeking help
-
-forming alliances
-
-hiring someone
-
-asking the player
-
-abandoning the plan.
-```
-
----
-
-# Profession
-
-Profession is more than:
-
-```text
-DIALOGUE FLAVOR.
-```
-
-Profession affects:
-
-```text
-skills
-
-knowledge
-
-social network
-
-income
-
-responsibilities
-
-daily routine
-
-authority
-
-available actions.
-```
-
-Examples:
-
-```text
-Doctor
-
-Mechanic
-
-Farmer
-
-Trader
-
-Teacher
-
-Engineer
-
-Transport Coordinator
-
-Government Official
-
-Security Officer
-
-Technician.
-```
-
----
-
-# Professional Knowledge
-
-A doctor may plausibly know:
-
-```text
-medical supply conditions.
-```
-
-A trader may know:
-
-```text
-regional price movements.
-```
-
-A mechanic may know:
-
-```text
-vehicle reliability.
-```
-
-A farmer may know:
-
-```text
-local crop conditions.
-```
-
-This creates natural:
-
-```text
-INFORMATION DISTRIBUTION
-```
-
-through society.
-
----
-
-# Social Role
-
-Profession and social role are not identical.
-
-A character may simultaneously be:
-
-```text
-Mechanic
-
-Parent
-
-Council Member
-
-Neighbor
-
-Friend
-
-Volunteer
-
-Union Representative.
-```
-
-Different roles may create:
-
-```text
-different responsibilities
-+
-different motivations.
-```
-
----
-
-# Relationships
-
-Characters exist within social networks.
-
-Relationships may include:
-
-```text
-family
-
-friendship
-
-romance
-
-professional
-
-political
-
-economic
-
-rivalry
-
-mentorship
-
-dependency
-
-trust
-
-hostility.
-```
-
-Detailed relationship behavior belongs primarily to:
-
-```text
-Canon/Systems/Relationships/
-```
-
-The Character System must nevertheless expose enough Character State for relationships to influence decisions.
-
----
-
-# Character Network Principle
-
-Characters must be able to:
-
-```text
-KNOW EACH OTHER
-```
-
-without:
-
-```text
+PASTS
 THE PLAYER
-```
+DID NOT CAUSE
 
-being the connection.
-
-Conceptually:
-
-```text
-CHARACTER A
-↔
-CHARACTER B
-↔
-CHARACTER C
-```
-
-is valid without:
-
-```text
-PLAYER
-```
-
-appearing anywhere in the network.
-
----
-
-# Autonomous Relationships
-
-Characters may:
-
-```text
-meet
-
-cooperate
-
-argue
-
-become friends
-
-become rivals
-
-form families
-
-end relationships
-
-create organizations
-```
-
-without player involvement.
-
-This is essential for:
-
-```text
-A LIVING SOCIAL WORLD.
-```
-
----
-
-# Decision Making
-
-Characters make decisions using their available state.
-
-Conceptually:
-
-```text
-CURRENT NEEDS
-
-+
+RELATIONSHIPS
+THE PLAYER
+DOES NOT CONTROL
 
 GOALS
-
-+
-
-PERSONALITY
-
-+
-
-VALUES
-
-+
-
-KNOWLEDGE
-
-+
+THE PLAYER
+MAY NEVER KNOW
 
 BELIEFS
+THAT MAY BE WRONG
 
-+
+VALUES
+THAT MAY CONFLICT
 
-RELATIONSHIPS
+CAPABILITIES
+THAT HAVE LIMITS
 
-+
+RESPONSIBILITIES
+THAT CONTINUE
 
-CAPABILITY
+AND
 
-+
-
-AVAILABLE OPTIONS
-
-+
-
-WORLD CONDITIONS
-
-      ↓
-
-DECISION
-```
-
----
-
-# Decision Principle
-
-The engine should aim for:
-
-```text
-PLAUSIBLE DECISIONS
-```
-
-rather than:
-
-```text
-OPTIMAL DECISIONS.
-```
-
-Humans may:
-
-```text
-misjudge
-
-hesitate
-
-act emotionally
-
-take unnecessary risks
-
-follow habit
-
-trust the wrong person
-
-ignore good advice.
-```
-
-Believable imperfection is desirable.
-
----
-
-# Autonomy
-
-Characters should act without waiting for:
-
-```text
-PLAYER INPUT.
-```
-
-Autonomous actions may include:
-
-```text
-working
-
-traveling
-
-trading
-
-meeting others
-
-solving problems
-
-forming plans
-
-changing jobs
-
-moving home
-
-starting relationships
-
-ending relationships
-
-helping others
-
-joining organizations
-
-responding to crises.
-```
-
----
-
-# Autonomy Principle
-
-```text
-IF A CHARACTER
-CAN PLAUSIBLY ACT
-
-AND HAS REASON TO ACT
-
-THE PLAYER SHOULD NOT
-BE REQUIRED TO ACT FOR THEM.
-```
-
----
-
-# Asking the Player for Help
-
-Characters may ask the player for help when:
-
-```text
-they know the player
-
-the player has useful capability
-
-the character cannot solve the problem alone
-
-the relationship supports asking
-
-the player is reachable
-
-the problem still exists.
-```
-
-This can generate:
-
-```text
-Story Hook
-
-Opportunity
-
-Mission Candidate.
-```
-
-But:
-
-```text
-CHARACTER PROBLEM
-≠
-AUTOMATIC PLAYER MISSION.
-```
-
----
-
-# Character Action and World State
-
-Characters can modify the world.
-
-Examples:
-
-```text
-Farmer increases production.
-
-Engineer repairs infrastructure.
-
-Trader opens route.
-
-Doctor establishes clinic.
-
-Politician changes policy.
-
-Mechanic restores vehicle.
-
-Teacher trains students.
-```
-
-Therefore:
-
-```text
-CHARACTERS
-ARE WORLD ACTORS.
-```
-
----
-
-# World State and Character State
-
-The relationship is bidirectional.
-
-```text
-WORLD STATE
-      ↓
-CHARACTER
-      ↓
-DECISION
-      ↓
-ACTION
-      ↓
-WORLD STATE
-```
-
-Examples:
-
-```text
-Food shortage
-→ farmer changes crop plan.
-
-Security deterioration
-→ family relocates.
-
-New road
-→ trader opens route.
-
-Population growth
-→ doctor expands clinic.
-```
-
----
-
-# Character Development
-
-Characters change through experience.
-
-Development may affect:
-
-```text
-skills
-
-beliefs
-
-confidence
-
-relationships
-
-profession
-
-values
-
-goals
-
-status
-
-resources
-
-responsibilities.
-```
-
----
-
-# Development Principle
-
-Character development should emerge from:
-
-```text
-EXPERIENCE
-+
-TIME
-+
-DECISIONS
-+
-CONSEQUENCES.
-```
-
-Not merely:
-
-```text
-PLAYER COMPLETED
-CHARACTER QUEST.
-```
-
----
-
-# Example
-
-A young mechanic may become:
-
-```text
-Workshop Assistant
-      ↓
-Experienced Mechanic
-      ↓
-Workshop Manager
-      ↓
-Regional Industrial Leader
-```
-
-because of:
-
-```text
-years of work
-
-economic conditions
-
-relationships
-
-opportunities
-
-success.
-```
-
-The player may influence this path.
-
-The player does not need to create it.
-
----
-
-# Aging
-
-Characters age.
-
-Aging may influence:
-
-```text
-health
-
-appearance
-
-physical capability
-
-family roles
-
-profession
-
-priorities
-
-social status
-
-future planning.
-```
-
----
-
-# Aging Principle
-
-```text
-TIME MUST CHANGE PEOPLE.
-```
-
-Ten years passing cannot mean:
-
-```text
-same character
-
-same role
-
-same goals
-
-same life
-
-+10 age.
-```
-
----
-
-# Life Events
-
-Characters may experience:
-
-```text
-birth
-
-education
-
-employment
-
-promotion
-
-unemployment
-
-marriage
-
-separation
-
-parenthood
-
-migration
-
-injury
-
-illness
-
-retirement
-
-bereavement
-
-death.
-```
-
-Detailed everyday life simulation may belong primarily to:
-
-```text
-Canon/Systems/Life/
-```
-
-The Character System records how these events change:
-
-```text
-CHARACTER STATE.
-```
-
----
-
-# Death
-
-Characters may die.
-
-Death may result from:
-
-```text
-age
-
-illness
-
-injury
-
-violence
-
-accident
-
-environmental events.
-```
-
-Character death should not require:
-
-```text
-PLAYER PRESENCE.
-```
-
-Nor should important characters possess:
-
-```text
-NARRATIVE IMMORTALITY
-```
-
-unless explicitly justified by design.
-
----
-
-# Legacy
-
-Death does not necessarily remove a character from the world.
-
-Their influence may persist through:
-
-```text
-family
-
-relationships
-
-institutions
-
-students
-
-work
-
-property
-
-memories
-
-reputation
-
-documents
-
-physical places.
-```
-
-Therefore:
-
-```text
-CHARACTER DEATH
-≠
-CHARACTER HISTORY DELETION.
-```
-
----
-
-# Character Location
-
-Characters exist somewhere.
-
-Location affects:
-
-```text
-what they can observe
-
-who they can meet
-
-what resources they can access
-
-what events affect them
-
-what travel is required
-
-what information reaches them.
-```
-
----
-
-# Location Principle
-
-Characters should not:
-
-```text
-TELEPORT TO PLAYER
-BECAUSE CONTENT IS NEEDED.
-```
-
-If a character is:
-
-```text
-300 kilometers away,
-```
-
-their availability should reflect:
-
-```text
-distance
-
-transport
-
-communication
-
-intentions
-
-world conditions.
-```
-
----
-
-# Migration
-
-Characters may move because of:
-
-```text
-employment
-
-family
-
-security
-
-housing
-
-relationships
-
-politics
-
-environment
-
-opportunity
-
-personal preference.
-```
-
-Migration should interact with:
-
-```text
-Population State
-
-Regional State
-
-Society
-
-Life
-
-Relationships.
-```
-
----
-
-# Daily Life
-
-Characters possess everyday existence.
-
-Examples:
-
-```text
-work
-
-sleep
-
-travel
-
-eat
-
-socialize
-
-maintain property
-
-care for family
-
-rest
-
-shop
-
-communicate.
-```
-
-The Character System does not require every routine action to be simulated at full resolution.
-
----
-
-# Simulation Resolution
-
-Not every character requires:
-
-```text
-HIGH-RESOLUTION
-SIMULATION
-AT ALL TIMES.
-```
-
-Character simulation should support multiple levels.
-
-Conceptually:
-
-```text
-HIGH RESOLUTION
-
-Important / nearby / currently relevant characters.
-
-
-MEDIUM RESOLUTION
-
-Persistent characters with ongoing significance.
-
-
-LOW RESOLUTION
-
-Distant or currently low-relevance characters.
-
-
-BACKGROUND / AGGREGATE
-
-Population-level actors
-without individual persistence requirements.
-```
-
----
-
-# High Resolution
-
-High-resolution characters may track:
-
-```text
-current activity
-
-short-term goals
-
-detailed knowledge
-
-active relationships
-
-immediate plans
-
-local decisions.
-```
-
----
-
-# Medium Resolution
-
-Medium-resolution characters may track:
-
-```text
-major goals
-
-profession
-
-location
-
-important relationships
-
-significant decisions
-
-major life events.
-```
-
----
-
-# Low Resolution
-
-Low-resolution characters may progress through:
-
-```text
-compressed state transitions
-
-career changes
-
-migration
-
-major relationship changes
-
-life events.
-```
-
-Routine actions may be omitted.
-
----
-
-# Reconstruction
-
-When a low-resolution character becomes relevant again:
-
-```text
-CURRENT STATE
-```
-
-must be reconstructable from:
-
-```text
-PREVIOUS STATE
-
-+
-
-TIME
-
-+
-
-GOALS
-
-+
-
-WORLD EVENTS
-
-+
-
-RELATIONSHIPS
-
-+
-
-MAJOR LIFE EVENTS.
-```
-
----
-
-# Critical Rule
-
-Compression must never mean:
-
-```text
-PLAYER RETURNS
-      ↓
-GENERATE RANDOM NEW CHARACTER STATE.
-```
-
-Instead:
-
-```text
-COMPRESSED HISTORY
-      ↓
-CURRENT CHARACTER STATE.
-```
-
----
-
-# Relevance
-
-Character importance and player relevance are separate.
-
-A character may be:
-
-```text
-WORLD IMPORTANT
-PLAYER IRRELEVANT.
-```
-
-Example:
-
-```text
-regional governor
-the player has never met.
-```
-
-A character may also be:
-
-```text
-WORLD UNIMPORTANT
-PLAYER HIGHLY RELEVANT.
-```
-
-Example:
-
-```text
-player's close friend
-with no political influence.
-```
-
----
-
-# Critical Distinction
-
-```text
-CHARACTER IMPORTANCE
-≠
-PLAYER RELEVANCE.
-```
-
-Both may affect simulation resolution.
-
-Neither should replace the other.
-
----
-
-# Character Promotion
-
-A low-relevance character may become important.
-
-Example:
-
-```text
-Machinist
-      ↓
-Workshop Owner
-      ↓
-Industrial Employer
-      ↓
-Regional Manufacturing Leader
-```
-
-The simulation must support:
-
-```text
-CHARACTER PROMOTION.
-```
-
----
-
-# Character Demotion
-
-An important character may become less important.
-
-Examples:
-
-```text
-retirement
-
-loss of office
-
-migration
-
-career change
-
-relationship change
-
-regional decline.
-```
-
-The simulation must support:
-
-```text
-CHARACTER DEMOTION.
-```
-
-Importance is not permanent.
-
----
-
-# Character Creation
-
-Characters may enter the simulation through:
-
-```text
-initial world population
-
-family birth
-
-migration
-
-institutional generation
-
-employment networks
-
-world events
-
-social networks.
-```
-
----
-
-# Systemic Character Emergence
-
-A character may become individually persistent because:
-
-```text
-WORLD CONDITIONS
-MAKE THEM RELEVANT.
-```
-
-Example:
-
-```text
-Regional Drought
-      ↓
-Economic Displacement
-      ↓
-Migration
-      ↓
-Skilled Technician Arrives
-      ↓
-Local Employment
-      ↓
-Character Becomes Relevant
-```
-
-This means:
-
-```text
-WORLD SIMULATION
-CAN CREATE CHARACTERS
-THAT MATTER.
-```
-
----
-
-# Character De-Persistence
-
-Not every generated individual must remain permanently tracked.
-
-A low-significance character may return to:
-
-```text
-BACKGROUND POPULATION
-```
-
-when:
-
-```text
-no important relationships
-
-no major history
-
-no active goals requiring persistence
-
-no institutional significance
-
-no campaign relevance
-```
-
-remain.
-
----
-
-# Important Boundary
-
-De-persistence must not erase:
-
-```text
-meaningful consequences.
-```
-
-If a minor trader established an important route:
-
-```text
-the route remains
-```
-
-even if the individual no longer requires detailed simulation.
-
----
-
-# Player Interaction
-
-Player interaction may affect:
-
-```text
-knowledge
-
-beliefs
-
-relationships
-
-goals
-
-plans
-
-resources
-
-location
-
-career
-
-reputation
-
-life trajectory.
-```
-
-But the player is:
-
-```text
-ONE CAUSAL ACTOR
-AMONG MANY.
-```
-
----
-
-# Player Influence
-
-Player influence may range from:
-
-```text
-NEGLIGIBLE
-```
-
-to:
-
-```text
-LIFE-CHANGING.
-```
-
-Examples:
-
-```text
-Brief conversation:
-minor effect.
-
-Employment recommendation:
-moderate effect.
-
-Saving someone's life:
-major effect.
-
-Destroying their organization:
-major effect.
-
-Years of friendship:
-deep long-term effect.
-```
-
----
-
-# Player Absence
-
-Characters continue living while the player is absent.
-
-They may:
-
-```text
-change jobs
-
-move
-
-marry
-
-separate
-
-have children
-
-lose relatives
-
-gain skills
-
-change beliefs
-
-join organizations
-
-leave organizations
-
-become successful
-
-fail
-
-be injured
-
-retire
-
-die.
-```
-
----
-
-# Absence Principle
-
-```text
-PLAYER ABSENCE
-≠
-CHARACTER SUSPENSION.
-```
-
-This principle was strongly reinforced by:
-
-```text
-LCE-TEST-005
-Long Absence and Return.
-```
-
----
-
-# Characters and World Events
-
-Characters respond to world events according to:
-
-```text
-exposure
-
-knowledge
-
-belief
-
-capability
-
-relationships
-
-goals
-
-personality.
-```
-
-A world event should not produce identical reactions from all characters.
-
----
-
-# Example
-
-Regional food shortage:
-
-```text
-Farmer:
-increase production.
-
-Trader:
-seek new supplier.
-
-Parent:
-reduce household consumption.
-
-Politician:
-propose reserve release.
-
-Opportunist:
-stockpile.
-
-Community Organizer:
-create distribution network.
-```
-
----
-
-# Characters and Information
-
-Characters are also information nodes.
-
-They can:
-
-```text
-receive information
-
-interpret information
-
-remember information
-
-distort information
-
-share information
-
-withhold information
-
-lie
-
-correct others.
-```
-
-Therefore character simulation contributes directly to:
-
-```text
-Information State.
-```
-
----
-
-# Characters and Society
-
-Characters create and maintain:
-
-```text
-families
-
-businesses
-
-institutions
-
-organizations
-
-governments
-
-communities
-
-cultures.
-```
-
-Society is not separate from people.
-
-Conceptually:
-
-```text
-CHARACTERS
-      ↓
-RELATIONSHIPS
-      ↓
-GROUPS
-      ↓
-INSTITUTIONS
-      ↓
-SOCIETY
-```
-
----
-
-# Characters and Living Campaign Engine
-
-The Character System determines:
-
-```text
-WHAT CHARACTERS
-ARE ACTUALLY DOING.
-```
-
-The Living Campaign Engine determines:
-
-```text
-WHICH OF THOSE DEVELOPMENTS
-BECOME PLAYER-RELEVANT.
-```
-
----
-
-# Boundary Example
-
-Character System:
-
-```text
-Mara wants additional
-medical supplies.
-```
-
-Character System:
-
-```text
-Mara attempts to obtain them
-through hospital contacts.
-```
-
-World Simulation:
-
-```text
-regional shortage
-prevents normal procurement.
-```
-
-Character System:
-
-```text
-Mara considers alternatives.
-```
-
-Living Campaign Engine:
-
-```text
-player has relevant trade contacts
-+
-strong relationship with Mara
-+
-is currently nearby.
-```
-
-Possible result:
-
-```text
-STORY HOOK.
-```
-
----
-
-# Critical Boundary
-
-The Character System should not decide:
-
-```text
-THIS MUST BECOME
-A PLAYER MISSION.
-```
-
-That belongs to:
-
-```text
-Living_Campaign_Engine.
-```
-
----
-
-# Characters and Relationships
-
-Character System provides:
-
-```text
-identity
-
-memory
-
-values
-
-goals
-
-behavior
-
-knowledge
-
-life state.
-```
-
-Relationship System manages:
-
-```text
-trust
-
-closeness
-
-history
-
-expectations
-
-obligations
-
-relationship dynamics
-
-relationship state.
-```
-
-The two systems must remain tightly connected.
-
----
-
-# Characters and Life
-
-Character System answers:
-
-```text
-WHO IS THIS PERSON?
-```
-
-Life System answers more deeply:
-
-```text
-HOW DOES THIS PERSON LIVE?
-```
-
-Life may include:
-
-```text
-household
-
-daily routine
-
-employment
-
-family structure
-
-education
-
-housing
-
-personal economy
-
-life stages.
-```
-
----
-
-# Characters and Society
-
-Character System models:
-
-```text
-INDIVIDUAL PEOPLE.
-```
-
-Society models:
-
-```text
-COLLECTIVE HUMAN STRUCTURES.
-```
-
-Examples:
-
-```text
-communities
-
-institutions
-
-norms
-
-culture
-
-social classes
-
-organizations
-
-governance structures.
-```
-
----
-
-# Characters and AI
-
-The AI layer may assist with:
-
-```text
-dialogue generation
-
-interpretation
-
-planning
-
-behavior selection
-
-memory retrieval
-
-natural-language expression.
-```
-
-But AI must operate within:
-
-```text
-CHARACTER STATE.
-```
-
-AI should not invent:
-
-```text
-knowledge
-
-relationships
-
-history
-
-resources
-
-authority
-
-world facts
-```
-
-that the simulation does not support.
-
----
-
-# Simulation Authority
-
-The Character System is authoritative for:
-
-```text
-individual character state
-
-character goals
-
-character plans
-
-character knowledge
-
-character beliefs
-
-character capability
-
-character development
-
-character location
-
-character life continuity.
-```
-
-Other systems may influence these states.
-
-They should not silently overwrite them.
-
----
-
-# Character Causality
-
-Every major character change should ideally be explainable.
-
-Example:
-
-```text
-WHY DID ELIAS
-BECOME A REGIONAL LEADER?
-```
-
-Possible causal history:
-
-```text
-Agricultural Experience
-      ↓
-Cooperative Leadership
-      ↓
-Regional Crisis Response
-      ↓
-Public Trust
-      ↓
-Council Election
-      ↓
-Political Experience
-      ↓
-Senior Leadership
-```
-
-Avoid:
-
-```text
-TEN YEARS PASSED
-      ↓
-ELIAS IS NOW IMPORTANT.
-```
-
----
-
-# Character History
-
-Persistent characters should accumulate:
-
-```text
-LIFE HISTORY.
-```
-
-This does not require recording every action.
-
-Instead preserve:
-
-```text
-meaningful transitions.
-```
-
-Examples:
-
-```text
-2045:
-Regional physician.
-
-2048:
-Helped establish shared medical network.
-
-2049:
-Promoted to network director.
-
-2052:
-Led severe winter response.
-
-2055:
-Senior regional medical leader.
-```
-
----
-
-# Character Explainability
-
-The system should be able to answer:
-
-```text
-Why is this character here?
-
-Why do they want this?
-
-Why do they believe this?
-
-Why do they trust this person?
-
-Why did their profession change?
-
-Why did they leave?
-
-Why did they stay?
-
-Why are they angry?
-
-Why are they afraid?
-
-Why are they helping?
-
-Why are they refusing?
-```
-
-Not every answer must be exposed to the player.
-
-But the simulation should possess:
-
-```text
-CAUSAL SUPPORT.
-```
-
----
-
-# Anti-Quest-Giver Principle
-
-Characters must not fundamentally exist as:
-
-```text
-QUEST DISPENSERS.
-```
-
-A character may:
-
-```text
-need help
-```
-
-without:
-
-```text
-asking the player.
-```
-
-They may:
-
-```text
-solve the problem themselves.
-
-ask someone else.
-
-fail.
-
-change plans.
-
-leave.
-
-accept the situation.
-```
-
----
-
-# Anti-Waiting Principle
-
-Characters should not remain:
-
-```text
-standing in the same place
-
-holding the same problem
-
-repeating the same request
-
-for months or years
-```
-
-because the player has not interacted.
-
-Time should matter.
-
----
-
-# Anti-Omniscience Principle
-
-Characters must not know:
-
-```text
-what the player did privately
-
-what happened in distant regions
-
-what another character secretly thinks
-
-the true cause of every event
-```
-
-unless they possess:
-
-```text
-A PLAUSIBLE INFORMATION PATH.
-```
-
----
-
-# Anti-Hive-Mind Principle
-
-Characters should not automatically share:
-
-```text
-beliefs
-
-opinions
-
-knowledge
-
-reactions
-
-political positions.
-```
-
-Groups may influence individuals.
-
-Individuals remain distinct.
-
----
-
-# Anti-Player-Centric Principle
-
-Characters should not:
-
-```text
-change jobs because player needs content
-
-move because player arrived
-
-fall in love because player selected dialogue
-
-survive because player has not completed their arc
-
-die because player needs emotional drama.
-```
-
-Character events should arise from:
-
-```text
-CHARACTER STATE
-+
-WORLD STATE
-+
-RELATIONSHIPS
-+
-TIME
-+
-CAUSAL EVENTS.
-```
-
----
-
-# Character Simulation Loop
-
-Conceptually:
-
-```text
-1. Read current Character State.
-
-2. Read relevant World State.
-
-3. Update needs.
-
-4. Update knowledge.
-
-5. Update beliefs where appropriate.
-
-6. Evaluate active goals.
-
-7. Evaluate relationships.
-
-8. Evaluate available options.
-
-9. Select or update plans.
-
-10. Perform appropriate actions.
-
-11. Resolve consequences.
-
-12. Update Character State.
-
-13. Record meaningful memory.
-
-14. Propagate relevant world effects.
-
-15. Adjust simulation resolution.
-```
-
-This does not imply:
-
-```text
-every character
-runs every step
-every simulation tick.
-```
-
-Resolution determines frequency and detail.
-
----
-
-# Character Update Frequency
-
-Possible conceptual model:
-
-```text
-HIGH RELEVANCE
-
-Continuous / frequent updates.
-
-
-MEDIUM RELEVANCE
-
-Periodic updates.
-
-
-LOW RELEVANCE
-
-Event-driven or compressed updates.
-
-
-BACKGROUND
-
-Aggregate population simulation.
-```
-
-Exact implementation belongs to:
-
-```text
-Character_Simulation_Resolution.md
-```
-
----
-
-# Required Character Properties
-
-A persistent Character State should eventually support at minimum:
-
-```text
-Character ID
-
-Identity
-
-Age
-
-Location
-
-Current Condition
-
-Profession
-
-Capabilities
-
-Needs
-
-Goals
-
-Knowledge
-
-Beliefs
-
-Personality
-
-Values
-
-Important Relationships
-
-Current Plan
-
-Major Memories
-
-Life History
-
-Simulation Resolution
-```
-
----
-
-# Character ID
-
-Every persistent character should possess:
-
-```text
-STABLE UNIQUE IDENTIFIER.
-```
-
-Example:
-
-```text
-CHAR-000184
-```
-
-Names are not sufficient identifiers because:
-
-```text
-names may repeat
-
-names may change
-
-aliases may exist.
-```
-
----
-
-# World Ledger Interaction
-
-Major character events may generate World Ledger entries when they possess:
-
-```text
-regional
-
-institutional
-
-political
-
-economic
-
-historical
-```
-
-importance.
-
-Example:
-
-```text
-Character gets breakfast:
-NO.
-
-Character becomes regional governor:
-YES.
-
-Character opens major hospital:
-YES.
-
-Character moves house:
-USUALLY NO.
-
-Character migration creates major political consequence:
-POSSIBLY YES.
-```
-
----
-
-# Campaign Memory Interaction
-
-Campaign Memory may retain character events when they are:
-
-```text
-player-relevant
-
-relationship-relevant
-
-campaign-significant.
-```
-
-This is distinct from:
-
-```text
-Character Memory.
-```
-
----
-
-# Memory Layers
-
-Conceptually:
-
-```text
-CHARACTER MEMORY
-
-What the character remembers.
-
-
-CAMPAIGN MEMORY
-
-What matters to the player's campaign history.
-
-
-WORLD LEDGER
-
-What objectively happened
-and remains historically significant.
-```
-
-These layers must not be treated as identical.
-
----
-
-# Example
-
-World Truth:
-
-```text
-Jonas died in 2054.
-```
-
-World Ledger:
-
-```text
-Jonas Reed died.
-```
-
-Mara Memory:
-
-```text
-Mara remembers Jonas's death
-and funeral.
-```
-
-Player Knowledge:
-
-```text
-UNKNOWN.
-```
-
-Campaign Memory:
-
-```text
-Jonas death may exist
-but remain unrevealed
-to player-facing context.
-```
-
-This preserves:
-
-```text
-INFORMATION BOUNDARIES.
-```
-
----
-
-# Character System Files
-
-The Character System is expected to contain:
-
-```text
-Characters/
-├── README.md
-├── Character_State.md
-├── Needs_and_Motivation.md
-├── Goals_and_Plans.md
-├── Knowledge_and_Beliefs.md
-├── Decision_Making.md
-├── Autonomy_and_Initiative.md
-├── Profession_and_Capability.md
-├── Personality_and_Values.md
-├── Character_Development.md
-├── Aging_and_Life_Events.md
-└── Character_Simulation_Resolution.md
-```
-
----
-
-# Character_State.md
-
-Defines:
-
-```text
-canonical character state model
-
-identity
-
-current state
-
-persistent fields
-
-state transitions
-
-character identifiers
-
-system ownership.
-```
-
----
-
-# Needs_and_Motivation.md
-
-Defines:
-
-```text
-needs
-
-motivation
-
-urgency
-
-competing needs
-
-motivation formation
-
-need satisfaction
-
-behavioral pressure.
-```
-
----
-
-# Goals_and_Plans.md
-
-Defines:
-
-```text
-goal formation
-
-goal hierarchy
-
-goal persistence
-
-goal conflict
-
-planning
-
-plan revision
-
-plan failure
-
-goal completion.
-```
-
----
-
-# Knowledge_and_Beliefs.md
-
-Defines:
-
-```text
-character knowledge
-
-information acquisition
-
-belief formation
-
-uncertainty
-
-misinformation
-
-knowledge confidence
-
-information boundaries.
-```
-
----
-
-# Decision_Making.md
-
-Defines:
-
-```text
-decision inputs
-
-option evaluation
-
-risk
-
-uncertainty
-
-personality influence
-
-relationship influence
-
-imperfect decisions.
-```
-
----
-
-# Autonomy_and_Initiative.md
-
-Defines:
-
-```text
-independent action
-
-problem solving
-
-initiative
-
-asking others for help
-
-player-independent behavior
-
-character-driven opportunities.
-```
-
----
-
-# Profession_and_Capability.md
-
-Defines:
-
-```text
-skills
-
-experience
-
-education
-
-profession
-
-resources
-
-authority
-
-competence
-
-capability limits.
-```
-
----
-
-# Personality_and_Values.md
-
-Defines:
-
-```text
-personality dimensions
-
-values
-
-preferences
-
-behavioral tendencies
-
-internal conflict
-
-value conflict.
-```
-
----
-
-# Character_Development.md
-
-Defines:
-
-```text
-learning
-
-skill development
-
-belief change
-
-career development
-
-identity evolution
-
-long-term character arcs.
-```
-
----
-
-# Aging_and_Life_Events.md
-
-Defines:
-
-```text
-aging
-
-family events
-
-injury
-
-illness
-
-career milestones
-
-migration
-
-retirement
-
-death
-
-legacy.
-```
-
----
-
-# Character_Simulation_Resolution.md
-
-Defines:
-
-```text
-high-resolution simulation
-
-medium-resolution simulation
-
-low-resolution simulation
-
-compression
-
-promotion
-
-demotion
-
-reconstruction
-
-performance boundaries.
-```
-
----
-
-# System Dependencies
-
-The Character System depends heavily upon:
-
-```text
-World_Simulation
-
-Relationships
-
-Life
-
-Society
-
-AI
-```
-
-and provides important inputs to:
-
-```text
-Living_Campaign_Engine
-
-Narrative
-
-World_Simulation
-
-Relationships
-
-Society.
-```
-
----
-
-# Core Architecture
-
-Conceptually:
-
-```text
-WORLD STATE
-      ↓
-CHARACTER PERCEPTION
-      ↓
-KNOWLEDGE / BELIEF
-      ↓
-NEEDS / MOTIVATION
-      ↓
-GOALS
-      ↓
-PLANS
-      ↓
-DECISION
-      ↓
-ACTION
-      ↓
-WORLD CONSEQUENCE
-      ↓
-MEMORY
-      ↓
-CHARACTER DEVELOPMENT
-```
-
-Relationships influence nearly every stage.
-
----
-
-# Player Intersection
-
-The player may enter anywhere in this chain.
-
-Example:
-
-```text
-CHARACTER GOAL
-      ↓
-CHARACTER PLAN
-      ↓
-PLAYER INTERFERES
-      ↓
-PLAN CHANGES
-      ↓
-CHARACTER REMEMBERS
-      ↓
-RELATIONSHIP CHANGES
-      ↓
-FUTURE DECISION CHANGES.
-```
-
-This creates:
-
-```text
-LONG-TERM HUMAN CONSEQUENCE.
-```
-
----
-
-# Design Goal
-
-A successful Character System should allow the player to encounter someone after years apart and feel:
-
-```text
-THIS PERSON
-HAS BEEN LIVING
-WITHOUT ME.
-```
-
-It should allow the player to discover:
-
-```text
-they changed jobs
-
-they became a parent
-
-they changed political beliefs
-
-they lost someone
-
-they became successful
-
-they failed
-
-they moved
-
-they remember the player
-
-they forgot the player
-
-they still care
-
-they no longer care.
-```
-
-Not because:
-
-```text
-A STORY SCRIPT
-REQUIRED CHANGE.
-```
-
-But because:
-
-```text
-TIME PASSED
-
-THE WORLD CHANGED
-
-AND THEY LIVED THROUGH IT.
-```
-
----
-
-# Foundational Character Rule
-
-```text
-CHARACTERS ARE NOT CONTENT.
-
-CHARACTERS CREATE CONTENT
-BY LIVING IN THE WORLD.
-```
-
----
-
-# Foundational Simulation Rule
-
-```text
-CHARACTER STATE
-+
-WORLD STATE
-+
-RELATIONSHIPS
-+
-TIME
-
-      ↓
-
-BEHAVIOR
-
-      ↓
-
-CONSEQUENCE
-
-      ↓
-
-NEW CHARACTER STATE
-+
-NEW WORLD STATE.
-```
-
----
-
-# Relationship to Project Ascension
-
-The Character System is one of the primary bridges between:
-
-```text
-SIMULATION
-```
-
-and:
-
-```text
-HUMAN EXPERIENCE.
-```
-
-World Simulation can determine:
-
-```text
-a town has lost power.
-```
-
-The Character System determines that:
-
-```text
-a doctor worries about refrigerated medicine
-
-a mechanic tries to repair a generator
-
-a parent searches for their child
-
-a trader protects valuable stock
-
-a council member organizes emergency response.
-```
-
-The Living Campaign Engine then determines:
-
-```text
-WHICH OF THESE HUMAN CONSEQUENCES
-BECOME RELEVANT TO THE PLAYER.
-```
-
----
-
-# Final Principle
-
-Project Ascension should never ask only:
-
-```text
-WHAT IS HAPPENING
-IN THE WORLD?
+FUTURES
+THAT DO NOT
+WAIT FOR
+THE PLAYER.
 ```
 
-It must also ask:
+The final principle is:
 
-```text
-WHO IS LIVING THROUGH IT?
-
-WHAT DO THEY KNOW?
-
-WHAT DO THEY BELIEVE?
-
-WHAT DO THEY NEED?
-
-WHAT DO THEY WANT?
-
-WHAT WILL THEY DO?
-
-WHAT WILL THEY REMEMBER?
-
-AND WHO WILL THEY BECOME
-BECAUSE IT HAPPENED?
-```
-
-That is the purpose of:
-
-```text
-THE CHARACTER SYSTEM.
-```
-
----
-
-# Status
-
-```text
-CHARACTER SYSTEM
-
-Foundation:
-ESTABLISHED
-
-Next:
-Character_State.md
-```
+> **The player enters the Character's life. The Character does not begin existing when the player arrives.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Character System foundation defining persistent character identity, state, needs, motivations, goals, plans, knowledge, beliefs, memory, personality, values, capability, profession, autonomy, development, aging, simulation resolution, system boundaries and player-independent existence. |
+|---|---|---|
+| 1.0 | 2026-08-31 | Rebuilt the Characters README as the canonical entry point for the current Character architecture. Documented system ownership, directory structure, runtime relationships, Humanity/Life/Relationships/World boundaries, Character State and Simulation Resolution overlays, off-screen continuity, AI and Narrative constraints, retired architecture, cross-system questions and architectural locks. |

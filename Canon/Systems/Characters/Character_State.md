@@ -1,196 +1,275 @@
 # PROJECT ASCENSION
-# Character State System
+
+# Character State
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Character State |
-| Location | Canon/Systems/Characters/Character_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Canonical Individual Character State Model |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Character_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Runtime State |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define the canonical runtime coordination state through which a persistent Character is identified, located, observed and connected to authoritative human, life, relationship and Character systems |
 
-> *"A character is not a dialogue tree. A character is a changing state inside a changing world."*
-
----
-
-# Purpose
-
-The Character State system defines the canonical state model used to represent an individual persistent character in Project Ascension.
-
-It establishes:
-
-```text
-WHAT A CHARACTER IS
-
-WHAT STATE BELONGS TO THE CHARACTER
-
-WHAT OTHER SYSTEMS MAY READ
-
-WHAT OTHER SYSTEMS MAY MODIFY
-
-HOW CHARACTER STATE CHANGES
-
-HOW HISTORY REMAINS TRACEABLE
-```
-
-This document does not attempt to fully define:
-
-```text
-needs
-
-motivation
-
-planning
-
-decision making
-
-relationships
-
-life simulation
-
-aging
-
-profession
-
-memory behavior
-```
-
-Those are expanded in dedicated Character System documents.
-
-Instead, this file establishes the shared:
-
-```text
-CHARACTER STATE CONTRACT
-```
-
-used by all those systems.
+> **"A Character is not the sum of duplicated state. A Character is a persistent actor whose current condition is assembled from authoritative systems."**
 
 ---
 
-# Core Principle
+# 1. Purpose
 
-A persistent character should have a state that can answer:
+The Character State system defines the runtime coordination model for an individual persistent Character in Project Ascension.
+
+Its purpose is to answer:
 
 ```text
-WHO ARE THEY?
+WHO IS THIS PERSON?
+
+DO THEY CURRENTLY EXIST?
 
 WHERE ARE THEY?
 
-WHAT CONDITION ARE THEY IN?
-
 WHAT ARE THEY DOING?
 
-WHAT DO THEY NEED?
+WHEN WAS THIS STATE TRUE?
 
-WHAT DO THEY WANT?
+WHAT AUTHORITATIVE
+HUMAN STATE
+APPLIES TO THEM?
 
-WHAT DO THEY KNOW?
+WHAT GOALS
+ARE CURRENTLY ACTIVE?
 
-WHAT DO THEY BELIEVE?
+WHAT DO THEY
+CURRENTLY BELIEVE?
 
-WHAT CAN THEY DO?
+WHAT CAN THEY
+CURRENTLY ATTEMPT?
 
 WHO MATTERS TO THEM?
 
-WHAT ARE THEY PLANNING?
+WHAT RECENT HISTORY
+IS RELEVANT?
 
-WHAT HAS HAPPENED TO THEM?
+HOW MUCH DETAIL
+IS CURRENTLY REQUIRED?
+```
 
-HOW MUCH DETAIL ARE WE CURRENTLY SIMULATING?
+Character State does not own every answer.
+
+Instead, it provides:
+
+```text
+THE CURRENT
+CHARACTER-CENTRIC
+VIEW
+
+OF
+
+AUTHORITATIVE STATE
+OWNED ACROSS
+THE PROJECT.
 ```
 
 ---
 
-# Canonical Character State
+# 2. Core Principle
+
+The Character is:
+
+```text
+ONE PERSISTENT ACTOR.
+```
+
+Their state is distributed across multiple authoritative systems.
+
+Therefore:
+
+```text
+CHARACTER STATE
+≠
+A SECOND COPY
+OF EVERY HUMAN SYSTEM.
+```
+
+Instead:
+
+```text
+CHARACTER STATE
+=
+IDENTITY
++
+RUNTIME POSITION
++
+CURRENT ACTIVITY
++
+AUTHORITATIVE REFERENCES
++
+DERIVED CURRENT VIEW.
+```
+
+---
+
+# 3. Character State Contract
+
+Character State provides a shared coordination contract between systems.
 
 Conceptually:
 
 ```text
-CHARACTER STATE
-│
-├── Identity
-├── Temporal State
-├── Location
-├── Physical State
-├── Mental / Emotional Context
-├── Needs
-├── Motivations
-├── Goals
-├── Plans
-├── Knowledge
-├── Beliefs
-├── Personality
-├── Values
-├── Profession
-├── Skills
-├── Capabilities
-├── Resources
-├── Social Roles
-├── Relationships
-├── Reputation Context
-├── Responsibilities
-├── Current Activity
-├── Commitments
-├── Memory References
-├── Life History
-├── Simulation Resolution
-└── State Metadata
+CHARACTER
+        │
+        ├── Stable Identity
+        ├── Existence Status
+        ├── Temporal State
+        ├── Location
+        ├── Current Activity
+        ├── Current Runtime Context
+        │
+        ├── Humanity References
+        ├── Life References
+        ├── Goal / Plan References
+        ├── Knowledge / Belief References
+        ├── Expertise References
+        ├── Relationship References
+        ├── Resource / Access References
+        ├── Responsibility References
+        │
+        ├── Simulation Resolution
+        └── State Metadata
+```
+
+The Character State contract tells systems:
+
+```text
+WHO THIS ACTOR IS
+
+WHERE TO FIND
+AUTHORITATIVE STATE
+
+WHAT CURRENT
+RUNTIME VIEW APPLIES.
 ```
 
 ---
 
-# Character Identity
+# 4. Ownership
 
-Every persistent character must possess a stable identity.
-
-Minimum identity fields:
+Character State directly owns:
 
 ```text
-Character ID
+CHARACTER ID
 
-Name
+CURRENT IDENTITY LABELS
 
-Birth Date or Approximate Age
+EXISTENCE STATUS
 
-Origin
+CURRENT LOCATION
 
-Current Identity Status
-```
+TRAVEL STATUS
 
-Optional identity fields may include:
+CURRENT ACTIVITY
 
-```text
-Aliases
+CURRENT RUNTIME CONTEXT
 
-Former Names
+STATE TIMESTAMPS
 
-Preferred Name
+STATE EFFECTIVE DATE
 
-Pronouns
+SIMULATION RESOLUTION
 
-Languages
+AUTHORITATIVE
+STATE REFERENCES
 
-Cultural Background
+STATE VISIBILITY
+METADATA
 
-Nationality
+STATE CONFIDENCE
+WHERE REQUIRED
 
-Citizenship
-
-Former Citizenship
-
-Family Name History
+STATE CONSISTENCY
+METADATA.
 ```
 
 ---
 
-# Character ID
+# 5. What Character State Does Not Own
 
-Every persistent character must have:
+Character State does not independently own:
 
 ```text
-ONE STABLE UNIQUE ID.
+HUMAN ATTRIBUTES
+
+HUMAN PSYCHOLOGY
+
+MEMORY
+
+HISTORICAL DNA
+
+FAMILY
+
+CULTURE
+
+TRUST
+
+LIFE HISTORY
+
+LIFE EVENTS
+
+AGING
+
+NEEDS
+
+MOTIVATION
+
+GOALS
+
+PLANS
+
+KNOWLEDGE
+
+BELIEFS
+
+EXPERTISE
+
+RELATIONSHIP STATE
+
+PROGRESSION
+
+SOCIETY STATE
+
+FACTION STATE
+
+WORLD TRUTH.
+```
+
+These remain owned by their authoritative systems.
+
+Character State may:
+
+```text
+REFERENCE
+
+READ
+
+SUMMARIZE
+
+DERIVE A VIEW
+```
+
+of those systems when required.
+
+---
+
+# 6. Character Identity
+
+Every persistent Character must possess:
+
+```text
+ONE STABLE
+CHARACTER ID.
 ```
 
 Example:
@@ -199,262 +278,378 @@ Example:
 CHAR-000184
 ```
 
-Character ID should not change if:
+This identifier must survive:
 
 ```text
-the character changes name
+NAME CHANGE
 
-gets married
+MARRIAGE
 
-changes profession
+RELOCATION
 
-moves region
+PROFESSION CHANGE
 
-changes faction
+FACTION CHANGE
 
-changes social status.
+SOCIAL STATUS CHANGE
+
+INJURY
+
+AGING.
 ```
 
 ---
 
-# Character ID Principle
+# 7. Identity Principle
 
 ```text
-IDENTITY LABELS MAY CHANGE.
+IDENTITY LABELS
+MAY CHANGE.
 
-CHARACTER ID DOES NOT.
+CHARACTER ID
+DOES NOT.
 ```
 
 ---
 
-# Name
+# 8. Identity State
 
-Character names may contain:
-
-```text
-Given Name
-
-Middle Name
-
-Family Name
-
-Nickname
-
-Alias
-```
-
-The system should distinguish between:
+Character identity may include:
 
 ```text
-LEGAL / FORMAL NAME
+CHARACTER ID
 
-KNOWN NAME
+CURRENT NAME
 
 PREFERRED NAME
 
-ALIAS
+ALIASES
+
+FORMER NAMES
+
+PRONOUNS
+
+CURRENT LEGAL
+OR SOCIAL IDENTITY
+
+CURRENT NATIONALITY
+OR CITIZENSHIP
+WHERE RELEVANT.
 ```
 
-where relevant.
+Historical identity changes belong to:
+
+```text
+LIFE.
+```
 
 ---
 
-# Age
+# 9. Birth State
 
-Age must derive from:
+Birth information should preferably be represented as:
 
 ```text
-WORLD DATE
--
 BIRTH DATE
 ```
 
-where possible.
-
-Avoid storing:
+or where precision is unavailable:
 
 ```text
-Age = 37
+BIRTH YEAR
+
+BIRTH RANGE
+
+APPROXIMATE AGE.
 ```
 
-as the sole canonical value for persistent characters.
-
-Prefer:
+Current age should usually be:
 
 ```text
-Birth Date:
-2014-06-18
-```
-
-which allows:
-
-```text
-automatic aging.
+DERIVED
+FROM WORLD TIME.
 ```
 
 ---
 
-# Approximate Birth Data
+# 10. Age Boundary
 
-Not every character needs precise birth information.
-
-Valid examples:
+Character State may expose:
 
 ```text
-Birth Year:
-2021
-
-Birth Range:
-2018–2020
-
-Approximate Age:
-Early 40s
+CURRENT AGE.
 ```
 
-Resolution may depend on character importance.
-
----
-
-# Temporal State
-
-Characters exist in time.
-
-Character State should track:
+But aging itself belongs to:
 
 ```text
-Last Simulation Update
-
-Last High-Resolution Update
-
-Last Known Player Contact
-
-Last Known Location Update
-
-State Effective Date
+LIFE /
+LIFE COURSE AND AGING.
 ```
 
-These fields help determine:
+Therefore:
 
 ```text
-how current the state is
+CURRENT AGE
+=
+DERIVED VIEW
 
-whether reconstruction is required
+NOT
 
-whether information is stale.
+CHARACTER-STATE
+AGING LOGIC.
 ```
 
 ---
 
-# State Effective Date
+# 11. Existence Status
 
-Every Character State snapshot should conceptually answer:
+Every persistent Character should have a current existence status.
 
-```text
-WHEN WAS THIS TRUE?
-```
-
-Example:
+Useful conceptual states include:
 
 ```text
-State Effective Date:
-2055-09-03 14:20
-```
+ACTIVE
 
-This is important because:
+INACTIVE
 
-```text
-CHARACTER STATE
-IS NOT TIMELESS.
+MISSING
+
+UNCONFIRMED
+
+DECEASED
+
+HISTORICAL.
 ```
 
 ---
 
-# Location State
+# 12. Active
 
-Every persistent character should have a current location or location estimate.
+The Character is alive and currently represented as an individual persistent Actor.
+
+---
+
+# 13. Inactive
+
+The Character remains alive but currently requires little individual simulation.
+
+Inactive does not mean:
+
+```text
+FROZEN.
+```
+
+---
+
+# 14. Missing
+
+The Character's current location is unknown despite an expectation that they could normally be located.
+
+---
+
+# 15. Unconfirmed
+
+The Character's survival or existence state is uncertain.
+
+---
+
+# 16. Deceased
+
+Death is established as:
+
+```text
+WORLD TRUTH.
+```
+
+The Character record remains persistent.
+
+---
+
+# 17. Historical
+
+The Character no longer participates as a living Actor but remains relevant through:
+
+```text
+HISTORY
+
+FAMILY
+
+MEMORY
+
+RELATIONSHIPS
+
+INSTITUTIONS
+
+LEGACY.
+```
+
+---
+
+# 18. Death Does Not Delete State
+
+When a Character dies:
+
+```text
+DO NOT DELETE
+THE CHARACTER.
+```
+
+Their state becomes historical.
+
+Relevant information may include:
+
+```text
+DATE OF DEATH
+
+LOCATION
+
+CAUSE
+
+CONFIDENCE
+
+RELATED LIFE EVENT
+
+RELATIONSHIP CONSEQUENCES
+
+HISTORICAL REFERENCES.
+```
+
+Life owns the biographical event.
+
+Character State owns the current existence status.
+
+---
+
+# 19. Temporal State
+
+Character State must always exist relative to time.
 
 Conceptually:
 
 ```text
-LOCATION STATE
+STATE EFFECTIVE DATE
 
-Region
+LAST RUNTIME UPDATE
 
-Settlement
+LAST LOCATION UPDATE
 
-Specific Site
+LAST HIGH-RESOLUTION STATE
 
-Travel State
+LAST CONFIRMED ACTIVITY.
+```
 
-Destination
+The key question is:
 
-Location Confidence
-
-Last Confirmed
+```text
+WHEN WAS
+THIS STATE TRUE?
 ```
 
 ---
 
-# Location Precision
+# 20. Character State Is Not Timeless
 
-Location precision depends upon simulation resolution.
+```text
+CHARACTER STATE
+AT 09:00
+
+≠
+
+CHARACTER STATE
+AT 17:00.
+```
+
+Even if no dramatic event occurred:
+
+```text
+TIME PASSED.
+```
+
+---
+
+# 21. Location
+
+Every living persistent Character should have:
+
+```text
+CURRENT LOCATION
+```
+
+or:
+
+```text
+CURRENT LOCATION
+UNKNOWN.
+```
+
+Never invent a location merely because a scene needs the Character nearby.
+
+---
+
+# 22. Location Precision
+
+Location precision may vary with resolution.
 
 High resolution:
 
 ```text
-Winchester Regional Hospital
-Second Floor
-Medical Administration
+WINCHESTER
+REGIONAL HOSPITAL
+
+SECOND FLOOR.
 ```
 
 Medium resolution:
 
 ```text
-Winchester
+WINCHESTER.
 ```
 
 Low resolution:
 
 ```text
-Shenandoah Valley
+SHENANDOAH VALLEY.
 ```
 
-Background:
+The Character remains the same Actor.
 
-```text
-Regional Population Aggregate
-```
+Only representation detail changes.
 
 ---
 
-# Unknown Location
+# 23. Location Confidence
 
-The system must support:
+When location is uncertain, state may include:
 
 ```text
-UNKNOWN.
+LAST CONFIRMED LOCATION
+
+LAST CONFIRMED TIME
+
+CURRENT ESTIMATE
+
+CONFIDENCE.
 ```
 
 Example:
 
 ```text
-Current Location:
+CURRENT LOCATION:
 UNKNOWN
 
-Last Confirmed:
-Roanoke
+LAST CONFIRMED:
+ROANOKE
 
-Last Confirmed Date:
-2054-11-12
+LAST CONFIRMED DATE:
+2054-11-12.
 ```
-
-Do not invent a current location merely because one is convenient.
 
 ---
 
-# Travel State
+# 24. Travel State
 
-Characters may be:
+Characters may currently be:
 
 ```text
 STATIONARY
@@ -463,70 +658,66 @@ TRAVELING
 
 RELOCATING
 
-MISSING
-
 DISPLACED
 
-UNKNOWN
+MISSING
+
+UNKNOWN.
 ```
 
-Travel State may include:
+Travel state may reference:
 
 ```text
-Origin
+ORIGIN
 
-Destination
+DESTINATION
 
-Route
+ROUTE
 
-Departure Time
+DEPARTURE
 
-Expected Arrival
+EXPECTED ARRIVAL
 
-Travel Method
-
-Travel Risk
+TRAVEL METHOD.
 ```
 
 ---
 
-# Physical State
+# 25. Travel Ownership Boundary
 
-Character physical state may include:
+Character State owns:
 
 ```text
-Health
-
-Injury
-
-Illness
-
-Fatigue
-
-Hunger
-
-Thirst
-
-Sleep
-
-Mobility
-
-Physical Stress
-
-Pregnancy
-
-Disability
-
-Recovery
+CURRENT TRAVEL
+RUNTIME STATE.
 ```
 
-Not every field must always be active.
+World Simulation owns:
+
+```text
+WORLD CONDITIONS
+AFFECTING TRAVEL.
+```
+
+Decision Making owns:
+
+```text
+WHETHER THE CHARACTER
+CHOOSES THE ROUTE.
+```
+
+Goals and Plans owns:
+
+```text
+THE INTENDED
+TRAVEL APPROACH.
+```
 
 ---
 
-# Physical Condition
+# 26. Physical Condition Reference
 
-Conceptual summary:
+Character State may expose a current physical summary such as:
 
 ```text
 HEALTHY
@@ -545,1056 +736,311 @@ DISABLED
 
 DYING
 
-DECEASED
+DECEASED.
 ```
 
-Detailed state belongs to more specialized systems where required.
+But it should not become an independent competing health model.
 
 ---
 
-# Death State
+# 27. Physical State Ownership
 
-If:
+Detailed physical state may belong to dedicated Life, Health or future physical simulation systems.
+
+Character State should expose:
 
 ```text
-Character Status:
-DECEASED
+CURRENT
+RUNTIME-RELEVANT
+PHYSICAL CONDITION.
 ```
 
-the Character State should retain:
+This may reference:
 
 ```text
-Date of Death
+INJURY
 
-Location of Death
+ILLNESS
 
-Known Cause
+FATIGUE
 
-Confidence
+MOBILITY
 
-Known By
+RECOVERY
 
-Legacy References
-```
-
-The character record should not be deleted.
-
----
-
-# Character Existence Status
-
-Recommended conceptual states:
-
-```text
-ACTIVE
-
-INACTIVE
-
-MISSING
-
-UNCONFIRMED
-
-DECEASED
-
-HISTORICAL
+OTHER RELEVANT
+PHYSICAL CONDITIONS.
 ```
 
 ---
 
-# Active
+# 28. Psychology Reference
 
-Character is alive and persistent in current simulation.
-
----
-
-# Inactive
-
-Character remains alive but currently requires little or no individual simulation.
-
----
-
-# Missing
-
-Character was expected to be locatable but current whereabouts are unknown.
-
----
-
-# Unconfirmed
-
-Character survival itself may be uncertain.
-
----
-
-# Deceased
-
-Death is established as World Truth.
-
----
-
-# Historical
-
-Character is no longer an active living entity but remains relevant through:
+Character State may expose a current summary such as:
 
 ```text
-history
+STRESSED
 
-memory
+GRIEVING
 
-institutions
+CALM
 
-family
+ANXIOUS
 
-legacy.
-```
+EXHAUSTED
 
----
+HOPEFUL
 
-# Mental and Emotional Context
-
-Character State may include current emotional context.
-
-This should not be treated as:
-
-```text
-ONE PERMANENT EMOTION.
-```
-
-Instead it may include:
-
-```text
-Current Mood
-
-Emotional Pressure
-
-Fear
-
-Hope
-
-Anger
-
-Grief
-
-Confidence
-
-Stress
-
-Attachment
-
-Concern
-```
-
-where relevant.
-
----
-
-# Emotional State Principle
-
-```text
-EMOTION
-MODIFIES DECISION MAKING.
-
-IT DOES NOT
-REPLACE CHARACTER IDENTITY.
-```
-
----
-
-# Emotional Context
-
-Example:
-
-```text
-Current Mood:
-TENSE
-
-Primary Concern:
-Hospital staffing
-
-Stress:
-HIGH
-
-Grief:
-LOW
-
-Confidence:
-MODERATE
-```
-
-This provides situational context without reducing the character to:
-
-```text
-ANGRY NPC.
-```
-
----
-
-# Emotional Duration
-
-Emotional states may have different durations.
-
-Examples:
-
-```text
-Momentary irritation:
-SHORT
-
-Fear during regional crisis:
-SHORT / MEDIUM
-
-Grief after family death:
-LONG
-
-Long-term resentment:
-RELATIONSHIP / MEMORY DRIVEN
-```
-
----
-
-# Needs State
-
-Character State should expose current active needs.
-
-Conceptually:
-
-```text
-NEED
-
-Type
-
-Current Pressure
-
-Minimum Requirement
-
-Satisfaction
-
-Urgency
-
-Source
-
-Expected Change
-```
-
----
-
-# Example
-
-```text
-Need:
-Income
-
-Pressure:
-HIGH
-
-Urgency:
-MODERATE
-
-Source:
-Employment loss
-```
-
----
-
-# Need Priority
-
-Needs may be:
-
-```text
-LOW
-
-MODERATE
-
-HIGH
-
-CRITICAL
+AFRAID.
 ```
 
 But:
 
 ```text
-NEED PRIORITY
+HUMAN PSYCHOLOGY
+OWNS
+THE AUTHORITATIVE
+PSYCHOLOGICAL STATE.
 ```
 
-should not automatically equal:
-
-```text
-GOAL PRIORITY.
-```
-
-Values and responsibilities may override immediate personal needs.
+Character State only exposes what is currently relevant.
 
 ---
 
-# Motivation State
+# 29. Attributes Reference
 
-Character State may expose current motivations.
-
-Example:
+Human Attributes belong to:
 
 ```text
-Protect family
-
-Preserve professional reputation
-
-Keep clinic operational
-
-Avoid dependence on regional authority
+Canon/Universe/Humanity/
+Human_Attributes.md
 ```
 
-Motivation is expanded in:
+Character State may expose selected current relevant dispositions.
+
+It must not maintain a duplicate personality system.
+
+---
+
+# 30. Historical DNA Reference
+
+Historical DNA belongs to Humanity.
+
+Character State may reference:
+
+```text
+HISTORICAL DNA PROFILE
+```
+
+when required for interpretation.
+
+It does not store a competing historical context model.
+
+---
+
+# 31. Culture Reference
+
+Culture belongs to Humanity.
+
+Character State may reference:
+
+```text
+CULTURAL CONTEXT
+
+LANGUAGE CONTEXT
+
+CULTURAL AFFILIATIONS
+```
+
+where relevant.
+
+Culture does not determine Character action.
+
+---
+
+# 32. Family Reference
+
+Family belongs to Humanity and specific family relationships belong to Relationships.
+
+Character State may expose:
+
+```text
+CURRENT FAMILY CONTEXT
+
+HOUSEHOLD RELEVANCE
+
+IMPORTANT FAMILY
+RELATIONSHIP REFERENCES.
+```
+
+---
+
+# 33. Memory Reference
+
+Memory belongs to:
+
+```text
+Humanity / Memory.
+```
+
+Character State may reference:
+
+```text
+CURRENTLY RELEVANT MEMORIES
+
+MAJOR MEMORY REFERENCES.
+```
+
+It does not own how those memories are retained or reconstructed.
+
+---
+
+# 34. Needs and Motivation Reference
+
+Needs and Motivation remains a Character-owned functional system.
+
+Character State may expose:
+
+```text
+CURRENT HIGH-RELEVANCE NEEDS
+
+CURRENT DOMINANT
+MOTIVATIONAL PRESSURES.
+```
+
+The authoritative definitions remain in:
 
 ```text
 Needs_and_Motivation.md
 ```
 
+once finalized.
+
 ---
 
-# Goal State
+# 35. Goal Reference
 
-Every persistent character may have multiple active goals.
-
-Conceptually:
+Goals belong to:
 
 ```text
-GOAL
+Goals_and_Plans.md.
+```
 
-Goal ID
+Character State may expose:
 
-Description
+```text
+ACTIVE GOALS
 
-Origin
+DOMINANT GOAL
 
-Priority
+PAUSED IMPORTANT GOALS.
+```
 
-Urgency
+It does not duplicate the full Goal object.
 
-Importance
+---
 
-Status
+# 36. Plan Reference
 
-Target State
+Plans belong to:
 
-Time Horizon
+```text
+Goals_and_Plans.md.
+```
 
-Dependencies
+Character State may expose:
 
-Related Actors
+```text
+CURRENT PLAN
 
-Related Locations
+CURRENT STEP
 
-Current Progress
+CURRENT PLAN STATUS
+```
+
+as runtime views.
+
+---
+
+# 37. Knowledge Reference
+
+Knowledge belongs to:
+
+```text
+Knowledge_and_Beliefs.md
+```
+
+once finalized.
+
+Character State may expose:
+
+```text
+CURRENTLY RELEVANT
+KNOWLEDGE REFERENCES.
 ```
 
 ---
 
-# Goal ID
+# 38. Belief Reference
 
-Example:
-
-```text
-GOAL-CHAR184-004
-```
-
-Goal IDs allow plans and memories to reference:
+Beliefs belong to:
 
 ```text
-the same continuing intention.
+Knowledge_and_Beliefs.md.
 ```
 
----
-
-# Goal Status
-
-Recommended conceptual states:
+Character State may expose:
 
 ```text
-LATENT
-
-ACTIVE
-
-PAUSED
-
-BLOCKED
-
-AT RISK
-
-ACHIEVED
-
-FAILED
-
-ABANDONED
-
-IMPOSSIBLE
-
-TRANSFORMED
+CURRENTLY RELEVANT
+BELIEFS.
 ```
 
----
-
-# Latent Goal
-
-A desire exists but the character is not actively pursuing it.
-
----
-
-# Active Goal
-
-The character currently intends to pursue it.
-
----
-
-# Paused Goal
-
-Temporarily deprioritized.
-
----
-
-# Blocked Goal
-
-Character wants to proceed but cannot.
-
----
-
-# At Risk Goal
-
-Conditions threaten likely completion.
-
----
-
-# Achieved Goal
-
-Target state reached.
-
----
-
-# Failed Goal
-
-The character attempted but outcome did not succeed.
-
----
-
-# Abandoned Goal
-
-Character voluntarily stopped pursuing it.
-
----
-
-# Impossible Goal
-
-World conditions make current formulation impossible.
-
----
-
-# Transformed Goal
-
-Goal changed into a different objective.
-
----
-
-# Goal Hierarchy
-
-Goals may be related.
-
-Example:
-
-```text
-LIFE GOAL:
-Protect family stability
-
-      ↓
-
-MEDIUM GOAL:
-Maintain reliable income
-
-      ↓
-
-SHORT GOAL:
-Keep workshop operating
-
-      ↓
-
-IMMEDIATE GOAL:
-Acquire replacement bearing
-```
-
-This helps explain:
-
-```text
-WHY AN IMMEDIATE ACTION MATTERS.
-```
-
----
-
-# Plan State
-
-Plans operationalize goals.
-
-Conceptually:
-
-```text
-PLAN
-
-Plan ID
-
-Related Goal
-
-Current Step
-
-Expected Steps
-
-Required Resources
-
-Required Actors
-
-Known Risks
-
-Status
-
-Fallback Options
-```
-
----
-
-# Plan Status
-
-Possible:
-
-```text
-FORMING
-
-ACTIVE
-
-WAITING
-
-BLOCKED
-
-ADAPTING
-
-SUCCEEDED
-
-FAILED
-
-ABANDONED
-```
-
----
-
-# Current Plan
-
-Character State should expose:
-
-```text
-WHAT THE CHARACTER
-IS CURRENTLY TRYING TO DO.
-```
-
-This is one of the most important fields for autonomy.
-
----
-
-# Example
-
-```text
-Goal:
-Maintain hospital fuel reserve.
-
-Current Plan:
-Request increased regional allocation.
-
-Fallback:
-Contact private suppliers.
-
-Player Dependency:
-NONE.
-```
-
----
-
-# Player Dependency
-
-Plans may explicitly record whether the player is currently required.
-
-Recommended:
-
-```text
-NONE
-
-OPTIONAL
-
-USEFUL
-
-IMPORTANT
-
-REQUIRED
-```
-
-Most character plans should normally begin as:
-
-```text
-NONE
-```
-
-unless there is a causal reason otherwise.
-
----
-
-# Knowledge State
-
-Character State must keep knowledge separate from World Truth.
-
-Conceptually:
-
-```text
-KNOWLEDGE ITEM
-
-Subject
-
-Claim
-
-Source
-
-Acquired Date
-
-Confidence
-
-Freshness
-
-Verification
-
-Visibility
-
-Current Status
-```
-
----
-
-# Knowledge Confidence
-
-Possible:
-
-```text
-LOW
-
-MODERATE
-
-HIGH
-
-CONFIRMED
-```
-
----
-
-# Knowledge Freshness
-
-Possible:
-
-```text
-CURRENT
-
-RECENT
-
-AGING
-
-STALE
-
-UNKNOWN
-```
-
----
-
-# Knowledge Status
-
-Possible:
-
-```text
-BELIEVED TRUE
-
-BELIEVED FALSE
-
-UNCERTAIN
-
-CONTESTED
-
-OUTDATED
-
-SUPERSEDED
-```
-
----
-
-# Knowledge Example
-
-```text
-Subject:
-Millhaven
-
-Claim:
-Travel access is restricted.
-
-Source:
-Regional radio
-
-Confidence:
-HIGH
-
-Freshness:
-RECENT
-
-Status:
-BELIEVED TRUE
-```
-
----
-
-# Belief State
-
-Beliefs represent interpretations.
-
-A belief may derive from:
-
-```text
-knowledge
-
-personality
-
-values
-
-history
-
-social influence
-
-misinformation.
-```
-
-Conceptually:
+It must preserve:
 
 ```text
 BELIEF
-
-Subject
-
-Belief Statement
-
-Confidence
-
-Evidence
-
-Counter-Evidence
-
-Origin
-
-Persistence
+≠
+WORLD TRUTH.
 ```
 
 ---
 
-# Example
+# 39. Expertise Reference
+
+Expertise belongs to:
 
 ```text
-Belief:
-Regional authorities react too slowly
-to infrastructure failures.
+Character_System/
+Expertise_System.md.
+```
 
-Confidence:
-MODERATE
+Character State may expose:
 
-Origin:
-Previous outage experience
+```text
+RELEVANT CURRENT
+EXPERTISE
+```
 
-Persistence:
-LONG
+for the situation.
+
+It should not duplicate:
+
+```text
+A SECOND
+SKILL SYSTEM.
 ```
 
 ---
 
-# Knowledge and Belief Boundary
+# 40. Capability Is Derived
 
-Example:
-
-```text
-KNOWLEDGE:
-Regional fuel prices increased 20%.
-
-BELIEF:
-Large traders are intentionally
-restricting supply.
-```
-
-Only the first is an observation.
-
-The second is an interpretation.
-
----
-
-# Personality State
-
-Personality should contain relatively stable traits.
-
-Example dimensions:
+Current capability should generally be understood as:
 
 ```text
-Risk Tolerance
-
-Patience
-
-Sociability
-
-Trust Tendency
-
-Competitiveness
-
-Empathy
-
-Discipline
-
-Curiosity
-
-Assertiveness
-
-Adaptability
-```
-
----
-
-# Trait Stability
-
-Personality is:
-
-```text
-RELATIVELY STABLE
-```
-
-not:
-
-```text
-IMMUTABLE.
-```
-
-Major experience may produce gradual changes.
-
----
-
-# Personality Representation
-
-Avoid simplistic universal values such as:
-
-```text
-Good = 80
-Evil = 20
-```
-
-Prefer behavioral tendencies.
-
-Example:
-
-```text
-Risk Tolerance:
-LOW
-
-Social Confidence:
-HIGH
-
-Trust Tendency:
-MODERATE
-
-Patience:
-HIGH
-
-Adaptability:
-HIGH
-```
-
----
-
-# Values State
-
-Character State should expose important values.
-
-Conceptually:
-
-```text
-VALUE
-
-Type
-
-Importance
-
-Interpretation
-
-Current Conflict
-```
-
----
-
-# Example
-
-```text
-Value:
-Local Autonomy
-
-Importance:
-HIGH
-
-Interpretation:
-Critical systems should remain
-under local operational control.
-```
-
----
-
-# Value Conflict
-
-Character State should allow:
-
-```text
-VALUE A
-```
-
-to conflict with:
-
-```text
-VALUE B.
-```
-
-Example:
-
-```text
-Family Loyalty:
-HIGH
-
-Public Duty:
-HIGH
-```
-
-Current situation:
-
-```text
-Family member accused
-of public corruption.
-```
-
-Decision Making must handle:
-
-```text
-INTERNAL VALUE CONFLICT.
-```
-
----
-
-# Profession State
-
-Profession should include:
-
-```text
-Current Profession
-
-Current Position
-
-Employer / Organization
-
-Experience
-
-Professional Status
-
-Work Location
-
-Professional Network
-```
-
----
-
-# Profession History
-
-Previous professions should remain in:
-
-```text
-Life History
-```
-
-rather than being overwritten.
-
-Example:
-
-```text
-2042:
-Field Doctor
-
-2049:
-Medical Coordinator
-
-2055:
-Network Director
-```
-
----
-
-# Skills
-
-Character State may expose learned skills.
-
-Examples:
-
-```text
-Medicine
-
-Mechanical Repair
-
-Farming
-
-Negotiation
-
-Leadership
-
-Driving
-
-Navigation
-
-Electronics
-
-Trade
-
-Administration
-
-Security
-
-Teaching.
-```
-
----
-
-# Skill Model
-
-Conceptually:
-
-```text
-SKILL
-
-Type
-
-Competence
-
-Experience
-
-Recent Use
-
-Certification / Formal Training
-
-Confidence
-```
-
----
-
-# Capability
-
-Capability differs from skill.
-
-Conceptually:
-
-```text
-CAPABILITY
-=
-SKILL
+EXPERTISE
 +
-CURRENT CONDITION
+PHYSICAL CONDITION
 +
 TOOLS
 +
@@ -1604,94 +1050,189 @@ ACCESS
 +
 AUTHORITY
 +
-TIME.
+TIME
++
+ENVIRONMENT.
+```
+
+Therefore:
+
+```text
+CAPABILITY
+IS CONTEXTUAL.
+```
+
+Character State may expose a derived capability view.
+
+It should not own the underlying components.
+
+---
+
+# 41. Profession Reference
+
+Current profession may be part of runtime Character identity.
+
+Character State may expose:
+
+```text
+CURRENT PROFESSION
+
+CURRENT POSITION
+
+CURRENT ORGANIZATION
+
+CURRENT WORK LOCATION.
+```
+
+Historical professional development belongs to:
+
+```text
+LIFE.
+```
+
+Expertise belongs to:
+
+```text
+EXPERTISE.
 ```
 
 ---
 
-# Example
+# 42. Profession Is Not Expertise
 
-Character:
+Always preserve:
 
 ```text
-Expert electrician.
+PROFESSION
+≠
+EXPERTISE.
 ```
 
-But:
+And:
 
 ```text
-No tools
-
-Injured hand
-
-No access to facility.
-```
-
-Result:
-
-```text
-Skill:
-HIGH
-
-Current Capability:
-LOW.
+PROFESSION
+≠
+CURRENT CAPABILITY.
 ```
 
 ---
 
-# Capability State
+# 43. Social Roles
 
-Possible conceptual values:
+A Character may currently occupy roles such as:
 
 ```text
-NONE
+PARENT
 
-LOW
+PARTNER
 
-MODERATE
+DOCTOR
 
-HIGH
+EMPLOYEE
 
-EXPERT
+MENTOR
+
+LEADER
+
+NEIGHBOR
+
+FACTION MEMBER.
 ```
 
-but actual action feasibility should remain contextual.
+Character State may expose active roles.
+
+The systems producing those roles remain authoritative for their own domains.
 
 ---
 
-# Resource State
+# 44. Responsibilities
 
-Characters may control resources.
+Character State may expose current responsibilities.
 
 Examples:
 
 ```text
-Money
+PROFESSIONAL DUTY
 
-Food
+FAMILY RESPONSIBILITY
 
-Fuel
+CONTRACTUAL RESPONSIBILITY
 
-Vehicle
+PROMISE
 
-Property
+PUBLIC ROLE
 
-Tools
+LEADERSHIP DUTY.
+```
 
-Equipment
+The origin should remain traceable.
 
-Information
+---
 
-Trade Goods
+# 45. Commitments
 
-Access Rights.
+Current Character commitments may include:
+
+```text
+PROMISE
+
+AGREEMENT
+
+APPOINTMENT
+
+CONTRACT
+
+ACCEPTED RESPONSIBILITY.
+```
+
+Character State may expose their runtime relevance.
+
+Autonomy owns follow-up behavior.
+
+Goals and Plans may own related intentional structure.
+
+Relationships may own interpersonal obligation state.
+
+---
+
+# 46. Resource Reference
+
+Character State may expose resources currently:
+
+```text
+OWNED
+
+CONTROLLED
+
+ACCESSIBLE
+
+RELEVANT.
+```
+
+Examples:
+
+```text
+MONEY
+
+VEHICLE
+
+TOOLS
+
+PROPERTY
+
+FOOD
+
+FUEL
+
+EQUIPMENT.
 ```
 
 ---
 
-# Ownership and Access
+# 47. Ownership vs Access
 
-Distinguish:
+Always distinguish:
 
 ```text
 OWNS
@@ -1706,219 +1247,124 @@ CAN ACCESS.
 Example:
 
 ```text
-Character does not own
-hospital ambulance.
+CHARACTER
+DOES NOT OWN
+HOSPITAL AMBULANCE
 
-But can authorize its use.
+BUT
+
+HAS AUTHORITY
+TO USE IT.
 ```
 
 ---
 
-# Resource Entry
+# 48. Resource Ownership Boundary
 
-Conceptually:
+Character State should not duplicate:
 
 ```text
-RESOURCE
+WORLD INVENTORY
 
-Type
+INSTITUTIONAL INVENTORY
 
-Quantity
+MARKET STATE.
+```
 
-Ownership
+It should reference:
 
-Access
-
-Location
-
-Condition
-
-Restrictions
+```text
+WHAT THIS CHARACTER
+CURRENTLY CONTROLS
+OR CAN ACCESS.
 ```
 
 ---
 
-# Social Roles
+# 49. Relationship References
 
-A character may hold multiple roles.
+Character State should not duplicate the Relationships system.
+
+Instead it may expose:
+
+```text
+RELATIONSHIP ID
+
+CURRENT RELEVANCE
+
+ROLE
+
+IMPORTANT OBLIGATION
+
+CURRENT INTERACTION CONTEXT.
+```
+
+Detailed state belongs to:
+
+```text
+Canon/Systems/Relationships/
+```
+
+---
+
+# 50. Trust Boundary
+
+Trust may exist within:
+
+```text
+RELATIONSHIP CONTEXT
+
+HUMAN CONTEXT
+
+INSTITUTIONAL CONTEXT.
+```
+
+Character State must not create:
+
+```text
+ONE GLOBAL
+TRUST SCORE.
+```
+
+---
+
+# 51. Reputation Boundary
+
+Character reputation is not identical to:
+
+```text
+RELATIONSHIP.
+```
+
+A person may be:
+
+```text
+PERSONALLY DISLIKED
+```
+
+while still considered:
+
+```text
+PROFESSIONALLY RELIABLE.
+```
+
+Any future reputation architecture must remain separate from individual Relationship state.
+
+Character State may reference relevant reputation context.
+
+---
+
+# 52. Current Activity
+
+Character State directly owns the runtime answer to:
+
+```text
+WHAT IS
+THIS CHARACTER
+CURRENTLY DOING?
+```
 
 Examples:
-
-```text
-Parent
-
-Friend
-
-Doctor
-
-Council Member
-
-Neighbor
-
-Mentor
-
-Employer
-
-Faction Member
-
-Community Leader.
-```
-
----
-
-# Role Conflict
-
-Roles may create incompatible expectations.
-
-Example:
-
-```text
-Doctor:
-Protect patient confidentiality.
-
-Council Member:
-Provide public safety information.
-```
-
-This can create meaningful decisions.
-
----
-
-# Responsibilities
-
-Character State may expose obligations arising from:
-
-```text
-profession
-
-family
-
-contracts
-
-law
-
-social role
-
-promises
-
-authority
-
-relationship.
-```
-
----
-
-# Responsibility Entry
-
-Conceptually:
-
-```text
-RESPONSIBILITY
-
-Subject
-
-Origin
-
-Importance
-
-Deadline
-
-Status
-
-Affected Actors
-```
-
----
-
-# Commitments
-
-Commitments should be explicit when a character has:
-
-```text
-promised
-
-agreed
-
-accepted responsibility
-
-signed contract
-
-scheduled action.
-```
-
----
-
-# Commitment State
-
-Possible:
-
-```text
-OPEN
-
-IN PROGRESS
-
-FULFILLED
-
-BROKEN
-
-RENEGOTIATED
-
-RELEASED
-
-IMPOSSIBLE
-```
-
----
-
-# Character Commitments and Player
-
-A character may have:
-
-```text
-commitments to player
-```
-
-or:
-
-```text
-commitments involving player.
-```
-
-These should not be confused with:
-
-```text
-player Missions.
-```
-
----
-
-# Current Activity
-
-Character State should expose what the character is currently doing at appropriate resolution.
-
-High resolution example:
-
-```text
-Reviewing hospital inventory
-```
-
-Medium resolution:
-
-```text
-Working at hospital
-```
-
-Low resolution:
-
-```text
-Performing professional duties
-```
-
----
-
-# Activity Categories
-
-Possible:
 
 ```text
 WORKING
@@ -1927,37 +1373,59 @@ TRAVELING
 
 RESTING
 
-SOCIALIZING
+SLEEPING
 
 EATING
 
-SLEEPING
-
-PLANNING
-
-TRADING
+SOCIALIZING
 
 MEETING
 
 CARING
 
-RECOVERING
-
 INVESTIGATING
 
 WAITING
+
+RECOVERING
 
 UNKNOWN.
 ```
 
 ---
 
-# Activity Continuity
+# 53. Activity Detail
 
-Current Activity should not arbitrarily reset when:
+High resolution:
 
 ```text
-player enters area.
+REVIEWING
+HOSPITAL INVENTORY.
+```
+
+Medium resolution:
+
+```text
+WORKING
+AT HOSPITAL.
+```
+
+Low resolution:
+
+```text
+PERFORMING
+PROFESSIONAL DUTIES.
+```
+
+---
+
+# 54. Activity Continuity
+
+Current Activity should not reset when:
+
+```text
+PLAYER ENTERS
+THE AREA.
 ```
 
 Characters should already be:
@@ -1968,215 +1436,40 @@ DOING SOMETHING.
 
 ---
 
-# Relationship References
+# 55. Current Activity Is Not Goal
 
-Character State should not duplicate the entire Relationship system.
-
-Instead it may contain:
+Example:
 
 ```text
-Relationship IDs
+GOAL:
+Maintain hospital resilience
 
-Relationship Type
+PLAN:
+Review supply vulnerabilities
 
-Current Relevance
-
-Important Obligations
-
-Important Relationship Memories
+CURRENT ACTIVITY:
+Meeting logistics coordinator.
 ```
 
-Detailed dynamics belong to:
-
-```text
-Canon/Systems/Relationships/
-```
+These are different layers.
 
 ---
 
-# Relationship Example
+# 56. Current Activity Is Not Plan
 
-```text
-Relationship ID:
-REL-CHAR184-PLAYER
+The Plan may continue across many activities.
 
-Type:
-Close Friendship
-
-Current Relevance:
-HIGH
-
-Current Tension:
-LOW
-
-Important Memory References:
-MEM-2045-0103
-MEM-2048-0211
-```
+Likewise, one activity may serve multiple Goals.
 
 ---
 
-# Reputation Context
+# 57. Character State Snapshot
 
-Character State may store how the character is perceived by:
+A Character State snapshot is:
 
-```text
-groups
+> **A time-bound Character-centric runtime view assembled from authoritative state.**
 
-institutions
-
-communities
-
-factions
-
-professional networks.
-```
-
-This should use references to broader reputation systems if established.
-
----
-
-# Important Distinction
-
-```text
-CHARACTER REPUTATION
-```
-
-and:
-
-```text
-CHARACTER RELATIONSHIPS
-```
-
-are not identical.
-
-Someone may:
-
-```text
-dislike a character personally
-```
-
-while still believing they are:
-
-```text
-professionally reliable.
-```
-
----
-
-# Memory References
-
-Character State should reference meaningful memories rather than storing every historical detail inline.
-
-Examples:
-
-```text
-MEM-CHAR184-001
-
-MEM-CHAR184-002
-
-MEM-2051-0617
-```
-
-Memory content may belong to:
-
-```text
-Character Memory
-
-Campaign Memory
-
-World Ledger
-```
-
-depending on context.
-
----
-
-# Character Memory Ownership
-
-A character memory must conceptually specify:
-
-```text
-THE CHARACTER REMEMBERS THIS.
-```
-
-Campaign Memory does not automatically mean:
-
-```text
-EVERY CHARACTER KNOWS IT.
-```
-
----
-
-# Life History
-
-Life History should contain major state transitions.
-
-Conceptually:
-
-```text
-LIFE HISTORY
-
-Date
-
-Event
-
-Previous State
-
-New State
-
-Cause
-
-References
-```
-
----
-
-# Example
-
-```text
-2049-03-12
-
-Event:
-Promoted to Medical Network Director
-
-Previous Role:
-Regional Medical Coordinator
-
-New Role:
-Director
-
-Cause:
-Network expansion
-+
-previous coordination experience
-```
-
----
-
-# Life History Principle
-
-Do not record:
-
-```text
-every meal
-
-every workday
-
-every conversation.
-```
-
-Record:
-
-```text
-MEANINGFUL STATE TRANSITIONS.
-```
-
----
-
-# Character State Snapshot
-
-A conceptual Character State snapshot may look like:
+Example:
 
 ```text
 CHARACTER STATE
@@ -2187,427 +1480,266 @@ CHAR-000184
 Name:
 Mara Vale
 
-Status:
+Existence Status:
 ACTIVE
 
-Birth Date:
-2013-04-09
-
-Current Date:
-2055-09-03
-
-Age:
-42
+State Effective Date:
+2055-09-03 14:20
 
 Location:
 Winchester
 
-Specific Site:
-Valley Medical Coordination Network
+Current Activity:
+Speaking with another Character
 
-Physical Condition:
-HEALTHY
-
-Current Mood:
-SURPRISED / EMOTIONALLY ACTIVATED
-
-Profession:
+Current Profession:
 Physician
 
-Position:
-Network Director
+Current Position:
+Medical Network Director
 
-Primary Role:
-Medical Leader
+Physical Summary:
+Healthy
 
-Current Needs:
-Maintain medical resilience
-Personal reconnection
+Psychology Reference:
+Elevated stress
 
-Primary Goals:
-Expand specialist network
-Maintain organizational stability
+Dominant Goal:
+Maintain regional
+medical resilience
 
 Current Plan:
-Prepare quarterly regional medical review
+Prepare regional
+medical review
 
-Knowledge:
-Player has returned to Winchester
-CONFIRMED
-
-Beliefs:
-Interregional medical cooperation
+Relevant Belief:
+Interregional cooperation
 remains essential
 
-Personality:
-Disciplined
-Empathetic
-Direct
-Pragmatic
-
-Values:
-Duty
-Medical Access
-Professional Integrity
-Community
-
-Current Capability:
-HIGH within medical organization
+Relevant Expertise:
+Medicine
+Organizational leadership
 
 Important Relationships:
-Player
 Daughter
 Medical Leadership Team
 Elias Mercer
 
-Current Player Relationship:
-Historically Close
-Currently Reconnecting
-
-Current Activity:
-Speaking with player
-
 Simulation Resolution:
 HIGH
+```
 
-Last Update:
-2055-09-03 14:20
+The snapshot does not duplicate the complete state of those systems.
+
+---
+
+# 58. Stored vs Derived State
+
+The central rule is:
+
+```text
+STORE
+WHAT CHARACTER STATE
+UNIQUELY OWNS.
+
+REFERENCE
+WHAT ANOTHER SYSTEM OWNS.
+
+DERIVE
+WHAT CAN BE RELIABLY
+COMPUTED.
 ```
 
 ---
 
-# State Change Example
+# 59. Examples of Stored State
 
-Before:
-
-```text
-Location:
-Winchester
-
-Profession:
-Doctor
-
-Goal:
-Improve local clinic
-```
-
-World changes:
+Likely stored:
 
 ```text
-Regional Medical Network forms.
-```
+CHARACTER ID
 
-Character action:
+CURRENT LOCATION
 
-```text
-Mara joins planning group.
-```
+CURRENT ACTIVITY
 
-Experience accumulates.
+EXISTENCE STATUS
 
-Later:
-
-```text
-Profession:
-Physician
-
-Position:
-Regional Medical Coordinator
-
-Goal:
-Improve interregional medical resilience
-```
-
-The state changed through:
-
-```text
-WORLD
-+
-ACTION
-+
-TIME
-+
-EXPERIENCE.
+STATE EFFECTIVE DATE.
 ```
 
 ---
 
-# State Transition
+# 60. Examples of Referenced State
 
-Conceptually:
+Likely referenced:
 
 ```text
-OLD CHARACTER STATE
-      ↓
-WORLD INPUT
-      ↓
-CHARACTER DECISION
-      ↓
-ACTION
-      ↓
-CONSEQUENCE
-      ↓
-MEMORY
-      ↓
-NEW CHARACTER STATE
+GOALS
+
+PLANS
+
+MEMORIES
+
+RELATIONSHIPS
+
+EXPERTISE
+
+BELIEFS
+
+PSYCHOLOGY
+
+LIFE EVENTS.
 ```
 
 ---
 
-# State Transition Integrity
+# 61. Examples of Derived State
 
-Major state changes must have:
-
-```text
-CAUSE.
-```
-
-Avoid:
+Likely derived:
 
 ```text
-Profession:
-Mechanic
-      ↓
-one year later
-      ↓
-Governor
-```
+CURRENT AGE
 
-without intermediate history.
+CURRENT CAPABILITY
+
+CURRENT RELATIONSHIP
+RELEVANCE
+
+CURRENT ENVIRONMENTAL
+EXPOSURE
+
+CURRENT TRAVEL RISK.
+```
 
 ---
 
-# Character State Ownership
+# 62. One Authoritative Owner
 
-Different systems may modify different state domains.
-
-Conceptually:
+Never maintain:
 
 ```text
-Characters System
-├── Identity
-├── Goals
-├── Plans
-├── Knowledge
-├── Beliefs
-├── Personality
-├── Values
-├── Capability
-└── Development
+CHARACTER STATE:
+Trust = High
 
-Life System
-├── Household
-├── Family Life
-├── Employment Context
-├── Daily Routine
-└── Life Events
+AND
 
-Relationships System
-├── Trust
-├── Closeness
-├── Relationship History
-├── Expectations
-└── Obligations
-
-World Simulation
-├── External Conditions
-├── Location Environment
-├── Supply Exposure
-├── Security Exposure
-└── Infrastructure Exposure
+RELATIONSHIP SYSTEM:
+Trust = Moderate
 ```
 
-These systems interact through controlled state updates.
+as competing authoritative values.
+
+Instead:
+
+```text
+RELATIONSHIP SYSTEM
+OWNS TRUST
+
+CHARACTER STATE
+READS CURRENT VIEW.
+```
 
 ---
 
-# External State Versus Character State
+# 63. State Authority
+
+For important runtime fields, implementation may eventually track:
+
+```text
+FIELD
+
+AUTHORITATIVE SYSTEM
+
+LAST UPDATE
+
+SOURCE EVENT.
+```
 
 Example:
 
-World State:
-
 ```text
-Fuel Supply:
-LOW
+FIELD:
+Current Location
+
+AUTHORITY:
+Characters
+
+SOURCE:
+Travel Completion.
 ```
-
-Character State:
-
-```text
-Personal Fuel Reserve:
-MODERATE
-```
-
-Character Belief:
-
-```text
-Fuel shortage will worsen.
-```
-
-Character Goal:
-
-```text
-Secure additional reserve.
-```
-
-These are separate layers.
 
 ---
 
-# Character State Should Not Duplicate World State
+# 64. External State
 
-Avoid:
+World conditions remain external.
 
-```text
-Character:
-Regional Fuel = LOW
-```
-
-Instead reference:
+Example:
 
 ```text
-Region:
-Shenandoah Valley
+WORLD:
+Regional Fuel Supply = Low
 
-Character Exposure:
-Fuel-dependent profession
+CHARACTER:
+Fuel Reserve = Moderate
 
-Relevant World State:
-Supply_State / Fuel = LOW
+CHARACTER BELIEF:
+Shortage will worsen
+
+GOAL:
+Secure reserve.
 ```
 
-This prevents state divergence.
+These are four different states.
+
+Do not merge them.
 
 ---
 
-# Derived State
+# 65. Character Exposure
 
-Some Character State values should be:
+Character State may derive how a Character is exposed to external World state.
+
+Example:
 
 ```text
-DERIVED
+WORLD:
+Regional Security = Unstable
+
+CHARACTER A:
+Lives in fortified settlement
+Exposure = Low
+
+CHARACTER B:
+Travels remote routes
+Exposure = High.
 ```
 
-rather than independently stored.
+World State remains one thing.
+
+Individual consequence differs.
+
+---
+
+# 66. Hidden State
+
+A Character may possess authoritative state that is not player-known.
 
 Examples:
 
 ```text
-Age
-from Birth Date.
+PRIVATE GOAL
 
-Current Relationship Relevance
-from Relationship system.
+PRIVATE PLAN
 
-Current Environmental Risk
-from Location + World State.
+SECRET BELIEF
 
-Current Trade Opportunity
-from Character profession + Market State.
-```
+UNDISCLOSED ILLNESS
 
----
+SECRET RELATIONSHIP
 
-# Stored Versus Derived
-
-Recommended principle:
-
-```text
-STORE
-what belongs uniquely
-to the character.
-
-DERIVE
-what can reliably be calculated
-from authoritative external state.
-```
-
----
-
-# State Confidence
-
-Not every Character State field must be perfectly known to every system.
-
-The simulation may know:
-
-```text
-World-True Character State
-```
-
-while the player or another character does not.
-
----
-
-# State Visibility
-
-Conceptually:
-
-```text
-SIMULATION TRUE
-
-PLAYER KNOWN
-
-CHARACTER KNOWN
-
-PUBLIC
-
-PRIVATE
-
-SECRET
-
-UNKNOWN
-```
-
----
-
-# Example
-
-Simulation State:
-
-```text
-Character plans to leave region.
-```
-
-Player Knowledge:
-
-```text
-UNKNOWN.
-```
-
-Relationship System:
-
-```text
-May detect emotional distance.
-```
-
-Story Hooks:
-
-```text
-May reveal plan only
-through plausible interaction.
-```
-
----
-
-# Hidden State
-
-Character hidden state may include:
-
-```text
-private goals
-
-private relationships
-
-fears
-
-secrets
-
-undisclosed plans
-
-unknown illness
-
-political intentions.
+POLITICAL INTENTION.
 ```
 
 Hidden state remains:
@@ -2616,547 +1748,294 @@ Hidden state remains:
 REAL.
 ```
 
-It is simply:
+---
+
+# 67. Visibility
+
+Conceptually distinguish:
 
 ```text
-NOT CURRENTLY KNOWN.
+SIMULATION TRUE
+
+CHARACTER-KNOWN
+
+PLAYER-KNOWN
+
+PUBLIC
+
+PRIVATE
+
+SECRET
+
+UNKNOWN.
 ```
+
+These categories may apply differently depending on the information.
 
 ---
 
-# State Privacy
+# 68. State Privacy
 
-Private character information should not automatically become:
-
-```text
-player-facing
-```
-
-because it exists in Character State.
-
-A plausible:
+The existence of state does not imply:
 
 ```text
-information path
+PLAYER ACCESS.
 ```
 
-is still required.
+A plausible information path remains required.
 
 ---
 
-# Character State Validation
+# 69. World Truth vs Character Truth
 
-A valid Character State should answer:
-
-**Who is this person?**
-
-**Where are they?**
-
-**How old are they?**
-
-**What condition are they in?**
-
-**What are they currently doing?**
-
-**What do they need?**
-
-**What are their active goals?**
-
-**What are they currently planning?**
-
-**What do they know?**
-
-**What do they believe?**
-
-**What are their important values?**
-
-**What can they realistically do?**
-
-**Which relationships currently matter?**
-
-**What commitments do they have?**
-
-**What major history shaped them?**
-
-**At what simulation resolution are they running?**
-
-If several of these cannot be answered for an important persistent character, their state may be underdefined.
-
----
-
-# Minimum Persistent Character State
-
-A minimum persistent character record should contain:
+Character State must preserve:
 
 ```text
-Character ID
-
-Name
-
-Status
-
-Birth Date / Approximate Age
-
-Location
-
-Physical Condition
-
-Profession / Primary Role
-
-Primary Needs
-
-Active Goals
-
-Current Plan
-
-Key Knowledge
-
-Important Beliefs
-
-Personality Summary
-
-Values Summary
-
-Core Capabilities
-
-Important Relationship References
-
-Current Activity
-
-Major Memory References
-
-Life History Summary
-
-Simulation Resolution
-
-Last Updated
+WORLD TRUTH
+≠
+CHARACTER PERCEPTION
+≠
+CHARACTER KNOWLEDGE
+≠
+CHARACTER BELIEF
+≠
+PLAYER KNOWLEDGE.
 ```
 
----
-
-# High-Resolution Character State
-
-High-resolution characters may additionally contain:
-
-```text
-detailed emotional context
-
-short-term needs
-
-multiple active plans
-
-current conversation state
-
-fine-grained knowledge
-
-local resource access
-
-immediate commitments
-
-current schedule
-
-current relationship tension
-
-current environmental exposure.
-```
+This separation is foundational.
 
 ---
 
-# Medium-Resolution Character State
+# 70. State Transition
 
-May contain:
+Character State changes through causal updates.
 
-```text
-major needs
-
-active goals
-
-profession
-
-location
-
-important relationships
-
-major beliefs
-
-current broad plan
-
-important recent events.
-```
-
----
-
-# Low-Resolution Character State
-
-May contain:
+Conceptually:
 
 ```text
-location region
-
-profession
-
-major goal
-
-important relationships
-
-major life-state changes
-
-compressed knowledge
-
-long-term trajectory.
-```
-
----
-
-# State Promotion
-
-When a character becomes newly relevant:
-
-```text
-LOW
+OLD STATE
 ↓
-MEDIUM
+WORLD / LIFE /
+RELATIONSHIP /
+CHARACTER INPUT
 ↓
-HIGH
-```
-
-the engine may expand Character State using:
-
-```text
-existing history
-
-regional history
-
-current location
-
-profession
-
-relationships
-
-goals
-
-life events.
-```
-
----
-
-# State Demotion
-
-When relevance declines:
-
-```text
-HIGH
+DECISION
 ↓
-MEDIUM
+ACTION
 ↓
-LOW
-```
-
-the engine should compress:
-
-```text
-routine detail
-```
-
-while retaining:
-
-```text
-meaningful state.
+CONSEQUENCE
+↓
+AUTHORITATIVE
+SYSTEM UPDATES
+↓
+NEW CHARACTER
+STATE VIEW.
 ```
 
 ---
 
-# Promotion Integrity
+# 71. Character State Does Not Resolve Consequences
 
-Promotion must not invent:
+Character State should not become:
 
 ```text
-new history
+THE ENGINE
+THAT DECIDES
+WHAT HAPPENS.
 ```
 
-that contradicts existing records.
+World Simulation and authoritative systems resolve changes.
 
-It may fill previously unspecified routine detail only where:
+Character State reflects the resulting current Actor view.
+
+---
+
+# 72. Major State Change Requires Cause
+
+Avoid:
 
 ```text
-causally safe.
+MECHANIC
+↓
+ONE YEAR
+↓
+GOVERNOR
+```
+
+without causal history.
+
+Significant current state must be explainable through:
+
+```text
+LIFE
+
+ACTION
+
+WORLD EVENTS
+
+RELATIONSHIPS
+
+TIME
+
+PROGRESSION
+
+INSTITUTIONAL CHANGE.
 ```
 
 ---
 
-# Demotion Integrity
+# 73. Contradiction Detection
 
-Demotion must not discard:
+Character State should detect impossible or suspicious combinations.
 
-```text
-open promises
-
-major goals
-
-relationship milestones
-
-critical knowledge
-
-major injuries
-
-life-changing events.
-```
-
----
-
-# Reconstruction Example
-
-Character at last high-resolution state:
+Example:
 
 ```text
-2046
-
-Profession:
-Mechanic
-
-Location:
-Winchester
-
-Goal:
-Open own workshop
-```
-
-During low-resolution simulation:
-
-```text
-2048:
-Obtains business loan
-
-2049:
-Workshop opens
-
-2051:
-Hires assistant
-
-2053:
-Expands production
-```
-
-Player returns:
-
-```text
-2055
-```
-
-Reconstructed Character State:
-
-```text
-Profession:
-Mechanic / Business Owner
-
-Position:
-Workshop Owner
-
-Goal:
-Expand regional manufacturing
-
-Resources:
-Workshop
-
-Employees:
-4
-
-Reputation:
-Strong local professional reputation
-```
-
-The state is explainable.
-
----
-
-# State Contradictions
-
-Systems must detect impossible combinations.
-
-Examples:
-
-```text
-Status:
+EXISTENCE:
 DECEASED
 
-Current Activity:
-Working
+CURRENT ACTIVITY:
+WORKING.
 ```
 
 Invalid.
 
 ---
 
-```text
-Location:
-Winchester
-
-Current Activity:
-Driving convoy in Roanoke
-```
-
-potentially invalid.
-
----
-
-```text
-Profession:
-Doctor
-
-Skill:
-Medicine NONE
-```
-
-requires explanation.
-
----
-
-# Contradiction Handling
-
-When contradiction occurs:
-
-```text
-DO NOT SILENTLY PICK
-WHICHEVER STATE IS CONVENIENT.
-```
-
-Instead determine:
-
-```text
-authoritative field
-
-timestamp
-
-source
-
-causal transition.
-```
-
----
-
-# State Authority
-
-Each field should ideally have:
-
-```text
-Authoritative System
-
-Last Update
-
-Source Event
-```
-
-where implementation requires robust synchronization.
-
----
-
-# Example
-
-```text
-Field:
-Location
-
-Authority:
-Characters
-
-Updated:
-2055-09-03 13:51
-
-Source:
-Travel Completion
-```
-
----
-
-# Derived State Invalidity
-
-Derived state must be recalculated when source state changes.
+# 74. Location Contradiction
 
 Example:
 
 ```text
-Character Capability:
-High
+CURRENT LOCATION:
+WINCHESTER
+
+CURRENT ACTIVITY:
+DRIVING CONVOY
+IN ROANOKE.
+```
+
+Potentially invalid.
+
+The architecture should investigate:
+
+```text
+TIMESTAMP
+
+SOURCE
+
+TRAVEL STATE
+
+AUTHORITATIVE OWNER.
+```
+
+---
+
+# 75. Expertise Contradiction
+
+Example:
+
+```text
+CURRENT PROFESSION:
+PHYSICIAN
+
+EXPERTISE:
+MEDICINE 0.
+```
+
+This is not automatically impossible.
+
+But it requires:
+
+```text
+EXPLANATION.
+```
+
+---
+
+# 76. Contradiction Rule
+
+When contradiction appears:
+
+```text
+DO NOT
+SILENTLY PICK
+THE MOST CONVENIENT
+VALUE.
+```
+
+Determine:
+
+```text
+AUTHORITATIVE SYSTEM
+
+TIMESTAMP
+
+SOURCE EVENT
+
+CAUSAL ORDER.
+```
+
+---
+
+# 77. Stale Derived State
+
+Derived state must update when source state changes.
+
+Example:
+
+```text
+CAPABILITY:
+HIGH
 ```
 
 may become:
 
 ```text
-Low
+CAPABILITY:
+LOW
 ```
 
 after:
 
 ```text
-serious injury.
+SERIOUS INJURY.
 ```
 
-Do not leave stale capability summaries active.
+Do not leave stale runtime summaries active.
 
 ---
 
-# State Update Ordering
+# 78. State Time Advancement
 
-Conceptually:
-
-```text
-WORLD CHANGE
-      ↓
-CHARACTER EXPOSURE
-      ↓
-PHYSICAL / INFORMATION UPDATE
-      ↓
-NEED UPDATE
-      ↓
-GOAL / PLAN EVALUATION
-      ↓
-ACTION
-      ↓
-CONSEQUENCE
-      ↓
-MEMORY
-      ↓
-STATE COMMIT
-```
-
-Exact implementation may vary.
-
----
-
-# Character State and World Time
-
-Time advancement may change state even without events.
+Time may change Character State even without dramatic World events.
 
 Examples:
 
 ```text
-age increases
+AGE CHANGES
 
-fatigue changes
+RECOVERY PROGRESSES
 
-hunger changes
+TRAVEL CONTINUES
 
-scheduled activity begins
+DEADLINE APPROACHES
 
-deadline approaches
+WORK SHIFT ENDS
 
-pregnancy progresses
+SLEEP OCCURS
 
-recovery progresses
-
-education progresses
-
-employment duration increases.
+EDUCATION PROGRESSES.
 ```
+
+The relevant authoritative systems own the underlying change.
 
 ---
 
-# Time-Driven State Change
-
-Therefore:
+# 79. Time Principle
 
 ```text
-NO WORLD EVENT
+NO DRAMATIC EVENT
 ```
 
 does not mean:
@@ -3165,380 +2044,1226 @@ does not mean:
 NO CHARACTER CHANGE.
 ```
 
-Time itself is causal.
-
 ---
 
-# Character State and Player Time Skip
+# 80. Player Time Skip
 
-If player skips:
+If the campaign advances:
 
 ```text
-one day
+ONE DAY
 
-one month
+ONE MONTH
 
-one year
+ONE YEAR
 
-ten years
+TEN YEARS
 ```
 
-Character State must advance accordingly at appropriate resolution.
+Character State must advance at appropriate simulation resolution.
 
 ---
 
-# Time Skip Principle
+# 81. Player Absence
 
 ```text
-TIME SKIP
+PLAYER ABSENCE
 ≠
 CHARACTER PAUSE.
 ```
 
----
-
-# Character State and Save / Load
-
-A saved campaign must preserve enough Character State to reconstruct:
+Characters continue to:
 
 ```text
-current identity
+LIVE
 
-current location
+MOVE
 
-active goals
+WORK
 
-active plans
+AGE
 
-important relationships
+PURSUE GOALS
 
-important memory
+FORM RELATIONSHIPS
 
-important resources
-
-simulation resolution
-
-current lifecycle state.
+CHANGE.
 ```
 
-Implementation details belong outside current Canon scope.
+The respective authoritative systems determine how.
 
 ---
 
-# Character State and AI
+# 82. Simulation Resolution
 
-When AI generates:
+Character State must expose the current simulation resolution.
 
-```text
-dialogue
-
-planning suggestions
-
-behavior interpretation
-```
-
-it should receive only relevant state.
-
-Example dialogue context:
+Conceptually:
 
 ```text
-Identity
+HIGH
 
-Current Situation
+MEDIUM
 
-Relationship
-
-Knowledge
-
-Beliefs
-
-Mood
-
-Goal
-
-Relevant Memories
+LOW.
 ```
 
-Avoid providing:
-
-```text
-hidden World Truth
-```
-
-unless the character plausibly knows it.
+A broader world-level aggregation may exist outside individual Character State.
 
 ---
 
-# AI State Boundary
+# 83. High Resolution
 
-AI output must not change canonical Character State merely because:
-
-```text
-the generated dialogue implied something.
-```
-
-State changes should occur through:
+High-resolution Character State may expose:
 
 ```text
-validated simulation updates.
+SPECIFIC LOCATION
+
+CURRENT ACTIVITY
+
+CURRENT PLAN STEP
+
+RELEVANT PSYCHOLOGY
+
+RELEVANT KNOWLEDGE
+
+ACTIVE OPEN LOOPS
+
+CURRENT RELATIONSHIP CONTEXT
+
+IMMEDIATE RESOURCE ACCESS.
 ```
 
 ---
 
-# Example
+# 84. Medium Resolution
 
-AI dialogue says:
-
-```text
-"My brother lives in Richmond."
-```
-
-If Character State contains no brother:
+Medium-resolution Character State may expose:
 
 ```text
-this must not silently become Canon.
-```
+SETTLEMENT / REGION
 
-The dialogue generator should instead be constrained by state.
+PROFESSION
+
+MAJOR GOALS
+
+BROAD PLAN
+
+IMPORTANT RELATIONSHIPS
+
+MAJOR BELIEFS
+
+CURRENT LIFE CONDITION.
+```
 
 ---
 
-# State and Narrative
+# 85. Low Resolution
 
-Narrative presentation may interpret Character State.
+Low-resolution Character State may expose:
 
-It may not overwrite it for dramatic convenience.
+```text
+REGION
+
+ROLE / PROFESSION
+
+MAJOR GOAL DIRECTION
+
+IMPORTANT RELATIONSHIPS
+
+MAJOR LIFE STATE
+
+LONG-TERM TRAJECTORY.
+```
+
+---
+
+# 86. Resolution Principle
+
+```text
+HIGH RESOLUTION
+=
+MORE DETAIL
+
+LOW RESOLUTION
+=
+LESS DETAIL.
+```
+
+Never:
+
+```text
+LOW RESOLUTION
+=
+LESS REALITY
+
+LESS AGENCY
+
+LESS HUMANITY.
+```
+
+---
+
+# 87. Promotion
+
+When a Character becomes more relevant:
+
+```text
+LOW
+↓
+MEDIUM
+↓
+HIGH
+```
+
+Character State may expose more detail.
+
+It may not rewrite existing history.
+
+---
+
+# 88. Promotion Sources
+
+Detail may be reconstructed from:
+
+```text
+LIFE HISTORY
+
+WORLD HISTORY
+
+CURRENT LOCATION
+
+GOALS
+
+RELATIONSHIPS
+
+EXPERTISE
+
+BELIEFS
+
+PAST ACTION
+
+ELAPSED TIME.
+```
+
+---
+
+# 89. Promotion Integrity
+
+Promotion must not invent:
+
+```text
+CONVENIENT HISTORY
+```
+
+that contradicts existing state.
+
+Previously unspecified routine detail may be inferred only where:
+
+```text
+CAUSALLY SAFE.
+```
+
+---
+
+# 90. Demotion
+
+When detail is no longer necessary:
+
+```text
+HIGH
+↓
+MEDIUM
+↓
+LOW
+```
+
+routine detail may be compressed.
+
+---
+
+# 91. Demotion Must Preserve
+
+Do not discard:
+
+```text
+MAJOR GOALS
+
+OPEN COMMITMENTS
+
+IMPORTANT RELATIONSHIPS
+
+SIGNIFICANT BELIEFS
+
+MAJOR INJURIES
+
+MAJOR LIFE EVENTS
+
+IMPORTANT LOCATION CHANGE
+
+IMPORTANT HISTORICAL STATE.
+```
+
+---
+
+# 92. Reconstruction
+
+When a Character returns to high resolution, current state should be reconstructable from:
+
+```text
+PREVIOUS STATE
+
+ELAPSED TIME
+
+LIFE COURSE
+
+WORLD EVENTS
+
+GOALS
+
+PLANS
+
+RELATIONSHIPS
+
+PROGRESSION
+
+MAJOR ACTIONS.
+```
+
+---
+
+# 93. Reconstruction North Star
+
+Do not ask:
+
+```text
+WHAT VERSION
+OF THIS CHARACTER
+WOULD MAKE
+A GOOD SCENE?
+```
+
+Ask:
+
+```text
+WHAT HAPPENED
+TO THIS PERSON
+WHILE THEY
+WERE ELSEWHERE?
+```
+
+---
+
+# 94. Runtime Views
+
+Character State may provide runtime summaries to other systems.
 
 Example:
 
-Character State:
-
 ```text
-Mara currently in Roanoke.
+DECISION MAKING VIEW:
+
+Current Goal
+Relevant Beliefs
+Relevant Relationships
+Relevant Psychology
+Relevant Expertise
+Current Resources
+Current Location
+Current Time.
 ```
-
-Narrative cannot place her:
-
-```text
-in Winchester
-```
-
-merely because a scene would be emotionally stronger.
 
 ---
 
-# State and Mission Generation
+# 95. AI Context View
 
-Mission Generation may read:
+AI should receive only the Character state needed for its task.
+
+Dialogue context might contain:
 
 ```text
-Character Need
+IDENTITY
 
-Character Goal
+CURRENT SITUATION
 
-Character Plan
+CURRENT RELATIONSHIP
 
-Player Relationship
+RELEVANT KNOWLEDGE
 
-Player Capability
+RELEVANT BELIEFS
+
+CURRENT PSYCHOLOGY
+
+CURRENT GOAL
+
+RELEVANT MEMORIES.
 ```
 
-to determine whether a Character-related Mission is plausible.
-
-It must not assume:
+It should not automatically receive:
 
 ```text
-CHARACTER NEED
-=
+HIDDEN WORLD TRUTH.
+```
+
+---
+
+# 96. AI State Boundary
+
+AI output must not create new canonical Character State merely because it said something.
+
+Example:
+
+```text
+AI DIALOGUE:
+
+"My brother lives
+in Richmond."
+```
+
+If no such family state exists:
+
+```text
+THIS MUST NOT
+SILENTLY BECOME CANON.
+```
+
+---
+
+# 97. State Change Validation
+
+AI may propose:
+
+```text
+POSSIBLE
+STATE CHANGE.
+```
+
+But authoritative systems must validate it.
+
+---
+
+# 98. Narrative Boundary
+
+Narrative may:
+
+```text
+PRESENT
+
+SUMMARIZE
+
+DRAMATIZE
+
+REVEAL
+```
+
+Character State.
+
+Narrative may not overwrite it.
+
+Example:
+
+```text
+CHARACTER STATE:
+Mara is in Roanoke
+
+NARRATIVE:
+cannot place Mara
+in Winchester
+for convenience.
+```
+
+---
+
+# 99. Story Relevance Boundary
+
+Character State may contain:
+
+```text
+GOAL
+
+PROBLEM
+
+RELATIONSHIP
+
+CURRENT ACTIVITY.
+```
+
+This does not automatically mean:
+
+```text
+STORY HOOK.
+```
+
+Living Campaign and Narrative determine relevance.
+
+---
+
+# 100. Mission Boundary
+
+Character Need:
+
+```text
+≠
 MISSION.
 ```
 
----
-
-# State and Story Hooks
-
-Story Hooks may read:
+Character Goal:
 
 ```text
-Character Activity
-
-Character Knowledge
-
-Relationship
-
-Current Goal
-
-Current Situation
+≠
+MISSION.
 ```
 
-to decide how a character could plausibly enter player experience.
+Character Problem:
+
+```text
+≠
+MISSION.
+```
+
+Character State simply exposes reality.
 
 ---
 
-# State and Campaign Memory
+# 101. Life Boundary
 
-Campaign Memory may reference:
+Life owns:
 
 ```text
-significant Character State transitions.
+BIOGRAPHICAL CONTINUITY
+
+LIFE EVENTS
+
+LIFE COURSE
+
+AGING.
 ```
 
-Examples:
+Character State exposes:
 
 ```text
-became council leader
-
-moved region
-
-married
-
-relationship reconciled
-
-survived disaster
-
-died.
+CURRENT RESULT
+OF THAT HISTORY.
 ```
 
 ---
 
-# State and World Ledger
+# 102. Progression Boundary
 
-World Ledger may receive character transitions when they are:
+Progression owns:
 
 ```text
-historically significant.
+LONG-TERM
+DEVELOPMENT.
 ```
 
-Not every Character State change belongs there.
-
----
-
-# State and Relationships
-
-Relationships may influence:
+Character State may expose current resulting:
 
 ```text
-goal formation
+EXPERTISE
 
-planning
+RESPONSIBILITY
 
-risk tolerance
+ROLE
 
-information sharing
-
-help seeking
-
-emotional state
-
-decision making.
-```
-
-Character State should expose enough relationship references for those influences to occur.
-
----
-
-# State and Life
-
-Life System may produce:
-
-```text
-marriage
-
-children
-
-education
-
-employment
-
-household change
-
-retirement.
-```
-
-These become:
-
-```text
-Character State transitions.
+OTHER RELEVANT
+DEVELOPMENT VIEWS.
 ```
 
 ---
 
-# State and Society
+# 103. Society Boundary
 
 Society may alter:
 
 ```text
-social roles
+EMPLOYMENT CONDITIONS
 
-employment
+SOCIAL ROLES
 
-legal status
+LEGAL CONDITIONS
 
-professional opportunities
+OPPORTUNITIES
 
-political participation
-
-community expectations.
+PUBLIC EXPECTATIONS.
 ```
 
-Character State receives the individual-level consequences.
-
----
-
-# State and World Simulation
-
-World Simulation provides:
+Character State exposes:
 
 ```text
-weather
-
-supply
-
-security
-
-infrastructure
-
-authority
-
-population
-
-information environment.
-```
-
-Character State records:
-
-```text
-HOW THIS PARTICULAR PERSON
-IS AFFECTED.
+HOW THIS PERSON
+IS CURRENTLY AFFECTED.
 ```
 
 ---
 
-# Example
+# 104. Faction Boundary
 
-World State:
+Faction membership may influence Character State through:
 
 ```text
-Regional Security:
-UNSTABLE.
+ROLE
+
+AUTHORITY
+
+RESPONSIBILITY
+
+ACCESS
+
+CURRENT OBLIGATION.
 ```
 
-Character State A:
+The Faction system owns:
 
 ```text
-Lives in fortified town.
+FACTION STATE.
+```
 
-Personal Exposure:
+The Character remains an individual Actor.
+
+---
+
+# 105. World Simulation Boundary
+
+World Simulation owns:
+
+```text
+EXTERNAL CONDITIONS.
+```
+
+Character State owns:
+
+```text
+CURRENT CHARACTER
+POSITION WITHIN
+THOSE CONDITIONS.
+```
+
+---
+
+# 106. Character State and Autonomy
+
+Autonomy reads Character State to determine:
+
+```text
+WHAT IS CURRENTLY
+RELEVANT ENOUGH
+TO CONSIDER ACTION.
+```
+
+Character State does not itself initiate action.
+
+---
+
+# 107. Character State and Decision Making
+
+Decision Making reads the relevant Character State view to determine:
+
+```text
+WHAT OPTIONS
+THIS PERSON
+WOULD PLAUSIBLY
+CONSIDER.
+```
+
+Character State does not choose.
+
+---
+
+# 108. Character State and Goals
+
+Goals and Plans owns:
+
+```text
+INTENDED FUTURE STATE.
+```
+
+Character State exposes:
+
+```text
+WHICH GOALS
+ARE CURRENTLY
+RUNTIME RELEVANT.
+```
+
+---
+
+# 109. Character State and Knowledge
+
+Knowledge and Beliefs owns:
+
+```text
+WHAT THE CHARACTER
+THINKS IS TRUE.
+```
+
+Character State exposes:
+
+```text
+WHAT INFORMATION
+IS CURRENTLY
+RELEVANT.
+```
+
+---
+
+# 110. Character State and Relationships
+
+Relationships owns:
+
+```text
+PERSISTENT
+INTER-ACTOR STATE.
+```
+
+Character State exposes:
+
+```text
+WHICH RELATIONSHIPS
+CURRENTLY MATTER.
+```
+
+---
+
+# 111. Character State and Memory
+
+Memory owns:
+
+```text
+REMEMBERED EXPERIENCE.
+```
+
+Character State exposes:
+
+```text
+WHICH MEMORIES
+ARE CURRENTLY
+RELEVANT
+IF REQUIRED.
+```
+
+---
+
+# 112. Character State Invariants
+
+## STATE-INV-001 — Every Persistent Character Has One Stable ID
+
+Identity labels may change.
+
+Character ID does not.
+
+---
+
+## STATE-INV-002 — Character State Is Time-Bound
+
+Every state view must conceptually correspond to a point or interval in time.
+
+---
+
+## STATE-INV-003 — Character State Does Not Duplicate External Ownership
+
+Authoritative systems remain authoritative.
+
+---
+
+## STATE-INV-004 — Unknown Is Valid
+
+Missing information must not be invented.
+
+---
+
+## STATE-INV-005 — Location Must Be Current, Estimated, or Unknown
+
+Never silently assume location.
+
+---
+
+## STATE-INV-006 — Player Absence Does Not Freeze State
+
+Characters continue existing.
+
+---
+
+## STATE-INV-007 — Current Activity Exists Independently of Player Presence
+
+Characters should already be doing something.
+
+---
+
+## STATE-INV-008 — World Truth and Character Belief Remain Separate
+
+No epistemic leakage.
+
+---
+
+## STATE-INV-009 — Character State May Contain Hidden State
+
+Player visibility is separate from simulation truth.
+
+---
+
+## STATE-INV-010 — Derived State Has One Source Chain
+
+Derived values must update when authoritative inputs change.
+
+---
+
+## STATE-INV-011 — Major State Change Requires Cause
+
+Current state must remain historically explainable.
+
+---
+
+## STATE-INV-012 — Death Does Not Delete Character History
+
+The Actor becomes historical.
+
+---
+
+## STATE-INV-013 — Low Resolution Does Not Remove Reality
+
+Compression reduces detail only.
+
+---
+
+## STATE-INV-014 — Promotion Cannot Rewrite History
+
+More detail must remain compatible with existing state.
+
+---
+
+## STATE-INV-015 — Demotion Cannot Delete Important Continuity
+
+Major state must persist.
+
+---
+
+## STATE-INV-016 — AI Output Cannot Silently Become Canon
+
+Generated expression does not equal authoritative state.
+
+---
+
+## STATE-INV-017 — Narrative Cannot Override State
+
+Presentation follows state.
+
+---
+
+## STATE-INV-018 — Character State Does Not Resolve World Consequence
+
+It reflects authoritative updates.
+
+---
+
+## STATE-INV-019 — Character State Must Remain Explainable
+
+Important current state must be traceable to history and authoritative systems.
+
+---
+
+## STATE-INV-020 — Character State Is a Runtime Coordination Layer
+
+It is not a monolithic human simulation system.
+
+---
+
+# 113. Development Locks
+
+Future Character State development must not introduce:
+
+```text
+DUPLICATE HUMAN PSYCHOLOGY
+
+DUPLICATE ATTRIBUTES
+
+DUPLICATE MEMORY
+
+DUPLICATE LIFE HISTORY
+
+DUPLICATE RELATIONSHIPS
+
+DUPLICATE EXPERTISE
+
+DUPLICATE GOALS
+
+DUPLICATE BELIEFS
+
+DUPLICATE WORLD STATE
+
+ONE GLOBAL TRUST SCORE
+
+ONE GLOBAL REPUTATION SCORE
+
+PLAYER-CENTRIC ACTIVITY
+
+PLAYER-PRESENCE STATE RESET
+
+OMNISCIENT CHARACTER STATE
+
+AI-INVENTED CANON
+
+NARRATIVE-OVERRIDDEN LOCATION
+
+LOW RESOLUTION
+AS LOWER REALITY
+
+DELETION OF
+DECEASED CHARACTER HISTORY.
+```
+
+---
+
+# 114. Anti-Monolith Principle
+
+Do not rebuild:
+
+```text
+CHARACTER STATE
+=
+EVERYTHING ABOUT
+THE HUMAN.
+```
+
+Project Ascension deliberately separates ownership.
+
+The correct model is:
+
+```text
+CHARACTER STATE
+=
+CURRENT COORDINATION VIEW
+
+OF
+
+DISTRIBUTED
+AUTHORITATIVE STATE.
+```
+
+---
+
+# 115. Anti-Duplication Principle
+
+If:
+
+```text
+HUMAN PSYCHOLOGY
+ALREADY OWNS
+STRESS
+```
+
+Character State should not create:
+
+```text
+A SECOND
+AUTHORITATIVE
+STRESS VALUE.
+```
+
+It may expose:
+
+```text
+CURRENT STRESS
+REFERENCE / VIEW.
+```
+
+---
+
+# 116. Anti-Player-Centrism Principle
+
+Characters do not become active because:
+
+```text
+PLAYER ENTERS
+THE AREA.
+```
+
+They were already:
+
+```text
+SOMEWHERE
+
+DOING SOMETHING
+
+WANTING SOMETHING
+
+BELIEVING SOMETHING
+
+LIVING.
+```
+
+---
+
+# 117. Anti-Scene-State Principle
+
+Do not construct Character State solely for:
+
+```text
+THE CURRENT SCENE.
+```
+
+Current state must derive from:
+
+```text
+CONTINUOUS HISTORY.
+```
+
+---
+
+# 118. Anti-Convenience Principle
+
+Do not change:
+
+```text
+LOCATION
+
+RELATIONSHIP
+
+GOAL
+
+PROFESSION
+
+CAPABILITY
+
+KNOWLEDGE
+```
+
+because the new value would be narratively useful.
+
+Causality remains mandatory.
+
+---
+
+# 119. Validation Questions
+
+For any persistent Character State, ask:
+
+```text
+WHO IS THIS PERSON?
+
+WHAT IS THEIR
+STABLE CHARACTER ID?
+
+ARE THEY ALIVE?
+
+WHERE ARE THEY?
+
+HOW CERTAIN
+IS THAT LOCATION?
+
+WHEN WAS
+THIS STATE TRUE?
+
+WHAT ARE THEY
+CURRENTLY DOING?
+
+WHAT HUMAN STATE
+IS CURRENTLY RELEVANT?
+
+WHAT GOAL
+IS CURRENTLY RELEVANT?
+
+WHAT PLAN
+IS CURRENTLY RELEVANT?
+
+WHAT DO THEY
+CURRENTLY BELIEVE
+THAT MATTERS HERE?
+
+WHAT EXPERTISE
+MATTERS HERE?
+
+WHICH RELATIONSHIPS
+MATTER HERE?
+
+WHAT RESOURCES
+CAN THEY ACCESS?
+
+WHAT RESPONSIBILITIES
+ARE CURRENTLY ACTIVE?
+
+WHAT IS STORED?
+
+WHAT IS REFERENCED?
+
+WHAT IS DERIVED?
+
+WHICH SYSTEM
+OWNS EACH VALUE?
+
+WHAT IS HIDDEN
+FROM THE PLAYER?
+
+WHAT CHANGED
+SINCE LAST UPDATE?
+
+WHY DID IT CHANGE?
+
+WHAT SIMULATION
+RESOLUTION IS REQUIRED?
+```
+
+---
+
+# 120. Contradiction Validation
+
+When state appears inconsistent:
+
+```text
+WHICH SYSTEM
+OWNS EACH FIELD?
+
+WHICH VALUE
+IS NEWER?
+
+WHAT EVENT
+CHANGED THE STATE?
+
+IS ONE VALUE
+DERIVED?
+
+IS ONE VALUE
+STALE?
+
+ARE THE TIMESTAMPS
+DIFFERENT?
+
+IS THE CONTRADICTION
+REAL
+
+OR
+
+ONLY APPARENT?
+```
+
+---
+
+# 121. Example — Character Revisited After Ten Years
+
+Last high-resolution state:
+
+```text
+2045
+
+CHARACTER:
+Elias Mercer
+
+PROFESSION:
+Mechanic
+
+LOCATION:
+Winchester
+
+GOAL:
+Open workshop.
+```
+
+Low-resolution continuity records:
+
+```text
+2047:
+Secures financing
+
+2048:
+Workshop opens
+
+2050:
+Hires first employee
+
+2052:
+Supply crisis
+
+2053:
+Expands repair operation.
+```
+
+Player returns:
+
+```text
+2055.
+```
+
+Current Character State may now expose:
+
+```text
+PROFESSION:
+Mechanic
+
+ROLE:
+Business Owner
+
+LOCATION:
+Winchester
+
+CURRENT GOAL:
+Expand manufacturing
+
+CURRENT ACTIVITY:
+Managing workshop
+
+EXPERTISE:
+Referenced from
+Expertise System
+
+RELATIONSHIPS:
+Referenced from
+Relationships
+
+LIFE HISTORY:
+Referenced from
+Life
+
+SIMULATION RESOLUTION:
+HIGH.
+```
+
+Nothing was created because:
+
+```text
+THE PLAYER RETURNED.
+```
+
+The Character simply:
+
+```text
+KEPT LIVING.
+```
+
+---
+
+# 122. Example — World State vs Character State
+
+World:
+
+```text
+REGIONAL FUEL:
 LOW.
 ```
 
-Character State B:
+Character A:
 
 ```text
-Travels remote trade routes.
+PROFESSION:
+Doctor
 
-Personal Exposure:
-HIGH.
+FUEL DEPENDENCY:
+Low
+
+PERSONAL RESERVE:
+Adequate.
+```
+
+Character B:
+
+```text
+PROFESSION:
+Transport operator
+
+FUEL DEPENDENCY:
+High
+
+PERSONAL RESERVE:
+Low.
 ```
 
 Same World State.
@@ -3547,294 +3272,228 @@ Different Character State impact.
 
 ---
 
-# State and Consequence Propagation
+# 123. Example — Hidden Character State
 
-Character actions may produce consequences.
-
-Example:
+Simulation truth:
 
 ```text
-Character:
-Engineer
+GOAL:
+Leave current Faction
 
-Action:
-Repairs water pump
-
-      ↓
-
-Infrastructure State:
-Improves
-
-      ↓
-
-Population Need:
-Reduced
-
-      ↓
-
-Character Reputation:
-Improves
+PLAN:
+Contact distant settlement.
 ```
 
-Character State both:
+Player knowledge:
 
 ```text
-receives
+UNKNOWN.
 ```
 
-and:
+Relationship system may expose:
 
 ```text
-creates
+INCREASED DISTANCE.
 ```
 
-consequences.
+Narrative may reveal the Goal only through:
+
+```text
+CAUSALLY VALID
+INFORMATION.
+```
 
 ---
 
-# Character State Consistency Rules
+# 124. Example — AI Boundary
 
-## Rule 1
+Canonical Character State contains:
 
-Every persistent character has a stable Character ID.
+```text
+FAMILY:
+No brother recorded.
+```
 
----
+AI dialogue proposes:
 
-## Rule 2
+```text
+"My brother used
+to live here."
+```
 
-Character State is time-dependent.
+Result:
 
----
+```text
+REJECT OR REGENERATE.
+```
 
-## Rule 3
-
-Character State must include a current or estimated location.
-
----
-
-## Rule 4
-
-Unknown is a valid state.
-
----
-
-## Rule 5
-
-Character knowledge must remain separate from World Truth.
+Do not update Canon to fit generated dialogue.
 
 ---
 
-## Rule 6
+# 125. Character State Runtime Model
 
-Beliefs may be incorrect.
+```text
+AUTHORITATIVE SYSTEMS
 
----
-
-## Rule 7
-
-Goals may change.
-
----
-
-## Rule 8
-
-Plans may fail.
-
----
-
-## Rule 9
-
-Characters may act without player involvement.
-
----
-
-## Rule 10
-
-Character capability is contextual.
-
----
-
-## Rule 11
-
-Profession is not identical to capability.
-
----
-
-## Rule 12
-
-Relationships belong to separate detailed relationship state.
+Humanity
+Life
+Goals / Plans
+Knowledge / Beliefs
+Expertise
+Relationships
+Progression
+World Simulation
+        ↓
+CHARACTER STATE
+ASSEMBLES
+CURRENT RUNTIME VIEW
+        ↓
+Autonomy
+Decision Making
+AI Presentation
+Narrative
+Other Systems
+READ RELEVANT VIEW
+        ↓
+ACTION / CONSEQUENCE
+        ↓
+AUTHORITATIVE SYSTEMS
+UPDATE
+        ↓
+CHARACTER STATE
+REFLECTS NEW VIEW.
+```
 
 ---
 
-## Rule 13
+# 126. Character Architecture Relationship
 
-Character State should reference rather than duplicate external authoritative state.
+```text
+HUMANITY
+↓
+WHAT KIND OF HUMAN
+IS THIS?
 
----
+LIFE
+↓
+WHAT HAPPENED
+TO THEM?
 
-## Rule 14
+CHARACTER STATE
+↓
+WHAT IS TRUE
+ABOUT THEIR
+CURRENT RUNTIME POSITION?
 
-Major state transitions require causal explanation.
+NEEDS / MOTIVATION
+↓
+WHY DOES
+CHANGE MATTER?
 
----
+GOALS / PLANS
+↓
+WHAT FUTURE
+DO THEY WANT
+AND HOW DO THEY
+CURRENTLY INTEND
+TO PURSUE IT?
 
-## Rule 15
+KNOWLEDGE / BELIEFS
+↓
+WHAT DO THEY
+THINK IS TRUE?
 
-Time itself may change Character State.
+EXPERTISE
+↓
+WHAT CAN THEY
+MEANINGFULLY DO?
 
----
+AUTONOMY
+↓
+WHY IS ACTION
+RELEVANT NOW?
 
-## Rule 16
+DECISION MAKING
+↓
+WHAT DO THEY CHOOSE?
 
-Player absence does not pause Character State.
+WORLD SIMULATION
+↓
+WHAT HAPPENS?
 
----
-
-## Rule 17
-
-Character importance may rise or fall.
-
----
-
-## Rule 18
-
-Simulation resolution may change.
-
----
-
-## Rule 19
-
-Compression must preserve meaningful history.
-
----
-
-## Rule 20
-
-Reconstruction must remain causally consistent.
-
----
-
-## Rule 21
-
-Character death does not delete Character State history.
-
----
-
-## Rule 22
-
-Private state does not automatically become player knowledge.
-
----
-
-## Rule 23
-
-AI-generated content cannot silently invent canonical Character State.
-
----
-
-## Rule 24
-
-Narrative presentation cannot override canonical Character State.
+MEMORY
++
+LIFE
++
+RELATIONSHIPS
++
+PROGRESSION
+↓
+WHAT CHANGES?
+```
 
 ---
 
-## Rule 25
+# 127. Character State North Star
 
-Mission Generation cannot convert every need into a Mission.
+Character State succeeds when an AI or simulation system can inspect a Character and quickly understand:
 
----
+```text
+WHO THEY ARE
 
-## Rule 26
+WHERE THEY ARE
 
-Player relevance and character importance remain separate.
+WHAT THEY ARE DOING
 
----
+WHEN THIS WAS TRUE
 
-## Rule 27
+WHICH SYSTEMS
+DEFINE THE REST
 
-Character State must support contradictory emotions and motivations.
+WHAT CURRENT STATE
+IS RELEVANT
 
----
+WHAT THE PLAYER
+DOES NOT KNOW
 
-## Rule 28
+AND
 
-Major relationships should preserve historical context.
+WHY THE CHARACTER
+IS IN THIS STATE.
+```
 
----
-
-## Rule 29
-
-State updates should use authoritative system ownership.
-
----
-
-## Rule 30
-
-Stale derived state must be recalculated.
+without duplicating the rest of the Project Ascension human architecture.
 
 ---
 
-## Rule 31
+# 128. Continuity Principle
 
-Characters should already be doing something before player arrival.
+If the player encounters the same Character:
 
----
+```text
+TEN YEARS LATER
+```
 
-## Rule 32
+the system should not invent:
 
-A Character State should remain explainable through history.
+```text
+A NEW VERSION
+OF THE CHARACTER.
+```
 
----
+It should derive:
 
-# Guiding Questions
-
-For any persistent character, the engine should be able to answer:
-
-**Who is this person?**
-
-**Where are they now?**
-
-**How certain is that location?**
-
-**What condition are they in?**
-
-**What are they currently doing?**
-
-**What do they need right now?**
-
-**What do they want?**
-
-**Which goal matters most?**
-
-**What are they currently trying to do about it?**
-
-**What do they know?**
-
-**What are they wrong about?**
-
-**What do they believe?**
-
-**Which values are influencing them?**
-
-**What can they realistically do?**
-
-**Which people currently matter to them?**
-
-**What promises or responsibilities exist?**
-
-**What major experiences shaped their present state?**
-
-**What changed since the last time they were relevant?**
-
-**What simulation resolution do they require?**
-
-If these questions cannot be answered, the Character State may not be sufficiently defined for autonomous simulation.
+```text
+THE CURRENT VERSION
+OF THE SAME PERSON.
+```
 
 ---
 
-# Core State Principle
+# 129. Core State Principle
 
-The Character State system should make it impossible to reduce a character to:
+A Character is not:
 
 ```text
 NAME
@@ -3846,307 +3505,83 @@ DIALOGUE
 QUEST.
 ```
 
+Nor is Character State:
+
+```text
+A GIANT OBJECT
+OWNING EVERY
+HUMAN SYSTEM.
+```
+
 Instead:
 
 ```text
 CHARACTER
 =
+A PERSISTENT ACTOR
+
+CHARACTER STATE
+=
+THE CURRENT
+RUNTIME COORDINATION VIEW
+
+OF THAT ACTOR
+
+ACROSS
+
 IDENTITY
 +
-STATE
+TIME
 +
-HISTORY
+LOCATION
 +
-INTENTION
+ACTIVITY
 +
-CAPABILITY
-+
+AUTHORITATIVE
+HUMAN STATE.
+```
+
+---
+
+# 130. Closing Principle
+
+Project Ascension needs Characters whose state remains coherent across:
+
+```text
+TIME
+
+DISTANCE
+
+PLAYER ABSENCE
+
+WORLD CHANGE
+
 RELATIONSHIPS
-+
-TIME.
+
+LIFE EVENTS
+
+SUCCESS
+
+FAILURE
+
+AGING
+
+CHANGING GOALS.
 ```
 
----
+That continuity cannot be achieved by duplicating every human system inside one Character object.
 
-# Autonomy Principle
+It is achieved by giving every concept one authoritative owner and allowing Character State to assemble the current runtime view.
 
-A character should be able to exist at:
+The central principle is:
 
-```text
-09:00
-```
-
-with:
-
-```text
-a location
-
-a goal
-
-a plan
-
-a job
-
-a relationship
-
-a problem
-
-a belief
-```
-
-even if:
-
-```text
-THE PLAYER NEVER SHOWS UP.
-```
-
-At:
-
-```text
-17:00
-```
-
-their state may be different because:
-
-```text
-THEY LIVED THE DAY.
-```
-
----
-
-# Continuity Principle
-
-If the player meets the character again:
-
-```text
-TEN YEARS LATER
-```
-
-the system should not ask:
-
-```text
-WHAT VERSION OF THIS CHARACTER
-WOULD MAKE A GOOD SCENE?
-```
-
-It should ask:
-
-```text
-WHAT HAPPENED TO THIS PERSON
-DURING THOSE TEN YEARS?
-```
-
-and derive:
-
-```text
-CURRENT CHARACTER STATE.
-```
-
----
-
-# Architectural Result
-
-With `Character_State.md` established, the Character System now has a canonical object that the remaining character subsystems can operate upon.
-
-Conceptually:
-
-```text
-Character_State.md
-      ↓
-defines
-      ↓
-WHO / WHERE / CURRENT STATE
-
-Needs_and_Motivation.md
-      ↓
-defines
-      ↓
-WHY PRESSURE EXISTS
-
-Goals_and_Plans.md
-      ↓
-defines
-      ↓
-WHAT THEY WANT TO CHANGE
-
-Knowledge_and_Beliefs.md
-      ↓
-defines
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-defines
-      ↓
-HOW THEY CHOOSE
-
-Autonomy_and_Initiative.md
-      ↓
-defines
-      ↓
-WHEN THEY ACT
-
-Profession_and_Capability.md
-      ↓
-defines
-      ↓
-WHAT THEY CAN DO
-
-Personality_and_Values.md
-      ↓
-defines
-      ↓
-HOW THEY TEND TO INTERPRET
-
-Character_Development.md
-      ↓
-defines
-      ↓
-HOW THEY CHANGE
-
-Aging_and_Life_Events.md
-      ↓
-defines
-      ↓
-HOW LIFE CHANGES THEM
-
-Character_Simulation_Resolution.md
-      ↓
-defines
-      ↓
-HOW MUCH DETAIL IS REQUIRED
-```
-
----
-
-# Current Status
-
-```text
-CHARACTER SYSTEM
-
-README.md
-FOUNDATION DEFINED
-
-Character_State.md
-FOUNDATION DEFINED
-
-Needs_and_Motivation.md
-PENDING
-
-Goals_and_Plans.md
-PENDING
-
-Knowledge_and_Beliefs.md
-PENDING
-
-Decision_Making.md
-PENDING
-
-Autonomy_and_Initiative.md
-PENDING
-
-Profession_and_Capability.md
-PENDING
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
-```
-
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/Characters/Needs_and_Motivation.md
-```
-
-This should define the pressure layer beneath Character Goals.
-
-The central question will be:
-
-```text
-WHY DOES THIS CHARACTER
-WANT ANYTHING AT ALL?
-```
-
-It should establish:
-
-```text
-physical needs
-
-social needs
-
-security needs
-
-economic needs
-
-psychological needs
-
-role-based needs
-
-relationship needs
-
-need urgency
-
-need satisfaction
-
-need conflict
-
-motivation formation
-
-competing motivations
-
-need adaptation
-
-chronic pressure
-
-temporary pressure
-```
-
-Most importantly:
-
-```text
-NEED
-MUST NOT DIRECTLY
-BECOME ACTION.
-```
-
-Instead:
-
-```text
-NEED
-+
-VALUES
-+
-PERSONALITY
-+
-KNOWLEDGE
-+
-RELATIONSHIPS
-+
-WORLD CONDITIONS
-      ↓
-MOTIVATION
-      ↓
-GOAL
-```
+> **Character State does not define the whole person. It tells the simulation where that person is now, what they are currently doing, and how to reach the authoritative systems that explain who they have become.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
+|---|---|---|
 | 0.1 | 2026-08-09 | Initial canonical Character State model defining identity, temporal state, location, physical and emotional condition, needs, motivation, goals, plans, knowledge, beliefs, personality, values, profession, skills, capability, resources, roles, responsibilities, commitments, activities, relationship references, memory, life history, simulation resolution, state ownership and transition integrity. |
+| 1.0 | 2026-08-30 | Rebuilt Character State as the runtime coordination layer for persistent Characters. Preserved stable identity, temporal state, location, existence status, current activity, authoritative references, stored-versus-derived state, visibility, contradiction detection, simulation resolution and continuity. Removed duplicated ownership of Humanity, Psychology, Memory, Life, Goals, Plans, Knowledge, Beliefs, Expertise, Relationships and Progression, replacing them with authoritative references and derived runtime views. |

@@ -2,47 +2,97 @@
 # Information State System
 
 | Field | Value |
-|--------|-------|
-| System | World Simulation |
-| Document | Information State |
-| Location | Canon/Systems/World_Simulation/Information_State.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Information, Knowledge, Perception and Verification |
-| Last Updated | 2026-08-09 |
-
-> *"The world does not become unknowable when information systems fail. It becomes harder to know which version of the world is real."*
+|---|---|
+| Project | Project Ascension |
+| Document | Information State System |
+| Location | `Canon/Systems/World_Simulation/Information_State.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | World Simulation / Information |
+| Owner | World Simulation |
+| Last Updated | 2026-09-01 |
+| Primary Function | Define how information about World Truth is observed, created, transmitted, transformed, delayed, verified, authenticated, distributed and made available to Actors without collapsing information into knowledge or belief |
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Information State system defines how information is:
+The Information State System defines how information exists and moves inside Project Ascension.
 
-- created
-- observed
-- transmitted
-- delayed
-- verified
-- distorted
-- trusted
-- remembered
-- acted upon
+It answers:
 
-inside Project Ascension's World Simulation.
+> **How can something be true in the world without everyone knowing it, and how does information move from reality into the limited, delayed and imperfect information available to Actors?**
 
-The system exists to preserve a fundamental distinction between:
+The system defines how information may be:
+
+```text
+OBSERVED
+
+RECORDED
+
+CREATED
+
+TRANSMITTED
+
+DELAYED
+
+TRANSFORMED
+
+VERIFIED
+
+AUTHENTICATED
+
+DISTRIBUTED
+
+WITHHELD
+
+DISTORTED
+
+LOST
+
+RECOVERED.
+```
+
+Its purpose is not to determine what every Actor ultimately believes.
+
+That belongs to the relevant Actor systems.
+
+---
+
+# 2. Core Principle
+
+Project Ascension must preserve:
 
 ```text
 WHAT IS TRUE
 
+≠
+
 WHAT IS OBSERVED
+
+≠
 
 WHAT IS REPORTED
 
+≠
+
+WHAT IS RECEIVED
+
+≠
+
+WHAT IS VERIFIED
+
+≠
+
+WHAT IS KNOWN
+
+≠
+
 WHAT IS BELIEVED
 
-WHAT IS ACTED UPON
+≠
+
+WHAT IS ACTED UPON.
 ```
 
 These states may differ significantly.
@@ -51,306 +101,332 @@ That difference can itself change the world.
 
 ---
 
-# Core Principle
+# 3. Information Participates in Simulation
 
-Information does not merely describe World Simulation.
+Information is not merely exposition.
 
-Information participates in World Simulation.
+Information can become causal.
 
 Conceptually:
 
 ```text
 WORLD CONDITION
-      │
-      ▼
+        ↓
 OBSERVATION
-      │
-      ▼
+        ↓
 INFORMATION
-      │
-      ▼
+        ↓
 TRANSMISSION
-      │
-      ▼
-INTERPRETATION
-      │
-      ▼
-PERCEPTION
-      │
-      ▼
+        ↓
+RECEIVER
+        ↓
+ACTOR KNOWLEDGE /
+BELIEF PROCESSING
+        ↓
 DECISION
-      │
-      ▼
+        ↓
 ACTION
-      │
-      ▼
-WORLD CONDITION
+        ↓
+WORLD CONSEQUENCE
+        ↓
+NEW WORLD CONDITION.
 ```
 
-Information therefore creates a feedback loop.
+Information therefore participates in feedback loops.
 
 ---
 
-# Information Is Not Knowledge
+# 4. Ownership Boundary
 
-The existence of information does not mean an actor knows it.
+Information State owns:
+
+```text
+information objects
+
+observations
+
+reports
+
+sources
+
+provenance
+
+timestamps
+
+information age
+
+transmission
+
+distribution
+
+latency
+
+verification
+
+authentication
+
+source reliability
+
+information reliability
+
+availability
+
+information environment
+
+signal-to-noise
+
+verification capacity
+
+information fragmentation
+
+information horizon
+
+rumor objects
+
+misinformation objects
+
+disinformation objects
+
+synthetic information objects
+
+recovered records.
+```
+
+---
+
+# 5. What Information State Does Not Own
+
+Information State does not own:
+
+```text
+World Truth
+
+Character Knowledge
+
+Character Beliefs
+
+Character Values
+
+Character Decisions
+
+Character Memory
+
+Relationship Trust
+
+Society-wide Trust
+
+Faction Goals
+
+Population Behavior
+
+Player Decisions.
+```
+
+Those systems consume information.
+
+They remain authoritative for their own state.
+
+---
+
+# 6. Reality
+
+Reality is not owned by Information State.
+
+Reality belongs to the relevant authoritative World system.
 
 Example:
 
 ```text
-Power Grid:
-CRITICAL
+SUPPLY STATE:
+
+Fuel Availability:
+CRITICAL.
 ```
 
-An engineer may know this.
+Information State may reference this truth as the subject of information.
 
-A regional authority may suspect it.
-
-The national government may have an outdated report.
-
-The public may believe the problem is temporary.
-
-The player may know nothing about it.
-
-All of these states can coexist.
+It does not become the owner of Supply.
 
 ---
 
-# Information Layers
+# 7. Reality Exists Independently of Information
 
-The Information State system should distinguish several layers.
+Canonical rule:
 
 ```text
-REALITY
-│
-▼
-OBSERVATION
-│
-▼
-RAW INFORMATION
-│
-▼
-REPORTED INFORMATION
-│
-▼
-VERIFIED INFORMATION
-│
-▼
-KNOWLEDGE
-│
-▼
-PERCEPTION
-│
-▼
-BELIEF
-│
-▼
-DECISION
+WORLD TRUTH
+EXISTS
+
+EVEN IF
+
+NO ONE KNOWS IT.
 ```
-
-Not every piece of information must pass through every layer.
-
----
-
-# Reality
-
-Reality represents the actual internal World Simulation state.
 
 Example:
 
 ```text
-Actual Fuel Supply:
-CRITICAL
+Bridge:
+DESTROYED
+
+No surviving observer:
+CONFIRMED.
 ```
 
-Reality exists independently of whether anyone knows it.
+The bridge is still destroyed.
 
-This layer should normally remain hidden from characters and players unless they possess sufficient information.
+The absence of knowledge does not create uncertainty in World Truth.
 
 ---
 
-# Observation
+# 8. Observation
 
-Observation occurs when an actor or system detects something about reality.
+Observation occurs when an Actor or system detects something about reality.
 
 Possible observers include:
 
-- humans
-- sensors
-- AI systems
-- satellites
-- cameras
-- infrastructure telemetry
-- institutions
-- player characters
+```text
+human beings
+
+sensors
+
+cameras
+
+satellites
+
+infrastructure telemetry
+
+institutions
+
+AI systems
+
+scientific instruments
+
+player Characters.
+```
+
+Observation creates evidence.
+
+It does not create truth.
+
+---
+
+# 9. Observation May Be Imperfect
+
+Observation may be:
+
+```text
+partial
+
+noisy
+
+misleading
+
+obstructed
+
+incorrect
+
+ambiguous.
+```
 
 Example:
 
 ```text
-Reality:
-Transformer temperature increasing.
+REALITY:
 
-Observation:
-Automated sensor detects abnormal heat.
+Transformer overheating.
+
+
+OBSERVATION:
+
+Temperature sensor reports
+abnormal heat.
 ```
 
-Observation may itself be incomplete or inaccurate.
+The sensor detected evidence.
+
+The complete cause may remain unknown.
 
 ---
 
-# Raw Information
+# 10. Raw Information
 
-Raw Information represents observations before significant interpretation.
+Raw Information represents evidence before substantial interpretation.
 
 Examples:
 
 ```text
-Sensor reading
-Radio transmission
-Photograph
-Video
-Eyewitness statement
-System log
-Satellite image
+sensor reading
+
+photograph
+
+video
+
+audio
+
+radio transmission
+
+system log
+
+eyewitness statement
+
+satellite image
+
+measurement
+
+recorded signal.
 ```
 
-Raw information is not automatically reliable.
-
-A sensor may be faulty.
-
-A witness may misunderstand what they saw.
-
-A photograph may lack context.
-
-A system log may be incomplete.
+Raw does not mean accurate.
 
 ---
 
-# Reported Information
+# 11. Reported Information
 
-Reported Information is information that has been communicated by an actor or institution.
+Reported Information is information communicated by an Actor, institution or system.
 
 Examples:
 
 ```text
-Government report
-News article
-Emergency broadcast
-Military briefing
-Social-media post
-Technical report
-Personal message
-Rumor
+technical report
+
+government briefing
+
+news report
+
+military report
+
+personal message
+
+emergency broadcast
+
+radio transmission
+
+social post
+
+rumor.
 ```
 
-Reporting introduces additional possibilities for:
-
-- interpretation
-- omission
-- delay
-- simplification
-- distortion
-
----
-
-# Verified Information
-
-Verified Information has undergone some process intended to establish reliability.
-
-Verification may include:
-
-- independent confirmation
-- technical validation
-- source comparison
-- direct observation
-- cryptographic authentication
-- institutional review
-- physical inspection
-
-Verification increases confidence.
-
-It does not create absolute certainty.
-
----
-
-# Knowledge
-
-Knowledge represents information accepted by an actor as sufficiently reliable for decision-making.
-
-Different actors may possess different knowledge states.
-
-Example:
+Reporting may introduce:
 
 ```text
-Regional Engineers:
-KNOW grid stability is deteriorating.
+selection
 
-Regional Government:
-BELIEVES grid stability may deteriorate.
+interpretation
 
-Public:
-BELIEVES outages are temporary.
+delay
 
-Player:
-UNKNOWN.
+omission
+
+compression
+
+framing.
 ```
 
 ---
 
-# Perception
+# 12. Information Object
 
-Perception represents an actor's broader interpretation of conditions.
-
-Perception may be influenced by:
-
-- information
-- prior experience
-- trust
-- fear
-- ideology
-- social networks
-- personal relationships
-- institutional credibility
-
-Perception may differ significantly from reality.
-
----
-
-# Belief
-
-Belief represents information or interpretation accepted as true by an actor.
-
-Belief does not require the information to be correct.
-
-Example:
-
-```text
-Actual Food Supply:
-ADEQUATE
-
-Public Belief:
-Shortage imminent
-```
-
-The belief may produce:
-
-```text
-Stockpiling
-    ↓
-Rapid demand increase
-    ↓
-Distribution pressure
-    ↓
-Actual shortage
-```
-
-False information can therefore produce real consequences.
-
----
-
-# Information Objects
-
-Important pieces of information may be represented as Information Objects.
+Important information may be represented as an Information Object.
 
 Conceptually:
 
@@ -360,27 +436,54 @@ INFORMATION OBJECT
 ├── ID
 ├── Subject
 ├── Origin
-├── Timestamp
-├── Location
-├── Content
 ├── Source
-├── Reliability
-├── Verification
-├── Visibility
+├── Observation Time
+├── Creation Time
+├── Content
+├── Location
+├── Provenance
+├── Reliability Assessment
+├── Verification State
+├── Authentication State
 ├── Sensitivity
 ├── Distribution
-└── Historical Relevance
+├── Availability
+└── Historical Relevance.
 ```
 
-Not every message or conversation requires individual simulation.
-
-Information Objects should be used for significant information.
+Not every sentence or conversation requires a persistent Information Object.
 
 ---
 
-# Information ID
+# 13. Information Object Creation Rule
 
-Important information may receive unique identifiers.
+An Information Object should normally be created when information is:
+
+```text
+strategically important
+
+causally important
+
+likely to propagate
+
+likely to be disputed
+
+likely to influence decisions
+
+historically significant
+
+important to investigation
+
+important to later verification.
+```
+
+Routine information may remain transient.
+
+---
+
+# 14. Information ID
+
+Important Information Objects may receive stable identifiers.
 
 Example:
 
@@ -392,88 +495,142 @@ Exact naming conventions may be standardized later.
 
 ---
 
-# Subject
+# 15. Subject
 
 Subject identifies what the information concerns.
 
-Examples:
+Possible subjects include:
 
 ```text
 Infrastructure
-Aurora
-Government
-Military
+
 Supply
+
 Security
+
+Authority
+
+Population
+
+Aurora
+
+Faction activity
+
+Regional conditions
+
+Scientific discovery
+
 Migration
-Regional Conditions
+
 Technology
+
+World Events.
 ```
+
+The subject does not transfer ownership.
 
 ---
 
-# Origin
+# 16. Origin
 
-Origin identifies where the information first entered the simulation.
+Origin identifies how the information first entered the information system.
 
 Examples:
 
 ```text
-Human observation
-Infrastructure telemetry
-AI analysis
-Government report
-Military intelligence
-News organization
-Civilian network
-Recovered document
+Human Observation
+
+Sensor Observation
+
+Infrastructure Telemetry
+
+AI Analysis
+
+Government Report
+
+Military Intelligence
+
+News Organization
+
+Recovered Record
+
+Scientific Measurement.
 ```
 
 ---
 
-# Timestamp
+# 17. Source
 
-Information must possess time.
+Source identifies who or what produced the Information Object or report.
+
+Examples:
+
+```text
+Named Person
+
+Anonymous Person
+
+Sensor System
+
+Institution
+
+Media Organization
+
+Military Unit
+
+Research Group
+
+Aurora
+
+Faction
+
+Community Network.
+```
+
+Source identity matters.
+
+It does not determine truth.
+
+---
+
+# 18. Timestamp
+
+Information must possess time where relevant.
+
+Possible timestamps include:
+
+```text
+Observation Time
+
+Creation Time
+
+Transmission Time
+
+Received Time
+
+Verification Time.
+```
 
 Example:
 
 ```text
-Observation Time:
-2034-07-12 08:14
+Observation:
+08:14
 
-Report Time:
-2034-07-12 09:02
+Report Created:
+09:02
 
-Received Time:
-2034-07-12 15:41
+Report Received:
+15:41.
 ```
 
-These times may differ.
-
-Information delay matters.
+Information delay may therefore be explicit.
 
 ---
 
-# Information Age
+# 19. Information Age
 
-Information becomes less reliable as conditions change.
-
-Example:
-
-```text
-Last Reliable Report:
-72 hours ago
-```
-
-The report may have been completely accurate when created.
-
-It may no longer describe current reality.
-
----
-
-# Information Decay
-
-Information should therefore possess contextual decay.
+Information may become stale.
 
 Example:
 
@@ -481,418 +638,437 @@ Example:
 Bridge Status:
 OPEN
 
-Report Age:
-14 days
+Observation Age:
+14 days.
 ```
 
-Confidence in the current bridge status should decline over time if no new information exists.
+The original observation may have been accurate.
 
-Different information types decay at different rates.
+It may no longer describe current reality.
 
 ---
 
-# Fast-Decaying Information
+# 20. Information Decay
 
-Examples include:
+Information usefulness may decline over time depending on subject volatility.
+
+Conceptually:
 
 ```text
-Security conditions
-Road access
-Fuel availability
-Weather
-Active conflict
-Emergency services
+CURRENT RELEVANCE
+=
+ORIGINAL QUALITY
++
+AGE
++
+SUBJECT VOLATILITY
++
+NEW EVIDENCE.
 ```
 
-These may change rapidly.
+Information itself does not physically decay.
+
+Its ability to describe current conditions does.
 
 ---
 
-# Slow-Decaying Information
-
-Examples include:
-
-```text
-Geography
-Major infrastructure location
-Historical events
-Long-term political structure
-Regional culture
-```
-
-These remain useful longer.
-
----
-
-# Source
-
-Information should identify its source where known.
+# 21. Fast-Changing Information
 
 Examples:
 
 ```text
-Named individual
-Anonymous individual
-Government agency
-Sensor network
-Media organization
-Military unit
-AI system
-Community network
-Player observation
+road access
+
+fuel availability
+
+active conflict
+
+weather
+
+security conditions
+
+emergency services
+
+transportation status.
 ```
 
-Source identity influences trust but should not determine truth automatically.
+These may become outdated quickly.
 
 ---
 
-# Source Reliability
+# 22. Slow-Changing Information
 
-Sources may possess historical reliability.
+Examples:
 
-Conceptually:
+```text
+geography
+
+infrastructure location
+
+historical events
+
+long-standing cultural structures
+
+major facilities.
+```
+
+These may remain useful for long periods.
+
+---
+
+# 23. Source Reliability
+
+Source Reliability represents historical or contextual reliability of a source.
+
+Conceptual states may include:
 
 ```text
 HIGH
+
 MODERATE
+
 LOW
+
 UNKNOWN
-COMPROMISED
+
+COMPROMISED.
 ```
 
-A highly reliable source may still occasionally be wrong.
+A reliable source may be wrong.
 
-A low-reliability source may occasionally provide accurate information.
+An unreliable source may be correct.
 
 ---
 
-# Information Reliability
+# 24. Information Reliability
 
-Information itself should possess a reliability assessment separate from source reliability.
+Information Reliability assesses the specific Information Object.
 
-Conceptual states:
+Conceptual values may include:
 
 ```text
 CONFIRMED
+
 HIGH
+
 MODERATE
+
 LOW
+
 UNVERIFIED
-CONTRADICTED
+
+CONTRADICTED.
 ```
 
-Example:
-
-```text
-Source Reliability:
-HIGH
-
-Information Reliability:
-LOW
-```
-
-may occur if a trusted source is reporting something outside its direct knowledge.
+Source Reliability and Information Reliability must remain separate.
 
 ---
 
-# Confidence
+# 25. Reliability Is Not Truth
 
-Confidence represents how strongly an observer believes the reliability assessment.
-
-Conceptually:
+Canonical rule:
 
 ```text
-HIGH
-MODERATE
-LOW
-UNKNOWN
+RELIABILITY
+≠
+TRUTH.
 ```
+
+Reliability is an assessment.
+
+World Truth remains external.
+
+---
+
+# 26. Confidence
+
+Confidence may describe how strongly an observer or institution holds a reliability assessment.
 
 Example:
 
 ```text
 Assessment:
-Aurora system activity detected.
+
+Possible Aurora-linked
+system activity.
+
 
 Reliability:
 MODERATE
 
-Confidence:
-LOW
+Assessment Confidence:
+LOW.
 ```
 
-The distinction allows uncertainty to remain explicit.
+Confidence therefore belongs to:
+
+```text
+THE ASSESSMENT
+
+NOT
+
+AUTHORITATIVE WORLD TRUTH.
+```
 
 ---
 
-# Verification
+# 27. Verification
 
-Verification should be represented as a process rather than a binary flag.
+Verification is a process intended to determine whether information is reliable.
 
-Possible states:
+Conceptual states:
 
 ```text
 UNVERIFIED
+
 PARTIALLY VERIFIED
+
 CORROBORATED
+
 VERIFIED
+
 DISPUTED
-DISPROVEN
+
+DISPROVEN.
+```
+
+Verification does not create truth.
+
+It increases evidence quality.
+
+---
+
+# 28. Verification Methods
+
+Verification may include:
+
+```text
+direct observation
+
+independent confirmation
+
+technical testing
+
+physical inspection
+
+source comparison
+
+cryptographic verification
+
+institutional review
+
+forensic analysis
+
+sensor correlation.
 ```
 
 ---
 
-# Independent Confirmation
+# 29. Independent Confirmation
 
-Verification becomes stronger when independent sources agree.
+Independent confirmation is stronger when different sources do not derive from the same original source.
 
 Example:
 
 ```text
-Source A:
-Regional sensor network
+Sensor Network
 
-Source B:
-Local engineering team
++
 
-Source C:
-Satellite observation
+Engineering Team
+
++
+
+Independent Satellite Observation.
 ```
 
-Agreement between independent sources may produce:
-
-```text
-Verification:
-CORROBORATED
-```
+If all three support the same claim, corroboration is meaningful.
 
 ---
 
-# False Corroboration
+# 30. False Corroboration
 
-Multiple sources do not guarantee independence.
+Multiple reports may share one source.
 
 Example:
 
 ```text
-Source A
-    ↓
-Source B repeats A
-    ↓
-Source C repeats B
+SOURCE A
+↓
+SOURCE B repeats A
+↓
+SOURCE C repeats B.
 ```
 
-This may appear to be three confirmations.
-
-In reality:
+Observed reports:
 
 ```text
-Original Sources:
-1
+3
 ```
 
-The system should distinguish source count from independent-source count where important.
+Independent sources:
+
+```text
+1.
+```
+
+The system should preserve provenance where this matters.
 
 ---
 
-# Information Provenance
+# 31. Provenance
 
-Important information should preserve provenance.
+Provenance records how information evolved.
 
-Conceptually:
+Example:
 
 ```text
 ORIGINAL OBSERVATION
-        │
-        ▼
+↓
 ENGINEERING REPORT
-        │
-        ▼
+↓
 GOVERNMENT SUMMARY
-        │
-        ▼
-NEWS REPORT
-        │
-        ▼
-PUBLIC DISCUSSION
+↓
+MEDIA REPORT
+↓
+PUBLIC RUMOR.
 ```
 
-Each transformation may alter the information.
+Each step may transform content.
 
 ---
 
-# Information Transformation
+# 32. Information Transformation
 
-Information may change through transmission.
-
-Possible transformations include:
+Information may be transformed through:
 
 ```text
-Summarization
-Translation
-Interpretation
-Classification
-Redaction
-Compression
-Editorial framing
-Memory error
-Technical conversion
+summarization
+
+translation
+
+compression
+
+interpretation
+
+classification
+
+redaction
+
+technical conversion
+
+editorial framing
+
+memory reconstruction
+
+reformatting.
 ```
 
-Transformation is not automatically malicious.
+Transformation is not inherently deceptive.
 
-It may still introduce distortion.
+But it may alter meaning.
 
 ---
 
-# Information Loss
+# 33. Information Loss
 
-Information may lose detail as it travels.
+Information may lose detail through repeated transformation.
 
 Example:
 
 ```text
 ORIGINAL:
 
-"Three substations have entered protective isolation after unexplained synchronization anomalies."
+Three substations
+entered protective isolation
+after synchronization anomalies.
 ```
 
 may become:
 
 ```text
-GOVERNMENT SUMMARY:
+SUMMARY:
 
-"Regional grid instability detected."
+Regional grid instability.
 ```
 
 which may become:
 
 ```text
-MEDIA:
+PUBLIC REPORT:
 
-"Officials report power-grid problems."
+Power-grid problems.
 ```
 
 which may become:
 
 ```text
-PUBLIC RUMOR:
+RUMOR:
 
-"The grid is failing."
+The grid is failing.
 ```
 
-The final statement is related to the original event but no longer equivalent to it.
+These statements are related.
+
+They are not equivalent.
 
 ---
 
-# Information Delay
+# 34. Transmission
 
-Information requires time to move.
+Transmission moves information from one point or Actor to another.
 
-Conceptually:
+Transmission requires:
 
 ```text
-EVENT
-  │
-  ▼
-OBSERVATION
-  │
-  ▼
-LOCAL REPORT
-  │
-  ▼
-REGIONAL ANALYSIS
-  │
-  ▼
-VERIFICATION
-  │
-  ▼
-NATIONAL AWARENESS
-  │
-  ▼
-PUBLIC COMMUNICATION
+sender
+
+channel
+
+recipient
+
+time.
 ```
-
-Every stage may create delay.
-
----
-
-# Delay Sources
-
-Possible delay sources include:
-
-- damaged communications
-- verification requirements
-- classification
-- institutional hierarchy
-- limited staffing
-- overloaded networks
-- uncertainty
-- geographic isolation
-- deliberate withholding
-
----
-
-# Information Latency
-
-Information networks may have a characteristic latency.
-
-Conceptually:
-
-```text
-REAL-TIME
-MINUTES
-HOURS
-DAYS
-WEEKS
-IRREGULAR
-UNKNOWN
-```
-
-During The Connected World, much information may move almost instantly.
-
-During The Fractured World, important information may require days or weeks to travel between regions.
-
----
-
-# Communication Capacity
-
-Information movement depends upon available communication infrastructure.
 
 Possible channels include:
 
 ```text
 Internet
+
 Cellular
-Satellite
+
 Radio
-Physical Courier
-Local Network
+
+Satellite
+
 Mesh Network
+
+Local Network
+
+Physical Courier
+
 Printed Material
-Direct Contact
+
+Direct Contact.
 ```
-
-Each channel may possess different:
-
-- speed
-- range
-- reliability
-- security
-- capacity
 
 ---
 
-# Communication Versus Information
+# 35. Communications vs Information
 
-Communications and Information must remain distinct.
+Canonical distinction:
 
 ```text
-COMMUNICATIONS
-Can information move?
+COMMUNICATION INFRASTRUCTURE
+=
+CAN INFORMATION MOVE?
 
-INFORMATION
-What is being communicated, how reliable is it, and who believes it?
+
+INFORMATION STATE
+=
+WHAT INFORMATION EXISTS,
+HOW RELIABLE IT IS,
+AND WHERE IT CAN REACH.
 ```
 
 A region may have:
@@ -901,1012 +1077,1390 @@ A region may have:
 Communications:
 FUNCTIONAL
 
-Information:
-UNSTABLE
+Information Environment:
+UNSTABLE.
 ```
 
-because large amounts of contradictory information circulate successfully.
-
-Conversely:
-
-```text
-Communications:
-DEGRADED
-
-Information:
-RELIABLE
-```
-
-may occur inside a small community with trusted local sources.
+Connectivity does not guarantee truth.
 
 ---
 
-# Information Availability
+# 36. Communication Infrastructure Ownership
 
-Availability represents how accessible information is.
+Physical communication systems belong primarily to:
 
-Conceptual states:
+```text
+Infrastructure_State.md.
+```
+
+Information State consumes their current capability.
+
+Examples:
+
+```text
+radio network availability
+
+internet availability
+
+satellite connection
+
+fiber availability
+
+cellular coverage.
+```
+
+---
+
+# 37. Information Delay
+
+Information requires time to travel and be processed.
+
+Conceptually:
+
+```text
+EVENT
+↓
+OBSERVATION
+↓
+REPORT
+↓
+TRANSMISSION
+↓
+REVIEW
+↓
+VERIFICATION
+↓
+RECIPIENT.
+```
+
+Each stage may introduce latency.
+
+---
+
+# 38. Delay Sources
+
+Delay may arise from:
+
+```text
+damaged communication
+
+verification requirements
+
+classification
+
+institutional hierarchy
+
+staff limitations
+
+network congestion
+
+geographic isolation
+
+security procedures
+
+deliberate withholding.
+```
+
+---
+
+# 39. Information Latency
+
+Information channels may have characteristic latency.
+
+Conceptually:
+
+```text
+REAL-TIME
+
+MINUTES
+
+HOURS
+
+DAYS
+
+WEEKS
+
+IRREGULAR.
+```
+
+This may change dramatically across World States.
+
+---
+
+# 40. Information Availability
+
+Information Availability represents how accessible relevant information is within a region or network.
+
+Conceptual values:
 
 ```text
 ABUNDANT
+
 AVAILABLE
+
 LIMITED
+
 SCARCE
-ISOLATED
+
+ISOLATED.
 ```
 
-High availability does not imply high reliability.
+Availability does not imply reliability.
 
 ---
 
-# Information Reliability Environment
+# 41. Information Environment
 
-A region should maintain a broader Information Reliability state.
+Regional information conditions may be summarized through an Information Environment state.
 
 Conceptual values:
 
 ```text
 RELIABLE
+
 CONTESTED
+
 UNSTABLE
+
 FRAGMENTED
-LOCALIZED
+
+LOCALIZED.
 ```
+
+This is an environment diagnostic.
+
+It does not represent what every individual believes.
 
 ---
 
-# Reliable
+# 42. Reliable Environment
 
 ```text
 RELIABLE
 ```
 
-Most important information can be authenticated and broadly trusted.
+means significant operational information can normally be:
+
+```text
+obtained
+
+authenticated
+
+cross-checked
+
+updated
+
+shared.
+```
 
 Disagreement still exists.
 
-The information environment remains functional.
+The environment remains functional.
 
 ---
 
-# Contested
+# 43. Contested Environment
 
 ```text
 CONTESTED
 ```
 
-Multiple interpretations compete, but verification remains broadly possible.
-
-Trust may vary by source.
+means multiple competing interpretations exist while meaningful verification remains possible.
 
 ---
 
-# Unstable
+# 44. Unstable Environment
 
 ```text
 UNSTABLE
 ```
 
-Reliable and unreliable information circulate together.
+means:
 
-Verification is increasingly difficult.
+```text
+reliable information
 
-Public understanding may shift rapidly.
+unreliable information
+
+rapid reporting
+
+contradiction
+
+verification limits
+```
+
+coexist in ways that make current conditions difficult to establish.
 
 ---
 
-# Fragmented
+# 45. Fragmented Information Environment
 
 ```text
 FRAGMENTED
 ```
 
-Different groups operate inside substantially different information environments.
+means different institutions, communities or networks possess substantially different information environments.
 
-There is no consistently shared understanding of major events.
+Example:
+
+```text
+Military:
+A + B
+
+Government:
+A
+
+Local Community:
+D
+
+Public Media:
+A interpreted as C.
+```
+
+No single shared informational picture exists.
 
 ---
 
-# Localized
+# 46. Localized Information Environment
 
 ```text
 LOCALIZED
 ```
 
-Reliable information exists primarily through local observation and trusted nearby networks.
+means reliable information remains strongest at local or nearby scales.
 
-Knowledge of distant events becomes limited or uncertain.
+A community may know:
 
-Localized does not mean uninformed.
+```text
+its own roads
 
-It means the reliable information horizon has become geographically smaller.
+its own water supply
+
+nearby security conditions
+
+local harvest conditions
+```
+
+extremely well while possessing little reliable knowledge about distant regions.
 
 ---
 
-# Information Horizon
+# 47. Information Horizon
 
-Every actor or region may possess an Information Horizon.
+Information Horizon describes the geographic scale at which reliable current information is normally available.
 
-This represents the geographic distance at which reliable current knowledge is normally available.
-
-Conceptually:
+Conceptual values:
 
 ```text
 GLOBAL
+
 NATIONAL
+
 REGIONAL
+
 LOCAL
-IMMEDIATE
+
+IMMEDIATE.
 ```
 
-Example:
+This may apply to:
 
 ```text
-The Connected World:
+regions
 
-Information Horizon:
-GLOBAL
+institutions
+
+networks
+
+specific Actors.
 ```
-
-During later fragmentation:
-
-```text
-Settlement:
-
-Information Horizon:
-LOCAL
-```
-
-The settlement may understand its own valley extremely well while knowing almost nothing reliable about another continent.
 
 ---
 
-# Information Resolution
+# 48. Information Horizon Is Contextual
 
-Information may also vary in detail.
+An Actor may have:
+
+```text
+Local Security Horizon:
+HIGHLY RELIABLE
+
+National Political Horizon:
+LIMITED
+
+Global Scientific Horizon:
+MODERATE.
+```
+
+Avoid reducing all knowledge reach to one universal number.
+
+---
+
+# 49. Information Resolution
+
+The same World Truth may exist at different informational resolutions.
 
 Example:
 
 ```text
 LOCAL:
 
-Hospital generator fuel:
-18 hours remaining.
+Hospital generator
+has 18 hours of fuel.
+
 
 REGIONAL:
 
-Healthcare infrastructure under pressure.
+Healthcare infrastructure
+under pressure.
+
 
 NATIONAL:
 
-Medical services experiencing disruption.
+Medical services
+experiencing disruption.
 ```
 
-The same reality is represented at different resolutions.
+These are not necessarily contradictory.
+
+They differ in detail.
 
 ---
 
-# Institutional Knowledge
+# 50. Verification Infrastructure
 
-Institutions maintain their own knowledge states.
-
-Examples:
+Verification may depend on specialized systems such as:
 
 ```text
-Government
-Military
-Corporations
-Emergency Management
-Infrastructure Operators
-Research Organizations
-Healthcare Systems
+digital signatures
+
+identity systems
+
+trusted hardware
+
+secure timestamps
+
+sensor authentication
+
+forensic infrastructure
+
+institutional verification networks.
 ```
 
-Institutional knowledge should not automatically be shared between institutions.
+Physical verification infrastructure may belong to Infrastructure.
+
+Information State owns the verification process and resulting information state.
 
 ---
 
-# Knowledge Compartments
+# 51. Authentication
 
-Information may be compartmentalized.
+Authentication answers:
+
+```text
+DID THIS INFORMATION
+ACTUALLY COME FROM
+THE CLAIMED SOURCE?
+```
+
+Authentication is distinct from truth.
 
 Example:
 
 ```text
-MILITARY:
-Knows Event A.
+Authentic Government Message:
+YES
 
-INFRASTRUCTURE OPERATORS:
-Know Event B.
-
-RESEARCH:
-Knows Event C.
-
-GOVERNMENT LEADERSHIP:
-Receives partial summaries of A, B and C.
+Message Content:
+INCORRECT.
 ```
 
-No single institution necessarily possesses the complete picture.
-
-This is a core Project Ascension principle.
+Both can be true.
 
 ---
 
-# Classification
+# 52. Synthetic Information
 
-Information may be intentionally restricted.
-
-Conceptual levels may include:
+Synthetic information may include:
 
 ```text
-PUBLIC
-RESTRICTED
-CONFIDENTIAL
-CLASSIFIED
-HIGHLY RESTRICTED
+generated video
+
+generated audio
+
+fabricated documents
+
+synthetic identities
+
+synthetic eyewitness accounts
+
+altered sensor feeds
+
+AI-generated reports.
 ```
 
-Exact institutional terminology may vary.
+Synthetic does not automatically mean false or malicious.
 
-Classification affects distribution.
-
-It does not affect whether the information is true.
+The key problem is provenance and authentication.
 
 ---
 
-# Need to Know
+# 53. Authentication Crisis
 
-Restricted information may only move to actors who require it.
-
-This can improve security.
-
-It may also create dangerous information silos.
-
-Example:
+Advanced generative systems weaken older assumptions such as:
 
 ```text
-Research discovers anomaly.
-        │
-        X
-Infrastructure operators never receive details.
-        │
-        ▼
-Operators interpret effects as technical faults.
+SEEING
+=
+VERIFYING.
 ```
 
-The decisions made by both groups may be rational based upon the information available to them.
-
----
-
-# Institutional Information Failure
-
-Information failure may occur even when every participant acts competently.
-
-Possible causes include:
-
-- compartmentalization
-- incompatible terminology
-- reporting delays
-- missing context
-- classification
-- technical specialization
-- organizational boundaries
-
-This is preferable to explaining systemic failure through universal incompetence.
-
----
-
-# Public Information
-
-Public Information represents information broadly available to civilian populations.
-
-Sources may include:
-
-- media
-- government announcements
-- social networks
-- local observation
-- personal contacts
-- community organizations
-- rumors
-
-Public Information should not be treated as one unified knowledge state.
-
----
-
-# Public Perception
-
-Population groups may hold different beliefs.
-
-Example:
-
-```text
-GROUP A:
-Believes emergency measures are necessary.
-
-GROUP B:
-Believes government is hiding information.
-
-GROUP C:
-Believes crisis is temporary.
-
-GROUP D:
-Does not know what to believe.
-```
-
-These beliefs may coexist inside one region.
-
----
-
-# Trust
-
-Trust is essential to Information State.
-
-Trust may exist between an observer and a source.
-
-Examples:
-
-```text
-Public → Government
-Public → Local Authorities
-Public → Media
-Public → Scientists
-Public → Military
-Community → Outsiders
-Player → Faction
-```
-
-Trust should belong primarily to relationship and society systems.
-
-Information State should reference trust when determining whether information is accepted.
-
----
-
-# Trust Is Not Accuracy
-
-A trusted source may be wrong.
-
-An untrusted source may be correct.
-
-Therefore:
-
-```text
-SOURCE TRUST
-≠
-INFORMATION TRUTH
-```
-
-This distinction must remain canonical.
-
----
-
-# Credibility
-
-Credibility may be derived from:
-
-- source trust
-- historical reliability
-- evidence
-- independent confirmation
-- consistency
-- direct observation
-
-Credibility determines how likely information is to influence belief.
-
----
-
-# Rumor
-
-Rumor is unverified information transmitted socially.
-
-Rumor is not automatically false.
-
-Possible rumor states include:
-
-```text
-TRUE
-PARTIALLY TRUE
-FALSE
-OUTDATED
-MISINTERPRETED
-UNKNOWN
-```
-
-Characters normally do not know the underlying truth state.
-
----
-
-# Rumor Propagation
-
-Rumor may spread based upon:
-
-- emotional intensity
-- relevance
-- trust
-- social connections
-- information scarcity
-- fear
-- repetition
-
-Example:
-
-```text
-INFORMATION SCARCITY
-        +
-HIGH FEAR
-        +
-PERSONAL RELEVANCE
-        =
-HIGH RUMOR PROPAGATION
-```
-
----
-
-# Rumor Mutation
-
-Rumors may change as they spread.
-
-Example:
-
-```text
-ORIGINAL:
-
-"Fuel deliveries may be delayed."
-```
-
-becomes:
-
-```text
-"Fuel deliveries have stopped."
-```
-
-which becomes:
-
-```text
-"There will be no more fuel."
-```
-
-Mutation should be plausible rather than purely random.
-
----
-
-# Misinformation
-
-Misinformation is inaccurate information shared without necessarily intending deception.
-
-Possible causes include:
-
-- misunderstanding
-- outdated information
-- faulty sensors
-- poor interpretation
-- rumor
-- incomplete context
-
----
-
-# Disinformation
-
-Disinformation is information deliberately created or altered to deceive.
-
-Possible actors include:
-
-- governments
-- factions
-- criminal organizations
-- corporations
-- individuals
-- hostile intelligence services
-
-Disinformation should require motive and capability.
-
-It should not appear merely to make the world confusing.
-
----
-
-# Synthetic Information
-
-Advanced generative systems make synthetic information increasingly important.
-
-Examples include:
-
-- synthetic video
-- synthetic audio
-- fabricated documents
-- generated identities
-- artificial eyewitness accounts
-- manipulated sensor feeds
-
-Synthetic content does not automatically mean malicious content.
-
-The problem is authentication.
-
----
-
-# Authentication Crisis
-
-As synthetic media becomes increasingly realistic:
+Project Ascension should preserve:
 
 ```text
 SEEING
 ≠
-VERIFYING
+AUTHENTICATING
+
+AUTHENTICATING
+≠
+PROVING TRUTH.
 ```
 
-Video, audio and photographs lose some of their previous evidentiary authority.
-
-This may increase dependence upon:
-
-- cryptographic signatures
-- trusted hardware
-- source chains
-- multiple independent observations
-- direct personal relationships
+This distinction may become historically significant.
 
 ---
 
-# Verification Infrastructure
+# 54. Verification Capacity
 
-Modern societies may therefore depend upon infrastructure specifically designed to establish authenticity.
+Regions or institutions may possess different Verification Capacity.
 
-Examples:
-
-```text
-Digital signatures
-Identity systems
-Trusted timestamping
-Hardware authentication
-Secure sensor networks
-Institutional verification networks
-```
-
-Failure of verification infrastructure may destabilize information even while communications remain operational.
-
----
-
-# Verification Capacity
-
-Regions may possess a Verification Capacity state.
-
-Conceptually:
+Conceptual values:
 
 ```text
 HIGH
+
 MODERATE
+
 LOW
+
 MINIMAL
-NONE
+
+NONE.
 ```
 
-High verification capacity allows questionable information to be resolved quickly.
+High capacity allows disputed information to be investigated more effectively.
 
 Low capacity allows uncertainty to persist.
 
 ---
 
-# Information Saturation
+# 55. Verification Capacity Dependencies
 
-Too much information can create problems similar to too little information.
-
-Example:
+Verification Capacity may depend on:
 
 ```text
-Thousands of reports
+technical infrastructure
+
+qualified personnel
+
+trusted institutions
+
+communication
+
+physical access
+
+authentication systems
+
+independent sources.
+```
+
+Information State may consume these capabilities from other systems.
+
+---
+
+# 56. Information Saturation
+
+Too much information may reduce effective understanding.
+
+Conceptually:
+
+```text
+HIGH VOLUME
 +
-Contradictory claims
+CONTRADICTORY REPORTS
 +
-Limited verification capacity
-=
-INFORMATION SATURATION
+LOW VERIFICATION CAPACITY
+↓
+INFORMATION SATURATION.
 ```
 
 Important signals may become difficult to identify.
 
 ---
 
-# Signal-to-Noise
+# 57. Signal-to-Noise
 
-A region may therefore maintain a conceptual Signal-to-Noise state.
+Signal-to-Noise describes how easy it is to identify relevant reliable information among available information.
+
+Conceptual values:
 
 ```text
 HIGH
+
 MODERATE
+
 LOW
-CRITICAL
+
+CRITICAL.
 ```
 
-High means useful information is relatively easy to identify.
-
-Low means useful information is buried inside large amounts of irrelevant or unreliable material.
+High information volume may coexist with low Signal-to-Noise.
 
 ---
 
-# Information Pressure
+# 58. Information Pressure
 
-Information Pressure represents forces degrading the information environment.
+Information Pressure represents forces degrading the reliability or usability of an information environment.
 
-Sources may include:
-
-- misinformation
-- disinformation
-- synthetic media
-- communication failure
-- information saturation
-- institutional secrecy
-- contradictory reporting
-- rumor
-- loss of verification infrastructure
-
-Conceptual scale:
+Possible sources include:
 
 ```text
-NONE
-LOW
-MODERATE
-HIGH
-SEVERE
-CRITICAL
+misinformation
+
+disinformation
+
+synthetic media
+
+communication disruption
+
+information saturation
+
+institutional secrecy
+
+contradictory reporting
+
+rumor
+
+verification failure
+
+rapidly changing World State.
 ```
 
 ---
 
-# Information Resilience
+# 59. Information Resilience
 
-Information Resilience represents the ability to maintain reliable shared knowledge under pressure.
+Information Resilience represents the ability of an information environment to continue producing usable, verifiable information under pressure.
 
-Sources may include:
+Possible sources include:
 
-- trusted local institutions
-- strong journalism
-- technical verification
-- redundant communications
-- community trust
-- direct observation
-- independent information sources
+```text
+independent sources
+
+trusted local reporting
+
+verification systems
+
+redundant communication
+
+direct observation
+
+strong provenance
+
+experienced analysts
+
+stable institutional processes.
+```
+
+Trust may contribute.
+
+Trust remains externally owned.
 
 ---
 
-# Information Fragmentation
+# 60. Shared Operational Reality
 
-Information Fragmentation occurs when groups no longer share a common informational environment.
+A society does not require universal agreement.
+
+But coordinated action often requires agreement on enough operational facts.
+
+Examples:
+
+```text
+Storm approaching
+
+Bridge closed
+
+Hospital capacity limited
+
+Evacuation Route B open.
+```
+
+Information State may derive a:
+
+```text
+SHARED OPERATIONAL REALITY
+```
+
+diagnostic from information convergence.
+
+It must not own population beliefs or social cohesion.
+
+---
+
+# 61. Shared Reality Boundary
+
+Detailed collective belief belongs primarily to:
+
+```text
+Society.
+```
+
+Information State may answer:
+
+```text
+DO MULTIPLE
+INFORMATION NETWORKS
+CURRENTLY CONVERGE
+ON THE SAME
+OPERATIONAL FACTS?
+```
+
+That is narrower than:
+
+```text
+DOES SOCIETY
+AGREE?
+```
+
+---
+
+# 62. Institutional Information
+
+Institutions may possess access to distinct information networks.
+
+Examples:
+
+```text
+Government
+
+Military
+
+Infrastructure Operators
+
+Research Institutions
+
+Healthcare Systems
+
+Companies
+
+Emergency Management.
+```
+
+Information State may represent:
+
+```text
+WHAT INFORMATION
+REACHED THE INSTITUTION.
+```
+
+The institution's resulting knowledge and decisions belong to the relevant institutional or Actor system.
+
+---
+
+# 63. Information Compartments
+
+Information may be compartmentalized.
 
 Example:
 
 ```text
-REGION
+MILITARY
+knows A.
 
-Government Network:
-Situation A
+INFRASTRUCTURE OPERATORS
+know B.
 
-Military Network:
-Situation A + B
+RESEARCH
+knows C.
 
-Public Media:
-Situation A interpreted as C
-
-Local Community:
-Situation D
-
-Remote Settlements:
-Information 10 days old
+GOVERNMENT LEADERSHIP
+receives summaries
+of A and B.
 ```
 
-Everyone is operating inside a different picture of reality.
+No Actor automatically receives the complete picture.
 
 ---
 
-# Shared Reality
+# 64. Classification
 
-A functioning society does not require universal agreement.
+Information may be intentionally restricted.
 
-It does require enough shared reality for coordination.
-
-Shared Reality represents the degree to which actors agree on basic facts necessary for collective action.
-
-Conceptually:
+Conceptual examples:
 
 ```text
-STRONG
-FUNCTIONAL
-STRAINED
-FRAGMENTED
-ABSENT
+PUBLIC
+
+RESTRICTED
+
+CONFIDENTIAL
+
+CLASSIFIED
+
+HIGHLY RESTRICTED.
 ```
+
+Classification affects access and distribution.
+
+It does not affect truth.
 
 ---
 
-# Shared Reality Example
+# 65. Need-to-Know
 
-Actors may disagree politically while agreeing that:
+Restricted distribution may protect information.
 
-```text
-A storm is approaching.
-
-Bridge 7 is closed.
-
-Hospital capacity is limited.
-
-Evacuation Route B is open.
-```
-
-Coordination remains possible.
-
-If even these operational facts become disputed, coordination becomes much harder.
-
----
-
-# Information and Authority
-
-Authority depends partly upon the ability to communicate credible information.
+It may also create silos.
 
 Example:
 
 ```text
-Authority:
-FUNCTIONAL
+RESEARCH
+detects anomaly
 
-Public Trust:
-MODERATE
+↓
 
-Information Reliability:
-HIGH
-```
-
-may allow successful emergency coordination.
-
-But:
-
-```text
-Authority:
-FUNCTIONAL
-
-Public Trust:
-LOW
-
-Information Reliability:
-UNSTABLE
-```
-
-may cause official instructions to be ignored.
-
----
-
-# Information and Infrastructure
-
-Infrastructure creates information through:
-
-- telemetry
-- sensors
-- status reports
-- operator communication
-
-Infrastructure also depends upon information for:
-
-- coordination
-- maintenance
-- load balancing
-- repair
-- resource allocation
-
-Therefore:
-
-```text
-INFRASTRUCTURE
-      ↕
 INFORMATION
+RESTRICTED
+
+↓
+
+INFRASTRUCTURE OPERATORS
+lack context
+
+↓
+
+TECHNICAL EFFECTS
+misinterpreted.
 ```
 
-The relationship is bidirectional.
+Every Actor may still act rationally from the information available to them.
 
 ---
 
-# Information and Population
+# 66. Institutional Information Failure
 
-Population behavior responds primarily to perceived conditions.
+Institutional information failure may occur without incompetence.
+
+Possible causes include:
+
+```text
+compartmentalization
+
+specialized terminology
+
+classification
+
+reporting delay
+
+organizational boundaries
+
+different evidence standards
+
+incompatible systems
+
+missing context.
+```
+
+This is an important Project Ascension principle.
+
+---
+
+# 67. Public Information
+
+Public Information represents information broadly available through civilian channels.
+
+Possible channels include:
+
+```text
+media
+
+government communication
+
+social networks
+
+community organizations
+
+personal networks
+
+radio
+
+local observation
+
+rumor.
+```
+
+Public Information is not one unified knowledge state.
+
+---
+
+# 68. Trust Boundary
+
+Information State may consume Trust.
+
+It does not own Trust.
+
+Examples:
+
+```text
+Person → Person Trust
+→ Relationships
+
+General Social Trust
+→ Humanity / Society
+
+Institutional Trust
+→ Society / relevant Actor state.
+```
+
+Information State uses Trust when modeling information acceptance or propagation.
+
+---
+
+# 69. Trust Is Not Accuracy
+
+Canonical principle:
+
+```text
+TRUST
+≠
+TRUTH.
+```
+
+A trusted source may be wrong.
+
+An untrusted source may be correct.
+
+---
+
+# 70. Credibility
+
+Credibility may be a derived assessment influenced by:
+
+```text
+source reliability
+
+Trust
+
+evidence quality
+
+verification
+
+provenance
+
+consistency
+
+direct observation.
+```
+
+Credibility may influence whether an Actor accepts information.
+
+The resulting belief belongs to that Actor.
+
+---
+
+# 71. Rumor
+
+A Rumor is:
+
+> **Unverified information transmitted socially or informally.**
+
+Rumor is not automatically false.
+
+Underlying truth states may include:
+
+```text
+TRUE
+
+PARTIALLY TRUE
+
+FALSE
+
+OUTDATED
+
+MISINTERPRETED.
+```
+
+The recipients may not know which applies.
+
+---
+
+# 72. Rumor Propagation
+
+Rumor propagation may be influenced by:
+
+```text
+relevance
+
+emotional intensity
+
+Trust
+
+social connectivity
+
+information scarcity
+
+repetition
+
+uncertainty.
+```
+
+The exact human propagation behavior belongs partly to Society and Characters.
+
+Information State owns the evolving rumor object and its movement.
+
+---
+
+# 73. Rumor Mutation
+
+Rumors may change during transmission.
 
 Example:
 
 ```text
-ACTUAL SUPPLY:
-ADEQUATE
+ORIGINAL:
 
-PERCEIVED SUPPLY:
-CRITICAL
+Fuel deliveries
+may be delayed.
 ```
 
-Population behavior may create:
+becomes:
 
 ```text
-Stockpiling
-Panic purchasing
-Migration
-Political pressure
+Fuel deliveries
+have stopped.
 ```
 
-which may alter actual Supply.
+then:
+
+```text
+There will be
+no more fuel.
+```
+
+Mutation should remain causally plausible.
 
 ---
 
-# Information and Security
+# 74. Misinformation
 
-Security information may strongly influence behavior.
+Misinformation is inaccurate information spread without necessary intent to deceive.
+
+Possible causes include:
+
+```text
+misunderstanding
+
+faulty observation
+
+outdated information
+
+incorrect interpretation
+
+rumor mutation
+
+missing context
+
+faulty sensors.
+```
+
+---
+
+# 75. Disinformation
+
+Disinformation is information deliberately created or altered to mislead.
+
+Potential originators may include:
+
+```text
+governments
+
+Factions
+
+companies
+
+criminal groups
+
+intelligence organizations
+
+individuals
+
+AI systems.
+```
+
+Disinformation requires:
+
+```text
+ACTOR
++
+MOTIVE
++
+CAPABILITY
++
+ACTION.
+```
+
+Information State does not invent malicious information without causal origin.
+
+---
+
+# 76. Information Operations
+
+Deliberate information manipulation is an Actor action.
+
+Information State resolves:
+
+```text
+what information object was created
+
+where it propagated
+
+how it transformed
+
+what evidence exists.
+```
+
+Actor systems own:
+
+```text
+why it was created.
+```
+
+---
+
+# 77. Self-Fulfilling Information
+
+Information can produce behavior that makes the reported condition real.
 
 Example:
 
 ```text
-Actual Security:
-Stable
-
-Rumor:
-Armed groups approaching.
+FALSE SHORTAGE REPORT
+↓
+STOCKPILING
+↓
+RETAIL INVENTORY FALLS
+↓
+ACTUAL LOCAL SHORTAGE.
 ```
 
-Possible consequences:
+Information did not directly change Supply.
 
-```text
-Roadblocks
-Defensive mobilization
-Population flight
-Accidental confrontation
-```
+It changed Actor behavior.
 
-The rumor may create the instability it predicted.
+Behavior changed Supply.
 
 ---
 
-# Self-Fulfilling Information
-
-Information can therefore become self-fulfilling.
-
-Conceptually:
-
-```text
-BELIEF
-  ↓
-BEHAVIOR
-  ↓
-WORLD CHANGE
-  ↓
-BELIEF BECOMES TRUE
-```
-
-This should be possible but not inevitable.
-
----
-
-# Self-Defeating Information
+# 78. Self-Defeating Information
 
 Information may also prevent the event it predicts.
 
 Example:
 
 ```text
-Warning:
+ACCURATE WARNING:
+
 Water shortage likely.
-
-Population Response:
-Conservation.
-
-Result:
-Shortage avoided.
+↓
+CONSERVATION
+↓
+DEMAND FALLS
+↓
+SHORTAGE AVOIDED.
 ```
 
-The prediction was accurate enough to change behavior.
-
-Because behavior changed, the predicted event never occurred.
-
-This should not make the original warning "wrong."
+The warning was not wrong because the predicted future was prevented.
 
 ---
 
-# Information Feedback
+# 79. Prediction vs Truth
 
-This creates one of the most important simulation loops:
+Predictions are information about possible futures.
+
+They are not future World Truth.
+
+Canonical principle:
 
 ```text
-STATE
-  ↓
-INFORMATION
-  ↓
-PERCEPTION
-  ↓
-BEHAVIOR
-  ↓
-STATE
+PREDICTION
+≠
+FUTURE.
 ```
 
-World Simulation must allow this loop to operate in both positive and negative directions.
+This applies to:
+
+```text
+human analysts
+
+institutions
+
+AI systems
+
+Aurora.
+```
 
 ---
 
-# Player Knowledge
+# 80. Aurora Information Boundary
 
-The player should possess a separate Knowledge State.
+Aurora may possess extraordinary information access and verification capability.
 
-Player knowledge may come from:
+But:
 
-- observation
-- conversations
-- radio
-- documents
-- terminals
-- media
-- reconnaissance
-- recovered records
-- technical analysis
+```text
+AURORA MODEL
+≠
+WORLD TRUTH.
+```
 
-The player should not receive direct access to internal World State values unless gameplay specifically justifies it.
+Aurora may receive:
+
+```text
+sensor data
+
+network information
+
+documents
+
+reports
+
+human communication
+
+simulation output.
+```
+
+She may still encounter:
+
+```text
+missing sensors
+
+compromised sensors
+
+deception
+
+latency
+
+physical isolation
+
+uncertain interpretation.
+```
 
 ---
 
-# Player Information Entry
+# 81. Aurora as Information Source
+
+Aurora herself may become an Information Source.
+
+Example:
+
+```text
+Source:
+Aurora
+
+Claim:
+Bridge failure expected
+within 48 hours.
+```
+
+The source may be extraordinarily capable.
+
+The claim remains:
+
+```text
+INFORMATION
+
+NOT
+
+PRE-CREATED
+WORLD TRUTH.
+```
+
+---
+
+# 82. Character Knowledge Boundary
+
+Information State may deliver information to a Character.
+
+It does not automatically create Character Knowledge.
 
 Conceptually:
 
 ```text
-PLAYER KNOWLEDGE
+INFORMATION RECEIVED
+↓
+CHARACTER EPISTEMIC PROCESSING
+↓
+Knowledge_and_Beliefs.md.
+```
 
-Subject:
-Northern Virginia Fuel Supply
+The Character may:
 
-Known State:
-Constrained
+```text
+accept
 
-Source:
-Regional logistics officer
+reject
 
-Source Trust:
-High
+doubt
 
-Information Age:
-8 hours
+misunderstand
 
-Verification:
-Unverified
+partially understand
 
-Player Confidence:
-Moderate
+ignore
+
+investigate.
 ```
 
 ---
 
-# Player Uncertainty
+# 83. Character Belief Boundary
 
-Player-facing information should often use natural uncertainty.
+Information State must never directly assign:
 
-Examples:
+```text
+Character believes X.
+```
+
+That state belongs to:
+
+```text
+Canon/Systems/Characters/
+Knowledge_and_Beliefs.md
+```
+
+Information State provides evidence and provenance.
+
+The Character system determines the epistemic result.
+
+---
+
+# 84. Player Knowledge Boundary
+
+Player-facing information must remain separate from authoritative simulation truth.
+
+The player may receive information through:
+
+```text
+observation
+
+dialogue
+
+radio
+
+documents
+
+media
+
+records
+
+interfaces
+
+investigation
+
+technical analysis.
+```
+
+Narrative and player-facing systems determine presentation.
+
+Information State supplies the underlying information objects.
+
+---
+
+# 85. No Omniscient Player Interface
+
+Avoid:
+
+```text
+Bridge:
+DESTROYED
+```
+
+displayed simply because World Simulation knows it.
+
+Prefer:
+
+```text
+Bridge:
+Reported Closed
+
+Source:
+Regional Radio
+
+Report Age:
+6 hours
+
+Verification:
+Unconfirmed.
+```
+
+unless the player directly verified the bridge.
+
+---
+
+# 86. Natural Uncertainty
+
+Player-facing information may use language such as:
 
 ```text
 Confirmed
+
 Likely
+
 Reported
+
 Unconfirmed
+
 Disputed
-Unknown
+
+Unknown.
 ```
 
-rather than revealing simulation percentages.
+Avoid exposing hidden simulation confidence percentages unless the interface has an in-world reason to provide them.
 
 ---
 
-# Player Investigation
+# 87. Investigation
 
-Players may improve information through:
+Characters may improve information through actions such as:
 
-- direct observation
-- source comparison
-- technical analysis
-- finding original records
-- contacting trusted sources
-- physical reconnaissance
+```text
+direct observation
 
-Information therefore becomes something the player can actively acquire.
+source comparison
+
+technical analysis
+
+reconnaissance
+
+physical inspection
+
+contacting sources
+
+recovering original documents
+
+authentication testing.
+```
+
+Action Resolution determines what evidence becomes available.
 
 ---
 
-# Information as a Resource
+# 88. Information as Strategic Resource
 
-Reliable information can possess strategic value.
+Reliable information may possess strategic value.
 
 Examples:
 
@@ -1915,405 +2469,220 @@ Which roads remain open?
 
 Where is fuel available?
 
-Which settlement has medicine?
+Which hospital still operates?
 
-Who controls the bridge?
+Who controls the rail terminal?
 
-Is the radio warning genuine?
+Is the evacuation message authentic?
 
-Is the evacuation order authentic?
+Which region has food surplus?
 ```
 
-Knowledge may be as valuable as physical resources.
+Information may therefore affect:
+
+```text
+trade
+
+travel
+
+security
+
+migration
+
+planning
+
+Authority
+
+Faction strategy.
+```
 
 ---
 
-# Information Trade
+# 89. Information Trade
 
-During The Fractured World, reliable information may itself become tradable.
+Information itself may be exchanged.
 
 Examples:
 
 ```text
-Route information
-Weather information
-Settlement locations
-Security reports
-Market conditions
-Technical knowledge
-Regional maps
+route information
+
+security reports
+
+weather forecasts
+
+resource intelligence
+
+technical knowledge
+
+maps
+
+institutional records.
 ```
 
-Information networks may become important regional institutions.
+The economic or social transaction belongs to the relevant Actor systems.
+
+Information State owns the information object being exchanged.
 
 ---
 
-# Information Brokers
+# 90. Information Brokers
 
-Later societies may develop specialized roles such as:
+Fragmented societies may develop roles such as:
 
-- radio operators
-- couriers
-- scouts
-- archivists
-- traders
-- verification specialists
-- intelligence networks
+```text
+radio operators
 
-These actors help rebuild larger information horizons.
+couriers
+
+scouts
+
+archivists
+
+verification specialists
+
+mapmakers
+
+intelligence networks
+
+regional reporters.
+```
+
+These are Characters or institutions.
+
+Information State provides the environment in which those roles become valuable.
 
 ---
 
-# Local Knowledge
+# 91. Local Knowledge
 
-Fragmentation may increase the importance of local knowledge.
+Fragmentation may increase the relative value of local observation.
 
 Example:
 
 ```text
-Satellite Map:
-Accurate five years ago.
+SATELLITE MAP:
 
-Local Guide:
-Knows the bridge collapsed last winter.
+Five years old.
+
+
+LOCAL GUIDE:
+
+Knows bridge collapsed
+last winter.
 ```
 
-Advanced technology does not automatically produce superior current knowledge.
+Advanced technology does not automatically provide better current information.
 
 ---
 
-# Recovered Records
+# 92. Recovered Records
 
-Recovered Records represent a special form of historical information.
+Recovered Records are surviving information artifacts from the past.
 
-They may provide:
+Examples:
 
-- technical evidence
-- institutional perspective
-- historical context
-- contradictory accounts
-- incomplete explanations
+```text
+documents
 
-Recovered Records should not automatically represent absolute truth.
+logs
 
-They represent surviving evidence.
+video
+
+audio
+
+databases
+
+research records
+
+government archives
+
+private correspondence.
+```
+
+They are evidence.
+
+They are not automatically truth.
 
 ---
 
-# Relationship to Recovered Records
+# 93. Recovered Record Chain
 
 Conceptually:
 
 ```text
 HISTORICAL REALITY
-        │
-        ▼
-ORIGINAL OBSERVATION
-        │
-        ▼
+↓
+OBSERVATION
+↓
 DOCUMENT CREATED
-        │
-        ▼
+↓
+DOCUMENT STORED
+↓
 DOCUMENT SURVIVES
-        │
-        ▼
+↓
 DOCUMENT RECOVERED
-        │
-        ▼
-DOCUMENT INTERPRETED
+↓
+DOCUMENT INTERPRETED.
 ```
 
-Information may be lost at every stage.
-
-This preserves the mystery and uncertainty of historical reconstruction.
+Information may be lost or distorted at every stage.
 
 ---
 
-# Information State Snapshot
+# 94. Historical Information State
 
-A regional Information State may look like:
-
-```text
-INFORMATION STATE
-
-Region:
-Northern Virginia
-
-Historical Era:
-WS-02 — The Transition
-
-Information Environment:
-UNSTABLE
-
-Availability:
-ABUNDANT
-
-Verification Capacity:
-MODERATE
-
-Signal-to-Noise:
-LOW
-
-Shared Reality:
-STRAINED
-
-Information Pressure:
-HIGH
-
-Information Resilience:
-MODERATE
-
-Information Horizon:
-NATIONAL
-
-Communications:
-FUNCTIONAL
-
-Public Trust:
-DECLINING
-```
-
-This describes a region where information remains plentiful but increasingly difficult to verify.
-
----
-
-# Later-Era Example
-
-```text
-INFORMATION STATE
-
-Region:
-Shenandoah Valley
-
-Historical Era:
-WS-03 — The Fractured World
-
-Information Environment:
-LOCALIZED
-
-Availability:
-LIMITED
-
-Verification Capacity:
-LOW
-
-Signal-to-Noise:
-HIGH
-
-Shared Reality:
-STRONG
-
-Information Pressure:
-MODERATE
-
-Information Resilience:
-HIGH
-
-Information Horizon:
-REGIONAL
-
-Communications:
-LOCAL / RADIO
-```
-
-This creates an important contrast.
-
-The later society possesses far less information.
-
-But the information it does possess may be easier to trust.
-
----
-
-# Information Paradox
-
-Project Ascension should allow:
-
-```text
-MORE INFORMATION
-≠
-BETTER UNDERSTANDING
-```
-
-and:
-
-```text
-LESS INFORMATION
-≠
-LESS RELIABLE UNDERSTANDING
-```
-
-A globally connected society may struggle with verification.
-
-A small isolated community may possess extremely reliable local knowledge.
-
----
-
-# Information Update Cycle
-
-A conceptual Information State update may follow:
-
-```text
-1. Read actual World State.
-2. Generate observations.
-3. Determine available observers.
-4. Create significant Information Objects.
-5. Apply communication availability.
-6. Apply transmission delay.
-7. Apply transformation.
-8. Apply verification.
-9. Apply source reliability.
-10. Distribute information.
-11. Update institutional knowledge.
-12. Update public knowledge.
-13. Process rumor.
-14. Process misinformation.
-15. Update perception.
-16. Generate behavioral pressure.
-17. Update player knowledge where applicable.
-18. Preserve historically significant information.
-```
-
-The exact technical implementation may change.
-
-The causal structure should remain understandable.
-
----
-
-# Information Simulation Resolution
-
-## High Resolution
-
-Used for:
-
-- player region
-- active mysteries
-- major crises
-- important intelligence
-- narrative-critical information
-
-May track:
-
-```text
-Individual Information Objects
-Sources
-Provenance
-Verification
-Distribution
-Beliefs
-```
-
----
-
-## Medium Resolution
-
-Used for nearby or strategically relevant regions.
-
-Tracks:
-
-```text
-Information Environment
-Major Reports
-Major Rumors
-Verification Capacity
-Shared Reality
-```
-
----
-
-## Low Resolution
-
-Used for distant regions.
-
-Tracks:
-
-```text
-Information Environment
-Information Horizon
-Pressure
-Resilience
-Major Information Events
-```
-
----
-
-# Information Compression
-
-Routine information should not require permanent simulation.
-
-The system should preserve only information that matters.
-
-Examples include:
-
-```text
-Major discoveries
-Important rumors
-Strategic intelligence
-Historical records
-Player knowledge
-Information that changes behavior
-```
-
----
-
-# Information Memory
-
-Important information may remain influential after it becomes outdated.
+Important Information Objects may remain historically relevant.
 
 Example:
 
 ```text
 2034:
-Government emergency report proves inaccurate.
+
+Government report
+incorrectly predicts
+rapid restoration.
+
 
 2035:
-Public trust in government reports remains reduced.
+
+That report is still cited
+as evidence of institutional
+unreliability.
 ```
 
-Information therefore has historical consequences.
+Information can have historical consequences without Information State owning Trust.
 
 ---
 
-# Correction
+# 95. Correction
 
 Incorrect information may later be corrected.
-
-A correction does not guarantee beliefs immediately change.
 
 Conceptually:
 
 ```text
 FALSE INFORMATION
-      ↓
-BELIEF ESTABLISHED
-      ↓
-CORRECTION
-      ↓
-BELIEF MAY:
-    CHANGE
-    WEAKEN
-    REMAIN
+↓
+ACTOR BELIEF
+↓
+CORRECTION RECEIVED
+↓
+ACTOR MAY:
+CHANGE
+WEAKEN
+RETAIN
+OR REINTERPRET
+THE BELIEF.
 ```
 
-Trust and prior belief influence the result.
+Information State owns the correction.
+
+Actor systems own the belief response.
 
 ---
 
-# Information Persistence
-
-Some beliefs may persist long after reliable evidence changes.
-
-This should emerge from:
-
-- trust
-- identity
-- social relationships
-- historical experience
-
-rather than arbitrary NPC irrationality.
-
----
-
-# Contradictory Information
+# 96. Contradictory Information
 
 Actors may receive contradictory reports.
 
@@ -2327,47 +2696,76 @@ SOURCE B:
 Bridge closed.
 
 SOURCE C:
-Bridge damaged but passable.
+Bridge damaged
+but passable.
 ```
 
-The actor must decide:
+Information State preserves all three objects.
 
-- which source to trust
-- whether to investigate
-- whether to delay action
-- whether to take the risk
-
-Uncertainty creates decisions.
+It does not silently determine what the Character believes.
 
 ---
 
-# Unknown Must Be Valid
+# 97. Unknown
 
-The system must allow:
+Canonical rule:
 
 ```text
 UNKNOWN
+IS VALID.
 ```
 
-as a legitimate state.
+Sometimes:
 
-The simulation should never feel compelled to provide an answer simply because a character asks a question.
+```text
+no current observation exists
 
-Sometimes nobody knows.
+available reports conflict
+
+all sources are stale
+
+verification failed
+
+information never arrived.
+```
+
+The system should not fabricate information merely because an Actor asks for it.
 
 ---
 
-# Information Failure
+# 98. Unknown vs World Truth
+
+Important distinction:
+
+```text
+WORLD STATE:
+KNOWN TO SIMULATION
+
+OBSERVER STATE:
+UNKNOWN.
+```
+
+The simulation may know:
+
+```text
+Bridge destroyed.
+```
+
+while every nearby Character remains uncertain.
+
+This is valid.
+
+---
+
+# 99. Information Failure
 
 Information failure does not mean:
 
 ```text
-NO INFORMATION EXISTS
+NO INFORMATION EXISTS.
 ```
 
-It means the system can no longer reliably transform observations into shared actionable knowledge.
-
-Conceptually:
+It may mean:
 
 ```text
 OBSERVATIONS EXIST
@@ -2378,433 +2776,1122 @@ COMMUNICATION EXISTS
 
 BUT
 
-SHARED UNDERSTANDING FAILS
+RELIABLE SHARED
+ACTIONABLE INFORMATION
+CANNOT BE MAINTAINED.
 ```
 
 This distinction is central to Project Ascension.
 
 ---
 
-# Information Recovery
+# 100. Information Fragmentation vs Communication Failure
+
+Canonical distinction:
+
+```text
+COMMUNICATION FAILURE
+=
+INFORMATION CANNOT
+MOVE RELIABLY.
+
+
+INFORMATION FRAGMENTATION
+=
+INFORMATION MOVES,
+BUT DIFFERENT NETWORKS
+NO LONGER SHARE
+ONE RELIABLE PICTURE.
+```
+
+A society may experience one without the other.
+
+---
+
+# 101. Information Recovery
 
 Information systems may recover through:
 
-- restored communications
-- trusted institutions
-- verification networks
-- local reporting
-- physical couriers
-- radio networks
-- shared standards
-- new authentication systems
-- improved relationships
+```text
+restored communication
 
-Recovery does not necessarily restore the previous global information environment.
+verification networks
+
+trusted reporting
+
+local observation
+
+couriers
+
+radio systems
+
+shared standards
+
+authentication systems
+
+new institutional structures.
+```
+
+Recovery need not recreate the previous global information ecosystem.
 
 ---
 
-# Information Adaptation
+# 102. Information Adaptation
 
-Later societies may develop new information structures.
-
-Examples:
+Later information systems may evolve from:
 
 ```text
-Global social networks
-        ↓
-Regional trusted networks
+GLOBAL SOCIAL NETWORKS
+↓
+REGIONAL TRUSTED NETWORKS
 
-Centralized news
-        ↓
-Local reporting alliances
+CENTRALIZED NEWS
+↓
+LOCAL REPORTING ALLIANCES
 
-Cloud verification
-        ↓
-Physical authentication
+CLOUD AUTHENTICATION
+↓
+DISTRIBUTED OR PHYSICAL
+VERIFICATION
 
-Instant global communication
-        ↓
-Scheduled radio networks
-
-Digital identity
-        ↓
-Relationship-based trust
+INSTANT COMMUNICATION
+↓
+SCHEDULED NETWORKS
+AND COURIERS.
 ```
 
-These systems may be slower.
-
-They may also be resilient in different ways.
+Slower does not necessarily mean less reliable.
 
 ---
 
-# Reconnection
+# 103. Information Paradox
 
-During World State 04 — The Reconnection, rebuilding information networks becomes a major societal challenge.
-
-The problem is not simply:
+Project Ascension should explicitly support:
 
 ```text
-Can we connect the regions?
+MORE INFORMATION
+≠
+BETTER UNDERSTANDING.
 ```
 
-It is also:
+And:
 
 ```text
-Can the regions trust what comes through the connection?
+LESS INFORMATION
+≠
+LESS RELIABLE
+LOCAL KNOWLEDGE.
 ```
 
-Reconnection therefore requires both:
+The Connected World may possess enormous information volume and weak verification.
+
+A fragmented community may possess little information but high local reliability.
+
+---
+
+# 104. Connected World
+
+The Connected World may commonly feature:
 
 ```text
-COMMUNICATION INFRASTRUCTURE
+global information horizon
+
+real-time communication
+
+high information abundance
+
+high synthetic content
+
+high verification dependency
+
+large information volume.
 ```
 
-and:
+This creates unprecedented access.
+
+It may also create unprecedented verification pressure.
+
+---
+
+# 105. Transition
+
+The Transition may produce:
 
 ```text
-INFORMATION TRUST
+contradictory institutional reports
+
+increasing information delay
+
+verification bottlenecks
+
+information saturation
+
+fragmented knowledge
+
+rising rumor
+
+declining shared operational reality.
+```
+
+These are possible emergent outcomes.
+
+Not mandatory scripted stages.
+
+---
+
+# 106. Fractured World
+
+The Fractured World may produce:
+
+```text
+localized information horizons
+
+regional radio
+
+physical couriers
+
+local reporting
+
+relationship-based source trust
+
+strong local knowledge
+
+limited distant knowledge.
+```
+
+Fragmentation does not mean ignorance.
+
+---
+
+# 107. Reconnection
+
+Reconnection requires more than restoring communication links.
+
+It also requires rebuilding:
+
+```text
+verification
+
+authentication
+
+provenance
+
+shared standards
+
+institutional confidence
+
+cross-regional information networks.
+```
+
+The key question becomes:
+
+```text
+CAN INFORMATION MOVE?
+
+AND
+
+CAN ITS ORIGIN
+AND RELIABILITY
+BE ESTABLISHED?
 ```
 
 ---
 
-# Minimum Information State
+# 108. Simulation Resolution
 
-A minimum viable Information State should contain:
+Information State must support adaptive resolution.
+
+Conceptually:
 
 ```text
-Region
+LOW
 
+MEDIUM
+
+HIGH.
+```
+
+Resolution changes represented detail.
+
+Not whether information exists.
+
+---
+
+# 109. Low Resolution
+
+Low-resolution Information State may preserve:
+
+```text
 Information Environment
+
+Information Horizon
+
 Availability
+
 Verification Capacity
+
+Pressure
+
+Resilience
+
+Major Information Events
+
+Major Rumors.
+```
+
+---
+
+# 110. Medium Resolution
+
+Medium resolution may additionally preserve:
+
+```text
+major reports
+
+important sources
+
+institutional access differences
+
+major provenance chains
+
+verification conflicts
+
+important recovered records.
+```
+
+---
+
+# 111. High Resolution
+
+High resolution may track:
+
+```text
+specific Information Objects
+
+individual observations
+
+timestamps
+
+sources
+
+provenance
+
+verification
+
+authentication
+
+distribution
+
+recipients
+
+contradictions
+
+investigative evidence.
+```
+
+---
+
+# 112. Resolution Follows Causal Relevance
+
+High-resolution information simulation may be required for:
+
+```text
+investigation
+
+major intelligence
+
+Aurora-related uncertainty
+
+conflicting reports
+
+information warfare
+
+critical warnings
+
+historic reconstruction.
+```
+
+Not merely because the player is nearby.
+
+---
+
+# 113. Information Compression
+
+Routine information should not persist forever.
+
+Preserve information when it has:
+
+```text
+causal consequence
+
+historical significance
+
+investigative relevance
+
+strategic relevance
+
+long-term provenance value.
+```
+
+Transient routine information may be discarded.
+
+---
+
+# 114. Information Persistence
+
+Important information may persist across:
+
+```text
+sessions
+
+regions
+
+time advancement
+
+Character death
+
+institutional change
+
+World State transitions.
+```
+
+The information's relevance may change.
+
+Its historical existence may remain important.
+
+---
+
+# 115. Minimum Information State
+
+A minimum Regional Information State should be able to represent:
+
+```text
+Information Environment
+
+Availability
+
+Verification Capacity
+
 Signal-to-Noise
-Shared Reality
+
 Information Pressure
+
 Information Resilience
+
 Information Horizon
 
 Major Information Objects
+
 Major Rumors
-Institutional Knowledge
-Public Perception
-Player Knowledge
+
+Major Verification Failures
+
+Important Information Networks
+
+Relevant Institutional Access Differences.
 ```
 
-Everything beyond this should justify its simulation cost.
+Character Knowledge and Belief are not part of the minimum Information State.
 
 ---
 
-# Information Consistency Rules
+# 116. Information State Snapshot
 
-## Rule 1
-
-Reality and information are separate.
-
----
-
-## Rule 2
-
-Information and knowledge are separate.
-
----
-
-## Rule 3
-
-Knowledge and belief are separate.
-
----
-
-## Rule 4
-
-Source reliability and information accuracy are separate.
-
----
-
-## Rule 5
-
-Trust does not equal truth.
-
----
-
-## Rule 6
-
-Multiple reports do not automatically equal independent confirmation.
-
----
-
-## Rule 7
-
-Information becomes less useful as it ages.
-
----
-
-## Rule 8
-
-Communication availability does not guarantee information reliability.
-
----
-
-## Rule 9
-
-Information scarcity does not automatically imply misinformation.
-
----
-
-## Rule 10
-
-High information availability does not guarantee understanding.
-
----
-
-## Rule 11
-
-Rumor is not automatically false.
-
----
-
-## Rule 12
-
-Institutional secrecy may be rational while still creating systemic consequences.
-
----
-
-## Rule 13
-
-Actors should make decisions based upon the information available to them, not hidden simulation truth.
-
----
-
-## Rule 14
-
-False beliefs may create real world-state changes.
-
----
-
-## Rule 15
-
-Accurate warnings may prevent the events they predict.
-
----
-
-## Rule 16
-
-Unknown is a legitimate information state.
-
----
-
-## Rule 17
-
-Information fragmentation is different from communication failure.
-
----
-
-## Rule 18
-
-Reliable local knowledge may survive global information collapse.
-
----
-
-## Rule 19
-
-Player knowledge must remain separate from simulation knowledge.
-
----
-
-## Rule 20
-
-Information systems must preserve causality.
-
----
-
-# Guiding Questions
-
-For every important piece of information, the simulation should be capable of answering:
-
-**What actually happened?**
-
-**Who observed it?**
-
-**What did they observe?**
-
-**When did they observe it?**
-
-**What was reported?**
-
-**How did the report change during transmission?**
-
-**Who received it?**
-
-**How old was it when received?**
-
-**Could it be verified?**
-
-**Was it trusted?**
-
-**What did the receiver believe?**
-
-**What decision did that belief produce?**
-
-**How did that decision change the world?**
-
-These questions transform information from exposition into simulation.
-
----
-
-# Core Design Principle
-
-Project Ascension should never assume:
+Example:
 
 ```text
-THE PLAYER RECEIVED INFORMATION
-=
-THE PLAYER RECEIVED THE TRUTH
+INFORMATION STATE
+
+Region:
+Northern Virginia
+
+Historical Era:
+WS-02 — The Transition
+
+
+Information Environment:
+UNSTABLE
+
+Availability:
+ABUNDANT
+
+Verification Capacity:
+MODERATE
+
+Signal-to-Noise:
+LOW
+
+Information Pressure:
+HIGH
+
+Information Resilience:
+MODERATE
+
+Information Horizon:
+NATIONAL
+
+
+COMMUNICATION CONTEXT
+
+Internet:
+FUNCTIONAL
+
+Cellular:
+DEGRADED
+
+Regional Radio:
+FUNCTIONAL
+
+
+MAJOR INFORMATION CONDITIONS
+
+Infrastructure Reports:
+CONTRADICTORY
+
+Supply Reports:
+STALE
+
+Aurora-related Claims:
+UNVERIFIED
+
+Government Reporting:
+ACTIVE
+
+Local Technical Networks:
+HIGH VALUE.
 ```
 
-Instead:
-
-```text
-REALITY
-   │
-   ▼
-OBSERVATION
-   │
-   ▼
-SOURCE
-   │
-   ▼
-TRANSMISSION
-   │
-   ▼
-VERIFICATION
-   │
-   ▼
-PLAYER
-```
-
-Every step creates the possibility of:
-
-```text
-delay
-loss
-uncertainty
-interpretation
-distortion
-```
-
-But also:
-
-```text
-confirmation
-understanding
-trust
-discovery
-```
-
-Information should create uncertainty without making truth meaningless.
+Communication conditions are referenced from Infrastructure.
 
 ---
 
-# Current Status
+# 117. Fractured World Example
 
 ```text
-WORLD SIMULATION
+INFORMATION STATE
 
-README.md
-COMPLETE
+Region:
+Shenandoah Valley
 
-World_State.md
-FOUNDATION DEFINED
+Historical Era:
+WS-03 — The Fractured World
 
-Regional_State.md
-FOUNDATION DEFINED
 
-Infrastructure_State.md
-FOUNDATION DEFINED
+Information Environment:
+LOCALIZED
 
-Information_State.md
-FOUNDATION DEFINED
+Availability:
+LIMITED
 
-Authority_State.md
-PENDING
+Verification Capacity:
+LOW
 
-Population_State.md
-PENDING
+Signal-to-Noise:
+HIGH
 
-Escalation_and_Recovery.md
-PENDING
+Information Pressure:
+MODERATE
+
+Information Resilience:
+HIGH
+
+Information Horizon:
+REGIONAL
+
+
+PRIMARY CHANNELS
+
+Regional Radio
+
+Courier Networks
+
+Local Observation
+
+Trusted Community Sources.
 ```
+
+This region possesses less information than Northern Virginia during The Transition.
+
+Its local information may nevertheless be more reliable.
 
 ---
 
-# Next Document
+# 118. Cross-System Example — Supply Rumor
 
-The next recommended document is:
-
-```text
-Canon/Systems/World_Simulation/Authority_State.md
-```
-
-Information State establishes:
+World Truth:
 
 ```text
-WHAT ACTORS BELIEVE IS HAPPENING
+Fuel Availability:
+ADEQUATE.
 ```
 
-Authority State will establish:
+Information Object:
 
 ```text
-WHO CAN ACT
+Claim:
+Fuel deliveries stopped.
+
+Verification:
+UNVERIFIED.
 ```
 
-and, critically:
+Population response:
 
 ```text
-WHO PEOPLE ACCEPT HAS THE RIGHT TO ACT
+Stockpiling.
 ```
 
-It should distinguish:
+Supply consequence:
 
-- legal authority
-- practical authority
-- legitimacy
-- institutional capacity
-- territorial control
-- emergency powers
-- enforcement
-- service provision
-- decentralization
-- competing authorities
-- continuity government
-- local governance
+```text
+Commercial Inventory:
+Falls rapidly.
+```
 
-This creates the next major simulation relationship:
+New World Truth:
+
+```text
+Local Fuel Availability:
+CONSTRAINED.
+```
+
+The chain is:
 
 ```text
 INFORMATION
-     │
-     ▼
-AUTHORITY DECISION
-     │
-     ▼
-INSTITUTIONAL ACTION
-     │
-     ▼
-POPULATION RESPONSE
-     │
-     ▼
-LEGITIMACY
-     │
-     └──────────► AUTHORITY
+↓
+ACTOR RESPONSE
+↓
+WORLD CHANGE.
 ```
 
-Authority should not disappear merely because central government weakens.
+Information did not directly rewrite Supply.
 
-**It moves, fragments, competes and reforms.**
+---
+
+# 119. Cross-System Example — Infrastructure Warning
+
+Infrastructure Truth:
+
+```text
+Bridge structural condition:
+CRITICAL.
+```
+
+Information:
+
+```text
+Engineering Report:
+Bridge failure possible.
+
+Verification:
+CORROBORATED.
+```
+
+Authority receives report.
+
+Authority decides:
+
+```text
+Close bridge.
+```
+
+Infrastructure result:
+
+```text
+Operational Status:
+CLOSED.
+```
+
+Supply result:
+
+```text
+Transport-dependent imports:
+REDUCED.
+```
+
+Again:
+
+```text
+INFORMATION
+INFLUENCED
+ACTOR DECISION.
+
+ACTOR DECISION
+CHANGED WORLD STATE.
+```
+
+---
+
+# 120. Information State Invariants
+
+## INFO-INV-001 — Reality and Information Are Separate
+
+World Truth does not depend on observation.
+
+---
+
+## INFO-INV-002 — Information and Knowledge Are Separate
+
+Information availability does not guarantee Actor knowledge.
+
+---
+
+## INFO-INV-003 — Knowledge and Belief Are Actor-Owned
+
+Information State must not directly own Character belief.
+
+---
+
+## INFO-INV-004 — Source Reliability and Information Truth Are Separate
+
+Reliable sources can be wrong.
+
+---
+
+## INFO-INV-005 — Trust and Truth Are Separate
+
+Trusted information may be false.
+
+---
+
+## INFO-INV-006 — Verification Is a Process
+
+Verification must not be reduced to a universal Boolean.
+
+---
+
+## INFO-INV-007 — Multiple Reports Do Not Guarantee Independent Confirmation
+
+Provenance matters.
+
+---
+
+## INFO-INV-008 — Information Has Time
+
+Observation, creation, transmission and receipt may occur at different times.
+
+---
+
+## INFO-INV-009 — Information Can Become Stale
+
+Old accurate information may become inaccurate about current conditions.
+
+---
+
+## INFO-INV-010 — Communication and Information Are Separate
+
+Functional networks do not guarantee reliable information.
+
+---
+
+## INFO-INV-011 — Physical Communication Infrastructure Is Owned by Infrastructure
+
+Information consumes communication capability.
+
+---
+
+## INFO-INV-012 — Unknown Is Valid
+
+The system must permit absence of reliable information.
+
+---
+
+## INFO-INV-013 — Rumor Is Not Automatically False
+
+Rumor describes verification status and propagation mode.
+
+---
+
+## INFO-INV-014 — Disinformation Requires an Actor
+
+Deliberate deception must have causal origin.
+
+---
+
+## INFO-INV-015 — Synthetic Information Is Not Automatically False
+
+Authentication and truth remain distinct.
+
+---
+
+## INFO-INV-016 — Information May Change the World Indirectly
+
+Information influences Actors.
+
+Actors create consequences.
+
+---
+
+## INFO-INV-017 — Predictions Do Not Create Future Truth
+
+Warnings and forecasts remain informational claims.
+
+---
+
+## INFO-INV-018 — Aurora Is an Observer, Not World Truth
+
+Aurora's model remains distinct from simulation authority.
+
+---
+
+## INFO-INV-019 — Player Knowledge Is Not World Truth
+
+The interface must preserve epistemic boundaries.
+
+---
+
+## INFO-INV-020 — Information Fragmentation Is Not Communication Failure
+
+These represent different systemic problems.
+
+---
+
+## INFO-INV-021 — Local Knowledge May Outperform Distant Technical Information
+
+Information quality is contextual.
+
+---
+
+## INFO-INV-022 — Information Recovery Need Not Restore the Previous System
+
+New networks may replace old structures.
+
+---
+
+## INFO-INV-023 — Resolution Changes Detail, Not Informational Reality
+
+Low-resolution information remains causal.
+
+---
+
+## INFO-INV-024 — Major Information Must Preserve Provenance Where Causally Relevant
+
+Important information should be traceable.
+
+---
+
+# 121. Development Locks
+
+Future Information State development must not introduce:
+
+```text
+Information equals World Truth
+
+Information equals Character Knowledge
+
+Information equals Character Belief
+
+Information-owned Character Decisions
+
+Information-owned Trust
+
+Information-owned Society belief
+
+Information-owned Population behavior
+
+Information-owned Faction goals
+
+Information-owned physical communication infrastructure
+
+omniscient Characters
+
+omniscient institutions
+
+omniscient player UI
+
+omniscient Aurora
+
+source reliability equals truth
+
+verification equals absolute certainty
+
+rumor equals false
+
+synthetic equals false
+
+multiple reports equal independent confirmation
+
+prediction equals future truth
+
+automatic misinformation
+
+random disinformation
+
+AI-generated confusion without Actor cause
+
+automatic belief updates
+
+automatic public panic
+
+narrative-created information without provenance
+
+convenient information appearing because the player needs it.
+```
+
+---
+
+# 122. Information Architecture Test
+
+Before adding a new Information mechanic, ask:
+
+```text
+WHAT IS
+ACTUALLY TRUE?
+
+WHO OBSERVED IT?
+
+WHAT DID
+THEY OBSERVE?
+
+WHEN?
+
+WHAT INFORMATION
+OBJECT WAS CREATED?
+
+WHO CREATED IT?
+
+WHAT SOURCE
+DOES IT CLAIM?
+
+IS THAT SOURCE
+AUTHENTIC?
+
+HOW RELIABLE
+IS THE SPECIFIC
+INFORMATION?
+
+WHAT PROVENANCE
+EXISTS?
+
+HOW WAS
+IT TRANSMITTED?
+
+HOW LONG
+DID TRANSMISSION
+TAKE?
+
+WHAT TRANSFORMATION
+OCCURRED?
+
+WHO RECEIVED IT?
+
+WHAT COULD
+THEY VERIFY?
+
+WHAT REMAINS
+UNKNOWN?
+
+DOES THIS SYSTEM
+OWN THE RESULT
+
+OR
+
+DOES THE RESULT
+BELONG TO
+KNOWLEDGE,
+BELIEF,
+SOCIETY,
+AUTHORITY
+OR ANOTHER
+ACTOR SYSTEM?
+```
+
+---
+
+# 123. Final Information Model
+
+Conceptually:
+
+```text
+WORLD TRUTH
+        ↓
+OBSERVATION
+        ↓
+RAW INFORMATION
+        ↓
+INFORMATION OBJECT
+        │
+        ├── Source
+        ├── Timestamp
+        ├── Provenance
+        ├── Reliability
+        ├── Verification
+        ├── Authentication
+        ├── Sensitivity
+        └── Distribution
+                ↓
+COMMUNICATION
+INFRASTRUCTURE
+                ↓
+TRANSMISSION
+                ↓
+DELAY
++
+TRANSFORMATION
++
+LOSS
+                ↓
+RECEIVED INFORMATION
+                ↓
+────────────────────────────
+ACTOR SYSTEMS
+────────────────────────────
+
+Character Knowledge / Belief
+
+Institutional Knowledge
+
+Faction Interpretation
+
+Society / Public Patterns
+
+Player-facing Knowledge
+                ↓
+DECISION
+                ↓
+ACTION
+                ↓
+WORLD CONSEQUENCE
+                ↓
+NEW WORLD TRUTH
+                ↓
+NEW INFORMATION.
+```
+
+Information sits between reality and Actor cognition.
+
+It does not replace either.
+
+---
+
+# 124. Information North Star
+
+The system succeeds when Project Ascension can answer:
+
+```text
+WHAT ACTUALLY
+HAPPENED?
+
+WHO SAW IT?
+
+WHAT DID
+THEY ACTUALLY SEE?
+
+WHAT INFORMATION
+WAS CREATED?
+
+WHO REPORTED IT?
+
+WHEN?
+
+HOW DID IT
+TRAVEL?
+
+WHAT WAS
+LOST?
+
+WHAT WAS
+CHANGED?
+
+WHO RECEIVED IT?
+
+HOW OLD
+WAS IT?
+
+WHO COULD
+VERIFY IT?
+
+WHAT SOURCES
+WERE INDEPENDENT?
+
+WHAT WAS
+AUTHENTIC?
+
+WHAT REMAINED
+UNKNOWN?
+
+WHO HAD
+DIFFERENT INFORMATION?
+
+AND
+
+HOW DID
+THOSE DIFFERENCES
+CHANGE WHAT
+PEOPLE DID NEXT?
+```
+
+---
+
+# 125. Closing Principle
+
+Project Ascension should never treat uncertainty as:
+
+```text
+THE WORLD
+HAS NO TRUTH.
+```
+
+The world has truth.
+
+The problem is that humans, institutions, Factions, AI systems and players may not possess reliable access to it.
+
+A bridge is either there or it is not.
+
+Fuel exists somewhere or it does not.
+
+A transmission came from the claimed sender or it did not.
+
+A video may be authentic.
+
+Its interpretation may still be wrong.
+
+A warning may be correct.
+
+The future it predicts may never happen because people acted on the warning.
+
+A trusted institution may publish incorrect information.
+
+An unreliable person may report something true.
+
+Five reports may all originate from one mistaken observation.
+
+A rural radio operator may know more about a local road than a sophisticated national database.
+
+Aurora may know more than any human organization while still lacking one critical observation.
+
+The central principle is:
+
+> **Information is the imperfect bridge between what is true and what an Actor is able to know about what is true.**
+
+That bridge can be fast.
+
+Slow.
+
+Trusted.
+
+Fragmented.
+
+Authenticated.
+
+Distorted.
+
+Abundant.
+
+Scarce.
+
+Local.
+
+Global.
+
+But it must always have a causal path.
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial information, knowledge, verification, trust, rumor, perception, fragmentation, player knowledge and information-feedback framework established. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Established initial information, knowledge, verification, trust, rumor, perception, fragmentation, player knowledge and information-feedback framework. |
+| 1.0 | 2026-09-01 | Rebuilt Information State as canonical information architecture aligned with World State, Regional State, Infrastructure, Supply and Character Knowledge and Beliefs. Preserved observation, information objects, provenance, source reliability, verification, delay, information decay, rumor, misinformation, disinformation, synthetic information, authentication, information horizon, information fragmentation, recovered records and information feedback while removing ownership of Character Knowledge, Character Belief, Trust, public belief, player cognition and Actor decisions. Clarified communication infrastructure ownership, World Truth boundaries, Aurora as observer rather than authority, adaptive simulation resolution, epistemic uncertainty and cross-system information causality. |

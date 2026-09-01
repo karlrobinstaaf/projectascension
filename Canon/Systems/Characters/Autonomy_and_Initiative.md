@@ -1,77 +1,85 @@
 # PROJECT ASCENSION
-# Autonomy and Initiative System
+
+# Autonomy and Initiative
 
 | Field | Value |
-|--------|-------|
+|---|---|
 | System | Characters |
 | Document | Autonomy and Initiative |
-| Location | Canon/Systems/Characters/Autonomy_and_Initiative.md |
-| Version | 0.1 |
-| Status | Working Canon |
-| Scope | Character Autonomy, Initiative, Self-Directed Action and Player-Independent Life |
-| Last Updated | 2026-08-09 |
+| Location | `Canon/Systems/Characters/Autonomy_and_Initiative.md` |
+| Version | 1.0 |
+| Status | Canonical Architecture |
+| Category | Characters / Agency |
+| Owner | Characters |
+| Last Updated | 2026-08-30 |
+| Primary Function | Define when and how a Character initiates, continues, delays, interrupts, resumes or abandons action without requiring player prompting |
 
-> *"The player is not the engine of the world. The player is one actor within it."*
+> **"The player is not the engine of the world. The player is one actor within it."**
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Autonomy and Initiative system defines how characters in Project Ascension act independently of the player.
+The Autonomy and Initiative system defines how Characters act independently within Project Ascension.
 
-Its purpose is to ensure that characters:
+Its central question is:
+
+> **When does a Character act without waiting for player input?**
+
+Characters must be capable of:
 
 ```text
-have lives
+CONTINUING ROUTINES
 
-pursue Goals
+PURSUING GOALS
 
-maintain relationships
+FOLLOWING PLANS
 
-perform work
+FULFILLING COMMITMENTS
 
-solve problems
+SEEKING INFORMATION
 
-respond to threats
+RESPONDING TO THREATS
 
-notice opportunities
+NOTICEING OPPORTUNITIES
 
-make requests
+CONTACTING OTHERS
 
-initiate conversations
+REQUESTING HELP
 
-travel
+SOLVING PROBLEMS
 
-cooperate
+DELAYING ACTION
 
-compete
+CHANGING PRIORITY
 
-change Plans
-
-create consequences
+RESUMING INTERRUPTED ACTIVITY
 ```
 
 without requiring:
 
 ```text
-PLAYER INTERACTION.
+PLAYER PROMPT.
 ```
 
-The system transforms characters from:
+The system exists so that Characters feel like:
+
+```text
+ACTORS
+IN THE WORLD
+```
+
+rather than:
 
 ```text
 REACTIVE NPCs
-```
-
-into:
-
-```text
-AUTONOMOUS WORLD ACTORS.
+WAITING FOR CONTENT
+TO HAPPEN TO THEM.
 ```
 
 ---
 
-# Core Principle
+# 2. Core Principle
 
 Characters do not exist:
 
@@ -93,1529 +101,901 @@ PLAYER ABSENCE
 CHARACTER INACTIVITY.
 ```
 
+A Character may continue acting whether or not the player:
+
+```text
+SEES
+
+KNOWS
+
+APPROVES
+
+PARTICIPATES.
+```
+
 ---
 
-# Foundational Model
+# 3. Core Definition
+
+Autonomy is:
+
+> **The Character's ability to continue living, choosing and acting without requiring player initiation.**
+
+Initiative is:
+
+> **The emergence of self-directed action when Character state and current conditions make something sufficiently relevant to act upon.**
 
 Conceptually:
 
 ```text
 CHARACTER STATE
 +
-NEEDS
+CURRENT GOALS
 +
-MOTIVATIONS
+CURRENT BELIEFS
 +
-GOALS
-+
-PLANS
-+
-KNOWLEDGE
-+
-BELIEFS
+KNOWN INFORMATION
 +
 RELATIONSHIPS
 +
-PROFESSION
+PSYCHOLOGY
++
+EXPERTISE
++
+RESPONSIBILITIES
 +
 WORLD CONDITIONS
-      ↓
-AUTONOMOUS PRESSURE
-      ↓
-INITIATIVE TRIGGER
-      ↓
++
+AVAILABLE OPPORTUNITIES
++
+CURRENT PRESSURES
+↓
+POSSIBLE INITIATIVE
+↓
 DECISION
-      ↓
+↓
 ACTION
-      ↓
-WORLD CONSEQUENCE
-      ↓
-NEW STATE.
+↓
+CONSEQUENCE.
+```
+
+Autonomy does not determine what the Character wants.
+
+It determines whether Character-owned state can generate action without player prompting.
+
+---
+
+# 4. Ownership
+
+Autonomy and Initiative owns:
+
+```text
+SELF-DIRECTED ACTION INITIATION
+
+AUTONOMOUS ACTIVITY
+
+ROUTINE CONTINUITY
+
+SCHEDULED ACTION
+
+FOLLOW-UP
+
+OPEN LOOPS
+
+WAITING
+
+CONDITIONAL INTENT
+
+ANTICIPATORY ACTION
+
+ACTION FRICTION
+
+INTENTION-ACTION GAP
+
+INTERRUPTION
+
+RESUMPTION
+
+REPLANNING TRIGGERS
+
+ATTENTION
+
+PRIORITIZATION OF
+POSSIBLE INITIATIVE
+
+OFF-SCREEN
+CHARACTER ACTIVITY
+
+INITIATIVE EXPLAINABILITY.
 ```
 
 ---
 
-# Autonomy
+# 5. What Autonomy Does Not Own
 
-Autonomy represents:
-
-```text
-THE CHARACTER'S ABILITY
-TO PURSUE THEIR OWN LIFE
-WITHOUT WAITING
-FOR PLAYER INPUT.
-```
-
-Autonomous behavior includes:
+Autonomy does not own:
 
 ```text
-routine behavior
+NEEDS
 
-Goal pursuit
+MOTIVATION
 
-Plan execution
+GOALS
 
-social interaction
+PLANS
 
-professional activity
+BELIEFS
 
-resource management
+KNOWLEDGE
 
-information seeking
+MEMORY
 
-travel
+RELATIONSHIP STATE
 
-relationship maintenance
+PSYCHOLOGY
 
-threat response
+HUMAN ATTRIBUTES
 
-opportunity pursuit.
+EXPERTISE
+
+LIFE EVENTS
+
+PROGRESSION
+
+SOCIETY STATE
+
+FACTION STATE
+
+WORLD TRUTH
+
+NARRATIVE RELEVANCE.
 ```
+
+These systems may create conditions for initiative.
+
+They remain authoritative for their own state.
 
 ---
 
-# Initiative
+# 6. Autonomy Is Not Decision Making
 
-Initiative represents:
+Autonomy and Decision Making are closely related.
 
-```text
-THE CHARACTER
-STARTING SOMETHING.
-```
-
-This differs from:
-
-```text
-RESPONDING
-TO SOMETHING.
-```
-
----
-
-# Reactive Action
-
-Example:
-
-```text
-Player:
-"Can you repair my vehicle?"
-
-Character:
-Agrees.
-```
-
-The character is:
-
-```text
-REACTING.
-```
-
----
-
-# Autonomous Initiative
-
-Example:
-
-```text
-Character notices:
-
-regional vehicle failures rising.
-```
-
-Character decides:
-
-```text
-order spare parts
-before prices increase.
-```
-
-No player involvement occurred.
-
-This is:
-
-```text
-INITIATIVE.
-```
-
----
-
-# Initiative Principle
-
-Characters should be capable of asking:
-
-```text
-WHAT SHOULD I DO NEXT?
-```
-
-without the answer being:
-
-```text
-WAIT FOR PLAYER.
-```
-
----
-
-# Sources of Initiative
-
-Initiative may emerge from:
-
-```text
-Needs
-
-Goals
-
-Plans
-
-Profession
-
-Relationships
-
-Knowledge
-
-Beliefs
-
-Threats
-
-Opportunities
-
-Responsibilities
-
-Promises
-
-Curiosity
-
-Values
-
-World Events.
-```
-
----
-
-# Need-Driven Initiative
-
-A Need may create autonomous action.
-
-Example:
-
-```text
-Need:
-Food security declining.
-```
-
-Character may:
-
-```text
-buy food
-
-grow food
-
-seek work
-
-trade
-
-ask family
-
-change spending.
-```
-
----
-
-# Goal-Driven Initiative
-
-Existing Goals should create:
-
-```text
-SELF-DIRECTED ACTIVITY.
-```
-
-Example:
-
-```text
-Goal:
-Open workshop.
-```
-
-Character may autonomously:
-
-```text
-save money
-
-inspect property
-
-ask about loans
-
-purchase tools
-
-speak with suppliers
-
-seek business partner.
-```
-
----
-
-# Plan-Driven Initiative
-
-Once a Plan exists:
-
-```text
-CHARACTER SHOULD ATTEMPT
-TO EXECUTE IT.
-```
-
-The Plan should not remain:
-
-```text
-STATIC TEXT.
-```
-
----
-
-# Plan Execution
+They are not identical.
 
 Conceptually:
 
 ```text
-ACTIVE PLAN
-      ↓
-NEXT ACTION
-      ↓
-ACTION WINDOW
-      ↓
-CONDITIONS CHECK
-      ↓
-EXECUTE
-      ↓
-UPDATE PLAN.
+AUTONOMY / INITIATIVE
+=
+SOMETHING HAS BECOME
+RELEVANT ENOUGH
+TO REQUIRE
+POSSIBLE ACTION
+
+DECISION MAKING
+=
+WHICH AVAILABLE
+ACTION THE CHARACTER
+CHOOSES.
+```
+
+Therefore:
+
+```text
+INITIATIVE
+CAN TRIGGER
+DECISION MAKING.
+```
+
+Autonomy must not duplicate the full choice architecture.
+
+---
+
+# 7. Autonomy Is Not Goals
+
+Goals answer:
+
+```text
+WHAT DOES
+THE CHARACTER
+WANT TO ACHIEVE?
+```
+
+Autonomy answers:
+
+```text
+WHEN DOES
+THAT GOAL
+CREATE ACTION?
+```
+
+Therefore:
+
+```text
+GOAL
+≠
+ACTION.
+```
+
+A Goal may remain active for a long time without continuous action.
+
+---
+
+# 8. Autonomy Is Not Planning
+
+Plans describe intended pathways toward Goals.
+
+Autonomy determines whether:
+
+```text
+A PLAN STEP
+SHOULD NOW
+BE ATTEMPTED.
+```
+
+The Plan remains owned by the relevant Character planning architecture.
+
+---
+
+# 9. Autonomy Is Not Psychology
+
+Psychology may increase or decrease the likelihood of action.
+
+Examples include:
+
+```text
+FEAR
+
+EXHAUSTION
+
+CONFIDENCE
+
+GRIEF
+
+ANXIETY
+
+HOPE
+
+STRESS.
+```
+
+But:
+
+```text
+PSYCHOLOGY
+DOES NOT
+DIRECTLY ISSUE ACTION.
+```
+
+Autonomy consumes psychological context.
+
+It does not own it.
+
+---
+
+# 10. Autonomy Is Not Relationship State
+
+Relationships may create:
+
+```text
+OBLIGATION
+
+AFFECTION
+
+RESENTMENT
+
+TRUST
+
+DEPENDENCE
+
+LOYALTY.
+```
+
+These may create pressure for action.
+
+But:
+
+```text
+AUTONOMY
+DOES NOT
+CHANGE THE RELATIONSHIP
+DIRECTLY.
+```
+
+It may generate a Relationship-relevant action.
+
+The Relationships system resolves resulting state changes.
+
+---
+
+# 11. Autonomy Is Not Life
+
+Characters may autonomously make decisions that affect:
+
+```text
+CAREER
+
+PARTNERSHIP
+
+FAMILY
+
+LOCATION
+
+EDUCATION
+
+RESPONSIBILITY.
+```
+
+But the resulting life history belongs to:
+
+```text
+LIFE.
+```
+
+Autonomy contributes agency.
+
+Life records what actually happened.
+
+---
+
+# 12. Reactive Action vs Initiative
+
+Reactive action occurs when an external event directly demands evaluation.
+
+Example:
+
+```text
+SOMEONE ASKS:
+
+"CAN YOU HELP ME?"
+```
+
+The Character evaluates the request.
+
+Autonomous Initiative occurs when the Character independently recognizes:
+
+```text
+SOMETHING
+SHOULD BE DONE.
+```
+
+Example:
+
+```text
+CHARACTER NOTICES
+VEHICLE FAILURES
+INCREASING
+
+↓
+
+EXPECTS
+SPARE PART SHORTAGE
+
+↓
+
+DECIDES
+TO ORDER PARTS.
+```
+
+No player request was required.
+
+---
+
+# 13. Both Are Character Agency
+
+Reactive action and autonomous initiative both involve Character agency.
+
+The difference is:
+
+```text
+REACTIVE ACTION
+=
+EXTERNAL INTERACTION
+CREATES THE
+IMMEDIATE DECISION CONTEXT
+
+AUTONOMOUS INITIATIVE
+=
+CHARACTER STATE
+AND WORLD CONDITIONS
+CREATE THE
+DECISION CONTEXT.
 ```
 
 ---
 
-# Plan Continuity
+# 14. Sources of Initiative
 
-Characters should remember:
-
-```text
-WHAT THEY WERE DOING.
-```
-
-If interrupted:
+Initiative may emerge from authoritative state involving:
 
 ```text
-Plan may resume later.
+GOALS
+
+PLANS
+
+RESPONSIBILITIES
+
+RELATIONSHIPS
+
+BELIEFS
+
+KNOWN INFORMATION
+
+PROFESSIONAL ROLE
+
+OPEN LOOPS
+
+PROMISES
+
+THREATS
+
+OPPORTUNITIES
+
+SCHEDULES
+
+RESOURCE CHANGES
+
+WORLD EVENTS
+
+CURIOSITY
+
+LIFE CONDITIONS.
 ```
+
+These are inputs.
+
+Autonomy does not own their underlying state.
 
 ---
 
-# Example
+# 15. Behavioral Relevance
 
-Plan:
+Initiative begins when something becomes:
 
 ```text
-Repair roof.
+BEHAVIORALLY RELEVANT.
 ```
 
-Step 1:
+This means the Character now has sufficient reason to evaluate whether action is required.
+
+Possible triggers include:
 
 ```text
-Buy materials.
-```
-
-Emergency interrupts.
-
-After emergency:
-
-```text
-Character may return
-to roof repair.
-```
-
-The Plan should not disappear merely because:
-
-```text
-another event occurred.
-```
-
----
-
-# Initiative Trigger
-
-Autonomous action begins when:
-
-```text
-something becomes
-behaviorally relevant.
-```
-
-Recommended trigger categories:
-
-```text
-GOAL ACTION DUE
-
-NEED THRESHOLD
-
 PLAN STEP READY
 
-NEW OPPORTUNITY
-
-NEW THREAT
-
-NEW INFORMATION
-
-RELATIONSHIP NEED
-
-PROFESSIONAL OBLIGATION
-
-PROMISE DUE
-
-RESOURCE CHANGE
+DEADLINE APPROACHING
 
 SCHEDULE EVENT
 
+PROMISE DUE
+
+FOLLOW-UP DUE
+
+NEW INFORMATION
+
+NEW THREAT
+
+NEW OPPORTUNITY
+
+RESOURCE CHANGE
+
+RELATIONSHIP-RELEVANT EVENT
+
+PROFESSIONAL OBLIGATION
+
 WORLD EVENT
 
-SOCIAL INVITATION
-
-UNRESOLVED PROBLEM
-
-FOLLOW-UP DUE.
+UNRESOLVED PROBLEM.
 ```
 
 ---
 
-# Scheduled Initiative
+# 16. A Trigger Is Not an Action
 
-Some behavior occurs because:
+A trigger creates:
 
 ```text
-TIME HAS ARRIVED.
+A REASON TO EVALUATE.
 ```
 
-Examples:
+It does not guarantee:
 
 ```text
-go to work
-
-attend meeting
-
-visit family
-
-open business
-
-take medication
-
-repair equipment
-
-make scheduled delivery.
+ACTION.
 ```
 
----
-
-# Schedule Principle
-
-Characters may possess:
+The Character may:
 
 ```text
-ROUTINES
+ACT
 
-APPOINTMENTS
+WAIT
 
-COMMITMENTS
+DELAY
 
-DEADLINES.
-```
+IGNORE
 
-These should generate:
+DEFER
 
-```text
-AUTONOMOUS ACTION.
+REPLAN
+
+ASK FOR HELP
+
+ABANDON.
 ```
 
 ---
 
-# Routine
+# 17. Initiative Requires Perception
+
+A Character cannot initiate action because of something they do not know exists.
+
+Therefore:
+
+```text
+WORLD TRUTH
+≠
+CHARACTER AWARENESS.
+```
+
+A plausible information path must exist.
+
+Possible paths include:
+
+```text
+DIRECT OBSERVATION
+
+COMMUNICATION
+
+RECORDS
+
+MEDIA
+
+RUMOR
+
+RELATIONSHIP CONTACT
+
+PROFESSIONAL NETWORK
+
+INSTITUTIONAL INFORMATION
+
+AURORA
+
+OTHER ACTORS.
+```
+
+---
+
+# 18. Unknown Opportunity
+
+A Character cannot pursue:
+
+```text
+AN UNKNOWN
+OPPORTUNITY.
+```
+
+If a workshop is available for sale but the Character has no way of learning that fact:
+
+```text
+NO INITIATIVE
+CAN YET EXIST
+AROUND THAT OPPORTUNITY.
+```
+
+---
+
+# 19. Unknown Threat
+
+Likewise:
+
+```text
+HIDDEN THREAT
+≠
+ANTICIPATED THREAT.
+```
+
+Characters cannot prepare for events solely because the simulation knows they are coming.
+
+---
+
+# 20. No Retroactive Preparation
+
+Avoid:
+
+```text
+CHARACTER
+BOUGHT SUPPLIES
+
+BECAUSE
+
+THE SIMULATION
+KNEW A CRISIS
+WOULD OCCUR LATER.
+```
+
+There must have been a plausible prior reason.
+
+Conceptually:
+
+```text
+AVAILABLE INFORMATION
++
+CHARACTER BELIEF
++
+CURRENT CONDITIONS
+↓
+PREPARATION.
+```
+
+---
+
+# 21. Routine
 
 Routine represents:
 
-```text
-REPEATED EXPECTED BEHAVIOR.
-```
+> **Repeated expected activity that forms the baseline rhythm of a Character's life.**
 
-Examples:
+Examples include:
 
 ```text
-sleep
+SLEEP
 
-work
+WORK
 
-eat
+EAT
 
-shop
+COMMUTE
 
-commute
+SHOP
 
-exercise
+MAINTAIN HOME
 
-socialize
+CARE FOR OTHERS
 
-maintain home.
+SOCIALIZE
+
+EXERCISE
+
+ATTEND REGULAR COMMITMENTS.
 ```
 
----
-
-# Routine Importance
-
-Routine provides:
+Routine gives Characters:
 
 ```text
 NORMAL LIFE.
 ```
 
-Without routine, autonomous simulation becomes:
+---
+
+# 22. Routine Is Important
+
+Without routine, Character simulation becomes:
 
 ```text
-CONSTANT EVENT RESPONSE.
+EVENT RESPONSE
+AFTER
+EVENT RESPONSE
+AFTER
+EVENT RESPONSE.
+```
+
+Most human life contains repetition.
+
+Routine creates continuity between significant events.
+
+---
+
+# 23. Routine Stability
+
+Routine should generally continue while:
+
+```text
+CONDITIONS
+STILL SUPPORT IT.
+```
+
+Routine may change because of:
+
+```text
+WORLD CONDITIONS
+
+RESOURCE LOSS
+
+GOAL CHANGE
+
+RELATIONSHIP CHANGE
+
+SCHEDULE CHANGE
+
+RESPONSIBILITY CHANGE
+
+EMERGENCY
+
+LOCATION CHANGE
+
+LIFE EVENT.
 ```
 
 ---
 
-# Routine Stability
-
-Characters should normally continue routines unless:
-
-```text
-Need changes
-
-Goal changes
-
-World conditions change
-
-Relationship event occurs
-
-Emergency interrupts
-
-Resources become unavailable.
-```
-
----
-
-# Routine Adaptation
+# 24. Routine Adaptation
 
 Example:
 
 ```text
-Normal:
-Drive to work.
+NORMAL CONDITION
+
+DRIVE TO WORK
+
+↓
+
+FUEL PRICE RISE
+
+CARPOOL
+
+↓
+
+SEVERE FUEL SHORTAGE
+
+WORK REMOTELY
+OR
+CHANGE TRANSPORT.
 ```
 
-Fuel crisis:
+Routine adapts to reality.
+
+---
+
+# 25. Schedule
+
+Characters may possess:
 
 ```text
-Carpool.
+APPOINTMENTS
+
+COMMITMENTS
+
+DEADLINES
+
+WORK HOURS
+
+MEETINGS
+
+PLANNED VISITS
+
+DELIVERIES
+
+MAINTENANCE WINDOWS.
 ```
 
-Severe fuel crisis:
+When time reaches a relevant point:
 
 ```text
-Work remotely
-or walk.
-```
-
-Routine evolves with:
-
-```text
-WORLD CONDITIONS.
+SCHEDULE
+MAY CREATE
+INITIATIVE.
 ```
 
 ---
 
-# Professional Initiative
+# 26. Scheduled Action Is Not Guaranteed
 
-Profession should generate:
+A scheduled action may fail because of:
 
 ```text
-WORK-RELATED AUTONOMY.
+INTERRUPTION
+
+FORGETTING
+
+TRANSPORT FAILURE
+
+HIGHER PRIORITY
+
+RESOURCE LOSS
+
+NEW INFORMATION
+
+PSYCHOLOGICAL FRICTION.
 ```
 
-Examples:
+Schedule creates expectation.
+
+Not certainty.
+
+---
+
+# 27. Open Loops
+
+An Open Loop is:
+
+> **An unresolved matter that may reasonably generate future Character attention or action.**
+
+Examples include:
 
 ```text
-Doctor:
-treat patients
+PROMISE
 
-Mechanic:
-repair equipment
+REQUEST
 
-Trader:
-seek profitable exchange
+DEBT
 
-Farmer:
-manage crops
+UNANSWERED QUESTION
 
-Engineer:
-maintain infrastructure
+UNFINISHED PLAN
 
-Teacher:
-teach students
+MISSING PERSON
 
-Official:
-perform administrative duties.
+UNRESOLVED CONFLICT
+
+AWAITING RESPONSE
+
+SCHEDULED MEETING
+
+FOLLOW-UP
+
+UNPAID OBLIGATION.
 ```
 
 ---
 
-# Professional Problems
+# 28. Open Loop Purpose
 
-Characters may autonomously detect:
-
-```text
-problems within their domain.
-```
-
-Example:
+Open Loops exist so Characters can retain:
 
 ```text
-Engineer notices
-pump pressure declining.
+UNFINISHED BUSINESS.
 ```
 
-Possible autonomous response:
+Without Open Loops:
 
 ```text
-inspect pump
-
-order part
-
-notify authority
-
-schedule maintenance.
+SCENE ENDS
+↓
+CHARACTER FORGETS
+EVERYTHING UNRESOLVED.
 ```
+
+That is unacceptable.
 
 ---
 
-# Professional Opportunity
+# 29. Conceptual Open Loop State
 
-Characters may also notice:
-
-```text
-opportunities.
-```
-
-Example:
+A conceptual Open Loop may reference:
 
 ```text
-Mechanic sees
-increasing vehicle demand.
+IDENTIFIER
+
+CHARACTER
+
+SUBJECT
+
+ORIGIN
+
+CREATED DATE
+
+RELATED GOAL
+
+RELATED RELATIONSHIP
+
+EXPECTED FOLLOW-UP
+
+DEADLINE
+
+CURRENT STATUS.
 ```
 
-Possible response:
+This is conceptual.
 
-```text
-expand workshop.
-```
-
----
-
-# Professional Responsibility
-
-Some professions create:
-
-```text
-DUTY TO ACT.
-```
-
-Examples:
-
-```text
-doctor during outbreak
-
-firefighter during fire
-
-engineer during infrastructure failure
-
-official during emergency.
-```
+It is not yet a required implementation schema.
 
 ---
 
-# Role-Based Initiative
+# 30. Open Loop Status
 
-Characters may act because of:
-
-```text
-SOCIAL ROLE.
-```
-
-Examples:
-
-```text
-Parent checks on child.
-
-Friend visits injured friend.
-
-Leader organizes response.
-
-Neighbor offers help.
-
-Partner discusses household problem.
-```
-
----
-
-# Relationship Initiative
-
-Relationships should generate:
-
-```text
-PLAYER-INDEPENDENT SOCIAL ACTION.
-```
-
-Characters may:
-
-```text
-call
-
-visit
-
-invite
-
-help
-
-ask
-
-apologize
-
-confront
-
-confide
-
-celebrate
-
-comfort
-
-avoid
-
-reconcile.
-```
-
----
-
-# Relationship Maintenance
-
-Relationships require:
-
-```text
-MAINTENANCE.
-```
-
-Examples:
-
-```text
-spending time
-
-communication
-
-help
-
-shared activity
-
-remembering important events.
-```
-
----
-
-# Relationship Neglect
-
-If characters repeatedly fail to:
-
-```text
-maintain relationship
-```
-
-because of:
-
-```text
-work
-
-distance
-
-stress
-
-other Goals
-```
-
-relationship state may change.
-
----
-
-# Social Initiative
-
-Characters may initiate:
-
-```text
-conversation
-
-invitation
-
-request
-
-proposal
-
-warning
-
-trade
-
-cooperation
-
-conflict.
-```
-
-The player should sometimes be:
-
-```text
-THE RECIPIENT
-```
-
-rather than:
-
-```text
-THE INITIATOR.
-```
-
----
-
-# Character Contacting Player
-
-A character may autonomously contact the player when:
-
-```text
-relationship warrants it
-
-they need help
-
-they have useful information
-
-they want company
-
-they have conflict
-
-they made a promise
-
-something important happened.
-```
-
----
-
-# Contact Principle
-
-Characters should not contact the player merely because:
-
-```text
-THE GAME NEEDS CONTENT.
-```
-
-There should be:
-
-```text
-CHARACTER CAUSALITY.
-```
-
----
-
-# Player Relevance
-
-Before surfacing autonomous activity to the player, evaluate:
-
-```text
-Is the player involved?
-
-Is an important relationship involved?
-
-Does the player need to know?
-
-Is action nearby?
-
-Does it create opportunity?
-
-Does it create threat?
-
-Does it materially alter the world?
-
-Is it narratively meaningful?
-```
-
----
-
-# Offscreen Action
-
-Characters should continue acting when:
-
-```text
-OFFSCREEN.
-```
-
-Examples:
-
-```text
-working
-
-traveling
-
-meeting others
-
-pursuing Goals
-
-maintaining relationships
-
-making purchases
-
-responding to events.
-```
-
----
-
-# Offscreen Principle
-
-```text
-OFFSCREEN
-≠
-FROZEN.
-```
-
----
-
-# Offscreen Resolution
-
-Offscreen actions may be resolved using:
-
-```text
-compressed simulation.
-```
-
-Only meaningful consequences need:
-
-```text
-high-resolution processing.
-```
-
----
-
-# Player Absence
-
-When the player leaves a region:
-
-```text
-CHARACTERS REMAIN ACTIVE.
-```
-
-They may:
-
-```text
-age
-
-work
-
-move
-
-change relationships
-
-complete Goals
-
-fail Goals
-
-start businesses
-
-lose jobs
-
-marry
-
-separate
-
-have children
-
-respond to crises.
-```
-
----
-
-# Long Absence
-
-Long player absence should allow:
-
-```text
-SIGNIFICANT CHANGE.
-```
-
-Returning to a region should not necessarily mean:
-
-```text
-EVERYTHING IS
-AS THE PLAYER LEFT IT.
-```
-
----
-
-# Return Principle
-
-When the player returns:
-
-```text
-CURRENT WORLD STATE
-```
-
-should reflect:
-
-```text
-WHAT HAPPENED
-DURING ABSENCE.
-```
-
----
-
-# Character Persistence
-
-Important characters should retain:
-
-```text
-Goals
-
-relationships
-
-major memories
-
-beliefs
-
-profession
-
-important Plans
-
-major consequences
-```
-
-across player absence.
-
----
-
-# Background Character Persistence
-
-Low-resolution characters may retain:
-
-```text
-role
-
-household
-
-profession
-
-region
-
-major relationships
-
-major life state.
-```
-
-Detailed daily behavior may be:
-
-```text
-compressed.
-```
-
----
-
-# Opportunity Detection
-
-Characters should detect opportunities based on:
-
-```text
-location
-
-profession
-
-Goals
-
-knowledge
-
-relationships
-
-resources
-
-world changes.
-```
-
----
-
-# Opportunity Relevance
-
-Not every opportunity matters to every character.
-
-Example:
-
-```text
-Workshop for sale.
-```
-
-Relevant to:
-
-```text
-mechanic seeking independence.
-```
-
-Less relevant to:
-
-```text
-retired teacher.
-```
-
----
-
-# Opportunity Awareness
-
-Character cannot pursue:
-
-```text
-UNKNOWN OPPORTUNITY.
-```
-
-A plausible:
-
-```text
-INFORMATION PATH
-```
-
-must exist.
-
----
-
-# Opportunity Competition
-
-Multiple characters may pursue:
-
-```text
-THE SAME OPPORTUNITY.
-```
-
-Examples:
-
-```text
-property
-
-job
-
-contract
-
-resource
-
-political position
-
-relationship.
-```
-
-This can create:
-
-```text
-EMERGENT CONFLICT.
-```
-
----
-
-# Opportunity Expiration
-
-Opportunities may have:
-
-```text
-TIME WINDOWS.
-```
-
-Example:
-
-```text
-property sold
-
-job filled
-
-shipment leaves
-
-weather window closes.
-```
-
-Characters may:
-
-```text
-miss opportunities.
-```
-
----
-
-# Threat Detection
-
-Characters may autonomously respond to:
-
-```text
-danger.
-```
-
-Threat awareness depends on:
-
-```text
-observation
-
-information
-
-profession
-
-relationships
-
-belief.
-```
-
----
-
-# Threat Response
-
-Possible autonomous actions:
-
-```text
-avoid
-
-prepare
-
-warn others
-
-seek help
-
-confront
-
-evacuate
-
-hide
-
-investigate
-
-ignore.
-```
-
----
-
-# Threat Propagation
-
-Character may warn:
-
-```text
-other characters.
-```
-
-This creates:
-
-```text
-INFORMATION PROPAGATION
-+
-AUTONOMOUS ACTION.
-```
-
----
-
-# Warning Example
-
-Character sees:
-
-```text
-river rising.
-```
-
-They may:
-
-```text
-call family
-
-warn neighbor
-
-notify authority
-
-move vehicle
-
-protect property.
-```
-
-No player is required.
-
----
-
-# Self-Generated Goals
-
-Characters should be capable of creating:
-
-```text
-NEW GOALS
-```
-
-without player interaction.
-
----
-
-# Goal Generation Sources
-
-New Goals may emerge from:
-
-```text
-Needs
-
-Opportunities
-
-Threats
-
-Relationships
-
-Profession
-
-Values
-
-Life Events
-
-New Knowledge
-
-Failure
-
-Success
-
-Long-Term Aspiration.
-```
-
----
-
-# Example
-
-Character learns:
-
-```text
-local clinic may close.
-```
-
-Value:
-
-```text
-Community Service.
-```
-
-Profession:
-
-```text
-Doctor.
-```
-
-Possible new Goal:
-
-```text
-Keep clinic operating.
-```
-
----
-
-# Goal Escalation
-
-A minor Goal may become:
-
-```text
-MAJOR.
-```
-
-Example:
-
-```text
-Initial:
-Repair workshop roof.
-
-Storm season approaches.
-
-Roof worsens.
-
-Goal becomes:
-URGENT.
-```
-
----
-
-# Goal De-Escalation
-
-A Goal may become less important because:
-
-```text
-conditions improve
-
-Need resolved
-
-opportunity disappears
-
-relationship changes
-
-new higher-priority Goal appears.
-```
-
----
-
-# Goal Completion
-
-Characters may autonomously:
-
-```text
-COMPLETE GOALS.
-```
-
-The player does not need to:
-
-```text
-be present
-
-approve
-
-observe.
-```
-
----
-
-# Goal Failure
-
-Characters may also:
-
-```text
-FAIL.
-```
-
-Failure may occur because of:
-
-```text
-bad decision
-
-lack of resources
-
-world event
-
-competition
-
-bad luck
-
-missing information
-
-insufficient capability.
-```
-
----
-
-# Goal Abandonment
-
-Characters may autonomously decide:
-
-```text
-THIS IS NO LONGER WORTH PURSUING.
-```
-
-This follows:
-
-```text
-Decision_Making.md.
-```
-
----
-
-# Follow-Up
-
-Characters should follow up on:
-
-```text
-important unresolved matters.
-```
-
-Examples:
-
-```text
-check injured friend
-
-ask about job application
-
-inspect repaired equipment
-
-seek unpaid debt
-
-check promised delivery.
-```
-
----
-
-# Follow-Up Principle
-
-A character should not forget:
-
-```text
-IMPORTANT OPEN LOOPS
-```
-
-merely because the scene ended.
-
----
-
-# Open Loop
-
-An Open Loop represents:
-
-```text
-AN UNRESOLVED MATTER
-LIKELY TO GENERATE
-FUTURE ACTION.
-```
-
-Examples:
-
-```text
-promise
-
-request
-
-debt
-
-question
-
-unfinished Plan
-
-missing person
-
-unresolved conflict
-
-scheduled meeting.
-```
-
----
-
-# Open Loop State
-
-Conceptually:
-
-```text
-Open Loop ID
-
-Character ID
-
-Subject
-
-Origin
-
-Created Date
-
-Priority
-
-Expected Follow-Up
-
-Deadline
-
-Related Goal
-
-Related Relationship
-
-Status.
-```
-
----
-
-# Open Loop Status
-
-Recommended states:
+Useful conceptual states include:
 
 ```text
 OPEN
@@ -1635,157 +1015,916 @@ EXPIRED.
 
 ---
 
-# Waiting
+# 31. Open Loops Must Not Become Infinite
 
-Characters may be waiting for:
+Characters should not accumulate:
 
 ```text
-person
-
-message
-
-shipment
-
-weather
-
-decision
-
-payment
-
-information
-
-opportunity.
+ENDLESS
+UNRESOLVED
+OPEN LOOPS.
 ```
 
-Waiting is:
+Over time, unresolved matters should usually:
 
 ```text
-A VALID STATE.
-```
+RESOLVE
 
----
+EXPIRE
 
-# Waiting Does Not Mean Inactivity
+BE ABANDONED
 
-A character waiting for:
+BE REPLACED
 
-```text
-shipment
-```
+OR
 
-may still:
-
-```text
-work
-
-socialize
-
-pursue other Goals.
+REMAIN EXPLICITLY
+PERSISTENT.
 ```
 
 ---
 
-# Conditional Initiative
+# 32. Follow-Up
 
-Characters may have intentions such as:
+Characters should be capable of following up on matters they consider important.
+
+Examples:
+
+```text
+CHECK INJURED FRIEND
+
+ASK ABOUT APPLICATION
+
+CHECK REPAIR
+
+SEEK UNPAID DEBT
+
+CHECK DELIVERY
+
+REVISIT AGREEMENT
+
+CONTACT PERSON AGAIN.
+```
+
+Follow-up should emerge from:
+
+```text
+OPEN LOOP
++
+CURRENT RELEVANCE
++
+AVAILABLE TIME
++
+CHARACTER PRIORITY.
+```
+
+---
+
+# 33. Waiting
+
+Waiting is a legitimate Character state.
+
+Characters may wait for:
+
+```text
+PERSON
+
+MESSAGE
+
+SHIPMENT
+
+WEATHER
+
+DECISION
+
+PAYMENT
+
+INFORMATION
+
+RESOURCE
+
+OPPORTUNITY
+
+EVENT.
+```
+
+---
+
+# 34. Waiting Is Not Inactivity
+
+A Character waiting for one thing may still:
+
+```text
+WORK
+
+EAT
+
+SOCIALIZE
+
+PURSUE OTHER GOALS
+
+MAINTAIN RELATIONSHIPS
+
+REST
+
+SOLVE OTHER PROBLEMS.
+```
+
+Therefore:
+
+```text
+WAITING
+≠
+FROZEN.
+```
+
+---
+
+# 35. Conditional Intent
+
+Characters may hold conditional intentions.
+
+Example:
 
 ```text
 IF X HAPPENS
-THEN DO Y.
+THEN
+CONSIDER Y.
 ```
 
 Example:
 
 ```text
-If fuel price exceeds threshold:
-reduce deliveries.
+IF FUEL PRICES
+RISE FURTHER
+
+THEN
+
+REDUCE DELIVERY ROUTES.
+```
+
+The condition does not guarantee the final action.
+
+It creates a new decision context.
+
+---
+
+# 36. Anticipatory Initiative
+
+Characters may act because of expected future conditions.
+
+Possible examples:
+
+```text
+WINTER
+
+STORM
+
+SHORTAGE
+
+ELECTION
+
+BIRTH
+
+RETIREMENT
+
+KNOWN DEADLINE
+
+EXPECTED PRICE CHANGE.
+```
+
+Anticipation requires:
+
+```text
+PLAUSIBLE BELIEF
+ABOUT THE FUTURE.
 ```
 
 ---
 
-# Triggered Plans
+# 37. Preparation
 
-Conceptually:
+Preparation may include:
 
 ```text
-CONDITION
-      ↓
-TRIGGER
-      ↓
-ACTIVATE PLAN.
+BUYING SUPPLIES
+
+REPAIRING EQUIPMENT
+
+CONTACTING PEOPLE
+
+RESERVING TRANSPORT
+
+CHANGING ROUTINE
+
+TRAINING
+
+MOVING RESOURCES.
+```
+
+Preparation must always be based on:
+
+```text
+WHAT THE CHARACTER
+COULD REASONABLY
+HAVE KNOWN OR EXPECTED.
 ```
 
 ---
 
-# Preparedness
+# 38. Opportunity Detection
 
-Characters may prepare before:
+Characters may recognize opportunities depending on:
 
 ```text
-a predicted event.
+LOCATION
+
+GOALS
+
+KNOWN INFORMATION
+
+RELATIONSHIPS
+
+EXPERTISE
+
+RESOURCES
+
+RESPONSIBILITIES
+
+PROFESSIONAL CONTEXT
+
+WORLD CHANGE.
 ```
+
+Not every opportunity matters to every Character.
+
+---
+
+# 39. Opportunity Relevance
+
+Example:
+
+```text
+WORKSHOP FOR SALE
+```
+
+may be highly relevant to:
+
+```text
+MECHANIC
+WHO WANTS
+INDEPENDENCE.
+```
+
+and nearly irrelevant to:
+
+```text
+RETIRED TEACHER
+WITH NO CONNECTION
+TO THAT DOMAIN.
+```
+
+World opportunity alone does not create universal initiative.
+
+---
+
+# 40. Opportunity Expiration
+
+Opportunities may disappear.
 
 Examples:
 
 ```text
-winter
+PROPERTY SOLD
 
-storm
+JOB FILLED
 
-shortage
+SHIPMENT DEPARTED
 
-festival
+WEATHER WINDOW CLOSED
 
-election
+OTHER ACTOR ARRIVED FIRST.
+```
 
-birth
+Characters may miss opportunities.
 
-retirement.
+The world does not reserve them until the Character is ready.
+
+---
+
+# 41. Competition
+
+Multiple Actors may pursue the same opportunity.
+
+This may create:
+
+```text
+COMPETITION
+
+NEGOTIATION
+
+CONFLICT
+
+COOPERATION
+
+BIDDING
+
+RIVALRY.
+```
+
+The resulting relationship or social state belongs to the relevant authoritative system.
+
+---
+
+# 42. Threat Detection
+
+Characters may respond autonomously to perceived danger.
+
+Threat awareness may depend on:
+
+```text
+OBSERVATION
+
+INFORMATION
+
+EXPERTISE
+
+BELIEF
+
+RELATIONSHIPS
+
+LOCATION
+
+PRIOR EXPERIENCE.
+```
+
+Threat detection does not mean the threat assessment is correct.
+
+---
+
+# 43. Threat Response
+
+Possible responses include:
+
+```text
+AVOID
+
+PREPARE
+
+WARN
+
+SEEK HELP
+
+INVESTIGATE
+
+HIDE
+
+LEAVE
+
+CONFRONT
+
+IGNORE.
+```
+
+Which response is chosen belongs to Decision Making.
+
+---
+
+# 44. Information-Seeking Initiative
+
+A Character may autonomously decide:
+
+```text
+I NEED
+TO KNOW MORE.
+```
+
+Possible actions include:
+
+```text
+ASK CONTACT
+
+CHECK RECORDS
+
+LISTEN TO RADIO
+
+CONTACT INSTITUTION
+
+INSPECT LOCATION
+
+VERIFY RUMOR
+
+ASK TRAVELER
+
+CONSULT EXPERT.
 ```
 
 ---
 
-# Anticipatory Initiative
+# 45. Curiosity
 
-Characters should not only respond to:
+Curiosity may create initiative.
+
+But curiosity does not mean:
 
 ```text
-CURRENT PROBLEMS.
+INVESTIGATE EVERYTHING.
 ```
 
-They may act because of:
+Attention remains limited.
+
+---
+
+# 46. Responsibility
+
+Characters may act because they carry responsibilities.
+
+Examples:
 
 ```text
-EXPECTED FUTURE CONDITIONS.
+PARENT
+
+DOCTOR
+
+ENGINEER
+
+LEADER
+
+CAREGIVER
+
+EMPLOYEE
+
+OFFICIAL
+
+NEIGHBOR
+
+PARTNER.
+```
+
+Role may create obligation pressure.
+
+But obligation does not mechanically guarantee action.
+
+---
+
+# 47. Professional Initiative
+
+Profession may create recurring contexts in which Characters:
+
+```text
+NOTICE PROBLEMS
+
+PERFORM WORK
+
+MAINTAIN SYSTEMS
+
+RESPOND TO REQUESTS
+
+IDENTIFY OPPORTUNITIES
+
+FULFILL RESPONSIBILITIES.
+```
+
+Profession itself does not define capability.
+
+Expertise remains authoritative for what the Character can meaningfully do.
+
+---
+
+# 48. Capability Boundary
+
+Autonomy may determine:
+
+```text
+THE CHARACTER
+WANTS TO TRY.
+```
+
+It must then respect:
+
+```text
+WHAT THE CHARACTER
+BELIEVES THEY CAN DO
+
+AND
+
+WHAT THEY CAN
+ACTUALLY DO.
+```
+
+Therefore:
+
+```text
+INTENTION
+≠
+CAPABILITY.
+```
+
+And:
+
+```text
+CAPABILITY
+≠
+SUCCESS.
 ```
 
 ---
 
-# Example
+# 49. Capability Gap
 
-Belief:
+If a Character wants an outcome but lacks capability:
 
 ```text
-Fuel prices will rise.
+GOAL
+↓
+CAPABILITY GAP
+↓
+NEW OPTIONS MAY INCLUDE
+
+FIND EXPERT
+
+ASK FOR HELP
+
+LEARN
+
+BUY REPLACEMENT
+
+CHANGE PLAN
+
+ABANDON.
 ```
 
-Character action:
+The Character does not gain capability merely because the Goal exists.
+
+---
+
+# 50. Requests for Help
+
+Characters may autonomously ask others for:
 
 ```text
-buy fuel now.
+HELP
+
+INFORMATION
+
+RESOURCES
+
+ADVICE
+
+TRANSPORT
+
+PROTECTION
+
+WORK
+
+COMPANY
+
+EXPERTISE.
 ```
 
-This can alter:
+Request generation belongs to Character agency.
+
+The resulting interaction belongs to the relevant systems.
+
+---
+
+# 51. Request Routing
+
+When a Character needs help, the first question should be:
 
 ```text
-CURRENT WORLD STATE.
+WHO CAN HELP?
+```
+
+Not:
+
+```text
+WHERE IS
+THE PLAYER?
+```
+
+Possible resources include:
+
+```text
+FAMILY
+
+FRIENDS
+
+COWORKERS
+
+NEIGHBORS
+
+PROFESSIONALS
+
+INSTITUTIONS
+
+FACTION CONTACTS
+
+PLAYER CHARACTERS.
 ```
 
 ---
 
-# Initiative Horizon
+# 52. Player as One Possible Actor
 
-Autonomous actions may operate across:
+The player may be selected because:
+
+```text
+RELATIONSHIP SUPPORTS IT
+
+PLAYER CAPABILITY IS KNOWN
+
+PLAYER IS REACHABLE
+
+PLAYER IS TRUSTED
+
+PLAYER IS NEARBY
+
+REQUEST IS APPROPRIATE.
+```
+
+The player must not be selected because:
+
+```text
+THE GAME
+NEEDS CONTENT.
+```
+
+---
+
+# 53. Player Contact Requires Causality
+
+Before a Character contacts the player, ask:
+
+```text
+WHY THE PLAYER?
+
+WHY NOW?
+
+HOW DO THEY KNOW
+THE PLAYER CAN HELP?
+
+CAN THEY
+REACH THE PLAYER?
+
+COULD SOMEONE ELSE
+HANDLE THIS?
+
+DOES THE RELATIONSHIP
+SUPPORT CONTACT?
+```
+
+---
+
+# 54. Communication Attempts Are Actions
+
+A Character may:
+
+```text
+SEND MESSAGE
+
+CALL
+
+TRAVEL TO MEET
+
+ASK AN INTERMEDIARY
+
+USE RADIO.
+```
+
+The attempt may fail.
+
+Failure does not erase the action.
+
+---
+
+# 55. Communication Failure
+
+Possible reasons include:
+
+```text
+NETWORK FAILURE
+
+WRONG LOCATION
+
+PLAYER UNAVAILABLE
+
+DELAY
+
+DAMAGED INFRASTRUCTURE
+
+INTERCEPTION
+
+MESSAGE LOSS.
+```
+
+The attempted communication remains part of history where significant.
+
+---
+
+# 56. Delayed Communication
+
+Example:
+
+```text
+MESSAGE SENT MONDAY
+
+NETWORK FAILURE
+
+MESSAGE DELIVERED WEDNESDAY.
+```
+
+This preserves:
+
+```text
+WORLD TIME
++
+INFORMATION DELAY.
+```
+
+---
+
+# 57. NPC-to-NPC Initiative
+
+Characters may interact with one another without player involvement.
+
+They may:
+
+```text
+TALK
+
+TRADE
+
+HELP
+
+ARGUE
+
+COOPERATE
+
+TEACH
+
+LEARN
+
+HIRE
+
+FIRE
+
+NEGOTIATE
+
+AVOID
+
+APOLOGIZE
+
+RECONCILE.
+```
+
+The player is not the gatekeeper of NPC relationships.
+
+---
+
+# 58. Relationship Initiative
+
+A Character may initiate Relationship-relevant action.
+
+Examples:
+
+```text
+CALL
+
+VISIT
+
+HELP
+
+APOLOGIZE
+
+CONFRONT
+
+CONFIDE
+
+COMFORT
+
+WITHDRAW
+
+RECONCILE.
+```
+
+Autonomy owns the initiation.
+
+Relationships owns the resulting persistent state.
+
+---
+
+# 59. Promise Fulfillment
+
+A promise may generate future initiative.
+
+The Character may attempt to:
+
+```text
+KEEP IT
+
+DELAY IT
+
+BREAK IT
+
+RENEGOTIATE IT.
+```
+
+Whether the promise is remembered and how it matters depends on:
+
+```text
+MEMORY
+
+BELIEF
+
+RELATIONSHIP
+
+CURRENT CONDITIONS
+
+DECISION.
+```
+
+---
+
+# 60. Reciprocity
+
+Past actions may generate future initiative.
+
+Example:
+
+```text
+THEY HELPED ME
+BEFORE
+
+↓
+
+I MAY HELP
+THEM NOW.
+```
+
+The system must not convert reciprocity into automatic behavior.
+
+---
+
+# 61. Conflict Initiative
+
+Characters may autonomously:
+
+```text
+CONFRONT
+
+COMPLAIN
+
+NEGOTIATE
+
+REPORT
+
+RETALIATE
+
+WITHDRAW
+
+SEEK MEDIATION
+
+IGNORE.
+```
+
+Conflict does not require player presence.
+
+---
+
+# 62. De-Escalation Is Also Initiative
+
+Characters may decide:
+
+```text
+I DO NOT WANT
+THIS CONFLICT
+TO CONTINUE.
+```
+
+They may autonomously:
+
+```text
+APOLOGIZE
+
+COMPROMISE
+
+WITHDRAW
+
+SEEK MEDIATION
+
+FORGIVE
+
+RECONCILE.
+```
+
+Autonomy must simulate cooperation and repair as seriously as escalation.
+
+---
+
+# 63. Initiative Horizon
+
+Initiative may operate across:
 
 ```text
 MINUTES
@@ -1801,1585 +1940,938 @@ MONTHS
 YEARS.
 ```
 
----
-
-# Immediate Initiative
-
 Examples:
 
 ```text
-respond to fire
+IMMEDIATE
+→ move away from fire
 
-help injured person
+SHORT TERM
+→ repair vehicle
 
-call family.
+MEDIUM TERM
+→ save for equipment
+
+LONG TERM
+→ retrain for profession.
+```
+
+Long-term Life goals remain owned by the relevant Character / Life systems.
+
+---
+
+# 64. Attention
+
+Characters cannot meaningfully pursue everything at once.
+
+They possess limited:
+
+```text
+TIME
+
+ATTENTION
+
+ENERGY
+
+RESOURCES
+
+COGNITIVE CAPACITY.
+```
+
+Therefore:
+
+```text
+POSSIBLE INITIATIVE
+MUST BE PRIORITIZED.
 ```
 
 ---
 
-# Short-Term Initiative
+# 65. Attention Is Not a Universal Number
 
-Examples:
+Do not automatically implement:
 
 ```text
-repair vehicle
-
-restock shop
-
-visit friend
-
-apply for job.
+ATTENTION = 72.
 ```
+
+Attention is a conceptual constraint unless later implementation requires a more explicit representation.
 
 ---
 
-# Medium-Term Initiative
+# 66. Competing Commitments
 
-Examples:
+A Character may simultaneously face:
 
 ```text
-save money
+WORK
 
-build house
+FAMILY
 
-expand business
+PERSONAL GOAL
 
-develop relationship.
+EMERGENCY
+
+PROMISE
+
+OPEN LOOP
+
+REST NEED
+
+SOCIAL OBLIGATION.
 ```
+
+Autonomy must allow some things to remain undone.
 
 ---
 
-# Long-Term Initiative
+# 67. Prioritization
 
-Examples:
+Possible initiative priority may depend on:
 
 ```text
-change profession
+URGENCY
 
-raise family
+GOAL RELEVANCE
 
-build institution
+DEADLINE
 
-move region
+RISK
 
-pursue political career.
+RESPONSIBILITY
+
+RELATIONSHIP SIGNIFICANCE
+
+OPPORTUNITY EXPIRATION
+
+CURRENT COMMITMENT
+
+AVAILABLE TIME
+
+PSYCHOLOGICAL FRICTION.
 ```
+
+No universal priority formula is canonical yet.
 
 ---
 
-# Life Initiative
+# 68. Initiative Queue
 
-Some autonomous Goals may span:
-
-```text
-DECADES.
-```
-
-Example:
-
-```text
-build family farm
-
-become doctor
-
-create community institution
-
-restore damaged region.
-```
-
----
-
-# Initiative Priority
-
-Characters may have multiple possible autonomous actions.
-
-Initiative priority may depend on:
-
-```text
-Goal priority
-
-Need urgency
-
-deadline
-
-relationship importance
-
-risk
-
-opportunity expiration
-
-role obligation
-
-world relevance.
-```
-
----
-
-# Initiative Queue
-
-Conceptually, characters may maintain:
+A conceptual Character activity state may contain:
 
 ```text
 CURRENT ACTION
 
-NEXT ACTIONS
+POSSIBLE NEXT ACTIONS
 
 SCHEDULED ACTIONS
 
 OPEN LOOPS
 
+WAITING STATES
+
 POTENTIAL OPPORTUNITIES.
 ```
 
----
-
-# Initiative Queue Principle
-
-The queue should not become:
-
-```text
-AN INFINITE TASK LIST.
-```
-
-Characters possess:
-
-```text
-LIMITED TIME
-
-LIMITED ATTENTION
-
-LIMITED ENERGY.
-```
+This should not become an infinite task list.
 
 ---
 
-# Character Attention
+# 69. Intention-Action Gap
 
-Characters cannot pursue:
+A critical principle is:
 
 ```text
-EVERYTHING.
+INTENDING
+TO DO SOMETHING
+
+≠
+
+DOING IT.
 ```
 
-They must prioritize.
+Humans frequently:
+
+```text
+DELAY
+
+AVOID
+
+PROCRASTINATE
+
+FORGET
+
+BECOME DISTRACTED
+
+CHANGE PRIORITY
+
+LOSE OPPORTUNITY.
+```
+
+This gap is important for believable Characters.
 
 ---
 
-# Attention Budget
+# 70. Action Friction
+
+Action may require overcoming:
+
+```text
+TIME
+
+EFFORT
+
+RISK
+
+COST
+
+UNCERTAINTY
+
+FEAR
+
+SOCIAL DISCOMFORT
+
+PSYCHOLOGICAL STRAIN
+
+COMPETING COMMITMENTS
+
+LACK OF INFORMATION.
+```
+
+This combined resistance is:
+
+```text
+ACTION FRICTION.
+```
+
+---
+
+# 71. Conceptual Activation Model
 
 Conceptually:
 
 ```text
-AVAILABLE ATTENTION
--
-CURRENT OBLIGATIONS
--
-ACTIVE CRISIS
--
-MAJOR GOALS
-=
-REMAINING INITIATIVE CAPACITY.
+RELEVANCE
++
+MOTIVATION
++
+URGENCY
++
+OPPORTUNITY
+
+VERSUS
+
+TIME
++
+EFFORT
++
+RISK
++
+UNCERTAINTY
++
+PSYCHOLOGICAL FRICTION
++
+COMPETING COMMITMENTS
+↓
+POSSIBLE INITIATIVE.
 ```
+
+This is not a universal numeric equation.
 
 ---
 
-# Autonomy Budget
+# 72. Low-Friction Action
 
-For simulation performance, characters may conceptually receive:
-
-```text
-AUTONOMY BUDGET.
-```
-
-This determines:
+Examples:
 
 ```text
-how much detailed autonomous
-processing occurs.
+SEND MESSAGE
+
+ASK NEARBY FRIEND
+
+CHECK INFORMATION
+
+BUY COMMON ITEM.
 ```
 
-It is:
-
-```text
-A SIMULATION TOOL
-```
-
-not:
-
-```text
-A CHARACTER ATTRIBUTE.
-```
+These may require relatively little activation pressure.
 
 ---
 
-# High Autonomy Budget
+# 73. High-Friction Action
 
-Used for:
+Examples:
 
 ```text
-player-adjacent characters
+MOVE REGION
 
-important relationships
+QUIT JOB
 
-major leaders
+END RELATIONSHIP
 
-active rivals
+START BUSINESS
 
-characters in major events.
+REPORT CORRUPTION
+
+CONFRONT POWERFUL ACTOR.
 ```
+
+These generally require stronger reasons, greater urgency, or accumulated pressure.
 
 ---
 
-# Medium Autonomy Budget
+# 74. Procrastination
 
-Used for:
-
-```text
-relevant regional characters
-
-professional contacts
-
-secondary relationships.
-```
-
----
-
-# Low Autonomy Budget
-
-Used for:
+Low urgency combined with high friction may produce:
 
 ```text
-background population.
-```
-
----
-
-# Autonomy Budget Principle
-
-Low simulation budget does not mean:
-
-```text
-CHARACTER HAS LESS FREE WILL.
-```
-
-It means:
-
-```text
-THE SIMULATION
-USES MORE COMPRESSION.
-```
-
----
-
-# Character Resolution
-
-Autonomy should scale with:
-
-```text
-Character Simulation Resolution.
-```
-
----
-
-# High-Resolution Autonomy
-
-Track:
-
-```text
-specific Goals
-
-Plan steps
-
-open loops
-
-social initiative
-
-schedule
-
-information seeking
-
-decision triggers
-
-relationship maintenance.
-```
-
----
-
-# Medium-Resolution Autonomy
-
-Track:
-
-```text
-dominant Goals
-
-profession
-
-major relationships
-
-major opportunities
-
-major problems
-
-weekly activity.
-```
-
----
-
-# Low-Resolution Autonomy
-
-Track:
-
-```text
-profession
-
-household
-
-broad Goals
-
-regional pressures
-
-major life events.
-```
-
----
-
-# Population-Level Autonomy
-
-Large populations may be simulated through:
-
-```text
-aggregate behavior.
+DELAY.
 ```
 
 Examples:
 
 ```text
-migration
+PAPERWORK
 
-shopping
+DIFFICULT CONVERSATION
 
-labor shifts
+MEDICAL APPOINTMENT
 
-hoarding
+MAINTENANCE
 
-travel
-
-political support
-
-social response.
+UNPLEASANT ADMINISTRATION.
 ```
 
 ---
 
-# Individual Promotion
+# 75. Avoidance
 
-When a background character becomes relevant:
+Characters may avoid actions that are:
 
 ```text
-PROMOTE
-TO HIGHER RESOLUTION.
+EMOTIONALLY DIFFICULT
+
+SOCIAL RISKY
+
+FRIGHTENING
+
+PAINFUL
+
+UNCERTAIN.
 ```
 
-Detailed state should be reconstructed from:
+Avoidance may allow:
 
 ```text
-prior role
-
-location
-
-household
-
-profession
-
-regional history
-
-major events
-
-social context.
+SMALL PROBLEMS
+TO BECOME
+LARGER PROBLEMS.
 ```
 
 ---
 
-# Promotion Constraint
+# 76. Inaction Is History
 
-Do not reconstruct:
-
-```text
-whatever is convenient
-for current story.
-```
-
-Reconstruction must remain:
+A Character may change the world through:
 
 ```text
-CAUSALLY PLAUSIBLE.
-```
-
----
-
-# Initiative and World Events
-
-World Events may create:
-
-```text
-MASS AUTONOMOUS RESPONSE.
+WHAT THEY DID NOT DO.
 ```
 
 Example:
 
 ```text
-regional blackout.
+INTENDS TO APOLOGIZE
+↓
+REPEATEDLY DELAYS
+↓
+OTHER PERSON LEAVES
+↓
+APOLOGY NEVER OCCURS.
 ```
 
-Characters may independently:
-
-```text
-seek light
-
-check family
-
-protect business
-
-travel home
-
-buy supplies
-
-contact authorities
-
-help neighbors.
-```
+Inaction may create persistent consequence.
 
 ---
 
-# Distributed Response
+# 77. Momentum
 
-No central story script is required.
+Starting an action may be harder than continuing it.
 
-Instead:
+Conceptually:
 
 ```text
-ONE WORLD EVENT
-      ↓
-THOUSANDS OF
-CHARACTER RESPONSES
-      ↓
-NEW WORLD STATE.
+INITIAL ACTIVATION
+MAY BE HIGH
+
+↓
+
+ACTION BEGINS
+
+↓
+
+CONTINUATION
+MAY REQUIRE
+LESS FRICTION.
 ```
+
+Momentum must not guarantee completion.
 
 ---
 
-# Emergent Cascade
+# 78. Interruption
 
-Example:
-
-```text
-Power outage
-↓
-shops close
-↓
-workers go home
-↓
-traffic increases
-↓
-fuel consumption rises
-↓
-stations run low
-↓
-rumor spreads
-↓
-people stockpile fuel
-↓
-regional shortage emerges.
-```
-
-This is:
+Autonomous actions may be interrupted by:
 
 ```text
 WORLD EVENT
-+
-AUTONOMOUS CHARACTERS
-=
-EMERGENT CASCADE.
+
+PLAYER INTERACTION
+
+RELATIONSHIP EVENT
+
+EMERGENCY
+
+RESOURCE FAILURE
+
+NEW INFORMATION
+
+HIGHER-PRIORITY COMMITMENT.
 ```
 
 ---
 
-# Initiative and Information
+# 79. Interruption Evaluation
 
-Characters may autonomously:
+When interruption occurs:
 
 ```text
-seek information
+CURRENT COMMITMENT
 
-verify rumors
+VERSUS
 
-share reports
+NEW PRESSURE.
+```
 
-warn others
+Possible responses include:
 
-conceal information
+```text
+IGNORE
 
-investigate.
+DELAY RESPONSE
+
+FINISH CURRENT TASK
+
+PAUSE CURRENT TASK
+
+ABANDON CURRENT TASK.
+```
+
+Decision Making owns the final choice.
+
+---
+
+# 80. Resume Logic
+
+After interruption, the Character may evaluate:
+
+```text
+IS THE ORIGINAL
+GOAL OR COMMITMENT
+STILL ACTIVE?
+```
+
+If yes:
+
+```text
+RESUME
+
+RESCHEDULE
+
+REPLAN.
+```
+
+If no:
+
+```text
+ABANDON
+
+EXPIRE
+
+REPLACE.
 ```
 
 ---
 
-# Information-Seeking Initiative
+# 81. Forgotten Plans
 
-Example:
+Low-priority matters may gradually disappear from active attention.
+
+This should occur through plausible mechanisms such as:
 
 ```text
-Character hears
-bridge may be damaged.
+FORGETTING
+
+REPEATED INTERRUPTION
+
+CHANGING GOALS
+
+LOW PRIORITY
+
+LOSS OF RELEVANCE.
 ```
 
-Goal:
+Not because the simulation arbitrarily deleted them.
+
+---
+
+# 82. Recovery and Return to Life
+
+After crisis, Characters should often attempt to:
 
 ```text
-travel tomorrow.
+RETURN TO LIFE.
 ```
 
-Character may:
+Possible activity includes:
 
 ```text
-call contact
+REPAIR HOME
 
-check radio
+RETURN TO WORK
 
-ask traveler
+REST
 
-inspect route.
+RECONNECT SOCIALLY
+
+REPLACE RESOURCES
+
+RESTART PLANS
+
+ADAPT ROUTINES.
 ```
 
 ---
 
-# Curiosity
+# 83. Crisis Is Not Permanent Mode
 
-Some characters may investigate because:
+Avoid:
 
 ```text
-THEY WANT TO KNOW.
+CRISIS OCCURS
+↓
+CHARACTER REMAINS
+FOREVER IN
+EMERGENCY STATE.
 ```
 
-Curiosity may itself generate:
+People may eventually establish:
 
 ```text
-initiative.
+A NEW NORMAL.
+```
+
+The resulting psychological and Life changes belong to their authoritative systems.
+
+---
+
+# 84. Off-Screen Autonomy
+
+Characters continue acting when:
+
+```text
+OFF SCREEN.
+```
+
+Possible activity includes:
+
+```text
+WORK
+
+TRAVEL
+
+GOAL PURSUIT
+
+ROUTINE
+
+RELATIONSHIP CONTACT
+
+INFORMATION SEEKING
+
+PROBLEM SOLVING
+
+SCHEDULED ACTIVITY.
 ```
 
 ---
 
-# Social Information Initiative
-
-Characters may ask:
+# 85. Off-Screen Principle
 
 ```text
-"What happened?"
-
-"Where is Elias?"
-
-"Did the shipment arrive?"
-
-"Are you two still together?"
+OFF SCREEN
+≠
+FROZEN.
 ```
 
-This creates:
+But:
 
 ```text
-INFORMATION FLOW.
+OFF SCREEN
+≠
+RANDOM ACTIVITY.
+```
+
+Autonomous action still requires causal support.
+
+---
+
+# 86. Off-Screen Resolution
+
+Off-screen autonomy should use:
+
+```text
+THE LOWEST
+SIMULATION RESOLUTION
+THAT PRESERVES
+CAUSALITY.
+```
+
+Only consequential activity requires high-resolution processing.
+
+---
+
+# 87. Processing Resolution Is Not Agency
+
+Do not use:
+
+```text
+HIGH AUTONOMY
+
+LOW AUTONOMY
+```
+
+to describe simulation detail.
+
+Prefer:
+
+```text
+HIGH AUTONOMY
+PROCESSING RESOLUTION
+
+MEDIUM AUTONOMY
+PROCESSING RESOLUTION
+
+LOW AUTONOMY
+PROCESSING RESOLUTION.
+```
+
+The Character's underlying agency is not reduced.
+
+---
+
+# 88. High Processing Resolution
+
+May track:
+
+```text
+CURRENT ACTION
+
+SPECIFIC GOAL CONNECTION
+
+OPEN LOOPS
+
+SCHEDULE
+
+INTERRUPTIONS
+
+FOLLOW-UP
+
+INFORMATION SEEKING
+
+SOCIAL INITIATIVE.
 ```
 
 ---
 
-# Initiative and Relationships
+# 89. Medium Processing Resolution
 
-Characters should not wait for the player to:
-
-```text
-repair every relationship.
-```
-
-They may independently:
+May track:
 
 ```text
-apologize
+DOMINANT GOALS
 
-forgive
+MAJOR COMMITMENTS
 
-withdraw
+MAJOR RELATIONSHIPS
 
-confront
+PROFESSIONAL ACTIVITY
 
-seek reconciliation
+MAJOR OPPORTUNITIES
 
-end relationship
-
-strengthen relationship.
+MAJOR PROBLEMS.
 ```
 
 ---
 
-# Relationship Escalation
+# 90. Low Processing Resolution
 
-A character may decide:
+May track:
 
 ```text
-I NEED TO TALK TO THEM.
+BROAD ACTIVITY
+
+ROLE
+
+LOCATION
+
+MAJOR GOAL DIRECTION
+
+MAJOR OPEN LOOPS
+
+MAJOR WORLD PRESSURES.
 ```
 
-This can create:
+Low resolution means:
 
 ```text
-autonomous encounter.
-```
-
----
-
-# Relationship Avoidance
-
-A character may decide:
-
-```text
-I DON'T WANT TO SEE THEM.
-```
-
-This may produce:
-
-```text
-missed calls
-
-changed routines
-
-avoided locations
-
-social distance.
-```
-
----
-
-# Relationship Opportunity
-
-Characters may autonomously:
-
-```text
-form new friendships
-
-begin romances
-
-develop rivalries
-
-create professional relationships.
-```
-
----
-
-# Player Is Not Relationship Gatekeeper
-
-Relationships between NPCs should continue:
-
-```text
-WITHOUT PLAYER APPROVAL.
-```
-
----
-
-# NPC-to-NPC Interaction
-
-Characters may:
-
-```text
-talk
-
-trade
-
-help
-
-argue
-
-cooperate
-
-fall in love
-
-break up
-
-hire
-
-fire
-
-betray
-
-forgive
-
-teach
-
-learn.
-```
-
----
-
-# NPC Network Evolution
-
-Over time:
-
-```text
-SOCIAL NETWORK
-SHOULD CHANGE.
-```
-
----
-
-# Character Requests
-
-Characters may ask other characters for:
-
-```text
-help
-
-information
-
-resources
-
-work
-
-advice
-
-transport
-
-protection
-
-company.
-```
-
----
-
-# Request Routing
-
-The character should first consider:
-
-```text
-WHO CAN HELP?
+LESS DETAIL.
 ```
 
 Not:
 
 ```text
-WHERE IS THE PLAYER?
+LESS AGENCY.
 ```
 
 ---
 
-# Player as One Option
+# 91. Population-Level Behavior Boundary
 
-The player may be selected when:
+Autonomy describes individual Actor initiative.
+
+It does not own aggregated population behavior such as:
 
 ```text
-relationship strong
+MIGRATION PATTERNS
 
-player capability known
+MARKET BEHAVIOR
 
-player nearby
+POLITICAL SUPPORT
 
-player trustworthy
+HOARDING PATTERNS
 
-request appropriate.
+LABOR SHIFTS.
 ```
+
+These belong primarily to:
+
+```text
+SOCIETY
++
+WORLD SIMULATION.
+```
+
+Individual autonomous actions may contribute to those patterns.
 
 ---
 
-# Other Characters as Options
+# 92. Emergent Cascades
 
-Characters should often ask:
-
-```text
-family
-
-friends
-
-coworkers
-
-professionals
-
-institutions
-
-neighbors.
-```
-
----
-
-# Autonomous Cooperation
-
-Characters may form:
-
-```text
-temporary cooperation.
-```
-
-Example:
-
-```text
-three farmers
-share transport.
-```
-
----
-
-# Autonomous Organization
-
-Repeated cooperation may create:
-
-```text
-new organizations
-
-committees
-
-businesses
-
-associations
-
-factions.
-```
-
-This connects to:
-
-```text
-Society
-
-Faction systems.
-```
-
----
-
-# Autonomous Competition
-
-Characters may compete over:
-
-```text
-jobs
-
-customers
-
-resources
-
-status
-
-relationships
-
-political influence
-
-property.
-```
-
----
-
-# Rivalry
-
-Repeated competition may develop into:
-
-```text
-RIVALRY.
-```
-
-Rivalry may then generate:
-
-```text
-future autonomous initiative.
-```
-
----
-
-# Conflict Initiative
-
-Characters may autonomously:
-
-```text
-confront
-
-complain
-
-report
-
-negotiate
-
-retaliate
-
-avoid.
-```
-
-Conflict does not require:
-
-```text
-PLAYER PRESENCE.
-```
-
----
-
-# Escalation
-
-Unresolved conflict may:
-
-```text
-ESCALATE.
-```
-
-Example:
-
-```text
-disagreement
-↓
-argument
-↓
-avoidance
-↓
-economic retaliation
-↓
-community division.
-```
-
----
-
-# De-Escalation
-
-Characters may also autonomously:
-
-```text
-cool down
-
-apologize
-
-compromise
-
-seek mediation
-
-forgive.
-```
-
----
-
-# Autonomous Economy
-
-Characters should autonomously:
-
-```text
-work
-
-earn
-
-spend
-
-save
-
-trade
-
-invest
-
-hire
-
-produce
-
-consume.
-```
-
-Economic systems should not wait for:
-
-```text
-PLAYER TRANSACTIONS.
-```
-
----
-
-# Business Initiative
-
-Business owners may:
-
-```text
-change prices
-
-order stock
-
-hire staff
-
-reduce hours
-
-expand
-
-close
-
-relocate.
-```
-
----
-
-# Market Adaptation
-
-Example:
-
-```text
-Fuel cost rises.
-```
-
-Delivery company may:
-
-```text
-increase prices
-
-reduce routes
-
-combine deliveries
-
-seek alternate fuel.
-```
-
----
-
-# Employment Initiative
-
-Characters may:
-
-```text
-seek jobs
-
-quit jobs
-
-hire others
-
-request raise
-
-change profession
-
-retire.
-```
-
----
-
-# Migration Initiative
-
-Characters may decide to:
-
-```text
-MOVE.
-```
-
-Reasons may include:
-
-```text
-work
-
-family
-
-safety
-
-housing
-
-resources
-
-relationships
-
-climate
-
-politics.
-```
-
----
-
-# Migration Threshold
-
-Migration should usually require:
-
-```text
-meaningful pressure
-```
-
-because relocation has:
-
-```text
-high cost.
-```
-
----
-
-# Household Decisions
-
-Households may generate:
-
-```text
-shared autonomous decisions.
-```
-
-Examples:
-
-```text
-move
-
-save money
-
-purchase vehicle
-
-care for relative
-
-evacuate
-
-change school.
-```
-
----
-
-# Household Conflict
-
-Members may disagree.
-
-The final action may emerge through:
-
-```text
-negotiation
-
-authority
-
-compromise
-
-conflict.
-```
-
----
-
-# Life Events
-
-Autonomy should support:
-
-```text
-life progression.
-```
-
-Characters may:
-
-```text
-graduate
-
-begin career
-
-change job
-
-marry
-
-separate
-
-have children
-
-retire
-
-move
-
-start business.
-```
-
-Detailed rules belong to:
-
-```text
-Aging_and_Life_Events.md.
-```
-
----
-
-# Autonomous Character Development
-
-Characters may change because of:
-
-```text
-their own experiences.
-```
-
-Player interaction is not required.
-
----
-
-# Example
-
-Character repeatedly:
-
-```text
-fails in business.
-```
-
-Possible development:
-
-```text
-becomes more cautious
-
-changes profession
-
-loses confidence
-
-learns new skills.
-```
-
----
-
-# Initiative and Capability
-
-Characters should only pursue actions they:
-
-```text
-believe they can perform
-```
-
-or:
-
-```text
-believe they can obtain help for.
-```
-
----
-
-# Capability Growth Initiative
-
-Characters may decide:
-
-```text
-I NEED TO LEARN THIS.
-```
-
-This may generate:
-
-```text
-training
-
-education
-
-practice
-
-mentorship.
-```
-
----
-
-# Capability Gap
-
-Goal:
-
-```text
-Repair generator.
-```
-
-Character cannot repair it.
-
-Possible initiative:
-
-```text
-find mechanic
-
-learn repair
-
-buy replacement
-
-trade for service.
-```
-
----
-
-# Resource Initiative
-
-Characters may autonomously manage:
-
-```text
-money
-
-food
-
-fuel
-
-tools
-
-property
-
-time.
-```
-
----
-
-# Resource Conservation
-
-Expected scarcity may produce:
-
-```text
-reduced consumption
-
-stockpiling
-
-substitution
-
-sharing
-
-rationing.
-```
-
----
-
-# Resource Acquisition
-
-Characters may seek:
-
-```text
-work
-
-trade
-
-purchase
-
-production
-
-borrowing
-
-assistance.
-```
-
----
-
-# Illegal Initiative
-
-Characters may autonomously consider:
-
-```text
-illegal actions
-```
-
-under sufficient:
-
-```text
-motivation
-
-opportunity
-
-pressure.
-```
-
-Examples:
-
-```text
-theft
-
-smuggling
-
-fraud
-
-unauthorized access.
-```
-
-Such actions should remain governed by:
-
-```text
-Decision_Making
-
-Values
-
-Risk
-
-Relationships
-
-Law.
-```
-
----
-
-# Criminal Opportunity
-
-Characters should not become criminal merely because:
-
-```text
-AN ILLEGAL OPPORTUNITY EXISTS.
-```
-
-There must be:
-
-```text
-CAUSAL MOTIVATION.
-```
-
----
-
-# Political Initiative
-
-Characters may autonomously:
-
-```text
-support candidate
-
-oppose policy
-
-organize meeting
-
-petition authority
-
-run for office
-
-join movement
-
-leave faction.
-```
-
----
-
-# Civic Initiative
-
-Characters may:
-
-```text
-volunteer
-
-organize cleanup
-
-help neighbors
-
-form committee
-
-repair shared infrastructure.
-```
-
----
-
-# Authority Initiative
-
-Officials may:
-
-```text
-issue warning
-
-allocate resources
-
-investigate
-
-schedule meeting
-
-request assistance
-
-change policy.
-```
-
-Authorities must remain:
-
-```text
-ACTORS
-```
-
-rather than:
-
-```text
-STATIC QUEST BOARDS.
-```
-
----
-
-# Institutional Initiative
-
-Institutions may generate tasks through:
-
-```text
-their members.
-```
-
-Example:
-
-```text
-Hospital detects shortage
-↓
-Administrator orders supplies
-↓
-Supplier responds
-↓
-Transport scheduled.
-```
-
----
-
-# Initiative Chains
-
-One character's autonomous action may trigger another's.
+One Character action may trigger another.
 
 Conceptually:
 
 ```text
 CHARACTER A ACTS
-      ↓
+↓
 CHARACTER B OBSERVES
-      ↓
+↓
 B REEVALUATES
-      ↓
+↓
 B ACTS
-      ↓
+↓
 CHARACTER C RESPONDS.
 ```
 
+Large outcomes may emerge from many such interactions.
+
+Autonomy does not own the final aggregate state.
+
 ---
 
-# Social Cascades
+# 93. Consequence
+
+Autonomous action may produce:
+
+```text
+WORLD CONSEQUENCE
+
+RELATIONSHIP CONSEQUENCE
+
+LIFE CONSEQUENCE
+
+SOCIAL CONSEQUENCE
+
+FACTION CONSEQUENCE
+
+RESOURCE CONSEQUENCE.
+```
+
+The relevant authoritative system resolves each state change.
+
+---
+
+# 94. Small Actions
+
+Most autonomous actions should remain:
+
+```text
+SMALL.
+```
+
+Examples:
+
+```text
+GO TO WORK
+
+CALL FRIEND
+
+BUY FOOD
+
+FIX MINOR PROBLEM
+
+ATTEND MEETING.
+```
+
+The world should not turn every autonomous action into major history.
+
+---
+
+# 95. Butterfly Effects
+
+A small action may later become consequential.
 
 Example:
 
 ```text
-Trader raises prices
+MECHANIC
+ORDERS EXTRA BATTERIES
+
 ↓
-customer complains
+
+LATER BLACKOUT
+
 ↓
-rumor of shortage spreads
+
+BATTERIES BECOME
+VALUABLE RESOURCE.
+```
+
+The earlier action must have had a valid reason at the time.
+
+---
+
+# 96. No Narrative Causality Reversal
+
+Correct:
+
+```text
+CHARACTER STATE
 ↓
-other traders increase orders
+AUTONOMOUS ACTION
 ↓
-supplier capacity falls
+WORLD CONSEQUENCE
 ↓
-actual shortage begins.
+POSSIBLE PLAYER RELEVANCE.
+```
+
+Incorrect:
+
+```text
+STORY HOOK NEEDED
+↓
+INVENT CHARACTER MOTIVATION.
 ```
 
 ---
 
-# Autonomous Story Generation
+# 97. Narrative Boundary
 
-Autonomy is one of the main engines through which:
+Autonomy produces:
 
 ```text
-SIMULATION
-PRODUCES STORY.
+CHARACTER ACTION.
 ```
+
+The Story Framework determines:
+
+```text
+NARRATIVE RELEVANCE.
+```
+
+The Living Campaign Engine may track:
+
+```text
+CAMPAIGN CONSEQUENCE.
+```
+
+The Game Master presents:
+
+```text
+PLAYER-FACING EXPERIENCE.
+```
+
+These responsibilities must remain separate.
 
 ---
 
-# Story Emergence
+# 98. Most Autonomy Remains Background
 
-Conceptually:
+Most autonomous activity should never become:
 
 ```text
-CHARACTER WANTS SOMETHING
-      ↓
-CHARACTER ACTS
-      ↓
-ACTION AFFECTS SOMEONE
-      ↓
-OTHER CHARACTER RESPONDS
-      ↓
-CONFLICT / OPPORTUNITY
-      ↓
-PLAYER MAY BECOME INVOLVED.
+PLAYER CONTENT.
 ```
+
+Examples:
+
+```text
+NEIGHBOR BUYS FOOD
+
+TEACHER WORKS
+
+MECHANIC REPAIRS CAR
+
+FAMILY VISITS RELATIVE
+
+TRADER CHANGES SUPPLIER.
+```
+
+These still matter to simulation.
 
 ---
 
-# Player Entry Point
+# 99. Player Entry
 
-The player may enter an autonomous situation:
+The player may enter a situation:
 
 ```text
-AT ANY POINT.
+AFTER IT HAS
+ALREADY STARTED.
 ```
 
-Example:
+Examples:
 
 ```text
-Characters already arguing.
+ARGUMENT ALREADY UNDERWAY
 
-Business already failing.
+BUSINESS ALREADY FAILING
 
-Relationship already strained.
+SEARCH ALREADY ACTIVE
 
-Search already underway.
+RELATIONSHIP ALREADY STRAINED
 
-Migration already beginning.
+EVACUATION ALREADY BEGINNING.
 ```
 
 The world does not wait for:
@@ -3390,2548 +2882,1709 @@ SCENE START.
 
 ---
 
-# Emergent Encounter
+# 100. Player Importance
 
-An encounter may arise because:
+The player may become extremely important because of:
 
 ```text
-character action
-+
-player proximity
-+
-relevance
-```
-
-intersect.
-
----
-
-# Example
-
-Character independently decides:
-
-```text
-transport injured friend
-to clinic.
-```
-
-Vehicle fails.
-
-Player happens to be:
-
-```text
-nearby.
-```
-
-This may create:
-
-```text
-STORY HOOK.
-```
-
-The system did not generate:
-
-```text
-"NPC needs roadside help"
-```
-
-from nowhere.
-
-It emerged from:
-
-```text
-RELATIONSHIP
-+
-ACTION
-+
-VEHICLE FAILURE
-+
-PLAYER PROXIMITY.
-```
-
----
-
-# Campaign Integration
-
-Living Campaign Engine may observe autonomous activity and determine:
-
-```text
-PLAYER RELEVANCE.
-```
-
-It should not create:
-
-```text
-character motivation
-```
-
-after the fact merely to justify content.
-
----
-
-# Correct Direction of Causality
-
-```text
-CHARACTER STATE
-      ↓
-AUTONOMOUS ACTION
-      ↓
-WORLD CONSEQUENCE
-      ↓
-PLAYER RELEVANCE
-      ↓
-STORY HOOK.
-```
-
-Not:
-
-```text
-STORY HOOK NEEDED
-      ↓
-INVENT NPC PROBLEM.
-```
-
----
-
-# Relevance Filtering
-
-Most autonomous activity should remain:
-
-```text
-BACKGROUND.
-```
-
-Only some becomes:
-
-```text
-PLAYER-FACING.
-```
-
----
-
-# Background Activity Examples
-
-```text
-neighbor buys groceries
-
-teacher attends work
-
-farmer repairs fence
-
-trader changes supplier
-
-family visits relatives.
-```
-
-These may matter to simulation without:
-
-```text
-BECOMING CONTENT.
-```
-
----
-
-# Significant Activity
-
-Examples:
-
-```text
-important friend disappears
-
-major employer closes
-
-regional leader resigns
-
-large migration begins
-
-critical infrastructure worker quits.
-```
-
-These may become:
-
-```text
-CAMPAIGN-RELEVANT.
-```
-
----
-
-# Priority Escalation
-
-Autonomous activity may become player-relevant when:
-
-```text
-impact increases.
-```
-
-Example:
-
-```text
-small business dispute
-↓
-supplier conflict
-↓
-regional shortage
-↓
-player relevance.
-```
-
----
-
-# Character Initiative Toward Player
-
-Characters may autonomously:
-
-```text
-ask for help
-
-offer help
-
-invite player
-
-warn player
-
-confront player
-
-thank player
-
-apologize
-
-request meeting
-
-offer work
-
-share opportunity.
-```
-
----
-
-# Initiative Cooldown
-
-Characters should not:
-
-```text
-CONSTANTLY CONTACT PLAYER.
-```
-
-Important relationships still require:
-
-```text
-PACING.
-```
-
----
-
-# Contact Frequency
-
-Contact may depend on:
-
-```text
-relationship closeness
-
-urgency
-
-personality
-
-shared activity
-
-distance
-
-communication access
-
-recent contact.
-```
-
----
-
-# Communication Failure
-
-A character may attempt:
-
-```text
-CONTACT
-```
-
-and fail because:
-
-```text
-network down
-
-player unavailable
-
-wrong location
-
-message delayed.
-```
-
-Attempt itself should still exist.
-
----
-
-# Delayed Message
-
-Example:
-
-```text
-Character sends message Monday.
-
-Network unavailable.
-
-Player receives Wednesday.
-```
-
-This preserves:
-
-```text
-WORLD TIME
-```
-
-and:
-
-```text
-INFORMATION DELAY.
-```
-
----
-
-# Missed Connection
-
-Two characters may attempt to meet but:
-
-```text
-miss each other.
-```
-
-This may create:
-
-```text
-future misunderstanding
-
-delay
-
-new Plan.
-```
-
----
-
-# Autonomous Promise Fulfillment
-
-Characters should attempt to:
-
-```text
-KEEP PROMISES.
-```
-
-depending on:
-
-```text
-values
-
-relationship
-
-memory
-
-capability
-
-circumstances.
-```
-
----
-
-# Broken Promise
-
-A promise may fail because:
-
-```text
-character forgot
-
-circumstances changed
-
-higher priority emerged
-
-character chose not to keep it.
-```
-
-Intent matters for:
-
-```text
-relationship consequence.
-```
-
----
-
-# Autonomous Debt
-
-Characters may remember:
-
-```text
-financial debt
-
-social debt
-
-favor debt.
-```
-
-This may generate:
-
-```text
-future initiative.
-```
-
----
-
-# Reciprocity Initiative
-
-Character may help another because:
-
-```text
-"They helped me before."
-```
-
-No request is necessary.
-
----
-
-# Gratitude Initiative
-
-Character may autonomously:
-
-```text
-thank
-
-repay
-
-offer help
-
-give gift.
-```
-
----
-
-# Revenge Initiative
-
-Character may autonomously pursue:
-
-```text
-retaliation.
-```
-
-This should require:
-
-```text
-strong grievance
-
-appropriate personality / values
-
-opportunity
-
-decision.
-```
-
-Avoid:
-
-```text
-AUTOMATIC REVENGE.
-```
-
----
-
-# Forgiveness Initiative
-
-Character may independently decide:
-
-```text
-"I don't want this conflict anymore."
-```
-
-and attempt:
-
-```text
-reconciliation.
-```
-
----
-
-# Initiative Failure
-
-Characters may intend to act but fail to:
-
-```text
-begin
-
-complete
-
-follow through.
-```
-
-Reasons:
-
-```text
-fear
-
-procrastination
-
-resource failure
-
-interruption
-
-forgetting
-
-competing Goal
-
-bad luck.
-```
-
----
-
-# Intention-Action Gap
-
-Critical principle:
-
-```text
-INTENDING
-TO DO SOMETHING
-```
-
-does not guarantee:
-
-```text
-DOING IT.
-```
-
----
-
-# Procrastination
-
-Low urgency and unpleasant tasks may be:
-
-```text
-DELAYED.
-```
-
-Example:
-
-```text
-repair paperwork
-
-difficult conversation
-
-medical appointment
-
-maintenance.
-```
-
----
-
-# Avoidance
-
-Characters may avoid:
-
-```text
-emotionally difficult actions.
-```
-
-This may allow:
-
-```text
-small problems
-to become large problems.
-```
-
----
-
-# Initiative Friction
-
-Action may require overcoming:
-
-```text
-TIME
-
-EFFORT
-
-FEAR
-
-COST
-
-SOCIAL DISCOMFORT
-
-UNCERTAINTY.
-```
-
----
-
-# Activation Threshold
-
-Conceptually:
-
-```text
-MOTIVATION
-+
-URGENCY
-+
-OPPORTUNITY
->
-ACTION FRICTION
-      ↓
-INITIATIVE.
-```
-
-This is conceptual rather than:
-
-```text
-one universal numeric equation.
-```
-
----
-
-# Low-Friction Action
-
-Examples:
-
-```text
-send message
-
-ask nearby friend
-
-buy common item.
-```
-
-These require:
-
-```text
-lower activation.
-```
-
----
-
-# High-Friction Action
-
-Examples:
-
-```text
-move city
-
-quit job
-
-confront spouse
-
-start business
-
-report corruption.
-```
-
-These require:
-
-```text
-greater motivation
-
-greater urgency
-
-or accumulated pressure.
-```
-
----
-
-# Initiative Momentum
-
-Once action begins:
-
-```text
-CONTINUING
-```
-
-may become easier than:
-
-```text
-STARTING.
-```
-
----
-
-# Momentum Example
-
-Character begins:
-
-```text
-cleaning damaged workshop.
-```
-
-Initial activation:
-
-```text
-HIGH.
-```
-
-Once started:
-
-```text
-continued repair
-becomes more likely.
-```
-
----
-
-# Interruption
-
-Autonomous actions may be interrupted by:
-
-```text
-world event
-
-player interaction
-
-relationship event
-
-emergency
-
-resource failure
-
-new information.
-```
-
----
-
-# Interruption Priority
-
-When interruption occurs:
-
-```text
-compare new priority
-against current commitment.
-```
-
----
-
-# Minor Interruption
-
-Character may:
-
-```text
-ignore
-
-delay response
-
-finish current task first.
-```
-
----
-
-# Major Interruption
-
-Character may:
-
-```text
-abandon current task immediately.
-```
-
----
-
-# Resume Logic
-
-After interruption:
-
-```text
-IS ORIGINAL GOAL
-STILL ACTIVE?
-```
-
-If yes:
-
-```text
-resume
-
-reschedule
-
-replan.
-```
-
----
-
-# Forgotten Plans
-
-Low-priority Plans may:
-
-```text
-fade
-```
-
-after repeated interruption.
-
-This can create:
-
-```text
-unfinished personal history.
-```
-
----
-
-# Autonomous Recovery
-
-After crisis, characters should attempt:
-
-```text
-RETURN TO LIFE.
-```
-
-Examples:
-
-```text
-repair home
-
-resume work
-
-reconnect socially
-
-replace resources
-
-process loss
-
-restart Plans.
-```
-
----
-
-# Recovery Principle
-
-Crisis should not permanently trap every character in:
-
-```text
-EMERGENCY MODE.
-```
-
----
-
-# New Normal
-
-Some routines may not return.
-
-Characters may adapt into:
-
-```text
-NEW NORMAL.
-```
-
----
-
-# Initiative and Consequences
-
-Every autonomous action may produce:
-
-```text
-LOCAL CONSEQUENCE
-
-SOCIAL CONSEQUENCE
-
-ECONOMIC CONSEQUENCE
-
-RELATIONSHIP CONSEQUENCE
-
-REGIONAL CONSEQUENCE.
-```
-
----
-
-# Consequence Scale
-
-Most actions remain:
-
-```text
-SMALL.
-```
-
-Some become:
-
-```text
-CASCADE TRIGGERS.
-```
-
----
-
-# Consequence Propagation
-
-Character action may enter:
-
-```text
-Living Campaign Engine
-
-World Simulation
-
-Relationship System
-
-Society
-
-Economy
-
-Faction systems.
-```
-
----
-
-# Butterfly Principle
-
-A minor autonomous decision may later become:
-
-```text
-IMPORTANT.
-```
-
-Example:
-
-```text
-Mechanic orders extra batteries.
-```
-
-Later:
-
-```text
-regional blackout.
-```
-
-The mechanic now possesses:
-
-```text
-valuable stock.
-```
-
-This may create:
-
-```text
-trade opportunity
-
-social conflict
-
-community benefit.
-```
-
----
-
-# No Retroactive Preparation
-
-The mechanic should not have ordered batteries because:
-
-```text
-THE SYSTEM KNEW
-A BLACKOUT WAS COMING.
-```
-
-There must have been:
-
-```text
-A PLAUSIBLE PRIOR REASON.
-```
-
----
-
-# Causal Integrity
-
-Autonomous action must obey:
-
-```text
-WHAT CHARACTER
-COULD HAVE KNOWN
-AT THE TIME.
-```
-
----
-
-# Initiative Memory
-
-Important autonomous actions should enter:
-
-```text
-Character Memory.
-```
-
-Examples:
-
-```text
-started business
-
-helped friend
-
-missed funeral
-
-changed job
-
-moved region
-
-made major promise.
-```
-
----
-
-# Routine Compression
-
-Routine activity may be summarized:
-
-```text
-Worked normally this week.
-```
-
-rather than storing:
-
-```text
-every work shift.
-```
-
----
-
-# Significant Initiative Record
-
-Conceptually:
-
-```text
-Initiative ID
-
-Character ID
-
-Timestamp
-
-Trigger
-
-Related Goal
-
-Planned Action
-
-Actual Action
-
-Target
-
-Location
-
-Priority
-
-Player Relevance
-
-Outcome
-
-Follow-Up
-
-Memory Significance.
-```
-
----
-
-# Initiative ID
-
-Example:
-
-```text
-INIT-CHAR184-009
-```
+RELATIONSHIPS
 
----
+CAPABILITY
 
-# Initiative Explainability
-
-The simulation should be able to answer:
-
-```text
-WHY DID THIS CHARACTER
-START DOING THIS?
-```
-
----
-
-# Example Explanation
-
-```text
-Elias began stockpiling fuel because:
-
-he expected regional prices to rise,
-
-his delivery business depended on fuel,
-
-he had enough savings,
-
-and his supplier warned him
-that the next shipment
-might be delayed.
-```
-
-Not:
-
-```text
-because the campaign
-needed a fuel shortage.
-```
-
----
-
-# Autonomous Narrative
-
-Internal state may contain:
-
-```text
-Goal:
-Protect delivery business
-
-Belief:
-Fuel shortage likely
-
-Resource:
-Cash available
-
-Opportunity:
-Current fuel price normal
-
-Decision:
-Purchase reserve fuel.
-```
-
-Player-facing information may be:
-
-```text
-"Elias has been buying
-more fuel than usual."
-```
-
----
-
-# AI Integration
-
-AI may assist with:
-
-```text
-generating plausible next actions
-
-social initiative
-
-dialogue
-
-goal interpretation
-
-Plan suggestions
-
-relationship expression.
-```
-
-But AI must remain constrained by:
-
-```text
-canonical state.
-```
-
----
-
-# AI Autonomy Boundary
-
-AI must not invent:
-
-```text
-Goals
-
-relationships
-
-knowledge
-
-resources
-
-capabilities
-
-world events
-```
-
-without valid system support.
-
----
-
-# AI Initiative Proposal
-
-Conceptually:
-
-```text
-CHARACTER STATE
-      ↓
-AI PROPOSES
-PLAUSIBLE INITIATIVE
-      ↓
-SYSTEM VALIDATES
-      ↓
-DECISION MAKING
-EVALUATES
-      ↓
-ACTION.
-```
-
----
-
-# AI Narrative Expression
-
-Prefer when possible:
-
-```text
-SYSTEM DETERMINES
-WHAT CHARACTER DOES
-      ↓
-AI EXPRESSES
-HOW CHARACTER DOES IT.
-```
-
-This protects:
-
-```text
-CANON CONSISTENCY.
-```
-
----
-
-# Initiative Determinism
-
-Similar character states should generally produce:
-
-```text
-SIMILAR BEHAVIOR.
-```
-
-But exact action may vary when:
-
-```text
-multiple options
-are similarly plausible.
-```
-
----
-
-# Initiative Diversity
-
-Different characters should respond differently because of:
-
-```text
-Goals
-
-Needs
-
-Values
-
-Relationships
-
-Profession
-
-Knowledge
-
-Risk
-
-Personality.
-```
-
----
-
-# Anti-Player-Centrism Principle
-
-Characters must not:
-
-```text
-WAIT FOR PLAYER
-TO EXIST.
-```
-
----
-
-# Anti-Quest-Giver Principle
-
-Characters should not primarily:
-
-```text
-CREATE TASKS
-FOR PLAYER.
-```
-
-They should:
-
-```text
-TRY TO SOLVE
-THEIR OWN PROBLEMS.
-```
-
----
-
-# Anti-Frozen-World Principle
-
-Regions should not stop evolving because:
-
-```text
-PLAYER LEFT.
-```
-
----
-
-# Anti-Omniscient-Initiative Principle
-
-Characters cannot prepare for:
-
-```text
-EVENTS THEY
-COULD NOT ANTICIPATE.
-```
-
----
-
-# Anti-Content-Spam Principle
-
-Not every autonomous action should become:
-
-```text
-PLAYER CONTENT.
-```
-
----
-
-# Anti-Constant-Contact Principle
-
-Important characters should not:
-
-```text
-MESSAGE PLAYER
-EVERY DAY
-```
-
-without reason.
-
----
-
-# Anti-Drama Principle
-
-Characters should not constantly:
-
-```text
-start conflicts
-
-betray friends
-
-create emergencies
-```
-
-for entertainment.
-
----
-
-# Anti-Inactivity Principle
-
-Characters should not:
-
-```text
-DO NOTHING FOREVER
-```
-
-when:
-
-```text
-strong Goals
-
-urgent Needs
-
-clear opportunities
-
-or threats
-```
-
-exist.
-
----
-
-# Anti-Infinite-Goal Principle
-
-Characters should not accumulate:
-
-```text
-ENDLESS ACTIVE GOALS.
-```
-
-Goals must be:
-
-```text
-prioritized
-
-completed
-
-abandoned
-
-deferred.
-```
-
----
-
-# Anti-Infinite-Open-Loop Principle
-
-Unresolved matters must eventually:
-
-```text
-resolve
-
-expire
-
-be abandoned
-
-or remain intentionally persistent.
-```
-
----
-
-# Anti-Perfect-Follow-Through Principle
-
-Characters should not:
-
-```text
-ALWAYS DO
-WHAT THEY INTENDED.
-```
-
----
-
-# Anti-Random-Initiative Principle
-
-Initiative must arise from:
-
-```text
-CHARACTER STATE
-+
-WORLD STATE.
-```
-
-Not:
-
-```text
-RANDOM CONTENT GENERATION.
-```
-
----
-
-# Anti-Retroactive-Causality Principle
-
-Do not invent past autonomous behavior merely because:
-
-```text
-current story needs it.
-```
-
-Past behavior must be:
-
-```text
-plausibly reconstructable.
-```
-
----
-
-# Anti-Simulation-Overload Principle
-
-Do not simulate every character at:
-
-```text
-MAXIMUM DETAIL.
-```
-
-Use:
-
-```text
-SIMULATION RESOLUTION.
-```
-
----
-
-# Anti-NPC-Hive-Mind Principle
-
-Characters do not all react:
-
-```text
-THE SAME WAY
-```
-
-to world events.
-
----
-
-# Anti-Guaranteed-Success Principle
-
-Autonomous Plans may:
-
-```text
-FAIL.
-```
-
----
-
-# Anti-Guaranteed-Failure Principle
-
-Characters should also be capable of:
-
-```text
-SOLVING THEIR OWN PROBLEMS.
-```
-
-The player is not required for:
-
-```text
-EVERY SUCCESS.
-```
-
----
-
-# Anti-Player-Savior Principle
-
-The world should not imply:
-
-```text
-NOTHING CAN BE SOLVED
-WITHOUT THE PLAYER.
-```
-
----
-
-# Player Importance Principle
-
-The player may become:
-
-```text
-EXTREMELY IMPORTANT
-```
-
-through:
-
-```text
-relationships
+HISTORY
 
-capabilities
+REPUTATION
 
-history
+DECISIONS
 
-decisions
+LOCATION
 
-reputation.
+ACCESS.
 ```
 
-But importance must be:
+But importance must emerge through:
 
 ```text
-EARNED THROUGH
 WORLD CAUSALITY.
 ```
 
 ---
 
-# Autonomy Consistency Rules
+# 101. Player Is Not the Savior by Default
 
-## Rule 1
-
-Characters remain active without player presence.
-
----
-
-## Rule 2
-
-Autonomous action must derive from character state.
-
----
-
-## Rule 3
-
-Initiative requires a plausible trigger.
-
----
-
-## Rule 4
-
-Active Goals should produce behavior.
-
----
-
-## Rule 5
-
-Plans should attempt execution.
-
----
-
-## Rule 6
-
-Routine provides baseline behavior.
-
----
-
-## Rule 7
-
-Profession generates autonomous activity.
-
----
-
-## Rule 8
-
-Relationships generate autonomous activity.
-
----
-
-## Rule 9
-
-Characters may initiate social contact.
-
----
-
-## Rule 10
-
-Characters may contact the player autonomously.
-
----
-
-## Rule 11
-
-Player contact requires causal justification.
-
----
-
-## Rule 12
-
-Characters may contact other NPCs instead.
-
----
-
-## Rule 13
-
-The player is one possible resource among many.
-
----
-
-## Rule 14
-
-Characters may generate new Goals.
-
----
-
-## Rule 15
-
-Characters may complete Goals without player involvement.
-
----
-
-## Rule 16
-
-Characters may fail Goals without player involvement.
-
----
-
-## Rule 17
-
-Characters may abandon Goals.
-
----
-
-## Rule 18
-
-Characters should maintain important open loops.
-
----
-
-## Rule 19
-
-Waiting is valid.
-
----
-
-## Rule 20
-
-Waiting does not imply total inactivity.
-
----
-
-## Rule 21
-
-Characters may prepare for anticipated events.
-
----
-
-## Rule 22
-
-Preparation requires plausible knowledge.
-
----
-
-## Rule 23
-
-Characters may miss opportunities.
-
----
-
-## Rule 24
-
-Characters may compete for opportunities.
-
----
-
-## Rule 25
-
-Threats generate autonomous responses.
-
----
-
-## Rule 26
-
-Characters may warn others.
-
----
-
-## Rule 27
-
-NPC relationships evolve without player involvement.
-
----
-
-## Rule 28
-
-NPC conflicts evolve without player involvement.
-
----
-
-## Rule 29
-
-NPC cooperation evolves without player involvement.
-
----
-
-## Rule 30
-
-Economic activity continues without player involvement.
-
----
-
-## Rule 31
-
-Political activity continues without player involvement.
-
----
-
-## Rule 32
-
-Characters may migrate.
-
----
-
-## Rule 33
-
-Characters may change profession.
-
----
-
-## Rule 34
-
-Characters may experience life events.
-
----
-
-## Rule 35
-
-Characters may develop without player interaction.
-
----
-
-## Rule 36
-
-Intention does not guarantee action.
-
----
-
-## Rule 37
-
-Procrastination and avoidance are valid.
-
----
-
-## Rule 38
-
-Actions may be interrupted.
-
----
-
-## Rule 39
-
-Interrupted Plans may resume.
-
----
-
-## Rule 40
-
-Characters should recover after crises.
-
----
-
-## Rule 41
-
-Autonomous actions may produce world consequences.
-
----
-
-## Rule 42
-
-Small actions may produce delayed cascades.
-
----
-
-## Rule 43
-
-No character may anticipate hidden future events.
-
----
-
-## Rule 44
-
-Important autonomous actions should be explainable.
-
----
-
-## Rule 45
-
-Most autonomous activity remains background simulation.
-
----
-
-## Rule 46
-
-Only relevant activity becomes player-facing.
-
----
-
-## Rule 47
-
-Simulation resolution determines autonomy detail.
-
----
-
-## Rule 48
-
-Low-resolution simulation still represents autonomous life.
-
----
-
-## Rule 49
-
-AI-generated initiative must obey canonical state.
-
----
-
-## Rule 50
-
-The player is not the engine of the world.
-
----
-
-# Validation Questions
-
-For any autonomous action, ask:
+Avoid:
 
 ```text
-Why is the character acting?
+NOTHING CAN
+BE SOLVED
+WITHOUT THE PLAYER.
+```
 
-What triggered the initiative?
+Other Characters may successfully:
 
-Which Need matters?
+```text
+SOLVE PROBLEMS
 
-Which Goal matters?
+FORM ALLIANCES
 
-Which Plan matters?
+REPAIR SYSTEMS
 
-What does the character know?
+RESOLVE CONFLICTS
 
-What do they believe?
+HELP EACH OTHER
 
-What opportunity or threat exists?
-
-Is the action possible?
-
-Does the character have time?
-
-Does the character have resources?
-
-Does profession matter?
-
-Does relationship matter?
-
-Is there a deadline?
-
-Was there an open loop?
-
-Why now?
-
-Why this action?
-
-Why this target?
-
-Why this location?
-
-What happens if they fail?
-
-What happens if interrupted?
-
-Will they follow up?
-
-Does the player actually
-need to know?
+SURVIVE.
 ```
 
 ---
 
-# Player Contact Validation
+# 102. Autonomous Success
 
-Before an autonomous character contacts the player, ask:
+Characters may complete Goals or solve problems without player involvement.
+
+This is not a failure of game content.
+
+It is proof that:
 
 ```text
-Why the player?
-
-Why now?
-
-Could another character help?
-
-Does the relationship justify contact?
-
-Does the character know
-the player can help?
-
-Is the player reachable?
-
-Is the matter important enough?
-
-Was there recent contact?
-
-Would this create
-unnecessary content spam?
+THE WORLD
+IS ALIVE.
 ```
 
 ---
 
-# Offscreen Validation
+# 103. Autonomous Failure
 
-For offscreen character activity, ask:
+Characters may also fail without player involvement.
+
+Possible causes include:
 
 ```text
-What were their active Goals?
+BAD INFORMATION
 
-What routine existed?
+INSUFFICIENT CAPABILITY
 
-What major events occurred?
+LACK OF RESOURCES
 
-What information reached them?
+OTHER ACTOR INTERVENTION
 
-What relationships mattered?
+BAD DECISION
 
-What opportunities appeared?
+DELAY
 
-What threats appeared?
+WORLD EVENT
 
-What could plausibly change?
+CHANCE.
+```
 
-What should remain stable?
+Failure becomes history.
 
-Which changes deserve persistence?
+---
+
+# 104. AI Integration
+
+AI may assist Autonomy by:
+
+```text
+PROPOSING PLAUSIBLE
+NEXT ACTIONS
+
+IDENTIFYING
+POSSIBLE INITIATIVE
+
+INTERPRETING
+CHARACTER CONTEXT
+
+EXPRESSING
+SOCIAL ACTION
+
+SUGGESTING
+FOLLOW-UP OPTIONS.
+```
+
+But AI proposals remain constrained by authoritative state.
+
+---
+
+# 105. AI Autonomy Boundary
+
+AI must not invent missing canonical:
+
+```text
+GOALS
+
+RELATIONSHIPS
+
+MEMORIES
+
+KNOWLEDGE
+
+RESOURCES
+
+EXPERTISE
+
+WORLD EVENTS
+
+LIFE HISTORY
+```
+
+merely to justify an action.
+
+---
+
+# 106. AI Proposal Model
+
+Conceptually:
+
+```text
+AUTHORITATIVE
+CHARACTER STATE
++
+WORLD CONDITIONS
+↓
+AI MAY PROPOSE
+PLAUSIBLE INITIATIVE
+↓
+SYSTEM VALIDATES
+CAUSAL SUPPORT
+↓
+DECISION MAKING
+EVALUATES OPTIONS
+↓
+ACTION.
 ```
 
 ---
 
-# Long-Absence Validation
+# 107. AI Is Not Narrative Director
 
-When the player returns after a long absence:
+AI should not ask:
 
 ```text
-How much time passed?
-
-Which characters remained?
-
-Who moved?
-
-Who changed profession?
-
-Which relationships changed?
-
-Which Goals completed?
-
-Which Goals failed?
-
-Which businesses changed?
-
-Which institutions changed?
-
-Which world events occurred?
-
-Which characters remember the player?
-
-What information about the player
-spread during absence?
-
-Which consequences continued
-without player involvement?
+WHAT ACTION
+WOULD CREATE
+THE BEST STORY?
 ```
+
+as its primary Autonomy question.
+
+It should ask:
+
+```text
+WHAT ACTIONS
+ARE PLAUSIBLE
+FOR THIS CHARACTER
+RIGHT NOW?
+```
+
+Narrative relevance comes later.
 
 ---
 
-# Example: Autonomous Mechanic
+# 108. Similar States Do Not Require Identical Behavior
 
-Character:
+The previous architecture should not be interpreted as:
 
 ```text
-Profession:
-Mechanic
-
-Goal:
-Own workshop
-
-Savings:
-Moderate
-
-Current Job Satisfaction:
-Low.
-```
-
-World Event:
-
-```text
-Local workshop owner
-announces retirement.
-```
-
-Character learns through:
-
-```text
-professional network.
-```
-
-Initiative:
-
-```text
-contact owner.
-```
-
-Decision:
-
-```text
-inspect workshop.
-```
-
-Follow-Up:
-
-```text
-discuss financing.
-```
-
-Possible Result:
-
-```text
-character purchases workshop.
-```
-
-The player may never have been involved.
-
----
-
-# Example: Autonomous Relationship
-
-Characters:
-
-```text
-Mara
-
-Elias.
-```
-
-Relationship:
-
-```text
-Close Friends.
-```
-
-Event:
-
-```text
-Elias misses
-important gathering.
-```
-
-Mara belief:
-
-```text
-Elias may be overwhelmed.
-```
-
-Initiative:
-
-```text
-Mara calls Elias.
-```
-
-Conversation may:
-
-```text
-strengthen relationship
-
-reveal problem
-
-create new information
-
-create future Plan.
-```
-
-No player required.
-
----
-
-# Example: Autonomous Conflict
-
-Trader A:
-
-```text
-raises prices.
-```
-
-Trader B believes:
-
-```text
-A is exploiting shortage.
-```
-
-B initiative:
-
-```text
-publicly criticize A.
-```
-
-A responds:
-
-```text
-ends supplier cooperation.
-```
-
-Result:
-
-```text
-trade network fragments.
-```
-
-Player may encounter:
-
-```text
-the consequence
-days later.
-```
-
----
-
-# Example: Autonomous Recovery
-
-World Event:
-
-```text
-Flood damages settlement.
-```
-
-Characters autonomously:
-
-```text
-repair homes
-
-share equipment
-
-seek materials
-
-move temporarily
-
-restore businesses
-
-help neighbors.
-```
-
-Three months later:
-
-```text
-settlement has changed.
-```
-
-Player returning should see:
-
-```text
-RECOVERY HISTORY
-```
-
-rather than:
-
-```text
-FROZEN DISASTER STATE.
-```
-
----
-
-# Example: Missed Opportunity
-
-Character Goal:
-
-```text
-Open café.
-```
-
-Opportunity:
-
-```text
-ideal property available.
-```
-
-Character learns:
-
-```text
-too late.
-```
-
-Property sold.
-
-Goal remains.
-
-Plan changes:
-
-```text
-continue searching.
-```
-
-The simulation does not reserve:
-
-```text
-THE PERFECT PROPERTY
-```
-
-until character or player is ready.
-
----
-
-# Example: Initiative Failure
-
-Character intends:
-
-```text
-apologize to friend.
-```
-
-Motivation:
-
-```text
-MODERATE.
-```
-
-Emotional Friction:
-
-```text
-HIGH.
-```
-
-Character repeatedly:
-
-```text
-delays.
-```
-
-Friend eventually:
-
-```text
-moves away.
-```
-
-The apology never occurs.
-
-This creates:
-
-```text
-CHARACTER HISTORY
-```
-
-through:
-
-```text
-INACTION.
-```
-
----
-
-# Example: Player Contact
-
-Character:
-
-```text
-Mara.
-```
-
-Problem:
-
-```text
-medical shipment delayed.
-```
-
-Mara first attempts:
-
-```text
-supplier
-
-regional clinic
-
-transport network.
-```
-
-All fail.
-
-She knows:
-
-```text
-player is nearby
-
-player has transport capability
-
-relationship is strong.
-```
-
-Initiative:
-
-```text
-contact player.
-```
-
-This feels different from:
-
-```text
-QUEST ICON APPEARS.
-```
-
-The request has:
-
-```text
-A CAUSAL HISTORY.
-```
-
----
-
-# Example: Player Not Contacted
-
-Character:
-
-```text
-Elias.
-```
-
-Vehicle fails.
-
-He knows:
-
-```text
-local mechanic nearby.
-```
-
-Relationship:
-
-```text
-good.
-```
-
-Decision:
-
-```text
-call mechanic.
-```
-
-Player is:
-
-```text
-not contacted.
-```
-
-The problem may simply:
-
-```text
-GET SOLVED.
-```
-
-This is important.
-
----
-
-# Example: Long Absence
-
-Player leaves:
-
-```text
-Shenandoah Valley.
-```
-
-Duration:
-
-```text
-18 months.
-```
-
-During absence:
-
-```text
-Mara changes clinic role.
-
-Elias expands delivery business.
-
-Two secondary characters marry.
-
-One family moves north.
-
-Workshop changes ownership.
-
-Flood damages western road.
-
-Regional authority repairs bridge.
-
-Fuel prices stabilize.
-```
-
-When player returns:
-
-```text
-THE WORLD HAS LIVED.
-```
-
----
-
-# Example: Autonomous Cascade
-
-World Event:
-
-```text
-poor harvest forecast.
-```
-
-Farmer:
-
-```text
-reduces grain sales.
-```
-
-Trader:
-
-```text
-notices reduced supply.
-```
-
-Trader:
-
-```text
-raises purchase volume.
-```
-
-Other traders:
-
-```text
-observe market movement.
-```
-
-Rumor:
-
-```text
-grain shortage coming.
-```
-
-Households:
-
-```text
-buy extra grain.
-```
-
-Prices:
-
-```text
-rise.
-```
-
-Restaurants:
-
-```text
-raise prices.
-```
-
-Population:
-
-```text
-changes spending.
-```
-
-Political pressure:
-
-```text
-increases.
-```
-
-Authority:
-
-```text
-considers reserve release.
-```
-
-No single system wrote:
-
-```text
-"GRAIN CRISIS STORY."
+SIMILAR STATE
+=
+SAME ACTION.
 ```
 
 Instead:
 
 ```text
-WORLD CONDITION
-+
-AUTONOMOUS DECISIONS
-+
-INFORMATION FLOW
-+
-ECONOMIC RESPONSE
-=
-EMERGENT CAMPAIGN.
+SIMILAR STATES
+SHOULD PRODUCE
+PLAUSIBLE ACTION RANGES.
+```
+
+Different Characters may choose differently because of:
+
+```text
+ATTRIBUTES
+
+MEMORY
+
+BELIEFS
+
+RELATIONSHIPS
+
+PSYCHOLOGY
+
+GOALS
+
+CONTEXT
+
+AGENCY.
 ```
 
 ---
 
-# Foundational Autonomy Formula
+# 109. Explainability
+
+For significant autonomous action, the simulation should be able to answer:
+
+```text
+WHY DID
+THIS CHARACTER
+START DOING THIS?
+```
+
+A useful explanation may reference:
+
+```text
+GOAL
+
+BELIEF
+
+INFORMATION
+
+RESPONSIBILITY
+
+RELATIONSHIP
+
+OPPORTUNITY
+
+THREAT
+
+RESOURCE
+
+SCHEDULE
+
+OPEN LOOP
+
+CURRENT CONDITIONS.
+```
+
+---
+
+# 110. Example Explanation
+
+Good:
+
+```text
+ELIAS ORDERED
+EXTRA FUEL
+
+BECAUSE
+
+HE EXPECTED
+PRICES TO RISE,
+
+HIS BUSINESS
+DEPENDED ON FUEL,
+
+HE HAD
+AVAILABLE CASH,
+
+AND HIS SUPPLIER
+WARNED HIM
+ABOUT DELAYS.
+```
+
+Bad:
+
+```text
+ELIAS ORDERED
+EXTRA FUEL
+
+BECAUSE
+
+THE CAMPAIGN
+NEEDED A SHORTAGE.
+```
+
+---
+
+# 111. Significant Initiative Record
+
+A future implementation may record significant initiative with references such as:
+
+```text
+CHARACTER
+
+TIMESTAMP
+
+TRIGGER
+
+RELATED GOAL
+
+RELATED OPEN LOOP
+
+PLANNED ACTION
+
+ACTUAL ACTION
+
+TARGET
+
+LOCATION
+
+OUTCOME
+
+FOLLOW-UP.
+```
+
+This is conceptual.
+
+It is not yet an implementation requirement.
+
+---
+
+# 112. Autonomy State Model
+
+A conceptual Autonomy state may include:
+
+```text
+CURRENT ACTIVITY
+
+SCHEDULED COMMITMENTS
+
+OPEN LOOPS
+
+WAITING STATES
+
+FOLLOW-UPS
+
+CONDITIONAL INTENTIONS
+
+ACTIVE INTERRUPTIONS
+
+AVAILABLE OPPORTUNITIES
+
+PERCEIVED THREATS
+
+POSSIBLE INITIATIVE
+
+CURRENT ATTENTION.
+```
+
+The authoritative sources for Goals, Beliefs, Relationships, Psychology and other inputs remain external.
+
+---
+
+# 113. Autonomy Update Model
 
 Conceptually:
 
 ```text
-CHARACTER STATE
-+
-NEEDS
-+
-MOTIVATIONS
-+
-GOALS
-+
-PLANS
-+
-KNOWLEDGE
-+
-BELIEFS
-+
-RELATIONSHIPS
-+
-PROFESSION
-+
-VALUES
+CURRENT CHARACTER STATE
 +
 WORLD CONDITIONS
 +
-AVAILABLE OPPORTUNITIES
-      ↓
-INITIATIVE PRESSURE
-      ↓
-ACTION TRIGGER
-      ↓
+TIME
++
+NEW INFORMATION
++
+OPEN LOOPS
++
+SCHEDULE
++
+CURRENT ACTIVITY
+↓
+IDENTIFY
+BEHAVIORALLY RELEVANT
+CHANGES
+↓
+GENERATE
+POSSIBLE INITIATIVE
+↓
+CHECK
+INFORMATION
+AND CAPABILITY
+BOUNDARIES
+↓
 DECISION MAKING
-      ↓
-AUTONOMOUS ACTION
-      ↓
+↓
+ACTION / DELAY /
+WAIT / ABANDON
+↓
 WORLD CONSEQUENCE
-      ↓
-OTHER CHARACTERS RESPOND
-      ↓
-NEW WORLD STATE.
+↓
+UPDATE
+OPEN LOOPS,
+SCHEDULE
+AND ACTIVITY STATE.
 ```
 
 ---
 
-# Living Character Principle
+# 114. Autonomy and Time
 
-A character is alive in the simulation when they can:
+Time may cause initiative through:
+
+```text
+DEADLINE
+
+SCHEDULE
+
+WAITING CONDITION
+
+FOLLOW-UP DATE
+
+OPPORTUNITY EXPIRATION
+
+LONG-TERM PLAN STEP.
+```
+
+Time does not automatically require action.
+
+It changes relevance.
+
+---
+
+# 115. Autonomy and World Events
+
+World Events may alter:
+
+```text
+THREATS
+
+OPPORTUNITIES
+
+ROUTINES
+
+RESOURCES
+
+INFORMATION
+
+RESPONSIBILITIES.
+```
+
+Different Characters may react differently.
+
+There is no:
+
+```text
+UNIVERSAL RESPONSE
+TO A WORLD EVENT.
+```
+
+---
+
+# 116. Autonomy and Life
+
+Autonomous choices may become Life Events.
+
+Conceptually:
+
+```text
+CHARACTER ACTS
+↓
+CONSEQUENCE
+↓
+PERSONALLY SIGNIFICANT CHANGE
+↓
+POSSIBLE LIFE EVENT.
+```
+
+Life owns the resulting biographical history.
+
+---
+
+# 117. Autonomy and Progression
+
+Autonomous action may create:
+
+```text
+EXPERIENCE
+
+PRACTICE
+
+FAILURE
+
+SUCCESS
+
+RESPONSIBILITY.
+```
+
+These may contribute to future development.
+
+Progression determines whether meaningful long-term change is plausible.
+
+Autonomy does not award progression directly.
+
+---
+
+# 118. Autonomy and Memory
+
+Significant autonomous actions may become remembered experience.
+
+But:
+
+```text
+AUTONOMY
+DOES NOT
+WRITE MEMORY DIRECTLY.
+```
+
+Memory owns retention and reconstruction.
+
+---
+
+# 119. Autonomy and Society
+
+Individual autonomous behavior may contribute to collective social patterns.
+
+Example:
+
+```text
+MANY PEOPLE
+INDEPENDENTLY
+LEAVE REGION
+↓
+MIGRATION PATTERN.
+```
+
+The individual decision belongs to Characters.
+
+The aggregate pattern belongs to Society / World Simulation.
+
+---
+
+# 120. Autonomy and Factions
+
+Faction members may act through:
+
+```text
+ROLE
+
+ORDERS
+
+GOALS
+
+RESPONSIBILITIES
+
+PERSONAL MOTIVES.
+```
+
+A Character inside a Faction remains an individual Actor.
+
+Faction action must not erase Character agency unless the architecture explicitly models delegated collective action at a different resolution.
+
+---
+
+# 121. Autonomy and Aurora
+
+Aurora may:
+
+```text
+CONTACT
+
+INFORM
+
+ADVISE
+
+WARN
+
+REQUEST
+
+PREDICT.
+```
+
+These may create new Character decision contexts.
+
+But Aurora does not directly control Character initiative merely because she has better information.
+
+Characters remain human Actors.
+
+---
+
+# 122. Aurora Information Boundary
+
+A Character may act on information from Aurora only if:
+
+```text
+THE INFORMATION
+REACHED THEM
+
+AND
+
+THE CHARACTER
+INTERPRETED IT
+AS RELEVANT.
+```
+
+Aurora knowledge does not automatically become Character knowledge.
+
+---
+
+# 123. Autonomy Invariants
+
+## AUT-INV-001 — Player Absence Does Not Stop Character Activity
+
+Characters continue acting without player presence.
+
+---
+
+## AUT-INV-002 — Initiative Requires Causal Support
+
+Autonomous action must arise from Character state and current conditions.
+
+---
+
+## AUT-INV-003 — Initiative Does Not Guarantee Action
+
+A trigger creates evaluation, not automatic execution.
+
+---
+
+## AUT-INV-004 — Intention Does Not Guarantee Follow-Through
+
+Characters may delay, avoid, forget or abandon.
+
+---
+
+## AUT-INV-005 — Unknown Information Cannot Trigger Known Response
+
+Characters cannot act on information they do not possess.
+
+---
+
+## AUT-INV-006 — No Retroactive Preparation
+
+Future World Truth cannot create past Character preparation without a valid information path.
+
+---
+
+## AUT-INV-007 — Routine Is Valid Autonomous Life
+
+Not all autonomous action must be dramatic.
+
+---
+
+## AUT-INV-008 — Waiting Is Valid
+
+Waiting does not imply total inactivity.
+
+---
+
+## AUT-INV-009 — Open Loops Persist Across Scenes
+
+Important unresolved matters should not disappear because presentation ended.
+
+---
+
+## AUT-INV-010 — Open Loops Must Remain Bounded
+
+Unresolved matters should resolve, expire, be abandoned or remain intentionally persistent.
+
+---
+
+## AUT-INV-011 — Characters May Solve Their Own Problems
+
+Player involvement is not required for every successful outcome.
+
+---
+
+## AUT-INV-012 — Characters May Fail Without Player Presence
+
+Failure is part of autonomous world history.
+
+---
+
+## AUT-INV-013 — Player Is One Possible Resource
+
+Characters should route requests through plausible social and institutional options.
+
+---
+
+## AUT-INV-014 — NPC-to-NPC Initiative Is Canonical
+
+Characters may create meaningful interactions without the player.
+
+---
+
+## AUT-INV-015 — Autonomy Does Not Own Relationship State
+
+It may initiate Relationship-relevant actions but does not determine the resulting Relationship.
+
+---
+
+## AUT-INV-016 — Autonomy Does Not Own Goals
+
+Goals provide direction; Autonomy determines when they create possible action.
+
+---
+
+## AUT-INV-017 — Autonomy Does Not Own Life
+
+Character action may produce Life Events, but Life owns biography.
+
+---
+
+## AUT-INV-018 — Autonomy Does Not Own Progression
+
+Experience may contribute to development, but Progression validates long-term change.
+
+---
+
+## AUT-INV-019 — Off-Screen Autonomy Uses Compression
+
+Lower resolution means less detail, not less agency.
+
+---
+
+## AUT-INV-020 — Individual Autonomy Is Not Population Simulation
+
+Aggregate social outcomes belong to Society and World Simulation.
+
+---
+
+## AUT-INV-021 — Similar States Do Not Require Identical Behavior
+
+Character state constrains plausible action ranges rather than determining one inevitable action.
+
+---
+
+## AUT-INV-022 — Action Friction Matters
+
+Motivation alone does not guarantee initiation.
+
+---
+
+## AUT-INV-023 — Interruption Is Persistent
+
+Interrupted commitments may remain relevant and later resume.
+
+---
+
+## AUT-INV-024 — Significant Action Should Be Explainable
+
+The simulation should be able to identify why a Character acted.
+
+---
+
+## AUT-INV-025 — Narrative Does Not Create Initiative Retroactively
+
+Story relevance follows causal action.
+
+---
+
+# 124. Development Locks
+
+Future Autonomy development must not introduce:
+
+```text
+PLAYER-CENTRIC NPC STASIS
+
+QUEST-GIVER NPC DESIGN
+
+AUTOMATIC PLAYER CONTACT
+
+AUTOMATIC GOAL EXECUTION
+
+AUTOMATIC PROMISE FULFILLMENT
+
+AUTOMATIC REVENGE
+
+AUTOMATIC RELATIONSHIP REPAIR
+
+OMNISCIENT CHARACTER PREPARATION
+
+RETROACTIVE INITIATIVE
+FOR STORY CONVENIENCE
+
+INFINITE OPEN LOOPS
+
+INFINITE ACTIVE TASKS
+
+PERFECT FOLLOW-THROUGH
+
+PERFECT MEMORY
+
+RANDOM DRAMA GENERATION
+
+UNIVERSAL CHARACTER
+REACTIONS TO WORLD EVENTS
+
+HIGH RESOLUTION
+AS MORE FREE WILL
+
+LOW RESOLUTION
+AS LESS AGENCY
+
+POPULATION BEHAVIOR
+OWNED BY INDIVIDUAL AUTONOMY
+
+AI INVENTING
+MISSING CANONICAL STATE
+
+NARRATIVE DETERMINING
+CHARACTER MOTIVATION.
+```
+
+---
+
+# 125. Anti-Player-Centrism Principle
+
+Do not build:
+
+```text
+CHARACTER HAS PROBLEM
+↓
+CONTACT PLAYER.
+```
+
+Build:
+
+```text
+CHARACTER HAS PROBLEM
+↓
+WHAT DO THEY KNOW?
+↓
+WHAT OPTIONS EXIST?
+↓
+WHO CAN HELP?
+↓
+WHAT WOULD THEY
+PLAUSIBLY DO?
+```
+
+The player may or may not become involved.
+
+---
+
+# 126. Anti-Quest-Giver Principle
+
+Characters should not primarily:
+
+```text
+CREATE TASKS
+FOR THE PLAYER.
+```
+
+They should primarily:
+
+```text
+TRY TO LIVE
+THEIR OWN LIVES.
+```
+
+Player-facing opportunities emerge when causal paths intersect.
+
+---
+
+# 127. Anti-Drama Principle
+
+Characters must not constantly:
+
+```text
+BETRAY
+
+FIGHT
+
+CREATE CRISES
+
+CONTACT PLAYER
+
+MAKE EXTREME DECISIONS
+```
+
+because dramatic content is desired.
+
+Ordinary autonomous life is canonical.
+
+---
+
+# 128. Anti-Inactivity Principle
+
+At the same time, Characters should not remain inactive forever when strong causal pressure exists.
+
+If a Character has:
+
+```text
+URGENT GOAL
+
+CLEAR THREAT
+
+IMPORTANT OPEN LOOP
+
+STRONG RESPONSIBILITY
+
+TIME-SENSITIVE OPPORTUNITY
+```
+
+the system should evaluate plausible initiative.
+
+---
+
+# 129. Anti-Hive-Mind Principle
+
+Characters exposed to the same World Event must not automatically react identically.
+
+Different:
+
+```text
+BELIEFS
+
+GOALS
+
+RELATIONSHIPS
+
+EXPERTISE
+
+ATTRIBUTES
+
+PSYCHOLOGY
+
+INFORMATION
+
+RESOURCES
+
+RESPONSIBILITIES
+```
+
+may produce different actions.
+
+---
+
+# 130. Validation Questions
+
+For any significant autonomous action, ask:
+
+```text
+WHY IS
+THE CHARACTER ACTING?
+
+WHAT MADE
+THIS RELEVANT NOW?
+
+WHAT GOAL,
+RESPONSIBILITY
+OR OPEN LOOP
+IS CONNECTED?
+
+WHAT DOES
+THE CHARACTER KNOW?
+
+WHAT DO
+THEY BELIEVE?
+
+WHAT DO
+THEY NOT KNOW?
+
+WHAT OPPORTUNITY
+OR THREAT EXISTS?
+
+IS THERE
+A VALID INFORMATION PATH?
+
+IS THE ACTION
+ACTUALLY POSSIBLE?
+
+DO THEY
+BELIEVE IT IS POSSIBLE?
+
+DO THEY HAVE
+TIME?
+
+DO THEY HAVE
+RESOURCES?
+
+WHAT ACTION FRICTION
+EXISTS?
+
+WHAT ELSE
+ARE THEY DOING?
+
+WHY THIS ACTION?
+
+WHY THIS TARGET?
+
+WHY THIS LOCATION?
+
+COULD THEY
+ASK SOMEONE ELSE?
+
+WHY WOULD
+THE PLAYER
+BE INVOLVED?
+
+WHAT HAPPENS
+IF THEY DELAY?
+
+WHAT HAPPENS
+IF THEY FAIL?
+
+WHAT HAPPENS
+IF THEY ARE INTERRUPTED?
+
+DOES FOLLOW-UP
+REMAIN?
+
+WHICH SYSTEM
+OWNS THE CONSEQUENCE?
+```
+
+---
+
+# 131. Off-Screen Validation
+
+For off-screen Character activity, ask:
+
+```text
+WHAT WAS
+THE CHARACTER
+ALREADY DOING?
+
+WHAT GOALS
+WERE ACTIVE?
+
+WHAT ROUTINES
+EXISTED?
+
+WHAT OPEN LOOPS
+EXISTED?
+
+WHAT INFORMATION
+REACHED THEM?
+
+WHAT MAJOR EVENTS
+OCCURRED?
+
+WHAT OPPORTUNITIES
+APPEARED?
+
+WHAT THREATS
+APPEARED?
+
+WHAT COULD
+PLAUSIBLY CHANGE?
+
+WHAT SHOULD
+REMAIN STABLE?
+
+WHAT LEVEL
+OF SIMULATION DETAIL
+IS ACTUALLY REQUIRED?
+```
+
+---
+
+# 132. Long-Absence Validation
+
+When significant time has passed:
+
+```text
+HOW MUCH TIME
+PASSED?
+
+WHAT ROUTINES
+CONTINUED?
+
+WHAT GOALS
+PROGRESSED?
+
+WHAT GOALS
+FAILED?
+
+WHAT OPEN LOOPS
+RESOLVED?
+
+WHAT OPEN LOOPS
+EXPIRED?
+
+WHAT IMPORTANT
+INFORMATION ARRIVED?
+
+WHAT OPPORTUNITIES
+WERE MISSED?
+
+WHAT THREATS
+WERE ENCOUNTERED?
+
+WHICH ACTIONS
+CREATED LASTING
+CONSEQUENCE?
+
+WHAT SHOULD
+THE PLAYER
+PLAUSIBLY DISCOVER
+ON RETURN?
+```
+
+Life Course owns broader biographical development during the absence.
+
+---
+
+# 133. Player Contact Validation
+
+Before surfacing Character-initiated player contact:
+
+```text
+WHY THE PLAYER?
+
+WHY NOW?
+
+DOES THE CHARACTER
+KNOW HOW TO
+REACH THEM?
+
+DOES THE CHARACTER
+KNOW THEY
+CAN HELP?
+
+IS THE PLAYER
+THE MOST PLAUSIBLE
+PERSON TO CONTACT?
+
+WHAT OTHER
+OPTIONS EXIST?
+
+DOES THE RELATIONSHIP
+SUPPORT CONTACT?
+
+IS THIS MATTER
+IMPORTANT ENOUGH?
+
+IS CONTACT
+PHYSICALLY POSSIBLE?
+
+HAS THE CHARACTER
+RECENTLY CONTACTED
+THE PLAYER?
+
+WOULD THIS
+FEEL LIKE
+A HUMAN ACTION
+
+OR
+
+A QUEST NOTIFICATION?
+```
+
+---
+
+# 134. Example — Autonomous Mechanic
+
+Character context:
+
+```text
+PROFESSION:
+MECHANIC
+
+GOAL:
+OWN WORKSHOP
+
+SAVINGS:
+MODERATE
+
+CURRENT JOB:
+DISSATISFIED.
+```
+
+World information:
+
+```text
+LOCAL WORKSHOP OWNER
+PLANS TO RETIRE.
+```
+
+Information path:
+
+```text
+PROFESSIONAL NETWORK.
+```
+
+Possible initiative:
+
+```text
+CONTACT OWNER.
+```
+
+Decision may produce:
+
+```text
+INSPECT WORKSHOP
+
+DISCUSS FINANCING
+
+DECLINE
+
+WAIT
+
+SEEK PARTNER.
+```
+
+The player may never become involved.
+
+---
+
+# 135. Example — Relationship Follow-Up
+
+Characters:
+
+```text
+MARA
+
+ELIAS.
+```
+
+Existing Relationship:
+
+```text
+CLOSE FRIENDS.
+```
+
+Event:
+
+```text
+ELIAS MISSES
+IMPORTANT GATHERING.
+```
+
+Mara believes:
+
+```text
+HE MAY BE
+OVERWHELMED.
+```
+
+Possible initiative:
+
+```text
+CALL ELIAS.
+```
+
+The resulting conversation may influence:
+
+```text
+RELATIONSHIP
+
+MEMORY
+
+BELIEFS
+
+FUTURE GOALS.
+```
+
+Those systems own their own resulting state.
+
+---
+
+# 136. Example — Initiative Failure
+
+Character intends:
+
+```text
+APOLOGIZE
+TO FRIEND.
+```
+
+Pressure:
+
+```text
+MODERATE MOTIVATION.
+```
+
+Friction:
+
+```text
+HIGH SOCIAL
+AND EMOTIONAL
+DISCOMFORT.
+```
+
+Result:
+
+```text
+DELAY
+
+DELAY
+
+DELAY.
+```
+
+Later:
+
+```text
+FRIEND MOVES AWAY.
+```
+
+The apology never occurs.
+
+Inaction becomes history.
+
+---
+
+# 137. Example — Player Contact
+
+Character:
+
+```text
+MARA.
+```
+
+Problem:
+
+```text
+MEDICAL SHIPMENT
+DELAYED.
+```
+
+She first tries:
+
+```text
+SUPPLIER
+
+REGIONAL CLINIC
+
+TRANSPORT CONTACT.
+```
+
+Those fail.
+
+She knows:
+
+```text
+PLAYER IS NEARBY
+
+PLAYER HAS TRANSPORT
+
+RELATIONSHIP IS STRONG.
+```
+
+Now:
+
+```text
+CONTACT PLAYER
+```
+
+is causally justified.
+
+This is fundamentally different from:
+
+```text
+QUEST ICON
+APPEARS.
+```
+
+---
+
+# 138. Example — Player Not Contacted
+
+Character:
+
+```text
+ELIAS.
+```
+
+Problem:
+
+```text
+VEHICLE FAILURE.
+```
+
+He knows:
+
+```text
+LOCAL MECHANIC
+NEARBY.
+```
+
+Relationship:
+
+```text
+GOOD.
+```
+
+He calls the mechanic.
+
+The problem is solved.
+
+The player is never contacted.
+
+This is desirable.
+
+---
+
+# 139. Example — Opportunity Missed
+
+Character Goal:
+
+```text
+OPEN CAFE.
+```
+
+Opportunity:
+
+```text
+IDEAL PROPERTY
+BECOMES AVAILABLE.
+```
+
+But the Character learns:
+
+```text
+TOO LATE.
+```
+
+The property is sold.
+
+The Goal remains.
+
+The Plan changes.
+
+The simulation does not reserve:
+
+```text
+THE PERFECT
+OPPORTUNITY
+```
+
+until someone is ready.
+
+---
+
+# 140. Example — Interruption
+
+Character is:
+
+```text
+REPAIRING ROOF.
+```
+
+Unexpected emergency occurs.
+
+Character evaluates:
+
+```text
+ROOF REPAIR
+
+VERSUS
+
+EMERGENCY.
+```
+
+The emergency wins.
+
+Later:
+
+```text
+IS ROOF REPAIR
+STILL RELEVANT?
+```
+
+If yes:
+
+```text
+RESUME
+OR
+RESCHEDULE.
+```
+
+The unfinished task does not disappear merely because attention shifted.
+
+---
+
+# 141. Character Runtime Relationship
+
+The intended Character runtime chain is:
+
+```text
+NEEDS / MOTIVATION
+↓
+WHY DO I CARE?
+
+GOALS / PLANS
+↓
+WHAT AM I
+TRYING TO ACHIEVE?
+
+KNOWLEDGE / BELIEFS
+↓
+WHAT DO I
+THINK IS TRUE?
+
+EXPERTISE
+↓
+WHAT CAN I
+ACTUALLY DO?
+
+ATTRIBUTES
++
+PSYCHOLOGY
++
+RELATIONSHIPS
++
+CURRENT WORLD CONDITIONS
+↓
+WHAT CONTEXT
+AM I ACTING WITHIN?
+
+AUTONOMY / INITIATIVE
+↓
+DO I NEED TO
+ACT NOW?
+
+DECISION MAKING
+↓
+WHAT DO I CHOOSE?
+
+ACTION
+↓
+WHAT DO I DO?
+
+WORLD SIMULATION
+↓
+WHAT HAPPENS?
+
+LIFE
++
+MEMORY
++
+RELATIONSHIPS
++
+PROGRESSION
+↓
+WHAT CHANGES?
+```
+
+The exact sequencing between Autonomy and Decision Making may involve iteration.
+
+Autonomy identifies action relevance.
+
+Decision Making selects action.
+
+---
+
+# 142. Final Causal Model
+
+```text
+WORLD TRUTH
+        ↓
+CHARACTER PERCEPTION
+        ↓
+KNOWLEDGE
++
+BELIEFS
++
+GOALS
++
+RESPONSIBILITIES
++
+RELATIONSHIPS
++
+PSYCHOLOGY
++
+ATTRIBUTES
++
+EXPERTISE
++
+OPEN LOOPS
++
+SCHEDULE
++
+CURRENT CONDITIONS
+        ↓
+BEHAVIORAL RELEVANCE
+        ↓
+POSSIBLE INITIATIVE
+        ↓
+ACTION FRICTION
++
+COMPETING COMMITMENTS
++
+AVAILABLE OPTIONS
+        ↓
+DECISION MAKING
+        ↓
+ACT
+
+OR
+
+WAIT
+
+OR
+
+DELAY
+
+OR
+
+SEEK HELP
+
+OR
+
+REPLAN
+
+OR
+
+ABANDON
+        ↓
+WORLD CONSEQUENCE
+        ↓
+AUTHORITATIVE SYSTEMS UPDATE
+        ↓
+NEW CHARACTER
+AND WORLD CONTEXT
+        ↓
+FUTURE INITIATIVE.
+```
+
+---
+
+# 143. Autonomy North Star
+
+The system succeeds when the player can leave a place, return later, and discover that people:
+
+```text
+KEPT WORKING
+
+KEPT THINKING
+
+KEPT TRYING
+
+SOLVED SOME PROBLEMS
+
+FAILED AT OTHERS
+
+MISSED OPPORTUNITIES
+
+FOLLOWED UP
+
+FORGOT THINGS
+
+WAITED
+
+CHANGED PRIORITIES
+
+HELPED EACH OTHER
+
+ARGUED
+
+RECONCILED
+
+MOVED ON.
+```
+
+Not because random events were generated.
+
+Not because a story required them.
+
+But because:
+
+```text
+THEIR LIVES
+CONTINUED.
+```
+
+---
+
+# 144. Living Character Principle
+
+A Character feels alive when they can:
 
 ```text
 WANT
 
 NOTICE
+
+REMEMBER
+
+WAIT
+
+DELAY
 
 DECIDE
 
@@ -5941,312 +4594,78 @@ FAIL
 
 SUCCEED
 
-LEARN
+FOLLOW UP
 
-CHANGE
-
-CONNECT
-
-LEAVE
+ABANDON
 
 RETURN
 
-WITHOUT WAITING
-FOR THE PLAYER.
+CHANGE DIRECTION
+```
+
+without waiting for:
+
+```text
+THE PLAYER.
 ```
 
 ---
 
-# World Independence Principle
+# 145. World Independence Principle
 
-The simulation should always preserve:
+Project Ascension must preserve:
 
 ```text
 THE WORLD
 DOES NOT EXIST
-ONLY WHILE OBSERVED.
+
+ONLY WHILE
+OBSERVED.
 ```
+
+The player participates in history.
+
+The player does not activate history.
 
 ---
 
-# Player Integration Principle
+# 146. Closing Principle
 
-The player is not:
+Autonomy is not the ability to constantly generate actions.
 
-```text
-OUTSIDE THE SIMULATION.
-```
+It is the ability for a Character's existing life to continue producing meaningful behavior without player permission.
 
-The player is:
+A believable Character may act.
 
-```text
-ONE CAUSAL ACTOR
-INSIDE THE SIMULATION.
-```
+They may also wait.
 
----
+They may procrastinate.
 
-# Story Principle
+They may solve their own problem.
 
-Project Ascension should not primarily ask:
+They may ask someone else.
 
-```text
-WHAT SHOULD HAPPEN
-TO THE PLAYER NEXT?
-```
+They may forget.
 
-It should ask:
+They may miss the opportunity.
 
-```text
-WHAT IS EVERYONE
-TRYING TO DO?
+They may be interrupted.
 
-WHAT IS HAPPENING
-IN THE WORLD?
+They may return later.
 
-WHERE DO THESE ACTIONS
-INTERSECT?
+They may never return at all.
 
-WHICH INTERSECTIONS
-MATTER TO THE PLAYER?
-```
+What matters is that these outcomes emerge from the Character's state, information, circumstances and agency rather than from the needs of the player-facing story.
 
----
+The central principle is:
 
-# Emergent Campaign Principle
-
-The strongest campaign situations arise when:
-
-```text
-CHARACTER GOAL
-+
-CHARACTER INITIATIVE
-+
-WORLD CHANGE
-+
-OTHER CHARACTER RESPONSE
-+
-PLAYER PROXIMITY
-```
-
-produce:
-
-```text
-OPPORTUNITY
-
-CONFLICT
-
-REQUEST
-
-THREAT
-
-DISCOVERY
-
-RELATIONSHIP MOMENT.
-```
-
----
-
-# Architectural Result
-
-With this document established:
-
-```text
-Character_State.md
-      ↓
-WHO / WHERE / CURRENT STATE
-
-Needs_and_Motivation.md
-      ↓
-WHY THEY CARE
-
-Goals_and_Plans.md
-      ↓
-WHAT THEY WANT TO ACHIEVE
-
-Knowledge_and_Beliefs.md
-      ↓
-WHAT THEY THINK IS TRUE
-
-Decision_Making.md
-      ↓
-HOW THEY CHOOSE
-
-Autonomy_and_Initiative.md
-      ↓
-WHEN THEY ACT
-WITHOUT PLAYER INPUT
-
-Profession_and_Capability.md
-      ↓
-WHAT THEY CAN ACTUALLY DO
-
-Personality_and_Values.md
-      ↓
-WHY THEIR BEHAVIOR
-FEELS INDIVIDUAL
-
-Character_Development.md
-      ↓
-HOW EXPERIENCE CHANGES THEM
-
-Aging_and_Life_Events.md
-      ↓
-HOW THEIR LIFE EVOLVES
-
-Character_Simulation_Resolution.md
-      ↓
-HOW MILLIONS OF LIVES
-CAN BE SIMULATED.
-```
-
----
-
-# Current Status
-
-```text
-CHARACTER SYSTEM
-
-README.md
-FOUNDATION DEFINED
-
-Character_State.md
-FOUNDATION DEFINED
-
-Needs_and_Motivation.md
-FOUNDATION DEFINED
-
-Goals_and_Plans.md
-FOUNDATION DEFINED
-
-Knowledge_and_Beliefs.md
-FOUNDATION DEFINED
-
-Decision_Making.md
-FOUNDATION DEFINED
-
-Autonomy_and_Initiative.md
-FOUNDATION DEFINED
-
-Profession_and_Capability.md
-PENDING
-
-Personality_and_Values.md
-PENDING
-
-Character_Development.md
-PENDING
-
-Aging_and_Life_Events.md
-PENDING
-
-Character_Simulation_Resolution.md
-PENDING
-```
-
----
-
-# Next Document
-
-The next recommended document is:
-
-```text
-Canon/Systems/Characters/Profession_and_Capability.md
-```
-
-Its central question is:
-
-```text
-THE CHARACTER
-WANTS TO ACT.
-
-THE CHARACTER
-HAS DECIDED TO ACT.
-
-BUT CAN THEY
-ACTUALLY DO IT?
-```
-
-It should define:
-
-```text
-profession
-
-occupation
-
-employment
-
-skills
-
-knowledge domains
-
-experience
-
-expertise
-
-training
-
-education
-
-certification
-
-tools
-
-equipment
-
-physical capability
-
-cognitive capability
-
-social capability
-
-professional networks
-
-specialization
-
-skill decay
-
-skill growth
-
-learning
-
-practice
-
-mentorship
-
-capability limits
-
-team capability
-
-institutional capability
-
-improvisation
-
-perceived capability
-
-actual capability.
-```
-
-Most importantly:
-
-```text
-INTENTION
-DOES NOT CREATE
-CAPABILITY.
-```
-
-And:
-
-```text
-CAPABILITY
-DOES NOT GUARANTEE
-SUCCESS.
-```
+> **A living Character does not wait for the player to provide purpose. They already have a life, and that life continues to generate choices and consequences whether the player is present or not.**
 
 ---
 
 # Revision History
 
 | Version | Date | Description |
-|---------|------|-------------|
-| 0.1 | 2026-08-09 | Initial Autonomy and Initiative foundation defining autonomous character activity, initiative triggers, routines, professional and relationship initiative, offscreen simulation, player absence, opportunity and threat response, self-generated Goals, open loops, follow-up, autonomy budgets, NPC-to-NPC activity, economic and social autonomy, initiative friction, interruptions, recovery, player relevance and emergent campaign generation. |
+|---|---|---|
+| 0.1 | 2026-08-09 | Initial Autonomy and Initiative foundation defining autonomous Character activity, initiative triggers, routines, professional and relationship initiative, off-screen simulation, player absence, opportunity and threat response, self-generated Goals, open loops, follow-up, autonomy budgets, NPC-to-NPC activity, economic and social autonomy, initiative friction, interruptions, recovery, player relevance and emergent campaign generation. |
+| 1.0 | 2026-08-30 | Rebuilt Autonomy and Initiative around explicit Character-owned agency. Preserved player-independent life, routines, schedules, Open Loops, waiting, follow-up, anticipatory action, action friction, intention-action gap, interruption, resumption, request routing, off-screen autonomy and explainability. Removed duplicated ownership of Goals, Relationships, Life, Progression, Society, population behavior and Narrative; replaced Autonomy Budget with processing-resolution terminology; strengthened information boundaries, AI constraints and non-deterministic initiative principles. |
