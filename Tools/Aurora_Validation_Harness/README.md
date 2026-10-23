@@ -19,7 +19,7 @@ schema, or infrastructure failures.
 | Validation gate | `GATE 1 — FOUNDATION` |
 | Python requirement | Python 3.12 or newer |
 | Runtime dependencies | None |
-| Automated tests | `2,198 passing` |
+| Automated tests | `2,253 passing` |
 | Command-line interface | `aurora-validation-harness` |
 | Formal execution | Not started; `HC-8` dry-run assets remain to be materialized |
 

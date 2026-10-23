@@ -11,3 +11,9 @@ Project Ascension is an AI-driven cooperative narrative RPG for 2–6 players, s
 - Expertise creates better choices, not automatic answers.
 - Aurora is highly intelligent but never omniscient.
 - Every session creates permanent history in the World Ledger.
+
+## Getting Oriented
+
+- [`PROJECT_OVERVIEW_SV.md`](PROJECT_OVERVIEW_SV.md) — overview of the project, its purpose and current state (Swedish).
+- [`PROJECT_INSTRUCTIONS.md`](PROJECT_INSTRUCTIONS.md) — how work is performed in this repository.
+- [`Project_Memory/Current_Project_State.md`](Project_Memory/Current_Project_State.md) — where the project currently is and what comes next.

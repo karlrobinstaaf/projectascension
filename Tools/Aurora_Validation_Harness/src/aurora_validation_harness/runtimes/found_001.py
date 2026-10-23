@@ -106,6 +106,12 @@ class Found001Runtime:
     def reset(self, request: AuroraResetRequest, /) -> Mapping[str, object]:
         """Load a fresh state exclusively from the scoped Aurora fixture."""
 
+        # A reset always ends the preceding run, even when the new reset fails.
+        self._run_id = None
+        self._state_sha256 = None
+        self._tick = None
+        self._seen_event_ids.clear()
+
         if not isinstance(request, AuroraResetRequest):
             _fail(
                 Found001RuntimeFailureReason.INVALID_REQUEST,
@@ -141,7 +147,6 @@ class Found001Runtime:
         self._run_id = request.run_id
         self._tick = request.initial_tick
         self._state_sha256 = frozen_state.state_sha256
-        self._seen_event_ids.clear()
         return cast(dict[str, object], frozen_state.decode())
 
     def advance(self, request: AuroraStepRequest, /) -> Mapping[str, object]:

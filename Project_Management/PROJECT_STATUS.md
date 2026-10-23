@@ -1,3 +1,6 @@
+> **Note (2026-10-23):** This file is historical. The current project state is maintained in
+> `Project_Memory/Current_Project_State.md`, with a Swedish summary in `PROJECT_OVERVIEW_SV.md`.
+
 # Project Status
 
 - Development phase: Pre-production

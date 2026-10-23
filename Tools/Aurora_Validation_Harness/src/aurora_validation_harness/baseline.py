@@ -11,10 +11,11 @@ import hashlib
 import json
 import re
 import unicodedata
+from collections.abc import Mapping
 from dataclasses import dataclass
 from enum import StrEnum
 from pathlib import Path, PurePosixPath
-from typing import Final, Mapping
+from typing import Final
 
 _SHA256_PATTERN: Final[re.Pattern[str]] = re.compile(r"^[0-9a-f]{64}$")
 _MARKDOWN_VERSION_PATTERN: Final[re.Pattern[str]] = re.compile(
