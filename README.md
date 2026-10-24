@@ -2,7 +2,7 @@
 
 > The world does not exist because of the players. The players exist inside the world.
 
-Project Ascension is an AI-driven cooperative narrative RPG for 2–6 players, set in a near-future United States after the emergence of the superintelligence Aurora.
+Project Ascension is an AI-driven cooperative narrative RPG for 1–6 players, fully playable solo. With fewer than six humans, NPC characters fill out the six-character group. It is set in a near-future United States after the emergence of the superintelligence Aurora.
 
 ## Core Pillars
 

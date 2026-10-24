@@ -4,7 +4,7 @@
 |---|---|
 | Dokument | Projektöversikt (svenska) |
 | Status | Orientering, inte Canon |
-| Senast uppdaterad | 2026-10-23 |
+| Senast uppdaterad | 2026-10-24 |
 
 > **Berättelsen styr inte simulationen. Simulationen producerar berättelsen.**
 
@@ -16,8 +16,11 @@ gäller för hur arbete ska göras och var projektet står i detalj.
 
 ## 1. Vad är Project Ascension?
 
-Project Ascension är ett AI-drivet, kooperativt berättar-RPG för 2–6 spelare (testskivan VS-001 stöder även en ensam spelare). Det utspelar sig
-i ett nära framtida USA efter att superintelligensen **Aurora** har uppstått.
+Project Ascension är ett AI-drivet, kooperativt berättar-RPG för 1–6 mänskliga spelare,
+och det ska gå att spela fullt ut ensam. Gruppen är tänkt som sex karaktärer;
+när färre än sex människor spelar fylls de övriga platserna av NPC-karaktärer. De förblir
+fullvärdiga karaktärer med egen kunskap, egna mål och egen vilja, inte spelarnas tjänare.
+Spelet utspelar sig i ett nära framtida USA efter att superintelligensen **Aurora** har uppstått.
 
 Kärnidén är att världen lever oavsett spelarna. Människor arbetar, flyttar, blir osams,
 åldras och dör. Organisationer, infrastruktur, resurser och rykten förändras även när ingen
@@ -26,6 +29,21 @@ det som händer i simuleringen i stället för ur ett manus.
 
 En AI-spelledare (Game Master) tolkar världen för spelarna. Varje session skrivs in som
 permanent historia i världens logg (World Ledger).
+
+### Kärnupplevelsen (Living Room Test)
+
+Den tänkta upplevelsen är en gemensam skärm på en stor teve i vardagsrummet. En grupp
+människor sitter i samma rum och delar ett äventyr, med musik, ljud och en AI-spelledare.
+Skärmen är gruppens fönster in i världen: den visar plats, stämning, tid och det som syns,
+inte en panel med spelmekanik.
+
+*Living Room Test* frågar om en funktion håller när flera vänner sitter tillsammans i ett
+mörkt vardagsrum och tittar på en stor teve, och om den får dem att titta, lyssna, diskutera
+och bestämma i stället för att vänta på sin tur.
+
+Källa: `Canon/Systems/Narrative/Game_Master_Bible/Player_Experience_and_Core_Gameplay_Loop.md`
+(2026-09-05), avsnitt 2 (The Living Room Vision), 3–5 (Player Count, The Six-Character Group,
+One Player Does Not Control the Group), 6 (The Shared Screen) och 90 (Living Room Test).
 
 ## 2. Designpelare
 
@@ -54,8 +72,8 @@ permanent historia i världens logg (World Ledger).
 | `Canon/Systems/` | Spelets system: karaktärer, liv, relationer, samhälle, fraktioner, världssimulering, Living Campaign Engine, Game Master Bible, progression och Auroras kognitiva arkitektur | ~138 |
 | `Canon/Universe/` | Världen: tidslinjer, Aurora-arkivet (återfunna dokument), familjer, karaktärer, platser, epoker | ~260 |
 | `Canon/Pitch/`, `Canon/Marketing/` | Pitch på svenska och engelska, kärnbudskap | 4 |
-| `Development/Validation/` | Spelbar testskiva VS-001 (Republic) och testdata för Aurora | ~12 |
-| `Development/Academy/` | Planerad lärokurs (Git, Markdown, Python, speldesign …), kapitlen är ännu tomma | 19 |
+| `Development/Validation/` | Spelbar testskiva VS-001 (Republic, 6 filer) och testdata för Aurora (3 filer) | 9 |
+| `Development/Academy/` | Planerad lärokurs (Git, Markdown, Python, speldesign …): 19 kapitel plus en README; kapitlen är ännu tomma | 20 |
 | `Tools/Aurora_Validation_Harness/` | Python-verktyg som testar att Aurora-arkitekturen håller informationsgränser | 39 |
 | `Project_Management/`, `Project_Brain/` | Äldre status/kunskapsbas och idéer för framtida produkter | 5 |
 | `Assets/Music/` | Musikriktning (Suno) | 1 |
