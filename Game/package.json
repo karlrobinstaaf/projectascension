@@ -1,0 +1,32 @@
+{
+  "name": "ascension-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Living-room client and room server for Project Ascension",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "predev": "npm run build -w @ascension/shared",
+    "dev": "concurrently -n shared,server,client -c gray,cyan,magenta \"npm run dev -w @ascension/shared\" \"npm run dev -w @ascension/server\" \"npm run dev -w @ascension/client\"",
+    "build": "npm run build -w @ascension/shared && npm run build -w @ascension/server && npm run build -w @ascension/client",
+    "typecheck": "npm run typecheck -w @ascension/shared && npm run build -w @ascension/shared && npm run typecheck -w @ascension/server && npm run typecheck -w @ascension/client",
+    "lint": "eslint .",
+    "test": "npm run build -w @ascension/shared && npm run test -w @ascension/server",
+    "start": "npm run build -w @ascension/shared && npm run start -w @ascension/server"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}

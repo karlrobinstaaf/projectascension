@@ -17,3 +17,15 @@ Project Ascension is an AI-driven cooperative narrative RPG for 1–6 players, f
 - [`PROJECT_OVERVIEW_SV.md`](PROJECT_OVERVIEW_SV.md) — overview of the project, its purpose and current state (Swedish).
 - [`PROJECT_INSTRUCTIONS.md`](PROJECT_INSTRUCTIONS.md) — how work is performed in this repository.
 - [`Project_Memory/Current_Project_State.md`](Project_Memory/Current_Project_State.md) — where the project currently is and what comes next.
+
+## Play
+
+The living-room client and room server are in [`Game/`](Game/README.md): a shared television view, a phone controller, and an authoritative server with a mock Game Master. Canon and the Aurora validation harness are separate.
+
+```bash
+cd Game
+npm install
+npm run dev
+```
+
+Open the television at [http://localhost:5173/tv](http://localhost:5173/tv). Use this computer’s LAN address instead of `localhost` when a phone on the same Wi-Fi should join.
