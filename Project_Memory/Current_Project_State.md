@@ -5,13 +5,121 @@
 | Field | Value |
 |---|---|
 | Document | Current Project State |
-| Version | 1.0 |
+| Version | 1.1 |
 | Status | Active |
 | Category | Project Memory |
 | Owner | Project Architecture |
-| Last Updated | 2026-08-30 |
+| Last Updated | 2026-10-28 |
 
 > **"The project should always be able to explain where it is, what has changed, and what should happen next."**
+
+---
+
+# Update Notice — 2026-10-28
+
+Sections 1–74 below were written on 2026-08-30. This notice records what has changed since
+then. Where the two conflict, this notice is the current state.
+
+## Completed since 2026-08-30
+
+```text
+CHARACTER ARCHITECTURE AUDIT
+→ COMPLETE (2026-08-31)
+
+Autonomy_and_Initiative.md
+→ REBUILT (2026-08-30)
+
+LEGACY CHARACTER FILES
+→ REVIEWED; ALL CURRENT FILES IN
+  Canon/Systems/Characters/
+  ARE CANONICAL ARCHITECTURE
+
+CHARACTER FOUNDATION TEST SUITE
+→ CLOSED (TEST-001 – TEST-010)
+```
+
+`Personality_and_Values.md` and `Aging_and_Life_Events.md` no longer exist in the repository.
+
+Steps 1–5 of the sequence in Section 67 and the immediate step in Section 68 are therefore
+done. The Character audit's own conclusion is to move from Character Foundation toward
+Cross-System Integration.
+
+## Added in September 2026
+
+```text
+Game Master Bible (2026-09-05)
+  Action_and_Resolution_System.md
+  Campaign_Reality_Parameters.md
+  Game_Master_Loop.md
+  Player_Experience_and_Core_Gameplay_Loop.md
+  Seed_Architecture.md
+
+Story Framework
+  Main_Story_Architecture.md
+  Main_Stories/The_Hunt/
+    The_Hunt_Case_Foundation.md
+    The_Hunt_Initial_Case_Briefing.md
+
+Universe
+  Families/Mitchell/ and Characters/People/Mitchell, Brooks
+    (life histories, events, relationships, properties)
+  Locations/USA/Washington/Ferry_County/Republic/
+    (first playable location, built from the real town)
+
+Development/Validation/Gameplay/VS-001/
+  VS-001 Northern Isolation: first Vertical Slice,
+  opening world state, NPC cast, seed set,
+  player group entry state, opening scene.
+```
+
+## Player count
+
+The game is designed for 1–6 human players and must be fully playable solo. The group is
+six Characters; when fewer than six humans play, NPC Characters fill the remaining seats as
+full Characters with their own knowledge, goals and will
+(`Player_Experience_and_Core_Gameplay_Loop.md`).
+
+## Repository cleanup (2026-10-23)
+
+- Aurora Validation Harness restored to its documented `src/` and `tests/unit/` layout; all
+  2,253 unit tests pass.
+- Duplicate and always-empty files removed.
+- `PROJECT_OVERVIEW_SV.md` added as a Swedish orientation document.
+
+## Known content defects
+
+These files contain an exact copy of another file and need their original text:
+
+```text
+Canon/Universe/Characters/People/Brooks/
+Daniel_Brooks_1988_2018_Early_Life.md
+= copy of Michael_Mitchell_2003_2020_Adolescence_and_Early_Adult_Life.md
+
+Canon/Universe/Timeline/Transition/
+Transition_International_Machine_Autonomy_Divergence.md
+= copy of Transition_Cross_Domain_Machine_Anomaly_Period.md
+
+Canon/Universe/Timeline/Transition/
+Transition_Selective_Exposure_Utility_Formation.md
+= copy of Transition_Content_Oriented_Information_Protection_Emergence.md
+```
+
+## Current next step
+
+Continue the Section 67 sequence from step 6:
+
+```text
+6. REVIEW Living_Campaign_Engine
+7. REVIEW World_Simulation
+8. REVIEW Game Master / Narrative boundaries
+   (now including the September Game Master Bible files)
+9. REVIEW Aurora against stabilized upstream architecture
+10. UPDATE Simulation_Architecture.md
+11. UPDATE Canon/Systems/README.md LAST.
+```
+
+A playtest of VS-001 may be run in parallel to expose which cross-system gaps matter most.
+The project owner decides which comes first.
 
 ---
 
@@ -2349,6 +2457,8 @@ Conversation History should be added after the decision and current-state layer 
 
 # 67. Recommended Near-Term Sequence
 
+> **2026-10-28:** Steps 1–5 are complete. See the Update Notice at the top of this file.
+
 The current recommended project sequence is:
 
 ```text
@@ -2399,6 +2509,8 @@ This order may change if newly discovered files create a more urgent architectur
 ---
 
 # 68. Immediate Next Step
+
+> **2026-10-28:** Completed on 2026-08-30. See the Update Notice at the top of this file for the current next step.
 
 The immediate next recommended action is:
 
@@ -2753,3 +2865,4 @@ The central current-state principle is:
 | Version | Date | Description |
 |---|---|---|
 | 1.0 | 2026-08-30 | Established the first formal Current Project State document. Captured the active cleanup phase, Humanity restructuring, Character Creation and Expertise rebuilds, Life Course migration, Society and Factions creation, Story Framework and Progression creation, Project Memory architecture, current Character audit, Autonomy next step, major ownership rules, open architecture questions, and recommended near-term sequence. |
+| 1.1 | 2026-10-28 | Added Update Notice: Character audit and Autonomy rebuild complete, September Game Master Bible, The Hunt, Republic and VS-001 additions, 1–6 player count, repository cleanup, known content defects, and next step from sequence step 6. |
